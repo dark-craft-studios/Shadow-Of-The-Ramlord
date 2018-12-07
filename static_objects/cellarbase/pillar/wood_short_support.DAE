@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-05-11T16:57:49Z</created>
+    <keywords></keywords>
+    <modified>2012-05-11T16:57:49Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #1-image" name="Map #1">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\cellarbase\floor\cellarbase_wood_floor.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="cellarbase_wood_floor" name="cellarbase_wood_floor">
+      <instance_effect url="#cellarbase_wood_floor-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="cellarbase_wood_floor-fx" name="cellarbase_wood_floor">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box002-lib" name="Box002Mesh">
+      <mesh>
+        <source id="Box002-POSITION">
+          <float_array id="Box002-POSITION-array" count="24">
+1.000000 -0.196500 4.001451
+1.000000 0.196500 4.001451
+0.688153 0.196500 4.001451
+0.688153 -0.196500 4.001451
+0.246353 -0.196500 3.141196
+0.246353 0.196500 3.141196
+0.246353 0.196500 3.472536
+0.246353 -0.196500 3.472536
+</float_array>
+          <technique_common>
+            <accessor source="#Box002-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box002-Normal0">
+          <float_array id="Box002-Normal0-array" count="90">
+-0.000002 0.000000 1.000000
+-0.000002 0.000000 1.000000
+-0.000002 0.000000 1.000000
+-0.000002 0.000000 1.000000
+-0.000002 0.000000 1.000000
+-0.000002 0.000000 1.000000
+0.752177 0.000000 -0.658962
+0.752176 0.000000 -0.658962
+0.752177 0.000000 -0.658962
+0.752177 0.000000 -0.658962
+0.752177 0.000000 -0.658962
+0.752177 0.000000 -0.658962
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+-0.767480 0.000000 0.641073
+-0.767480 0.000000 0.641073
+-0.767480 0.000000 0.641073
+-0.767480 0.000000 0.641073
+-0.767480 0.000000 0.641073
+-0.767480 0.000000 0.641073
+-0.000000 -1.000000 0.000000
+-0.000000 -1.000000 0.000000
+-0.000000 -1.000000 0.000000
+-0.000000 -1.000000 0.000000
+-0.000000 -1.000000 0.000000
+-0.000000 -1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box002-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box002-UV0">
+          <float_array id="Box002-UV0-array" count="40">
+0.475940 0.972697
+0.475940 0.890894
+0.207333 0.874550
+0.207332 0.991612
+0.326329 0.812559
+0.372208 0.866134
+0.114702 0.863314
+0.171626 0.814565
+0.207331 0.991612
+0.207331 0.874550
+0.540851 0.890894
+0.540851 0.972697
+0.430734 0.874550
+0.372208 0.866134
+0.430733 0.991612
+0.114702 0.863314
+0.171626 0.814565
+0.430734 0.874550
+0.430734 0.991612
+0.326329 0.812560
+</float_array>
+          <technique_common>
+            <accessor source="#Box002-UV0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box002-VERTEX">
+          <input semantic="POSITION" source="#Box002-POSITION"/>
+        </vertices>
+        <triangles count="10" material="cellarbase_wood_floor">
+          <input semantic="VERTEX" offset="0" source="#Box002-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Box002-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Box002-UV0"/>
+          <p> 1 0 1 2 1 10 3 2 11 3 3 11 0 4 0 1 5 1 5 6 14 1 7 8 0 8 9 0 9 9 4 10 12 5 11 14 6 12 16 2 13 4 1 14 5 1 15 5 5 16 15 6 17 16 7 18 18 3 19 3 2 20 2 2 21 2 6 22 17 7 23 18 0 24 6 3 25 7 7 26 19 7 27 19 4 28 13 0 29 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Box002" id="Box002" layer="wood_short_support" sid="Box002">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Box002-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="cellarbase_wood_floor" target="#cellarbase_wood_floor"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

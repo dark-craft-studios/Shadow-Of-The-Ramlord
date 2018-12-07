@@ -1,0 +1,8 @@
+<Material>
+    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Default" Type="SolidDiffuse" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="" AnimMode="" File="castlebase_wall_door_straight_worn.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="" AnimMode="" File="castlebase_wall_door_straight_worn_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="" AnimMode="" File="castlebase_wall_door_straight_worn_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

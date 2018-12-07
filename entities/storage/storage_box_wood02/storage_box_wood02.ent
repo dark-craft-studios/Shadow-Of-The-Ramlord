@@ -1,0 +1,40 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 100" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="100 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 100 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.62334 2.23967 1.83568" CameraTarget="0.241309 -0.24963 -2.15675" CameraZoom="2.36013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/storage/storage_box_wood02/storage_box_wood02.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="pCube1" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="1.9 1.25 1.3" RelativeTranslation="-0.00102308 -0.319771 0" Rotation="0 0 0" Scale="1.9 1.25 1.3" ShapeType="Box" Tag="" WorldPos="0 0.673006 0" />
+            <BodyShape Active="true" ID="3" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="0.15 0.05 1.3" RelativeTranslation="-0.841379 0.319771 0" Rotation="0 0 0" Scale="0.15 0.05 1.3" ShapeType="Box" Tag="" WorldPos="-0.840356 1.31255 0" />
+            <BodyShape Active="true" ID="4" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.15 0.05 1.3" RelativeTranslation="-0.335892 0.319771 0" Rotation="0 0 0" Scale="0.15 0.05 1.3" ShapeType="Box" Tag="" WorldPos="-0.334869 1.31255 0" />
+            <BodyShape Active="true" ID="5" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.15 0.05 1.3" RelativeTranslation="0.320454 0.319771 0" Rotation="0 0 0" Scale="0.15 0.05 1.3" ShapeType="Box" Tag="" WorldPos="0.321477 1.31255 0" />
+            <BodyShape Active="true" ID="6" Name="Shape_5" RelativeRotation="0 -0 0" RelativeScale="0.15 0.05 1.3" RelativeTranslation="0.841379 0.319771 0" Rotation="0 0 0" Scale="0.15 0.05 1.3" ShapeType="Box" Tag="" WorldPos="0.842402 1.31255 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="7" LinearDamping="0" Mass="0" Material="Wood_Heavy" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.00102308 0.992777 0">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="1" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+                <Shape ID="5" />
+                <Shape ID="6" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

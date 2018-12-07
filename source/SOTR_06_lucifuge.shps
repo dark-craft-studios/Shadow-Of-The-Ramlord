@@ -1,0 +1,67 @@
+#include "AmnesiaSignatures.cpp"
+#include "ResetPlayerStateOnStart.ihps"
+
+// ----------------------------------------------------------------------------
+// GLOBAL LOADING SCREEN SYSTEM
+// ----------------------------------------------------------------------------
+void GetGlobalLoadingScreen(string mapId)
+{
+    string txtCat = GetGlobalVarString("LS_TextCategory");
+    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
+    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
+    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
+
+    SetupLoadScreen(
+        txtCat, /* Text Category */
+        txtEnt, /* Text Entry */
+        imgRnd, /* Random */
+        imgFil  /* Image file */
+    );
+}
+
+// ----------------------------------------------------------------------------
+// SET SANITY ENABLED
+// ----------------------------------------------------------------------------
+void SetSanityEnabled(bool enabled)
+{
+    SetSanityDrainDisabled(!enabled);
+    SetInDarknessEffectsActive(enabled);
+}
+
+
+// ----------------------------------------------------------------------------
+// Main - g
+// ----------------------------------------------------------------------------
+const string gMapId = "10";
+
+void Preload()
+{
+}
+
+void OnStart()
+{
+    DestroyDataCache();
+    GetGlobalLoadingScreen(gMapId);
+    SetSanityEnabled(false);
+    AddEntityCollideCallback("Player", "EndingCutscene1", "CreditsSequence", true, 1);
+}
+
+void OnEnter()
+{
+    Preload();
+}
+
+void OnLeave()
+{
+}
+
+void CreditsSequence(string &in asParent, string &in asChild, int alState)
+
+{
+    AddTimer("", 0.5f, "StartCreditsAsync");
+}
+
+void StartCreditsAsync(string timer) 
+{ 
+    StartCredits("", false, "Credits", "FinalCredits", 4); 
+}

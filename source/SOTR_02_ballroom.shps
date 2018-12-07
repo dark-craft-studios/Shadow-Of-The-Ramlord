@@ -1,0 +1,892 @@
+#include "AmnesiaSignatures.cpp"
+#include "ResetPlayerStateOnStart.ihps"
+
+// ----------------------------------------------------------------------------
+// PLAY SOUND AT ENTITY OVERLOADS
+// ----------------------------------------------------------------------------
+void PlaySoundAtEntity(string name, string file, string entity)
+{
+    PlaySoundAtEntity(
+        entity, /* Sound name */
+        file,   /* Sound file */
+        entity, /* Entity */
+        0.0f,   /* Fade time */
+        false   /* Save */
+    );
+}
+
+void PlaySoundAtEntity(string file, string entity, float fadeTime)
+{
+    PlaySoundAtEntity(
+        "",       /* Sound name */
+        file,     /* Sound file */
+        entity,   /* Entity */
+        fadeTime, /* Fade time */
+        false     /* Save */
+    );
+}
+
+void PlaySoundAtEntity(string file, string entity)
+{
+    PlaySoundAtEntity(file, entity, 0.0f);
+}
+
+void PlaySoundAtEntity(string file)
+{
+    PlaySoundAtEntity(file, "Player", 0.0f);
+}
+
+// ----------------------------------------------------------------------------
+// AMBIENCE ABSTRACTION
+// ----------------------------------------------------------------------------
+void StartAmbience(string soundFile, float fadeTime)
+{
+    PlaySoundAtEntity(
+        "amb",     /* Sound name */
+        soundFile, /* Sound file */
+        "Player",  /* Entity */
+        fadeTime,  /* Fade time */
+        false      /* Save */
+    );
+}
+
+void StopAmbience(float fadeTime)
+{
+    StopSound("amb", fadeTime);
+}
+
+// ----------------------------------------------------------------------------
+// Skybox Setup - ss
+// ----------------------------------------------------------------------------
+const string ssSkyboxTexture    = "SOTR_night_sky_light.dds";
+const float  ssSkyboxColorR     = 1.0f;
+const float  ssSkyboxColorG     = 1.0f;
+const float  ssSkyboxColorB     = 1.0f;
+const float  ssSkyboxColorAlpha = 1.0f;
+
+void SetupSkybox()
+{
+    SetSkyBoxActive(true);
+    SetSkyBoxTexture(ssSkyboxTexture);
+    SetSkyBoxColor(
+        ssSkyboxColorR,     /* Red amount */
+        ssSkyboxColorG,     /* Green amount */
+        ssSkyboxColorB,     /* Blue amount */
+        ssSkyboxColorAlpha  /* Alpha amount */
+    );
+}
+
+// ----------------------------------------------------------------------------
+// ADD ENTITY COLLIDE CALLBACK OVERLOADS
+// ----------------------------------------------------------------------------
+enum CollisionState
+{
+    onlyEnter = 1,
+    onlyLeave = -1,
+    any = 0
+}
+
+void AddEntityCollideCallback(string cname, string cfunction)
+{
+    AddEntityCollideCallback ("Player", cname, cfunction);
+}
+
+void AddEntityCollideCallback(string pname, string cname, string cfunction)
+{
+    AddEntityCollideCallback(
+        pname,                      /* Parent name */
+        cname,                      /* Child name */
+        cfunction,                  /* Callback Function */
+        true,                       /* Delete On Collide */
+        CollisionState::onlyEnter   /* State */
+    );
+}
+
+// ----------------------------------------------------------------------------
+// Door unlocking & Wrong door messages
+// ----------------------------------------------------------------------------
+void AddUseKeyOnDoor(UseItemParams params)
+{
+    string correctDoor = params.entity;
+    string correctCallback = params.callbackFunc;
+
+    for(uint i = 0; i < gDoors.length(); i++)
+    {
+        params.entity = gDoors[i];
+
+        if(gDoors[i] == correctDoor)
+        {
+            params.callbackFunc = correctCallback;
+            params.autoDestroy = true;
+        }
+        else
+        {
+            params.callbackFunc = "IncorrectDoorMessage";
+            params.autoDestroy = false;
+        }
+
+        AddUseItemCallback(params);
+    }
+}
+
+void IncorrectDoorMessage(string item, string doorEntity)
+{
+    int seed = RandInt(1, 3);
+    SetMessage("DoorMessages", "KeyWrongDoor_" + seed, 0.0f);
+}
+
+// ----------------------------------------------------------------------------
+// USE ITEM OVERLOADS
+// ----------------------------------------------------------------------------
+class UseItemParams
+{
+    UseItemParams()
+    {
+        this.Reset();
+    }
+
+    void Reset()
+    {
+        this.name = "";
+        this.item = "";
+        this.entity = "";
+        this.callbackFunc = "";
+        this.autoDestroy = true;
+    }
+
+    string name;
+    string item;
+    string entity;
+    string callbackFunc;
+    bool autoDestroy;
+}
+
+void AddUseItemCallback(UseItemParams settings)
+{
+    AddUseItemCallback(
+        settings.name,
+        settings.item,
+        settings.entity,
+        settings.callbackFunc,
+        settings.autoDestroy
+    );
+}
+
+// ----------------------------------------------------------------------------
+// ITEM CHECK
+// ----------------------------------------------------------------------------
+void ItemCheck()
+{
+    string lanternName = GetGlobalVarString("LanternName");
+    if(!HasItem(lanternName))
+        GiveItemFromFile(lanternName, "lantern.ent");
+    if(!HasItem("SOTR_Clearsight_1"))
+        GiveItemFromFile("SOTR_Clearsight_1", "SOTR_Clearsight.ent");
+}
+
+// ----------------------------------------------------------------------------
+// STRING HELPERS
+// ----------------------------------------------------------------------------
+
+bool StringIsInArray(string text, string[] array)
+{
+    for(int i = 0; i < array.length(); i++)
+    {
+        if(array[i] == text) return true;
+    }
+    return false;
+}
+
+// ----------------------------------------------------------------------------
+// SET SANITY ENABLED
+// ----------------------------------------------------------------------------
+void SetSanityEnabled(bool enabled)
+{
+    SetSanityDrainDisabled(!enabled);
+    SetInDarknessEffectsActive(enabled);
+}
+
+// ----------------------------------------------------------------------------
+// GLOBAL CONSTANTS
+// ----------------------------------------------------------------------------
+const string gAmbSoundFile = "ambience_swoop_myst.snt";
+
+const string[] gDoors =
+{
+    "mansion_4",
+    "mansion_3",
+    "CorridorDoor",
+    "mansion_1",
+    "level_wood_1",
+    "mansion_5",
+    "LibraryDoor"
+};
+
+string[] gUnlockableDoors =
+{
+    "LibraryDoor"
+};
+
+const string[] ambSounds =
+{
+    "scare_animal_squeal.snt",
+    "scare_baby_cry.snt",
+    "scare_slam_door.snt",
+    "scare_steps_big.snt",
+    "scare_walk_ghost.snt",
+    "scare_wood_creak_scuf.snt",
+    "scare_wood_creak_walk.snt"
+};
+
+const int soundAreaCount = 12;
+
+void Preload()
+{
+    PreloadSound(gAmbSoundFile);
+    PreloadSound("unlock_door.snt");
+    PreloadSound("flashback_flash.snt");
+    PreloadSound("react_breath_slow.snt");
+    PreloadSound("react_sigh.snt");
+    PreloadSound("insanity_whisper.snt");
+    PreloadSound("react_scare.snt");
+    PreloadSound("03_rock_amb.snt");
+    PreloadSound("SOTR_skeletalk.snt");
+    for(uint i = 0; i < ambSounds.length(); i++)
+    {
+        PreloadSound(ambSounds[i]);
+    }
+
+    PreloadParticleSystem("ps_door_damage_wood.ps");
+}
+
+void OnStart()
+{
+    DestroyDataCache();
+    
+    SetupLoadScreen(
+        "LoadingMessages",    /* Text Category */
+        "LoadingText03",      /* Text Entry */
+        1,                    /* Random (1 = not random) */
+        "SOTR_loading_01.jpg" /* Image file */
+    );
+
+    UseItemParams params = UseItemParams();
+    params.item = "LibraryKey";
+    params.entity = "LibraryDoor";
+    params.callbackFunc = "UnlockLibraryDoor";
+    params.autoDestroy = true;
+    AddUseKeyOnDoor(params);
+
+    SetSanityEnabled(false);
+
+    InitializeLaudanumSoundScene();
+    InitializeExampleMeditation();
+    InitializeTightCorridorFall();
+    InitializeVoiceLines();
+    ItemCheck();
+
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPlayerRunSpeedMul(1.0f);
+    FadeOut(0);
+    FadeIn(6);
+    PlayJohanLine("1", "12", "");
+}
+
+
+void OnEnter()
+{
+    Preload();
+    FadeOut(0.0f);
+    AddTimer("", 0.25f, "FadeInAsync");
+    StartAmbience(gAmbSoundFile, 0.5f);
+    AmbienceLoop("");
+    SetupSkybox();
+}
+
+void FadeInAsync(string t)
+{
+    FadeIn(2.0f);
+}
+
+void OnLeave()
+{
+    StopAmbience(5.0f);
+}
+
+// ----------------------------------------------------------------------------
+// Corridor Backtrack Sequence
+// ----------------------------------------------------------------------------
+const float boxlightR = 0.0f;
+const float boxlightG = 0.032f;
+const float boxlightB = 0.068f;
+
+const string[] CorridorCandles = {
+    "candlestick_wall_orange_8",
+    "candlestick_wall_orange_9",
+    "candlestick01_13",
+    "candlestick01_14",
+    "candle_floor_small_13",
+    "candle_floor_small_14",
+    "candle_floor_small_15",
+    "candle_floor_small_8",
+    "candle_floor_small_9",
+    "candle_floor_small_7",
+    "candle_floor_small_5",
+    "candle_floor_small_6",
+    "candle_floor_small_4",
+    "candle_floor_small_10",
+    "candle_floor_small_11",
+    "candle_floor_small_12",
+    "candle_floor_small_20",
+    "candle_floor_small_16",
+    "candle_floor_small_17",
+    "candle_floor_small_19",
+    "candle_floor_small_18",
+    "candlestick_tri_1",
+    "chandelier_simple_short_4"
+};
+
+const string[] CorridorPointLights = {
+    "PointLight_5",
+    "PointLight_19",
+    "PointLight_20"
+};
+
+void OnRitualKeyPickup(string entity)
+{
+    AddEntityCollideCallback("SilentCorridorStartArea", "SilentCorridorStart");
+    AddEntityCollideCallback("SilentCorridorEndArea", "SilentCorridorEnd");
+
+    for(uint i = 0; i < CorridorCandles.length(); i++)
+    {
+        SetLampLit(CorridorCandles[i], false, true);
+    }
+
+    for(uint i = 0; i < CorridorPointLights.length(); i++)
+    {
+        FadeLightTo(CorridorPointLights[i], 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.5f);
+    }
+
+    AddTimer("", 1.5f, "DelayedDoorSlam");
+}
+
+void DelayedDoorSlam(string t)
+{
+    SetSwingDoorClosed("mansion_4", true, true);
+    PlaySoundAtEntity("scare_slam_door.snt", "mansion_4");
+    SetEntityActive("ScareArmor1", true);
+    SetEntityActive("ScareArmor2", false);
+    GiveSanityDamage(1.0f, true);
+}
+
+void SilentCorridorStart(string a, string b, int state)
+{
+    StopAmbientSounds("");
+    StopAmbience(0.5f);
+    SetPlayerRunSpeedMul(0.0f);
+    SetPlayerMoveSpeedMul(0.6f);
+    SetPlayerCrouchDisabled(true);
+    SetPlayerCrouching(false);
+    SetInventoryDisabled(true);
+    PlaySoundAtEntity("skeletalk", "SOTR_skeletalk.snt", "SkeletalkTarget");
+    FadeLightTo("BoxLight_1", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
+}
+
+void SilentCorridorEnd(string a, string b, int state)
+{
+    StopSound("skeletalk", 0.5f);
+    ContinueAmbientSounds("");
+    SetPlayerRunSpeedMul(1.0f);
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPlayerCrouchDisabled(false);
+    SetInventoryDisabled(false);
+    FadeLightTo("BoxLight_1", boxlightR, boxlightG, boxlightB, 1.0f, -1.0f, 0.5f);
+}
+
+// Glenn Comment: Perhaps we should introduce a ladder breaking or falling off it? Right now it feels weird we just kinda drop like a dingus and probably break an ankle.
+
+// ----------------------------------------------------------------------------
+// Thight Corridor Fall
+// ----------------------------------------------------------------------------
+void InitializeTightCorridorFall()
+{
+    AddEntityCollideCallback("TightCorridorFallArea", "OnLibraryEscaped");
+    AddEntityCollideCallback("OpenSlidingDoorArea", "OpenSlidingDoorAreaTriggered");
+    AddEntityCollideCallback("InRitualRoomArea", "RecoverFall");
+}
+
+void OnLibraryEscaped(string a, string b, int state)
+{
+    LibraryCrashTimer("");
+}
+
+void LibraryCrashTimer(string t)
+{
+    AddLocalVarInt("LibraryCrashTimer", 1);
+    int stage = GetLocalVarInt("LibraryCrashTimer");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        SetPlayerActive(false);
+        StopMusic(0.5f, 1);
+        SetLanternActive(false, true);
+        StartPlayerLookAt("CorridorFallViewTarget", 2.0f, 3.0f, "");
+        SetPlayerCrouching(false);
+        delay = 0.1f;
+    }
+    else if(stage == 2)
+    {
+        RemoveItem("Lantern");
+        SetEntityActive("Lantern", true);
+        PlayJohanLine("7", "18", "");
+        delay = 0.1f;
+    }
+    else if(stage == 3)
+    {
+        FadeOut(0.01f);
+        GiveSanityDamage(1.0f, true);
+        MovePlayerHeadPos(0.0f, -1.2f, 0.7f, 5.0f, 0.5f);
+        FadePlayerRollTo(-30.0f, 100.0f, 120.0f);
+        FadeRadialBlurTo(0.02f, 5.0f);
+        delay = 0.01f;
+    }
+    else if(stage == 4)
+    {
+        FadeIn(0.5f);
+        AddPropForce("Lantern", 0.0f, 1000.0f, -8500.0f, "world");
+        delay = 0.2f;
+    }
+    else if(stage == 5)
+    {
+        FadeRadialBlurTo(0.0f, 0.5f);
+        delay = 0.8f;
+    }
+    else if(stage == 6)
+    {
+        PlaySoundAtEntity("react_sigh.snt");
+        MovePlayerHeadPos(0.0f, -1.5f, 0.7f, 1.0f, 0.5f);
+        FadePlayerRollTo(-40.0f, 5.0f, 6.0f);
+        delay = 0.4f;
+    }
+    else if(stage == 6)
+    {
+        PlaySoundAtEntity("react_sigh.snt");
+        delay = 1.5f;
+    }
+    else if(stage == 7)
+    {
+        PlaySoundAtEntity("insanity_whisper.snt");
+        delay = 2.2f;
+    }
+    else if(stage == 8)
+    {
+        FadeOut(0.5f);
+        FadeGlobalSoundVolume(0.0f, 0.5f);
+        StopAmbience(0.5f);
+        delay = 10.0f;
+    }
+    else if(stage == 9)
+    {
+        PlaySoundAtEntity("react_scare.snt");
+        FadeIn(0.1f);
+        FadeGlobalSoundVolume(1.0f, 0.1f);
+        StartAmbience("03_rock_amb.snt", 0.5f);
+        FadeRadialBlurTo(0.01f, 1.0f);
+        SetPlayerMoveSpeedMul(0.75f);
+        SetPlayerRunSpeedMul(1.0f);
+        delay = 0.5f;
+    }
+    else if(stage == 10)
+    {
+        PlayMusic("00_event_hallway.ogg", false, 1.0f, 0.0f, 1, false);
+        delay = 4.0f;
+    }
+    else if(stage == 11)
+    {
+        PlaySoundAtEntity("react_sigh.snt");
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 2.0f, 0.5f);
+        FadePlayerRollTo(0.0f, 40.0f, 60.0f);
+        SetPlayerCrouching(true);
+        delay = 1.5f;
+    }
+    else if(stage == 12)
+    {
+        StopPlayerLookAt();
+        SetPlayerActive(true);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "LibraryCrashTimer");
+}
+
+void RecoverFall(string a, string b, int state)
+{
+    //FadeRadialBlurTo(0.0f, 1.0f);
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPlayerRunSpeedMul(1.0f);
+    SetEntityActive("PonrBlockBox", true);
+    CloseSlidingDoorsTimer("");
+}
+
+void CloseSlidingDoorsTimer(string t)
+{
+    AddLocalVarInt("CloseSlidingDoorsTimer", 1);
+    int stage = GetLocalVarInt("CloseSlidingDoorsTimer");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        SetMoveObjectState("SlideDoor_1", 0.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 2)
+    {
+        SetMoveObjectState("SlideDoor_2", 0.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 3)
+    {
+        SetMoveObjectState("SlideDoor_3", 0.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 4)
+    {
+        SetMoveObjectState("SlideDoor_4", 0.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 5)
+    {
+        SetMoveObjectState("SlideDoor_5", 0.0f);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "CloseSlidingDoorsTimer");
+}
+
+// ----------------------------------------------------------------------------
+// Thight Corridor Door Event
+// ----------------------------------------------------------------------------
+void OpenSlidingDoorAreaTriggered(string a, string b, int state)
+{
+    TightCorridorDoorsTimer("");
+}
+
+const float slideDoorOpenDelay = 0.6f;
+
+void TightCorridorDoorsTimer(string t)
+{
+    AddLocalVarInt("TightCorridorDoorsTimer", 1);
+    int stage = GetLocalVarInt("TightCorridorDoorsTimer");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        SetMoveObjectState("SlideDoor_1", 1.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 2)
+    {
+        SetMoveObjectState("SlideDoor_2", 1.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 3)
+    {
+        SetMoveObjectState("SlideDoor_3", 1.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 4)
+    {
+        SetMoveObjectState("SlideDoor_4", 1.0f);
+        delay = slideDoorOpenDelay;
+    }
+    else if(stage == 5)
+    {
+        SetMoveObjectState("SlideDoor_5", 1.0f);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "TightCorridorDoorsTimer");
+}
+
+// Glenn Comment: All meditation stuff can go away in this level, not needed anymore.
+
+// ----------------------------------------------------------------------------
+// Example Meditation
+// ----------------------------------------------------------------------------
+void InitializeExampleMeditation()
+{
+    AddUseItemCallback("", "SOTR_Clearsight_1", "MeditationArea", "Meditate", true);
+}
+
+void Meditate(string item, string entity)
+{
+    // focus area and midst meditation function
+    StartMeditation(entity, "DummyMeditation");
+}
+
+void DummyMeditation(string t)
+{
+    // call EndMeditation once my meditation is done
+    AddTimer("", 3.0f, "EndMeditation");
+}
+
+// Glenn Comment: I'd suggest we get rid of the baby crying sound. It'll be used in the last level, instead.
+
+// ----------------------------------------------------------------------------
+// Random Ambient Sounds
+// ----------------------------------------------------------------------------
+void AmbienceLoop(string t)
+{
+    if(GetLocalVarInt("StopAmbience") == 1) return;
+
+    string sound = ambSounds[RandInt(0, ambSounds.length() - 1)];
+    string area = "AmbSoundArea_" + RandInt(0, soundAreaCount);
+
+    PlaySoundAtEntity("", sound, area, 0.0f, false);
+
+    AddTimer("", RandFloat(10.0f, 30.0f), "AmbienceLoop");
+}
+
+void StopAmbientSounds(string t)
+{
+    SetLocalVarInt("StopAmbience", 1);
+}
+
+void ContinueAmbientSounds(string t)
+{
+    SetLocalVarInt("StopAmbience", 0);
+    AddTimer("", RandFloat(2.0f, 7.0f), "AmbienceLoop");
+}
+
+// ----------------------------------------------------------------------------
+// Unlocking Library Door
+// ----------------------------------------------------------------------------
+void UnlockLibraryDoor(string item, string entity)
+{
+    RemoveItem(item);
+    SetSwingDoorLocked(
+        entity, /* Entity */
+        false,  /* Locked */
+        true    /* Use Effects */
+    );
+
+    PlaySoundAtEntity("unlock_door.snt", entity);
+}
+
+// ----------------------------------------------------------------------------
+// Lever Sequence
+// ----------------------------------------------------------------------------
+void OnSecretLeverPulled(string entity, int state)
+{
+    if(state == 0) return;
+    SetLeverStuckState(entity, state, true);
+    SetMoveObjectState("SecretShelf", -1.0f);
+    AddEffectVoice("BA_Johan_8.ogg", "", "JohanNarration", "21", false, "player", 0.0f, 10.0f);
+}
+
+// ----------------------------------------------------------------------------
+// Main Gate Interaction
+// ----------------------------------------------------------------------------
+void OnQuestDoorInteract(string entity)
+{
+    PlaySoundAtEntity("door_level_wood_locked.snt");
+}
+
+// ----------------------------------------------------------------------------
+// Door Messages
+// ----------------------------------------------------------------------------
+void OnDoorInteract(string entity)
+{
+    OnDoorInteractMessage(entity);
+}
+
+void DisplaySeededDoorMessage(string entryBase, int min, int max)
+{
+    int seed = RandInt(min, max);
+    SetMessage("DoorMessages", entryBase + seed, 0.0f);
+}
+
+void OnDoorInteractMessage(string entity)
+{
+    bool locked = GetSwingDoorLocked(entity);
+
+    if(locked && entity == "LibraryDoor" && HasItem("LibraryKey"))
+    {
+        SetMessage("DoorMessages", "HasKey", 0.0f);
+    }
+    else if(locked && StringIsInArray(entity, gUnlockableDoors))
+    {
+        DisplaySeededDoorMessage("Generic_Locked_", 1, 3);
+    }
+    else if(locked)
+    {
+        DisplaySeededDoorMessage("Generic_", 1, 3);
+    }
+}
+
+// Glenn Comment: Meditation can all go away in this level.
+
+// ----------------------------------------------------------------------------
+// MEDITATION
+// ----------------------------------------------------------------------------
+void StartMeditation(string focusArea, string callback)
+{
+    PlayJohanLine("9", "21", "");
+    SetLocalVarString("MeditationCallback", callback);
+    AddDebugMessage("Meditation triggered", false);
+    StartPlayerLookAt(focusArea, 1.0f, 1.5f, "");
+    SetPlayerActive(false);
+    SetInventoryDisabled(true);
+    AddTimer("", 2.0f, "MeditationTimer");
+}
+
+void MeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationStage", 1);
+    int stage = GetLocalVarInt("MeditationStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        SetPlayerCrouching(true);
+        delay = 4.0f;
+    }
+    else if(stage == 2)
+    {
+        MovePlayerHeadPos(0.0f, -0.2f, 0.0f, 1.0f, 0.5f);
+        delay = 5.0f;
+    }
+    else if(stage == 3)
+    {
+        FadeOut(2.0f);
+        PlaySoundAtEntity("react_breath_slow.snt");
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        FadeSepiaColorTo(0.9f, 2.0f);
+        FadeIn(1.5f);
+        StartEffectFlash(0.5f, 3.5f, 1.0f);
+        PlaySoundAtEntity("flashback_flash.snt");
+        delay = 5.5f;
+    }
+    else if(stage == 5)
+    {
+        string callback = GetLocalVarString("MeditationCallback");
+        AddTimer("", 0.0f, callback);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "MeditationTimer");
+}
+
+void EndMeditation(string t)
+{
+    SetLocalVarString("MeditationCallback", "");
+    SetLocalVarInt("MeditationEndStage", 0);
+    EndMeditationTimer("");
+}
+
+void EndMeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationEndStage", 1);
+    int stage = GetLocalVarInt("MeditationEndStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        FadeOut(1.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 2)
+    {
+        FadeSepiaColorTo(0.0f, 2.0f);
+        FadeIn(2.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 3)
+    {
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 1.0f, 0.5f);
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        StopPlayerLookAt();
+        SetPlayerCrouching(false);
+        SetInventoryDisabled(false);
+        SetPlayerActive(true);
+        ChangeMap("SOTR_03_overlook.map", "PlayerStartArea_1", "", "");
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "EndMeditationTimer");
+}
+
+// Glenn Comment: All of this is hacked in, my bad yo.
+
+// ----------------------------------------------------------------------------
+// Voice Lines
+// ----------------------------------------------------------------------------
+void InitializeVoiceLines()
+{
+    AddEntityCollideCallback("Player", "BAJohanVoice_1", "BAJohanLineThree", true, 1);
+    AddEntityCollideCallback("Player", "BAJohanVoice_5", "BAJohanLineFive", true, 1);
+    AddEntityCollideCallback("Player", "BAEndingVoice", "JohanLineTwo", true, 1);
+    AddEntityCollideCallback("Player", "LibraryVoiceArea", "JohanLineOne", true, 1);
+}
+
+void BAJohanLineThree(string &in asParent, string &in asChild, int alState)
+{
+    PlayJohanLine("3", "14", "");
+}
+
+void BAJohanLineFour(string &in entity)
+{
+    PlayJohanLine("4", "15", "");
+}
+
+void BAJohanLineFive(string &in asParent, string &in asChild, int alState)
+{
+    PlayJohanLine("5", "16", "");
+}
+
+void PlayJohanLine(string soundNumber, string lineNumber, string callback)
+{
+    AddEffectVoice(
+            "BA_Johan_" + soundNumber + ".ogg",  /* Voice File */
+            "",                                  /* Effect File */
+            "JohanNarration",                    /* Text category */
+            lineNumber,                          /* Text entry */
+            false,        /* Use position */
+            "Player",     /* Position entity */
+            0.0f,         /* Minimum hearing distance */
+            10.0f         /* Maximum hearing distance */
+        );
+    if (callback != "") SetEffectVoiceOverCallback(callback);
+}
+
+void JohanLineOne(string &in asParent, string &in asChild, int alState)
+{
+    AddEffectVoice("BA_Johan_6.ogg", "", "JohanNarration", "17", false, "player", 0.0f, 10.0f);
+}
+
+void JohanLineTwo(string &in asParent, string &in asChild, int alState)
+{
+    AddEffectVoice("BA_Johan_9.ogg", "", "JohanNarration", "22", false, "player", 0.0f, 10.0f);
+}

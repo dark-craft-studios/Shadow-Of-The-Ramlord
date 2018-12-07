@@ -1,0 +1,11 @@
+<Material>
+    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Rock" Type="SolidDiffuse" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="" AnimMode="" File="cellarbase.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+    <NMap File="cellarbase_nrm.dds" Type="2D" Mipmaps="true" Wrap="Repeat" />
+    <Alpha File="" Type="2D" Mipmaps="true" Wrap="Repeat" />
+    <Specular File="cellarbase_spec.dds" Type="2D" Mipmaps="true" Wrap="Repeat" />
+    <Height File="cellarbase_height.tga" Type="2D" Mipmaps="true" Wrap="Repeat" />
+
+    </TextureUnits>
+</Material>

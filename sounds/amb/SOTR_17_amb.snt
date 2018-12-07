@@ -1,0 +1,8 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="17_amb" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.3" MinDistance="1" MaxDistance="20" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="True" Use3D="False" Blockable="False" BlockVolumeMul="0.6" Priority="0" />
+</SOUNDENTITY>

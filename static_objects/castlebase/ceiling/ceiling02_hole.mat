@@ -1,0 +1,7 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.100000" PhysicsMaterial="Default" Type="SolidDiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/ceiling/ceiling02_hole.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Illumination AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/ceiling/ceiling02_hole.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

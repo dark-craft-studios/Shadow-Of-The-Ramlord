@@ -1,0 +1,8 @@
+<Material>
+    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Rock" Type="SolidDiffuse" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="" AnimMode="" File="castlebase_pillars.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="" AnimMode="" File="castlebase_pillars_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+<Specular AnimFrameTime="" AnimMode="" File="castlebase_pillars_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

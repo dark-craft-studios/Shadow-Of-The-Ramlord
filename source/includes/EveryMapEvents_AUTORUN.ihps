@@ -1,0 +1,36 @@
+#include "AmnesiaSignatures.cpp"
+
+void OnEnter()
+{
+    ResetPlayerState();    
+}
+
+void OnStart()
+{
+    // NOTE(Spelos): When changing a map through
+    // the debug menu, OnEnter does not trigger
+    // this is to make sure the reset happens
+    // in debug mode.
+    if(ScriptDebugOn())
+    {
+        ResetPlayerState();    
+    }
+}
+
+void OnLeave()
+{
+    DestroyDataCache();
+}
+
+// ============================================================================
+// Makes sure to run a common player reset when entering any map.
+// ============================================================================
+void ResetPlayerState()
+{
+    SetPlayerMoveSpeedMul(1.0f);
+    SetPlayerRunSpeedMul(1.0f);
+    SetPlayerJumpDisabled(false);
+    SetInDarknessEffectsActive(false);
+    SetSanityDrainDisabled(true);
+    AddDebugMessage("Triggered ResetPlayerState", false);
+}

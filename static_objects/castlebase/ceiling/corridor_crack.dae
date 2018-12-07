@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.160</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C:/penumbra/lux/redist/_temp/jens/ceiling_crack.blend</source_data>
+		</contributor>
+		<created>2009-05-04T14:32:52.281000</created>
+		<modified>2009-05-04T14:32:52.281000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="lambert1-fx" name="lambert1-fx">
+			<profile_COMMON>
+				<newparam sid="castlebase_ceiling_dd">
+					<surface type="2D">
+						<init_from>castlebase_ceiling_dd-img</init_from>
+						<format>A8R8G8B8</format>
+					</surface>
+				</newparam>
+				<newparam sid="castlebase_ceiling_dd-sampler">
+					<sampler2D>
+						<source>castlebase_ceiling_dd</source>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="blender">
+					<lambert>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.20000 0.20000 0.20000 1</color>
+						</ambient>
+						<diffuse>
+							<texture texcoord="CHANNEL1" texture="castlebase_ceiling_dd-sampler"/>
+						</diffuse>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="lambert8-fx" name="lambert8-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.80000 0.80000 0.80000 1</color>
+						</diffuse>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_images>
+		<image id="castlebase_ceiling_dd-img" name="castlebase_ceiling_dd-img">
+			<init_from>..\castlebase_ceiling.dds</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="lambert1" name="lambert1">
+			<instance_effect url="#lambert1-fx"/>
+		</material>
+		<material id="lambert8" name="lambert8">
+			<instance_effect url="#lambert8-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="polySurfaceShape144" name="polySurfaceShape144">
+			<mesh>
+				<source id="polySurfaceShape144-Position">
+					<float_array count="114" id="polySurfaceShape144-Position-array">1.50000 0.65000 -0.07186 1.50000 1.00000 -0.07186 1.50000 0.65000 0.00000 1.50000 1.00000 0.00000 -1.50000 1.00000 0.00000 1.50000 -1.00000 0.00000 -1.50000 1.00000 -0.07186 -1.50000 0.65000 -0.07186 -1.50000 0.65000 0.00000 -1.50000 -1.00000 0.00000 0.00000 -0.17500 0.00000 0.00000 -1.00000 0.00000 -1.50000 -0.17500 0.00000 0.00000 0.65000 0.00000 -0.75000 0.23750 0.00000 0.75000 0.23750 0.00000 -0.75000 -0.17500 0.00000 -0.37500 0.03125 0.00000 -1.12500 0.03125 0.00000 0.75000 0.65000 0.00000 1.12500 0.44375 0.00000 0.37500 0.44375 0.00000 -1.12500 -0.17500 0.00000 -1.31250 -0.07188 0.00000 -0.93750 -0.07188 0.00000 -0.37500 -0.17500 0.00000 -0.18750 -0.07188 0.00000 -0.56250 -0.07188 0.00000 -0.93750 -0.07188 2.00000 -0.56250 -0.07188 2.00000 0.75000 0.23750 2.00000 -0.18750 -0.07188 2.00000 -0.37500 -0.17500 2.00000 -0.37500 0.03125 2.00000 -0.75000 -0.17500 2.00000 -1.31250 -0.07188 2.00000 -1.50000 -0.17500 2.00000 -1.12500 -0.17500 2.00000</float_array>
+					<technique_common>
+						<accessor count="38" source="#polySurfaceShape144-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polySurfaceShape144-Normals">
+					<float_array count="156" id="polySurfaceShape144-Normals-array">0.00000 1.00000 0.00000 -0.00000 1.00000 0.00000 0.00000 0.00000 -1.00000 -0.00000 -0.00000 -1.00000 -0.00000 -1.00000 -0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -1.00000 0.00000 -0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.00000 0.00000 -1.00000 -0.00000 -0.00000 -1.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 0.00000 -1.00000 -0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.00000 -0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -1.00000 -0.00000 -0.31338 0.94963 0.00000 -0.48192 0.87622 0.00000 0.48192 -0.87622 0.00000 0.00000 1.00000 0.00000 0.00000 -1.00000 -0.00000 0.48192 -0.87622 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.18033 -0.98361 0.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.00000 -1.00000</float_array>
+					<technique_common>
+						<accessor count="52" source="#polySurfaceShape144-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="polySurfaceShape144-UV">
+					<float_array count="372" id="polySurfaceShape144-UV-array">0.20000 1.00000 0.17086 1.00000 0.17086 0.00000 0.20000 1.00000 0.17086 0.00000 0.20000 0.00000 0.02936 1.00000 0.02936 0.00000 0.17086 0.00000 0.02936 1.00000 0.17086 0.00000 0.17086 1.00000 0.02936 0.00000 0.02936 1.00000 0.00031 1.00000 0.60000 0.50000 0.20000 1.00000 0.20000 0.50000 0.60000 0.00000 0.20000 0.50000 0.20000 0.00000 0.00031 0.50000 0.00031 0.00000 0.02936 0.00000 0.60000 0.50000 0.80000 0.75000 0.20000 1.00000 1.00000 0.50000 0.80000 0.25000 1.00000 0.00000 0.80000 0.25000 0.70000 0.12500 1.00000 0.00000 0.70000 0.12500 0.80000 0.25000 0.70000 0.37500 0.70000 0.37500 0.80000 0.25000 0.80000 0.75000 0.00031 1.00000 0.00031 0.75000 0.02936 0.00000 0.00031 0.75000 0.00031 0.50000 0.02936 0.00000 0.80000 0.75000 0.90000 0.87500 0.20000 1.00000 0.90000 0.87500 1.00000 1.00000 0.20000 1.00000 1.00000 0.50000 0.90000 0.62500 0.80000 0.25000 0.90000 0.62500 0.80000 0.75000 0.80000 0.25000 1.00000 0.75000 1.00000 1.00000 0.90000 0.87500 0.90000 0.87500 0.90000 0.62500 1.00000 0.75000 1.00000 0.50000 1.00000 0.75000 0.90000 0.62500 0.90000 0.62500 0.90000 0.87500 0.80000 0.75000 0.60000 0.00000 0.60000 0.12500 0.20000 0.50000 0.60000 0.12500 0.60000 0.25000 0.20000 0.50000 0.70000 0.12500 0.65000 0.06250 1.00000 0.00000 0.65000 0.06250 0.60000 0.00000 1.00000 0.00000 0.65000 0.18750 0.70000 0.12500 0.70000 0.37500 0.65000 0.18750 0.65000 0.06250 0.70000 0.12500 0.60000 0.25000 0.60000 0.37500 0.20000 0.50000 0.60000 0.37500 0.60000 0.50000 0.20000 0.50000 0.60000 0.50000 0.60000 0.37500 0.65000 0.43750 0.60000 0.50000 0.65000 0.43750 0.80000 0.75000 0.70000 0.37500 0.65000 0.31250 0.65000 0.18750 0.68394 0.14068 0.58285 0.14068 0.58285 0.57735 0.58285 0.57735 0.68394 0.57735 0.68394 0.14068 0.58121 0.79651 0.58121 0.57900 0.17193 0.57900 0.17193 0.57900 0.17193 0.79651 0.58121 0.79651 0.94077 0.14068 0.89105 0.14068 0.89105 0.57735 0.89105 0.57735 0.94077 0.57735 0.94077 0.14068 0.58121 0.96089 0.58121 0.90774 0.17193 0.90774 0.17193 0.90774 0.17193 0.96089 0.58121 0.96089 0.88940 0.14068 0.78832 0.14068 0.78832 0.57735 0.78832 0.57735 0.88940 0.57735 0.88940 0.14068 0.58121 0.90610 0.58121 0.79816 0.17193 0.79816 0.17193 0.79816 0.17193 0.90610 0.58121 0.90610 0.99214 0.14068 0.94242 0.14068 0.94242 0.57735 0.94242 0.57735 0.99214 0.57735 0.99214 0.14068 0.99214 0.68693 0.99214 0.57900 0.58285 0.57900 0.58285 0.57900 0.58285 0.68693 0.99214 0.68693 0.78667 0.14068 0.68559 0.14068 0.68559 0.57735 0.68559 0.57735 0.78667 0.57735 0.78667 0.14068 0.58121 0.14068 0.17193 0.14068 0.17193 0.57735 0.17193 0.57735 0.58121 0.57735 0.58121 0.14068 0.73531 0.74419 0.73531 0.79651 0.68641 0.79651 0.78667 0.74172 0.78667 0.68940 0.58368 0.74172 0.68394 0.74419 0.63504 0.79651 0.68394 0.79651 0.63257 0.74419 0.58368 0.79651 0.63257 0.79651 0.78585 0.68858 0.58285 0.74090 0.58285 0.68858 0.58285 0.79569 0.63175 0.74337 0.58285 0.74337 0.63422 0.79569 0.68312 0.74337 0.63422 0.74337 0.68559 0.79569 0.73448 0.74337 0.68559 0.74337</float_array>
+					<technique_common>
+						<accessor count="186" source="#polySurfaceShape144-UV-array" stride="2">
+							<param type="float" name="S"></param>
+							<param type="float" name="T"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="polySurfaceShape144-Vertex">
+					<input semantic="POSITION" source="#polySurfaceShape144-Position"/>
+				</vertices>
+				<triangles count="62" material="lambert8">
+					<input offset="0" semantic="VERTEX" source="#polySurfaceShape144-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#polySurfaceShape144-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#polySurfaceShape144-UV"/>
+					<p>3 0 0 1 0 1 6 0 2 3 1 3 6 1 4 4 1 5 0 2 6 7 2 7 6 2 8 0 3 9 6 3 10 1 3 11 7 4 12 0 4 13 2 4 14 10 5 15 5 5 16 11 5 17 12 6 18 11 6 19 9 6 20 13 7 21 8 7 22 7 7 23 10 8 24 15 8 25 5 8 26 13 9 27 14 9 28 8 9 29 14 10 30 18 10 31 8 10 32 18 11 33 14 11 34 17 11 35 17 12 36 14 12 37 15 12 38 2 13 39 19 13 40 7 13 41 19 14 42 13 14 43 7 14 44 15 15 45 20 15 46 5 15 47 20 16 48 2 16 49 5 16 50 13 17 51 21 17 52 14 17 53 21 18 54 15 18 55 14 18 56 19 19 57 2 19 58 20 19 59 20 20 60 21 20 61 19 20 62 13 21 63 19 21 64 21 21 65 21 22 66 20 22 67 15 22 68 12 23 69 22 23 70 11 23 71 22 24 72 16 24 73 11 24 74 18 25 75 23 25 76 8 25 77 23 26 78 12 26 79 8 26 80 24 27 81 18 27 82 17 27 83 24 28 84 23 28 85 18 28 86 16 29 87 25 29 88 11 29 89 25 30 90 10 30 91 11 30 92 10 31 93 25 31 94 26 31 95 10 32 96 26 32 97 15 32 98 17 33 99 27 33 100 24 33 101 24 34 102 27 34 103 29 34 104 29 34 105 28 34 106 24 34 107 15 35 108 26 35 109 31 35 110 31 35 111 30 35 112 15 35 113 26 36 114 25 36 115 32 36 116 32 36 117 31 36 118 26 36 119 27 37 120 17 37 121 33 37 122 33 37 123 29 37 124 27 37 125 25 38 126 16 38 127 34 38 128 34 38 129 32 38 130 25 38 131 23 39 132 24 39 133 28 39 134 28 39 135 35 39 136 23 39 137 12 40 138 23 40 139 35 40 140 35 40 141 36 40 142 12 40 143 16 41 144 22 41 145 37 41 146 37 41 147 34 41 148 16 41 149 22 42 150 12 42 151 36 42 152 36 42 153 37 42 154 22 42 155 17 43 156 15 43 157 30 43 158 30 43 159 33 43 160 17 43 161 29 44 162 34 44 163 28 44 164 31 45 165 33 45 166 30 45 167 31 46 168 29 46 169 33 46 170 29 47 171 31 47 172 32 47 173 32 48 174 34 48 175 29 48 176 34 49 177 37 49 178 28 49 179 35 50 180 28 50 181 37 50 182 37 51 183 36 51 184 35 51 185</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="corridor" name="corridor">
+			<node layer="L1" id="polySurface131" name="polySurface131">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#polySurfaceShape144">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="lambert1" target="#lambert1">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+							<instance_material symbol="lambert8" target="#lambert8">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#corridor"/>
+	</scene>
+</COLLADA>

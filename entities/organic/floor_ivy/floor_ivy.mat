@@ -1,0 +1,10 @@
+<Material>
+    <Main BlendMode="Alpha" DepthTest="true" PhysicsMaterial="Default" Type="SolidDiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/entities/organic/floor_ivy/floor_ivy.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/entities/organic/floor_ivy/floor_ivy_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Alpha AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/entities/organic/floor_ivy/floor_ivy.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/entities/organic/floor_ivy/floor_ivy_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

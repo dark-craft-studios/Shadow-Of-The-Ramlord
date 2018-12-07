@@ -1,0 +1,17 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Default" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/lux/redist/entities/lamp/bridge_torch/bridge_torch.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/lux/redist/entities/lamp/bridge_torch/bridge_torch_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Alpha AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/lux/redist/entities/lamp/bridge_torch/bridge_torch.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/lux/redist/entities/lamp/bridge_torch/bridge_torch_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <CubeMap AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/textures/envmaps/water_castlebase_cubemap.dds" MipMaps="true" Type="Cube" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.1" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.2" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

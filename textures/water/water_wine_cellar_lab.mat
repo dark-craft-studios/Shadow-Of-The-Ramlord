@@ -1,0 +1,14 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.100000" PhysicsMaterial="Default" Type="water" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="true" File="textures/water/water_wine_cellar_lab.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0.000000" AnimMode="None" Compress="true" File="textures/water/water_castlebase_fountain_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="Reflection" Value="true" />
+        <Var Name="RefractionScale" Value="0.06" />
+        <Var Name="FrenselBias" Value="0.2" />
+        <Var Name="FrenselPow" Value="8.0" />
+    </SpecificVariables>
+</Material>

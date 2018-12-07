@@ -1,0 +1,10 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Rock" Type="SolidDiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/castlebase_wall_square_bricks.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/castlebase_wall_square_bricks_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/castlebase_wall_square_bricks_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Height AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/castlebase_wall_square_bricks_height.tga" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

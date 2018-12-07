@@ -1,0 +1,55 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 1.59286 180.046" CameraTarget="0 1.59286 0.0462849" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 1.59286 0" CameraTarget="0 1.59286 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0.0462849" CameraTarget="0 0 0.0462849" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.226612 2.22782 -2.63444" CameraTarget="-0.29931 1.56629 0.795713" CameraZoom="2.66094" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/ornament/cello/cello.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="Box001" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="-1.309 -0 0" RelativeScale="0.550281 0.404802 0.550281" RelativeTranslation="0 -0.990732 -0.180702" Rotation="-1.309 0 0" Scale="0.550281 0.404802 0.550281" ShapeType="Cylinder" Tag="" WorldPos="0 0.667637 -0.0908668" />
+            <BodyShape Active="true" ID="2" Name="Shape_2" RelativeRotation="-1.309 -0 0" RelativeScale="0.452377 0.404802 0.452377" RelativeTranslation="0 0.00991142 0.0805424" Rotation="-1.309 0 0" Scale="0.452377 0.404802 0.452377" ShapeType="Cylinder" Tag="" WorldPos="0 1.66828 0.170378" />
+            <BodyShape Active="true" ID="4" Name="Shape_3" RelativeRotation="0.261799 -0 0" RelativeScale="0.548097 1 0.349969" RelativeTranslation="0 -0.482729 -0.0707925" Rotation="0.261799 -0 0" Scale="0.548097 1 0.349969" ShapeType="Box" Tag="" WorldPos="0 1.17564 0.0190431" />
+            <BodyShape Active="true" ID="5" Name="Shape_4" RelativeRotation="0.261799 -0 0" RelativeScale="0.0970541 1 0.110846" RelativeTranslation="0 0.990731 0.180702" Rotation="0.261799 -0 0" Scale="0.0970541 1 0.110846" ShapeType="Box" Tag="" WorldPos="0 2.6491 0.270538" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="6" LinearDamping="0" Mass="0" Material="Default" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 1.65837 0.0898356">
+                <Shape ID="5" />
+                <Shape ID="2" />
+                <Shape ID="4" />
+                <Shape ID="1" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Button">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="0.05" />
+        <Var Name="EffectsOnSound" Value="mans_cello_note.snt" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+    </UserDefinedVariables>
+</Entity>

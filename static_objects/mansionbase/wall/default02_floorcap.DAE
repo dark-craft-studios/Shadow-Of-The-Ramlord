@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-06-27T21:43:05Z</created>
+    <keywords></keywords>
+    <modified>2012-06-27T21:43:05Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #3-image" name="Map #3">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\mansionbase\wall\mansionbase02.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_01 - Default" name="_01 - Default">
+      <instance_effect url="#_01 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01 - Default-fx" name="_01 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #3-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="default004-lib" name="default004Mesh">
+      <mesh>
+        <source id="default004-POSITION">
+          <float_array id="default004-POSITION-array" count="54">
+-2.000000 0.084582 -0.368734
+-2.000000 0.084726 -0.217948
+2.000000 0.084726 -0.217948
+2.000000 0.084582 -0.368734
+2.000000 -0.023204 -0.368734
+-2.000000 -0.023204 -0.368734
+-2.000000 -0.234043 -0.101322
+2.000000 -0.234043 -0.101322
+2.000000 -0.234043 -0.049821
+-2.000000 -0.234043 -0.049821
+-2.000000 -0.200369 -0.156399
+2.000000 -0.200369 -0.156399
+-2.000000 -0.039825 -0.252288
+2.000000 -0.039825 -0.252288
+2.000000 -0.102930 -0.170039
+-2.000000 -0.102930 -0.170039
+2.000000 -0.208059 -0.000076
+-2.000000 -0.208059 -0.000076
+</float_array>
+          <technique_common>
+            <accessor source="#default004-POSITION-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="default004-Normal0">
+          <float_array id="default004-Normal0-array" count="144">
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -0.922469 -0.386071
+0.000000 -0.922529 0.385928
+0.000000 -0.922529 0.385928
+0.000000 -0.922529 0.385928
+0.000000 -0.922469 -0.386071
+0.000000 -0.922469 -0.386071
+0.000000 -0.442659 -0.896690
+0.000000 -0.922469 -0.386071
+0.000000 -0.922469 -0.386071
+0.000000 -0.922469 -0.386071
+0.000000 -0.442659 -0.896690
+0.000000 -0.442659 -0.896690
+0.000000 -0.846170 -0.532913
+0.000000 -0.428018 -0.903770
+0.000000 -0.428018 -0.903770
+0.000000 -0.428018 -0.903770
+0.000000 -0.846170 -0.532913
+0.000000 -0.846170 -0.532913
+0.000000 -0.922529 0.385928
+0.000000 -0.379452 0.925211
+0.000000 -0.379452 0.925211
+0.000000 -0.379452 0.925211
+0.000000 -0.922529 0.385928
+0.000000 -0.922529 0.385928
+0.000000 -0.955690 -0.294375
+0.000000 -0.846170 -0.532913
+0.000000 -0.846170 -0.532913
+0.000000 -0.846170 -0.532913
+0.000000 -0.955690 -0.294375
+0.000000 -0.955690 -0.294375
+0.000000 -0.428018 -0.903770
+0.000000 -0.442659 -0.896690
+0.000000 -0.442659 -0.896690
+0.000000 -0.442659 -0.896690
+0.000000 -0.428018 -0.903770
+0.000000 -0.428018 -0.903770
+</float_array>
+          <technique_common>
+            <accessor source="#default004-Normal0-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="default004-UV0">
+          <float_array id="default004-UV0-array" count="44">
+0.516085 0.381575
+0.508653 0.048375
+0.514011 0.048375
+0.516085 0.048375
+0.444486 0.426361
+0.003817 0.426361
+0.003817 0.459466
+0.444486 0.459466
+0.444486 0.463316
+0.003817 0.463316
+0.003817 0.452895
+0.444486 0.452895
+0.003817 0.432585
+0.444486 0.432585
+0.444486 0.442052
+0.003817 0.442052
+0.444486 0.467445
+0.003817 0.467445
+0.514011 0.381575
+0.508653 0.381575
+0.525063 0.048375
+0.525063 0.381575
+</float_array>
+          <technique_common>
+            <accessor source="#default004-UV0-array" count="22" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="default004-VERTEX">
+          <input semantic="POSITION" source="#default004-POSITION"/>
+        </vertices>
+        <triangles count="16" material="_01 - Default">
+          <input semantic="VERTEX" offset="0" source="#default004-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#default004-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#default004-UV0"/>
+          <p> 1 0 2 2 1 18 3 2 19 3 3 19 0 4 1 1 5 2 3 6 3 4 7 20 5 8 21 5 9 21 0 10 0 3 11 3 7 12 7 8 13 8 9 14 9 9 15 9 6 16 6 7 17 7 11 18 11 7 19 7 6 20 6 6 21 6 10 22 10 11 23 11 13 24 13 14 25 14 15 26 15 15 27 15 12 28 12 13 29 13 8 30 8 16 31 16 17 32 17 17 33 17 9 34 9 8 35 8 4 36 4 13 37 13 12 38 12 12 39 12 5 40 5 4 41 4 14 42 14 11 43 11 10 44 10 10 45 10 15 46 15 14 47 14</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="default004" id="default004" layer="default02_floorcap" sid="default004">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#default004-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_01 - Default" target="#_01 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

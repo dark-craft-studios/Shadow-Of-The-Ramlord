@@ -1,0 +1,67 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0.211553 179.972" CameraTarget="0 0.211553 -0.0284735" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="179.993 0.211553 0" CameraTarget="-0.0072505 0.211553 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.0072505 180 -0.0284735" CameraTarget="-0.0072505 0 -0.0284735" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.883158 1.18873 -0.603652" CameraTarget="-0.130307 0.496498 -0.0267939" CameraZoom="3.75144" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <PointLight Active="true" CastShadows="false" DiffuseColor="0.966 0.603 0.293 0" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="2" Name="PointLight_1" Radius="1.5" Rotation="0 -0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0 0.342372 0" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_torch_fire_nosmoke.ps" ID="3" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="0 0.166762 0" />
+            <PointLight Active="true" CastShadows="false" DiffuseColor="0.966 0.603 0.293 0" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="0.879 0.621 0.293 0" FlickerOffFadeMaxLength="0.2" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="1.5" FlickerOffSound="" FlickerOnFadeMaxLength="0.05" FlickerOnFadeMinLength="0.01" FlickerOnMaxLength="0.05" FlickerOnMinLength="0.01" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="4" Name="PointLight_2" Radius="2" Rotation="0 -0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0 0.52935 0.585995" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="0.8 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.4 0.6 0.3" ID="5" IsHalo="true" MaterialFile="halo_torch.mat" Name="Billboard_1" Rotation="0 -0 0" Tag="" WorldPos="0 0.25974 0" />
+            <Sound Active="true" ID="6" MaxDistance="8" MinDistance="4" Name="Sound_1" Rotation="0 -0 0" Scale="1 1 1" SoundEntityFile="spraylock_fire_loop_2.snt" Tag="" UseDefault="false" Volume="0.5" WorldPos="0 0.40118 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/bonfire/bonfire.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="bonfire_mesh" Rotation="0 0 0" Scale="0.75 0.75 0.75" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="7" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="0.4 0.1 0.4" RelativeTranslation="0 0 0" Rotation="0 -0 0" Scale="0.4 0.1 0.4" ShapeType="Box" Tag="" WorldPos="0 0.0471959 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="8" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.0471959 0">
+                <Children>
+                    <Child ID="0" />
+                    <Child ID="2" />
+                    <Child ID="3" />
+                    <Child ID="4" />
+                    <Child ID="5" />
+                    <Child ID="6" />
+                </Children>
+                <Shape ID="7" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="true" />
+        <Var Name="CanBeGrabbed" Value="false" />
+        <Var Name="CanBeTurnedOff" Value="false" />
+        <Var Name="NeedsTinderbox" Value="false" />
+    </UserDefinedVariables>
+</Entity>

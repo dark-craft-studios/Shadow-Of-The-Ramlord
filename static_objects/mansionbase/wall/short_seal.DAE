@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-06-15T15:44:09Z</created>
+    <keywords></keywords>
+    <modified>2012-06-15T15:44:09Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #1-image" name="Map #1">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\mansionbase\wall\mansionbase.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_01 - Default" name="_01 - Default">
+      <instance_effect url="#_01 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01 - Default-fx" name="_01 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mansionbase_default003-lib" name="mansionbase_default003Mesh">
+      <mesh>
+        <source id="mansionbase_default003-POSITION">
+          <float_array id="mansionbase_default003-POSITION-array" count="24">
+0.999998 -0.201120 4.000000
+-1.000016 -0.201120 4.000000
+0.999998 -0.201120 4.324664
+-1.000016 -0.201120 4.324664
+0.999998 0.003584 4.324664
+-1.000016 0.003584 4.324664
+0.999998 0.002816 4.000000
+-1.000016 0.002816 4.000000
+</float_array>
+          <technique_common>
+            <accessor source="#mansionbase_default003-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mansionbase_default003-Normal0">
+          <float_array id="mansionbase_default003-Normal0-array" count="54">
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#mansionbase_default003-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mansionbase_default003-UV0">
+          <float_array id="mansionbase_default003-UV0-array" count="24">
+0.680599 0.454130
+0.419260 0.454130
+0.678299 0.454461
+0.424298 0.454461
+0.424298 0.408791
+0.678299 0.408791
+0.419260 0.409137
+0.680599 0.409137
+0.423962 0.408504
+0.687262 0.408504
+0.687262 0.453766
+0.423962 0.453766
+</float_array>
+          <technique_common>
+            <accessor source="#mansionbase_default003-UV0-array" count="12" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mansionbase_default003-VERTEX">
+          <input semantic="POSITION" source="#mansionbase_default003-POSITION"/>
+        </vertices>
+        <triangles count="6" material="_01 - Default">
+          <input semantic="VERTEX" offset="0" source="#mansionbase_default003-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#mansionbase_default003-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#mansionbase_default003-UV0"/>
+          <p> 2 0 6 3 1 7 1 2 0 2 3 6 1 4 0 0 5 1 4 6 4 5 7 5 3 8 2 4 9 4 3 10 2 2 11 3 1 12 9 6 13 11 0 14 8 6 15 11 1 16 9 7 17 10</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="mansionbase_default003" id="mansionbase_default003" layer="short_seal" sid="mansionbase_default003">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#mansionbase_default003-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_01 - Default" target="#_01 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

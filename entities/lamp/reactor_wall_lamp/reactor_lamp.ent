@@ -1,0 +1,102 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0.000871494 180" CameraTarget="0 0.000871494 -0.000280991" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180.254 0.000871494 0" CameraTarget="0.253583 0.000871494 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0.253583 180 -0.000280991" CameraTarget="0.253583 0 -0.000280991" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="3.3302 2.58121 4.09823" CameraTarget="2.52175 -1.36542 -0.512548" CameraZoom="2.1" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <PointLight Active="true" CastShadows="false" DiffuseColor="0.223 0.275 0.328 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="1" Name="PointLight_1" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="1.92673 0 0" />
+            <SpotLight Active="true" Aspect="1" CastShadows="false" DiffuseColor="0.707 0.776 1 1" FOV="0.261799" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="2" Name="SpotLight_1" NearClipPlane="0.1" Radius="15" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="0.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="14" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_10" Rotation="0 0 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="15" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_11" Rotation="0 -0.261799 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="16" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_12" Rotation="0 -0.523599 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="17" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_13" Rotation="0 -0.785398 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="18" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_14" Rotation="0 -1.0472 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="19" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_15" Rotation="0 -1.309 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="20" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_16" Rotation="0 -1.5708 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="21" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_17" Rotation="3.14159 -1.309 1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="22" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_18" Rotation="-3.14159 -1.0472 1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.95039 10.45" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="23" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_19" Rotation="0 0.523599 -1.5708" Tag="" WorldPos="4.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="24" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_20" Rotation="0.261799 0 -1.5708" Tag="" WorldPos="2 0 0.75" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="25" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_21" Rotation="-0.261799 0 -1.5708" Tag="" WorldPos="2 0 -0.75" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="26" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_22" Rotation="2.87979 1.5708 1.57079" Tag="" WorldPos="2 0.75 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="27" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_23" Rotation="0.261799 1.5708 -1.5708" Tag="" WorldPos="2 -0.75 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="28" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_24" Rotation="0.253262 0.751879 -1.47038" Tag="" WorldPos="2 -0.5 0.5" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="29" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_25" Rotation="-0.261799 -0.785398 -1.5708" Tag="" WorldPos="2 -0.5 -0.5" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="30" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_26" Rotation="2.87126 0.751879 1.67121" Tag="" WorldPos="2 0.5 0.5" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 3.75" BillboardType="FixedAxis" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="31" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_lightblue_lightray.mat" Name="Billboard_27" Rotation="-0.270337 0.751879 -1.47038" Tag="" WorldPos="2 0.5 -0.5" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="3.75 4.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="1 0.3 0.3" ID="33" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_white_halo.mat" Name="Billboard_1" Rotation="0 -0 0" Tag="" WorldPos="0.75 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="3.75 4.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="1 0.3 0.3" ID="34" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_white_halo.mat" Name="Billboard_2" Rotation="0 -0 0" Tag="" WorldPos="0.5 0 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="3.75 4.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="1 0.3 0.3" ID="35" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_white_halo.mat" Name="Billboard_3" Rotation="0 -0 0" Tag="" WorldPos="1 0 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/reactor_wall_lamp/reactor_lamp.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="lamp" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="36" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="0.25 0.75 0.75" RelativeTranslation="0 0 0" Rotation="0 -0 0" Scale="0.25 0.75 0.75" ShapeType="Box" Tag="" WorldPos="0.25 0 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="37" LinearDamping="0" Mass="0" Material="Default" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.25 0 0">
+                <Children>
+                    <Child ID="2" />
+                    <Child ID="33" />
+                    <Child ID="35" />
+                    <Child ID="27" />
+                    <Child ID="28" />
+                    <Child ID="24" />
+                    <Child ID="26" />
+                    <Child ID="31" />
+                    <Child ID="25" />
+                    <Child ID="0" />
+                    <Child ID="1" />
+                    <Child ID="29" />
+                    <Child ID="14" />
+                    <Child ID="30" />
+                    <Child ID="22" />
+                    <Child ID="16" />
+                    <Child ID="23" />
+                    <Child ID="15" />
+                    <Child ID="17" />
+                    <Child ID="18" />
+                    <Child ID="19" />
+                    <Child ID="20" />
+                    <Child ID="21" />
+                </Children>
+                <Shape ID="36" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="true" />
+        <Var Name="CanBeGrabbed" Value="false" />
+        <Var Name="CanBeTurnedOff" Value="false" />
+        <Var Name="NeedsTinderbox" Value="false" />
+    </UserDefinedVariables>
+</Entity>

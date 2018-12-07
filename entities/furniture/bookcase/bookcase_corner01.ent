@@ -1,0 +1,94 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0.661589 3.77547 -3.61158" CameraTarget="-0.252092 2.76147 0.00409429" CameraZoom="2.56013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/furniture/bookcase/bookcase_corner01.DAE">
+            <SubMesh Active="true" ID="13" Material="" Name="Box004" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="7" Name="Shape_6" RelativeRotation="0 -0 0" RelativeScale="0.5 4 0.05" RelativeTranslation="0.0772165 -0.226937 0.25416" Rotation="0 -0 0" Scale="0.5 4 0.05" ShapeType="Box" Tag="" WorldPos="-0.017 2 0.356" />
+            <BodyShape Active="true" ID="10" Name="Shape_8" RelativeRotation="2.53518e-006 1.5702 2.53518e-006" RelativeScale="0.5 4 0.05" RelativeTranslation="-0.256784 -0.226937 -0.0788515" Rotation="2.53518e-006 1.5702 2.53518e-006" Scale="0.5 4 0.05" ShapeType="Box" Tag="" WorldPos="-0.351 2 0.0229887" />
+            <BodyShape Active="true" ID="16" Name="Shape_3" RelativeRotation="-3.14159 0.94664 -3.14159" RelativeScale="0.23 1.42 0.45" RelativeTranslation="0.0236675 -1.50917 0.101911" Rotation="-3.14159 0.94664 -3.14159" Scale="0.23 1.42 0.45" ShapeType="Box" Tag="" WorldPos="-0.070549 0.717768 0.203752" />
+            <BodyShape Active="true" ID="17" Name="Shape_4" RelativeRotation="-3.14159 0.63648 -3.14159" RelativeScale="0.23 1.42 0.45" RelativeTranslation="-0.0877835 -1.50917 -0.0145758" Rotation="-3.14159 0.63648 -3.14159" Scale="0.23 1.42 0.45" ShapeType="Box" Tag="" WorldPos="-0.182 0.717768 0.0872644" />
+            <BodyShape Active="true" ID="18" Name="Shape_5" RelativeRotation="-3.14159 0.377429 -3.14159" RelativeScale="0.23 1.42 0.1" RelativeTranslation="-0.169601 -1.50917 -0.25416" Rotation="-3.14159 0.377429 -3.14159" Scale="0.23 1.42 0.1" ShapeType="Box" Tag="" WorldPos="-0.263818 0.717768 -0.152319" />
+            <BodyShape Active="true" ID="19" Name="Shape_7" RelativeRotation="0 -0 0" RelativeScale="0.2 1.42 0.4" RelativeTranslation="-0.178507 -1.50917 -0.0302102" Rotation="0 0 0" Scale="0.2 1.42 0.4" ShapeType="Box" Tag="" WorldPos="-0.272723 0.717768 0.0716301" />
+            <BodyShape Active="true" ID="20" Name="Shape_9" RelativeRotation="-3.14159 1.22642 -3.14159" RelativeScale="0.23 1.42 0.1" RelativeTranslation="0.256784 -1.50917 0.176849" Rotation="-3.14159 1.22642 -3.14159" Scale="0.23 1.42 0.1" ShapeType="Box" Tag="" WorldPos="0.162567 0.717768 0.27869" />
+            <BodyShape Active="true" ID="21" Name="Shape_10" RelativeRotation="8.74228e-008 -1.5708 8.74228e-008" RelativeScale="0.2 1.42 0.4" RelativeTranslation="0.0158321 -1.50917 0.167768" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="0.2 1.42 0.4" ShapeType="Box" Tag="" WorldPos="-0.0783844 0.717768 0.269608" />
+            <BodyShape Active="true" ID="28" Name="Shape_11" RelativeRotation="-3.14159 1.22642 -3.14159" RelativeScale="0.23 0.52 0.1" RelativeTranslation="0.256784 1.50917 0.176849" Rotation="-3.14159 1.22642 -3.14159" Scale="0.23 0.52 0.1" ShapeType="Box" Tag="" WorldPos="0.162567 3.7361 0.27869" />
+            <BodyShape Active="true" ID="29" Name="Shape_12" RelativeRotation="-3.14159 0.94664 -3.14159" RelativeScale="0.23 0.52 0.45" RelativeTranslation="0.0236675 1.50917 0.101911" Rotation="-3.14159 0.94664 -3.14159" Scale="0.23 0.52 0.45" ShapeType="Box" Tag="" WorldPos="-0.070549 3.7361 0.203752" />
+            <BodyShape Active="true" ID="30" Name="Shape_13" RelativeRotation="-3.14159 0.63648 -3.14159" RelativeScale="0.23 0.52 0.45" RelativeTranslation="-0.0877835 1.50917 -0.0145758" Rotation="-3.14159 0.63648 -3.14159" Scale="0.23 0.52 0.45" ShapeType="Box" Tag="" WorldPos="-0.182 3.7361 0.0872644" />
+            <BodyShape Active="true" ID="31" Name="Shape_14" RelativeRotation="-3.14159 0.377429 -3.14159" RelativeScale="0.23 0.52 0.1" RelativeTranslation="-0.169601 1.50917 -0.25416" Rotation="-3.14159 0.377429 -3.14159" Scale="0.23 0.52 0.1" ShapeType="Box" Tag="" WorldPos="-0.263818 3.7361 -0.152319" />
+            <BodyShape Active="true" ID="34" Name="Shape_17" RelativeRotation="8.74228e-008 -1.5708 8.74228e-008" RelativeScale="0.2 0.52 0.4" RelativeTranslation="0.0158321 1.50917 0.167768" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="0.2 0.52 0.4" ShapeType="Box" Tag="" WorldPos="-0.0783844 3.7361 0.269608" />
+            <BodyShape Active="true" ID="35" Name="Shape_18" RelativeRotation="0 -0 0" RelativeScale="0.2 0.52 0.4" RelativeTranslation="-0.178507 1.50917 -0.0302102" Rotation="0 0 0" Scale="0.2 0.52 0.4" ShapeType="Box" Tag="" WorldPos="-0.272723 3.7361 0.0716301" />
+            <BodyShape Active="true" ID="36" Name="Shape_15" RelativeRotation="-3.14159 0.377429 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="-0.169601 0.676504 -0.25416" Rotation="-3.14159 0.377429 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="-0.263818 2.90344 -0.152319" />
+            <BodyShape Active="true" ID="37" Name="Shape_16" RelativeRotation="-3.14159 1.22641 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="0.256784 0.676504 0.176849" Rotation="-3.14159 1.22641 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="0.162567 2.90344 0.27869" />
+            <BodyShape Active="true" ID="38" Name="Shape_19" RelativeRotation="-3.14159 0.63648 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="-0.0877835 0.676504 -0.0145758" Rotation="-3.14159 0.63648 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.182 2.90344 0.0872644" />
+            <BodyShape Active="true" ID="39" Name="Shape_20" RelativeRotation="-3.14159 0.94664 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="0.0236675 0.676504 0.101911" Rotation="-3.14159 0.94664 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.070549 2.90344 0.203752" />
+            <BodyShape Active="true" ID="40" Name="Shape_21" RelativeRotation="0 -0 0" RelativeScale="0.2 0.05 0.4" RelativeTranslation="-0.178507 0.676504 -0.0302102" Rotation="0 0 0" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.272723 2.90344 0.0716301" />
+            <BodyShape Active="true" ID="41" Name="Shape_22" RelativeRotation="8.74228e-008 -1.57045 8.74228e-008" RelativeScale="0.2 0.05 0.4" RelativeTranslation="0.0158321 0.676504 0.167768" Rotation="8.74228e-008 -1.57045 8.74228e-008" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.0783844 2.90344 0.269608" />
+            <BodyShape Active="true" ID="42" Name="Shape_23" RelativeRotation="-3.14159 0.377429 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="-0.169601 0.176601 -0.25416" Rotation="-3.14159 0.377429 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="-0.263818 2.40354 -0.152319" />
+            <BodyShape Active="true" ID="43" Name="Shape_24" RelativeRotation="-3.14159 1.22641 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="0.256784 0.176601 0.176849" Rotation="-3.14159 1.22641 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="0.162567 2.40354 0.27869" />
+            <BodyShape Active="true" ID="44" Name="Shape_25" RelativeRotation="-3.14159 0.63648 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="-0.0877835 0.176601 -0.0145758" Rotation="-3.14159 0.63648 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.182 2.40354 0.0872644" />
+            <BodyShape Active="true" ID="45" Name="Shape_26" RelativeRotation="-3.14159 0.94664 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="0.0236675 0.176601 0.101911" Rotation="-3.14159 0.94664 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.070549 2.40354 0.203752" />
+            <BodyShape Active="true" ID="46" Name="Shape_27" RelativeRotation="0 -0 0" RelativeScale="0.2 0.05 0.4" RelativeTranslation="-0.178507 0.176601 -0.0302102" Rotation="0 0 0" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.272723 2.40354 0.0716301" />
+            <BodyShape Active="true" ID="47" Name="Shape_28" RelativeRotation="8.74228e-008 -1.57045 8.74228e-008" RelativeScale="0.2 0.05 0.4" RelativeTranslation="0.0158321 0.176601 0.167768" Rotation="8.74228e-008 -1.57045 8.74228e-008" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.0783844 2.40354 0.269608" />
+            <BodyShape Active="true" ID="48" Name="Shape_29" RelativeRotation="-3.14159 0.377429 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="-0.169601 -0.323575 -0.25416" Rotation="-3.14159 0.377429 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="-0.263818 1.90336 -0.152319" />
+            <BodyShape Active="true" ID="49" Name="Shape_30" RelativeRotation="-3.14159 1.22641 -3.14159" RelativeScale="0.23 0.05 0.1" RelativeTranslation="0.256784 -0.323575 0.176849" Rotation="-3.14159 1.22641 -3.14159" Scale="0.23 0.05 0.1" ShapeType="Box" Tag="" WorldPos="0.162567 1.90336 0.27869" />
+            <BodyShape Active="true" ID="50" Name="Shape_31" RelativeRotation="-3.14159 0.63648 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="-0.0877835 -0.323575 -0.0145758" Rotation="-3.14159 0.63648 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.182 1.90336 0.0872644" />
+            <BodyShape Active="true" ID="51" Name="Shape_32" RelativeRotation="-3.14159 0.94664 -3.14159" RelativeScale="0.23 0.0499999 0.45" RelativeTranslation="0.0236675 -0.323575 0.101911" Rotation="-3.14159 0.94664 -3.14159" Scale="0.23 0.0499999 0.45" ShapeType="Box" Tag="" WorldPos="-0.070549 1.90336 0.203752" />
+            <BodyShape Active="true" ID="52" Name="Shape_33" RelativeRotation="0 -0 0" RelativeScale="0.2 0.05 0.4" RelativeTranslation="-0.178507 -0.323575 -0.0302102" Rotation="0 0 0" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.272723 1.90336 0.0716301" />
+            <BodyShape Active="true" ID="53" Name="Shape_34" RelativeRotation="8.74228e-008 -1.57045 8.74228e-008" RelativeScale="0.2 0.05 0.4" RelativeTranslation="0.0158321 -0.323575 0.167768" Rotation="8.74228e-008 -1.57045 8.74228e-008" Scale="0.2 0.05 0.4" ShapeType="Box" Tag="" WorldPos="-0.0783844 1.90336 0.269608" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="55" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0942165 2.22694 0.10184">
+                <Children>
+                    <Child ID="13" />
+                </Children>
+                <Shape ID="28" />
+                <Shape ID="31" />
+                <Shape ID="37" />
+                <Shape ID="29" />
+                <Shape ID="30" />
+                <Shape ID="36" />
+                <Shape ID="34" />
+                <Shape ID="35" />
+                <Shape ID="39" />
+                <Shape ID="38" />
+                <Shape ID="43" />
+                <Shape ID="41" />
+                <Shape ID="42" />
+                <Shape ID="40" />
+                <Shape ID="45" />
+                <Shape ID="44" />
+                <Shape ID="47" />
+                <Shape ID="46" />
+                <Shape ID="49" />
+                <Shape ID="48" />
+                <Shape ID="51" />
+                <Shape ID="50" />
+                <Shape ID="7" />
+                <Shape ID="10" />
+                <Shape ID="53" />
+                <Shape ID="52" />
+                <Shape ID="20" />
+                <Shape ID="18" />
+                <Shape ID="16" />
+                <Shape ID="17" />
+                <Shape ID="21" />
+                <Shape ID="19" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

@@ -1,0 +1,172 @@
+<Level>
+    <MapData FogActive="false" FogColor="0.06 0.093 0.1 1" FogCulling="false" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../../">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="66">
+                <File Id="0" Path="static_objects/castlebase/church_wall/church_floor_emblem.dae" />
+                <File Id="1" Path="static_objects/castlebase/wall/door_frame_large_arched.dae" />
+                <File Id="2" Path="static_objects/dungeonbase/wall/welder_wood.dae" />
+                <File Id="3" Path="static_objects/technical/plane_black/plane_black.dae" />
+                <File Id="4" Path="static_objects/outside/foliage/grass02.dae" />
+                <File Id="5" Path="static_objects/castlebase/pillar/tall_stone.dae" />
+                <File Id="6" Path="static_objects/castlebase/stairs/welder.dae" />
+                <File Id="7" Path="static_objects/castlebase/stairs/railing.dae" />
+                <File Id="8" Path="static_objects/cellarbase/floor/dirt_pile.dae" />
+                <File Id="9" Path="static_objects/castlebase/wall/welder.dae" />
+                <File Id="10" Path="static_objects/debris/wood/plank01_4.5m.dae" />
+                <File Id="11" Path="static_objects/debris/wood/plank_2.5m.dae" />
+                <File Id="12" Path="static_objects/cellarbase/stairs/welder_wood.dae" />
+                <File Id="13" Path="static_objects/ornaments/carpets/carpet04.dae" />
+                <File Id="14" Path="static_objects/decals/pile_of_food.dae" />
+                <File Id="15" Path="static_objects/decals/rose_petals03.dae" />
+                <File Id="16" Path="static_objects/decals/rose_petals02.dae" />
+                <File Id="17" Path="static_objects/decals/rose_petals.dae" />
+                <File Id="18" Path="custom_stories/shadow-of-the-ramlord/static_objects/ornaments/statues/statue01/statue01.DAE" />
+                <File Id="19" Path="custom_stories/shadow-of-the-ramlord/static_objects/castlebase/wall/window_large_yellow_off.DAE" />
+                <File Id="20" Path="static_objects/decals/pile_of_rags_02.dae" />
+                <File Id="21" Path="static_objects/decals/pile_of_saw_dust.dae" />
+                <File Id="22" Path="static_objects/decals/pool_wine02.dae" />
+                <File Id="23" Path="static_objects/decals/web_spider01.dae" />
+                <File Id="24" Path="static_objects/ornaments/curtains/curtain01_open.dae" />
+                <File Id="25" Path="static_objects/decals/pool_wine01.dae" />
+                <File Id="26" Path="static_objects/cellarbase/wall/welder.dae" />
+                <File Id="27" Path="static_objects/cellarbase/wall/door_frame.dae" />
+                <File Id="28" Path="static_objects/outside/house/well_pump_lowres.dae" />
+                <File Id="29" Path="static_objects/outside/house/farmhouse01_lowres_shutter.dae" />
+                <File Id="30" Path="static_objects/decals/pebbles03.dae" />
+                <File Id="31" Path="static_objects/outside/foliage/grass01.DAE" />
+                <File Id="32" Path="static_objects/cellarbase/ceiling/welder_extension.dae" />
+                <File Id="33" Path="static_objects/decals/paper_pile.dae" />
+                <File Id="34" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/wall/window02_yellow.DAE" />
+                <File Id="35" Path="static_objects/outside/foliage/shrubb01.dae" />
+                <File Id="36" Path="static_objects/cellarbase/wall/default02.dae" />
+                <File Id="37" Path="static_objects/outside/foliage/plant01.dae" />
+                <File Id="38" Path="static_objects/outside/tree/pine.dae" />
+                <File Id="39" Path="static_objects/castlebase/pillar/roman_decayed2.dae" />
+                <File Id="40" Path="static_objects/decals/paper_pile02.dae" />
+                <File Id="41" Path="static_objects/castlebase/wall/welder_convex.dae" />
+                <File Id="42" Path="static_objects/castlebase/wall/default.dae" />
+                <File Id="43" Path="static_objects/ornaments/curtains/curtain02_long_broken.dae" />
+                <File Id="44" Path="static_objects/castlebase/wall/door_way.dae" />
+                <File Id="45" Path="static_objects/castlebase/pillar/plain_decayed1.dae" />
+                <File Id="46" Path="static_objects/castlebase/pillar/plain_decayed2.dae" />
+                <File Id="47" Path="static_objects/castlebase/pillar/roman_decayed1.dae" />
+                <File Id="48" Path="static_objects/decals/dirt_wall_leak01.dae" />
+                <File Id="49" Path="custom_stories/shadow-of-the-ramlord/static_objects/SOTR_skydomes/SOTR_backdrop_01.dae" />
+                <File Id="50" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/special/leaves.DAE" />
+                <File Id="51" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/special/planter_01.DAE" />
+                <File Id="52" Path="static_objects/decals/pebbles02.dae" />
+                <File Id="53" Path="static_objects/decals/pool_water.dae" />
+                <File Id="54" Path="custom_stories/shadow-of-the-ramlord/static_objects/ornaments/carpets/carpet_large_mansion.DAE" />
+                <File Id="55" Path="static_objects/ornaments/carpets/carpet03.dae" />
+                <File Id="56" Path="static_objects/ornaments/curtains/curtain01_closed.dae" />
+                <File Id="57" Path="static_objects/decals/cobweb_01.dae" />
+                <File Id="58" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/wall/default01.dae" />
+                <File Id="59" Path="static_objects/castlebase/wall/door_frame.dae" />
+                <File Id="60" Path="static_objects/decals/cobweb_02.dae" />
+                <File Id="61" Path="static_objects/decals/pebbles01.dae" />
+                <File Id="62" Path="static_objects/dungeonbase/wall/welder_stone.dae" />
+                <File Id="63" Path="static_objects/decals/organ_parts02.dae" />
+                <File Id="64" Path="static_objects/decals/organ_parts_small01.dae" />
+                <File Id="65" Path="static_objects/decals/organ_parts_small02.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="76">
+                <File Id="0" Path="entities/lamp/candle_floor/candle_floor_no_light.ent" />
+                <File Id="1" Path="entities/door/castle_gate_arched01/castle_gate_arched01.ent" />
+                <File Id="2" Path="entities/statues/eagle/eagle.ent" />
+                <File Id="3" Path="entities/door/elevator_door/elevator_door.ent" />
+                <File Id="4" Path="entities/lamp/candlestick01/candlestick01.ent" />
+                <File Id="5" Path="entities/bottle/wine01/wine01.ent" />
+                <File Id="6" Path="entities/bottle/wine02/wine02.ent" />
+                <File Id="7" Path="entities/bottle/wine_row/wine_row.ent" />
+                <File Id="8" Path="entities/bottle/wine_stack/wine_stack.ent" />
+                <File Id="9" Path="entities/bottle/chemical_jars/chemical_jar01.ent" />
+                <File Id="10" Path="entities/bottle/wine02/wine02_pieces.ent" />
+                <File Id="11" Path="entities/furniture/table_nice02/table_nice02.ent" />
+                <File Id="12" Path="entities/furniture/chair_nice02/chair_nice02.ent" />
+                <File Id="13" Path="entities/furniture/chair_nice01/chair_nice01.ent" />
+                <File Id="14" Path="custom_stories/shadow-of-the-ramlord/entities/storage/storage_box_wood02/storage_box_wood02_open_coal.ent" />
+                <File Id="15" Path="entities/item/wooden_bucket/wooden_bucket_object.ent" />
+                <File Id="16" Path="entities/door/level_cellar/level_celler.ent" />
+                <File Id="17" Path="custom_stories/shadow-of-the-ramlord/entities/storage/storage_box_wood01/storage_box_wood01_large_new_push.ent" />
+                <File Id="18" Path="entities/container/barrel01/barrel01.ent" />
+                <File Id="19" Path="entities/storage/storage_box_wood01/storage_box_wood01_large.ent" />
+                <File Id="20" Path="custom_stories/shadow-of-the-ramlord/entities/storage/chemical_box/chemical_box.ent" />
+                <File Id="21" Path="entities/storage/big_wine_barrel/big_wine_barrel.ent" />
+                <File Id="22" Path="entities/equipment/rope_beam/rope_beam02.ent" />
+                <File Id="23" Path="entities/container/wood_box01/wood_box01.ent" />
+                <File Id="24" Path="entities/container/wood_box_small01/wood_box_small01.ent" />
+                <File Id="25" Path="entities/container/vase01/vase01.ent" />
+                <File Id="26" Path="entities/ornament/book01/book01.ent" />
+                <File Id="27" Path="entities/ornament/banners/banners_rag/banners_rag.ent" />
+                <File Id="28" Path="entities/ornament/banners/banners02/banner_long02_broken.ent" />
+                <File Id="29" Path="entities/door/level_wood/level_wood.ent" />
+                <File Id="30" Path="entities/lamp/candlestick_floor/candlestick_floor.ent" />
+                <File Id="31" Path="custom_stories/shadow-of-the-ramlord/entities/trees/tree_02.ent" />
+                <File Id="32" Path="entities/lamp/candle_floor/candle_floor_small.ent" />
+                <File Id="33" Path="entities/ornament/book_bible/book_bible.ent" />
+                <File Id="34" Path="entities/desktop/paperpile03/paperpile03.ent" />
+                <File Id="35" Path="entities/technical/block_box/block_box.ent" />
+                <File Id="36" Path="entities/desktop/paperpile02/paperpile02.ent" />
+                <File Id="37" Path="entities/lamp/torch_static01/torch_static01.ent" />
+                <File Id="38" Path="entities/ornament/banners/banners01/banner_short01.ent" />
+                <File Id="39" Path="entities/lamp/hanging_lantern/hanging_lantern_wall.ent" />
+                <File Id="40" Path="entities/furniture/table_nice_round/table_nice_round.ent" />
+                <File Id="41" Path="entities/ornament/stone_altar_shrine/stone_altar_shrine.ent" />
+                <File Id="42" Path="entities/ornament/book_pile01/book_pile01.ent" />
+                <File Id="43" Path="entities/ornament/book_pile02/book_pile02.ent" />
+                <File Id="44" Path="entities/ornament/book_open/book_open.ent" />
+                <File Id="45" Path="entities/ornament/tome_pile01/tome_pile01.ent" />
+                <File Id="46" Path="entities/ornament/tome_pile02/tome_pile02.ent" />
+                <File Id="47" Path="entities/ornament/tome01/tome01.ent" />
+                <File Id="48" Path="entities/organic/human_skull/human_skull.ent" />
+                <File Id="49" Path="entities/organic/human_bone/human_bone.ent" />
+                <File Id="50" Path="entities/lamp/candle_floor/candle_floor.ent" />
+                <File Id="51" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />
+                <File Id="52" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/table_nice_round/cutlery.ent" />
+                <File Id="53" Path="entities/desktop/paperpile01/paperpile01.ent" />
+                <File Id="54" Path="entities/desktop/paper02/paper02.ent" />
+                <File Id="55" Path="custom_stories/shadow-of-the-ramlord/entities/moon/moon.ent" />
+                <File Id="56" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/chair_nice01/chair_nice01_alt.ent" />
+                <File Id="57" Path="custom_stories/shadow-of-the-ramlord/entities/storage/storage_box_wood01/storage_box_wood01_new.ent" />
+                <File Id="58" Path="entities/desktop/paper03/paper03.ent" />
+                <File Id="59" Path="entities/storage/storage_box_wood02/storage_box_wood02.ent" />
+                <File Id="60" Path="entities/desktop/paper01/paper01.ent" />
+                <File Id="61" Path="entities/furniture/table_wood02/table_wood02.ent" />
+                <File Id="62" Path="entities/storage/storage_box_wood01/storage_box_wood01.ent" />
+                <File Id="63" Path="entities/item/potion_oil/potion_oil.ent" />
+                <File Id="64" Path="entities/lamp/torch_static01/torch_static01_nosound.ent" />
+                <File Id="65" Path="custom_stories/shadow-of-the-ramlord/entities/trees/tree_03.ent" />
+                <File Id="66" Path="custom_stories/shadow-of-the-ramlord/entities/trees/tree_01.ent" />
+                <File Id="67" Path="entities/ornament/goblet/goblet.ent" />
+                <File Id="68" Path="entities/tool/shovel/shovel.ent" />
+                <File Id="69" Path="entities/organic/floor_ivy/floor_ivy.ent" />
+                <File Id="70" Path="entities/furniture/chair_metal/chair_metal.ent" />
+                <File Id="71" Path="entities/furniture/piano/piano.ent" />
+                <File Id="72" Path="entities/lamp/torch_floor/torch_floor.ent" />
+                <File Id="73" Path="entities/ptest/rotten_flowers/rotten_roses.ent" />
+                <File Id="74" Path="entities/kitchen/plate/plate.ent" />
+                <File Id="75" Path="entities/kitchen/pot/pot.ent" />
+            </FileIndex_Entities>
+            <FileIndex_Decals NumOfFiles="5">
+                <File Id="0" Path="textures/decals/hay.mat" />
+                <File Id="1" Path="textures/decals/hay_small.mat" />
+                <File Id="2" Path="textures/decals/blood_hands01.mat" />
+                <File Id="3" Path="textures/decals/blood_smear01.mat" />
+                <File Id="4" Path="textures/decals/blood_alchemy_circles.mat" />
+            </FileIndex_Decals>
+            <StaticObjects />
+            <Primitives />
+            <Decals />
+            <Entities>
+                <Entity Active="true" FileIndex="65" Group="0" ID="2325" Name="tree_6" Rotation="0 -4.18879 0" Scale="1 1 1" Tag="" WorldPos="-18.7632 0.588376 17.4701">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+            </Entities>
+            <Misc />
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>

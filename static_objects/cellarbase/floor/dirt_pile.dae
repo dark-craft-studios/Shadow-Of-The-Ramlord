@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Marcus Johansson</author>
+      <authoring_tool>Maya8.5 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=1;
+curveConstrainSampling=1;removeStaticCurves=1;exportCameraAsLookat=0;
+exportLights=1;exportCameras=0;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=1;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=1;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file:///E:/Projects/3d/work/amnesia%20game/arbetsmapp/</source_data>
+    </contributor>
+    <created>2010-02-17T10:54:56Z</created>
+    <modified>2010-02-17T10:54:56Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="file13" name="file13">
+      <init_from>file:///E:/Projects/3d/work/amnesia%20game/SVN/redist/static_objects/cellarbase/floor/cellarbase_floor_dirt.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="floor_dirt" name="floor_dirt">
+      <instance_effect url="#floor_dirt-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="floor_dirt-fx">
+      <profile_COMMON>
+        <newparam sid="file13-surface">
+          <surface type="2D">
+            <init_from>file13</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file13-sampler">
+          <sampler2D>
+            <source>file13-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file13-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="cellarbase_floor_dirt_pileShape" name="cellarbase_floor_dirt_pileShape">
+      <mesh>
+        <source id="cellarbase_floor_dirt_pileShape-positions" name="position">
+          <float_array id="cellarbase_floor_dirt_pileShape-positions-array" count="135">0 0.037639 -0.178331 0.139058 0.006966 -0.428331 0.25 0.006966 -0.311345 0.25 0.006966 -0.077989 0.208042 0.006966 0.030947 0.10266 0.006966 0.071669 -0.178409 0.006966 0.071669 -0.25 0.006966 0.016405 -0.25 0.006966 -0.322947 -0.222097 0.006966 -0.404162 -0.12518 0.006966 -0.428331 -0.272334 0.006966 -0.178331 0 0.006966 0.102012 0 0.006966 -0.44617 0.265724 0.006966 -0.178331 0.06697 0.029085 -0.133218 0.066721 0.046758 -0.194756 0.014256 0.067113 -0.235806 -0.038123 0.055621 -0.232691 -0.060615 0.033117 -0.194726 -0.042946 0.035178 -0.133537 0.014017 0.056495 -0.109892 -0.16844 0.044698 -0.178331 -0.153343 0.045041 -0.267034 -0.133264 0.045933 -0.313835 -0.078498 0.044125 -0.335102 0 0.044672 -0.344095 0.083785 0.051287 -0.328961 0.155871 0.039082 -0.261263 0.168712 0.043601 -0.178331 0.161812 0.042777 -0.113385 0.134179 0.054844 -0.043354 0.065347 0.043493 -0.019194 0 0.044441 -0.003856 -0.107427 0.045792 -0.027796 -0.149725 0.031791 -0.061703 -0.193061 0.029135 -0.027947 0.007152 0.054091 -0.289767 0.039819 0.058211 -0.270055 0.041484 0.034381 -0.336602 0.106079 0.030116 -0.369041 0.124395 0.02853 -0.290823 0.092403 0.043271 -0.028691 0.162022 0.029373 -0.015346 -0.093167 0.037817 -0.279637</float_array>
+          <technique_common>
+            <accessor source="#cellarbase_floor_dirt_pileShape-positions-array" count="45" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cellarbase_floor_dirt_pileShape-normals" name="normal">
+          <float_array id="cellarbase_floor_dirt_pileShape-normals-array" count="150">-0.053388 0.986331 0.155889 -0.115952 0.992914 0.02603 -0.122149 0.950546 0.285554 0.019056 0.942667 0.333192 -0.066783 0.985198 0.157876 -0.006899 0.995334 0.096238 -0.246745 0.959859 0.133372 0.133722 0.984565 0.112914 0.110603 0.937256 0.330635 -0.102712 0.993031 -0.057786 -0.068047 0.99216 0.10482 -0.175984 0.982783 0.056277 -0.073766 0.996536 -0.038406 0.071521 0.987247 0.142227 -0.046587 0.975545 0.214807 0.287905 0.901687 0.3226 0.176294 0.983722 0.034799 0.113013 0.98713 0.113144 0.222709 0.974748 0.016323 0.342098 0.93533 0.090144 0.33972 0.940515 -0.004649 0.115526 0.992422 0.041865 0.019139 0.995257 -0.095382 0.280359 0.950372 -0.134876 0.036799 0.972724 -0.229028 0.118405 0.961367 -0.248502 0.114791 0.960528 -0.253394 0.213384 0.932847 -0.290284 0.119133 0.931116 -0.344718 -0.08809 0.98756 -0.130248 -0.067442 0.939077 -0.337025 -0.044967 0.997317 -0.057758 -0.199258 0.954897 -0.220155 -0.057824 0.998265 -0.011083 -0.323773 0.94267 -0.080896 -0.070052 0.997179 0.026967 -0.339912 0.940435 -0.006526 0.031626 0.994857 -0.096222 -0.400726 0.907539 0.125665 0.019935 0.975087 -0.220924 0.133592 0.990071 -0.043725 -0.1415 0.984934 -0.09941 -0.264277 0.954103 0.140876 0.081583 0.981941 -0.170696 0.156306 0.969834 -0.187058 -0.176957 0.901578 -0.394771 0.229193 0.946011 0.229201 -0.000505 0.957975 -0.28685 0.109866 0.988306 0.105743 0.120963 0.99262 0.008572</float_array>
+          <technique_common>
+            <accessor source="#cellarbase_floor_dirt_pileShape-normals-array" count="50" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cellarbase_floor_dirt_pileShape-map1" name="map1">
+          <float_array id="cellarbase_floor_dirt_pileShape-map1-array" count="90">0.5 0.5 0.639058 0.749999 0.75 0.633014 0.75 0.399658 0.708042 0.290722 0.60266 0.25 0.321591 0.25 0.25 0.305263 0.25 0.644616 0.277902 0.72583 0.37482 0.749999 0.227665 0.5 0.5 0.219657 0.5 0.767838 0.765724 0.5 0.56697 0.454887 0.566721 0.516424 0.514256 0.557474 0.461876 0.554359 0.439384 0.516394 0.457053 0.455206 0.514017 0.431561 0.33156 0.5 0.346657 0.588703 0.366736 0.635503 0.421501 0.656771 0.5 0.665763 0.583786 0.65063 0.655871 0.582932 0.668712 0.5 0.661812 0.435054 0.634179 0.365023 0.565348 0.340864 0.5 0.325526 0.392573 0.349466 0.350275 0.383372 0.306939 0.349616 0.507152 0.611435 0.539819 0.591724 0.541484 0.65827 0.606079 0.69071 0.624395 0.612492 0.592403 0.35036 0.662022 0.337015 0.406832 0.601306</float_array>
+          <technique_common>
+            <accessor source="#cellarbase_floor_dirt_pileShape-map1-array" count="45" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cellarbase_floor_dirt_pileShape-vertices">
+          <input semantic="POSITION" source="#cellarbase_floor_dirt_pileShape-positions"/>
+        </vertices>
+        <triangles material="blinn2SG" count="74">
+          <input semantic="VERTEX" source="#cellarbase_floor_dirt_pileShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#cellarbase_floor_dirt_pileShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#cellarbase_floor_dirt_pileShape-map1" offset="2" set="0"/>
+          <p>33 0 33 34 1 34 12 3 12 12 3 12 34 1 34 6 2 6 0 4 0 17 5 17 18 6 18 32 7 32 33 0 33 5 8 5 5 8 5 33 0 33 12 3 12 20 9 20 0 4 0 19 10 19 36 11 36 34 1 34 35 12 35 31 13 31 42 14 42 43 15 43 15 16 15 16 17 16 0 4 0 0 4 0 16 17 16 17 5 17 0 4 0 18 6 18 19 10 19 43 15 43 30 18 30 31 13 31 3 19 3 14 20 14 30 18 30 30 18 30 14 20 14 29 21 29 29 21 29 14 20 14 28 22 28 28 22 28 14 20 14 2 23 2 28 22 28 2 23 2 40 24 40 40 24 40 2 23 2 1 25 1 26 26 26 39 27 39 13 28 13 26 26 26 13 28 13 25 29 25 25 29 25 13 28 13 10 30 10 25 29 25 10 30 10 24 31 24 24 31 24 10 30 10 9 32 9 23 33 23 24 31 24 8 34 8 8 34 8 24 31 24 9 32 9 22 35 22 23 33 23 11 36 11 11 36 11 23 33 23 8 34 8 36 11 36 35 12 35 22 35 22 15 16 15 0 4 0 21 37 21 0 4 0 20 9 20 21 37 21 19 10 19 23 33 23 22 35 22 19 10 19 18 6 18 44 38 44 18 6 18 25 29 25 44 38 44 18 6 18 37 39 37 25 29 25 25 29 25 37 39 37 26 26 26 37 39 37 39 27 39 26 26 26 41 40 41 16 17 16 28 22 28 16 17 16 29 21 29 28 22 28 15 16 15 29 21 29 16 17 16 31 13 31 30 18 30 15 41 15 15 41 15 42 14 42 31 13 31 21 37 21 33 0 33 32 7 32 33 0 33 20 9 20 34 1 34 35 12 35 34 1 34 20 9 20 22 35 22 35 12 35 20 9 20 7 42 7 36 11 36 11 36 11 11 36 11 36 11 36 22 35 22 34 1 34 36 11 36 6 2 6 6 2 6 36 11 36 7 42 7 22 35 22 20 9 20 19 10 19 18 6 18 17 5 17 37 39 37 17 5 17 38 43 38 37 39 37 17 5 17 16 17 16 38 43 38 38 43 38 27 44 27 39 45 39 40 24 40 39 45 39 27 44 27 27 44 27 41 40 41 40 24 40 27 44 27 16 17 16 41 40 41 15 41 15 32 7 32 42 14 42 5 8 5 4 46 4 32 7 32 32 7 32 4 46 4 42 14 42 43 15 43 42 14 42 4 46 4 30 18 30 43 15 43 3 19 3 3 19 3 43 15 43 4 46 4 38 43 38 16 17 16 27 44 27 30 18 30 29 21 29 15 41 15 38 43 38 39 27 39 37 39 37 21 37 21 20 9 20 33 0 33 15 16 15 21 37 21 32 7 32 41 40 41 28 22 28 40 24 40 39 45 39 40 24 40 13 47 13 13 47 13 40 24 40 1 25 1 44 48 44 25 29 25 24 31 24 19 10 19 44 49 44 23 33 23 23 33 23 44 48 44 24 31 24</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="morgue_lowered_part">
+      <node id="cellarbase_floor_dirt_pile" name="cellarbase_floor_dirt_pile" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <translate sid="scalePivotTranslation">0 -0.006966 0.178331</translate>
+        <translate sid="scalePivot">0 0.006966 -0.178331</translate>
+        <scale sid="scale">4 4 4</scale>
+        <translate sid="scalePivotInverse">0 -0.006966 0.178331</translate>
+        <instance_geometry url="#cellarbase_floor_dirt_pileShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="blinn2SG" target="#floor_dirt">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

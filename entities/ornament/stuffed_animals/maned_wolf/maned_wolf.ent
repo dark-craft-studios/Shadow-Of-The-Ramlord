@@ -1,0 +1,37 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-1.46742 1.19039 1.46812" CameraTarget="-0.303493 0.576706 0.0710212" CameraZoom="3.26013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/ornament/stuffed_animals/maned_wolf/maned_wolf.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="Group1" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="0.0548703 0.8 0.0548703" RelativeTranslation="0.120598 -0.287897 0.400731" Rotation="0 -0 0" Scale="0.0548703 0.8 0.0548703" ShapeType="Cylinder" Tag="" WorldPos="0.119025 0.424206 0.393868" />
+            <BodyShape Active="true" ID="2" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="0.0548703 0.8 0.0548703" RelativeTranslation="-0.120598 -0.287897 0.400731" Rotation="0 -0 0" Scale="0.0548703 0.8 0.0548703" ShapeType="Cylinder" Tag="" WorldPos="-0.12217 0.424206 0.393868" />
+            <BodyShape Active="true" ID="3" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.0548703 0.8 0.0548703" RelativeTranslation="-0.120598 -0.287897 -0.400731" Rotation="0 -0 0" Scale="0.0548703 0.8 0.0548703" ShapeType="Cylinder" Tag="" WorldPos="-0.12217 0.424206 -0.407594" />
+            <BodyShape Active="true" ID="4" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.0548703 0.8 0.0548703" RelativeTranslation="0.120598 -0.287897 -0.400731" Rotation="0 -0 0" Scale="0.0548703 0.8 0.0548703" ShapeType="Cylinder" Tag="" WorldPos="0.119025 0.424206 -0.407594" />
+            <BodyShape Active="true" ID="5" Name="Shape_5" RelativeRotation="1.5708 -0 0" RelativeScale="0.201235 1.65043 0.201235" RelativeTranslation="0.00157249 0.287897 0.256863" Rotation="1.5708 0 0" Scale="0.201235 1.65043 0.201235" ShapeType="Cylinder" Tag="" WorldPos="0 1 0.25" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="6" LinearDamping="0" Mass="0" Material="Generic_Soft" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.00157249 0.712103 -0.00686282">
+                <Shape ID="5" />
+                <Shape ID="1" />
+                <Shape ID="2" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

@@ -1,0 +1,7 @@
+*.ihps linguist-language=AngelScript
+*.ps linguist-language=AmnesiaConfig
+*.cfg linguist-language=AmnesiaConfig
+*.shps linguist-language=AngelScript
+*.ps linguist-language=AmnesiaConfig
+*.cfg linguist-language=AmnesiaConfig
+source/includes/AmnesiaSignatures.cpp linguist-vendored

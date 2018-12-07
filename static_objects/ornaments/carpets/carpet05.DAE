@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2011-12-08T15:48:26Z</created>
+    <modified>2011-12-08T15:48:26Z</modified>
+    <revision></revision>
+    <title></title>
+    <subject></subject>
+    <keywords></keywords>
+    <unit meter="0.001000"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map__8-image" name="Map__8">
+      <init_from>file://C:\Users\Brady\Dropbox\Amnesia\StaticObjects\Ornaments\Carpets\carpet05.psd</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material__41" name="Material__41">
+      <instance_effect url="#Material__41-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Material__41-fx" name="Material__41">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000  0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map__8-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent>
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box001-lib" name="Box001Mesh">
+      <mesh>
+        <source id="Box001-lib-Position">
+          <float_array id="Box001-lib-Position-array" count="36">
+-1.000000 -2.000000 0.000000
+1.000000 -2.000000 0.000000
+-1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 2.000000 0.000000
+1.000000 2.000000 0.000000
+-1.000000 -2.000000 0.010000
+1.000000 -2.000000 0.010000
+-1.000000 0.000000 0.010000
+1.000000 0.000000 0.010000
+-1.000000 2.000000 0.010000
+1.000000 2.000000 0.010000
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-lib-Position-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-lib-Normal0">
+          <float_array id="Box001-lib-Normal0-array" count="180">
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-lib-Normal0-array" count="60" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-lib-UV0">
+          <float_array id="Box001-lib-UV0-array" count="64">
+0.996397 -0.992794
+0.000000 -0.992793
+0.996399 0.003603
+0.000001 0.003604
+0.996401 0.999999
+0.000002 1.000000
+0.000000 -0.992793
+0.996397 -0.992794
+0.000001 0.003604
+0.996399 0.003603
+0.000002 1.000000
+0.996401 0.999999
+0.040888 0.497898
+0.040888 -0.498500
+0.045871 0.497898
+0.045871 -0.498500
+0.040848 0.996095
+0.040893 -0.000302
+0.040923 -0.996698
+0.045835 0.996095
+0.045868 -0.000302
+0.045906 -0.996698
+0.040888 0.497898
+0.040888 -0.498500
+0.045871 0.497898
+0.045871 -0.498500
+0.040848 0.996095
+0.040893 -0.000302
+0.040923 -0.996698
+0.045835 0.996095
+0.045868 -0.000302
+0.045906 -0.996698
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-lib-UV0-array" count="32" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box001-lib-Vertex">
+          <input semantic="POSITION" source="#Box001-lib-Position"/>
+        </vertices>
+        <polygons material="Material__41" count="20">
+          <input semantic="VERTEX" offset="0" source="#Box001-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#Box001-lib-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Box001-lib-UV0"/>
+          <p>0 0 0 2 1 2 3 2 3</p>
+          <p>3 3 3 1 4 1 0 5 0</p>
+          <p>2 6 2 4 7 4 5 8 5</p>
+          <p>5 9 5 3 10 3 2 11 2</p>
+          <p>6 12 6 7 13 7 9 14 9</p>
+          <p>9 15 9 8 16 8 6 17 6</p>
+          <p>8 18 8 9 19 9 11 20 11</p>
+          <p>11 21 11 10 22 10 8 23 8</p>
+          <p>0 24 12 1 25 13 7 26 15</p>
+          <p>7 27 15 6 28 14 0 29 12</p>
+          <p>1 30 16 3 31 17 9 32 20</p>
+          <p>9 33 20 7 34 19 1 35 16</p>
+          <p>3 36 17 5 37 18 11 38 21</p>
+          <p>11 39 21 9 40 20 3 41 17</p>
+          <p>5 42 22 4 43 23 10 44 25</p>
+          <p>10 45 25 11 46 24 5 47 22</p>
+          <p>4 48 26 2 49 27 8 50 30</p>
+          <p>8 51 30 10 52 29 4 53 26</p>
+          <p>2 54 27 0 55 28 6 56 31</p>
+          <p>6 57 31 8 58 30 2 59 27</p>
+        </polygons>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="RootNode" name="RootNode">
+      <node id="Box001" name="Box001">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Box001-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material__41" target="#Material__41"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#RootNode"/>
+  </scene>
+</COLLADA>
+

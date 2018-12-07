@@ -1,0 +1,17 @@
+<Material>
+    <Main BlendMode="Alpha" DepthTest="true" PhysicsMaterial="Default" Type="translucent" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="D:/Projects/3d/work/amnesia game/SVN/redist/textures/decals/ptest/chalk_maze_writing/chalk_maze_writings17.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="Refraction" Value="false" />
+        <Var Name="RefractionEdgeCheck" Value="true" />
+        <Var Name="RefractionNormals" Value="false" />
+        <Var Name="RefractionScale" Value="0.10000000149011612" />
+        <Var Name="FrenselBias" Value="0.20000000298023224" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="RimLightMul" Value="0" />
+        <Var Name="RimLightPow" Value="8" />
+        <Var Name="AffectedByLightLevel" Value="false" />
+    </SpecificVariables>
+</Material>

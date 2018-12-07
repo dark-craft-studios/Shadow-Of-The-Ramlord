@@ -1,0 +1,83 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 -0.48486 180" CameraTarget="0 -0.48486 -0.000473008" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="179.999 -0.48486 0" CameraTarget="-0.000870004 -0.48486 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.000870004 180 -0.000473008" CameraTarget="-0.000870004 0 -0.000473008" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="1.06234 -0.0271933 2.83035" CameraTarget="-0.671233 -2.4599 -1.209" CameraZoom="2.29781" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <Billboard Active="true" BillboardColor="1 0.916 0.604 1" BillboardOffset="0" BillboardSize="0.7 0.9" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="13" IsHalo="true" MaterialFile="halo_torch.mat" Name="Billboard_1" Rotation="0 0 0" Tag="" WorldPos="0 -2.62293 0" />
+            <PointLight Active="true" Brightness="1" CastShadows="false" DiffuseColor="1 0.744 0.206 0" Falloff="1" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="14" Name="PointLight_1" Radius="2" Rotation="0 -0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0 -3.71522 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/cellar_gaslamp01/cellar_gaslamp01_long.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="Box010" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 -2.29442 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="Cylinder003" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 -2.29442 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="Cylinder004" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 -2.29442 0" />
+            <SubMesh Active="true" ID="3" Material="" Name="Box011" Rotation="0 0 0" Scale="1 1 1" SubMeshID="3" Tag="" WorldPos="0 0.00178546 0" />
+            <SubMesh Active="true" ID="4" Material="" Name="Box012" Rotation="0 0 0" Scale="1 1 1" SubMeshID="4" Tag="" WorldPos="0 -0.183354 0" />
+            <SubMesh Active="true" ID="5" Material="" Name="Box013" Rotation="0 0 0" Scale="1 1 1" SubMeshID="5" Tag="" WorldPos="0 0.00178546 0" />
+            <SubMesh Active="true" ID="6" Material="" Name="Box014" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SubMeshID="6" Tag="" WorldPos="0 -2.23712 0" />
+            <SubMesh Active="true" ID="7" Material="" Name="Box015" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SubMeshID="7" Tag="" WorldPos="0 -1.20678 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="8" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="0.1 0.95 0.1" RelativeTranslation="0 0.608505 0" Rotation="0 0 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="0 -0.682219 0" />
+            <BodyShape Active="true" ID="9" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="0.1 0.95 0.1" RelativeTranslation="0 -0.433276 0" Rotation="0 -0 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="0 -1.724 0" />
+            <BodyShape Active="true" ID="10" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.2 0.1 0.2" RelativeTranslation="0 1.23817 0" Rotation="0 -0 0" Scale="0.2 0.1 0.2" ShapeType="Box" Tag="" WorldPos="0 -0.052559 0" />
+            <BodyShape Active="true" ID="11" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.34 0.1 0.34" RelativeTranslation="0 -1.18239 0" Rotation="0 0 0" Scale="0.34 0.1 0.34" ShapeType="Cylinder" Tag="" WorldPos="0 -2.47311 0" />
+            <BodyShape Active="true" ID="12" Name="Shape_5" RelativeRotation="0 -0 0" RelativeScale="0.16 0.5 0.16" RelativeTranslation="0 -1.23817 0" Rotation="0 -0 0" Scale="0.16 0.5 0.16" ShapeType="Cylinder" Tag="" WorldPos="0 -2.52889 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="23" LinearDamping="0" Mass="0" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 -1.29072 0">
+                <Children>
+                    <Child ID="14" />
+                    <Child ID="13" />
+                    <Child ID="7" />
+                    <Child ID="6" />
+                    <Child ID="5" />
+                    <Child ID="4" />
+                    <Child ID="3" />
+                    <Child ID="2" />
+                    <Child ID="1" />
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="10" />
+                <Shape ID="8" />
+                <Shape ID="9" />
+                <Shape ID="11" />
+                <Shape ID="12" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="false" />
+        <Var Name="CanBeGrabbed" Value="false" />
+        <Var Name="CanBeTurnedOff" Value="false" />
+        <Var Name="NeedsTinderbox" Value="false" />
+    </UserDefinedVariables>
+</Entity>

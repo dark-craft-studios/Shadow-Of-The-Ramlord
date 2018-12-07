@@ -1,0 +1,21 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Default" Type="water" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="H:/Lux/redist/textures/water/water_blood_cells.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="H:/Lux/redist/textures/water/water_castlebase_fountain_stalewater_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <CubeMap AnimFrameTime="0" AnimMode="None" Compress="false" File="H:/Lux/redist/textures/envmaps/water_castlebase_cubemap.dds" MipMaps="true" Type="Cube" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="RefractionScale" Value="0.10000000149011612" />
+        <Var Name="FrenselBias" Value="0.03" />
+        <Var Name="FrenselPow" Value="6" />
+        <Var Name="WaveSpeed" Value="0.40000000596046448" />
+        <Var Name="WaveAmplitude" Value="2" />
+        <Var Name="WaveFreq" Value="0.69999998807907104" />
+        <Var Name="ReflectionFadeStart" Value="0" />
+        <Var Name="ReflectionFadeEnd" Value="0" />
+        <Var Name="HasReflection" Value="true" />
+        <Var Name="OcclusionCullWorldReflection" Value="true" />
+        <Var Name="LargeSurface" Value="true" />
+    </SpecificVariables>
+</Material>

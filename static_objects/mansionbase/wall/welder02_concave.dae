@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Marcus Johansson</author>
+      <authoring_tool>Maya8.5 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;removeStaticCurves=1;exportCameraAsLookat=0;
+exportLights=0;exportCameras=0;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=1;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=1;exportPhysics=1;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/arbetsmapp/</source_data>
+    </contributor>
+    <created>2009-04-21T14:08:55Z</created>
+    <modified>2009-04-21T14:08:55Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_physics_scenes>
+    <physics_scene id="MayaNativePhysicsScene">
+      <technique_common>
+        <gravity>0 -980 0</gravity>
+        <time_step>0.083</time_step>
+      </technique_common>
+    </physics_scene>
+  </library_physics_scenes>
+  <library_images>
+    <image id="file1" name="file1">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/mansionbase/wall/mansionbase02.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+    <image id="file3" name="file3">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/mansionbase/wall/mansionbase02_spec.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="mansionbase02_material" name="mansionbase02_material">
+      <instance_effect url="#mansionbase02_material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="mansionbase02_material-fx">
+      <profile_COMMON>
+        <newparam sid="file1-surface">
+          <surface type="2D">
+            <init_from>file1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file1-sampler">
+          <sampler2D>
+            <source>file1-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file3-surface">
+          <surface type="2D">
+            <init_from>file3</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file3-sampler">
+          <sampler2D>
+            <source>file3-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file1-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <texture texture="file3-sampler" texcoord="TEX1">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="welder02_concaveShape" name="welder02_concaveShape">
+      <mesh>
+        <source id="welder02_concaveShape-positions" name="position">
+          <float_array id="welder02_concaveShape-positions-array" count="219">0.128519 1.95261 0.214757 0.09195 1.92631 0.187549 -0.007195 1.95261 0.267253 -0.007195 1.92631 0.233252 0.09888 1.85581 0.194609 -0.007195 1.85581 0.242076 0.074347 1.82254 0.169831 -0.007195 1.82254 0.21111 0.128519 2.01745 0.214757 0.09195 2.04374 0.187549 -0.007195 2.01745 0.267253 -0.007195 2.04374 0.233252 0.09888 2.11425 0.194609 -0.007195 2.11425 0.242076 0.074347 2.14752 0.169831 -0.007195 2.14752 0.21111 0.215037 1.95261 0.128239 0.187831 1.92631 0.09167 0.267534 1.95261 -0.007475 0.233535 1.92631 -0.007475 0.194888 1.85581 0.0986 0.242358 1.85581 -0.007475 0.170109 1.82254 0.074067 0.21139 1.82254 -0.007475 0.215037 2.01745 0.128239 0.187831 2.04374 0.09167 0.267534 2.01745 -0.007475 0.233535 2.04374 -0.007475 0.194888 2.11425 0.0986 0.242358 2.11425 -0.007475 0.170109 2.14752 0.074067 0.21139 2.14752 -0.007475 0.075375 3.37784 0.17122 0.075375 0.25974 0.171218 -0.006167 3.37784 0.212469 -0.006167 0.25974 0.212467 0.158652 0 0.262903 0.188221 0.032416 0.292474 0.006927 0 0.3083 0.006927 0.032416 0.341435 0.188221 0.097252 0.292474 0.006927 0.097252 0.341435 0.138007 3.64 0.234079 0.160341 3.60516 0.256414 -0.006167 3.64 0.291022 -0.006167 3.60516 0.318932 0.092977 3.48161 0.188926 -0.006167 3.48161 0.234596 0.160341 3.54032 0.256414 -0.006167 3.54032 0.318932 0.099907 3.4111 0.195979 -0.006167 3.4111 0.243412 0.171502 3.37784 0.075095 0.171502 0.25974 0.075095 0.212751 0.25974 -0.006447 0.212751 3.37784 -0.006447 0.263188 0 0.158374 0.292757 0.032416 0.187943 0.308582 0 0.010067 0.341718 0.032416 0.010067 0.292757 0.097252 0.187943 0.341718 0.097252 0.010067 0.234361 3.64 0.137727 0.256694 3.60516 0.160061 0.291303 3.64 -0.006447 0.319212 3.60516 -0.006447 0.189207 3.48161 0.092698 0.234876 3.48161 -0.006447 0.256694 3.54032 0.160061 0.319212 3.54032 -0.006447 0.196262 3.4111 0.099627 0.243692 3.4111 -0.006447 0 3.64 0</float_array>
+          <technique_common>
+            <accessor source="#welder02_concaveShape-positions-array" count="73" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="welder02_concaveShape-normals" name="normal">
+          <float_array id="welder02_concaveShape-normals-array" count="255">0.477619 -0.480841 0.735304 0.330803 -0.44863 0.830241 0.370589 -0.393194 0.841465 0.508018 -0.420493 0.751733 0.330803 0.448629 0.830242 0.477619 0.48084 0.735305 0.399544 -0.304499 0.864665 0.539877 -0.320895 0.778177 0.315457 -0.675081 0.666897 0.405043 -0.704982 0.582186 0.508018 0.420492 0.751734 0.370589 0.393193 0.841465 0.539878 0.320888 0.778179 0.399545 0.304492 0.864666 0.40505 0.704971 0.582195 0.315462 0.675071 0.666905 0.75173 -0.420493 0.508024 0.735305 -0.480835 0.477623 0.830243 -0.44862 0.330813 0.841463 -0.393192 0.370595 0.735305 0.480834 0.477624 0.830244 0.448618 0.330813 0.77817 -0.320905 0.539881 0.864654 -0.304519 0.399551 0.582179 -0.704989 0.405042 0.666879 -0.675097 0.315462 0.75173 0.420491 0.508025 0.841463 0.39319 0.370595 0.778172 0.320897 0.539883 0.864657 0.304511 0.399552 0.582188 0.704977 0.405049 0.666888 0.675086 0.315467 0.451387 -0.000000 0.892328 0.451387 -0.000000 0.892328 0.586597 -0.000000 0.809879 0.586597 -0.000000 0.809879 0.187549 -0.725737 0.661915 0.315012 -0.769358 0.555748 0.449638 -0.429119 0.783379 0.24398 -0.394992 0.885695 0.472138 0.376357 0.797146 0.270638 0.346284 0.898244 0.24685 0.649448 0.719224 0.376587 0.691647 0.616285 0.408258 0.653995 0.63688 0.281872 0.619008 0.73306 0.335185 0.327581 0.88337 0.506417 0.350597 0.787797 0.320541 -0.459673 0.828224 0.365779 -0.404627 0.838142 0.508429 -0.421141 0.751093 0.475657 -0.481658 0.736041 0.399315 -0.304403 0.864804 0.539775 -0.320819 0.778279 0.315352 -0.674862 0.667169 0.405043 -0.704816 0.582387 0.809869 0 0.58661 0.809869 0 0.58661 0.892328 0 0.451387 0.892328 0 0.451387 0.554884 -0.76928 0.316721 0.660568 -0.726043 0.191082 0.884356 -0.395197 0.248461 0.782234 -0.428993 0.451748 0.896656 0.347341 0.274523 0.795887 0.376721 0.473968 0.716832 0.651165 0.24927 0.614866 0.692299 0.377706 0.733081 0.618982 0.281875 0.636887 0.653983 0.408265 0.787799 0.350589 0.506419 0.883375 0.327565 0.335185 0.751093 -0.421139 0.50843 0.838148 -0.404622 0.365771 0.828225 -0.459671 0.32054 0.736042 -0.481657 0.475657 0.778279 -0.320813 0.539778 0.864814 -0.304391 0.399304 0.582391 -0.704811 0.405047 0.667185 -0.674848 0.315347 0 1 0.000000 0 1 0.000000 0 1 0.000000 0 1 0.000000 0 1 0.000000</float_array>
+          <technique_common>
+            <accessor source="#welder02_concaveShape-normals-array" count="85" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="welder02_concaveShape-map1" name="map1">
+          <float_array id="welder02_concaveShape-map1-array" count="166">0.299889 0.76585 0.295465 0.789634 0.287955 0.782675 0.292129 0.763137 0.317111 0.789635 0.31269 0.765851 0.273761 0.780064 0.277003 0.761731 0.266364 0.776493 0.269474 0.759938 0.320445 0.763138 0.324618 0.782677 0.335565 0.761733 0.338807 0.780067 0.343095 0.759939 0.346202 0.776495 0.299889 0.694713 0.292129 0.697426 0.295465 0.670931 0.287956 0.677888 0.31269 0.694715 0.317111 0.670931 0.277003 0.698832 0.273761 0.680497 0.269474 0.700624 0.266364 0.68407 0.320445 0.697428 0.324618 0.677889 0.335565 0.698832 0.338808 0.680498 0.343095 0.700626 0.346203 0.684072 0.916427 0.37023 0.916427 0.0087 0.927002 0.008703 0.927002 0.370232 0.920638 0.880876 0.918433 0.8628 0.925346 0.864029 0.928412 0.883091 0.938192 0.863499 0.945049 0.880955 0.985161 0.865932 0.979842 0.850557 0.130146 0.733003 0.10116 0.726864 0.100505 0.718729 0.129002 0.726502 0.103698 0.701557 0.120101 0.688643 0.138239 0.697093 0.129635 0.71434 0.122157 0.6764 0.139908 0.681464 0.126064 0.669424 0.141901 0.673907 0.965281 0.370236 0.965281 0.008707 0.975893 0.008706 0.975893 0.370235 0.918421 0.780225 0.920615 0.762146 0.928391 0.759928 0.925332 0.778992 0.945028 0.762057 0.938181 0.779516 0.98515 0.777069 0.979835 0.792444 0.241109 0.726931 0.212117 0.733038 0.213264 0.726536 0.241773 0.718797 0.204059 0.697121 0.222202 0.688688 0.238596 0.701621 0.212645 0.714375 0.202404 0.681491 0.220158 0.67644 0.200417 0.673932 0.216258 0.669462 0.220631 0.758081 0.121609 0.758041 0.17112 0.758061</float_array>
+          <technique_common>
+            <accessor source="#welder02_concaveShape-map1-array" count="83" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="welder02_concaveShape-vertices">
+          <input semantic="POSITION" source="#welder02_concaveShape-positions"/>
+        </vertices>
+        <triangles material="blinn1SG" count="99">
+          <input semantic="VERTEX" source="#welder02_concaveShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#welder02_concaveShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#welder02_concaveShape-map1" offset="2" set="0"/>
+          <p>0 0 0 2 1 1 1 3 3 1 3 3 2 1 1 3 2 2 10 4 4 2 1 1 8 5 5 8 5 5 2 1 1 0 0 0 5 6 6 4 7 7 3 2 2 3 2 2 4 7 7 1 3 3 5 6 6 7 8 8 4 7 7 4 7 7 7 8 8 6 9 9 8 5 5 9 10 10 10 4 4 10 4 4 9 10 10 11 11 11 13 13 13 11 11 11 12 12 12 12 12 12 11 11 11 9 10 10 13 13 13 12 12 12 15 15 15 15 15 15 12 12 12 14 14 14 1 3 3 17 16 17 0 0 0 0 0 0 17 16 17 16 17 16 16 17 16 17 16 17 18 18 18 18 18 18 17 16 17 19 19 19 0 0 0 16 17 16 8 5 5 8 5 5 16 17 16 24 20 20 16 17 16 18 18 18 24 20 20 24 20 20 18 18 18 26 21 21 4 7 7 20 22 22 1 3 3 1 3 3 20 22 22 17 16 17 21 23 23 19 19 19 20 22 22 20 22 22 19 19 19 17 16 17 6 9 9 22 24 24 4 7 7 4 7 7 22 24 24 20 22 22 21 23 23 20 22 22 23 25 25 23 25 25 20 22 22 22 24 24 8 5 5 24 20 20 9 10 10 9 10 10 24 20 20 25 26 26 24 20 20 26 21 21 25 26 26 25 26 26 26 21 21 27 27 27 9 10 10 25 26 26 12 12 12 12 12 12 25 26 26 28 28 28 29 29 29 28 28 28 27 27 27 27 27 27 28 28 28 25 26 26 12 12 12 28 28 28 14 14 14 14 14 14 28 28 28 30 30 30 29 29 29 31 31 31 28 28 28 28 28 28 31 31 31 30 30 30 34 32 32 35 33 33 32 35 35 32 35 35 35 33 33 33 34 34 38 36 36 36 37 37 39 39 39 39 39 39 36 37 37 37 38 38 40 40 40 41 41 41 37 38 38 37 38 38 41 41 41 39 39 39 35 42 42 41 41 41 33 43 43 33 43 43 41 41 41 40 40 40 44 45 45 45 46 46 42 44 44 42 44 44 45 46 46 43 47 47 47 49 49 46 50 50 49 48 48 49 48 48 46 50 50 48 51 51 45 46 46 49 48 48 43 47 47 43 47 47 49 48 48 48 51 51 51 52 52 50 53 53 47 49 49 47 49 49 50 53 53 46 50 50 51 52 52 34 54 54 50 53 53 50 53 53 34 54 54 32 55 55 52 56 56 53 57 57 55 59 59 55 59 59 53 57 57 54 58 58 58 61 61 59 62 62 56 60 60 56 60 60 59 62 62 57 63 63 59 62 62 61 64 64 57 63 63 57 63 63 61 64 64 60 65 65 60 65 65 61 64 64 53 67 67 53 67 67 61 64 64 54 66 66 64 68 68 62 69 69 65 71 71 65 71 71 62 69 69 63 70 70 67 73 73 69 74 74 66 72 72 66 72 72 69 74 74 68 75 75 68 75 75 69 74 74 63 70 70 63 70 70 69 74 74 65 71 71 71 77 77 67 73 73 70 76 76 70 76 76 67 73 73 66 72 72 71 77 77 70 76 76 55 79 79 55 79 79 70 76 76 52 78 78 36 37 37 56 60 60 37 38 38 37 38 38 56 60 60 57 63 63 37 38 38 57 63 63 40 40 40 40 40 40 57 63 63 60 65 65 40 40 40 60 65 65 33 43 43 33 43 43 60 65 65 53 67 67 33 34 34 53 57 57 32 35 35 32 35 35 53 57 57 52 56 56 32 55 55 52 78 78 50 53 53 50 53 53 52 78 78 70 76 76 50 53 53 70 76 76 46 50 50 46 50 50 70 76 76 66 72 72 46 50 50 66 72 72 48 51 51 48 51 51 66 72 72 68 75 75 48 51 51 68 75 75 43 47 47 43 47 47 68 75 75 63 70 70 43 47 47 63 70 70 42 44 44 42 44 44 63 70 70 62 69 69 64 82 80 72 83 82 62 81 69 44 84 81 42 80 44 72 83 82 42 80 44 62 81 69 72 83 82</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="mansionbase02">
+      <node id="welder02_concave" name="welder02_concave" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <instance_geometry url="#welder02_concaveShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="blinn1SG" target="#mansionbase02_material">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_physics_scene url="#MayaNativePhysicsScene"/>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

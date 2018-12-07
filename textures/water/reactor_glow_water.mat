@@ -1,0 +1,21 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Rock_Water" Type="water" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/AMFP/Game/redist/textures/reactor_glow/reactor_glow.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/AMFP/Game/redist/textures/water/water_archivecellar_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <CubeMap AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/AMFP/Game/redist/textures/envmaps/water_dungeon_cubemap.dds" MipMaps="true" Type="Cube" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="RefractionScale" Value="0.10000000149011612" />
+        <Var Name="FrenselBias" Value="0.20000000298023224" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="WaveSpeed" Value="0.5" />
+        <Var Name="WaveAmplitude" Value="0.3" />
+        <Var Name="WaveFreq" Value="2" />
+        <Var Name="ReflectionFadeStart" Value="0" />
+        <Var Name="ReflectionFadeEnd" Value="0" />
+        <Var Name="HasReflection" Value="true" />
+        <Var Name="OcclusionCullWorldReflection" Value="true" />
+        <Var Name="LargeSurface" Value="true" />
+    </SpecificVariables>
+</Material>

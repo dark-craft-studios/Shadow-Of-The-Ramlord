@@ -1,0 +1,61 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-1.191 0.158943 -1.14456" CameraTarget="-0.565863 -0.0862818 0.0451976" CameraZoom="3.6" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1 1" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="1" IsHalo="true" MaterialFile="D:/GameB/Game/redist/billboards/bb_torch_static01.mat" Name="Billboard_1" Rotation="0 0 0" Tag="" WorldPos="-0.25 0.25 0" />
+            <PointLight Active="true" Brightness="1" CastShadows="false" DiffuseColor="0.672 0.499 0.345 1" Falloff="1" FlickerActive="false" FlickerFade="true" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0.04" FlickerOffFadeMinLength="0.02" FlickerOffMaxLength="0.05" FlickerOffMinLength="0.02" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="afx_cellar_light_flicker.snt" FlickerOnFadeMaxLength="0.07" FlickerOnFadeMinLength="0.03" FlickerOnMaxLength="0.08" FlickerOnMinLength="0.03" FlickerOnPS="" FlickerOnSound="C:/Users/Pete/Desktop/Amnesia - A Machine for Pigs/sounds/events/cellar/afx_cellar_light_flicker.snt" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="2" Name="PointLight_1" Radius="0.1" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-0.243516 0 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/gas_lamp_wall/gas_lamp_wall.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="Box002" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="3" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="0.25 0.75 0.25" RelativeTranslation="0 0 0" Rotation="0 -0 0" Scale="0.25 0.75 0.25" ShapeType="Cylinder" Tag="" WorldPos="-0.25 0 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="4" LinearDamping="0" Mass="0" Material="Glass" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.25 0 0">
+                <Children>
+                    <Child ID="0" />
+                    <Child ID="2" />
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="3" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="D:/GameB/Game/redist/sounds/joint/switch/gaslamp_wall_valve_on.snt" />
+        <Var Name="EffectsOffSound" Value="D:/GameB/Game/redist/sounds/joint/switch/gaslamp_wall_valve_off.snt" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="true" />
+        <Var Name="CanBeGrabbed" Value="false" />
+        <Var Name="CanBeTurnedOff" Value="true" />
+        <Var Name="NeedsTinderbox" Value="false" />
+    </UserDefinedVariables>
+</Entity>

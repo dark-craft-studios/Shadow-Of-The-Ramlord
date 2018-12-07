@@ -1,0 +1,216 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-0.0839821 1.05886 180.005" CameraTarget="-0.0839821 1.05886 0.00560504" CameraZoom="5.5" GridHeight="0.00560504" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="179.916 1.05886 0.00560504" CameraTarget="-0.0839821 1.05886 0.00560504" CameraZoom="5.5" GridHeight="-0.0839821" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.0839821 181.059 0.00560504" CameraTarget="-0.0839821 1.05886 0.00560504" CameraZoom="5.5" GridHeight="1.05886" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.365381 1.23974 -0.669159" CameraTarget="-0.0951226 0.904336 -0.157748" CameraZoom="4.31454" GridHeight="1.05886" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/organic/corpse_male/male_corpse.DAE">
+            <SubMesh Active="true" ID="10" Material="" Name="male_corpse" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones>
+            <Bone ID="11" Name="male_corpse" />
+            <Bone ID="12" Name="pelvis" />
+            <Bone ID="13" Name="ribs" />
+            <Bone ID="14" Name="head" />
+            <Bone ID="15" Name="arm_R_upper" />
+            <Bone ID="16" Name="arm_R_lower" />
+            <Bone ID="17" Name="hand_R" />
+            <Bone ID="18" Name="fingers_R" />
+            <Bone ID="19" Name="arm_L_upper" />
+            <Bone ID="20" Name="arm_L_lower" />
+            <Bone ID="21" Name="hand_L" />
+            <Bone ID="22" Name="fingers_L" />
+            <Bone ID="23" Name="leg_L_upper" />
+            <Bone ID="24" Name="leg_L_lower" />
+            <Bone ID="25" Name="foot_L" />
+            <Bone ID="26" Name="toes_L" />
+            <Bone ID="27" Name="leg_R_upper" />
+            <Bone ID="28" Name="leg_R_lower" />
+            <Bone ID="29" Name="foot_R" />
+            <Bone ID="30" Name="toes_R" />
+            <Bone ID="31" Name="" />
+        </Bones>
+        <Shapes>
+            <BodyShape Active="true" ID="87" Name="Shape_1" RelativeRotation="0 -0 -1.5708" RelativeScale="0.08 0.25 0.08" RelativeTranslation="0 -0.0276564 -0.00281624" Rotation="0 0 -1.5708" Scale="0.08 0.25 0.08" ShapeType="Capsule" Tag="" WorldPos="0 0.948147 0.0131234" />
+            <BodyShape Active="true" ID="88" Name="Shape_2" RelativeRotation="-0.118423 -0 3.14159" RelativeScale="0.08 0.25 0.08" RelativeTranslation="0 0.0276564 0.00281624" Rotation="-0.118423 -0 3.14159" Scale="0.08 0.25 0.08" ShapeType="Capsule" Tag="" WorldPos="0 1.00346 0.0187559" />
+            <BodyShape Active="true" ID="89" Name="Shape_3" RelativeRotation="-0.258773 -0.0401438 -0.150466" RelativeScale="0.07 0.25 0.07" RelativeTranslation="-0.0430408 0.000136852 6.53416e-006" Rotation="-0.258773 -0.0401438 -0.150466" Scale="0.07 0.25 0.07" ShapeType="Capsule" Tag="" WorldPos="-0.0430815 0.731276 0.00656174" />
+            <BodyShape Active="true" ID="90" Name="Shape_4" RelativeRotation="-0.259798 0.0326783 0.122305" RelativeScale="0.07 0.25 0.07" RelativeTranslation="0.0430408 -0.000136852 -6.53416e-006" Rotation="-0.259798 0.0326783 0.122305" Scale="0.07 0.25 0.07" ShapeType="Capsule" Tag="" WorldPos="0.043 0.731003 0.00654867" />
+            <BodyShape Active="true" ID="93" Name="Shape_5" RelativeRotation="0.360146 -0 0" RelativeScale="0.07 0.17 0.07" RelativeTranslation="0 0 0" Rotation="0.360146 0 0" Scale="0.07 0.17 0.07" ShapeType="Capsule" Tag="" WorldPos="0 1.21474 -0.00466947" />
+            <BodyShape Active="true" ID="95" Name="Shape_6" RelativeRotation="0.0766591 -0 0" RelativeScale="0.055 0.2 0.055" RelativeTranslation="0 0 0" Rotation="0.0766591 -0 0" Scale="0.055 0.2 0.055" ShapeType="Capsule" Tag="" WorldPos="-0.0787182 0.508901 0" />
+            <BodyShape Active="true" ID="96" Name="Shape_7" RelativeRotation="0.0765747 -0.00359987 0.0468848" RelativeScale="0.055 0.2 0.055" RelativeTranslation="0 0 0" Rotation="0.0765747 -0.00359987 0.0468848" Scale="0.055 0.2 0.055" ShapeType="Capsule" Tag="" WorldPos="0.079 0.509 0" />
+            <BodyShape Active="true" ID="97" Name="Shape_8" RelativeRotation="-0.0317894 -0 0" RelativeScale="0.045 0.3 0.045" RelativeTranslation="0 0 0" Rotation="-0.0317894 -0 0" Scale="0.045 0.3 0.045" ShapeType="Capsule" Tag="" WorldPos="-0.0818641 0.244065 0.00693546" />
+            <BodyShape Active="true" ID="101" Name="Shape_9" RelativeRotation="-0.0317894 -0 0" RelativeScale="0.045 0.3 0.045" RelativeTranslation="0 0 0" Rotation="-0.0317894 -0 0" Scale="0.045 0.3 0.045" ShapeType="Capsule" Tag="" WorldPos="0.082 0.244 0.007" />
+            <BodyShape Active="true" ID="104" Name="Shape_10" RelativeRotation="1.4299 -0.0888825 0.00858276" RelativeScale="0.025 0.204 0.025" RelativeTranslation="0.0154224 0.00190543 0" Rotation="1.4299 -0.0888825 0.00858276" Scale="0.025 0.204 0.025" ShapeType="Capsule" Tag="" WorldPos="-0.0659525 0.031589 -0.0584459" />
+            <BodyShape Active="true" ID="105" Name="Shape_11" RelativeRotation="1.45387 0.0337518 -0.00325179" RelativeScale="0.025 0.204 0.025" RelativeTranslation="-0.0154224 -0.00190543 0" Rotation="1.45387 0.0337518 -0.00325179" Scale="0.025 0.204 0.025" ShapeType="Capsule" Tag="" WorldPos="-0.0967972 0.0277781 -0.0584459" />
+            <BodyShape Active="true" ID="106" Name="Shape_12" RelativeRotation="1.43848 0.0603155 -0.00325179" RelativeScale="0.025 0.204 0.025" RelativeTranslation="-0.0154224 0.00285541 0" Rotation="1.43848 0.0603155 -0.00325179" Scale="0.025 0.204 0.025" ShapeType="Capsule" Tag="" WorldPos="0.0643397 0.0347178 -0.0584459" />
+            <BodyShape Active="true" ID="107" Name="Shape_13" RelativeRotation="1.51104 -0.0623188 0.00858276" RelativeScale="0.025 0.204 0.025" RelativeTranslation="0.0154224 -0.00285541 0" Rotation="1.51104 -0.0623188 0.00858276" Scale="0.025 0.204 0.025" ShapeType="Capsule" Tag="" WorldPos="0.0951844 0.029007 -0.0584459" />
+            <BodyShape Active="true" ID="110" Name="Shape_14" RelativeRotation="0 -0 1.62316" RelativeScale="0.04 0.2 0.04" RelativeTranslation="0 0 0" Rotation="0 0 1.62316" Scale="0.04 0.2 0.04" ShapeType="Capsule" Tag="" WorldPos="-0.187027 1.04764 0.0311113" />
+            <BodyShape Active="true" ID="111" Name="Shape_15" RelativeRotation="-0.0824986 -0 1.6057" RelativeScale="0.03 0.2 0.04" RelativeTranslation="0 0 0" Rotation="-0.0824986 0 1.6057" Scale="0.03 0.2 0.03" ShapeType="Capsule" Tag="" WorldPos="-0.394799 1.04285 0.027121" />
+            <BodyShape Active="true" ID="112" Name="Shape_16" RelativeRotation="0.110974 -0 1.53589" RelativeScale="0.03 0.2 0.04" RelativeTranslation="0 0 0" Rotation="0.110974 -0 1.53589" Scale="0.03 0.2 0.03" ShapeType="Capsule" Tag="" WorldPos="0.395 1.043 0.027" />
+            <BodyShape Active="true" ID="113" Name="Shape_17" RelativeRotation="0 -0 1.51844" RelativeScale="0.04 0.2 0.04" RelativeTranslation="0 0 0" Rotation="0 0 1.51844" Scale="0.04 0.2 0.04" ShapeType="Capsule" Tag="" WorldPos="0.187 1.048 0.031" />
+            <BodyShape Active="true" ID="115" Name="Shape_19" RelativeRotation="0.079967 -0.00527591 1.60163" RelativeScale="0.014 0.12 0.014" RelativeTranslation="0.0168904 0.00542331 -0.00584287" Rotation="0.079967 -0.00527591 1.60163" Scale="0.014 0.12 0.014" ShapeType="Capsule" Tag="" WorldPos="0.561554 1.043 -0.00599658" />
+            <BodyShape Active="true" ID="116" Name="Shape_20" RelativeRotation="-0.0227203 -0.00737318 1.57593" RelativeScale="0.014 0.11 0.014" RelativeTranslation="0.0143413 0.00542331 0.0218431" Rotation="-0.0227203 -0.00737318 1.57593" Scale="0.014 0.11 0.014" ShapeType="Capsule" Tag="" WorldPos="0.559005 1.043 0.0216894" />
+            <BodyShape Active="true" ID="117" Name="Shape_21" RelativeRotation="0.590247 0.1108 1.43033" RelativeScale="0.01 0.07 0.01" RelativeTranslation="-0.0168903 -0.00542331 -0.0218431" Rotation="0.590247 0.1108 1.43033" Scale="0.01 0.07 0.01" ShapeType="Capsule" Tag="" WorldPos="0.527773 1.03215 -0.0219968" />
+            <BodyShape Active="true" ID="118" Name="Shape_22" RelativeRotation="-0.549885 0.189061 1.55656" RelativeScale="0.01 0.07 0.01" RelativeTranslation="0.017 -0.00550008 -0.022" Rotation="-0.549885 0.189061 1.55656" Scale="0.01 0.07 0.01" ShapeType="Capsule" Tag="" WorldPos="-0.528 1.032 -0.022" />
+            <BodyShape Active="true" ID="119" Name="Shape_23" RelativeRotation="-0.0900162 -0.00527591 1.60163" RelativeScale="0.014 0.12 0.014" RelativeTranslation="-0.017 0.00549996 -0.006" Rotation="-0.0900162 -0.00527591 1.60163" Scale="0.014 0.12 0.014" ShapeType="Capsule" Tag="" WorldPos="-0.562 1.043 -0.006" />
+            <BodyShape Active="true" ID="120" Name="Shape_24" RelativeRotation="0.0460361 -0.00583042 1.64314" RelativeScale="0.014 0.11 0.014" RelativeTranslation="-0.0139999 0.00549996 0.022" Rotation="0.0460361 -0.00583042 1.64314" Scale="0.014 0.11 0.014" ShapeType="Capsule" Tag="" WorldPos="-0.559 1.043 0.022" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="91" LinearDamping="1" Mass="15" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_pelvis" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-4.07621e-005 0.731139 0.00655521">
+                <Children>
+                    <Child ID="12" />
+                </Children>
+                <Shape ID="90" />
+                <Shape ID="89" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="92" LinearDamping="1" Mass="20" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_torso" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.975803 0.0159396">
+                <Children>
+                    <Child ID="13" />
+                </Children>
+                <Shape ID="87" />
+                <Shape ID="88" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="94" LinearDamping="1" Mass="10" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_head" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 1.21474 -0.00466947">
+                <Children>
+                    <Child ID="14" />
+                </Children>
+                <Shape ID="93" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="99" LinearDamping="1" Mass="10" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_thigh_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0787182 0.508901 0">
+                <Children>
+                    <Child ID="23" />
+                </Children>
+                <Shape ID="95" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="100" LinearDamping="1" Mass="10" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_thigh_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.079 0.509 0">
+                <Children>
+                    <Child ID="27" />
+                </Children>
+                <Shape ID="96" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="102" LinearDamping="1" Mass="7" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_calf_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0818641 0.244065 0.00693546">
+                <Children>
+                    <Child ID="24" />
+                </Children>
+                <Shape ID="97" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="103" LinearDamping="1" Mass="7" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_calf_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.082 0.244 0.007">
+                <Children>
+                    <Child ID="28" />
+                </Children>
+                <Shape ID="101" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="108" LinearDamping="1" Mass="5" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_foot_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0813749 0.0296835 -0.0584459">
+                <Children>
+                    <Child ID="25" />
+                </Children>
+                <Shape ID="105" />
+                <Shape ID="104" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="109" LinearDamping="1" Mass="5" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_foot_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.0797621 0.0318624 -0.0584459">
+                <Children>
+                    <Child ID="29" />
+                </Children>
+                <Shape ID="106" />
+                <Shape ID="107" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="121" LinearDamping="1" Mass="2" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_hand_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.545 1.0375 0">
+                <Children>
+                    <Child ID="21" />
+                </Children>
+                <Shape ID="120" />
+                <Shape ID="119" />
+                <Shape ID="118" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="122" LinearDamping="1" Mass="5" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_forearm_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.394799 1.04285 0.027121">
+                <Children>
+                    <Child ID="20" />
+                </Children>
+                <Shape ID="111" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="123" LinearDamping="1" Mass="5" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_forearm_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.395 1.043 0.027">
+                <Children>
+                    <Child ID="16" />
+                </Children>
+                <Shape ID="112" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="124" LinearDamping="1" Mass="7" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_arm_L" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.187027 1.04764 0.0311113">
+                <Children>
+                    <Child ID="19" />
+                </Children>
+                <Shape ID="110" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="125" LinearDamping="1" Mass="7" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_arm_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.187 1.048 0.031">
+                <Children>
+                    <Child ID="15" />
+                </Children>
+                <Shape ID="113" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="126" LinearDamping="1" Mass="2" Material="Organic" MaxAngularSpeed="1" MaxLinearSpeed="5" Name="body_hand_R" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.544664 1.03758 -0.000153715">
+                <Children>
+                    <Child ID="17" />
+                </Children>
+                <Shape ID="115" />
+                <Shape ID="116" />
+                <Shape ID="117" />
+            </Body>
+        </Bodies>
+        <Joints>
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="108" ConnectedParentBodyID="102" ID="61" LimitStepCount="0" MaxConeAngle="-45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="45" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_ankle" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.0817391 0.0781946 0.00322192" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="109" ConnectedParentBodyID="103" ID="62" LimitStepCount="0" MaxConeAngle="-45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="45" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_ankle" PinDir="0 1 0" Rotation="0 0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.0844024 0.0781946 0.00322192" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="102" ConnectedParentBodyID="99" ID="63" LimitStepCount="0" MaxAngle="0" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-90" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_knee_joint" PinDir="-1 -3.61999e-006 0" Rotation="0 0 1.5708" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.0801436 0.395424 0.00044015" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="103" ConnectedParentBodyID="100" ID="65" LimitStepCount="0" MaxAngle="0" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-90" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_knee_joint" PinDir="-1 -3.61999e-006 0" Rotation="0 0 1.5708" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.0844202 0.395424 0.00044015" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="123" ConnectedParentBodyID="125" ID="76" LimitStepCount="0" MaxAngle="120" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="0" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_elbow_joint" PinDir="-3.57628e-006 1 0" Rotation="0 0 3.57628e-006" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.288621 1.05431 0.0410749" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="126" ConnectedParentBodyID="123" ID="78" LimitStepCount="0" MaxAngle="45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-45" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_wrist_joint" PinDir="1.29461e-011 -3.61999e-006 -1" Rotation="-1.5708 0 3.57628e-006" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.475096 1.04606 0.00044015" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="125" ConnectedParentBodyID="92" ID="79" LimitStepCount="0" MaxConeAngle="-45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="20" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_shoulder_joint" PinDir="1 -3.61999e-006 0" Rotation="0 0 -1.5708" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.114775 1.05886 0.00560504" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="124" ConnectedParentBodyID="92" ID="80" LimitStepCount="0" MaxConeAngle="-45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="20" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_shoulder_joint_1" PinDir="-1 -3.61999e-006 0" Rotation="0 0 1.5708" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.0839821 1.05886 0.00560504" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="122" ConnectedParentBodyID="124" ID="81" LimitStepCount="0" MaxAngle="120" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="0" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_elbow_joint" PinDir="-3.57628e-006 1 0" Rotation="0 0 3.57628e-006" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.284498 1.05431 0.0410749" />
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="121" ConnectedParentBodyID="122" ID="82" LimitStepCount="0" MaxAngle="45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-45" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_wrist_joint" PinDir="1.29461e-011 -3.61999e-006 -1" Rotation="-1.5708 0 3.57628e-006" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.477694 1.04606 0.00044015" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="91" ConnectedParentBodyID="92" ID="83" LimitStepCount="0" MaxConeAngle="-30" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="20" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="spine" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.00112484 0.852182 0.00322192" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="94" ConnectedParentBodyID="92" ID="84" LimitStepCount="0" MaxConeAngle="-45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="45" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="neck" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.00112484 1.13706 0.0112346" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="99" ConnectedParentBodyID="91" ID="85" LimitStepCount="0" MaxConeAngle="15" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="-15" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="left_hip_joint" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.0799825 0.748164 0.00213927" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="100" ConnectedParentBodyID="91" ID="86" LimitStepCount="0" MaxConeAngle="15" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="-15" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="right_hip_joint" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.0873162 0.748164 0.00213927" />
+        </Joints>
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="Static" EntityType="Object">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="BreakActive" Value="false" />
+        <Var Name="BreakDestroyJoints" Value="false" />
+        <Var Name="BreakMinEnergy" Value="100" />
+        <Var Name="BreakEntity" Value="" />
+        <Var Name="BreakEntityAlignBody" Value="" />
+        <Var Name="BreakSound" Value="" />
+        <Var Name="BreakParticleSystem" Value="" />
+        <Var Name="BreakImpulse" Value="4" />
+        <Var Name="HitDamageAmount" Value="5" />
+        <Var Name="HitDamageStrength" Value="1" />
+        <Var Name="MinHitDamageSpeed" Value="3" />
+        <Var Name="LifeLength" Value="0" />
+        <Var Name="IsFood" Value="false" />
+    </UserDefinedVariables>
+</Entity>

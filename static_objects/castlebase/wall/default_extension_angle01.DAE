@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-03-22T10:08:16Z</created>
+    <keywords></keywords>
+    <modified>2012-03-22T10:08:16Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #16-image" name="Map #16">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\castlebase\Wall\castlebase_wall_extension.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_05 - Default" name="_05 - Default">
+      <instance_effect url="#_05 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_05 - Default-fx" name="_05 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #16-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object112-lib" name="Object112Mesh">
+      <mesh>
+        <source id="Object112-POSITION">
+          <float_array id="Object112-POSITION-array" count="39">
+2.001580 -0.000000 1.496878
+-2.001575 -0.000000 1.496878
+-2.001575 0.000000 0.459598
+2.001580 -0.164266 0.372772
+2.001580 0.000000 0.459598
+-2.001575 -0.164265 0.372772
+2.001580 -0.268052 0.215387
+2.001580 -0.322158 -0.000000
+-2.001575 -0.268052 0.215387
+-2.001575 -0.322158 -0.000000
+2.001580 -0.000000 3.752954
+2.001580 -0.000000 2.724406
+-2.001575 -0.000000 2.724406
+</float_array>
+          <technique_common>
+            <accessor source="#Object112-POSITION-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object112-Normal0">
+          <float_array id="Object112-Normal0-array" count="99">
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+-0.000000 -0.672090 0.740470
+0.000000 -0.467307 0.884095
+-0.000000 -0.467308 0.884095
+-0.000000 -0.467308 0.884095
+-0.000000 -0.672089 0.740470
+-0.000000 -0.672090 0.740470
+-0.000000 -0.915299 0.402775
+-0.000000 -0.915299 0.402775
+-0.000000 -0.672090 0.740470
+-0.000000 -0.672090 0.740470
+-0.000000 -0.672089 0.740470
+-0.000000 -0.915299 0.402775
+-0.000000 -0.969868 0.243632
+-0.000000 -0.969868 0.243632
+-0.000000 -0.915299 0.402775
+-0.000000 -0.915299 0.402775
+-0.000000 -0.915299 0.402775
+-0.000000 -0.969868 0.243632
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Object112-Normal0-array" count="33" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object112-UV0">
+          <float_array id="Object112-UV0-array" count="38">
+0.002032 0.650232
+0.695281 0.650232
+0.695281 0.448702
+0.695281 0.650232
+0.002032 0.448702
+0.002032 0.650232
+0.695281 0.994781
+-0.130780 0.388703
+-0.130780 0.888879
+-0.095245 0.388703
+-0.095245 0.888879
+-0.167650 0.888879
+-0.243876 0.888879
+-0.243876 0.388703
+-0.167650 0.388703
+-0.130780 0.388703
+-0.130780 0.888879
+0.695281 0.837701
+0.002032 0.837701
+</float_array>
+          <technique_common>
+            <accessor source="#Object112-UV0-array" count="19" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object112-VERTEX">
+          <input semantic="POSITION" source="#Object112-POSITION"/>
+        </vertices>
+        <triangles count="11" material="_05 - Default">
+          <input semantic="VERTEX" offset="0" source="#Object112-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Object112-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Object112-UV0"/>
+          <p> 10 0 6 12 1 18 11 2 17 1 3 5 2 4 4 4 5 2 4 6 2 0 7 3 1 8 5 3 9 7 4 10 9 2 11 10 2 12 10 5 13 8 3 14 7 8 15 11 6 16 14 3 17 15 3 18 15 5 19 16 8 20 11 9 21 12 7 22 13 6 23 14 6 24 14 8 25 11 9 26 12 1 27 0 0 28 1 11 29 17 11 30 17 12 31 18 1 32 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Object112" id="Object112" layer="default_extension_angle01" sid="Object112">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Object112-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_05 - Default" target="#_05 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

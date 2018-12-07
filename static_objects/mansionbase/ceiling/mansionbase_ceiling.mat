@@ -1,0 +1,16 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Generic_Hard" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/SVN/amnesia/redist/static_objects/mansionbase/ceiling/mansionbase_ceiling.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/SVN/amnesia/redist/static_objects/mansionbase/ceiling/mansionbase_ceiling_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/SVN/amnesia/redist/static_objects/mansionbase/ceiling/mansionbase_ceiling_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Height AnimFrameTime="0" AnimMode="None" Compress="false" File="C:/SVN/amnesia/redist/static_objects/mansionbase/ceiling/mansionbase_ceiling_height.tga" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.04" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.2" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

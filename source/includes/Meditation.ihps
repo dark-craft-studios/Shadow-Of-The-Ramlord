@@ -1,0 +1,115 @@
+#include "AmnesiaSignatures.cpp"
+
+// WARNING: TODO: THIS IS JUST EXTRACTED FROM PROLOGUE AND IS NOT REUSABLE
+
+// ============================================================================
+// USAGE
+// ============================================================================
+// To start the mediatation scene, call the
+// "StartMeditation" function and pass in
+// the entity for the player to look at
+// and a (string)callback function
+// Callback has the following singature:
+// void _____(string t) { }
+// 
+// The callback is called in the middle of the meditation and should contain
+// the main payload of it. After your scene is ready to wrap up call a timer
+// called "EndMeditation".
+// ============================================================================
+void StartMeditation(string focusArea, string callback)
+{
+    SetLocalVarString("MeditationCallback", callback);
+    AddDebugMessage("Meditation triggered", false);
+    StartPlayerLookAt(focusArea, 1.0f, 1.5f, "");
+    SetPlayerActive(false);
+    SetInventoryDisabled(true);
+    AddTimer("", 2.0f, "MeditationTimer");
+}
+
+void MeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationStage", 1);
+    int stage = GetLocalVarInt("MeditationStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        StopAmbience();
+        SetPlayerCrouching(true);
+        delay = 4.0f;
+    }
+    else if(stage == 2)
+    {
+        MovePlayerHeadPos(0.0f, -0.2f, 0.0f, 1.0f, 0.5f);
+        delay = 5.0f;
+    }
+    else if(stage == 3)
+    {
+        FadeOut(2.0f);
+        PlaySoundAtEntity("react_breath_slow.snt");
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        FadeSepiaColorTo(0.9f, 2.0f);
+        FadeIn(1.5f);
+        StartEffectFlash(0.5f, 3.5f, 1.0f);
+        PlaySoundAtEntity("flashback_flash.snt");
+        delay = 5.5f;
+    }
+    else if(stage == 5)
+    {
+        string callback = GetLocalVarString("MeditationCallback");
+        AddTimer("", 0.0f, callback);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "MeditationTimer");
+}
+
+void EndMeditation(string t)
+{
+    SetLocalVarString("MeditationCallback", "");
+    SetLocalVarInt("MeditationEndStage", 0);
+    EndMeditationTimer("");
+}
+
+void EndMeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationEndStage", 1);
+    int stage = GetLocalVarInt("MeditationEndStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        FadeOut(1.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 2)
+    {
+        FadeSepiaColorTo(0.0f, 2.0f);
+        FadeIn(2.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 3)
+    {
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 1.0f, 0.5f);
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        StopPlayerLookAt();
+        SetPlayerCrouching(false);
+        SetInventoryDisabled(false);
+        SetPlayerActive(true);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "EndMeditationTimer");
+}

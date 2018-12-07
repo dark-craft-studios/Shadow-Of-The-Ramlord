@@ -1,0 +1,129 @@
+#include "AmnesiaSignatures.cpp"
+
+// ----------------------------------------------------------------------------
+// Storm ambience - sa
+// ----------------------------------------------------------------------------
+const int saThunderAreasCount = 2;
+
+void PlaySoundAtThunderAreas(string filename, float fadeTime)
+{
+    for(int i = 0; i <= saThunderAreasCount; i++)
+    {
+        string currentThunerArea = "AreaThunder" + i;
+        if(GetEntityExists(currentThunerArea))
+        {
+            PlaySoundAtEntity(filename, currentThunerArea, fadeTime);
+        }
+    }
+}
+
+void TimerThunder(string &in asTimer)
+{
+    AddLocalVarInt("ThunderStep", 1);
+    int currentStage = GetLocalVarInt("ThunderStep");
+
+    if(currentStage == 1 || currentStage == 5)
+    {
+        ThunderLights(2, 0.05f);
+    }
+    else if(currentStage == 2 || currentStage == 4)
+    {
+        ThunderLights(1, 0.05f);
+    }
+    else if(currentStage == 3 || currentStage == 6)
+    {
+        ThunderLights(3, 0.05f);
+    }
+    else if(currentStage == 7)
+    {
+        ThunderLights(1, 0.3f);
+        PlaySoundAtThunderAreas("SOTR_general_thunder.snt", 0.0f);
+    }
+
+    float timerMinTime = 0.05f;
+    float timerMaxTime = 0.15f;
+    
+    if(currentStage >= 8)
+    {
+        SetLocalVarInt("ThunderStep", 0); 
+        timerMinTime = 10.0f;
+        timerMaxTime = 30.0f;
+    }
+
+    AddTimer("thunder", RandFloat(timerMinTime, timerMaxTime), "TimerThunder");
+}
+
+// ----------------------------------------------------------------------------
+// Storm ambience - Lights system - sal
+// ----------------------------------------------------------------------------
+const string[] salLightTypeNameBase =
+{
+    "spotthunder_", 
+    "pointthunder_", 
+    "ambthunder_"
+};
+const int[] salLightTypeCounts = {2, 2, 2};
+const float[] salLightTypePercentage     =  { 0.10f, 0.80f, 1.00f };
+const float[] salLowIntensityRgbaBase    =  { 0.52f, 0.55f, 0.60f, 0.45f };
+const float[] salMediumIntensityRgbaBase =  { 0.82f, 0.85f, 0.90f, 0.90f };
+const float[] salHighIntensityRgbaBase   =  { 0.92f, 0.95f, 1.00f, 1.00f };
+
+void ThunderLights(int intensity, float fadeTime)
+{
+    if(ShouldSkipForVariety()) return;
+
+    if(intensity == 1)
+    {
+        StartThunderFadeLights(salLowIntensityRgbaBase, fadeTime, intensity);
+    }
+    else if(intensity == 2)
+    {
+        StartThunderFadeLights(salMediumIntensityRgbaBase, fadeTime, intensity);
+    }
+    else
+    {
+        StartThunderFadeLights(salHighIntensityRgbaBase, fadeTime, intensity);
+    }
+}
+
+void StartThunderFadeLights(float[] baseIntensity, float fade, int intensity)
+{
+    for(uint i = 0; i < salLightTypeNameBase.length(); i++)
+    {
+        FadeThunderLights(
+            salLightTypeNameBase[i], 
+            salLightTypeCounts[i],
+            baseIntensity,
+            fade,
+            salLightTypePercentage[intensity - 1]
+        );
+    }
+}
+
+void FadeThunderLights(string base, int count, float[] rgba, float fade, float mult)
+{
+    for(int i = 0; i <= count; i++)
+    {
+        FadeLightTo(
+            base + i, 
+            rgba[0] * mult, 
+            rgba[1] * mult, 
+            rgba[2] * mult, 
+            rgba[3], -1, 
+            fade
+        );
+    }
+}
+
+// Wether this lightning spark should be skipped to create variety. 
+bool ShouldSkipForVariety()
+{
+    int seed = RandInt(1, 3);
+    return seed == 3 && !CurrentThunderIsEssential();
+}
+
+bool CurrentThunderIsEssential()
+{
+    int stage = GetLocalVarInt("ThunderStep");
+    return stage == 3 || stage == 7;
+}

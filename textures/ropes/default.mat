@@ -1,0 +1,7 @@
+<Material>
+  <Main Type="SolidDiffuse" PhysicsMaterial="" />
+  <TextureUnits>
+    <Diffuse File="default" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" />
+    <NMap File="default_nrm" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" />
+  </TextureUnits>
+</Material>

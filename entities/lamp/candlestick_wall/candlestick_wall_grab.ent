@@ -1,0 +1,80 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-0.00702421 0.36821 19.7477" CameraTarget="-0.00702421 0.36821 -0.252256" CameraZoom="0.916293" GridHeight="-0.252256" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="19.993 0.36821 -0.252256" CameraTarget="-0.00702421 0.36821 -0.252256" CameraZoom="0.91629" GridHeight="-0.00702421" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.00702421 20.3682 -0.252256" CameraTarget="-0.00702421 0.36821 -0.252256" CameraZoom="0.916291" GridHeight="0.36821" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.978048 -0.062257 -0.123216" CameraTarget="-0.0148908 0.127753 -0.198522" CameraZoom="3.92754" GridHeight="0.36821" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/lamp/candlestick_wall/candlestick_wall.dae">
+            <SubMesh Active="true" ID="13" Material="" Name="polySurface23_009" Rotation="-1.5708 -6.39237e-008 0.0298582" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0.00250566 0.0662304 -0.145044" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="16" Name="Shape_2" RelativeRotation="0 -0 0.031509" RelativeScale="0.093483 0.25 0.102365" RelativeTranslation="-0.00161986 0.113479 -0.103689" Rotation="0 -0 0.031509" Scale="0.093483 0.25 0.102365" ShapeType="Box" Tag="" WorldPos="-0.00323973 0.217332 -0.237306" />
+            <BodyShape Active="true" ID="22" Name="Shape_1" RelativeRotation="-1.5708 -0 0" RelativeScale="0.118206 0.0686053 0.118206" RelativeTranslation="0.00161986 -0.113479 0.103689" Rotation="-1.5708 0 0" Scale="0.118206 0.0686053 0.118206" ShapeType="Cylinder" Tag="" WorldPos="0 -0.00962573 -0.0299287" />
+            <BodyShape Active="true" ID="24" Name="Shape_3" RelativeRotation="-0.929816 -0 0.031509" RelativeScale="0.054 0.21 0.12" RelativeTranslation="0.00161986 -0.086861 -0.0383827" Rotation="-0.929816 -0 0.031509" Scale="0.054 0.21 0.12" ShapeType="Box" Tag="" WorldPos="0 0.0169921 -0.172" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="false" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="26" LinearDamping="1" Mass="5" Material="Default" MaxAngularSpeed="5" MaxLinearSpeed="5" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.00161986 0.103853 -0.133617">
+                <Shape ID="24" />
+                <Shape ID="22" />
+                <Shape ID="16" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="Grab" EntityType="Object">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="2" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="fire_small_on" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="BreakActive" Value="false" />
+        <Var Name="BreakDestroyJoints" Value="false" />
+        <Var Name="BreakMinEnergy" Value="100" />
+        <Var Name="BreakEntity" Value="" />
+        <Var Name="BreakEntityAlignBody" Value="" />
+        <Var Name="BreakSound" Value="" />
+        <Var Name="BreakParticleSystem" Value="" />
+        <Var Name="BreakImpulse" Value="3" />
+        <Var Name="HitDamageAmount" Value="5" />
+        <Var Name="HitDamageStrength" Value="1" />
+        <Var Name="MinHitDamageSpeed" Value="3" />
+        <Var Name="LifeLength" Value="0" />
+        <Var Name="IsFood" Value="false" />
+        <Var Name="GrabUseDepth" Value="false" />
+        <Var Name="GrabDepth" Value="1.5" />
+        <Var Name="GrabDepthInc" Value="0.15" />
+        <Var Name="GrabMinDepth" Value="1.0" />
+        <Var Name="GrabMaxDepth" Value="2.2" />
+        <Var Name="GrabUseOffset" Value="false" />
+        <Var Name="GrabPositionOffset" Value="0" />
+        <Var Name="GrabRotationOffset" Value="0" />
+        <Var Name="GrabThrowImpulse" Value="10" />
+        <Var Name="GrabMassMul" Value="0.1" />
+        <Var Name="GrabForceMul" Value="1" />
+        <Var Name="GrabTorqueMul" Value="1" />
+        <Var Name="GrabUseRotation" Value="true" />
+        <Var Name="GrabSkipNonOuterBodies" Value="false" />
+    </UserDefinedVariables>
+</Entity>

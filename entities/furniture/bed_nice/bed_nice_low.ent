@@ -1,0 +1,58 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 100" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="100 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 100 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="3.61056 1.79234 3.19515" CameraTarget="-6.65314 -2.60755 -5.54521" CameraZoom="1.26013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/furniture/bed_nice/bed_nice_low.DAE">
+            <SubMesh Active="true" ID="20" Material="" Name="bed_nice_mesh002" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="21" Material="" Name="Sphere005" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="22" Material="" Name="Object005" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="2" Name="Shape_1" RelativeRotation="-3.14159 1.57045 -3.14159" RelativeScale="2.95 0.75 2.06" RelativeTranslation="-0.0359325 -0.256549 0.659279" Rotation="-3.14159 1.57045 -3.14159" Scale="2.95 0.75 2.06" ShapeType="Box" Tag="" WorldPos="0 0.531862 0.033889" />
+            <BodyShape Active="true" ID="3" Name="Shape_2" RelativeRotation="3.89414e-007 1.57045 3.89414e-007" RelativeScale="0.08 0.13 0.71424" RelativeTranslation="0 0.381195 -1.54429" Rotation="3.89414e-007 1.57045 3.89414e-007" Scale="0.08 0.13 0.71424" ShapeType="Box" Tag="" WorldPos="0 1.30995 -1.56113" />
+            <BodyShape Active="true" ID="4" Name="Shape_3" RelativeRotation="-3.14159 1.5708 -3.14159" RelativeScale="0.08 1.08 2.06" RelativeTranslation="0 -0.381195 -1.54429" Rotation="-3.14159 1.5708 -3.14159" Scale="0.08 1.08 2.06" ShapeType="Box" Tag="" WorldPos="0 0.547559 -1.56113" />
+            <BodyShape Active="true" ID="5" Name="Shape_4" RelativeRotation="3.89414e-007 1.5708 3.89414e-007" RelativeScale="0.08 0.165 1.41966" RelativeTranslation="0 0.238465 -1.54429" Rotation="3.89414e-007 1.5708 3.89414e-007" Scale="0.08 0.165 1.41966" ShapeType="Box" Tag="" WorldPos="0 1.16722 -1.56113" />
+            <BodyShape Active="true" ID="7" Name="Shape_6" RelativeRotation="-3.14159 1.57045 -3.14159" RelativeScale="0.24 1.25 0.24" RelativeTranslation="1.0428 -0.299085 1.54429" Rotation="-3.14159 1.57045 -3.14159" Scale="0.24 1.25 0.24" ShapeType="Box" Tag="" WorldPos="1.0428 0.629669 1.52745" />
+            <BodyShape Active="true" ID="8" Name="Shape_7" RelativeRotation="-3.14159 1.57045 -3.14159" RelativeScale="0.24 1.25 0.24" RelativeTranslation="-1.0428 -0.299085 1.54429" Rotation="-3.14159 1.57045 -3.14159" Scale="0.24 1.25 0.24" ShapeType="Box" Tag="" WorldPos="-1.0428 0.629669 1.52745" />
+            <BodyShape Active="true" ID="9" Name="Shape_8" RelativeRotation="-3.14159 1.57045 -3.14159" RelativeScale="0.24 1.25 0.24" RelativeTranslation="1.0428 -0.299085 -1.51026" Rotation="-3.14159 1.57045 -3.14159" Scale="0.24 1.25 0.24" ShapeType="Box" Tag="" WorldPos="1.0428 0.629669 -1.5271" />
+            <BodyShape Active="true" ID="10" Name="Shape_9" RelativeRotation="-3.14159 1.57045 -3.14159" RelativeScale="0.24 1.25 0.24" RelativeTranslation="-1.0428 -0.299085 -1.51026" Rotation="-3.14159 1.57045 -3.14159" Scale="0.24 1.25 0.24" ShapeType="Box" Tag="" WorldPos="-1.0428 0.629669 -1.5271" />
+            <BodyShape Active="true" ID="11" Name="Shape_10" RelativeRotation="0.261799 -0 0.069813" RelativeScale="0.7 0.2 0.45" RelativeTranslation="0.363981 0.256549 -0.65928" Rotation="0.261799 -0 0.069813" Scale="0.7 0.2 0.45" ShapeType="Box" Tag="" WorldPos="0.399914 1.04496 -1.28467" />
+            <BodyShape Active="true" ID="12" Name="Shape_11" RelativeRotation="0.174533 -0 -0.05236" RelativeScale="0.7 0.2 0.45" RelativeTranslation="-0.363981 0.240839 -0.640029" Rotation="0.174533 -0 -0.05236" Scale="0.7 0.2 0.45" ShapeType="Box" Tag="" WorldPos="-0.328049 1.02925 -1.26542" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="18" LinearDamping="0" Mass="0" Material="Generic_Soft" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.0359325 0.788411 -0.62539">
+                <Children>
+                    <Child ID="20" />
+                </Children>
+                <Shape ID="11" />
+                <Shape ID="12" />
+                <Shape ID="2" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="23" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_2" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.928755 -0.01684">
+                <Children>
+                    <Child ID="21" />
+                    <Child ID="22" />
+                </Children>
+                <Shape ID="7" />
+                <Shape ID="9" />
+                <Shape ID="10" />
+                <Shape ID="8" />
+                <Shape ID="3" />
+                <Shape ID="5" />
+                <Shape ID="4" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

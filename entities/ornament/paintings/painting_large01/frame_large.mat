@@ -1,0 +1,8 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.100000" PhysicsMaterial="Default" Type="SolidDiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/entities/ornament/paintings/painting_large01/frame_large.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/entities/ornament/paintings/painting_large01/frame_large_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/entities/ornament/paintings/painting_large01/frame_large_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

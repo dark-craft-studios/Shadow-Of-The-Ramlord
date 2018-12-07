@@ -1,0 +1,13 @@
+
+maps/SOTR_03_quietstudy.map
+
+# VSCode Preprocessor Settings
+settings.json
+tasks.json
+
+# Compile targets ignores
+*.hps
+
+# Amnesia ignores
+*.map_cache
+*.nodes

@@ -1,0 +1,252 @@
+<Level>
+    <MapData FogActive="true" FogColor="0.015 0.045 0.062 1" FogCulling="false" FogEnd="50" FogFalloffExp="0.7" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="true" SkyBoxColor="0.152 0.152 0.159 1" SkyBoxTexture="../../../../../">
+        <MapContents>
+            <FileIndex_StaticObjects NumOfFiles="78">
+                <File Id="0" Path="static_objects/mansionbase/wall/door_way02.dae" />
+                <File Id="1" Path="static_objects/mansionbase/wall/default02.dae" />
+                <File Id="2" Path="static_objects/mansionbase/wall/window02_blue.dae" />
+                <File Id="3" Path="static_objects/mansionbase/wall/door_frame.dae" />
+                <File Id="4" Path="static_objects/mansionbase/wall/welder02_convex.dae" />
+                <File Id="5" Path="static_objects/ornaments/curtains/curtain01_open.dae" />
+                <File Id="6" Path="static_objects/ornaments/carpets/carpet02.dae" />
+                <File Id="7" Path="static_objects/mansionbase/stairs/default.dae" />
+                <File Id="8" Path="static_objects/mansionbase/wall/default.dae" />
+                <File Id="9" Path="static_objects/mansionbase/wall/door_way.dae" />
+                <File Id="10" Path="static_objects/mansionbase/ceiling/concave.dae" />
+                <File Id="11" Path="static_objects/mansionbase/ceiling/corner_concave_short.dae" />
+                <File Id="12" Path="static_objects/mansionbase/wall/short02.dae" />
+                <File Id="13" Path="static_objects/mansionbase/wall/welder02_concave.dae" />
+                <File Id="14" Path="static_objects/mansionbase/ceiling/concave_short.dae" />
+                <File Id="15" Path="static_objects/ptest/cellman/default_extension.dae" />
+                <File Id="16" Path="static_objects/cellarbase/ceiling/welder_extension.dae" />
+                <File Id="17" Path="static_objects/cellarbase/ceiling/welder_corridor_extension.dae" />
+                <File Id="18" Path="static_objects/decals/damaged_cellarbase_wood_floor02.dae" />
+                <File Id="19" Path="static_objects/decals/dirt_wall_leak02.dae" />
+                <File Id="20" Path="static_objects/decals/dirt_wall_leak03.dae" />
+                <File Id="21" Path="static_objects/decals/dirt_wall_leak01.dae" />
+                <File Id="22" Path="static_objects/decals/dirt_wall_leak04.dae" />
+                <File Id="23" Path="static_objects/ornaments/carpets/carpet03.dae" />
+                <File Id="24" Path="static_objects/ornaments/carpets/carpet04.dae" />
+                <File Id="25" Path="static_objects/mansionbase/wall/window02_yellow.dae" />
+                <File Id="26" Path="static_objects/mansionbase/wall/window_blue.dae" />
+                <File Id="27" Path="static_objects/mansionbase/stairs/railing.dae" />
+                <File Id="28" Path="static_objects/ornaments/carpets/carpet01.dae" />
+                <File Id="29" Path="static_objects/mansionbase/wall/welder.dae" />
+                <File Id="30" Path="static_objects/outside/foliage/grass01.DAE" />
+                <File Id="31" Path="static_objects/outside/foliage/grass02.dae" />
+                <File Id="32" Path="static_objects/outside/foliage/shrubb_dead.dae" />
+                <File Id="33" Path="static_objects/dungeonbase/wall/door_way.dae" />
+                <File Id="34" Path="static_objects/dungeonbase/wall/fence_metal.dae" />
+                <File Id="35" Path="static_objects/outside/tree/pine.dae" />
+                <File Id="36" Path="static_objects/dungeonbase/pillar/bridge.dae" />
+                <File Id="37" Path="static_objects/dungeonbase/pillar/bridge_extension.dae" />
+                <File Id="38" Path="static_objects/dungeonbase/pillar/bridge_top.dae" />
+                <File Id="39" Path="static_objects/dungeonbase/special/tree_pillar.dae" />
+                <File Id="40" Path="static_objects/dungeonbase/wall/door_frame_arched.dae" />
+                <File Id="41" Path="static_objects/dungeonbase/wall/default.dae" />
+                <File Id="42" Path="static_objects/dungeonbase/wall/welder_stone.dae" />
+                <File Id="43" Path="static_objects/dungeonbase/special/torture_podium_square_4way.dae" />
+                <File Id="44" Path="static_objects/dungeonbase/ceiling/concave.dae" />
+                <File Id="45" Path="static_objects/dungeonbase/wall/door_frame.dae" />
+                <File Id="46" Path="static_objects/dungeonbase/wall/corner_concave_extension.dae" />
+                <File Id="47" Path="static_objects/mansionbase/special/outside_wall_watchtower.dae" />
+                <File Id="48" Path="static_objects/debris/wood/plank02_4.5m.dae" />
+                <File Id="49" Path="static_objects/decals/pebbles02.dae" />
+                <File Id="50" Path="static_objects/dungeonbase/wall/welder_stone_floorspikes.dae" />
+                <File Id="51" Path="static_objects/dungeonbase/stairs/welder.dae" />
+                <File Id="52" Path="static_objects/decals/cracks_brown03.dae" />
+                <File Id="53" Path="static_objects/decals/dirt_floor03.dae" />
+                <File Id="54" Path="static_objects/dungeonbase/wall/welder_wood.dae" />
+                <File Id="55" Path="static_objects/decals/pool_oil.dae" />
+                <File Id="56" Path="static_objects/ptest/wood_plank/wood_plank_broken03.dae" />
+                <File Id="57" Path="static_objects/ptest/wood_plank/wood_plank_broken02.dae" />
+                <File Id="58" Path="static_objects/ptest/wood_plank/wood_plank_broken01.dae" />
+                <File Id="59" Path="static_objects/outside/foliage/zimmarman_grass02_brown_2sided.dae" />
+                <File Id="60" Path="static_objects/dungeonbase/floor/floor_to_dirt_piece.dae" />
+                <File Id="61" Path="static_objects/dungeonbase/floor/dirt_mould_pile.dae" />
+                <File Id="62" Path="static_objects/cellarbase/ceiling/welder_corridor.dae" />
+                <File Id="63" Path="static_objects/cellarbase/wall/welder.dae" />
+                <File Id="64" Path="static_objects/technical/plane_black/plane_black.dae" />
+                <File Id="65" Path="static_objects/debris/wood/plank01_4.5m.dae" />
+                <File Id="66" Path="static_objects/dungeonbase/bridge/chasm_bridge.dae" />
+                <File Id="67" Path="static_objects/dungeonbase/pillar/gigantic.dae" />
+                <File Id="68" Path="static_objects/decals/dirt_floor01.dae" />
+                <File Id="69" Path="static_objects/decals/dirt_floor02.dae" />
+                <File Id="70" Path="static_objects/decals/paper_pile02.dae" />
+                <File Id="71" Path="static_objects/decals/filth_rust01.dae" />
+                <File Id="72" Path="static_objects/decals/filth_rust02.dae" />
+                <File Id="73" Path="static_objects/decals/paper_pile.dae" />
+                <File Id="74" Path="static_objects/decals/web_spider01.dae" />
+                <File Id="75" Path="static_objects/decals/steps_floor01.dae" />
+                <File Id="76" Path="static_objects/decals/rose_petals03.dae" />
+                <File Id="77" Path="static_objects/decals/moist_wall02.dae" />
+            </FileIndex_StaticObjects>
+            <FileIndex_Entities NumOfFiles="133">
+                <File Id="0" Path="entities/door/mansion/mansion.ent" />
+                <File Id="1" Path="entities/furniture/display/display_broken.ent" />
+                <File Id="2" Path="entities/item/note_generic/note_generic.ent" />
+                <File Id="3" Path="entities/ornament/tome_open02/tome_open02.ent" />
+                <File Id="4" Path="entities/storage/shelf_high02/shelf_high02.ent" />
+                <File Id="5" Path="entities/lamp/candlestick_wall/candlestick_wall.ent" />
+                <File Id="6" Path="entities/furniture/chair_nice02/chair_nice02.ent" />
+                <File Id="7" Path="entities/furniture/table_nice_round/table_nice_round.ent" />
+                <File Id="8" Path="entities/furniture/cabinet_simple/cabinet_simple.ent" />
+                <File Id="9" Path="entities/tool/hammer/hammer.ent" />
+                <File Id="10" Path="entities/ornament/arabic_carafe/arabic_carafe.ent" />
+                <File Id="11" Path="entities/ornament/goblet/goblet.ent" />
+                <File Id="12" Path="entities/ornament/book01/book01.ent" />
+                <File Id="13" Path="entities/furniture/piano/piano.ent" />
+                <File Id="14" Path="entities/furniture/chair_nice01/chair_nice01.ent" />
+                <File Id="15" Path="entities/door/level_wood/level_wood.ent" />
+                <File Id="16" Path="entities/lamp/chandelier_simple/chandelier_simple_short.ent" />
+                <File Id="17" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />
+                <File Id="18" Path="entities/ornament/paintings/painting02/painting02.ent" />
+                <File Id="19" Path="entities/lamp/candle_floor/candle_floor_no_light.ent" />
+                <File Id="20" Path="entities/furniture/chair_wood02/chair_wood02.ent" />
+                <File Id="21" Path="entities/ornament/book03/book03.ent" />
+                <File Id="22" Path="entities/ornament/book02/book02.ent" />
+                <File Id="23" Path="entities/statues/deformed_man_noHead/deformed_man_noHead.ent" />
+                <File Id="24" Path="entities/container/wood_box01/wood_box01.ent" />
+                <File Id="25" Path="entities/container/vase01/vase01.ent" />
+                <File Id="26" Path="entities/ptest/rotten_flowers/rotten_flower.ent" />
+                <File Id="27" Path="entities/equipment/broom/broom.ent" />
+                <File Id="28" Path="entities/equipment/wooden_board/wooden_board02.ent" />
+                <File Id="29" Path="entities/ornament/rolled_up_carpet/rolled_up_carpet.ent" />
+                <File Id="30" Path="entities/debris/wood/wood_beam.ent" />
+                <File Id="31" Path="entities/statues/pedestal/pedestal.ent" />
+                <File Id="32" Path="entities/ornament/book_pile02/book_pile02.ent" />
+                <File Id="33" Path="entities/ornament/book_pile01/book_pile01.ent" />
+                <File Id="34" Path="entities/ornament/book_open/book_open.ent" />
+                <File Id="35" Path="entities/ornament/pot_plant_small02/pot_plant_small02.ent" />
+                <File Id="36" Path="entities/ornament/tome_pile01/tome_pile01.ent" />
+                <File Id="37" Path="entities/ornament/tome_pile02/tome_pile02.ent" />
+                <File Id="38" Path="entities/kitchen/butcher_knife/butcher_knife.ent" />
+                <File Id="39" Path="entities/ornament/book_row01/book_row01.ent" />
+                <File Id="40" Path="entities/ornament/book_row03/book_row03.ent" />
+                <File Id="41" Path="entities/ornament/banners/banners_rag/banners_rag.ent" />
+                <File Id="42" Path="entities/ornament/arabic_statue/arabic_statue.ent" />
+                <File Id="43" Path="entities/ornament/vase_sumer_big/vase_sumer_big.ent" />
+                <File Id="44" Path="entities/technical/block_box/block_box.ent" />
+                <File Id="45" Path="entities/lamp/13_burner/13_burner.ent" />
+                <File Id="46" Path="entities/ornament/pot_plant_small01/pot_plant_small01.ent" />
+                <File Id="47" Path="entities/ornament/banners/banners01/banner_long01.ent" />
+                <File Id="48" Path="entities/ornament/sketch_castle/sketch_roll01.ent" />
+                <File Id="49" Path="entities/ornament/sketch_castle/sketch_roll_row01.ent" />
+                <File Id="50" Path="entities/ornament/sketch_castle/sketch_roll_row02.ent" />
+                <File Id="51" Path="entities/ornament/sketch_castle/sketch_roll02.ent" />
+                <File Id="52" Path="entities/ornament/paintings/painting01/painting01.ent" />
+                <File Id="53" Path="entities/desktop/paperpile02/paperpile02.ent" />
+                <File Id="54" Path="entities/desktop/paperpile01/paperpile01.ent" />
+                <File Id="55" Path="entities/desktop/paperpile03/paperpile03.ent" />
+                <File Id="56" Path="entities/ornament/paintings/painting03/painting03.ent" />
+                <File Id="57" Path="entities/ornament/paintings/painting05/painting05.ent" />
+                <File Id="58" Path="entities/ornament/paintings/painting07/painting07.ent" />
+                <File Id="59" Path="entities/ornament/paintings/painting_large01/painting_large02.ent" />
+                <File Id="60" Path="entities/ornament/paintings/painting_portrait/painting_portrait.ent" />
+                <File Id="61" Path="entities/furniture/sofa/sofa.ent" />
+                <File Id="62" Path="entities/furniture/armchair/armchair.ent" />
+                <File Id="63" Path="entities/ornament/book_row02/book_row02.ent" />
+                <File Id="64" Path="entities/ornament/map_prussia/map_prussia02.ent" />
+                <File Id="65" Path="entities/lamp/candlestick01/candlestick01.ent" />
+                <File Id="66" Path="entities/furniture/table_nice02/table_nice02.ent" />
+                <File Id="67" Path="entities/desktop/deskpad/deskpad.ent" />
+                <File Id="68" Path="entities/desktop/ink_bottle/ink_bottle.ent" />
+                <File Id="69" Path="entities/desktop/paper01/paper01.ent" />
+                <File Id="70" Path="entities/desktop/paper02/paper02.ent" />
+                <File Id="71" Path="entities/ornament/paintings/painting04/painting04.ent" />
+                <File Id="72" Path="entities/ornament/paintings/painting06/painting06.ent" />
+                <File Id="73" Path="entities/statues/bust/bust.ent" />
+                <File Id="74" Path="entities/lamp/candlestick_floor/candlestick_floor_burntout.ent" />
+                <File Id="75" Path="entities/equipment/wooden_board/wooden_board03.ent" />
+                <File Id="76" Path="entities/lamp/candle_floor/candle_floor_small.ent" />
+                <File Id="77" Path="entities/ornament/tombstone01/tombstone01.ent" />
+                <File Id="78" Path="entities/lamp/torch_floor/torch_floor.ent" />
+                <File Id="79" Path="entities/ornament/banners/banners01/banner_short01_broken.ent" />
+                <File Id="80" Path="entities/ornament/clock_grandfather/clock_grandfather.ent" />
+                <File Id="81" Path="entities/ornament/shield01/shield01.ent" />
+                <File Id="82" Path="entities/statues/eagle/eagle.ent" />
+                <File Id="83" Path="entities/ornament/mirror_broken_small/mirror_broken_small.ent" />
+                <File Id="84" Path="entities/tool/nail/nail.ent" />
+                <File Id="85" Path="entities/debris/rock/stone_small01.ent" />
+                <File Id="86" Path="entities/debris/rock_debris/rock_debris01.ent" />
+                <File Id="87" Path="entities/debris/rock_debris/rock_debris02.ent" />
+                <File Id="88" Path="entities/debris/rock_debris/rock_debris03.ent" />
+                <File Id="89" Path="entities/ornament/tombstone02/tombstone02.ent" />
+                <File Id="90" Path="entities/ornament/tombstone03/tombstone03.ent" />
+                <File Id="91" Path="entities/debris/dungeon_debris/dungeon_small01.ent" />
+                <File Id="92" Path="entities/debris/rock/stone_small01_brown.ent" />
+                <File Id="93" Path="entities/debris/rock_debris/brick_broken02.ent" />
+                <File Id="94" Path="entities/debris/rock_debris/brick02.ent" />
+                <File Id="95" Path="entities/ptest/dungeon_wall_broken_stones/dungeon_wall_broken_stone01.ent" />
+                <File Id="96" Path="entities/ptest/dungeon_wall_broken_stones/dungeon_wall_broken_stone02.ent" />
+                <File Id="97" Path="entities/ornament/orchid/orchid.ent" />
+                <File Id="98" Path="entities/prison/torture_cradle/torture_cradle.ent" />
+                <File Id="99" Path="entities/equipment/chain_pipe/chain_pipe03.ent" />
+                <File Id="100" Path="entities/organic/floor_ivy/floor_ivy.ent" />
+                <File Id="101" Path="entities/organic/sewer_fungi/sewer_fungi1.ent" />
+                <File Id="102" Path="entities/organic/sewer_fungi/sewer_fungi2.ent" />
+                <File Id="103" Path="entities/organic/sewer_fungi/sewer_fungi3.ent" />
+                <File Id="104" Path="entities/equipment/rope_beam/rope_beam01.ent" />
+                <File Id="105" Path="entities/equipment/rope_pile/rope_pile.ent" />
+                <File Id="106" Path="entities/technical/block_box/invisible_box_mass_2.ent" />
+                <File Id="107" Path="entities/gameplay/treasure_chest/treasure_chest.ent" />
+                <File Id="108" Path="entities/equipment/sledge/sledge.ent" />
+                <File Id="109" Path="entities/gameplay/chest_small/chest_small.ent" />
+                <File Id="110" Path="entities/item/tinderbox/tinderbox.ent" />
+                <File Id="111" Path="entities/equipment/cogwheels/cogwheel_tiny01.ent" />
+                <File Id="112" Path="entities/equipment/rope_pile/rope_stump02.ent" />
+                <File Id="113" Path="entities/statues/armour_rusty/armour_rusty_head.ent" />
+                <File Id="114" Path="entities/ornament/stone_altar_shrine/stone_altar_shrine.ent" />
+                <File Id="115" Path="entities/ornament/stone_altar_extra_large/stone_altar_extra_large.ent" />
+                <File Id="116" Path="entities/ornament/tome_open01/tome_open01.ent" />
+                <File Id="117" Path="entities/lamp/hanging_lantern/hanging_lantern_wall_no_light.ent" />
+                <File Id="118" Path="entities/organic/bone_pile_human/human_bone.ent" />
+                <File Id="119" Path="entities/organic/bone_pile_human/bone_pile_human1.ent" />
+                <File Id="120" Path="entities/organic/human_skull/human_skull.ent" />
+                <File Id="121" Path="entities/storage/shelf_no_back/shelf_no_back.ent" />
+                <File Id="122" Path="entities/desktop/paper03/paper03.ent" />
+                <File Id="123" Path="entities/organic/human_bone/human_bone.ent" />
+                <File Id="124" Path="entities/navigation/sign_storage/sign_storage_arrow_left.ent" />
+                <File Id="125" Path="entities/ornament/tome01/tome01.ent" />
+                <File Id="126" Path="entities/ornament/sketch_disect_human/sketch_disect_human02.ent" />
+                <File Id="127" Path="entities/ornament/sketch_disect_human/sketch_disect_human03.ent" />
+                <File Id="128" Path="entities/cloth/shirts/shirt_hanging_white/shirt_hanging_white.ent" />
+                <File Id="129" Path="entities/ornament/clothes_hook/clothes_hook.ent" />
+                <File Id="130" Path="entities/ornament/cross_small_metal/cross_small_metal.ent" />
+                <File Id="131" Path="entities/ptest/strange_sketch/strange_sketch05.ent" />
+                <File Id="132" Path="entities/SOTR_NPCs/SOTR_Baroness_Ghost.ent" />
+            </FileIndex_Entities>
+            <FileIndex_Decals NumOfFiles="10">
+                <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
+                <File Id="1" Path="textures/decals/chalk_alchemy_circles.mat" />
+                <File Id="2" Path="textures/decals/blood_alchemy_circles.mat" />
+                <File Id="3" Path="textures/decals/chalk_alchemy_symbols01.mat" />
+                <File Id="4" Path="textures/decals/blood_stain_large.mat" />
+                <File Id="5" Path="textures/decals/blood_smear02.mat" />
+                <File Id="6" Path="textures/decals/blood_smear01.mat" />
+                <File Id="7" Path="textures/decals/blood_alchemy_symbols02.mat" />
+                <File Id="8" Path="textures/decals/blood_hands01.mat" />
+                <File Id="9" Path="textures/decals/chalk_alchemy_symbols02.mat" />
+            </FileIndex_Decals>
+            <StaticObjects>
+                <StaticObject CastShadows="true" Collides="true" FileIndex="25" Group="0" ID="806" Name="wall_window02_yellow_1" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="18 0 28.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="5" Group="0" ID="121" Name="curtains_curtain01_open_2" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="18 0 28.25" />
+            </StaticObjects>
+            <Primitives />
+            <Decals />
+            <Entities>
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="ps_light_dust.ps" Group="0" ID="792" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_8" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="17.9711 2.20961 28.3818" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="ps_light_dust_large.ps" Group="0" ID="790" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_6" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="16.6589 1.98436 27.8253" />
+                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="ps_light_dust.ps" Group="0" ID="791" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_7" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="16.886 2.10379 28.9145" />
+                <Billboard Active="true" BillboardColor="0.276 0.369 0.579 1" BillboardOffset="0" BillboardSize="1 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 4 0.3" ID="130" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_19" Rotation="0 0 -1.0472" Tag="" WorldPos="17.5 2 29" />
+                <Billboard Active="true" BillboardColor="0.276 0.369 0.579 1" BillboardOffset="0" BillboardSize="1 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 4 0.3" ID="808" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_20" Rotation="0 -1.0472 -1.0472" Tag="" WorldPos="17.5 2 28.75" />
+                <Billboard Active="true" BillboardColor="0.276 0.369 0.579 1" BillboardOffset="0" BillboardSize="1 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 4 0.3" ID="811" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_24" Rotation="0 0.785397 -1.0472" Tag="" WorldPos="17.5 2.5 28.5" />
+                <Billboard Active="true" BillboardColor="0.104 0.249 0.276 1" BillboardOffset="0" BillboardSize="2.35 2.35" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="133" IsHalo="false" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_22" Rotation="-3.14159 1.5708 -3.14159" Tag="" WorldPos="18 2.5 28.25" />
+                <Billboard Active="true" BillboardColor="0.276 0.369 0.579 1" BillboardOffset="0" BillboardSize="1 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 4 0.3" ID="812" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_25" Rotation="0 0.523598 -1.0472" Tag="" WorldPos="17.5 2.5 27.8625" />
+                <Billboard Active="true" BillboardColor="0.276 0.369 0.579 1" BillboardOffset="0" BillboardSize="1 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0.3 4 0.3" ID="810" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_lightblue_lightray.mat" Name="Billboard_23" Rotation="0 0.785397 -1.0472" Tag="" WorldPos="17.5 2 27.75" />
+            </Entities>
+            <Misc />
+            <StaticObjectCombos />
+        </MapContents>
+    </MapData>
+</Level>

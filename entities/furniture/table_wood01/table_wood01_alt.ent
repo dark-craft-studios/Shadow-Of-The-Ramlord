@@ -1,0 +1,40 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-1.01573 0.193328 19.9999" CameraTarget="-1.01573 0.193328 -0.000108" CameraZoom="3.52225" GridHeight="-0.000108" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="20 0.943753 -0.000108" CameraTarget="1.00001e-005 0.943753 -0.000108" CameraZoom="2.76462" GridHeight="1.00001e-005" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="1.00136e-005 20.9438 -0.000108004" CameraTarget="1.00136e-005 0.943753 -0.000108004" CameraZoom="2.76462" GridHeight="0.943753" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.132402 1.7097 2.18413" CameraTarget="0.261473 0.771258 -0.59356" CameraZoom="2.83539" GridHeight="0.943753" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/furniture/table_wood01/table_wood01_alt.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="polySurface13" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="2.1 0.12 1.1" RelativeTranslation="0.0024475 0.434712 -0.0002045" Rotation="0 0 0" Scale="2.1 0.14 1.1" ShapeType="Box" Tag="" WorldPos="1.00001e-005 0.93014 -0.000108" />
+            <BodyShape Active="true" ID="6" Name="Shape_5" RelativeRotation="0 1.57011 0" RelativeScale="0.15 0.9 0.15" RelativeTranslation="0.945158 -0.059002 0.444842" Rotation="0 1.57011 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="0.943 0.475 0.445" />
+            <BodyShape Active="true" ID="7" Name="Shape_6" RelativeRotation="0 1.57011 0" RelativeScale="0.15 0.9 0.15" RelativeTranslation="0.945158 -0.059002 -0.444842" Rotation="0 1.57011 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="0.943 0.475 -0.445" />
+            <BodyShape Active="true" ID="9" Name="Shape_7" RelativeRotation="0 1.57011 0" RelativeScale="0.15 0.9 0.15" RelativeTranslation="-0.945158 -0.059002 -0.444842" Rotation="0 1.57011 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="-0.947596 0.475237 -0.444745" />
+            <BodyShape Active="true" ID="10" Name="Shape_8" RelativeRotation="0 1.57011 0" RelativeScale="0.15 0.9 0.15" RelativeTranslation="-0.945158 -0.059002 0.444842" Rotation="0 1.57011 0" Scale="0.1 0.95 0.1" ShapeType="Box" Tag="" WorldPos="-0.948 0.475 0.445" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="11" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0024375 0.509041 9.64999e-005">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="1" />
+                <Shape ID="6" />
+                <Shape ID="7" />
+                <Shape ID="9" />
+                <Shape ID="10" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-07-02T21:09:55Z</created>
+    <keywords></keywords>
+    <modified>2012-07-02T21:09:55Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #14-image" name="Map #14">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\mansionbase\wall\mirror_photos.psd</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_15 - Default" name="_15 - Default">
+      <instance_effect url="#_15 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_15 - Default-fx" name="_15 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #14-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object054-lib" name="Object054Mesh">
+      <mesh>
+        <source id="Object054-POSITION">
+          <float_array id="Object054-POSITION-array" count="24">
+0.000000 0.161754 0.097071
+-0.000000 -0.161754 0.097071
+-0.000000 0.161754 0.339512
+-0.000000 -0.161754 0.339512
+0.000000 0.150574 -0.339513
+0.000000 -0.171704 -0.311317
+0.000000 0.171704 -0.097993
+0.000000 -0.150574 -0.069798
+</float_array>
+          <technique_common>
+            <accessor source="#Object054-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object054-Normal0">
+          <float_array id="Object054-Normal0-array" count="36">
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+-1.000000 0.000000 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Object054-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object054-UV0">
+          <float_array id="Object054-UV0-array" count="16">
+0.997727 0.997474
+0.720146 0.997474
+0.720146 0.613516
+0.997727 0.613516
+0.997506 0.614274
+0.719925 0.614274
+0.719925 0.225114
+0.997506 0.225114
+</float_array>
+          <technique_common>
+            <accessor source="#Object054-UV0-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object054-VERTEX">
+          <input semantic="POSITION" source="#Object054-POSITION"/>
+        </vertices>
+        <triangles count="4" material="_15 - Default">
+          <input semantic="VERTEX" offset="0" source="#Object054-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Object054-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Object054-UV0"/>
+          <p> 0 0 1 1 1 2 3 2 3 3 3 3 2 4 0 0 5 1 4 6 5 5 7 6 7 8 7 7 9 7 6 10 4 4 11 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Object054" id="Object054" layer="mirror_photos_01" sid="Object054">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Object054-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_15 - Default" target="#_15 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-06-14T22:27:04Z</created>
+    <keywords></keywords>
+    <modified>2012-06-14T22:27:04Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #8-image" name="Map #8">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\cellarbase\cellarbase_window_unlit.jpg</init_from>
+    </image>
+    <image id="Map #11-image" name="Map #11">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\entities\door\wood_panneling_door\wood_panneling_door_white.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_04 - Default" name="_04 - Default">
+      <instance_effect url="#_04 - Default-fx"/>
+    </material>
+    <material id="_09 - Default" name="_09 - Default">
+      <instance_effect url="#_09 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_04 - Default-fx" name="_04 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #8-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_09 - Default-fx" name="_09 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #11-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mirror001-lib" name="mirror001Mesh">
+      <mesh>
+        <source id="mirror001-POSITION">
+          <float_array id="mirror001-POSITION-array" count="12">
+-0.025605 0.386540 -0.614804
+-0.025604 -0.367489 -0.614804
+-0.025605 0.386540 0.606613
+-0.025605 -0.367489 0.606613
+</float_array>
+          <technique_common>
+            <accessor source="#mirror001-POSITION-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mirror001-Normal0">
+          <float_array id="mirror001-Normal0-array" count="18">
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#mirror001-Normal0-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mirror001-UV0">
+          <float_array id="mirror001-UV0-array" count="8">
+0.286968 0.462693
+0.286968 0.038843
+0.721262 0.038843
+0.721262 0.462693
+</float_array>
+          <technique_common>
+            <accessor source="#mirror001-UV0-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mirror001-VERTEX">
+          <input semantic="POSITION" source="#mirror001-POSITION"/>
+        </vertices>
+        <triangles count="2" material="_04 - Default">
+          <input semantic="VERTEX" offset="0" source="#mirror001-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#mirror001-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#mirror001-UV0"/>
+          <p> 0 0 1 1 1 2 3 2 3 3 3 3 2 4 0 0 5 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Box026-lib" name="Box026Mesh">
+      <mesh>
+        <source id="Box026-POSITION">
+          <float_array id="Box026-POSITION-array" count="48">
+0.000031 0.464802 -0.689724
+0.000031 -0.456055 -0.689724
+0.000031 0.464802 0.682166
+0.000031 -0.456055 0.682166
+-0.043751 0.464802 -0.689724
+-0.043751 -0.456055 -0.689724
+-0.043751 0.464802 0.682166
+-0.043751 -0.456055 0.682166
+-0.043751 0.364802 -0.589724
+-0.043751 -0.356055 -0.589724
+-0.043751 -0.356055 0.582166
+-0.043751 0.364802 0.582166
+-0.017774 0.364802 -0.589724
+-0.017774 -0.356055 -0.589724
+-0.017774 -0.356055 0.582166
+-0.017775 0.364802 0.582166
+</float_array>
+          <technique_common>
+            <accessor source="#Box026-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box026-Normal0">
+          <float_array id="Box026-Normal0-array" count="234">
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+-1.000000 -0.000000 -0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box026-Normal0-array" count="78" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box026-UV0">
+          <float_array id="Box026-UV0-array" count="88">
+0.989741 0.491950
+0.989741 0.996812
+0.515379 0.996812
+0.515379 0.491950
+0.633383 0.642259
+0.633383 0.855520
+0.623244 0.855520
+0.623244 0.642259
+0.633487 0.586998
+0.633487 0.904713
+0.623347 0.904713
+0.623347 0.586998
+0.623925 0.855520
+0.623925 0.642259
+0.634065 0.642259
+0.634065 0.855520
+0.624109 0.904713
+0.624109 0.586998
+0.634248 0.586998
+0.634249 0.904713
+0.630811 0.642259
+0.630811 0.809202
+0.625121 0.809202
+0.625121 0.642259
+0.624795 0.809202
+0.624794 0.642259
+0.631137 0.642259
+0.631137 0.809202
+0.624790 0.868631
+0.624790 0.597234
+0.630806 0.597234
+0.630806 0.868631
+0.630969 0.597234
+0.630969 0.868631
+0.624953 0.868631
+0.624953 0.597234
+0.484079 0.646723
+0.484079 0.976709
+0.448147 0.940776
+0.448147 0.682655
+0.054929 0.976709
+0.090861 0.940777
+0.054929 0.646723
+0.090861 0.682656
+</float_array>
+          <technique_common>
+            <accessor source="#Box026-UV0-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box026-VERTEX">
+          <input semantic="POSITION" source="#Box026-POSITION"/>
+        </vertices>
+        <triangles count="26" material="_09 - Default">
+          <input semantic="VERTEX" offset="0" source="#Box026-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Box026-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Box026-UV0"/>
+          <p> 3 0 2 0 1 0 2 2 1 0 3 0 3 4 2 1 5 3 5 6 6 0 7 4 1 8 5 0 9 4 5 10 6 4 11 7 3 12 9 5 13 11 1 14 8 5 15 11 3 16 9 7 17 10 2 18 13 7 19 15 3 20 12 7 21 15 2 22 13 6 23 14 4 24 18 6 25 19 2 26 16 2 27 16 0 28 17 4 29 18 5 30 37 8 31 39 4 32 36 8 33 39 5 34 37 9 35 38 5 36 37 7 37 40 10 38 41 5 39 37 10 40 41 9 41 38 7 42 40 6 43 42 11 44 43 7 45 40 11 46 43 10 47 41 6 48 42 4 49 36 8 50 39 6 51 42 8 52 39 11 53 43 12 54 25 9 55 21 13 56 24 9 57 21 12 58 25 8 59 20 14 60 34 9 61 32 10 62 33 9 63 32 14 64 34 13 65 35 15 66 26 14 67 27 10 68 22 10 69 22 11 70 23 15 71 26 15 72 31 8 73 29 12 74 30 8 75 29 15 76 31 11 77 28</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="mirror001" id="mirror001" layer="bathroom_mirror" sid="mirror001">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.016783 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.030682 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#mirror001-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_04 - Default" target="#_04 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="Box026" id="Box026" layer="bathroom_mirror" sid="Box026">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.016783 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.030682 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Box026-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_09 - Default" target="#_09 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

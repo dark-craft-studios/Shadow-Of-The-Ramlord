@@ -1,0 +1,80 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0.500516 100" CameraTarget="0 0.500516 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="100 0.500516 0" CameraTarget="0 0.500516 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.000178993 100.246 7.89911e-005" CameraTarget="-0.000178993 0.246293 7.89911e-005" CameraZoom="0" GridHeight="0.246293" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="1.34198 1.89172 1.62496" CameraTarget="-0.0798205 0.659701 -0.26331" CameraZoom="2.93163" GridHeight="0.246293" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="false" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/storage/storage_box_wood01/storage_box_wood01_large_new_push.DAE">
+            <SubMesh Active="true" ID="3" Material="" Name="Box006" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="4" Material="" Name="hay001" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="5" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="0.98 0.06 0.98" RelativeTranslation="0.000395268 -0.245905 -0.00190663" Rotation="0 0 0" Scale="0.98 0.06 0.98" ShapeType="Box" Tag="" WorldPos="0 0.0301799 0" />
+            <BodyShape Active="true" ID="6" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.06 0.96 0.98" RelativeTranslation="-0.467313 0.204582 -0.00190663" Rotation="0 0 0" Scale="0.06 0.96 0.98" ShapeType="Box" Tag="" WorldPos="-0.467708 0.480668 0" />
+            <BodyShape Active="true" ID="7" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.06 0.96 0.98" RelativeTranslation="0.467313 0.204582 -0.00190663" Rotation="0 0 0" Scale="0.06 0.96 0.98" ShapeType="Box" Tag="" WorldPos="0.466918 0.480668 0" />
+            <BodyShape Active="true" ID="9" Name="Shape_5" RelativeRotation="0 -0 0" RelativeScale="0.98 0.96 0.06" RelativeTranslation="0.000395268 0.204582 0.461574" Rotation="0 0 0" Scale="0.98 0.96 0.06" ShapeType="Box" Tag="" WorldPos="0 0.480668 0.463481" />
+            <BodyShape Active="true" ID="10" Name="Shape_6" RelativeRotation="0 -0 0" RelativeScale="0.98 0.96 0.06" RelativeTranslation="0.000395268 0.204582 -0.461574" Rotation="0 0 0" Scale="0.98 0.96 0.06" ShapeType="Box" Tag="" WorldPos="0 0.480668 -0.459668" />
+            <BodyShape Active="true" ID="11" Name="Shape_7" RelativeRotation="-0.120249 -0.615633 0.206265" RelativeScale="0.06 0.96 0.95" RelativeTranslation="-0.0909168 0.245905 -0.00418484" Rotation="-0.120249 -0.615633 0.206265" Scale="0.06 0.96 0.95" ShapeType="Box" Tag="" WorldPos="-0.0913121 0.521991 -0.00227821" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0.2" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="12" LinearDamping="0.2" Mass="10" Material="Wood_Heavy" MaxAngularSpeed="15" MaxLinearSpeed="15" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.000395268 0.276085 0.00190663">
+                <Children>
+                    <Child ID="3" />
+                    <Child ID="4" />
+                </Children>
+                <Shape ID="9" />
+                <Shape ID="7" />
+                <Shape ID="11" />
+                <Shape ID="6" />
+                <Shape ID="5" />
+                <Shape ID="10" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="Push" EntityType="Object">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="BreakActive" Value="false" />
+        <Var Name="BreakDestroyJoints" Value="false" />
+        <Var Name="BreakMinEnergy" Value="100" />
+        <Var Name="BreakEntity" Value="" />
+        <Var Name="BreakEntityAlignBody" Value="" />
+        <Var Name="BreakSound" Value="" />
+        <Var Name="BreakParticleSystem" Value="" />
+        <Var Name="BreakImpulse" Value="4" />
+        <Var Name="HitDamageAmount" Value="5" />
+        <Var Name="HitDamageStrength" Value="1" />
+        <Var Name="MinHitDamageSpeed" Value="3" />
+        <Var Name="LifeLength" Value="0" />
+        <Var Name="IsFood" Value="false" />
+        <Var Name="PushAtPoint" Value="false" />
+        <Var Name="PushForceMul" Value="1" />
+        <Var Name="PushImpulse" Value="2" />
+    </UserDefinedVariables>
+</Entity>

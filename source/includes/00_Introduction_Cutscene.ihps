@@ -1,0 +1,135 @@
+#include "AmnesiaSignatures.cpp"
+#include "00_Introduction_StormLightSystem.ihps"
+
+// ============================================================================
+// USED ENTITIES
+// Constants representing entities referenced inside this script
+// in order to prevent misspelling and allow for easier renaming.
+// - For consistency use an "ent" prefix.
+// ============================================================================
+const string entLookAtLetter = "note_generic_1";
+
+// ============================================================================
+// USED AREAS
+// ============================================================================
+const string areaLogoStart = "LogoBoxStartArea";
+const string areaHouseStart = "PlayerHouseArea";
+const string areaFireplaceLook = "FirePlaceLookArea";
+
+// ============================================================================
+// INTRO TIMER SWITCH
+// ============================================================================
+void IntroductionCutscene(string t)
+{
+    int stage = GetLocalVarInt("IntroductionCutscene");
+    AddLocalVarInt("IntroductionCutscene", 1);
+    float delay = -1.0f;
+
+    if (stage == 0)
+    {
+        FadeOut(0.0f);
+        SetPlayerActive(false);
+        ShowPlayerCrossHairIcons(false);
+
+        delay = 3.0f;
+    }
+    else if (stage == 1)
+    {
+        PlayVoiceOnPlayer(
+            "IN_Johan_0.ogg", /* Voice file */
+            "JohanNarration", /* Subtitles Category */
+            "0"               /* Subtitles Entry */
+        );
+
+        PlayMusic("23_amb.ogg");
+        SetEffectVoiceOverCallback("IntroductionCutsceneContinue");
+    }
+    else if (stage == 2)
+    {
+        FadeOut(2.5f);
+        StopAmbience(2.5f);
+        FadeOutMusic(2.0f);
+        StopPlayerLookAt();
+
+        delay = 2.6f;
+    }
+    else if (stage == 3)
+    {
+        TeleportPlayer(areaLogoStart);
+
+        delay = 3.0f;
+    }
+    else if (stage == 4)
+    {
+        FadeIn(2.0f);
+
+        delay = 5.0f;
+    }
+    else if (stage == 5)
+    {
+        FadeOut(2.0f);
+
+        delay = 2.1f;
+    }
+    else if (stage == 6)
+    {
+        FadePlayerFOVMulTo(0.1f, 10.0f);
+        TeleportPlayer(areaHouseStart);
+        StartPlayerLookAt(
+            areaFireplaceLook, /* Entity */
+            10.0f,             /* Speed multiplier */
+            20.0f,             /* Max Speed */
+            ""                 /* Callback when looking */
+        );
+        StartAmbience("SOTR_17_amb.snt");
+
+        delay = 2.0f;
+    }
+    else if (stage == 7)
+    {
+        FadeIn(5.0f);
+
+        PlaySoundAtThunderAreas("general_rain_m.snt", 4.0f);
+        PlaySoundAtThunderAreas("ambience_wind_eerie_no3d.snt", 4.0f);
+        AddTimer("thunder", 0.0f, "TimerThunder");
+
+        delay = 7.0f;
+    }
+    else if (stage == 8)
+    {
+        PlayVoiceOnPlayer(
+            "IN_Johan_1.ogg", /* Voice file */
+            "JohanNarration", /* Subtitles Category */
+            "1"               /* Subtitles Entry */
+        );
+        FadePlayerFOVMulTo(1.0f, 0.2f);
+
+        delay = 10.0f;
+    }
+    else if (stage == 9)
+    {
+        StartPlayerLookAt(entLookAtLetter, 1.0f, 1.5f, "");
+
+        delay = 3.0f;
+    }
+    else if (stage == 10)
+    {
+        StopPlayerLookAt();
+        SetPlayerActive(true);
+        AutoSave();
+        ShowPlayerCrossHairIcons(true);
+    }
+
+    if (delay <= -0.9f)
+    {
+        AddTimer("", 0.0f, "OnIntroFinished");
+        return;
+    }
+
+    AddTimer("", delay, "IntroductionCutscene");
+}
+
+void IntroductionCutsceneContinue()
+{
+    IntroductionCutscene("");
+}

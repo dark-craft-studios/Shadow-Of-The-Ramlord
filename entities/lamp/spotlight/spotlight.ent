@@ -1,0 +1,107 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-0.0316824 1.32618 180" CameraTarget="-0.0316824 1.32618 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-1.48025 0.897135 -1.929" CameraTarget="1.52159 0.623751 0.964437" CameraZoom="2.48213" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <SpotLight Active="true" Aspect="1" Brightness="1" CastShadows="true" DiffuseColor="0.586 0.448 0.776 1" FOV="0.2618" Falloff="1" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="4" Name="SpotLight_2" NearClipPlane="0.1" Radius="15" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="0.488509 1.35 0" />
+            <SpotLight Active="true" Aspect="1" Brightness="1" CastShadows="true" DiffuseColor="0.586 0.448 0.776 1" FOV="1.0472" Falloff="0.05" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="5" Name="SpotLight_3" NearClipPlane="0.1" Radius="8" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="0.485495 1.35 0" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="SpotLight_2" HaloSourceSize="1 1 1" ID="22" IsHalo="false" MaterialFile="C:/AMFP/Game/redist/billboards/bb_white_halo.mat" Name="Billboard_1" Rotation="0 0 0" Tag="" WorldPos="0.33 1.41 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/spotlight/spotlight.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="spotlight" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="spotlight_frame" Rotation="0 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="spotlight_stand" Rotation="0 0 0" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="9" Name="Shape_1" RelativeRotation="0 -0 -1.5708" RelativeScale="0.600836 0.957001 0.600836" RelativeTranslation="0.383436 0.0627099 0" Rotation="0 0 -1.5708" Scale="0.600836 0.957001 0.600836" ShapeType="Cylinder" Tag="" WorldPos="-0.132079 1.35171 0" />
+            <BodyShape Active="true" ID="10" Name="Shape_2" RelativeRotation="0 -0 0.785398" RelativeScale="0.5 0.25 0.150157" RelativeTranslation="-0.383436 -0.06271 0" Rotation="0 0 0.785398" Scale="0.5 0.25 0.150157" ShapeType="Box" Tag="" WorldPos="-0.898951 1.22629 0" />
+            <BodyShape Active="true" ID="12" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.616943 0.3 0.616943" RelativeTranslation="0 0 0" Rotation="0 -0 0" Scale="0.616943 0.3 0.616943" ShapeType="Cylinder" Tag="" WorldPos="0 0.157842 0" />
+            <BodyShape Active="true" ID="14" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.25 0.25 0.25" RelativeTranslation="0 -0.375 0" Rotation="0 0 0" Scale="0.25 0.25 0.25" ShapeType="Box" Tag="" WorldPos="0 0.5 0" />
+            <BodyShape Active="true" ID="15" Name="Shape_5" RelativeRotation="0.785398 -0 0" RelativeScale="0.25 0.25 0.75" RelativeTranslation="0 -0.125 -0.5" Rotation="0.785398 -0 0" Scale="0.25 0.25 0.75" ShapeType="Box" Tag="" WorldPos="0 0.75 -0.5" />
+            <BodyShape Active="true" ID="16" Name="Shape_6" RelativeRotation="-0.785398 -0 0" RelativeScale="0.25 0.25 0.25" RelativeTranslation="0 -0.125 0.5" Rotation="-0.785398 -0 0" Scale="0.25 0.25 0.25" ShapeType="Box" Tag="" WorldPos="0 0.75 0.5" />
+            <BodyShape Active="true" ID="17" Name="Shape_7" RelativeRotation="0 -0 0" RelativeScale="0.25 0.25 0.25" RelativeTranslation="0 0.375 -0.75" Rotation="0 0 0" Scale="0.25 0.25 0.25" ShapeType="Box" Tag="" WorldPos="0 1.25 -0.75" />
+            <BodyShape Active="true" ID="18" Name="Shape_8" RelativeRotation="0 -0 0" RelativeScale="0.25 0.25 0.25" RelativeTranslation="0 0.375 0.75" Rotation="0 0 0" Scale="0.25 0.25 0.25" ShapeType="Box" Tag="" WorldPos="0 1.25 0.75" />
+            <BodyShape Active="true" ID="23" Name="Shape_9" RelativeRotation="0 -0 0" RelativeScale="10 0.25 0.25" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="5 0.25 0.25" ShapeType="Box" Tag="" WorldPos="3.45 1.35 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="false" ID="11" LinearDamping="3" Mass="20" Material="Metal" MaxAngularSpeed="3" MaxLinearSpeed="3" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.515515 1.289 0">
+                <Children>
+                    <Child ID="0" />
+                    <Child ID="5" />
+                    <Child ID="4" />
+                    <Child ID="22" />
+                </Children>
+                <Shape ID="10" />
+                <Shape ID="9" />
+            </Body>
+            <Body Active="true" AngularDamping="3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="13" LinearDamping="3" Mass="0" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_2" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.157842 0">
+                <Children>
+                    <Child ID="2" />
+                </Children>
+                <Shape ID="12" />
+            </Body>
+            <Body Active="true" AngularDamping="3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="false" ID="19" LinearDamping="3" Mass="0" Material="Metal" MaxAngularSpeed="3" MaxLinearSpeed="3" Name="Body_3" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.875 0">
+                <Children>
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="18" />
+                <Shape ID="16" />
+                <Shape ID="14" />
+                <Shape ID="15" />
+                <Shape ID="17" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="false" CollideNonCharacter="false" ContinuousCollision="false" HasGravity="false" ID="26" LinearDamping="10" Mass="0.5" Material="Default" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_4" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="0.5 1 1" Tag="" UseSurfaceEffects="false" Volatile="false" WorldPos="3.45 1.35 0">
+                <Shape ID="23" />
+            </Body>
+        </Bodies>
+        <Joints>
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="false" ConnectedChildBodyID="11" ConnectedParentBodyID="19" ID="21" LimitStepCount="0" MaxAngle="45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-45" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="JointHinge_1" PinDir="1.55902e-011 -6.27438e-006 -1" Rotation="-1.57079 -3.1647e-013 -3.14159" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0 1.35 -1" />
+            <JointSlider Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="false" ConnectedChildBodyID="26" ConnectedParentBodyID="11" ID="25" LimitStepCount="0" MaxDistance="0.1" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinDistance="0.1" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="JointSlider_1" PinDir="1 -3.61999e-006 0" Rotation="0 0 -1.5708" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.4 1.35 0" />
+        </Joints>
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lever">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="Body_1" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="MoveMaxSpeed" Value="13.5" />
+        <Var Name="MoveSlowDownFactor" Value="3.0" />
+        <Var Name="MoveSpeedFactor" Value="1.0" />
+        <Var Name="MoveThrowImpulse" Value="6.0" />
+        <Var Name="CanInteractWithStaticBody" Value="false" />
+        <Var Name="MinLimitRange" Value="5.0" />
+        <Var Name="MaxLimitRange" Value="5.0" />
+        <Var Name="MinLimitSound" Value="" />
+        <Var Name="MaxLimitSound" Value="" />
+        <Var Name="StuckSound" Value="" />
+        <Var Name="MiddleAngleAmount" Value="0" />
+        <Var Name="AutoMoveToAngle" Value="false" />
+        <Var Name="AutoMoveSpeedFactor" Value="2" />
+        <Var Name="AutoMoveMaxSpeed" Value="8" />
+        <Var Name="AutoMoveGoal" Value="Middle" />
+    </UserDefinedVariables>
+</Entity>

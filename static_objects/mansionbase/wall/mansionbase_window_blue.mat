@@ -1,0 +1,16 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Glass_Window" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/Users/sindre/Desktop/Sindre/Freelance/Amnesia SVN/pig/Game/redist/static_objects/mansionbase/wall/mansionbase_window_blue.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="false" File="C:/Users/sindre/Desktop/Sindre/Freelance/Amnesia SVN/pig/Game/redist/static_objects/mansionbase/wall/mansionbase_window_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Illumination AnimFrameTime="0" AnimMode="None" Compress="true" File="C:/Users/sindre/Desktop/Sindre/Freelance/Amnesia SVN/pig/Game/redist/static_objects/mansionbase/wall/mansionbase_window_blue_illum.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <CubeMap AnimFrameTime="0" AnimMode="None" Compress="false" File="C:/Users/sindre/Desktop/Sindre/Freelance/Amnesia SVN/pig/Game/redist/textures/envmaps/de_skybox.dds" MipMaps="true" Type="Cube" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.10000000149011612" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.20000000298023224" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

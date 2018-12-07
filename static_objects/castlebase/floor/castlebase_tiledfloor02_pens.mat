@@ -1,0 +1,16 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Rock_Pens" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/Projects/3d/work/amnesia game/SVN/redist/static_objects/castlebase/floor/castlebase_tiledfloor02.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/Projects/3d/work/amnesia game/SVN/redist/static_objects/castlebase/floor/castlebase_tiledfloor02_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="0" AnimMode="None" Compress="true" File="E:/Projects/3d/work/amnesia game/SVN/redist/static_objects/castlebase/floor/castlebase_tiledfloor02_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <Height AnimFrameTime="0" AnimMode="None" Compress="false" File="E:/Projects/3d/work/amnesia game/SVN/redist/static_objects/castlebase/floor/castlebase_tiledfloor02_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.1" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.2" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

@@ -1,0 +1,7 @@
+<Material>
+    <Main BlendMode="Alpha" DepthTest="true" PhysicsMaterial="Organic" Type="decal" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="D:/Projects/3d/work/amnesia game/SVN/redist/textures/decals/ptest/absinth_pool.dds" MipMaps="true" Type="2D" Wrap="Clamp" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

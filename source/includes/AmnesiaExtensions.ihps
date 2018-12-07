@@ -1,0 +1,200 @@
+#include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
+
+// ============================================================================
+// UTILITIES
+// ============================================================================
+enum CollisionState
+{
+    onlyEnter = 1,
+    onlyLeave = -1,
+    any = 0
+}
+
+// ============================================================================
+// OVERLOADS
+// ============================================================================
+void PlaySoundAtEntity(string name, string file, string entity)
+{
+    PlaySoundAtEntity(
+        entity, /* Sound name */
+        file,   /* Sound file */
+        entity, /* Entity */
+        0.0f,   /* Fade time */
+        false   /* Save */
+    );
+}
+
+void PlaySoundAtEntity(string file, string entity, float fadeTime)
+{
+    PlaySoundAtEntity(
+        "",       /* Sound name */
+        file,     /* Sound file */
+        entity,   /* Entity */
+        fadeTime, /* Fade time */
+        false     /* Save */
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void PlaySoundAtEntity(string file, string entity)
+{
+    PlaySoundAtEntity(file, entity, 0.0f);
+}
+
+void PlaySoundAtEntity(string file)
+{
+    PlaySoundAtEntity(file, "Player", 0.0f);
+}
+
+// ----------------------------------------------------------------------------
+
+void PlayMusicOnce(string musicFile)
+{
+    PlayMusic(
+        musicFile, /* File */
+        false,     /* Loop */
+        0.5f,      /* Volume */
+        0.5f,      /* Fade In */
+        1,         /* Priority */
+        false      /* Resume */
+    );
+}
+
+void PlayMusic(string musicFile)
+{
+    PlayMusic(
+        musicFile, /* File */
+        true,      /* Loop */
+        0.7f,      /* Volume */
+        0.5f,      /* Fade In */
+        1,         /* Priority */
+        false      /* Resume */
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void AddUseItemCallback(string item, string entity, string callback)
+{
+    AddUseItemCallback(
+        "",       /* Name */
+        item,     /* Item */
+        entity,   /* Entity */
+        callback, /* Callback */
+        true      /* Triggers One time */
+    );
+}
+
+// ============================================================================
+// ABSTRACTIONS
+// ============================================================================
+void GiveQuestIfNotAdded(string questName)
+{
+    if(QuestIsAdded(questName)) { return; }
+    AddQuest(questName, questName);
+}
+
+void CompleteQuest(string questName) { CompleteQuest(questName, questName); }
+
+// ----------------------------------------------------------------------------
+
+void StartAmbience(string soundFile)
+{
+    PlaySoundAtEntity(
+        "amb",     /* Sound name */
+        soundFile, /* Sound file */
+        "Player",  /* Entity */
+        0.0f,      /* Fade time */
+        false      /* Save */
+    );
+}
+
+void StopAmbience() { StopSound("amb", 5.0f); }
+
+void StopAmbience(float fadeOutSeconds) { StopSound("amb", fadeOutSeconds); }
+
+// ----------------------------------------------------------------------------
+
+void PlayVoiceOnPlayer(
+    string soundFile, 
+    string subtitleCategory, 
+    string subtitleEntry)
+{
+    AddEffectVoice(
+        soundFile,        /* Sound File */
+        "",               /* Effect File */
+        subtitleCategory, /* Subtitle Category */
+        subtitleEntry,    /* Subtitle Entry */
+        false,            /* Uses position */
+        "",               /* Position Entity */
+        0.0f,             /* Minimum hearing distance */
+        10.0f             /* Maximum hearing distance */
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void FadeOutMusic(float fadeOut)
+{
+    StopMusic(fadeOut, 1);
+}
+
+// ----------------------------------------------------------------------------
+
+void LightLampWithEffects(string lamp)
+{
+    SetLampLit(lamp, true, true);
+}
+
+// ----------------------------------------------------------------------------
+
+void AddSinglePlayerCollideCallback(string area, string callbackFunc)
+{
+    AddEntityCollideCallback(
+        "Player",     /* Entity A */
+        area,         /* Entity B */
+        callbackFunc, /* Callback Function */
+        true,         /* Delete after collide */
+        CollisionState::onlyEnter
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void BlockAllVanillaHints()
+{
+    BlockHint("EntityGrab");
+    BlockHint("SanityAdd");
+    BlockHint("LanternNoItem");
+    BlockHint("LanternNoOil");
+    BlockHint("LeanHint");
+    BlockHint("PushHint");
+    BlockHint("ThrowHint");
+    BlockHint("DefaultDeath");
+    BlockHint("HintHint");
+    BlockHint("EntityWheel");
+    BlockHint("EntityPush");
+    BlockHint("EntitySlide");
+    BlockHint("EntitySwingDoor");
+    BlockHint("EntityLever");
+    BlockHint("DarknessDecrease");
+    BlockHint("SanityHit");
+    BlockHint("SanityLow");
+    BlockHint("PickSanityPotion");
+    BlockHint("PickCoin");
+    BlockHint("PickHealthPotion");
+    BlockHint("PickOil");
+    BlockHint("PickLantern");
+    BlockHint("PickTinderbox");
+    BlockHint("EnemySeen");
+    BlockHint("StickyArea");
+    BlockHint("HideHint");
+    BlockHint("EnemyTip01");
+    BlockHint("EnemyTip02");
+    BlockHint("CombineHint");
+    BlockHint("RunHint");
+    BlockHint("QuestAdded");
+    BlockHint("RecentlyReadText");
+}

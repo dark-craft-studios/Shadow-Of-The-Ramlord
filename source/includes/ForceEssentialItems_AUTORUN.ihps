@@ -1,0 +1,20 @@
+#include "AmnesiaSignatures.cpp"
+
+void OnEnter()
+{
+    EnforceEssentailItems();
+}
+
+void EnforceEssentailItems()
+{
+    EnforceItem(GetGlobalVarString("LanternName"), "lantern.ent");
+    EnforceItem(GetGlobalVarString("ClearsightItemName"), "SOTR_Clearsight.ent");
+}
+
+void EnforceItem(string itemName, string itemFile)
+{
+    if(!HasItem(itemName))
+    {
+        GiveItemFromFile(itemName, itemFile);
+    }
+}

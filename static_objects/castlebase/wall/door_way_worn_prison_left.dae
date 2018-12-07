@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Marcus Johansson</author>
+      <authoring_tool>Maya8.5 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;removeStaticCurves=0;exportCameraAsLookat=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=0;exportVertexColorsAnimation=1;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=0;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=0</comments>
+      <source_data>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/arbetsmapp//</source_data>
+    </contributor>
+    <contributor>
+      <author>marc</author>
+      <authoring_tool>Maya7.0 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=1;
+curveConstrainSampling=0;removeStaticCurves=1;exportCameraAsLookat=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=1;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=1;exportPhysics=1;exportXRefs=0;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file:///E:/lux/redist/static_objects/castlebase/wall/default_worn.dae</source_data>
+    </contributor>
+    <created>2009-09-24T12:42:23Z</created>
+    <modified>2010-05-11T12:39:27Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_physics_scenes>
+    <physics_scene id="MayaNativePhysicsScene">
+      <technique_common>
+        <gravity>0 -980 0</gravity>
+        <time_step>0.083</time_step>
+      </technique_common>
+    </physics_scene>
+  </library_physics_scenes>
+  <library_images>
+    <image id="file9" name="file9">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+    <image id="file10" name="file10">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn_nrm.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+    <image id="file11" name="file11">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn_spec.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="castlebase_dafault_worn_material" name="castlebase_dafault_worn_material">
+      <instance_effect url="#castlebase_dafault_worn_material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="castlebase_dafault_worn_material-fx">
+      <profile_COMMON>
+        <newparam sid="file9-surface">
+          <surface type="2D">
+            <init_from>file9</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file9-sampler">
+          <sampler2D>
+            <source>file9-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file10-surface">
+          <surface type="2D">
+            <init_from>file10</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file10-sampler">
+          <sampler2D>
+            <source>file10-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file11-surface">
+          <surface type="2D">
+            <init_from>file11</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file11-sampler">
+          <sampler2D>
+            <source>file11-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file9-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <texture texture="file11-sampler" texcoord="TEX2">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <bump>
+                <texture texture="file10-sampler" texcoord="TEX1">
+                  <extra>
+                    <technique profile="MAYA">
+                      <wrapU>1</wrapU>
+                      <wrapV>1</wrapV>
+                      <mirrorU>0</mirrorU>
+                      <mirrorV>0</mirrorV>
+                      <coverageU>1</coverageU>
+                      <coverageV>1</coverageV>
+                      <translateFrameU>0</translateFrameU>
+                      <translateFrameV>0</translateFrameV>
+                      <rotateFrame>0</rotateFrame>
+                      <stagger>0</stagger>
+                      <fast>0</fast>
+                      <repeatU>1</repeatU>
+                      <repeatV>1</repeatV>
+                      <offsetU>0</offsetU>
+                      <offsetV>0</offsetV>
+                      <rotateUV>0</rotateUV>
+                      <noiseU>0</noiseU>
+                      <noiseV>0</noiseV>
+                      <blend_mode>NONE</blend_mode>
+                    </technique>
+                    <technique profile="MAX3D">
+                      <amount>1</amount>
+                      <bumpInterp>1</bumpInterp>
+                    </technique>
+                  </extra>
+                </texture>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="castlebase_default_worn_meshShape" name="castlebase_default_worn_meshShape">
+      <mesh>
+        <source id="castlebase_default_worn_meshShape-positions" name="position">
+          <float_array id="castlebase_default_worn_meshShape-positions-array" count="180">-1.75 0.27223 0 -1.75 0.157453 0.151698 -1.75 0 0.151698 -1.75 0.020562 0.174576 -1.75 0.214842 0.075849 -1.75 0.252513 0.07354 -1.75 0.280251 0.036879 -1.75 1.20825 0 -2 4 0.321904 2 4 0.321904 2 3.75 0 -2 3.87335 0.154848 2 3.87335 0.154848 -2 4 0 2 4 0 -2 3.75 0 -2 1.4957 0 -2 1.35709 0.25 -2 1.4957 0.061488 -2 1.39109 0.241192 -1.75 1.35709 0.25 -2 1.46425 0.165399 -1.75 1.32264 0.089248 -1.75 0 0 -2 0.215218 0.267841 -1.75 0.215218 0.267841 -1.75 0.459237 0 -2 0.459237 0 -2 0 0.29657 -1.75 0 0.29657 -1.75 1.35709 0 -1.75 1.10507 0.111539 -2 1.10507 0.111539 -2 1.02189 0 -2 1.27891 0.167395 -1.75 1.27891 0.167395 -1.75 1.02189 0 2 3.89794 0.274585 -2 3.89794 0.274585 2 3.78313 0.10029 -2 3.78313 0.10029 -1 1.32264 0.089248 -1 1.35709 0.25 -1 1.39109 0.241192 -1 1.20825 0 -1 1.46425 0.165399 -1 1.4957 0.061488 -1 1.4957 0 -1.00132 1.4957 0 -1.00268 3.25 0 2 3.25 0 -1 1.20825 0 -1 0.27223 0 -1 0.27223 0 -1 0.280251 0.036879 -1 0.252513 0.07354 -1 0.214842 0.075849 -1 0.157453 0.151698 -1 0.020562 0.174576 -1 0 0.151698</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-positions-array" count="60" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="castlebase_default_worn_meshShape-normals" name="normal">
+          <float_array id="castlebase_default_worn_meshShape-normals-array" count="288">0 -0.979557 0.201169 0 -0.876105 0.48212 0 -0.979556 0.20117 0 -0.670335 0.742059 0 -0.852295 0.523061 0 -0.517463 0.855705 0 -0.699907 0.714234 0 -0.517463 0.855706 0 -0.949533 0.313668 0 -0.949532 0.313669 0 0.538225 0.842801 0 0.538224 0.842802 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0.250781 0.968044 0 0.250781 0.968044 0 0.421029 0.907047 0 0.862397 0.506233 0 0.989222 0.146421 0 0.989222 0.146421 0 0.862397 0.506233 0 1 -0.000000 0 1 -0.000000 0 0.504049 0.863675 0 -0.977798 0.209548 0 -0.847427 0.530912 0 -0.847427 0.530912 0 -0.977798 0.209548 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 1 0 0 1 0 0 1 0 0 1 0 0 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.801634 0.597816 0 -0.801634 0.597816 0 -0.801634 0.597816 0 -0.801634 0.597816 1 0.000000 0 1 0.000000 0 1 0.000000 0 1 0.000000 0 1 -0.000000 0 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 0 1 0 0 1 0 0 1 0 0 1 0 0.250781 0.968044 0 -0.615134 0.788423 0 -0.615134 0.788423 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0.976595 0.215085 0 0.976595 0.215085 0 0.977155 -0.212526 0 0.977155 -0.212526 0 0.472521 0.88132 0 0.472521 0.88132 0 0.061179 0.998127 0 0.061179 0.998127 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.164839 0.98632 0 0.164839 0.98632 0 0.164839 0.98632 0 0.164839 0.98632 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-normals-array" count="96" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="castlebase_default_worn_meshShape-map1" name="map1">
+          <float_array id="castlebase_default_worn_meshShape-map1-array" count="160">0.982259 0.010045 0.995657 0.010045 0.917578 0.010045 0.885589 0.010045 0.870258 0.010045 0.859888 0.010045 0.847948 0.010045 0.053499 0.445644 0.053499 0.63949 0.852184 0.986956 0.851495 0.330827 0.907471 0.986956 0.906783 0.330826 0.967434 0.330826 0.970427 0.986836 0.747011 0.330827 0.7477 0.986956 0.002032 0.994781 0.002032 0.650232 0.695281 0.994781 0.84207 0.98636 0.83281 0.98636 0.83306 0.911662 0.88891 0.98636 0.862195 0.98636 0.90565 0.98636 0.768012 0.308487 0.824267 0.308487 0.733749 0.308487 0.022025 0.082368 0.092241 0.082368 0.022025 0.142816 0.092241 0.142816 0.022025 0.013832 0.092241 0.013832 0.499525 0.112676 0.588619 0.041085 0.588619 0.193845 0.489968 0.041085 0.132673 0.111271 0.22307 0.111271 0.132673 0.141349 0.22307 0.141349 0.132673 0.020145 0.22307 0.020145 0.132673 0.048414 0.22307 0.048414 0.475421 0.260197 0.391702 0.260197 0.419365 0.234017 0.438069 0.175803 0.475421 0.147947 0.053499 0.600896 0.000258 0.599108 0.053266 0.484938 0.000258 0.484938 0.882174 0.986896 0.882907 0.330827 0.937178 0.986956 0.936491 0.330826 0.768012 0.15811 0.824267 0.15811 0.842155 0.684669 0.833275 0.689597 0.733749 0.15811 0.862285 0.684669 0.889 0.684669 0.90574 0.684669 0.175116 0.650232 0.174879 0.931057 0.695281 0.930978 0.181234 0.63949 0.182059 0.445644 0.847949 0.158726 0.859888 0.158726 0.870258 0.158726 0.885589 0.15849 0.917578 0.15849 0.982259 0.15849 0.995657 0.15849</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-map1-array" count="80" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="castlebase_default_worn_meshShape-vertices">
+          <input semantic="POSITION" source="#castlebase_default_worn_meshShape-positions"/>
+        </vertices>
+        <triangles material="castlebase_dafault_worn_materialSG" count="58">
+          <input semantic="VERTEX" source="#castlebase_default_worn_meshShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#castlebase_default_worn_meshShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#castlebase_default_worn_meshShape-map1" offset="2" set="0"/>
+          <p>12 0 11 37 1 56 11 2 12 11 2 12 37 1 56 38 3 57 39 4 58 12 5 11 40 6 59 40 6 59 12 5 11 11 7 12 10 8 14 39 4 58 15 9 13 15 9 13 39 4 58 40 6 59 8 10 10 9 11 9 13 12 15 9 11 9 14 13 16 13 12 15 15 15 17 16 16 18 49 14 69 49 14 69 16 16 18 48 17 68 17 18 21 20 19 22 19 20 20 45 21 65 46 22 66 21 24 24 46 22 66 18 23 23 21 24 24 16 25 25 18 23 23 47 26 67 18 23 23 46 22 66 47 26 67 45 21 65 21 24 24 43 27 62 21 24 24 19 20 20 43 27 62 20 28 27 22 29 26 42 31 61 22 29 26 41 30 60 42 31 61 24 32 29 25 33 30 27 34 31 25 33 30 26 35 32 27 34 31 28 36 33 29 37 34 24 38 29 29 37 34 25 39 30 24 38 29 25 40 35 23 41 36 26 42 37 25 40 35 29 43 38 23 41 36 34 44 39 35 45 40 17 46 41 35 45 40 20 47 42 17 46 41 33 48 43 36 49 44 32 50 45 36 49 44 31 51 46 32 50 45 30 52 47 20 53 48 35 54 49 30 52 47 31 55 50 36 56 51 32 57 45 31 58 46 34 59 39 31 58 46 35 60 40 34 59 39 30 52 47 35 54 49 31 55 50 36 61 52 33 62 53 26 63 54 33 62 53 27 64 55 26 63 54 8 10 10 38 3 57 9 11 9 9 11 9 38 3 57 37 1 56 19 20 20 20 19 22 43 27 62 42 65 63 43 27 62 20 19 22 22 29 26 7 66 28 41 30 60 7 66 28 44 67 64 41 30 60 15 69 17 49 70 69 10 68 19 10 68 19 49 70 69 50 71 70 7 72 8 0 73 7 51 75 71 0 73 7 52 74 72 51 75 71 6 76 5 54 77 74 0 79 6 54 77 74 53 78 73 0 79 6 55 80 75 54 77 74 5 81 4 54 77 74 6 76 5 5 81 4 56 82 76 55 80 75 4 83 3 55 80 75 5 81 4 4 83 3 57 84 77 56 85 76 1 87 2 56 85 76 4 86 3 1 87 2 1 88 2 3 89 0 57 91 77 3 89 0 58 90 78 57 91 77 59 92 79 58 93 78 2 95 1 58 93 78 3 94 0 2 95 1</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="default_worn">
+      <node id="castlebase_default_worn_mesh" name="castlebase_default_worn_mesh" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <instance_geometry url="#castlebase_default_worn_meshShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="castlebase_dafault_worn_materialSG" target="#castlebase_dafault_worn_material">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX2" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_physics_scene url="#MayaNativePhysicsScene"/>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

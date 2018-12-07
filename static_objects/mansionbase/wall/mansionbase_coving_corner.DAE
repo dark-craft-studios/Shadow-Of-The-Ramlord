@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-06-14T19:04:40Z</created>
+    <keywords></keywords>
+    <modified>2012-06-14T19:04:40Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #12-image" name="Map #12">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\mansionbase\wall\mansionbase_coving.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_01 - Default" name="_01 - Default">
+      <instance_effect url="#_01 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01 - Default-fx" name="_01 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object004-lib" name="Object004Mesh">
+      <mesh>
+        <source id="Object004-POSITION">
+          <float_array id="Object004-POSITION-array" count="60">
+-0.524579 0.000000 -0.085459
+0.000000 -0.000000 -0.369776
+-0.403590 0.000000 -0.115677
+-0.188232 0.000000 -0.264818
+-0.281837 0.000000 -0.169924
+-0.115783 0.000000 -0.369776
+-0.524579 0.000000 0.000000
+-0.524579 -0.524642 -0.085459
+0.000000 -0.115783 -0.369776
+-0.000000 -0.524579 0.000000
+-0.403590 -0.403978 -0.115677
+-0.188232 -0.188469 -0.264818
+-0.281837 -0.282144 -0.169924
+-0.000000 -0.524579 -0.085459
+-0.115783 -0.115685 -0.369776
+0.000000 -0.000000 -0.369776
+-0.524579 -0.524642 0.000000
+-0.000000 -0.403590 -0.115677
+0.000000 -0.188232 -0.264818
+-0.000000 -0.281837 -0.169924
+</float_array>
+          <technique_common>
+            <accessor source="#Object004-POSITION-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object004-Normal0">
+          <float_array id="Object004-Normal0-array" count="198">
+-1.000000 0.000001 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+-1.000000 0.000001 0.000000
+-1.000000 0.000001 0.000000
+0.000000 -0.325886 -0.945409
+-0.286284 0.000000 -0.958145
+-0.242315 0.000000 -0.970198
+-0.242315 0.000000 -0.970198
+0.000000 -0.242316 -0.970197
+0.000000 -0.325886 -0.945409
+-0.750542 0.000002 -0.660822
+0.000000 -0.770378 -0.637588
+0.000000 -0.822977 -0.568074
+0.000000 -0.822977 -0.568074
+-0.822978 0.000003 -0.568073
+-0.750542 0.000002 -0.660822
+-0.286284 0.000000 -0.958145
+0.000000 -0.325886 -0.945409
+0.000000 -0.569332 -0.822108
+0.000000 -0.569332 -0.822108
+-0.503582 0.000001 -0.863948
+-0.286284 0.000000 -0.958145
+-0.503582 0.000001 -0.863948
+0.000000 -0.569332 -0.822108
+0.000000 -0.770378 -0.637588
+0.000000 -0.770378 -0.637588
+-0.750542 0.000002 -0.660822
+-0.503582 0.000001 -0.863948
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -0.325886 -0.945409
+0.000000 -0.325886 -0.945409
+0.000000 -0.242317 -0.970197
+0.000000 -0.242317 -0.970197
+0.000000 -0.242317 -0.970197
+0.000000 -0.325886 -0.945409
+0.000000 -0.770378 -0.637588
+0.000000 -0.770378 -0.637588
+0.000000 -0.822977 -0.568074
+0.000000 -0.822977 -0.568074
+0.000000 -0.822977 -0.568074
+0.000000 -0.770378 -0.637588
+0.000000 -0.325886 -0.945409
+0.000000 -0.325886 -0.945409
+0.000000 -0.569331 -0.822108
+0.000000 -0.569331 -0.822108
+0.000000 -0.569332 -0.822108
+0.000000 -0.325886 -0.945409
+0.000000 -0.569332 -0.822108
+0.000000 -0.569331 -0.822108
+0.000000 -0.770378 -0.637588
+0.000000 -0.770378 -0.637588
+0.000000 -0.770378 -0.637588
+0.000000 -0.569332 -0.822108
+</float_array>
+          <technique_common>
+            <accessor source="#Object004-Normal0-array" count="66" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object004-UV0">
+          <float_array id="Object004-UV0-array" count="52">
+0.999987 0.366735
+0.737671 0.366731
+0.737670 0.281458
+0.999986 0.281450
+0.942272 0.884447
+1.000002 0.884452
+1.000003 0.999978
+0.999990 0.491175
+0.799022 0.491317
+0.906126 0.757183
+0.999999 0.757190
+0.999994 0.624182
+0.859583 0.624189
+0.258341 0.364958
+0.000008 0.366743
+0.000006 0.281479
+0.257813 0.281456
+0.000020 0.884457
+0.059846 0.884458
+0.000021 0.999998
+0.198500 0.491428
+0.000010 0.491177
+0.000017 0.757192
+0.092636 0.757117
+0.142770 0.623566
+0.000014 0.624183
+</float_array>
+          <technique_common>
+            <accessor source="#Object004-UV0-array" count="26" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object004-VERTEX">
+          <input semantic="POSITION" source="#Object004-POSITION"/>
+        </vertices>
+        <triangles count="22" material="_01 - Default">
+          <input semantic="VERTEX" offset="0" source="#Object004-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Object004-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Object004-UV0"/>
+          <p> 16 0 2 6 1 3 0 2 0 0 3 0 7 4 1 16 5 2 2 6 7 10 7 8 7 8 1 7 9 1 0 10 0 2 11 7 11 12 9 3 13 10 5 14 5 5 15 5 14 16 4 11 17 9 10 18 8 2 19 7 4 20 11 4 21 11 12 22 12 10 23 8 12 24 12 4 25 11 3 26 10 3 27 10 11 28 9 12 29 12 14 30 4 5 31 5 1 32 6 9 33 15 16 34 16 7 35 13 7 36 13 13 37 14 9 38 15 8 39 17 14 40 18 15 41 19 10 42 20 17 43 21 13 44 14 13 45 14 7 46 13 10 47 20 18 48 22 11 49 23 14 50 18 14 51 18 8 52 17 18 53 22 17 54 21 10 55 20 12 56 24 12 57 24 19 58 25 17 59 21 19 60 25 12 61 24 11 62 23 11 63 23 18 64 22 19 65 25</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations>
+    <animation id="Object004-anim" name="Object004">
+      <animation>
+        <source id="Object004-Matrix-animation-input">
+          <float_array id="Object004-Matrix-animation-input-array" count="0">
+</float_array>
+          <technique_common>
+            <accessor source="#Object004-Matrix-animation-input-array" count="0">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object004-Matrix-animation-output-transform">
+          <float_array id="Object004-Matrix-animation-output-transform-array" count="0">
+</float_array>
+          <technique_common>
+            <accessor source="#Object004-Matrix-animation-output-transform-array" count="0" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object004-Interpolations">
+          <Name_array id="Object004-Interpolations-array" count="0">
+</Name_array>
+          <technique_common>
+            <accessor source="#Object004-Interpolations-array" count="0">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Object004-Matrix-animation-transform">
+          <input semantic="INPUT" source="#Object004-Matrix-animation-input"/>
+          <input semantic="OUTPUT" source="#Object004-Matrix-animation-output-transform"/>
+          <input semantic="INTERPOLATION" source="#Object004-Interpolations"/>
+        </sampler>
+        <channel source="#Object004-Matrix-animation-transform" target="Object004/matrix"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Object004" id="Object004" layer="mansionbase_coving_corner" sid="Object004">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Object004-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_01 - Default" target="#_01 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

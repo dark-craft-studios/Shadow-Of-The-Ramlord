@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-03-11T08:39:33Z</created>
+    <keywords></keywords>
+    <modified>2012-03-11T08:39:33Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #5-image" name="Map #5">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\castlebase\castlebase_ceiling.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="castle_ceiling" name="castle_ceiling">
+      <instance_effect url="#castle_ceiling-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="castle_ceiling-fx" name="castle_ceiling">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #5-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box001-lib" name="Box001Mesh">
+      <mesh>
+        <source id="Box001-POSITION">
+          <float_array id="Box001-POSITION-array" count="51">
+-2.000000 -0.325000 0.000000
+2.000000 -0.325000 0.000000
+-2.000000 0.325000 0.000000
+2.000000 0.325000 0.000000
+-2.000000 -0.325000 4.000000
+2.000000 -0.325000 4.000000
+-2.000000 0.325000 4.000000
+2.000000 0.325000 4.000000
+-1.038306 0.568334 4.002474
+-2.174135 0.568334 4.002474
+-2.174135 0.568334 4.105401
+-1.038306 0.568334 4.105401
+-2.174135 -0.568050 4.002474
+-1.038306 -0.568050 4.002474
+-1.038306 -0.568050 4.105401
+-2.174135 -0.568050 4.105401
+-1.604853 0.000000 4.224820
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-POSITION-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-Normal0">
+          <float_array id="Box001-Normal0-array" count="234">
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+-0.000000 1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 -0.205730 0.978609
+0.000000 -0.205730 0.978609
+0.000000 -0.205730 0.978609
+-0.205304 0.000000 0.978698
+-0.205304 0.000000 0.978698
+-0.205304 0.000000 0.978698
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.206253 0.000000 0.978499
+0.206253 0.000000 0.978499
+0.206253 0.000000 0.978499
+-0.000000 0.205632 0.978629
+-0.000000 0.205632 0.978629
+-0.000000 0.205632 0.978629
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-Normal0-array" count="78" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box001-UV0">
+          <float_array id="Box001-UV0-array" count="100">
+0.258859 0.486851
+0.258859 0.372191
+0.964459 0.372191
+0.964459 0.486851
+0.183716 -0.002022
+0.183716 1.000043
+0.005896 1.000043
+0.005896 -0.002021
+0.000000 0.000000
+1.000000 0.000000
+0.000000 1.000000
+1.000000 1.000000
+0.230481 0.014425
+0.389731 0.014425
+0.389731 0.994425
+0.230481 0.994425
+1.000000 0.000000
+0.000000 0.000000
+1.000000 1.000000
+0.000000 1.000000
+0.006877 0.000737
+0.184858 0.000737
+0.184858 0.999468
+0.006877 0.999468
+0.095164 0.864613
+0.095163 0.786396
+0.095188 0.822538
+0.095293 0.773835
+0.185723 0.786485
+0.095082 0.731737
+0.118406 0.128229
+0.118406 0.318044
+0.095187 0.761362
+0.185966 0.761491
+0.118406 0.507824
+0.118406 0.697640
+0.095277 0.670802
+0.185965 0.864507
+0.095050 0.695813
+0.185771 0.822426
+0.027337 0.509262
+0.175629 0.509262
+0.175629 0.657528
+0.027337 0.657529
+0.118406 0.887420
+0.093491 0.887420
+0.093491 0.697640
+0.093491 0.318044
+0.093491 0.507824
+0.093491 0.128229
+</float_array>
+          <technique_common>
+            <accessor source="#Box001-UV0-array" count="50" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box001-VERTEX">
+          <input semantic="POSITION" source="#Box001-POSITION"/>
+        </vertices>
+        <triangles count="26" material="castle_ceiling">
+          <input semantic="VERTEX" offset="0" source="#Box001-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Box001-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Box001-UV0"/>
+          <p> 0 0 0 2 1 1 3 2 2 3 3 2 1 4 3 0 5 0 4 6 4 5 7 5 7 8 6 7 9 6 6 10 7 4 11 4 0 12 8 1 13 9 5 14 11 5 15 11 4 16 10 0 17 8 1 18 12 3 19 13 7 20 14 7 21 14 5 22 15 1 23 12 3 24 16 2 25 17 6 26 19 6 27 19 7 28 18 3 29 16 2 30 20 0 31 21 4 32 22 4 33 22 6 34 23 2 35 20 8 36 30 9 37 31 10 38 47 10 39 47 11 40 49 8 41 30 12 42 34 13 43 35 14 44 46 14 45 46 15 46 48 12 47 34 8 48 44 11 49 45 14 50 46 14 51 46 13 52 35 8 53 44 16 54 32 15 55 33 14 56 36 10 57 37 15 58 27 16 59 24 13 60 40 12 61 41 9 62 42 9 63 42 8 64 43 13 65 40 11 66 38 16 67 25 14 68 28 16 69 26 11 70 39 10 71 29 9 72 31 12 73 34 15 74 48 15 75 48 10 76 47 9 77 31</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Box001" id="Box001" layer="fencewall03" sid="Box001">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Box001-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="castle_ceiling" target="#castle_ceiling"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

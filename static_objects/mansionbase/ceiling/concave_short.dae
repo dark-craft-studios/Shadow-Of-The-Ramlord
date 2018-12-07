@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Marc</author>
+      <authoring_tool>OpenCOLLADA2008</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=1;relativePaths=1;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=0;exportPolygonMeshes=1;exportLights=0;
+			exportCameras=0;exportJointsAndSkin=1;exportAnimations=1;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=0;exportVertexColors=1;exportVertexColorsPerVertex=0;
+			exportTexTangents=0;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=0;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=0;doublePrecision=0
+		</comments>
+      <source_data>file:///F:/pig/Game/redist/static_objects/mansionbase/ceiling/concave_short.dae</source_data>
+    </contributor>
+    <created>2013-05-02T17:02:22</created>
+    <modified>2013-05-02T17:02:22</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+    <material id="_01___Default" name="_01___Default">
+      <instance_effect url="#_01___Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01___Default-fx">
+      <profile_COMMON>
+        <newparam sid="Map__6_image-surface">
+          <surface type="2D">
+            <init_from>Map__6_image</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Map__6_image-sampler">
+          <sampler2D>
+            <source>Map__6_image-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588235 0.588235 0.588235 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map__6_image-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>2</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="lambert1-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.4 0.4 0.4 1</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Map__6_image" name="Map__6_image">
+      <init_from>./mansionbase_concave.dds</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>Map__6_image</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="concave_shortShape" name="concave_shortShape">
+      <mesh>
+        <source id="concave_shortShape-positions" name="concave_shortShape-positions">
+          <float_array id="concave_shortShape-positions-array" count="240">-1 1.8685 0.12742 -1 1.74037 0 -1 0.30732 0.046506 -0.113095 0.30732 0.046506 -0.113095 0.30732 0 -1 0.30732 0 -0.091228 0.28026 0.062374 -1 0.28026 0.062374 -0.113095 1.0074 0.046506 -0.091228 1.03446 0.062374 -1 1.03446 0.062374 -1 1.0074 0.046506 -1 1.0074 0 -0.113095 1.0074 0 -1 2 2 -1 1.8685 2 -1 1.16929 0 -1 1.16929 0.046506 -1 1.14224 0.062374 -1 0.18479 0.062374 -1 0.18479 0.171368 -1 0.15623 0.228163 -1 0.10151 0.251817 -1 0.01763 0.251817 -1 0 0.234192 -1 0 0.20112 0 1.74037 0 0 1.8685 2 0 1.16929 0 0 1.16929 0.046506 0 1.14224 0.062374 0 0.18479 0.171368 0 0.15623 0.228163 0 0.10151 0.251817 0 0.01763 0.251817 0 0 0.234192 0 0 0.20112 0 0.28026 0.062374 0 1.03446 0.062374 0 0.18479 0.062374 0 1.8685 0.12742 0 2 2 1 1.8685 0.12742 1 1.74037 0 1 0.30732 0.046506 0.113095 0.30732 0.046506 0.113095 0.30732 0 1 0.30732 0 0.091228 0.28026 0.062374 1 0.28026 0.062374 0.113095 1.0074 0.046506 0.091228 1.03446 0.062374 1 1.03446 0.062374 1 1.0074 0.046506 1 1.0074 0 0.113095 1.0074 0 1 2 2 1 1.8685 2 1 1.16929 0 1 1.16929 0.046506 1 1.14224 0.062374 1 0.18479 0.062374 1 0.18479 0.171368 1 0.15623 0.228163 1 0.10151 0.251817 1 0.01763 0.251817 1 0 0.234192 1 0 0.20112 -1 1.79773 0.139199 -1 1.75598 0.120611 -1 1.74718 0.111814 -1 1.72859 0.070064 0 1.79773 0.139199 0 1.75598 0.120611 0 1.74718 0.111814 0 1.72859 0.070064 1 1.79773 0.139199 1 1.75598 0.120611 1 1.74718 0.111814 1 1.72859 0.070064</float_array>
+          <technique_common>
+            <accessor source="#concave_shortShape-positions-array" count="80" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="concave_shortShape-normals" name="concave_shortShape-normals">
+          <float_array id="concave_shortShape-normals-array" count="399">0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.5058439 0.862625 0 0.5058436 0.862625 0 0.5058439 0.862625 0 0.5058441 0.8626249 0 -0.3480209 0.9374868 0 -0.5058414 0.8626264 0 -0.5058438 0.862625 0 -0.1034691 0.9946327 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0.9455578 0.3254541 0 0.7591558 0.6509089 0 0.9999999 0 0 0.9999999 0 0 0.2621615 0.965024 0 0.1740617 0.9847347 0 0.9881594 0.153431 0 0.9517539 0.3068621 0 0.9999999 0 0 0.9999999 0 0 0.7687812 0.6395119 0 0.5939371 0.8045115 0 0.2694868 0.9630041 0 0.1347434 0.9908805 0 -0.2526823 0.9675493 0 -0.5053646 0.8629059 0 -0.8628064 0.5055342 0 -0.967527 0.2527671 0 -0.9999999 0 0 -0.9999999 0 -0.5873173 0 0.8093567 -0.5873169 0 0.809357 -0.5873173 0 0.8093567 -0.5873176 0 0.8093565 0 0 1 0 0 0.9999999 0 0 0.9999999 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0 0.9999999 0 0 0.9999999 0 0 1 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.5058439 0.862625 0 0.5058436 0.862625 0 0.5058439 0.862625 0 0.5058441 0.8626249 0 -0.5058438 0.862625 0 -0.5058463 0.8626236 0 -0.5058438 0.862625 0 -0.5058414 0.8626264 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 -0.9999999 0 0 0.9455578 0.3254541 0 0.9999999 0 0 0.2621615 0.965024 0 0.9881594 0.153431 0 0.9999999 0 0 0.7687812 0.6395119 0 0.2694868 0.9630041 0 -0.2526823 0.9675493 0 -0.8628064 0.5055342 0 -0.9999999 0 0.5873173 0 0.8093567 0.5873169 0 0.809357 0.5873173 0 0.8093567 0.5873176 0 0.8093565 0 0 0.9999999 0 0 0.9999999 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 -0.9999999 0 0 -0.9999999 0 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 0 0.9999999 0 -0.5144607 0.857514 0 -0.6160539 0.7877039 0 -0.2248624 0.9743904 0 -0.02714158 0.9996315 0 -0.7875535 0.616246 0 -0.8574415 0.5145813 0 -0.9861578 -0.1658085 0 -0.9861584 -0.1658059 0 -0.999661 0.02603374 0 -0.9745027 0.2243756 0 0.164182 0.98643 0 0.1641816 0.9864301 0 -0.5144607 0.857514 0 -0.02714158 0.9996315 0 -0.7875535 0.616246 0 -0.9861578 -0.1658085 0 -0.9745027 0.2243756 0 0.1641816 0.9864301</float_array>
+          <technique_common>
+            <accessor source="#concave_shortShape-normals-array" count="133" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="concave_shortShape-UVSet0" name="concave_shortShape-UVSet0">
+          <float_array id="concave_shortShape-UVSet0-array" count="276">1.273028 0.048581 1.004375 0.048581 0.004317 0.048581 0.27297 0.048581 1.03104 0.138778 1.236095 0.138745 1.236099 0.14826 1.03104 0.148334 1.240579 0.132324 1.03104 0.132336 1.236157 0.301317 1.240646 0.307733 1.031108 0.307914 1.031102 0.30147 1.031098 0.291911 1.236149 0.291805 1.273028 0.015943 1.004408 0.962871 1.004408 0.530293 1.004292 0.359264 1.004292 0.347746 1.004292 0.34001 1.004292 0.313256 1.257748 0.313256 1.004292 0.102549 1.004292 0.075578 1.004292 0.059648 1.004292 0.043393 1.004292 0.022507 1.004292 0.016234 1.004292 0.007991 1.245672 0.291808 1.245647 0.148252 1.251191 0.142703 1.251209 0.297355 1.257748 0.126247 1.004292 0.126247 1.004408 0.52581 1.004408 0.370528 1.273062 0.52581 1.273062 0.962871 1.273062 0.370528 1.273062 0.359264 1.273062 0.347746 1.273062 0.34001 1.273062 0.075578 1.273062 0.059648 1.273062 0.043393 1.273062 0.022507 1.273062 0.016234 1.273062 0.007991 0.273003 0.126247 1.273062 0.313256 1.273062 0.102549 1.273062 0.530293 1.004375 0.015943 0.030982 0.138778 0.236037 0.138745 0.236041 0.14826 0.030982 0.148334 0.240521 0.132324 0.030982 0.132336 0.236099 0.301317 0.240588 0.307733 0.03105 0.307914 0.031044 0.30147 0.03104 0.291911 0.236091 0.291805 0.004234 0.359264 0.004234 0.347746 0.273003 0.347746 0.273003 0.359264 0.004234 0.34001 0.273003 0.34001 0.004234 0.313256 0.25769 0.313256 0.004234 0.102549 0.004234 0.075578 0.273003 0.075578 0.273003 0.102549 0.004234 0.059648 0.273003 0.059648 0.004234 0.043393 0.273003 0.043393 0.004234 0.022507 0.273003 0.022507 0.004234 0.016234 0.273003 0.016234 0.004234 0.007991 0.273003 0.007991 0.245614 0.291808 0.245589 0.148252 0.251133 0.142703 0.251151 0.297355 0.25769 0.126247 0.273003 0.126247 0.273003 0.313256 0.004234 0.126247 0.273003 0.962871 0.004317 0.015943 0.27297 0.015943 0.00435 0.962871 0.273003 0.530293 0.00435 0.530293 0.273003 0.370528 0.273003 0.52581 0.00435 0.52581 0.00435 0.370528 1.004292 0.040014 1.004292 0.022507 1.004292 0.013897 1.996855 0.040014 1.996855 0.022507 1.273062 0.040014 1.273062 0.022507 1.273062 0.013897 1.748709 0.022507 1.748709 0.040014 0.004234 0.040014 0.004234 0.022507 0.273003 0.022507 0.273003 0.040014 0.004234 0.013897 0.273003 0.013897 0.996797 0.040014 0.748651 0.040014 0.748651 0.022507 0.996797 0.022507 1.004292 0.012542 1.996855 0.012542 1.748709 0.012542 0.748651 0.012542 1.273062 0.012542 0.273003 0.012542 0.004234 0.012542 0.996797 0.012542 1.273062 0.102549 1.273062 0.126247</float_array>
+          <technique_common>
+            <accessor source="#concave_shortShape-UVSet0-array" count="138" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="concave_shortShape-vertices" name="concave_shortShape-vertices">
+          <input semantic="POSITION" source="#concave_shortShape-positions"/>
+        </vertices>
+        <triangles material="concave_shortSG" count="108">
+          <input semantic="VERTEX" source="#concave_shortShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#concave_shortShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#concave_shortShape-UVSet0" offset="2" set="0"/>
+          <p>3 0 5 4 1 6 5 2 7 5 2 7 2 3 4 3 0 5 3 4 5 2 5 4 7 6 9 7 6 9 6 7 8 3 4 5 10 8 12 11 9 13 8 10 10 8 10 10 9 11 11 10 8 12 13 12 15 8 13 10 11 14 13 11 14 13 12 15 14 13 12 15 17 16 20 29 17 43 28 18 42 28 18 42 16 19 19 17 16 20 18 20 21 30 21 44 29 17 43 29 17 43 17 16 20 18 20 21 20 22 25 31 23 45 39 24 53 39 24 53 19 25 24 20 22 25 21 26 26 32 27 46 31 23 45 31 23 45 20 22 25 21 26 26 22 28 27 33 29 47 32 27 46 32 27 46 21 26 26 22 28 27 23 30 28 34 31 48 33 29 47 33 29 47 22 28 27 23 30 28 24 32 29 35 33 49 34 31 48 34 31 48 23 30 28 24 32 29 25 34 30 36 35 50 35 33 49 35 33 49 24 32 29 25 34 30 3 36 32 6 37 33 9 38 34 9 38 34 8 39 31 3 36 32 6 40 35 37 41 137 38 42 52 38 42 52 9 11 23 6 40 35 3 43 32 8 44 31 13 45 15 13 45 15 4 46 6 3 43 32 18 20 21 10 8 22 9 11 23 30 21 44 18 20 21 9 11 23 38 42 52 30 21 44 9 11 23 6 40 35 7 47 36 19 48 24 6 40 35 19 48 24 39 49 136 6 40 35 39 49 136 37 41 137 12 50 14 5 51 7 4 52 6 4 52 6 13 53 15 12 50 14 41 54 55 14 55 16 15 56 0 15 56 0 27 57 1 41 54 55 27 58 40 15 59 17 0 60 18 0 60 18 40 61 54 27 58 40 26 62 39 1 63 37 16 64 38 16 64 38 28 65 41 26 62 39 47 66 59 46 67 58 45 68 57 45 68 57 44 69 56 47 66 59 49 70 61 44 71 56 45 72 57 45 72 57 48 73 60 49 70 61 52 74 64 51 75 63 50 76 62 50 76 62 53 77 65 52 74 64 53 78 65 50 79 62 55 80 67 55 80 67 54 81 66 53 78 65 28 18 71 29 17 70 59 82 69 59 82 69 58 83 68 28 18 71 29 17 70 30 21 73 60 84 72 60 84 72 59 82 69 29 17 70 39 24 79 31 23 78 62 85 77 62 85 77 61 86 76 39 24 79 31 23 78 32 27 81 63 87 80 63 87 80 62 85 77 31 23 78 32 27 81 33 29 83 64 88 82 64 88 82 63 87 80 32 27 81 33 29 83 34 31 85 65 89 84 65 89 84 64 88 82 33 29 83 34 31 85 35 33 87 66 90 86 66 90 86 65 89 84 34 31 85 35 33 87 36 35 89 67 91 88 67 91 88 66 90 86 35 33 87 51 92 93 48 93 92 45 94 91 45 94 91 50 95 90 51 92 93 38 42 96 37 41 95 48 96 94 48 96 94 51 97 75 38 42 96 55 98 67 50 99 90 45 100 91 45 100 91 46 101 58 55 98 67 51 97 75 52 102 74 60 84 72 51 97 75 60 84 72 30 21 73 38 42 96 51 97 75 30 21 73 46 103 58 47 104 59 54 105 66 54 105 66 55 106 67 46 103 58 57 107 3 56 108 100 41 54 99 41 54 99 27 57 2 57 107 3 42 109 103 57 110 101 27 58 98 27 58 98 40 61 102 42 109 103 58 111 107 43 112 106 26 62 105 26 62 105 28 65 104 58 111 107 39 49 79 61 113 76 49 114 97 39 49 79 49 114 97 48 96 94 39 49 79 48 96 94 37 41 51 69 115 109 73 116 114 72 117 113 72 117 113 68 118 108 69 115 109 70 119 110 74 120 115 73 116 114 73 116 114 69 115 109 70 119 110 1 121 129 26 122 130 75 123 117 75 123 117 71 124 111 1 121 129 40 125 132 0 126 128 68 118 108 68 118 108 72 117 113 40 125 132 74 120 116 70 119 112 71 124 111 71 124 111 75 123 117 74 120 116 72 117 121 73 116 120 77 127 119 77 127 119 76 128 118 72 117 121 73 116 120 74 120 123 78 129 122 78 129 122 77 127 119 73 116 120 75 123 125 26 122 131 43 130 135 43 130 135 79 131 124 75 123 125 76 128 118 42 132 134 40 125 133 40 125 133 72 117 121 76 128 118 79 131 124 78 129 127 74 120 126 74 120 126 75 123 125 79 131 124</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>concave_shortShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="concave_short">
+      <node id="concave_short" name="concave_short" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#concave_shortShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="concave_shortSG" target="#_01___Default">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>concave_short</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

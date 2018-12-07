@@ -1,0 +1,65 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 20" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="20 0 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 20 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-1.88213 1.51081 1.4163" CameraTarget="0.00512 0.652017 -0.16256" CameraZoom="2.95415" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <Sound Active="true" ID="13" MaxDistance="4" MinDistance="0.25" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="general_fire_burning.snt" Tag="" UseDefault="false" Volume="0.1" WorldPos="0.017181 1.23984 0.002737" />
+            <Billboard Active="true" BillboardColor="0.85 0.6 0.4 0.5" BillboardOffset="0" BillboardSize="1.25 1.5" BillboardType="Point" ConnectLight="" HaloSourceSize="0.4 0.6 0.4" ID="14" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_1" Rotation="0 0 0" Tag="" WorldPos="0.001758 1.19244 -0.003493" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_torch_fire_calm.ps" ID="15" MaxFadeDistanceEnd="0" MaxFadeDistanceStart="0" MinFadeDistanceEnd="0" MinFadeDistanceStart="0" Name="ParticleSystem_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="0 1.10611 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/torch_floor/torch_floor.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="torch_floor_mesh" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="2" Name="BodyShape_1" RelativeRotation="0 0.785398 0" RelativeScale="0.3 0.06 0.3" RelativeTranslation="0 -0.514403 0" Rotation="0 0.785398 0" Scale="0.3 0.06 0.3" ShapeType="Box" Tag="" WorldPos="0 0.028274 0" />
+            <BodyShape Active="true" ID="4" Name="BodyShape_1_clone_1" RelativeRotation="0 0.785398 0" RelativeScale="0.05 1.01 0.05" RelativeTranslation="0 -0.037456 0" Rotation="0 0.785398 0" Scale="0.05 1.01 0.05" ShapeType="Box" Tag="" WorldPos="0 0.505221 0" />
+            <BodyShape Active="true" ID="5" Name="BodyShape_1_clone_2" RelativeRotation="0 0.785398 0" RelativeScale="0.2 0.21 0.2" RelativeTranslation="0 0.514403 0" Rotation="0 0.785398 0" Scale="0.2 0.21 0.2" ShapeType="Box" Tag="" WorldPos="0 1.05708 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="10" LinearDamping="0" Mass="0" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_5" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.542677 0">
+                <Children>
+                    <Child ID="14" />
+                    <Child ID="13" />
+                    <Child ID="0" />
+                    <Child ID="15" />
+                </Children>
+                <Shape ID="2" />
+                <Shape ID="4" />
+                <Shape ID="5" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="false" />
+        <Var Name="CanBeGrabbed" Value="false" />
+    </UserDefinedVariables>
+</Entity>

@@ -1,0 +1,34 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 20" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="20 0.262376 -0.036385" CameraTarget="0 0.262376 -0.036385" CameraZoom="0.916291" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 20 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.213261 0.674049 0.667207" CameraTarget="-0.055974 0.153662 -0.233704" CameraZoom="3.84" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/lamp/candlestick01/candlestick01.dae">
+            <SubMesh Active="false" ID="0" Material="" Name="CandleStick01" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="false" ID="1" Name="BodyShape_1" RelativeRotation="0 -0 0" RelativeScale="0.10055 0.239276 0.10055" RelativeTranslation="-0.001886 -0.082444 -0.0015215" Rotation="0 0 0" Scale="0.10055 0.239276 0.10055" ShapeType="Cylinder" Tag="" WorldPos="-0.001243 0.120653 -0.001242" />
+            <BodyShape Active="false" ID="2" Name="BodyShape_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.041331 0.112812 0.041331" RelativeTranslation="0.001886 0.082444 0.0015215" Rotation="0 0 0" Scale="0.041331 0.112812 0.041331" ShapeType="Cylinder" Tag="" WorldPos="0.002529 0.285541 0.001801" />
+        </Shapes>
+        <Bodies>
+            <Body Active="false" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="3" LinearDamping="0" Mass="4" Material="Metal" MaxAngularSpeed="12" MaxLinearSpeed="12" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.000643 0.203097 0.0002795">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="2" />
+                <Shape ID="1" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

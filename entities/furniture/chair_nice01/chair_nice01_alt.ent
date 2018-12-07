@@ -1,0 +1,95 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0.23 0.46 20" CameraTarget="0.23 0.46 0" CameraZoom="0.916291" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="20 0.625 0.125" CameraTarget="0 0.625 0.125" CameraZoom="0.916291" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 20 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="1.1139 1.4609 1.3624" CameraTarget="-0.063252 0.566272 -0.034029" CameraZoom="3.20215" GridHeight="0" GridPlane="1" Preset="3" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/furniture/chair_nice01/chair_nice01_alt.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="polySurface17" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="BodyShape_1" RelativeRotation="-0.087266 -0 0" RelativeScale="0.572375 0.7 0.100002" RelativeTranslation="0 0.354381 -0.239483" Rotation="-0.087266 -0 0" Scale="0.572375 0.7 0.100002" ShapeType="Box" Tag="" WorldPos="0 0.952773 -0.240873" />
+            <BodyShape Active="true" ID="2" Name="BodyShape_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.572375 0.14 0.58" RelativeTranslation="0 -0.045419 0.013325" Rotation="0 0 0" Scale="0.572375 0.14 0.58" ShapeType="Box" Tag="" WorldPos="0 0.552973 0.011935" />
+            <BodyShape Active="true" ID="3" Name="BodyShape_2" RelativeRotation="0 -0 0" RelativeScale="0.09 0.48 0.1" RelativeTranslation="0.251689 -0.354381 0.239483" Rotation="0 0 0" Scale="0.09 0.48 0.1" ShapeType="Box" Tag="" WorldPos="0.251689 0.244011 0.238093" />
+            <BodyShape Active="true" ID="4" Name="BodyShape_2_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.09 0.48 0.1" RelativeTranslation="-0.251689 -0.354381 0.239483" Rotation="0 0 0" Scale="0.09 0.48 0.1" ShapeType="Box" Tag="" WorldPos="-0.251689 0.244011 0.238093" />
+            <BodyShape Active="true" ID="5" Name="BodyShape_2_clone_2" RelativeRotation="0 -0 0" RelativeScale="0.09 0.48 0.1" RelativeTranslation="0.184829 -0.354381 -0.22111" Rotation="0 0 0" Scale="0.09 0.48 0.1" ShapeType="Box" Tag="" WorldPos="0.184829 0.244011 -0.2225" />
+            <BodyShape Active="true" ID="6" Name="BodyShape_2_clone_2_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.09 0.48 0.1" RelativeTranslation="-0.184829 -0.354381 -0.22111" Rotation="0 0 0" Scale="0.09 0.48 0.1" ShapeType="Box" Tag="" WorldPos="-0.184829 0.244011 -0.2225" />
+            <BodyShape Active="true" ID="8" Name="BodyShape_1_clone_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.572375 0.14 0.281438" RelativeTranslation="0 -0.045419 0.165547" Rotation="0 0 0" Scale="0.572375 0.14 0.281438" ShapeType="Box" Tag="" WorldPos="0 0.552973 0.164157" />
+            <BodyShape Active="true" ID="9" Name="BodyShape_1_clone_1_clone_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.572375 0.14 0.281438" RelativeTranslation="0 -0.045419 0.165547" Rotation="0 0 0" Scale="0.572375 0.14 0.281438" ShapeType="Box" Tag="" WorldPos="0 0.552973 0.164157" />
+            <BodyShape Active="true" ID="10" Name="BodyShape_1_clone_1_clone_1_clone_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.572375 0.14 0.281438" RelativeTranslation="0 -0.045419 0.165547" Rotation="0 0 0" Scale="0.572375 0.14 0.281438" ShapeType="Box" Tag="" WorldPos="0 0.552973 0.164157" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0.2" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="11" LinearDamping="0.3" Mass="10" Material="Wood" MaxAngularSpeed="12" MaxLinearSpeed="12" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.598392 -0.00139">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="1" />
+                <Shape ID="2" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+                <Shape ID="5" />
+                <Shape ID="6" />
+                <Shape ID="8" />
+                <Shape ID="9" />
+                <Shape ID="10" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="Grab" EntityType="Object">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="BreakActive" Value="false" />
+        <Var Name="BreakDestroyJoints" Value="false" />
+        <Var Name="BreakMinEnergy" Value="100" />
+        <Var Name="BreakEntity" Value="" />
+        <Var Name="BreakEntityAlignBody" Value="" />
+        <Var Name="BreakSound" Value="" />
+        <Var Name="BreakParticleSystem" Value="" />
+        <Var Name="BreakImpulse" Value="4" />
+        <Var Name="HitDamageAmount" Value="5" />
+        <Var Name="HitDamageStrength" Value="1" />
+        <Var Name="MinHitDamageSpeed" Value="3" />
+        <Var Name="LifeLength" Value="0" />
+        <Var Name="IsFood" Value="false" />
+        <Var Name="GrabUseDepth" Value="false" />
+        <Var Name="GrabDepth" Value="1.5" />
+        <Var Name="GrabDepthInc" Value="0.15" />
+        <Var Name="GrabMinDepth" Value="1.0" />
+        <Var Name="GrabMaxDepth" Value="2.2" />
+        <Var Name="GrabUseOffset" Value="false" />
+        <Var Name="GrabPositionOffset" Value="0" />
+        <Var Name="GrabRotationOffset" Value="0" />
+        <Var Name="GrabThrowImpulse" Value="7" />
+        <Var Name="GrabMassMul" Value="0.1" />
+        <Var Name="GrabForceMul" Value="1" />
+        <Var Name="GrabTorqueMul" Value="1" />
+        <Var Name="GrabUseRotation" Value="true" />
+        <Var Name="GrabSkipNonOuterBodies" Value="false" />
+    </UserDefinedVariables>
+</Entity>

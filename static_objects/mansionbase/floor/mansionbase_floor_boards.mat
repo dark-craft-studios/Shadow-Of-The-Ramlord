@@ -1,0 +1,8 @@
+<Material>
+    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Wood_Heavy" Type="SolidDiffuse" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="" AnimMode="" File="mansionbase_floor_boards.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+	<Specular AnimFrameTime="" AnimMode="" File="mansionbase_floor_boards_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+	<NMap AnimFrameTime="" AnimMode="" File="mansionbase_floor_boards_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

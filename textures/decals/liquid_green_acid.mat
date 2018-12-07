@@ -1,0 +1,8 @@
+<Material>
+  <Main Type="Decal" BlendMode="Alpha" PhysicsMaterial="Dirt" UseAlpha="False" DepthTest="True" Value="30"/>
+  <TextureUnits>
+    <Diffuse File="liquid_green_acid.dds" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" />
+    <Specular File="" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <Refraction File="" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="0" />
+  </TextureUnits>
+</Material>

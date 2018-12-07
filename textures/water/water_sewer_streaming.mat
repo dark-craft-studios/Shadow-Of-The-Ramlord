@@ -1,0 +1,22 @@
+<Material>
+    <Main BlendMode="Mulx2" DepthTest="true" PhysicsMaterial="Default" Type="translucent" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="G:/amnesia/redist/textures/water/water_sewer_streaming.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="0" AnimMode="None" Compress="true" File="G:/amnesia/redist/textures/water/water_sewer_streaming_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+        <CubeMap AnimFrameTime="0" AnimMode="None" Compress="true" File="G:/amnesia/redist/textures/envmaps/water_dungeon_cubemap.dds" MipMaps="true" Type="Cube" Wrap="Repeat" />
+    </TextureUnits>
+    <UvAnimations>
+        <Animation Amplitude="1.49012e-008" Axis="Y" Speed="-1.2" Type="Translate" />
+    </UvAnimations>
+    <SpecificVariables>
+        <Var Name="Refraction" Value="true" />
+        <Var Name="RefractionEdgeCheck" Value="true" />
+        <Var Name="RefractionNormals" Value="false" />
+        <Var Name="RefractionScale" Value="0.10000000149011612" />
+        <Var Name="FrenselBias" Value="0.20000000298023224" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="RimLightMul" Value="0" />
+        <Var Name="RimLightPow" Value="8" />
+        <Var Name="AffectedByLightLevel" Value="false" />
+    </SpecificVariables>
+</Material>

@@ -1,0 +1,61 @@
+#include "AmnesiaSignatures.cpp"
+
+// ============================================================================
+// GLOBAL LOADING SCREEN SYSTEM
+// ============================================================================
+void GetGlobalLoadingScreen(string mapId)
+{
+    string txtCat = GetGlobalVarString("LS_TextCategory");
+    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
+    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
+    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
+
+    SetupLoadScreen(
+        txtCat, /* Text Category */
+        txtEnt, /* Text Entry */
+        imgRnd, /* Random */
+        imgFil  /* Image file */
+    );
+}
+
+// ============================================================================
+// STRING HELPERS
+// ============================================================================
+bool StringIsInArray(string text, string[] array)
+{
+    for(uint i = 0; i < array.length(); i++)
+    {
+        if(array[i] == text) return true;
+    }
+    return false;
+}
+
+// ============================================================================
+// DOOR MESSAGES
+// ============================================================================
+void ShowDoorMessage(string entry)
+{
+    SetMessage("DoorMessages", entry, 0.0f);
+}
+
+// ============================================================================
+// VOICE OVER AND SLOWING DOWN
+// ============================================================================
+void PlayVoiceOnPlayerAndSlowdown(
+    string soundFile, 
+    string subtitleCategory, 
+    string subtitleEntry)
+{
+    SetPlayerRunSpeedMul(0.0f);
+    SetPlayerMoveSpeedMul(0.6f);
+    SetPlayerJumpDisabled(true);
+    PlayVoiceOnPlayer(soundFile, subtitleCategory, subtitleEntry);
+    SetEffectVoiceOverCallback("ResetSpeedAndJump");
+}
+
+void ResetSpeedAndJump()
+{
+    SetPlayerMoveSpeedMul(1.0f);
+    SetPlayerRunSpeedMul(1.0f);
+    SetPlayerJumpDisabled(false);
+}

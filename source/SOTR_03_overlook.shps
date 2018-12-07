@@ -1,0 +1,585 @@
+#include "AmnesiaSignatures.cpp"
+#include "ResetPlayerStateOnStart.ihps"
+
+// ----------------------------------------------------------------------------
+// GLOBAL LOADING SCREEN SYSTEM
+// ----------------------------------------------------------------------------
+void GetGlobalLoadingScreen(string mapId)
+{
+    string txtCat = GetGlobalVarString("LS_TextCategory");
+    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
+    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
+    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
+
+    SetupLoadScreen(
+        txtCat, /* Text Category */
+        txtEnt, /* Text Entry */
+        imgRnd, /* Random */
+        imgFil  /* Image file */
+    );
+}
+
+// ----------------------------------------------------------------------------
+// SET SANITY ENABLED
+// ----------------------------------------------------------------------------
+void SetSanityEnabled(bool enabled)
+{
+    SetSanityDrainDisabled(!enabled);
+    SetInDarknessEffectsActive(enabled);
+}
+
+// ----------------------------------------------------------------------------
+// LANTERN CHECK
+// ----------------------------------------------------------------------------
+void LanternCheck()
+{
+    string lanternName = GetGlobalVarString("LanternName");
+    if(HasItem(lanternName)) return;
+    GiveItemFromFile(lanternName, "lantern.ent");
+}
+
+// ----------------------------------------------------------------------------
+// AMBIENCE ABSTRACTION
+// ----------------------------------------------------------------------------
+void StartAmbience(string soundFile)
+{
+    PlaySoundAtEntity(
+        "amb",     /* Sound name */
+        soundFile, /* Sound file */
+        "Player",  /* Entity */
+        0.0f,      /* Fade time */
+        false      /* Save */
+    );
+}
+
+void StopAmbience()
+{
+    StopSound("amb", 5.0f);
+}
+
+
+
+
+// ----------------------------------------------------------------------------
+// Main - g
+// ----------------------------------------------------------------------------
+const string gMapId = "04";
+
+void Preload()
+{
+    PreloadSound("flashback_flash.snt");
+    PreloadSound("react_breath_slow.snt");
+}
+
+void OnStart()
+{
+    DestroyDataCache();
+    GetGlobalLoadingScreen(gMapId);
+    SetSanityEnabled(false);
+    LanternCheck();
+    RegisterCallbacks();
+    OnMapEnterVoiceover();
+    StartAmbience("ambience_hollow_tinker.snt");
+    FadeOut(0);
+    FadeIn(3);
+    PlayMusic("11_paper_howl.ogg", false, 0.5f, 0.5f, 1.0f, false);
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPlayerRunSpeedMul(1.0f);
+    AddTimer("", 0.5f, "JohanLine1");
+    AddEntityCollideCallback("Player", "EmiliaVoiceIntro", "EmiliaVoiceLine1", true, 1);
+    DoorConversationRoutine();
+    MonsterSequenceRoutine();
+    EndingSequenceRoutine();
+}
+
+void OnEnter()
+{
+    Preload();
+    PlayMusic("SOTR_overlook.ogg", false, 0.5f, 0.5f, 1.0f, false);
+    PreloadSound("ambience_hollow_tinker.snt");
+}
+
+void OnLeave()
+{
+}
+
+void RegisterCallbacks()
+{
+    for(int i = 1; i <= brBookCount; i++)
+    {
+        AddUseItemCallback(
+            "", 				/* Name */
+            brBookItemBase + i, /* Item Name */
+            brRitualArea, 		/* Entity */
+            "PlaceRitualBook", 	/* Callback Function */
+            true 				/* Destroy Item */
+        );
+    }
+
+    AddEntityCollideCallback(
+		"Player",						/* Parent name */
+		voiceOverCollideArea, 			/* Child name */
+		"CollideVoiceOver", 	        /* Callback Function */
+		true, 							/* Delete On Collide */
+		1								/* State */
+	); 
+}
+
+// ----------------------------------------------------------------------------
+// Voice Acting Temporary (Glenn Code Style 1.0 Release Ready, Totally)
+// ----------------------------------------------------------------------------
+
+void JohanLine1(string &in asTimer)
+{
+    AddEffectVoice("OL_Johan_1.ogg", "", "JohanNarration", "23", false, "player", 0.0f, 10.0f);
+}
+
+void EmiliaVoiceLine1(string &in asParent, string &in asChild, int alState)
+{
+    // Glenn Comment: I want the players head to turn towards the door, with this line coming from that direction.
+    AddEffectVoice("OL_Emilia_1.ogg", "", "EmiliaNarration", "3", false, "EmiliaTableVoice1", 0.0f, 20.0f);
+    AddTimer("", 4.0f, "JohanLine2");
+}
+
+void JohanLine2(string &in asTimer)
+{
+    AddEffectVoice("OL_Johan_2.ogg", "", "JohanNarration", "24", false, "player", 0.0f, 10.0f);
+    AddTimer("", 9.0f, "EmiliaVoiceLine2");
+}
+
+void EmiliaVoiceLine2(string &in asTimer)
+{
+    // Glenn Comment: I want the players head to turn towards the door, with this line coming from that direction.
+    AddEffectVoice("OL_Emilia_2.ogg", "", "EmiliaNarration", "4", false, "player", 0.0f, 10.0f);
+}
+
+void DoorConversationRoutine()
+{
+    AddEntityCollideCallback("Player", "EmiliaConvoArea", "DoorConversation1", true, 1);
+}
+
+void DoorConversation1(string &in asParent, string &in asChild, int alState)
+{
+    //Glenn Comment: This line is behind the door.
+    AddEffectVoice("OL_Emilia_3.ogg", "", "EmiliaNarration", "5", false, "player", 0.0f, 20.0f);
+    SetPlayerMoveSpeedMul(0.0f);
+    SetPlayerRunSpeedMul(0.0f);
+    AddTimer("", 27.0f, "DoorConversation2");
+}
+
+void DoorConversation2(string &in asTimer)
+{
+    //Glenn Comment: This line is behind the door.
+    AddEffectVoice("OL_Emilia_4.ogg", "", "EmiliaNarration", "6", false, "player", 0.0f, 20.0f);
+    AddTimer("", 19.0f, "DoorConversation3");
+}
+
+void DoorConversation3(string &in asTimer)
+{
+    AddEffectVoice("OL_Johan_3.ogg", "", "JohanNarration", "25", false, "player", 0.0f, 20.0f);
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPlayerRunSpeedMul(0.75f);
+}
+
+// Glenn Comment: When the ritual in the cellar is complete, the below line should play.
+//    AddEffectVoice("OL_Johan_4.ogg", "", "JohanNarration", "26", false, "player", 0.0f, 20.0f);
+
+// Glenn Comment: When the first grimoire is picked up, the below line should be played.
+//    AddEffectVoice("OL_Johan_5.ogg", "", "JohanNarration", "27", false, "player", 0.0f, 20.0f);
+
+// Glenn Comment: When the last grimoire is picked up, the below line should be played.
+//    AddEffectVoice("OL_Johan_7.ogg", "", "JohanNarration", "29", false, "player", 0.0f, 20.0f);
+
+// ----------------------------------------------------------------------------
+// Monster Sequence Initialize
+// ----------------------------------------------------------------------------
+
+void MonsterSequenceRoutine()
+{
+    AddEntityCollideCallback("Player", "MonsterSequenceBegin", "BeginMonsterSequence", true, 1);
+}
+
+void BeginMonsterSequence(string &in asParent, string &in asChild, int alState)
+{
+    AddEffectVoice("OL_Johan_6.ogg", "", "JohanNarration", "28", false, "player", 0.0f, 20.0f);
+}
+
+
+// ----------------------------------------------------------------------------
+// Ending Sequence - Audio
+// ----------------------------------------------------------------------------
+
+void EndingSequenceRoutine()
+{
+    AddEntityCollideCallback("Player", "EndingSequenceArea", "EndingLine1", true, 1);
+}
+
+void EndingLine1(string &in asParent, string &in asChild, int alState)
+{
+    AddEffectVoice("OL_Johan_8.ogg", "", "JohanNarration", "30", false, "player", 0.0f, 20.0f);
+}
+
+// ----------------------------------------------------------------------------
+// Book Ritual - br
+// ----------------------------------------------------------------------------
+const int    brBookCount        = 3;
+const string brBookItemBase     = "RitualBook_";
+const string brBookStaticBase   = "RitualBookStatic_";
+const string brRitualArea       = "RitualBookArea";
+
+void PlaceRitualBook(string item, string entity)
+{
+    RemoveItem(item);
+
+    AddLocalVarInt("brPlacedBooks", 1);
+    int currentBookNumber = GetLocalVarInt("brPlacedBooks");
+
+    SetEntityActive(brBookStaticBase + currentBookNumber, true);
+    CheckRitualCompletion();
+}
+
+void CheckRitualCompletion()
+{
+    if(GetLocalVarInt("brPlacedBooks") < brBookCount) return;
+    OnRitualCompleted();
+}
+
+void OnRitualBookPickup(string entity)
+{
+    AddLocalVarInt("brPickedBooks", 1);
+    int currentBookNumber = GetLocalVarInt("brPickedBooks");
+
+    if(currentBookNumber == 1)
+    {
+        OnFirstBookPickup();
+    }
+    else if(currentBookNumber == 4)
+    {
+        OnLastBookPickup();
+    }
+}
+
+void OnRitualCompleted()
+{
+    StartRitualCutscene();
+}
+
+// ----------------------------------------------------------------------------
+// After-Ritual Cutscene arc
+// ----------------------------------------------------------------------------
+const string[] arcLampsToGoOut = {
+    "PointLight_10",
+    "candle_floor_21",
+    "candle_floor_29",
+    "candle_floor_28",
+    "candle_floor_26",
+    "candle_floor_25",
+    "candle_floor_23",
+    "candle_floor_39",
+    "candle_floor_40",
+    "candle_floor_41",
+    "candle_floor_42",
+    "candle_floor_33",
+    "candle_floor_34",
+    "candle_floor_35",
+    "candle_floor_43",
+    "candle_floor_36",
+    "candle_floor_37",
+    "candle_floor_38"
+};
+
+const string[] arcLightsToGoOut = {
+    "PointLight_10"
+};
+
+const string arcDoorToPush = "EmiliaDoor";
+
+void StartRitualCutscene()
+{
+    // Whatever happens in the cutscene goes here...
+    AddEffectVoice(
+        "SOTR_TEMP_silence.ogg",    /* Voice File */
+        "",                         /* Effect File */
+        "",                         /* Text category */
+        "",                         /* Text entry */
+        true,                       /* Use position */
+        "",                         /* Position entity */
+        0.0f,                       /* Minimum hearing distance */
+        10.0f                       /* Maximum hearing distance */
+    );
+    SetEffectVoiceOverCallback("OnRitualVoiceDone");
+}
+
+void OnRitualVoiceDone()
+{
+    for(uint i = 0; i < arcLampsToGoOut.length(); i++)
+    {
+        SetLampLit(
+            arcLampsToGoOut[i], /* Lamp */
+            false,              /* Lit */
+            true                /* Use Effects */
+        );
+    }
+
+    for(uint i = 0; i < arcLightsToGoOut.length(); i++)
+    {
+        FadeLightTo(
+            arcLightsToGoOut[i],    /* Light */
+            0.0f,                   /* Red */
+            0.0f,                   /* Green */
+            0.0f,                   /* Blue */
+            1.0f,                   /* Alpha */
+            -1.0f,                  /* Radius (-1 = same as previous) */
+            0.5f                    /* TimeInSeconds */
+        );
+    }
+
+    SetPropHealth(arcDoorToPush, 0.0f);
+}
+
+// ----------------------------------------------------------------------------
+// Voiceover Lines
+// ----------------------------------------------------------------------------
+const string voiceOverCollideArea = "VoiceOverCollideArea";
+
+void OnMapEnterVoiceover()
+{
+    AddDebugMessage("OnMapEnterVoiceover", false);
+    AddEffectVoice(
+        "SOTR_TEMP_silence.ogg",    /* Voice File */
+        "",                         /* Effect File */
+        "",                         /* Text category */
+        "",                         /* Text entry */
+        true,                       /* Use position */
+        "",                         /* Position entity */
+        0.0f,                       /* Minimum hearing distance */
+        10.0f                       /* Maximum hearing distance */
+    );
+}
+
+void OnFirstBookPickup()
+{
+    AddDebugMessage("OnFirstBookPickup", false);
+    AddEffectVoice(
+        "SOTR_TEMP_silence.ogg",    /* Voice File */
+        "",                         /* Effect File */
+        "",                         /* Text category */
+        "",                         /* Text entry */
+        true,                       /* Use position */
+        "",                         /* Position entity */
+        0.0f,                       /* Minimum hearing distance */
+        10.0f                       /* Maximum hearing distance */
+    );
+}
+
+void OnLastBookPickup()
+{
+    AddDebugMessage("OnLastBookPickup", false);
+    AddEffectVoice(
+        "SOTR_TEMP_silence.ogg",    /* Voice File */
+        "",                         /* Effect File */
+        "",                         /* Text category */
+        "",                         /* Text entry */
+        true,                       /* Use position */
+        "",                         /* Position entity */
+        0.0f,                       /* Minimum hearing distance */
+        10.0f                       /* Maximum hearing distance */
+    );
+}
+
+void CollideVoiceOver(string parent, string child, int state)
+{
+    AddDebugMessage("CollideVoiceOver", false);
+    AddEffectVoice(
+        "SOTR_TEMP_silence.ogg",    /* Voice File */
+        "",                         /* Effect File */
+        "",                         /* Text category */
+        "",                         /* Text entry */
+        true,                       /* Use position */
+        "",                         /* Position entity */
+        0.0f,                       /* Minimum hearing distance */
+        10.0f                       /* Maximum hearing distance */
+    );
+}
+
+// ----------------------------------------------------------------------------
+// Example Meditation
+// ----------------------------------------------------------------------------
+void InitializeExampleMeditation()
+{
+    // Adding a debug item for the example.
+    //GiveItem("DebugItem", "Puzzle", "DebugItem", "SOTR_DebugIcon.tga", 1.0f);
+
+    // When the item is used at an entity, the meditation should start.
+    AddUseItemCallback("", "SOTR_Clearsight_1", "MeditationArea2", "Meditate", true);
+}
+
+void Meditate(string item, string entity)
+{
+    // Passing in the area on which the player should focus
+    // and a name of the function I want to trigger once
+    // in meditation...
+    StartMeditation(entity, "DummyMeditation");
+}
+
+void DummyMeditation(string t)
+{
+    // This is my function that happens when the player is
+    // in meditation... I can do whatever in here.. even 
+    // add timers and call other functions.
+
+    // For an example, I'm just outputting a debug message.
+    AddDebugMessage("Meditating...", false);
+
+    // As a caller I am responsible to call the EndMeditation
+    // function once my meditation is done... If I don't do that
+    // I will meditate forever. Which sounds better then it 
+    // actually is.
+    AddTimer("", 3.0f, "EndMeditation");
+}
+
+// ----------------------------------------------------------------------------
+// MEDITATION
+//
+// Summary:
+// The base code for meditation sequences. It allowes for a custom function to
+// be executed once the main meditation state hits. The called is responsible
+// for calling the EndMeditation otherwise the player gets stuck in a state of
+// INFINITE MEDITATION!!!!! How Zen...
+// ----------------------------------------------------------------------------
+void StartMeditation(string focusArea, string callback)
+{
+    AddEffectVoice("OL_Johan_9.ogg", "", "JohanNarration", "31", false, "player", 0.0f, 20.0f);
+    SetLocalVarString("MeditationCallback", callback);
+    AddDebugMessage("Meditation triggered", false);
+    StartPlayerLookAt(focusArea, 1.0f, 1.5f, "");
+    SetPlayerActive(false);
+    SetInventoryDisabled(true);
+    AddTimer("", 2.0f, "MeditationTimer");
+}
+
+void MeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationStage", 1);
+    int stage = GetLocalVarInt("MeditationStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        SetPlayerCrouching(true);
+        delay = 4.0f;
+    }
+    else if(stage == 2)
+    {
+        MovePlayerHeadPos(0.0f, -0.2f, 0.0f, 1.0f, 0.5f);
+        delay = 5.0f;
+    }
+    else if(stage == 3)
+    {
+        FadeOut(2.0f);
+        PlaySoundAtEntity("react_breath_slow.snt");
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        FadeSepiaColorTo(0.9f, 2.0f);
+        FadeIn(1.5f);
+        StartEffectFlash(0.5f, 3.5f, 1.0f);
+        PlaySoundAtEntity("flashback_flash.snt");
+        delay = 5.5f;
+    }
+    else if(stage == 5)
+    {
+        string callback = GetLocalVarString("MeditationCallback");
+        AddTimer("", 0.0f, callback);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "MeditationTimer");
+}
+
+void EndMeditation(string t)
+{
+    SetLocalVarString("MeditationCallback", "");
+    SetLocalVarInt("MeditationEndStage", 0);
+    EndMeditationTimer("");
+}
+
+void EndMeditationTimer(string t)
+{
+    AddLocalVarInt("MeditationEndStage", 1);
+    int stage = GetLocalVarInt("MeditationEndStage");
+    float delay = 0.0f;
+
+    if(stage == 1)
+    {
+        FadeOut(1.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 2)
+    {
+        FadeSepiaColorTo(0.0f, 2.0f);
+        FadeIn(2.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 3)
+    {
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 1.0f, 0.5f);
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+        StopPlayerLookAt();
+        SetPlayerCrouching(false);
+        SetInventoryDisabled(false);
+        SetPlayerActive(true);
+        ChangeMap("SOTR_04_emiliasdream", "PlayerStartArea_1", "", "");
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "EndMeditationTimer");
+}
+// ----------------------------------------------------------------------------
+// PLAY SOUND AT ENTITY OVERLOADS
+//
+// Summary:
+// Overloads (alternative calls) to the common PlaySoundAtEntity function
+// that allows you to pass less parameters and have the rest be default.
+// ----------------------------------------------------------------------------
+void PlaySoundAtEntity(string name, string file, string entity)
+{
+    PlaySoundAtEntity(
+        entity, /* Sound name */
+        file,   /* Sound file */
+        entity, /* Entity */
+        0.0f,   /* Fade time */
+        false   /* Save */
+    );
+}
+
+void PlaySoundAtEntity(string file, string entity, float fadeTime)
+{
+    PlaySoundAtEntity(
+        "",       /* Sound name */
+        file,     /* Sound file */
+        entity,   /* Entity */
+        fadeTime, /* Fade time */
+        false     /* Save */
+    );
+}
+
+void PlaySoundAtEntity(string file, string entity)
+{
+    PlaySoundAtEntity(file, entity, 0.0f);
+}
+
+void PlaySoundAtEntity(string file)
+{
+    PlaySoundAtEntity(file, "Player", 0.0f);
+}

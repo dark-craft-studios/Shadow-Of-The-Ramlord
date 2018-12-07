@@ -1,0 +1,181 @@
+#include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
+#include "Utilities.ihps"
+#include "EveryMapEvents_AUTORUN.ihps"
+#include "ForceEssentialItems_AUTORUN.ihps"
+#include "Meditation.ihps"
+
+// ============================================================================
+// USED ENTITIES
+// Constants representing entities referenced inside this script
+// in order to prevent misspelling and allow for easier renaming.
+// - For consistency use an "ent" prefix.
+// ============================================================================
+const string entEntranceGate = "elevator_door_1";
+const string entGateCandle1 = "candlestick_floor_1";
+const string entGateCandle2 = "candlestick_floor_2";
+const string entShedAltar = "stone_altar_shrine_1";
+const string entCellarDoor = "level_celler_1";
+const string entClearsightDoor = "ClearsightDoor1";
+
+// ============================================================================
+// MAIN
+// ============================================================================
+void OnStart()
+{
+    GetGlobalLoadingScreen("01");
+    FadeOut(0.0f);
+    FadeIn(3.0f);
+    PlayMusicOnce("11_paper_howl.ogg");
+    StartAmbience("ambience_swoop_myst.snt");
+    RegisterCallbacks();    
+}
+
+void OnLeave()
+{
+    StopAmbience();
+}
+
+void RegisterCallbacks()
+{
+    AddSinglePlayerCollideCallback("MoodScript1", "GateOpenEvent");
+    AddSinglePlayerCollideCallback("JohanVoice_1", "JohanInitialLine");
+    AddSinglePlayerCollideCallback("JohanVoice_3", "JohanEntranceLocked");
+    AddSinglePlayerCollideCallback("JohanVoice_4", "JohanAltarLine");
+    AddSinglePlayerCollideCallback("TidyUp", "AntonAndEmiliaEvent");
+
+    AddUseItemCallback("SOTR_Clearsight_1", "ClearsightAbility", "Meditate");
+}
+
+// ============================================================================
+// GATE EVENT
+// ============================================================================
+void GateOpenEvent(string a, string b, int state)
+{
+    AddPropForce(entEntranceGate, 0, 0, -200, "World");
+    PlaySoundAtEntity("SOTR_NecroWind.snt");
+    LightLampWithEffects(entGateCandle2);
+    LightLampWithEffects(entGateCandle1);
+}
+
+// ============================================================================
+// JOHAN NARRATION EVENTS
+// ============================================================================
+void JohanInitialLine(string a, string b, int state)
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Johan_1.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "7"               /* Subtitles Entry */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Johan_2.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "8"               /* Subtitles Entry */
+    );
+}
+
+void JohanEntranceLocked(string a, string b, int state)
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Johan_3.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "9"               /* Subtitles Entry */
+    );
+}
+
+void JohanAltarLine(string &in asParent, string &in asChild, int alState)
+{
+    StartPlayerLookAt(entShedAltar, 0.25f, 0.5f, "");
+
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Johan_4.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "10"              /* Subtitles Entry */
+    );
+}
+
+// ============================================================================
+// MEDITATION
+// ============================================================================
+void Meditate(string item, string entity)
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Johan_5.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "11"              /* Subtitles Entry */
+    );
+    SetEntityActive("TidyUp", true);
+    SetSwingDoorLocked(entClearsightDoor, false, true);
+    SetEntityActive("JohanVoice_3", false);
+    StartMeditation(entity, "OnMeditating");
+}
+
+void OnMeditating(string t)
+{
+    AddTimer("", 1.0f, "EndMeditation");
+}
+
+// ============================================================================
+// ANTON AND EMILIA EVENT
+// ============================================================================
+void AntonAndEmiliaEvent(string a, string b, int state)
+{
+    SetSwingDoorClosed(entEntranceGate, true, true);
+    SetSwingDoorLocked(entEntranceGate, true, true);
+    SetLevelDoorLocked(entCellarDoor, true);
+    SetSwingDoorClosed(entClearsightDoor, false, true);
+
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Anton_1.ogg", /* Voice file */
+        "AntonNarration", /* Subtitles Category */
+        "1"               /* Subtitles Entry */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Emilia_1.ogg", /* Voice file */
+        "EmiliaNarration", /* Subtitles Category */
+        "1"               /* Subtitles Entry */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Anton_2.ogg", /* Voice file */
+        "AntonNarration", /* Subtitles Category */
+        "2"               /* Subtitles Entry */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Emilia_2.ogg", /* Voice file */
+        "EmiliaNarration", /* Subtitles Category */
+        "2"               /* Subtitles Entry */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "PR_Anton_3.ogg", /* Voice file */
+        "AntonNarration", /* Subtitles Category */
+        "3"               /* Subtitles Entry */
+    );
+}
+
+// ============================================================================
+// DOOR INTERACTIONS
+// ============================================================================
+void OnMainDoorInteract(string entity)
+{
+    SetMessage("DoorMessages", "PrologueMainLocked", 0.0f);
+    PlaySoundAtEntity("door_level_wood_locked.snt");
+}
+
+void OnLockDoorInteract(string entity)
+{
+    SetMessage("DoorMessages", "Generic_Locked_4", 0.0f);
+    PlaySoundAtEntity("door_level_wood_locked.snt");
+}
+
+void OnQuestDoorInteract(string &in entity)
+{
+    SetMessage("DoorMessages", "PrologueSecondLocked", 0.0f);
+    PlaySoundAtEntity("door_level_wood_locked.snt");
+}
+
+void ExitShed(string entity)
+{
+    StopAmbience(0.5f);
+    StartAmbience("ambience_swoop_myst.snt");
+}

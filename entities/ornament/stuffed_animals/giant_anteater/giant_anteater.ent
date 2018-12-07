@@ -1,0 +1,58 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0.995794 180.382" CameraTarget="0 0.995794 0.382257" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0.995794 0" CameraTarget="0 0.995794 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0.382257" CameraTarget="0 0 0.382257" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="2.28965 2.47048 2.66722" CameraTarget="-0.779765 0.831516 -0.137599" CameraZoom="2.41479" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/ornament/stuffed_animals/giant_anteater/giant_anteater.DAE">
+            <SubMesh Active="true" ID="0" Material="" Name="Box003" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="Box005" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="Object002" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="3" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="1.05 1.75 4" RelativeTranslation="0 0 0" Rotation="0 -0 0" Scale="1.05 1.75 4" ShapeType="Box" Tag="" WorldPos="0.00118613 1.07819 -0.386298" />
+            <BodyShape Active="true" ID="4" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="1.2 0.2 4.305" RelativeTranslation="0.00124156 -0.928057 -0.00580028" Rotation="0 -0 0" Scale="1.2 0.2 4.305" ShapeType="Box" Tag="" WorldPos="0 0.103081 -0.393652" />
+            <BodyShape Active="true" ID="5" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="0.06 0.06 4" RelativeTranslation="0.518429 0.925678 0.0195131" Rotation="0 -0 0" Scale="0.06 0.06 4" ShapeType="Box" Tag="" WorldPos="0.517188 1.95682 -0.368339" />
+            <BodyShape Active="true" ID="8" Name="Shape_5" RelativeRotation="0 -0 0" RelativeScale="0.06 1.8 0.06" RelativeTranslation="-0.521519 0.059926 1.98683" Rotation="0 -0 0" Scale="0.06 1.8 0.06" ShapeType="Box" Tag="" WorldPos="-0.52276 1.09106 1.59897" />
+            <BodyShape Active="true" ID="13" Name="Shape_9" RelativeRotation="0 -0 0" RelativeScale="1 0.06 0.06" RelativeTranslation="0.00124156 0.928057 -1.9939" Rotation="0 -0 0" Scale="1 0.06 0.06" ShapeType="Box" Tag="" WorldPos="0 1.9592 -2.38175" />
+            <BodyShape Active="true" ID="14" Name="Shape_10" RelativeRotation="0 -0 0" RelativeScale="1 0.06 0.06" RelativeTranslation="0.00124156 0.926465 1.9939" Rotation="0 -0 0" Scale="1 0.06 0.06" ShapeType="Box" Tag="" WorldPos="0 1.9576 1.60604" />
+            <BodyShape Active="true" ID="17" Name="Shape_6" RelativeRotation="0 -0 0" RelativeScale="0.06 1.8 0.06" RelativeTranslation="0.521519 0.059926 1.98683" Rotation="0 -0 0" Scale="0.06 1.8 0.06" ShapeType="Box" Tag="" WorldPos="0.520277 1.09106 1.59897" />
+            <BodyShape Active="true" ID="18" Name="Shape_11" RelativeRotation="0 -0 0" RelativeScale="0.06 1.8 0.06" RelativeTranslation="0.521519 0.059926 -1.99014" Rotation="0 -0 0" Scale="0.06 1.8 0.06" ShapeType="Box" Tag="" WorldPos="0.520277 1.09106 -2.37799" />
+            <BodyShape Active="true" ID="19" Name="Shape_12" RelativeRotation="0 -0 0" RelativeScale="0.06 1.8 0.06" RelativeTranslation="-0.521519 0.059926 -1.99014" Rotation="0 -0 0" Scale="0.06 1.8 0.06" ShapeType="Box" Tag="" WorldPos="-0.52276 1.09106 -2.37799" />
+            <BodyShape Active="true" ID="20" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="0.06 0.06 4" RelativeTranslation="-0.513893 0.925678 0.0195131" Rotation="0 -0 0" Scale="0.06 0.06 4" ShapeType="Box" Tag="" WorldPos="-0.515134 1.95682 -0.368339" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="21" LinearDamping="0" Mass="0" Material="Glass" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_glass" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.00118613 1.07819 -0.386298">
+                <Children>
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="3" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="22" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_wood" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.00124156 1.03114 -0.387852">
+                <Children>
+                    <Child ID="0" />
+                    <Child ID="2" />
+                </Children>
+                <Shape ID="14" />
+                <Shape ID="5" />
+                <Shape ID="17" />
+                <Shape ID="8" />
+                <Shape ID="20" />
+                <Shape ID="13" />
+                <Shape ID="18" />
+                <Shape ID="19" />
+                <Shape ID="4" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

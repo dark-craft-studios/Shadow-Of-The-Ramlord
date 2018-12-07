@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Marcus Johansson</author>
+      <authoring_tool>Maya8.5 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;removeStaticCurves=0;exportCameraAsLookat=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=0;exportVertexColorsAnimation=1;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=0;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=0</comments>
+      <source_data>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/arbetsmapp/</source_data>
+    </contributor>
+    <created>2009-09-24T12:42:23Z</created>
+    <modified>2009-09-24T12:42:23Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="file9" name="file9">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+    <image id="file10" name="file10">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn_nrm.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+    <image id="file11" name="file11">
+      <init_from>file:///C:/Skolarbeten%20och%20diverse%20projekt/3d/projekt/Frictional%20Games/SVN/redist/static_objects/castlebase/wall/castlebase_wall_worn_spec.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="castlebase_dafault_worn_material" name="castlebase_dafault_worn_material">
+      <instance_effect url="#castlebase_dafault_worn_material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="castlebase_dafault_worn_material-fx">
+      <profile_COMMON>
+        <newparam sid="file9-surface">
+          <surface type="2D">
+            <init_from>file9</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file9-sampler">
+          <sampler2D>
+            <source>file9-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file10-surface">
+          <surface type="2D">
+            <init_from>file10</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file10-sampler">
+          <sampler2D>
+            <source>file10-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file11-surface">
+          <surface type="2D">
+            <init_from>file11</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="file11-sampler">
+          <sampler2D>
+            <source>file11-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file9-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <texture texture="file11-sampler" texcoord="TEX2">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <rotateFrame>0</rotateFrame>
+                    <stagger>0</stagger>
+                    <fast>0</fast>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </specular>
+            <shininess>
+              <float>0.3</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <bump>
+                <texture texture="file10-sampler" texcoord="TEX1">
+                  <extra>
+                    <technique profile="MAYA">
+                      <wrapU>1</wrapU>
+                      <wrapV>1</wrapV>
+                      <mirrorU>0</mirrorU>
+                      <mirrorV>0</mirrorV>
+                      <coverageU>1</coverageU>
+                      <coverageV>1</coverageV>
+                      <translateFrameU>0</translateFrameU>
+                      <translateFrameV>0</translateFrameV>
+                      <rotateFrame>0</rotateFrame>
+                      <stagger>0</stagger>
+                      <fast>0</fast>
+                      <repeatU>1</repeatU>
+                      <repeatV>1</repeatV>
+                      <offsetU>0</offsetU>
+                      <offsetV>0</offsetV>
+                      <rotateUV>0</rotateUV>
+                      <noiseU>0</noiseU>
+                      <noiseV>0</noiseV>
+                      <blend_mode>NONE</blend_mode>
+                    </technique>
+                    <technique profile="MAX3D">
+                      <amount>1</amount>
+                      <bumpInterp>1</bumpInterp>
+                    </technique>
+                  </extra>
+                </texture>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="castlebase_default_worn_meshShape" name="castlebase_default_worn_meshShape">
+      <mesh>
+        <source id="castlebase_default_worn_meshShape-positions" name="position">
+          <float_array id="castlebase_default_worn_meshShape-positions-array" count="372">-0.25 0 0.151698 -0.25 0.157453 0.151698 0.25 0.27223 0 0.25 0.157453 0.151698 0.25 0 0.151698 -1.75 0.27223 0 -1.75 0.157453 0.151698 -1.75 0 0.151698 1.75 0.157453 0.151698 1.75 0 0.151698 -1.75 0.020562 0.174576 -0.25 0.020562 0.174576 0.25 0.020562 0.174576 1.75 0.020562 0.174576 -1.75 0.214842 0.075849 -0.25 0.214842 0.075849 0.25 0.214842 0.075849 1.75 0.214842 0.075849 -1.75 0.252513 0.07354 -0.25 0.252513 0.07354 -0.25 0.280251 0.036879 -1.75 0.280251 0.036879 0.25 0.252513 0.07354 1.75 0.252513 0.07354 1.75 0.280251 0.036879 0.25 0.280251 0.036879 -0.25 0.27223 0 1.75 0.27223 0 -1.75 0.27223 0 1.75 0.27223 0 -1.75 1.20825 0 1.75 1.20825 0 -0.25 0 0 0.25 0 0 -0.25 0.215218 0.267841 0.25 0.215218 0.267841 -0.25 0 0.29657 0.25 0 0.29657 0.25 0.459237 0 -0.25 0.459237 0 -0.25 1.35709 0 -0.25 1.35709 0.25 0.25 1.35709 0 0.25 1.35709 0.25 0.25 1.10507 0.111539 -0.25 1.10507 0.111539 -0.25 1.27891 0.167395 0.25 1.27891 0.167395 -0.25 1.02189 0 0.25 1.02189 0 -2 4 0.321904 2 4 0.321904 2 3.75 0 -2 3.87335 0.154848 2 3.87335 0.154848 -2 4 0 2 4 0 -2 3.75 0 2 1.4957 0 -2 1.4957 0 -2 1.4957 0 2 1.35709 0.25 -2 1.35709 0.25 2 1.4957 0.061488 -2 1.4957 0.061488 2 1.39109 0.241192 -2 1.39109 0.241192 -1.75 1.35709 0.25 2 1.4957 0 0 1.35709 0.25 0 1.39109 0.241192 0 1.4957 0.061488 0 1.4957 0 -2 1.46425 0.165399 0 1.46425 0.165399 2 1.46425 0.165399 1.75 1.35709 0.25 1.75 1.32264 0.089248 1.75 1.20825 0 -1.75 1.35709 0.25 -1.75 1.32264 0.089248 -0.25 1.20825 0 -0.25 1.32264 0.089248 -0.25 1.35709 0.25 0.25 1.32264 0.089248 0.25 1.35709 0.25 -1.75 1.20825 0 0.25 1.20825 0 -2 1.35709 0.25 -1.75 0 0 -2 0.215218 0.267841 -1.75 0.215218 0.267841 -1.75 0.459237 0 -2 0.459237 0 -2 0 0.29657 -1.75 0 0.29657 -1.75 1.35709 0.25 -1.75 1.35709 0 -1.75 1.10507 0.111539 -2 1.10507 0.111539 -2 1.02189 0 -2 1.27891 0.167395 -1.75 1.27891 0.167395 -1.75 1.02189 0 2 1.35709 0.25 1.75 0 0 1.75 0.215218 0.267841 2 0.215218 0.267841 2 0.459237 0 1.75 0.459237 0 1.75 0 0.29657 2 0 0.29657 1.75 1.35709 0.25 1.75 1.35709 0 2 1.10507 0.111539 1.75 1.10507 0.111539 2 1.02189 0 1.75 1.27891 0.167395 2 1.27891 0.167395 1.75 1.02189 0 2 3.89794 0.274585 -2 3.89794 0.274585 2 3.78313 0.10029 -2 3.78313 0.10029</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-positions-array" count="124" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="castlebase_default_worn_meshShape-normals" name="normal">
+          <float_array id="castlebase_default_worn_meshShape-normals-array" count="582">0 0.976595 0.215085 0 0.47252 0.88132 0 0.47252 0.88132 0 0.976595 0.215085 0 0.16484 0.98632 0 0.16484 0.98632 0 0.16484 0.98632 0 0.16484 0.98632 0 0.976595 0.215085 0 0.47252 0.88132 0 0.47252 0.88132 0 0.976595 0.215085 0 0.16484 0.98632 0 0.16484 0.98632 0 0.16484 0.98632 0 0.16484 0.98632 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 -0.74375 0.668458 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.797458 0.603374 0 0.061179 0.998127 0 0.061179 0.998127 0 0.977155 -0.212527 0 0.977155 -0.212527 0 0.061179 0.998127 0 0.061179 0.998127 0 0.977155 -0.212527 0 0.977155 -0.212527 0 0 1 0 0 1 0 0 1 0 0 1 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -0.801633 0.597816 0 -0.801633 0.597816 0 -0.801633 0.597816 0 -0.801633 0.597816 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.000000 0 1 0 0 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.726292 0.687386 0 -0.979549 0.201207 0 -0.78406 0.620685 0 -0.78406 0.620685 0 -0.979549 0.201207 0 -0.781968 0.623319 0 -0.517463 0.855705 0 -0.517463 0.855705 0 -0.781968 0.623319 0 -0.949535 0.313661 0 -0.949535 0.313661 0 0.538218 0.842806 0 0.867121 0.498098 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0.504045 0.863677 0 0.504045 0.863677 0 0.25078 0.968044 0 0.25078 0.968044 0 0.250781 0.968044 0 0.993122 0.117082 0 0.989223 0.146417 0 0.862397 0.506232 0 0.862397 0.506232 0 1 0 0 1 0 0 0.504045 0.863677 0 0.250781 0.968044 0 0.862397 0.506232 0 0.989223 0.146417 0 1 0 0 -0.777432 0.628967 0 -0.905122 0.425152 0 -0.977799 0.209547 0 -0.977799 0.209547 0 -0.615133 0.788423 0 -0.615133 0.788423 0 -0.615133 0.788423 0 -0.615133 0.788423 0 -0.847427 0.530912 0 -0.847427 0.530912 0 -0.977799 0.209547 0 -0.977799 0.209547 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 1 -0.000002 -0.000006 1 -0.000002 -0.000006 1 -0.000005 -0.000004 1 0 -0.000008 0 -0.726292 0.687387 0 -0.726292 0.687387 0 -0.726292 0.687387 0 -0.726292 0.687387 0 -0.801633 0.597817 0 -0.801633 0.597816 0 -0.801633 0.597816 0 -0.801633 0.597816 1 0.000000 0 1 0 0 1 0.000000 0 1 0.000000 0 1 0 0 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.726292 0.687387 0 -0.726292 0.687387 0 -0.726292 0.687387 0 -0.726292 0.687387 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.739215 0.673469 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 0 0.132314 0.991208 -1 0.000003 0.000006 -1 0.000005 0.000004 -1 0.000003 0.000006 -1 0.000001 0.000008 0 -0.801633 0.597817 0 -0.801633 0.597816 0 -0.801633 0.597816 0 -0.801634 0.597816 -1 -0.000001 0 -1 -0.000000 0 -1 -0.000000 0 -1 0 0 -1 0.000000 0 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305904 0.952062 0 -0.305905 0.952062 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-normals-array" count="194" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="castlebase_default_worn_meshShape-map1" name="map1">
+          <float_array id="castlebase_default_worn_meshShape-map1-array" count="334">0.982259 0.010045 0.982259 0.306935 0.995657 0.010045 0.995657 0.306935 0.917578 0.306935 0.917578 0.010045 0.885589 0.306935 0.885589 0.010045 0.870259 0.307408 0.870258 0.010045 0.859888 0.307408 0.859888 0.010045 0.917578 0.306935 0.917578 0.010045 0.885589 0.306935 0.885589 0.010045 0.982259 0.010045 0.982259 0.306935 0.870259 0.307408 0.870258 0.010045 0.995657 0.010045 0.995657 0.306935 0.859888 0.307408 0.859888 0.010045 0.847949 0.307408 0.847948 0.010045 0.847949 0.307408 0.847948 0.010045 0.053499 0.445644 0.645196 0.445643 0.645196 0.63949 0.053499 0.63949 0.02049 0.268836 0.02049 0.209077 0.131172 0.209077 0.131172 0.268836 0.02049 0.156371 0.131172 0.156371 0.385878 0.040744 0.484528 0.040744 0.474972 0.112335 0.385878 0.193505 0.499525 0.112676 0.588619 0.040744 0.588619 0.193845 0.489968 0.040744 0.250697 0.239916 0.250697 0.267563 0.144873 0.267563 0.144874 0.239916 0.438069 0.175803 0.475421 0.260197 0.419365 0.234017 0.475421 0.147947 0.502822 0.260197 0.540174 0.175803 0.558879 0.234017 0.502822 0.147947 0.586541 0.260197 0.391702 0.260197 0.144873 0.182139 0.250697 0.182139 0.144874 0.155318 0.250697 0.155318 0.852184 0.986956 0.851495 0.330827 0.907471 0.986956 0.906783 0.330826 0.967434 0.330826 0.970427 0.986836 0.747011 0.330827 0.7477 0.986956 0.002032 0.994781 0.002032 0.650232 0.695281 0.994781 0.695281 0.650232 0.84224 0.382979 0.84207 0.98636 0.83281 0.98636 0.83306 0.911662 0.83357 0.385848 0.88909 0.382979 0.88891 0.98636 0.862195 0.98636 0.862375 0.382979 0.90565 0.98636 0.90583 0.382979 0.8419 0.324613 0.84218 0.88299 0.83306 0.883181 0.83266 0.324613 0.86183 0.88299 0.86201 0.324613 0.88852 0.88299 0.88869 0.324613 0.90541 0.324614 0.90524 0.88299 0.768012 0.308487 0.768012 0.007734 0.824267 0.308487 0.824267 0.007734 0.733749 0.308487 0.733749 0.007734 0.733749 0.308487 0.733749 0.007734 0.768012 0.308487 0.768012 0.007734 0.824267 0.308487 0.824267 0.007734 0.022025 0.082368 0.092241 0.082368 0.022025 0.142816 0.092241 0.142816 0.022025 0.013832 0.092241 0.013832 0.499525 0.112676 0.588619 0.041085 0.588619 0.193845 0.489968 0.041085 0.132673 0.111271 0.22307 0.111271 0.132673 0.141349 0.22307 0.141349 0.132673 0.020145 0.22307 0.020145 0.132673 0.048414 0.22307 0.048414 0.475421 0.260197 0.391702 0.260197 0.419365 0.234017 0.438069 0.175803 0.475421 0.147947 0.053499 0.600896 0.000258 0.599108 0.053266 0.484938 0.000258 0.484938 0.152178 0.111271 0.242575 0.111271 0.152178 0.141349 0.242575 0.141349 0.035195 0.082368 0.105412 0.08021 0.035195 0.142816 0.105412 0.142816 0.035195 0.013832 0.105412 0.013832 0.474972 0.112335 0.385878 0.193505 0.385878 0.040744 0.484528 0.040744 0.152178 0.020145 0.242575 0.020145 0.152178 0.048414 0.242575 0.048414 0.586541 0.260197 0.502822 0.260197 0.558879 0.234017 0.502822 0.147947 0.540174 0.175803 0.70378 0.600795 0.645196 0.600896 0.70378 0.484227 0.645196 0.484372 0.882174 0.986896 0.882907 0.330827 0.937178 0.986956 0.936491 0.330826</float_array>
+          <technique_common>
+            <accessor source="#castlebase_default_worn_meshShape-map1-array" count="167" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="castlebase_default_worn_meshShape-vertices">
+          <input semantic="POSITION" source="#castlebase_default_worn_meshShape-positions"/>
+        </vertices>
+        <triangles material="blinn4SG" count="117">
+          <input semantic="VERTEX" source="#castlebase_default_worn_meshShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#castlebase_default_worn_meshShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#castlebase_default_worn_meshShape-map1" offset="2" set="0"/>
+          <p>21 0 11 18 1 9 20 3 10 20 3 10 18 1 9 19 2 8 10 4 0 11 5 1 6 7 5 6 7 5 11 5 1 1 6 4 25 8 23 22 9 19 24 11 22 24 11 22 22 9 19 23 10 18 12 12 16 13 13 17 3 15 13 3 15 13 13 13 17 8 14 12 10 16 0 7 17 2 11 19 1 11 19 1 7 17 2 0 18 3 12 20 16 4 21 20 13 23 17 13 23 17 4 21 20 9 22 21 14 24 7 6 25 5 15 27 6 15 27 6 6 25 5 1 26 4 16 28 15 3 29 13 17 31 14 17 31 14 3 29 13 8 30 12 18 1 9 14 32 7 19 2 8 19 2 8 14 32 7 15 33 6 20 3 10 26 34 24 21 0 11 21 0 11 26 34 24 5 35 25 22 9 19 16 36 15 23 10 18 23 10 18 16 36 15 17 37 14 24 11 22 27 38 26 25 8 23 25 8 23 27 38 26 2 39 27 28 40 28 29 41 29 30 43 31 30 43 31 29 41 29 31 42 30 39 44 32 34 45 33 38 47 35 38 47 35 34 45 33 35 46 34 34 48 33 36 49 36 35 51 34 35 51 34 36 49 36 37 50 37 32 52 38 36 53 39 34 54 40 34 54 40 39 55 41 32 52 38 35 56 42 33 57 43 38 58 44 35 56 42 37 59 45 33 57 43 45 60 46 48 61 47 44 63 49 44 63 49 48 61 47 49 62 48 44 64 50 42 65 51 47 66 52 42 65 51 44 64 50 49 67 53 40 68 54 45 69 55 46 70 56 40 68 54 48 71 57 45 69 55 41 72 58 40 68 54 46 70 56 42 65 51 43 73 59 47 66 52 44 74 49 47 75 60 45 77 46 45 77 46 47 75 60 46 76 61 47 78 60 43 79 62 46 81 61 46 81 61 43 79 62 41 80 63 54 82 66 120 83 163 53 85 67 53 85 67 120 83 163 121 84 164 122 86 165 54 87 66 123 89 166 123 89 166 54 87 66 53 88 67 52 90 69 122 86 165 57 91 68 57 91 68 122 86 165 123 89 166 50 92 65 51 93 64 55 94 70 51 93 64 56 95 71 55 94 70 57 96 72 59 97 73 52 98 74 59 97 73 58 99 75 52 98 74 70 100 76 66 101 77 69 104 80 62 102 78 67 103 79 66 101 77 66 101 77 67 103 79 69 104 80 71 105 81 64 106 82 74 108 84 74 108 84 64 106 82 73 107 83 64 106 82 71 105 81 60 109 85 71 105 81 72 110 86 60 109 85 73 107 83 66 101 77 74 108 84 74 108 84 66 101 77 70 100 76 65 111 87 70 100 88 61 112 90 61 112 90 70 100 88 69 104 89 74 108 91 70 100 88 75 113 92 75 113 92 70 100 88 65 111 87 71 105 93 74 108 91 63 114 94 63 114 94 74 108 91 75 113 92 68 115 95 72 110 96 63 114 94 63 114 94 72 110 96 71 105 93 80 116 97 82 117 98 79 118 99 82 117 98 83 119 100 79 118 99 86 120 101 81 121 102 80 116 97 81 121 102 82 117 98 80 116 97 87 122 103 78 123 104 84 124 105 78 123 104 77 125 106 84 124 105 85 126 107 84 124 105 76 127 108 84 124 105 77 125 106 76 127 108 90 128 109 91 129 110 93 130 111 91 129 110 92 131 112 93 130 111 94 132 113 95 133 114 90 134 109 95 133 114 91 135 110 90 134 109 91 136 115 89 137 116 92 138 117 91 136 115 95 139 118 89 137 116 101 140 119 102 141 120 88 142 121 102 141 120 96 143 122 88 142 121 100 144 123 103 145 124 99 146 125 103 145 124 98 147 126 99 146 125 97 148 127 96 149 128 102 150 129 97 148 127 98 151 130 103 152 131 99 153 125 98 154 126 101 155 119 98 154 126 102 156 120 101 155 119 97 148 127 102 150 129 98 151 130 103 157 132 100 158 133 92 159 134 100 158 133 93 160 135 92 159 134 117 161 136 118 162 137 112 163 138 118 162 137 104 164 139 112 163 138 106 165 140 107 166 141 109 167 142 107 166 141 108 168 143 109 167 142 110 169 144 111 170 145 106 171 140 111 170 145 107 172 141 106 171 140 106 173 146 109 174 147 105 175 148 105 175 148 110 176 149 106 173 146 119 177 150 116 178 151 115 179 152 116 178 151 114 180 153 115 179 152 112 181 154 113 182 155 117 183 156 113 182 155 119 184 157 115 185 158 117 183 156 113 182 155 115 185 158 115 186 152 114 187 153 117 188 136 114 187 153 118 189 137 117 188 136 116 190 159 119 191 160 108 192 161 119 191 160 109 193 162 108 192 161 50 92 65 121 84 164 51 93 64 51 93 64 121 84 164 120 83 163</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="default_worn">
+      <node id="castlebase_default_worn_mesh" name="castlebase_default_worn_mesh" type="NODE">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <instance_geometry url="#castlebase_default_worn_meshShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="blinn4SG" target="#castlebase_dafault_worn_material">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX2" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

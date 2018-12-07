@@ -1,0 +1,17 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="general_thunder1" />
+		<Sound File="general_thunder2" />
+		<Sound File="general_thunder3" />
+		<Sound File="general_thunder4" />
+		<Sound File="general_thunder5" />
+		<Sound File="general_thunder6" />
+		<Sound File="general_thunder7" />
+		<Sound File="general_thunder8" />
+		<Sound File="general_thunder9" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume=".7" MinDistance="12" MaxDistance="50" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" 
+			  Use3D="True" Blockable="False" BlockVolumeMul="0.7" Priority="0" />
+</SOUNDENTITY>

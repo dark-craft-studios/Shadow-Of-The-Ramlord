@@ -1,0 +1,46 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 20" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="20 0 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 20 0" CameraTarget="0 0 0" CameraZoom="0.916291" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-1.52022 1.93858 0.902335" CameraTarget="0.017701 0.139708 0.076938" CameraZoom="2.99315" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/furniture/table_nice_round/table_nice_round.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="table_nice_round_mesh" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="BodyShape_1" RelativeRotation="0 -0 0" RelativeScale="0.6 0.075 0.6" RelativeTranslation="-0.0003025 0.508598 -0.118802" Rotation="0 0 0" Scale="0.6 0.075 0.6" ShapeType="Cylinder" Tag="" WorldPos="-0.001079 1.06649 -0.001129" />
+            <BodyShape Active="true" ID="2" Name="BodyShape_1_clone_1" RelativeRotation="0 -0 0" RelativeScale="0.1 0.8 0.1" RelativeTranslation="-0.0003025 0.0660155 -0.118802" Rotation="0 0 0" Scale="0.1 0.8 0.1" ShapeType="Cylinder" Tag="" WorldPos="-0.001079 0.623908 -0.001129" />
+            <BodyShape Active="true" ID="3" Name="BodyShape_2" RelativeRotation="0 -0 0" RelativeScale="0.13 0.1 0.267626" RelativeTranslation="0.0010725 -0.508597 0.343987" Rotation="0 0 0" Scale="0.13 0.1 0.267626" ShapeType="Box" Tag="" WorldPos="0.000296 0.049295 0.461659" />
+            <BodyShape Active="true" ID="4" Name="BodyShape_2_clone_1" RelativeRotation="0 1.0472 0" RelativeScale="0.13 0.1 0.267626" RelativeTranslation="-0.394771 -0.508597 -0.343233" Rotation="0 1.0472 0" Scale="0.13 0.1 0.267626" ShapeType="Box" Tag="" WorldPos="-0.395547 0.049295 -0.225561" />
+            <BodyShape Active="true" ID="5" Name="BodyShape_2_clone_1_clone_1" RelativeRotation="0 -1.0472 0" RelativeScale="0.13 0.1 0.267626" RelativeTranslation="0.394771 -0.508597 -0.343987" Rotation="0 -1.0472 0" Scale="0.13 0.1 0.267626" ShapeType="Box" Tag="" WorldPos="0.393994 0.049295 -0.226314" />
+            <BodyShape Active="true" ID="6" Name="BodyShape_2_clone_1_clone_1_clone_1" RelativeRotation="-0.785398 -1.0472 0" RelativeScale="0.13 0.1 0.45" RelativeTranslation="0.185625 -0.334482 -0.226437" Rotation="-0.785398 -1.0472 0" Scale="0.13 0.1 0.45" ShapeType="Box" Tag="" WorldPos="0.184849 0.223411 -0.108764" />
+            <BodyShape Active="true" ID="7" Name="BodyShape_2_clone_1_clone_1_clone_1_clone_1" RelativeRotation="2.35619 -3.25841e-007 3.14159" RelativeScale="0.13 0.1 0.45" RelativeTranslation="-4.65005e-005 -0.334482 0.0959505" Rotation="2.35619 -3.25841e-007 3.14159" Scale="0.13 0.1 0.45" ShapeType="Box" Tag="" WorldPos="-0.000823 0.223411 0.213623" />
+            <BodyShape Active="true" ID="8" Name="BodyShape_2_clone_1_clone_1_clone_1_clone_1_clone_1" RelativeRotation="-0.785398 1.0472 0" RelativeScale="0.13 0.1 0.45" RelativeTranslation="-0.174849 -0.334482 -0.217761" Rotation="-0.785398 1.0472 0" Scale="0.13 0.1 0.45" ShapeType="Box" Tag="" WorldPos="-0.175626 0.223411 -0.100088" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="9" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0007765 0.557893 0.117673">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="4" />
+                <Shape ID="8" />
+                <Shape ID="6" />
+                <Shape ID="5" />
+                <Shape ID="7" />
+                <Shape ID="3" />
+                <Shape ID="2" />
+                <Shape ID="1" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

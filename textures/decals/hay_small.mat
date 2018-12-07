@@ -1,0 +1,6 @@
+<Material>
+    <Main BlendMode="Alpha" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.100000" PhysicsMaterial="Default" Type="decal" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/Projects/3d/work/amnesia game/SVN/redist/textures/decals/hay_small.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

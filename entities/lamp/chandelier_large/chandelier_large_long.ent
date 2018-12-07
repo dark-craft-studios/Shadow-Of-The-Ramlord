@@ -1,0 +1,146 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 -8.45868 180" CameraTarget="0 -8.45868 0" CameraZoom="5.5" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="180 -8.45868 0" CameraTarget="0 -8.45868 0" CameraZoom="5.5" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0 171.542 0" CameraTarget="0 -8.45868 0" CameraZoom="5.5" GridHeight="-8.45868" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-8.71786 -6.22287 -0.604571" CameraTarget="0 -8.45868 0" CameraZoom="1.71255" GridHeight="-8.45868" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="30" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.73196 -9.04834 -1.74373" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="31" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="0.005304 -9.04834 -2.46741" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="32" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.73743 -9.04834 -1.7432" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="33" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-2.45753 -9.04834 0.002141" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="34" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.74345 -9.04834 1.73792" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="35" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_6" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.001654 -9.04834 2.45131" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="36" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_7" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.7348 -9.04834 1.73257" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="37" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_8" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="2.45491 -9.04834 -0.005245" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="38" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_9" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.56956 -8.5109 -0.005245" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="39" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_10" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.11208 -8.5109 -1.11296" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="40" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_11" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.00904 -8.5109 -1.58046" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="41" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_12" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.10868 -8.5109 -1.10557" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="42" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_13" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.57822 -8.5109 -0.005246" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="43" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_14" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-1.11539 -8.5109 1.10985" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="44" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_15" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="0.005733 -8.5109 1.55791" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="false" File="ps_fire_candle_large.ps" ID="45" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_16" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.11208 -8.5109 1.10315" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="47" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_1" Rotation="0 0 0" Tag="" WorldPos="2.46842 -9.04266 -0.001391" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="48" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_2" Rotation="0 0 0" Tag="" WorldPos="1.7421 -9.04266 -1.74257" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="49" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_3" Rotation="0 0 0" Tag="" WorldPos="-0.002884 -9.04266 -2.45928" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="-0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="50" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_4" Rotation="0 0 0" Tag="" WorldPos="-1.78049 -9.04266 -1.75887" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="51" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_5" Rotation="0 0 0" Tag="" WorldPos="-2.46367 -9.04266 -0.011908" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="52" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_6" Rotation="0 0 0" Tag="" WorldPos="-1.7422 -9.04266 1.73793" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="53" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_7" Rotation="0 0 0" Tag="" WorldPos="-0.002884 -9.04266 2.45939" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="54" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_8" Rotation="0 0 0" Tag="" WorldPos="1.7421 -9.04266 1.73978" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="55" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_9" Rotation="0 0 0" Tag="" WorldPos="1.11044 -8.50309 1.10523" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="56" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_10" Rotation="0 0 0" Tag="" WorldPos="1.5718 -8.50309 -0.00111" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="57" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_11" Rotation="0 0 0" Tag="" WorldPos="1.10525 -8.50309 -1.11416" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="-0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="58" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_12" Rotation="0 0 0" Tag="" WorldPos="-0.002603 -8.50309 -1.57551" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="59" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_13" Rotation="0 0 0" Tag="" WorldPos="0.012322 -8.50309 1.56926" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="60" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_14" Rotation="0 0 0" Tag="" WorldPos="-1.11638 -8.50309 1.10536" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="61" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_15" Rotation="0 0 0" Tag="" WorldPos="-1.55688 -8.50309 -0.00111" />
+            <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="1.5 1.5" BillboardType="Point" ConnectLight="PointLight_1" HaloSourceSize="0.3 0.3 0.3" ID="62" IsHalo="true" MaterialFile="billboards/halo_torch.mat" Name="Billboard_16" Rotation="0 0 0" Tag="" WorldPos="-1.11565 -8.50309 -1.11416" />
+            <PointLight Active="true" Brightness="1" CastShadows="false" DiffuseColor="0.45 0.25 0 1" Falloff="1" FlickerActive="false" FlickerFade="false" FlickerOffColor="0.4 0.2 0 1" FlickerOffFadeMaxLength="1" FlickerOffFadeMinLength="0.5" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="10" FlickerOffSound="" FlickerOnFadeMaxLength="1" FlickerOnFadeMinLength="0.5" FlickerOnMaxLength="1" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="63" Name="PointLight_1" Radius="12" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0 -8.92022 0" />
+        </Entities>
+        <Mesh Filename="entities/lamp/chandelier_large/chandelier_large.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="polySurface139" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 -3.51652 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="polySurface140" Rotation="0 0 0" Scale="1 1.85 1" SubMeshID="1" Tag="" WorldPos="0 0.695721 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="polySurface141" Rotation="0 0 0" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 -3.52035 0" />
+            <SubMesh Active="true" ID="3" Material="" Name="top1" Rotation="0 0 0" Scale="1 1 1" SubMeshID="3" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="21" Name="Shape_1" RelativeRotation="0 -0 0" RelativeScale="1 0.7 1" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="1 0.7 1" ShapeType="Box" Tag="" WorldPos="0 -0.366326 -0.008148" />
+            <BodyShape Active="true" ID="22" Name="Shape_2" RelativeRotation="0 -0 0" RelativeScale="0.2 7 0.2" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.2 7 0.2" ShapeType="Box" Tag="" WorldPos="0 -4.50291 0" />
+            <BodyShape Active="true" ID="23" Name="Shape_3" RelativeRotation="0 -0 0" RelativeScale="3 1 3" RelativeTranslation="0 -0.528895 0" Rotation="0 0 0" Scale="2.4 0.8 2.4" ShapeType="Cylinder" Tag="" WorldPos="0 -9.77381 0" />
+            <BodyShape Active="true" ID="24" Name="Shape_4" RelativeRotation="0 -0 0" RelativeScale="2 1 2" RelativeTranslation="0 0.528893 0" Rotation="0 0 0" Scale="1.6 0.8 1.6" ShapeType="Cylinder" Tag="" WorldPos="0 -8.92758 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0.25" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="25" LinearDamping="0.25" Mass="30" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="0.8 0.8 0.8" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 -9.35069 0">
+                <Children>
+                    <Child ID="30" />
+                    <Child ID="31" />
+                    <Child ID="32" />
+                    <Child ID="33" />
+                    <Child ID="34" />
+                    <Child ID="35" />
+                    <Child ID="36" />
+                    <Child ID="37" />
+                    <Child ID="38" />
+                    <Child ID="39" />
+                    <Child ID="40" />
+                    <Child ID="41" />
+                    <Child ID="42" />
+                    <Child ID="43" />
+                    <Child ID="44" />
+                    <Child ID="45" />
+                    <Child ID="47" />
+                    <Child ID="48" />
+                    <Child ID="49" />
+                    <Child ID="50" />
+                    <Child ID="51" />
+                    <Child ID="52" />
+                    <Child ID="53" />
+                    <Child ID="54" />
+                    <Child ID="55" />
+                    <Child ID="56" />
+                    <Child ID="57" />
+                    <Child ID="58" />
+                    <Child ID="59" />
+                    <Child ID="60" />
+                    <Child ID="61" />
+                    <Child ID="62" />
+                    <Child ID="63" />
+                    <Child ID="2" />
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="23" />
+                <Shape ID="24" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="27" LinearDamping="0" Mass="0" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_2" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 -0.366326 -0.008148">
+                <Children>
+                    <Child ID="3" />
+                </Children>
+                <Shape ID="21" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="70" LinearDamping="0" Mass="2" Material="Default" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 -4.50291 0">
+                <Children>
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="22" />
+            </Body>
+        </Bodies>
+        <Joints>
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="25" ConnectedParentBodyID="70" ID="28" LimitStepCount="0" MaxConeAngle="10" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="10" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="BallJoint_1" PinDir="0 1 0" Rotation="0 0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.002205 -8.4896 0" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="true" ConnectedChildBodyID="70" ConnectedParentBodyID="27" ID="29" LimitStepCount="0" MaxConeAngle="10" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="10" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="BallJoint_2" PinDir="0 1 0" Rotation="0 -0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="-0.000997 -0.719216 0" />
+        </Joints>
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Lamp">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="CanBeLitByPlayer" Value="true" />
+        <Var Name="CanBeGrabbed" Value="false" />
+        <Var Name="CanBeTurnedOff" Value="false" />
+        <Var Name="NeedsTinderbox" Value="false" />
+    </UserDefinedVariables>
+</Entity>

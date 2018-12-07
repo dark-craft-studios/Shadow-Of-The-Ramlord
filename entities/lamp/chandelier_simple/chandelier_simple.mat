@@ -1,0 +1,10 @@
+<Material>
+    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Default" Type="SolidDiffuse" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="" AnimMode="" File="chandelier_simple.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <NMap AnimFrameTime="" AnimMode="" File="chandelier_simple_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <Specular AnimFrameTime="" AnimMode="" File="chandelier_simple_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <Alpha AnimFrameTime="" AnimMode="" File="chandelier_simple_alpha.tga" Mipmaps="true" Type="2D" Wrap="Repeat" />
+        <Illumination AnimFrameTime="" AnimMode="" File="chandelier_simple_illum.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+</Material>

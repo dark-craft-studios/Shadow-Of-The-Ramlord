@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-07-30T11:55:04Z</created>
+    <keywords></keywords>
+    <modified>2012-07-30T11:55:04Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #21-image" name="Map #21">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\castlebase\castlebase_ceiling02.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_09 - Default" name="_09 - Default">
+      <instance_effect url="#_09 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_09 - Default-fx" name="_09 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #21-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object114-lib" name="Object114Mesh">
+      <mesh>
+        <source id="Object114-POSITION">
+          <float_array id="Object114-POSITION-array" count="87">
+-20.587671 -9.129843 -0.000000
+21.098923 -9.129843 -0.000000
+21.098923 5.264362 -0.000000
+-20.587671 -8.632793 2.001907
+20.583282 -8.632793 2.001907
+20.583281 4.757252 2.001907
+-20.587671 -8.101530 2.001907
+20.073687 -8.101530 2.001907
+20.073685 4.757252 2.001907
+15.997272 4.764144 0.000000
+15.997272 40.552647 -0.000000
+15.500222 4.764144 2.001907
+15.500222 40.549973 2.001907
+14.968960 4.764144 2.001907
+14.968958 40.543915 2.001907
+2.369887 -9.129843 -0.000000
+2.369889 -8.632793 2.001907
+2.369887 -8.101530 2.001907
+-2.372584 -9.129843 -0.000000
+-2.372583 -8.632793 2.001907
+-2.372582 -8.101530 2.001907
+2.369888 -8.839069 1.171116
+-2.372583 -8.839069 1.171116
+21.098923 -4.155640 -0.000000
+20.583282 -4.155640 2.001907
+20.073687 -4.155639 2.001907
+20.583282 0.116829 2.001907
+20.073685 0.116829 2.001907
+21.098923 0.116829 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Object114-POSITION-array" count="29" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object114-Normal0">
+          <float_array id="Object114-Normal0-array" count="216">
+-0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240972
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+0.968392 -0.000000 0.249433
+0.968392 -0.000000 0.249433
+0.968392 -0.000000 0.249433
+0.968392 -0.000000 0.249433
+0.968392 0.000000 0.249433
+0.968392 -0.000000 0.249433
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+-0.000000 0.000000 1.000000
+-0.000000 0.000000 1.000000
+-0.000000 0.000000 1.000000
+-0.000000 -0.000000 1.000000
+-0.000000 -0.000000 1.000000
+-0.000000 -0.000000 1.000000
+0.970532 0.000000 0.240971
+0.970532 0.000000 0.240971
+0.970532 0.000000 0.240971
+0.970532 0.000000 0.240971
+0.970532 0.000000 0.240971
+0.970532 0.000000 0.240971
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240972
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+-0.000000 -0.970532 0.240971
+0.000000 -0.970532 0.240971
+0.968392 0.000000 0.249433
+0.968392 0.000000 0.249434
+0.968392 0.000000 0.249434
+0.968392 0.000000 0.249434
+0.968392 0.000000 0.249433
+0.968392 0.000000 0.249433
+-0.000001 0.000000 1.000000
+-0.000001 0.000000 1.000000
+-0.000001 0.000000 1.000000
+-0.000000 -0.000000 1.000000
+-0.000000 -0.000000 1.000000
+-0.000000 -0.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Object114-Normal0-array" count="72" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object114-UV0">
+          <float_array id="Object114-UV0-array" count="64">
+-14.108677 0.009066
+2.916438 0.009064
+-14.108677 0.826657
+2.705845 0.826657
+4.481524 0.007348
+10.360229 0.007348
+2.497723 1.043631
+-14.108677 1.043629
+10.153120 0.824940
+10.153120 1.033063
+4.684526 0.824940
+4.901498 1.033063
+-14.108677 0.009066
+0.508279 0.003947
+-14.108677 0.826657
+0.506519 0.826658
+0.504045 1.043631
+-14.108677 1.043629
+-4.732640 0.009065
+-4.732639 0.826657
+-4.732640 1.043630
+-6.669500 0.009065
+-6.669499 0.826657
+-6.669499 1.043630
+-4.732639 0.487356
+-6.669500 0.487356
+6.513027 0.007348
+6.513029 0.824940
+6.513029 1.033063
+8.257936 0.824940
+8.257936 1.033063
+8.257936 0.007348
+</float_array>
+          <technique_common>
+            <accessor source="#Object114-UV0-array" count="32" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object114-VERTEX">
+          <input semantic="POSITION" source="#Object114-POSITION"/>
+        </vertices>
+        <triangles count="24" material="_09 - Default">
+          <input semantic="VERTEX" offset="0" source="#Object114-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Object114-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Object114-UV0"/>
+          <p> 22 0 25 19 1 22 3 2 2 18 3 21 22 4 25 3 5 2 0 6 0 18 7 21 3 8 2 23 9 26 24 10 27 4 11 10 4 12 10 1 13 4 23 14 26 19 15 22 20 16 23 6 17 7 6 18 7 3 19 2 19 20 22 24 21 27 25 22 28 7 23 11 7 24 11 4 25 10 24 26 27 9 27 12 10 28 13 12 29 15 12 30 15 11 31 14 9 32 12 11 33 14 12 34 15 14 35 16 14 36 16 13 37 17 11 38 14 15 39 18 1 40 1 4 41 3 4 42 3 16 43 19 21 44 24 15 45 18 4 46 3 21 47 24 16 48 19 4 49 3 7 50 6 7 51 6 17 52 20 16 53 19 15 54 18 21 55 24 22 56 25 22 57 25 18 58 21 15 59 18 28 60 31 2 61 5 5 62 8 5 63 8 26 64 29 28 65 31 5 66 8 8 67 9 27 68 30 27 69 30 26 70 29 5 71 8</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Object114" id="Object114" layer="church_foundation" sid="Object114">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Object114-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_09 - Default" target="#_09 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

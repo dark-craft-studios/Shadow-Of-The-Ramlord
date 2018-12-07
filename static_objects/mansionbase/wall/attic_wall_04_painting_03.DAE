@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-07-02T07:46:27Z</created>
+    <keywords></keywords>
+    <modified>2012-07-02T07:46:27Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="1.000000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map #0-image" name="Map #0">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\StaticObjects\mansionbase\wall\attic_wall.psd</init_from>
+    </image>
+    <image id="Map #0_ncl1_1-image" name="Map #0_ncl1_1">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\entities\ornament\paintings\painting_frame02_04.jpg</init_from>
+    </image>
+    <image id="Map #2-image" name="Map #2">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\entities\ornament\paintings\paintings_pigs_01.psd</init_from>
+    </image>
+    <image id="Map #13-image" name="Map #13">
+      <init_from>file://C:\Users\WesleyTack\Desktop\amnesia_raw\entities\ornament\paintings\paintings_pigs_01_alpha.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_01 - Default" name="_01 - Default">
+      <instance_effect url="#_01 - Default-fx"/>
+    </material>
+    <material id="_01 - Default_ncl1_1" name="_01 - Default_ncl1_1">
+      <instance_effect url="#_01 - Default_ncl1_1-fx"/>
+    </material>
+    <material id="_03 - Default" name="_03 - Default">
+      <instance_effect url="#_03 - Default-fx"/>
+    </material>
+    <material id="_14 - Default" name="_14 - Default">
+      <instance_effect url="#_14 - Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01 - Default-fx" name="_01 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #0-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_01 - Default_ncl1_1-fx" name="_01 - Default_ncl1_1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #0_ncl1_1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_03 - Default-fx" name="_03 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #2-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_14 - Default-fx" name="_14 - Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map #13-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Object042-lib" name="Object042Mesh">
+      <mesh>
+        <source id="Object042-POSITION">
+          <float_array id="Object042-POSITION-array" count="24">
+0.207275 -1.907849 3.239910
+0.046081 -1.907849 3.239910
+0.207275 -1.907849 1.900883
+0.046081 -1.907849 1.900883
+0.207275 -0.070773 3.239910
+0.046081 -0.070773 3.239910
+0.207275 -0.070774 1.900882
+0.046081 -0.070774 1.900882
+</float_array>
+          <technique_common>
+            <accessor source="#Object042-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object042-Normal0">
+          <float_array id="Object042-Normal0-array" count="36">
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Object042-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Object042-UV0">
+          <float_array id="Object042-UV0-array" count="16">
+0.657055 0.805729
+0.723622 0.805729
+0.657055 0.320201
+0.723622 0.320201
+0.630429 0.805729
+0.563863 0.805729
+0.630429 0.320201
+0.563863 0.320201
+</float_array>
+          <technique_common>
+            <accessor source="#Object042-UV0-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Object042-VERTEX">
+          <input semantic="POSITION" source="#Object042-POSITION"/>
+        </vertices>
+        <triangles count="4" material="_01 - Default">
+          <input semantic="VERTEX" offset="0" source="#Object042-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#Object042-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#Object042-UV0"/>
+          <p> 2 0 2 3 1 3 1 2 1 1 3 1 0 4 0 2 5 2 4 6 4 5 7 5 7 8 7 7 9 7 6 10 6 4 11 4</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="painting_frame027-lib" name="painting_frame027Mesh">
+      <mesh>
+        <source id="painting_frame027-POSITION">
+          <float_array id="painting_frame027-POSITION-array" count="96">
+0.275887 -2.061315 1.762985
+0.275887 -2.061315 3.382986
+0.206297 -2.061315 3.382986
+0.206298 -2.061315 1.762985
+0.206297 0.098685 3.382986
+0.206298 0.098686 1.762986
+0.275886 0.098685 3.382986
+0.275886 0.098686 1.762986
+0.289765 0.084807 1.776865
+0.289765 0.084807 3.369107
+0.289766 -2.047436 1.776864
+0.289766 -2.047437 3.369107
+0.262408 -2.023749 3.346992
+0.262408 0.061110 3.346992
+0.262409 -2.023739 1.798979
+0.262409 0.061119 1.798980
+0.289765 -1.983204 3.306142
+0.289764 0.020574 3.306142
+0.289767 -1.983203 1.839829
+0.289766 0.020574 1.839830
+0.267137 -1.944243 3.267448
+0.267137 -0.018387 3.267448
+0.267139 -1.944242 1.878523
+0.267138 -0.018387 1.878523
+0.228157 -1.909467 3.232725
+0.228157 -0.053163 3.232725
+0.228159 -1.909467 1.913246
+0.228159 -0.053162 1.913246
+0.006974 -1.909467 3.232725
+0.006974 -0.053163 3.232726
+0.006976 -1.909467 1.913246
+0.006975 -0.053163 1.913246
+</float_array>
+          <technique_common>
+            <accessor source="#painting_frame027-POSITION-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_frame027-Normal0">
+          <float_array id="painting_frame027-Normal0-array" count="504">
+0.382696 -0.923875 0.000000
+0.382696 -0.923875 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.382696 -0.923875 0.000000
+0.000000 -1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.382696 0.923875 0.000000
+0.382696 0.923875 0.000000
+0.000000 1.000000 0.000000
+0.382696 0.923875 0.000000
+0.382693 0.000000 0.923876
+0.382691 0.000000 0.923877
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.382691 0.000000 0.923877
+0.000000 0.000000 1.000000
+0.000000 0.000000 -1.000000
+0.382689 0.000000 -0.923877
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.382689 0.000000 -0.923877
+0.382691 0.000000 -0.923877
+0.999358 -0.035834 0.000000
+0.382696 0.923875 0.000000
+0.999358 -0.035834 0.000000
+0.999358 -0.035834 0.000000
+0.382696 0.923875 0.000000
+0.382696 0.923875 0.000000
+0.382689 0.000000 -0.923877
+0.998607 0.000000 0.052762
+0.382691 0.000000 -0.923877
+0.382691 0.000000 -0.923877
+0.998607 0.000000 0.052762
+0.998607 0.000000 0.052774
+0.998608 0.000000 -0.052738
+0.382691 0.000000 0.923877
+0.998607 0.000000 -0.052762
+0.998607 0.000000 -0.052762
+0.382691 0.000000 0.923877
+0.382693 0.000000 0.923876
+0.382696 -0.923875 0.000000
+0.999358 0.035834 0.000000
+0.382696 -0.923875 0.000000
+0.382696 -0.923875 0.000000
+0.999358 0.035834 0.000000
+0.999358 0.035834 0.000000
+0.998608 0.000000 -0.052738
+0.998607 0.000000 -0.052762
+0.628664 0.000000 -0.777677
+0.628664 0.000000 -0.777677
+0.998607 0.000000 -0.052762
+0.628663 0.000000 -0.777678
+0.999358 0.035834 0.000000
+0.999358 0.035834 0.000000
+0.654671 0.755914 0.000000
+0.654671 0.755914 0.000000
+0.999358 0.035834 0.000000
+0.654671 0.755914 0.000000
+0.998607 0.000000 0.052774
+0.998607 0.000000 0.052762
+0.628663 0.000000 0.777678
+0.628663 0.000000 0.777678
+0.998607 0.000000 0.052762
+0.628663 0.000000 0.777678
+0.999358 -0.035834 0.000000
+0.999358 -0.035834 0.000000
+0.654651 -0.755931 0.000000
+0.654651 -0.755931 0.000000
+0.999358 -0.035834 0.000000
+0.654656 -0.755927 0.000000
+0.830899 0.000000 0.556422
+0.830900 0.000000 0.556423
+0.999536 0.000000 0.030470
+0.999536 0.000000 0.030470
+0.830900 0.000000 0.556423
+0.999536 0.000000 0.030446
+0.828914 -0.559376 0.000000
+0.828912 -0.559379 0.000000
+0.999431 -0.033736 0.000000
+0.999431 -0.033736 0.000000
+0.828912 -0.559379 0.000000
+0.999431 -0.033736 0.000000
+0.830885 0.000000 -0.556444
+0.830886 0.000000 -0.556443
+0.999536 0.000000 -0.030458
+0.999536 0.000000 -0.030458
+0.830886 0.000000 -0.556443
+0.999536 0.000000 -0.030470
+0.828914 0.559376 0.000000
+0.828913 0.559378 0.000000
+0.999431 0.033736 0.000000
+0.999431 0.033736 0.000000
+0.828913 0.559378 0.000000
+0.999431 0.033736 0.000000
+0.999536 0.000000 0.030470
+0.999536 0.000000 0.030446
+0.773702 0.000000 -0.633550
+0.773702 0.000000 -0.633550
+0.999536 0.000000 0.030446
+0.773699 0.000000 -0.633553
+0.999431 -0.033736 0.000000
+0.999431 -0.033736 0.000000
+0.774875 0.632114 0.000000
+0.774875 0.632114 0.000000
+0.999431 -0.033736 0.000000
+0.774875 0.632114 0.000000
+0.999536 0.000000 -0.030458
+0.999536 0.000000 -0.030470
+0.773709 0.000000 0.633542
+0.773709 0.000000 0.633542
+0.999536 0.000000 -0.030470
+0.773702 0.000000 0.633550
+0.999431 0.033736 0.000000
+0.999431 0.033736 0.000000
+0.774881 -0.632107 0.000000
+0.774881 -0.632107 0.000000
+0.999431 0.033736 0.000000
+0.774881 -0.632107 0.000000
+0.773702 0.000000 -0.633550
+0.773699 0.000000 -0.633553
+0.665146 0.000000 -0.746713
+0.665146 0.000000 -0.746713
+0.773699 0.000000 -0.633553
+0.665135 0.000000 -0.746723
+0.774875 0.632114 0.000000
+0.774875 0.632114 0.000000
+0.665678 0.746239 0.000000
+0.665678 0.746239 0.000000
+0.774875 0.632114 0.000000
+0.665679 0.746238 0.000000
+0.773709 0.000000 0.633542
+0.773702 0.000000 0.633550
+0.665149 0.000000 0.746711
+0.665149 0.000000 0.746711
+0.773702 0.000000 0.633550
+0.665138 0.000000 0.746720
+0.774881 -0.632107 0.000000
+0.774881 -0.632107 0.000000
+0.665678 -0.746239 0.000000
+0.665678 -0.746239 0.000000
+0.774881 -0.632107 0.000000
+0.665679 -0.746238 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000001 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#painting_frame027-Normal0-array" count="168" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_frame027-UV0">
+          <float_array id="painting_frame027-UV0-array" count="144">
+0.434038 0.379054
+0.892950 0.379284
+0.892938 0.399012
+0.434028 0.398752
+0.434050 0.409722
+0.892962 0.410263
+0.892938 0.429963
+0.434028 0.429450
+0.005456 0.879063
+0.617338 0.878730
+0.617350 0.898417
+0.005467 0.898802
+0.005256 0.992568
+0.005256 0.972846
+0.617139 0.972914
+0.617138 0.992618
+0.437953 0.435054
+0.889000 0.435479
+0.009188 0.967268
+0.613208 0.967373
+0.613403 0.873197
+0.009384 0.873474
+0.437973 0.373536
+0.889022 0.373682
+0.016091 0.863482
+0.606688 0.863260
+0.444242 0.363336
+0.882761 0.363377
+0.015900 0.957309
+0.606497 0.957403
+0.882727 0.445675
+0.444209 0.445360
+0.027569 0.849495
+0.595199 0.849394
+0.455815 0.349528
+0.871190 0.349480
+0.027385 0.943411
+0.595014 0.943450
+0.871147 0.459497
+0.455773 0.459245
+0.038607 0.836004
+0.584161 0.836037
+0.466775 0.336059
+0.860227 0.335976
+0.038423 0.930003
+0.583976 0.930011
+0.860179 0.472955
+0.466726 0.472759
+0.048459 0.822128
+0.574313 0.822281
+0.476609 0.322248
+0.850388 0.322133
+0.048272 0.916186
+0.574125 0.916195
+0.850338 0.486738
+0.476557 0.486631
+0.012107 0.091334
+0.576371 0.091333
+0.413191 0.318255
+0.012107 0.318255
+0.576371 0.080525
+0.012107 0.080525
+0.012107 0.169376
+0.413191 0.169376
+0.413191 0.251021
+0.012107 0.251022
+0.012107 0.236609
+0.413191 0.236610
+0.576371 0.013291
+0.012107 0.013291
+0.012107 0.158567
+0.576371 0.158567
+</float_array>
+          <technique_common>
+            <accessor source="#painting_frame027-UV0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="painting_frame027-VERTEX">
+          <input semantic="POSITION" source="#painting_frame027-POSITION"/>
+        </vertices>
+        <triangles count="56" material="_01 - Default_ncl1_1">
+          <input semantic="VERTEX" offset="0" source="#painting_frame027-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#painting_frame027-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#painting_frame027-UV0"/>
+          <p> 0 0 0 1 1 1 3 2 3 3 3 3 1 4 1 2 5 2 5 6 4 4 7 5 7 8 7 7 9 7 4 10 5 6 11 6 1 12 8 6 13 9 2 14 11 2 15 11 6 16 9 4 17 10 5 18 12 7 19 13 3 20 15 3 21 15 7 22 13 0 23 14 8 24 16 7 25 7 9 26 17 9 27 17 7 28 7 6 29 6 7 30 13 8 31 18 0 32 14 0 33 14 8 34 18 10 35 19 9 36 20 6 37 9 11 38 21 11 39 21 6 40 9 1 41 8 0 42 0 10 43 22 1 44 1 1 45 1 10 46 22 11 47 23 9 48 20 11 49 21 13 50 25 13 51 25 11 52 21 12 53 24 11 54 23 10 55 22 12 56 27 12 57 27 10 58 22 14 59 26 10 60 19 8 61 18 14 62 29 14 63 29 8 64 18 15 65 28 8 66 16 9 67 17 15 68 31 15 69 31 9 70 17 13 71 30 13 72 25 12 73 24 17 74 33 17 75 33 12 76 24 16 77 32 12 78 27 14 79 26 16 80 35 16 81 35 14 82 26 18 83 34 14 84 29 15 85 28 18 86 37 18 87 37 15 88 28 19 89 36 15 90 31 13 91 30 19 92 39 19 93 39 13 94 30 17 95 38 17 96 33 16 97 32 21 98 41 21 99 41 16 100 32 20 101 40 16 102 35 18 103 34 20 104 43 20 105 43 18 106 34 22 107 42 18 108 37 19 109 36 22 110 45 22 111 45 19 112 36 23 113 44 19 114 39 17 115 38 23 116 47 23 117 47 17 118 38 21 119 46 21 120 41 20 121 40 25 122 49 25 123 49 20 124 40 24 125 48 20 126 43 22 127 42 24 128 51 24 129 51 22 130 42 26 131 50 22 132 45 23 133 44 26 134 53 26 135 53 23 136 44 27 137 52 23 138 47 21 139 46 27 140 55 27 141 55 21 142 46 25 143 54 25 144 56 24 145 57 29 146 70 29 147 70 24 148 57 28 149 71 24 150 58 26 151 59 28 152 64 28 153 64 26 154 59 30 155 65 26 156 60 27 157 61 30 158 68 30 159 68 27 160 61 31 161 69 27 162 62 25 163 63 31 164 66 31 165 66 25 166 63 29 167 67</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="painting_image029-lib" name="painting_image029Mesh">
+      <mesh>
+        <source id="painting_image029-POSITION">
+          <float_array id="painting_image029-POSITION-array" count="12">
+0.214569 -0.046193 3.237779
+0.214570 -1.913572 3.237779
+0.214571 -1.913572 1.910929
+0.214571 -0.046192 1.910929
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image029-POSITION-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_image029-Normal0">
+          <float_array id="painting_image029-Normal0-array" count="18">
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image029-Normal0-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_image029-UV0">
+          <float_array id="painting_image029-UV0-array" count="8">
+0.566460 0.988524
+0.007152 0.988524
+0.007152 0.615440
+0.566461 0.615440
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image029-UV0-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="painting_image029-VERTEX">
+          <input semantic="POSITION" source="#painting_image029-POSITION"/>
+        </vertices>
+        <triangles count="2" material="_03 - Default">
+          <input semantic="VERTEX" offset="0" source="#painting_image029-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#painting_image029-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#painting_image029-UV0"/>
+          <p> 0 0 0 1 1 1 3 2 3 3 3 3 1 4 1 2 5 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="painting_image030-lib" name="painting_image030Mesh">
+      <mesh>
+        <source id="painting_image030-POSITION">
+          <float_array id="painting_image030-POSITION-array" count="12">
+0.204591 -0.046193 3.237779
+0.204592 -1.913572 3.237779
+0.204594 -1.913572 1.910929
+0.204593 -0.046192 1.910929
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image030-POSITION-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_image030-Normal0">
+          <float_array id="painting_image030-Normal0-array" count="18">
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image030-Normal0-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="painting_image030-UV0">
+          <float_array id="painting_image030-UV0-array" count="8">
+0.566460 0.988524
+0.007152 0.988524
+0.007152 0.615440
+0.566461 0.615440
+</float_array>
+          <technique_common>
+            <accessor source="#painting_image030-UV0-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="painting_image030-VERTEX">
+          <input semantic="POSITION" source="#painting_image030-POSITION"/>
+        </vertices>
+        <triangles count="2" material="_14 - Default">
+          <input semantic="VERTEX" offset="0" source="#painting_image030-VERTEX"/>
+          <input semantic="NORMAL" offset="1" source="#painting_image030-Normal0"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#painting_image030-UV0"/>
+          <p> 0 0 0 3 1 3 1 2 1 3 3 3 2 4 2 1 5 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="Object042" id="Object042" layer="attic_wall_04_painting_03" sid="Object042">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#Object042-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_01 - Default" target="#_01 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="painting_frame027" id="painting_frame027" layer="attic_wall_04_painting_03" sid="painting_frame027">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#painting_frame027-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_01 - Default_ncl1_1" target="#_01 - Default_ncl1_1"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="painting_image029" id="painting_image029" layer="attic_wall_04_painting_03" sid="painting_image029">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#painting_image029-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_03 - Default" target="#_03 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <node name="painting_image030" id="painting_image030" layer="attic_wall_04_painting_03" sid="painting_image030">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#painting_image030-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_14 - Default" target="#_14 - Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>3.333333</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

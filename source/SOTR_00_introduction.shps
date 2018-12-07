@@ -1,0 +1,234 @@
+#include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
+#include "Utilities.ihps"
+#include "EveryMapEvents_AUTORUN.ihps"
+#include "00_Introduction_StormLightSystem.ihps"
+#include "00_Introduction_Cutscene.ihps"
+
+// ============================================================================
+// DEBUG CONSTANTS
+// Constants used for easier debugging and quicker testing while developing
+// these constants must be all false when releasing!
+// ============================================================================
+const bool dbgSkipIntro = false;
+
+// ============================================================================
+// USED ENTITIES
+// Constants representing entities referenced inside this script
+// in order to prevent misspelling and allow for easier renaming.
+// - For consistency use an "ent" prefix.
+// ============================================================================
+const string entExitLevelDoor       = "AlbertDoor";
+const string entProtagonistRoomDoor = "mansion_1";
+const string entLantern             = "Lantern";
+const string entFirstNote           = "note_generic_1";
+const string entClearsightBook      = "SOTR_Clearsight_1";
+const string entClosetDoor          = "ClosetDoor";
+const string entClosetKey           = "ClosetKey";
+
+// ============================================================================
+// MAIN
+// ============================================================================
+void OnStart()
+{
+    SetMapDisplayNameEntry("Introduction");
+    GetGlobalLoadingScreen("00");
+
+    BlockAllVanillaHints();
+    RegisterCallbacks();
+
+    // <DEBUG>
+    if (dbgSkipIntro || ScriptDebugOn())
+    {
+        AddTimer("", 0.5f, "OnSkipIntro");
+
+        // Stage 10 is the last one in the
+        // introduction timer switch
+        SetLocalVarInt("IntroductionCutscene", 10);
+    }
+    // </DEBUG>
+
+    IntroductionCutscene("");
+}
+
+void OnLeave()
+{
+    StopAmbience();
+}
+
+// Called from Cutscene
+void OnIntroFinished(string t)
+{
+    StartAmbience("ambience_hollow_tinker.snt");
+    SetPlayerLampOil(0.0f);
+    SetPlayerMoveSpeedMul(0.75f);
+    SetPropStaticPhysics(entProtagonistRoomDoor, true);
+}
+
+// <DEBUG>
+void OnSkipIntro(string t)
+{
+    TeleportPlayer(areaHouseStart); // Area defined in Cutscene.ihps
+}
+// </DEBUG>
+
+// ============================================================================
+// CALLBACK REGISTRATION
+// ============================================================================
+void RegisterCallbacks()
+{
+    AddUseItemCallback(entClosetKey, entClosetDoor, "UseKeyOnCloset");
+}
+
+// ============================================================================
+// CALLBACK DEFINITIONS
+// ============================================================================
+void UseKeyOnCloset(string key, string door)
+{
+    SetSwingDoorLocked(door, false, true);
+    PlaySoundAtEntity("unlock_door.snt", door);
+    RemoveItem(key);
+}
+
+void OnExitDoorInteract(string entity)
+{
+    AddDebugMessage("OnExitDoorInteract", false);
+    if(!AllRequiredItemsPickedUp()) 
+    {
+        AddDebugMessage("Does not have all items.", false);
+        SetMessage("DoorMessages", "IntroductionCannotLeave", 0.0f);
+        return;
+    }
+    
+    AddDebugMessage("Has all items", false);
+
+    if(GetLocalVarInt("LanternMonologueEnded") == 1)
+    {
+        AddDebugMessage("Going to next map, lantern monologue ended", false);
+        GoToNextMap();
+    }
+    else
+    {
+        AddDebugMessage("waiting for monlogue to end", false);
+        SetPlayerActive(false);
+        FadeOut(2.0f);
+        SetLocalVarInt("NextMapAfterMonologue", 1);
+    }
+}
+
+// ============================================================================
+// COLLECTING REQUIRED ITEMS
+// ============================================================================
+const string[] requiredItems =
+{
+    entFirstNote,
+    entLantern,
+    entClearsightBook
+};
+
+void OnRequiredItemPickup(string entity)
+{
+    // Ignore if not in the list of required items
+    if (!StringIsInArray(entity, requiredItems)) { return; }
+
+    if (entity == entLantern)        { OnLanternPickedUp(); }
+    if (entity == entFirstNote)      { OnFirstNotePickedUp(); }
+    if (entity == entClearsightBook) { OnClearsightPickedUp(); }
+
+    AddLocalVarInt("RequiredItemsPickedUp", 1);
+    GiveQuestIfNotAdded("IntroPackup");
+
+    if (AllRequiredItemsPickedUp())
+    {
+        OnAllItemsPickedUp();
+    }
+}
+
+bool AllRequiredItemsPickedUp()
+{
+    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItems.length();
+}
+
+// ============================================================================
+// REQUIRED ITEMS PICK UP EVENTS
+// ============================================================================
+void OnFirstNotePickedUp()
+{
+    SetSwingDoorLocked(entProtagonistRoomDoor, false, false);
+    SetPropStaticPhysics(entProtagonistRoomDoor, false);
+    AddTimer("", 6.0f, "INJohanLineOne");
+}
+
+void INJohanLineOne(string &in asTimer)
+
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "IN_Johan_3.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "3"               /* Subtitles Entry */
+    );
+}
+
+void OnClearsightPickedUp()
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "IN_Johan_5.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "5"               /* Subtitles Entry */
+    );
+}
+
+void OnLanternPickedUp()
+{
+    SetPlayerLampOil(80.0f);
+}
+
+void OnAllItemsPickedUp()
+{
+    PlayVoiceOnPlayerAndSlowdown(
+        "IN_Johan_6.ogg", /* Voice file */
+        "JohanNarration", /* Subtitles Category */
+        "6"               /* Subtitles Entry */
+    );
+    SetEffectVoiceOverCallback("OnLanternMonologueEnd");
+
+    CompleteQuest("IntroPackup");
+}
+
+// ============================================================================
+// DOOR MESSAGES
+// ============================================================================
+void OnDoorInteract(string entity)
+{
+    if (GetSwingDoorLocked(entity) == false) { return; }
+
+    if (entity == entClosetDoor)
+    {
+        string msgEntry = HasItem(entClosetKey) ? "HasKey" : "ClosetEntrance";
+        ShowDoorMessage(msgEntry);
+    }
+}
+
+// ============================================================================
+// LOCAL UTILITIES
+// ============================================================================
+void OnLanternMonologueEnd()
+{
+    if(GetLocalVarInt("NextMapAfterMonologue") == 1)
+    {
+        GoToNextMap();
+        return;
+    }
+
+    SetLocalVarInt("LanternMonologueEnded", 1);
+}
+
+void GoToNextMap()
+{
+    ChangeMap(
+        "SOTR_01_prologue.map",     /* Map */
+        "PlayerStartArea_1",        /* Start Area */
+        "door_level_wood_open.snt", /* Start Sound */
+        ""                          /* End Sound */
+    );
+}
