@@ -19,7 +19,6 @@ Headphones, dim lighting, and a focus on the story / lore / message rather than 
 * Spelos - Lead Programmer
 * Nick – Lead Programmer
 * Frictional Weekly – Lead Level Designer
-* Slanderous - Lead Level Detailer
 * David Bodtcher - Voice Acting Count Anton Caecea
 * Michael - Voice Acting Johan Gray
 * Stephanie - Voice Acting Countess Emilia Hall
@@ -28,9 +27,10 @@ Headphones, dim lighting, and a focus on the story / lore / message rather than 
 ### With the help of
 
 * Ian Wiese - Lead Editor
-* Spelos - Lead Programmer
+* Slanderous - Lead Level Detailer
 * Karba - Lead Level Designer
-* Hollow - Secondary Programmer
+* Hollow - Playtester
+* Seth - Playtester
 * Jarod D'Camp - Lead Composer
 * David Smolanowicz - Lead Sound Director
 
