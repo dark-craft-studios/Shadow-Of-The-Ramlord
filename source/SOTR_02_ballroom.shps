@@ -279,7 +279,6 @@ void OnStart()
 
     SetSanityEnabled(false);
 
-    InitializeLaudanumSoundScene();
     InitializeExampleMeditation();
     InitializeTightCorridorFall();
     InitializeVoiceLines();
