@@ -1,6 +1,3 @@
-
-maps/SOTR_03_quietstudy.map
-
 # VSCode Preprocessor Settings
 settings.json
 tasks.json
@@ -12,5 +9,5 @@ tasks.json
 *.map_cache
 *.nodes
 *.msh
-*.msh
-*.msh
+*.anm
+*.nodes
