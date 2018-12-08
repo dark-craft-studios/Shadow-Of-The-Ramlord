@@ -11,3 +11,6 @@ tasks.json
 # Amnesia ignores
 *.map_cache
 *.nodes
+*.msh
+*.msh
+*.msh
