@@ -77,6 +77,11 @@ void JohanInitialLine(string a, string b, int state)
 
 void JohanEntranceLocked(string a, string b, int state)
 {
+    AddTimer("", 3.5f, "JohanEntranceLockedDelayed");
+}
+
+void JohanEntranceLockedDelayed(string t)
+{
     PlayVoiceOnPlayerAndSlowdown(
         "PR_Johan_3.ogg", /* Voice file */
         "JohanNarration", /* Subtitles Category */
