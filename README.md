@@ -16,6 +16,7 @@ Headphones, dim lighting, and a focus on the story / lore / message rather than 
 ## Full Credits List
 
 * Glenn Winkelmann Jr - Project Lead
+# Spelos - Lead Programmer
 * Nick – Lead Programmer
 * Frictional Weekly – Lead Level Designer
 * Slanderous - Lead Level Detailer
