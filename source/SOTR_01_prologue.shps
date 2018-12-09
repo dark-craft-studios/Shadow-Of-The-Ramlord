@@ -162,32 +162,63 @@ void AntonAndEmiliaEvent(string a, string b, int state)
     SetLevelDoorLocked(entCellarDoor, true);
     SetSwingDoorClosed(entClearsightDoor, false, true);
 
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Anton_1.ogg", /* Voice file */
-        "AntonNarration", /* Subtitles Category */
-        "1"               /* Subtitles Entry */
-    );
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Emilia_1.ogg", /* Voice file */
-        "EmiliaNarration", /* Subtitles Category */
-        "1"               /* Subtitles Entry */
-    );
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Anton_2.ogg", /* Voice file */
-        "AntonNarration", /* Subtitles Category */
-        "2"               /* Subtitles Entry */
-    );
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Emilia_2.ogg", /* Voice file */
-        "EmiliaNarration", /* Subtitles Category */
-        "2"               /* Subtitles Entry */
-    );
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Anton_3.ogg", /* Voice file */
-        "AntonNarration", /* Subtitles Category */
-        "3"               /* Subtitles Entry */
-    );
+    AntonAndEmiliaCutscene("");
 }
+
+void AntonAndEmiliaCutscene(string t)
+{
+    int stage = GetLocalVarInt("AntonAndEmiliaCutscene");
+    AddLocalVarInt("AntonAndEmiliaCutscene", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        FadeSepiaColorTo(0.9f, 2.0f);
+        FadeRadialBlurTo(0.025f, 2.0f);
+        delay = 2.5f;
+    }
+    else if(stage == 1)
+    {
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Anton_1.ogg", /* Voice file */
+            "AntonNarration", /* Subtitles Category */
+            "1"               /* Subtitles Entry */
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Emilia_1.ogg", /* Voice file */
+            "EmiliaNarration", /* Subtitles Category */
+            "1"               /* Subtitles Entry */
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Anton_2.ogg", /* Voice file */
+            "AntonNarration", /* Subtitles Category */
+            "2"               /* Subtitles Entry */
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Emilia_2.ogg", /* Voice file */
+            "EmiliaNarration", /* Subtitles Category */
+            "2"               /* Subtitles Entry */
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Anton_3.ogg", /* Voice file */
+            "AntonNarration", /* Subtitles Category */
+            "3"               /* Subtitles Entry */
+        );
+        SetEffectVoiceOverCallback("AntonAndEmiliaVoiceLoop");
+        return;
+    }
+    else
+    {
+        FadeSepiaColorTo(0.0f, 2.0f);
+        FadeRadialBlurTo(0.0f, 2.0f);
+        ResetPlayerState();
+        return;
+    }
+
+    AddTimer("", delay, "AntonAndEmiliaCutscene");
+}
+
+void AntonAndEmiliaVoiceLoop() { AntonAndEmiliaCutscene(""); }
 
 // ============================================================================
 // DOOR INTERACTIONS
