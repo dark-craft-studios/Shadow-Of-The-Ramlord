@@ -14,7 +14,6 @@
 const string entEntranceGate = "elevator_door_1";
 const string entGateCandle1 = "candlestick_floor_1";
 const string entGateCandle2 = "candlestick_floor_2";
-const string entShedAltar = "stone_altar_shrine_1";
 const string entCellarDoor = "level_celler_1";
 const string entClearsightDoor = "ClearsightDoor1";
 
@@ -91,7 +90,7 @@ void JohanEntranceLockedDelayed(string t)
 
 void JohanAltarLine(string &in asParent, string &in asChild, int alState)
 {
-    StartPlayerLookAt(entShedAltar, 0.25f, 0.5f, "");
+    AltarMiniCutscene("");
 
     PlayVoiceOnPlayerAndSlowdown(
         "PR_Johan_4.ogg", /* Voice file */
@@ -99,6 +98,38 @@ void JohanAltarLine(string &in asParent, string &in asChild, int alState)
         "10"              /* Subtitles Entry */
     );
 }
+
+// ============================================================================
+// ALTAR MINI CUTSCENE
+// ============================================================================
+void AltarMiniCutscene(string t)
+{
+    int stage = GetLocalVarInt("AltarMiniCutscene");
+    AddLocalVarInt("AltarMiniCutscene", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        SetPlayerActive(false);
+        StartPlayerLookAt("ClearsightAbility", 1.0f, 1.5f, "");
+        FadePlayerFOVMulTo(0.7f, 1.0f);
+        delay = 16.0f;
+    }
+    else if(stage == 1)
+    {
+        FadePlayerFOVMulTo(1.0f, 1.0f);
+        StopPlayerLookAt();
+        delay = 2.0f;
+    }
+    else
+    {
+        SetPlayerActive(true);
+        return;
+    }
+
+    AddTimer("", delay, "AltarMiniCutscene");
+}
+
 
 // ============================================================================
 // MEDITATION
