@@ -38,7 +38,7 @@
         <Entry Name="31">As I meditated above the tombstone, I felt my consciousness transform into a fleeting dream. In a vision, I would gaze through your eyes, witnessing horrors without comprehension.</Entry>
     </CATEGORY>
 
-        <CATEGORY Name="AntonNarration">
+    <CATEGORY Name="AntonNarration">
         <Entry Name="1">Tell me dear, why have you been tense this evening? What do you suspect of me?</Entry>
         <Entry Name="2">These are an envoy of private individuals. From far flung lands they’ve come to indulge in a particular fascination. One that is… mutual. Our marriage is dear to them, too, don’t worry. Although maybe not for the reasons you suspect.</Entry>
         <Entry Name="3">Oh, my love. Soon... soon you will understand.</Entry>>
@@ -130,6 +130,7 @@
         <Entry Name="HasKey">I picked up a key to this room earlier.</Entry>
         <Entry Name="PrologueMainLocked">I found that the main entrance was locked.</Entry>
         <Entry Name="PrologueSecondLocked">The key to this door was in the outlying cabin.</Entry>
+        <Entry Name="PrologueBallroomLevelDoorLocked">I waited for the vision to end before entering the manor.</Entry>
         <Entry Name="BallroomQuestLocked">The key to this door was down the other hallway.</Entry>
         <Entry Name="OverlookEntrance">There was no point in going back.</Entry>
         <Entry Name="FinalDoor">Never again would I see home.</Entry>
