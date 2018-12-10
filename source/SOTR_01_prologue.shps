@@ -39,6 +39,7 @@ void RegisterCallbacks()
 {
     AddSinglePlayerCollideCallback("MoodScript1", "GateOpenEvent");
     AddSinglePlayerCollideCallback("JohanVoice_1", "JohanInitialLine");
+    AddSinglePlayerCollideCallback("JohanVoice_2", "JohanGateLine");
     AddSinglePlayerCollideCallback("JohanVoice_3", "JohanEntranceLocked");
     AddSinglePlayerCollideCallback("JohanVoice_4", "JohanAltarLine");
     AddSinglePlayerCollideCallback("TidyUp", "AntonAndEmiliaEvent");
@@ -67,6 +68,10 @@ void JohanInitialLine(string a, string b, int state)
         "JohanNarration", /* Subtitles Category */
         "7"               /* Subtitles Entry */
     );
+}
+
+void JohanGateLine(string a, string b, int state)
+{
     PlayVoiceOnPlayerAndSlowdown(
         "PR_Johan_2.ogg", /* Voice file */
         "JohanNarration", /* Subtitles Category */
