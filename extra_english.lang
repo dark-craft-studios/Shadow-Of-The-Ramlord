@@ -14,7 +14,7 @@
         <Entry Name="5">Etched in papyrus, a forgotten language bore forth the blasphemous secrets of life and death. Was it heretical of me to study? Of course. But it would never once fail me, even until my end.</Entry>
         <Entry Name="6">The abominations that crawled beneath the manor no doubt drooled in ravenous anticipation to my arrival. Anton was a foolish creature. It did not know the fury I would impose.</Entry>
         <Entry Name="7">The first time I laid eyes upon Caecea, I felt overcome by an insidious aura; as if the Manor itself was regarding me with contempt.</Entry>
-        <Entry Name="8">One of Anton’s famous revelries had found its way outside. For weeks, the attending sycophants would ply for political sway with the Baron.</Entry>
+        <Entry Name="8">One of Anton's famous revelries had found its way outside. For weeks, the attending sycophants would ply for political sway with the Baron.</Entry>
         <Entry Name="9">I found that the main entrance was locked. But there were answers in the outlying building.</Entry>
         <Entry Name="10">I recognized the altar from the Key of Solomon. They were bound messages, displayed for the one invoking the ritual on the altar. Evidently, you left these for me throughout the estate.</Entry>
         <Entry Name="11">With the words recited carefully, I was transfixed by a perplexing feeling. Like a dream that I could control. Going outside, a conversation carried forth that led my way. It was between Anton and Emilia.</Entry>
@@ -32,7 +32,7 @@
         <Entry Name="25">I remember I accepted your proposition. I would complete your ritual. Ha; such a fool was I to believe your intent was pure.</Entry>
         <Entry Name="26">Now that I know you deceived me, I want you to tell me… what really spoke to me from behind that locked door?</Entry>
         <Entry Name="27">Each of the tomes bore a revolting subject matter. I am still suspicious how a Baroness could so easily comprehend the occult. Tell me, is that why Anton was drawn to court you?</Entry>
-        <Entry Name="28">The creature was once a guest of Anton’s, having undertaken his… process of transfiguration. What a horrific notion; to be the embodiment of malign, eldritch madness while paralyzed of control, locked behind your own eyes.</Entry>
+        <Entry Name="28">The creature was once a guest of Anton's, having undertaken his… process of transfiguration. What a horrific notion; to be the embodiment of malign, eldritch madness while paralyzed of control, locked behind your own eyes.</Entry>
         <Entry Name="29">With the last of the grimoires in hand, I went to the ritual circle downstairs. As swiftly as I could, I unbound the spell sealing “Emilia” to the library.</Entry>
         <Entry Name="30">The room was dark, permeating with an unnatural energy. I discovered many artifacts about you, none more important than the gravestone outside. Your first child? I fail to judge you for its “accidental” demise. I would have done the same as you.</Entry>
         <Entry Name="31">As I meditated above the tombstone, I felt my consciousness transform into a fleeting dream. In a vision, I would gaze through your eyes, witnessing horrors without comprehension.</Entry>
@@ -40,8 +40,8 @@
 
     <CATEGORY Name="AntonNarration">
         <Entry Name="1">Tell me dear, why have you been tense this evening? What do you suspect of me?</Entry>
-        <Entry Name="2">These are an envoy of private individuals. From far flung lands they’ve come to indulge in a particular fascination. One that is… mutual. Our marriage is dear to them, too, don’t worry. Although maybe not for the reasons you suspect.</Entry>
-        <Entry Name="3">Oh, my love. Soon... soon you will understand.</Entry>>
+        <Entry Name="2">These are an envoy of private individuals. From far flung lands they've come to indulge in a particular fascination. One that is… mutual. Our marriage is dear to them, too, don't worry. Although maybe not for the reasons you suspect.</Entry>
+        <Entry Name="3">Oh, my love. Soon, soon you will understand.</Entry>>
     </CATEGORY>
 
     <CATEGORY Name="EmiliaNarration">
@@ -55,13 +55,13 @@
 
     <CATEGORY Name="Journal">
         <Entry Name="Note_EmiliaLetter1_Name">The Case of Caecea Manor</Entry>
-        <Entry Name="Note_EmiliaLetter1_Text">[voice IN_Emilia_1.ogg][br]Dear Johan Gray, it is with a tenuous grasp on reality that I write to you. I cannot say for certain that I am not simply rent with madness or delirium. Nor can I wholly dismiss the notion that I have fantasized such an extraordinary series of events. But not even in my most somber nightmares -- ones I have awakened from in cold fright -- have I imagined what my mind, body, and soul has been put through this last year.[br][voice IN_Emilia_1b.ogg][br]Anton is no longer man. He has brought madness to our house. Far beneath the floors, I hear the cracks of gongs and the chanting of an abhorrent language. As I trapse quietly through the halls to busy my mind, I hear from beyond locked doors muffled laughter and disquieting lapping sounds. Carriages come to the Manor nightly. Anton himself escorts their cargo, usually oblong boxes or hefty burlap sacks, into the catacombs he’s excavated below the foundation itself.[br][voice IN_Emilia_1c.ogg][br]I beg of you, intervene on my behalf and unmake this horror from the earth.[br][br]Anton. I believe him to be a practitioner of blasphemy; a Necromancer, in service to a being he prays to whilst knelt to the moon. He calls it the Ramlord.</Entry>
+        <Entry Name="Note_EmiliaLetter1_Text">[voice IN_Emilia_1.ogg][br]Dear Johan Gray, it is with a tenuous grasp on reality that I write to you. I cannot say for certain that I am not simply rent with madness or delirium. Nor can I wholly dismiss the notion that I have fantasized such an extraordinary series of events. But not even in my most somber nightmares -- ones I have awakened from in cold fright -- have I imagined what my mind, body, and soul has been put through this last year.[br][voice IN_Emilia_1b.ogg][br]Anton is no longer man. He has brought madness to our house. Far beneath the floors, I hear the cracks of gongs and the chanting of an abhorrent language. As I trapse quietly through the halls to busy my mind, I hear from beyond locked doors muffled laughter and disquieting lapping sounds. Carriages come to the Manor nightly. Anton himself escorts their cargo, usually oblong boxes or hefty burlap sacks, into the catacombs he's excavated below the foundation itself.[br][voice IN_Emilia_1c.ogg][br]I beg of you, intervene on my behalf and unmake this horror from the earth.[br][br]Anton. I believe him to be a practitioner of blasphemy; a Necromancer, in service to a being he prays to whilst knelt to the moon. He calls it the Ramlord.</Entry>
         
         <Entry Name="Note_NocturnalNote1_Name">The Night Gaunts</Entry>
         <Entry Name="Note_NocturnalNote1_Text">September 8th,[br][br]Everyone has retired for the evening to their allotted chambers. Anton apologized to me personally for my lodgings in particular; he described them as decrepit, but befitting my spartan character. I see now what he means. I requested a few pieces of furniture for my stay here, and I find no reason that he wont oblige me. Perhaps I can begin studying again, among this assortment of untapped minds? Ha. We shall see.[br][br]September 9th,[br][br]Among the gentry a singular topic has spread like a possessing frost. An insidious thought, no doubt hatched from vile intent of our Host. There is a general desire for descent; the maddening revelry and cloying indulgences are boring us all. But Anton, ever generous, has offered us a tour of his vaulted, subterranean paradise. I can hardly wait. First, he says, a transformation must begin.[br][br]September 10th,[br][br]We celebrated, feverishly. With ravenous desire we plunged ourselves into hours of every vice we could attain. Anton was no longer among us, but it mattered little. Before long, after a gibbous moon perched itself above the spires of Caecea, we were overburdened with a wicked fatigue. Like a flock, we suddenly retreated into our chambers.[br][br]I can hear the voice of the Master. He insists I eat the meal he provided me. He guides my hand to write these words. He wants me to tell someone who is coming that he will be waiting for you.[br][br]I am delighted to be his messenger.[br][br]September 20th,[br][br]When it is darkest, they claw at my door. When it is darkest, they claw at my mind. When it is darkest, they claw at my eyes. When it is darkest, I bid them entry.</Entry>
 
         <Entry Name="Note_AntonsThreat1_Name">Welcome to Caecea</Entry>
-        <Entry Name="Note_AntonsThreat1_Text">[voice BA_Anton_1.ogg][br]Emilia, against her will, has informed me of her plan. While she did not reveal the means she used to smuggle out the letter, I was told it was you who was the intended recipient. [br]And so, Witchfinder, I declare you a mortal enemy. Whatever you imagine to comprehend about me, or my great work, make no mistake; you are woefully ignorant. Revenants of abhorrent malignity dwell restlessly beneath your feet. Already, they smell your fear and salivate at the thought of your descent.[br]Know this, fool. After I break your mind, your body, your soul -- I will not kill you. No. I will torment you relentlessly until the last of the stars wither in eternal, frigid solemnity.</Entry>
+        <Entry Name="Note_AntonsThreat1_Text">[voice BA_Anton_1.ogg][br]Emilia, against her will, has informed me of her plan. While she did not reveal the means she used to smuggle out the letter, I was told it was you who was the intended recipient. [br]And so, Witchfinder, I declare you a mortal enemy. Whatever you imagine to comprehend about me, or my great work, make no mistake; you are woefully ignorant. Revenants of abhorrent malignity dwell restlessly beneath your feet. Already, they smell your fear and salivate at the thought of your descent.[br]Know this, fool. After I break your mind, your body, your soul -- I won't kill you. I will torment you relentlessly until the last of the stars wither in eternal, frigid solemnity.</Entry>
 
         <Entry Name="Note_AntonsThreat2_Name">Insolent Creature</Entry>
         <Entry Name="Note_AntonsThreat2_Text">[voice RC_Anton_Journal_1.ogg][br]The master wants to meet you, Johan. So he has commanded I bring you back. A pity, but I dare say… I will enjoy the sport of killing you over and over, on and on, until your very soul is broken. Come, join me in the Priory of Caecea. You have much to discuss with my Lord.</Entry>
@@ -98,7 +98,7 @@
     </CATEGORY>
 
     <CATEGORY Name="LevelDoors">
-        <Entry Name="LevelDoorOne">Hmm, it's locked...</Entry>
+        <Entry Name="LevelDoorOne">Hmm, it's locked.</Entry>
     </CATEGORY>
 
     <CATEGORY Name="Levels">
@@ -130,7 +130,7 @@
         <Entry Name="HasKey">I picked up a key to this room earlier.</Entry>
         <Entry Name="PrologueMainLocked">I found that the main entrance was locked.</Entry>
         <Entry Name="PrologueSecondLocked">The key to this door was in the outlying cabin.</Entry>
-        <Entry Name="PrologueBallroomLevelDoorLocked">I waited for the vision to end before entering the manor.</Entry>
+        <Entry Name="PrologueBallroomLevelDoorLocked">Before proceeding inside, I listened intently to your ominous conversation.</Entry>
         <Entry Name="BallroomQuestLocked">The key to this door was down the other hallway.</Entry>
         <Entry Name="OverlookEntrance">There was no point in going back.</Entry>
         <Entry Name="FinalDoor">Never again would I see home.</Entry>
