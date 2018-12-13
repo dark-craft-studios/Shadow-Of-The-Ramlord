@@ -142,6 +142,7 @@ void AltarMiniCutscene(string t)
 // ============================================================================
 void Meditate(string item, string entity)
 {
+    SetEntityActive("JohanVoice_3", false);
     PlayVoiceOnPlayerAndSlowdown(
         "PR_Johan_5.ogg", /* Voice file */
         "JohanNarration", /* Subtitles Category */
