@@ -45,7 +45,7 @@
         <Var Name="StaticMoveStopSound" Value="" />
         <Var Name="StaticMoveLoopSound" Value="" />
         <Var Name="RandomizeAnimationStart" Value="true" />
-        <Var Name="SubItemTypeName" Value="" />
+        <Var Name="SubItemTypeName" Value="Clearsight" />
         <Var Name="ImageFile" Value="C:/dev/Amnesia The Dark Descent/custom_stories/ShadowOfTheRamlord/graphics/item/SOTR_ClearSightIcon.tga" />
         <Var Name="PickSound" Value="Generic" />
         <Var Name="TempVar" Value="0" />

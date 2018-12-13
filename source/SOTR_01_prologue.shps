@@ -18,6 +18,8 @@ const string entCellarDoor = "level_celler_1";
 const string entClearsightDoor = "ClearsightDoor1";
 const string entBallroomLevelDoor = "level_wood_1";
 
+const string ambOutside = "ambience_wind_eerie_no3d.snt";
+
 // ============================================================================
 // MAIN
 // ============================================================================
@@ -27,7 +29,7 @@ void OnStart()
     FadeOut(0.0f);
     FadeIn(3.0f);
     PlayMusicOnce("11_paper_howl.ogg");
-    StartAmbience("ambience_swoop_myst.snt");
+    StartAmbience(ambOutside);
     RegisterCallbacks();    
 }
 
@@ -254,5 +256,5 @@ void OnQuestDoorInteract(string &in entity)
 void ExitShed(string entity)
 {
     StopAmbience(0.5f);
-    StartAmbience("ambience_swoop_myst.snt");
+    StartAmbience(ambOutside);
 }
