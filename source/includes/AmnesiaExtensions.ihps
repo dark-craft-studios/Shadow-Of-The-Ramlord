@@ -87,6 +87,52 @@ void AddUseItemCallback(string item, string entity, string callback)
     );
 }
 
+class UseItemParams
+{
+    UseItemParams()
+    {
+        this.Reset();
+    }
+
+    void Reset()
+    {
+        this.name = "";
+        this.item = "";
+        this.entity = "";
+        this.callbackFunc = "";
+        this.autoDestroy = true;
+    }
+
+    string name;
+    string item;
+    string entity;
+    string callbackFunc;
+    bool autoDestroy;
+}
+
+void AddUseItemCallback(UseItemParams settings)
+{
+    AddUseItemCallback(
+        settings.name,
+        settings.item,
+        settings.entity,
+        settings.callbackFunc,
+        settings.autoDestroy
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void CreateParticleSystemAtEntity(string file, string entity)
+{
+    CreateParticleSystemAtEntity(
+        "", /* Name */ 
+        file, 
+        entity, 
+        false /* Save */
+    );
+}
+
 // ============================================================================
 // ABSTRACTIONS
 // ============================================================================

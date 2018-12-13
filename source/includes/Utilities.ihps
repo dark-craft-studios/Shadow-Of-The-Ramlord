@@ -1,4 +1,5 @@
 #include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
 
 // ============================================================================
 // GLOBAL LOADING SCREEN SYSTEM
@@ -50,12 +51,28 @@ void PlayVoiceOnPlayerAndSlowdown(
     SetPlayerMoveSpeedMul(0.6f);
     SetPlayerJumpDisabled(true);
     PlayVoiceOnPlayer(soundFile, subtitleCategory, subtitleEntry);
-    SetEffectVoiceOverCallback("ResetSpeedAndJump");
+    SetEffectVoiceOverCallback("ResetPlayerState");
 }
 
-void ResetSpeedAndJump()
+// ============================================================================
+// SKYBOX
+// ============================================================================
+void SetupSkybox(string texture)
 {
-    SetPlayerMoveSpeedMul(1.0f);
-    SetPlayerRunSpeedMul(1.0f);
-    SetPlayerJumpDisabled(false);
+    SetSkyBoxActive(true);
+    SetSkyBoxTexture(texture);
+    SetSkyBoxColor(
+        1.0f,     /* Red amount */
+        1.0f,     /* Green amount */
+        1.0f,     /* Blue amount */
+        1.0f  /* Alpha amount */
+    );
+}
+
+// ============================================================================
+// OTHER
+// ============================================================================
+void FadeInTimer(string t)
+{
+    FadeIn(2.0f);
 }

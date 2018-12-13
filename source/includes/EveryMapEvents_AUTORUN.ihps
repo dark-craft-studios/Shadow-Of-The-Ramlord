@@ -27,10 +27,17 @@ void OnLeave()
 // ============================================================================
 void ResetPlayerState()
 {
-    SetPlayerMoveSpeedMul(1.0f);
-    SetPlayerRunSpeedMul(1.0f);
+    ResetPlayerSpeed();
     SetPlayerJumpDisabled(false);
     SetInDarknessEffectsActive(false);
     SetSanityDrainDisabled(true);
-    AddDebugMessage("Triggered ResetPlayerState", false);
+    SetPlayerCrouchDisabled(false);
+    SetPlayerJumpDisabled(false);
+    SetInventoryDisabled(false);
+}
+
+void ResetPlayerSpeed()
+{
+    SetPlayerMoveSpeedMul(0.65f);
+    SetPlayerRunSpeedMul(0.75f);
 }
