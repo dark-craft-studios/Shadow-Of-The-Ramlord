@@ -43,7 +43,6 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("MoodScript1", "GateOpenEvent");
     AddSinglePlayerCollideCallback("JohanVoice_1", "JohanInitialLine");
     AddSinglePlayerCollideCallback("JohanVoice_2", "JohanGateLine");
-    AddSinglePlayerCollideCallback("JohanVoice_3", "JohanEntranceLocked");
     AddSinglePlayerCollideCallback("JohanVoice_4", "JohanAltarLine");
     AddSinglePlayerCollideCallback("TidyUp", "AntonAndEmiliaEvent");
 
@@ -79,20 +78,6 @@ void JohanGateLine(string a, string b, int state)
         "PR_Johan_2.ogg", /* Voice file */
         "JohanNarration", /* Subtitles Category */
         "8"               /* Subtitles Entry */
-    );
-}
-
-void JohanEntranceLocked(string a, string b, int state)
-{
-    AddTimer("", 3.5f, "JohanEntranceLockedDelayed");
-}
-
-void JohanEntranceLockedDelayed(string t)
-{
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Johan_3.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "9"               /* Subtitles Entry */
     );
 }
 
@@ -247,10 +232,19 @@ void OnLockDoorInteract(string entity)
     PlaySoundAtEntity("door_level_wood_locked.snt");
 }
 
-void OnQuestDoorInteract(string &in entity)
+void PrologueSecondLocked(string entity)
 {
+    if(!GetSwingDoorLocked(entity)) { return; }
     SetMessage("DoorMessages", "PrologueSecondLocked", 0.0f);
-    PlaySoundAtEntity("door_level_wood_locked.snt");
+    if(GetLocalVarInt("CommentedOnLockedDoor") == 0)
+    {
+        SetLocalVarInt("CommentedOnLockedDoor", 1);
+        PlayVoiceOnPlayerAndSlowdown(
+            "PR_Johan_3.ogg", /* Voice file */
+            "JohanNarration", /* Subtitles Category */
+            "9"               /* Subtitles Entry */
+        );
+    }
 }
 
 void ExitShed(string entity)
