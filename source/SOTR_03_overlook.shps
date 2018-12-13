@@ -41,10 +41,6 @@ void RegisterCallbacks()
     }
 
     AddSinglePlayerCollideCallback(
-		voiceOverCollideArea,
-		"CollideVoiceOver"
-	); 
-    AddSinglePlayerCollideCallback(
         "EmiliaVoiceIntro", 
         "EmiliaVoiceLine1"
     );
@@ -123,13 +119,13 @@ void DoorConversationEnd()
 }
 
 // Glenn Comment: When the ritual in the cellar is complete, the below line should play.
-//    AddEffectVoice("OL_Johan_4.ogg", "", "JohanNarration", "26", false, "player", 0.0f, 20.0f);
+//    
 
 // Glenn Comment: When the first grimoire is picked up, the below line should be played.
 //    
 
 // Glenn Comment: When the last grimoire is picked up, the below line should be played.
-//    AddEffectVoice("OL_Johan_7.ogg", "", "JohanNarration", "29", false, "player", 0.0f, 20.0f);
+//    
 
 // ----------------------------------------------------------------------------
 // Monster Sequence Initialize
@@ -185,7 +181,7 @@ void OnRitualBookPickup(string entity)
     {
         OnFirstBookPickup();
     }
-    else if(currentBookNumber == 4)
+    else if(currentBookNumber == brBookCount)
     {
         OnLastBookPickup();
     }
@@ -228,17 +224,7 @@ const string arcDoorToPush = "EmiliaDoor";
 
 void StartRitualCutscene()
 {
-    // Whatever happens in the cutscene goes here...
-    AddEffectVoice(
-        "SOTR_TEMP_silence.ogg",    /* Voice File */
-        "",                         /* Effect File */
-        "",                         /* Text category */
-        "",                         /* Text entry */
-        true,                       /* Use position */
-        "",                         /* Position entity */
-        0.0f,                       /* Minimum hearing distance */
-        10.0f                       /* Maximum hearing distance */
-    );
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_4.ogg", "JohanNarration", "26");
     SetEffectVoiceOverCallback("OnRitualVoiceDone");
 }
 
@@ -272,8 +258,6 @@ void OnRitualVoiceDone()
 // ----------------------------------------------------------------------------
 // Voiceover Lines
 // ----------------------------------------------------------------------------
-const string voiceOverCollideArea = "VoiceOverCollideArea";
-
 void OnMapEnterVoiceover(string t)
 {
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_1.ogg", "JohanNarration", "23");
@@ -281,38 +265,12 @@ void OnMapEnterVoiceover(string t)
 
 void OnFirstBookPickup()
 {
-    AddDebugMessage("OnFirstBookPickup", false);
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_5.ogg", "JohanNarration", "27");
 }
 
 void OnLastBookPickup()
 {
-    AddDebugMessage("OnLastBookPickup", false);
-    AddEffectVoice(
-        "SOTR_TEMP_silence.ogg",    /* Voice File */
-        "",                         /* Effect File */
-        "",                         /* Text category */
-        "",                         /* Text entry */
-        true,                       /* Use position */
-        "",                         /* Position entity */
-        0.0f,                       /* Minimum hearing distance */
-        10.0f                       /* Maximum hearing distance */
-    );
-}
-
-void CollideVoiceOver(string parent, string child, int state)
-{
-    AddDebugMessage("CollideVoiceOver", false);
-    AddEffectVoice(
-        "SOTR_TEMP_silence.ogg",    /* Voice File */
-        "",                         /* Effect File */
-        "",                         /* Text category */
-        "",                         /* Text entry */
-        true,                       /* Use position */
-        "",                         /* Position entity */
-        0.0f,                       /* Minimum hearing distance */
-        10.0f                       /* Maximum hearing distance */
-    );
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_7.ogg", "JohanNarration", "29");
 }
 
 // ----------------------------------------------------------------------------

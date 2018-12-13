@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="1.79113 8.6894 180.854" CameraTarget="1.79113 8.6894 0.853656" CameraZoom="0" GridHeight="0.853656" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="181.791 8.6894 0.853656" CameraTarget="1.79113 8.6894 0.853656" CameraZoom="0" GridHeight="1.79113" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="1.79113 188.689 0.853656" CameraTarget="1.79113 8.6894 0.853656" CameraZoom="0" GridHeight="8.6894" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-4.24723 4.15862 -9.8465" CameraTarget="-10.6837 2.38419e-007 -7.41087" CameraZoom="1.82749" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-9.47709 -0.75 188.625" CameraTarget="-9.47709 -0.75 8.625" CameraZoom="5.5" GridHeight="8.625" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="170.523 -0.75 8.625" CameraTarget="-9.47709 -0.75 8.625" CameraZoom="5.5" GridHeight="-9.47709" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-9.47709 179.25 8.625" CameraTarget="-9.47709 -0.75 8.625" CameraZoom="5.5" GridHeight="-0.75" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="0.486993 1.29316 8.1238" CameraTarget="0.244292 -0.75 9.83543" CameraZoom="2.92755" GridHeight="-0.75" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -6276,26 +6276,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="false" FileIndex="3" Group="0" ID="1791" Name="RitualBookStatic_3" Rotation="1.56679 1.5708 2.38419e-007" Scale="1 1 1" Tag="" WorldPos="-0.156405 -1.94773 12.1308">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="false" FileIndex="3" Group="0" ID="1792" Name="RitualBookStatic_4" Rotation="-1.5708 -0.692547 -3.14159" Scale="1 1 1" Tag="" WorldPos="0.780353 -1.94173 10.5897">
+                <Entity Active="false" FileIndex="3" Group="0" ID="1791" Name="RitualBookStatic_3" Rotation="1.5708 -1.48426 0.00400615" Scale="1 1 1" Tag="" WorldPos="0.75716 -1.94773 10.5735">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -6346,16 +6327,6 @@
                         <Var Name="CustomSubItemTypeName" Value="RitualBook_3" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="Script" Group="0" ID="1796" Mesh="" Name="VoiceOverCollideArea" Rotation="0 0 0" Scale="2.5 2.5 1.75" Tag="" WorldPos="-9.47709 -0.75 8.625">
-                    <UserVariables>
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ItemInteraction" Value="false" />
-                        <Var Name="MaxFocusDistance" Value="-1" />
-                    </UserVariables>
-                </Area>
                 <Entity Active="true" FileIndex="60" Group="0" ID="1800" Name="angel_statue_1" Rotation="0 -3.14159 0" Scale="1 1 1" Tag="" WorldPos="-0.25 -2.25 13.75">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
