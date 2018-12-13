@@ -1,53 +1,20 @@
 #include "AmnesiaSignatures.cpp"
 #include "ResetPlayerStateOnStart.ihps"
-
-// ----------------------------------------------------------------------------
-// GLOBAL LOADING SCREEN SYSTEM
-// ----------------------------------------------------------------------------
-void GetGlobalLoadingScreen(string mapId)
-{
-    string txtCat = GetGlobalVarString("LS_TextCategory");
-    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
-    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
-    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
-
-    SetupLoadScreen(
-        txtCat, /* Text Category */
-        txtEnt, /* Text Entry */
-        imgRnd, /* Random */
-        imgFil  /* Image file */
-    );
-}
-
-// ----------------------------------------------------------------------------
-// SET SANITY ENABLED
-// ----------------------------------------------------------------------------
-void SetSanityEnabled(bool enabled)
-{
-    SetSanityDrainDisabled(!enabled);
-    SetInDarknessEffectsActive(enabled);
-}
-
+#include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
+#include "Utilities.ihps"
+#include "EveryMapEvents_AUTORUN.ihps"
+#include "ForceEssentialItems_AUTORUN.ihps"
 
 // ----------------------------------------------------------------------------
 // Main - g
 // ----------------------------------------------------------------------------
 const string gMapId = "06";
 
-void Preload()
-{
-}
-
 void OnStart()
 {
     DestroyDataCache();
     GetGlobalLoadingScreen(gMapId);
-    SetSanityEnabled(false);
-}
-
-void OnEnter()
-{
-    Preload();
 }
 
 void OnLeave()

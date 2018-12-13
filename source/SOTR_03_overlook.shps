@@ -1,90 +1,25 @@
 #include "AmnesiaSignatures.cpp"
-#include "ResetPlayerStateOnStart.ihps"
-
-// ----------------------------------------------------------------------------
-// GLOBAL LOADING SCREEN SYSTEM
-// ----------------------------------------------------------------------------
-void GetGlobalLoadingScreen(string mapId)
-{
-    string txtCat = GetGlobalVarString("LS_TextCategory");
-    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
-    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
-    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
-
-    SetupLoadScreen(
-        txtCat, /* Text Category */
-        txtEnt, /* Text Entry */
-        imgRnd, /* Random */
-        imgFil  /* Image file */
-    );
-}
-
-// ----------------------------------------------------------------------------
-// SET SANITY ENABLED
-// ----------------------------------------------------------------------------
-void SetSanityEnabled(bool enabled)
-{
-    SetSanityDrainDisabled(!enabled);
-    SetInDarknessEffectsActive(enabled);
-}
-
-// ----------------------------------------------------------------------------
-// LANTERN CHECK
-// ----------------------------------------------------------------------------
-void LanternCheck()
-{
-    string lanternName = GetGlobalVarString("LanternName");
-    if(HasItem(lanternName)) return;
-    GiveItemFromFile(lanternName, "lantern.ent");
-}
-
-// ----------------------------------------------------------------------------
-// AMBIENCE ABSTRACTION
-// ----------------------------------------------------------------------------
-void StartAmbience(string soundFile)
-{
-    PlaySoundAtEntity(
-        "amb",     /* Sound name */
-        soundFile, /* Sound file */
-        "Player",  /* Entity */
-        0.0f,      /* Fade time */
-        false      /* Save */
-    );
-}
-
-void StopAmbience()
-{
-    StopSound("amb", 5.0f);
-}
-
-
-
+#include "AmnesiaExtensions.ihps"
+#include "Utilities.ihps"
+#include "EveryMapEvents_AUTORUN.ihps"
+#include "ForceEssentialItems_AUTORUN.ihps"
+#include "Meditation.ihps"
 
 // ----------------------------------------------------------------------------
 // Main - g
 // ----------------------------------------------------------------------------
 const string gMapId = "04";
 
-void Preload()
-{
-    PreloadSound("flashback_flash.snt");
-    PreloadSound("react_breath_slow.snt");
-}
-
 void OnStart()
 {
     DestroyDataCache();
     GetGlobalLoadingScreen(gMapId);
-    SetSanityEnabled(false);
-    LanternCheck();
     RegisterCallbacks();
     OnMapEnterVoiceover();
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0);
     FadeIn(3);
     PlayMusic("11_paper_howl.ogg", false, 0.5f, 0.5f, 1.0f, false);
-    SetPlayerMoveSpeedMul(0.75f);
-    SetPlayerRunSpeedMul(1.0f);
     AddTimer("", 0.5f, "JohanLine1");
     AddEntityCollideCallback("Player", "EmiliaVoiceIntro", "EmiliaVoiceLine1", true, 1);
     DoorConversationRoutine();
@@ -94,7 +29,6 @@ void OnStart()
 
 void OnEnter()
 {
-    Preload();
     PlayMusic("SOTR_overlook.ogg", false, 0.5f, 0.5f, 1.0f, false);
     PreloadSound("ambience_hollow_tinker.snt");
 }
@@ -436,150 +370,4 @@ void DummyMeditation(string t)
     // I will meditate forever. Which sounds better then it 
     // actually is.
     AddTimer("", 3.0f, "EndMeditation");
-}
-
-// ----------------------------------------------------------------------------
-// MEDITATION
-//
-// Summary:
-// The base code for meditation sequences. It allowes for a custom function to
-// be executed once the main meditation state hits. The called is responsible
-// for calling the EndMeditation otherwise the player gets stuck in a state of
-// INFINITE MEDITATION!!!!! How Zen...
-// ----------------------------------------------------------------------------
-void StartMeditation(string focusArea, string callback)
-{
-    AddEffectVoice("OL_Johan_9.ogg", "", "JohanNarration", "31", false, "player", 0.0f, 20.0f);
-    SetLocalVarString("MeditationCallback", callback);
-    AddDebugMessage("Meditation triggered", false);
-    StartPlayerLookAt(focusArea, 1.0f, 1.5f, "");
-    SetPlayerActive(false);
-    SetInventoryDisabled(true);
-    AddTimer("", 2.0f, "MeditationTimer");
-}
-
-void MeditationTimer(string t)
-{
-    AddLocalVarInt("MeditationStage", 1);
-    int stage = GetLocalVarInt("MeditationStage");
-    float delay = 0.0f;
-
-    if(stage == 1)
-    {
-        SetPlayerCrouching(true);
-        delay = 4.0f;
-    }
-    else if(stage == 2)
-    {
-        MovePlayerHeadPos(0.0f, -0.2f, 0.0f, 1.0f, 0.5f);
-        delay = 5.0f;
-    }
-    else if(stage == 3)
-    {
-        FadeOut(2.0f);
-        PlaySoundAtEntity("react_breath_slow.snt");
-        delay = 3.0f;
-    }
-    else if(stage == 4)
-    {
-        FadeSepiaColorTo(0.9f, 2.0f);
-        FadeIn(1.5f);
-        StartEffectFlash(0.5f, 3.5f, 1.0f);
-        PlaySoundAtEntity("flashback_flash.snt");
-        delay = 5.5f;
-    }
-    else if(stage == 5)
-    {
-        string callback = GetLocalVarString("MeditationCallback");
-        AddTimer("", 0.0f, callback);
-    }
-    else
-    {
-        return;
-    }
-
-    AddTimer("", delay, "MeditationTimer");
-}
-
-void EndMeditation(string t)
-{
-    SetLocalVarString("MeditationCallback", "");
-    SetLocalVarInt("MeditationEndStage", 0);
-    EndMeditationTimer("");
-}
-
-void EndMeditationTimer(string t)
-{
-    AddLocalVarInt("MeditationEndStage", 1);
-    int stage = GetLocalVarInt("MeditationEndStage");
-    float delay = 0.0f;
-
-    if(stage == 1)
-    {
-        FadeOut(1.0f);
-        delay = 2.5f;
-    }
-    else if(stage == 2)
-    {
-        FadeSepiaColorTo(0.0f, 2.0f);
-        FadeIn(2.0f);
-        delay = 2.5f;
-    }
-    else if(stage == 3)
-    {
-        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 1.0f, 0.5f);
-        delay = 3.0f;
-    }
-    else if(stage == 4)
-    {
-        StopPlayerLookAt();
-        SetPlayerCrouching(false);
-        SetInventoryDisabled(false);
-        SetPlayerActive(true);
-        ChangeMap("SOTR_04_emiliasdream", "PlayerStartArea_1", "", "");
-    }
-    else
-    {
-        return;
-    }
-
-    AddTimer("", delay, "EndMeditationTimer");
-}
-// ----------------------------------------------------------------------------
-// PLAY SOUND AT ENTITY OVERLOADS
-//
-// Summary:
-// Overloads (alternative calls) to the common PlaySoundAtEntity function
-// that allows you to pass less parameters and have the rest be default.
-// ----------------------------------------------------------------------------
-void PlaySoundAtEntity(string name, string file, string entity)
-{
-    PlaySoundAtEntity(
-        entity, /* Sound name */
-        file,   /* Sound file */
-        entity, /* Entity */
-        0.0f,   /* Fade time */
-        false   /* Save */
-    );
-}
-
-void PlaySoundAtEntity(string file, string entity, float fadeTime)
-{
-    PlaySoundAtEntity(
-        "",       /* Sound name */
-        file,     /* Sound file */
-        entity,   /* Entity */
-        fadeTime, /* Fade time */
-        false     /* Save */
-    );
-}
-
-void PlaySoundAtEntity(string file, string entity)
-{
-    PlaySoundAtEntity(file, entity, 0.0f);
-}
-
-void PlaySoundAtEntity(string file)
-{
-    PlaySoundAtEntity(file, "Player", 0.0f);
 }

@@ -1,5 +1,10 @@
 #include "AmnesiaSignatures.cpp"
 #include "ResetPlayerStateOnStart.ihps"
+#include "AmnesiaSignatures.cpp"
+#include "AmnesiaExtensions.ihps"
+#include "Utilities.ihps"
+#include "EveryMapEvents_AUTORUN.ihps"
+#include "ForceEssentialItems_AUTORUN.ihps"
 
 // ----------------------------------------------------------------------------
 // GLENN COMMENTS
@@ -8,56 +13,15 @@
 // If the Player possessess both RisenSalt and RisenWater, the area trigger "EndingCutsceneTrigger" should freeze our movement and kick off the interrogation cutscene.
 
 // ----------------------------------------------------------------------------
-// GLOBAL LOADING SCREEN SYSTEM
-// ----------------------------------------------------------------------------
-void GetGlobalLoadingScreen(string mapId)
-{
-    string txtCat = GetGlobalVarString("LS_TextCategory");
-    string txtEnt = GetGlobalVarString("LS_" + mapId + "_Entry");
-    string imgFil = GetGlobalVarString("LS_" + mapId + "_Image");
-    int    imgRnd = GetGlobalVarInt("LS_" + mapId + "_Random");
-
-    SetupLoadScreen(
-        txtCat, /* Text Category */
-        txtEnt, /* Text Entry */
-        imgRnd, /* Random */
-        imgFil  /* Image file */
-    );
-}
-
-// ----------------------------------------------------------------------------
-// SET SANITY ENABLED
-// ----------------------------------------------------------------------------
-void SetSanityEnabled(bool enabled)
-{
-    SetSanityDrainDisabled(!enabled);
-    SetInDarknessEffectsActive(enabled);
-}
-
-
-// ----------------------------------------------------------------------------
 // Main - g
 // ----------------------------------------------------------------------------
 const string gMapId = "10";
 
-void Preload()
-{
-}
-
 void OnStart()
 {
-    DestroyDataCache();
     GetGlobalLoadingScreen(gMapId);
-    SetSanityEnabled(false);
-    SetPlayerMoveSpeedMul(0.75f);
-    SetPlayerRunSpeedMul(1.0f);
     FadeOut(0);
     FadeIn(6);
-}
-
-void OnEnter()
-{
-    Preload();
 }
 
 void OnLeave()
