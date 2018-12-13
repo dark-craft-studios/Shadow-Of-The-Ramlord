@@ -5,36 +5,26 @@
 #include "ForceEssentialItems_AUTORUN.ihps"
 #include "Meditation.ihps"
 
-// ----------------------------------------------------------------------------
-// Main - g
-// ----------------------------------------------------------------------------
+// ============================================================================
+// Main
+// ============================================================================
 const string gMapId = "04";
 
 void OnStart()
 {
-    DestroyDataCache();
     GetGlobalLoadingScreen(gMapId);
     RegisterCallbacks();
-    OnMapEnterVoiceover();
+    AddTimer("", 0.5f, "OnMapEnterVoiceover");
     StartAmbience("ambience_hollow_tinker.snt");
-    FadeOut(0);
-    FadeIn(3);
-    PlayMusic("11_paper_howl.ogg", false, 0.5f, 0.5f, 1.0f, false);
-    AddTimer("", 0.5f, "JohanLine1");
-    AddEntityCollideCallback("Player", "EmiliaVoiceIntro", "EmiliaVoiceLine1", true, 1);
-    DoorConversationRoutine();
-    MonsterSequenceRoutine();
-    EndingSequenceRoutine();
+    FadeOut(0.0f);
+    FadeIn(3.0f);
+    PlayMusic("11_paper_howl.ogg");
 }
 
 void OnEnter()
 {
     PlayMusic("SOTR_overlook.ogg", false, 0.5f, 0.5f, 1.0f, false);
     PreloadSound("ambience_hollow_tinker.snt");
-}
-
-void OnLeave()
-{
 }
 
 void RegisterCallbacks()
@@ -50,76 +40,93 @@ void RegisterCallbacks()
         );
     }
 
-    AddEntityCollideCallback(
-		"Player",						/* Parent name */
-		voiceOverCollideArea, 			/* Child name */
-		"CollideVoiceOver", 	        /* Callback Function */
-		true, 							/* Delete On Collide */
-		1								/* State */
+    AddSinglePlayerCollideCallback(
+		voiceOverCollideArea,
+		"CollideVoiceOver"
 	); 
+    AddSinglePlayerCollideCallback(
+        "EmiliaVoiceIntro", 
+        "EmiliaVoiceLine1"
+    );
+    AddSinglePlayerCollideCallback(
+        "EmiliaConvoArea", 
+        "DoorConversation"
+    );
+    AddSinglePlayerCollideCallback(
+        "MonsterSequenceBegin", 
+        "BeginMonsterSequence"
+    );
+    AddSinglePlayerCollideCallback(
+        "EndingSequenceArea", 
+        "EndingLine1"
+    );
 }
 
-// ----------------------------------------------------------------------------
-// Voice Acting Temporary (Glenn Code Style 1.0 Release Ready, Totally)
-// ----------------------------------------------------------------------------
+// ============================================================================
+// VOICE ACTING
+// ============================================================================
 
-void JohanLine1(string &in asTimer)
+void EmiliaVoiceLine1(string a, string b, int state)
 {
-    AddEffectVoice("OL_Johan_1.ogg", "", "JohanNarration", "23", false, "player", 0.0f, 10.0f);
+    PlayVoiceOnEntityAndSlowdown(
+        "OL_Emilia_1.ogg", /* File */
+        "EmiliaNarration", /* Subtitle: Category */
+        "3",               /* Subtitle: Entry */
+        "EmiliaSource"     /* Position entity */
+    );
+    PlayVoiceOnPlayerAndSlowdown(
+        "OL_Johan_2.ogg", 
+        "JohanNarration", 
+        "24"
+    );
+    PlayVoiceOnEntityAndSlowdown(
+        "OL_Emilia_2.ogg", /* File */
+        "EmiliaNarration", /* Subtitle: Category */
+        "4",               /* Subtitle: Entry */
+        "EmiliaSource"     /* Position entity */
+    );
 }
 
-void EmiliaVoiceLine1(string &in asParent, string &in asChild, int alState)
+void DoorConversation(string a, string b, int state)
 {
-    // Glenn Comment: I want the players head to turn towards the door, with this line coming from that direction.
-    AddEffectVoice("OL_Emilia_1.ogg", "", "EmiliaNarration", "3", false, "EmiliaTableVoice1", 0.0f, 20.0f);
-    AddTimer("", 4.0f, "JohanLine2");
+    StartPlayerLookAt(
+        "EmiliaSource", /* Entity */
+        1.0f,            /* Multiplier */
+        1.5f,            /* Max speed */
+        ""               /* Callback */
+    );
+    SetPlayerActive(false);
+    PlayVoiceOnEntityAndSlowdown(
+        "OL_Emilia_3.ogg", /* File */
+        "EmiliaNarration", /* Subtitle: Category */
+        "5",               /* Subtitle: Entry */
+        "EmiliaSource"     /* Position entity */
+    );
+    PlayVoiceOnEntityAndSlowdown(
+        "OL_Emilia_4.ogg", /* File */
+        "EmiliaNarration", /* Subtitle: Category */
+        "6",               /* Subtitle: Entry */
+        "EmiliaSource"     /* Position entity */
+    );
+    SetEffectVoiceOverCallback("DoorConversationEnd");
 }
 
-void JohanLine2(string &in asTimer)
+void DoorConversationEnd()
 {
-    AddEffectVoice("OL_Johan_2.ogg", "", "JohanNarration", "24", false, "player", 0.0f, 10.0f);
-    AddTimer("", 9.0f, "EmiliaVoiceLine2");
-}
+    PlayVoiceOnPlayerAndSlowdown(
+        "OL_Johan_3.ogg", 
+        "JohanNarration", 
+        "25"
+    );
 
-void EmiliaVoiceLine2(string &in asTimer)
-{
-    // Glenn Comment: I want the players head to turn towards the door, with this line coming from that direction.
-    AddEffectVoice("OL_Emilia_2.ogg", "", "EmiliaNarration", "4", false, "player", 0.0f, 10.0f);
-}
-
-void DoorConversationRoutine()
-{
-    AddEntityCollideCallback("Player", "EmiliaConvoArea", "DoorConversation1", true, 1);
-}
-
-void DoorConversation1(string &in asParent, string &in asChild, int alState)
-{
-    //Glenn Comment: This line is behind the door.
-    AddEffectVoice("OL_Emilia_3.ogg", "", "EmiliaNarration", "5", false, "player", 0.0f, 20.0f);
-    SetPlayerMoveSpeedMul(0.0f);
-    SetPlayerRunSpeedMul(0.0f);
-    AddTimer("", 27.0f, "DoorConversation2");
-}
-
-void DoorConversation2(string &in asTimer)
-{
-    //Glenn Comment: This line is behind the door.
-    AddEffectVoice("OL_Emilia_4.ogg", "", "EmiliaNarration", "6", false, "player", 0.0f, 20.0f);
-    AddTimer("", 19.0f, "DoorConversation3");
-}
-
-void DoorConversation3(string &in asTimer)
-{
-    AddEffectVoice("OL_Johan_3.ogg", "", "JohanNarration", "25", false, "player", 0.0f, 20.0f);
-    SetPlayerMoveSpeedMul(0.75f);
-    SetPlayerRunSpeedMul(0.75f);
+    ResetPlayerState();
 }
 
 // Glenn Comment: When the ritual in the cellar is complete, the below line should play.
 //    AddEffectVoice("OL_Johan_4.ogg", "", "JohanNarration", "26", false, "player", 0.0f, 20.0f);
 
 // Glenn Comment: When the first grimoire is picked up, the below line should be played.
-//    AddEffectVoice("OL_Johan_5.ogg", "", "JohanNarration", "27", false, "player", 0.0f, 20.0f);
+//    
 
 // Glenn Comment: When the last grimoire is picked up, the below line should be played.
 //    AddEffectVoice("OL_Johan_7.ogg", "", "JohanNarration", "29", false, "player", 0.0f, 20.0f);
@@ -128,12 +135,7 @@ void DoorConversation3(string &in asTimer)
 // Monster Sequence Initialize
 // ----------------------------------------------------------------------------
 
-void MonsterSequenceRoutine()
-{
-    AddEntityCollideCallback("Player", "MonsterSequenceBegin", "BeginMonsterSequence", true, 1);
-}
-
-void BeginMonsterSequence(string &in asParent, string &in asChild, int alState)
+void BeginMonsterSequence(string a, string b, int state)
 {
     AddEffectVoice("OL_Johan_6.ogg", "", "JohanNarration", "28", false, "player", 0.0f, 20.0f);
 }
@@ -143,12 +145,8 @@ void BeginMonsterSequence(string &in asParent, string &in asChild, int alState)
 // Ending Sequence - Audio
 // ----------------------------------------------------------------------------
 
-void EndingSequenceRoutine()
-{
-    AddEntityCollideCallback("Player", "EndingSequenceArea", "EndingLine1", true, 1);
-}
 
-void EndingLine1(string &in asParent, string &in asChild, int alState)
+void EndingLine1(string a, string b, int state)
 {
     AddEffectVoice("OL_Johan_8.ogg", "", "JohanNarration", "30", false, "player", 0.0f, 20.0f);
 }
@@ -276,34 +274,15 @@ void OnRitualVoiceDone()
 // ----------------------------------------------------------------------------
 const string voiceOverCollideArea = "VoiceOverCollideArea";
 
-void OnMapEnterVoiceover()
+void OnMapEnterVoiceover(string t)
 {
-    AddDebugMessage("OnMapEnterVoiceover", false);
-    AddEffectVoice(
-        "SOTR_TEMP_silence.ogg",    /* Voice File */
-        "",                         /* Effect File */
-        "",                         /* Text category */
-        "",                         /* Text entry */
-        true,                       /* Use position */
-        "",                         /* Position entity */
-        0.0f,                       /* Minimum hearing distance */
-        10.0f                       /* Maximum hearing distance */
-    );
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_1.ogg", "JohanNarration", "23");
 }
 
 void OnFirstBookPickup()
 {
     AddDebugMessage("OnFirstBookPickup", false);
-    AddEffectVoice(
-        "SOTR_TEMP_silence.ogg",    /* Voice File */
-        "",                         /* Effect File */
-        "",                         /* Text category */
-        "",                         /* Text entry */
-        true,                       /* Use position */
-        "",                         /* Position entity */
-        0.0f,                       /* Minimum hearing distance */
-        10.0f                       /* Maximum hearing distance */
-    );
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_5.ogg", "JohanNarration", "27");
 }
 
 void OnLastBookPickup()

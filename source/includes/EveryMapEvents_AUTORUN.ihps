@@ -35,6 +35,8 @@ void ResetPlayerState()
     SetPlayerCrouchDisabled(false);
     SetPlayerJumpDisabled(false);
     SetInventoryDisabled(false);
+    SetPlayerActive(true);
+    StopPlayerLookAt();
     BlockAllVanillaHints();
 }
 

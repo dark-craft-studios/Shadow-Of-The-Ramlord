@@ -54,6 +54,28 @@ void PlayVoiceOnPlayerAndSlowdown(
     SetEffectVoiceOverCallback("ResetPlayerState");
 }
 
+void PlayVoiceOnEntityAndSlowdown(
+    string soundFile,
+    string subtitleCategory,
+    string subtitleEntry,
+    string entity)
+{
+    SetPlayerRunSpeedMul(0.0f);
+    SetPlayerMoveSpeedMul(0.6f);
+    SetPlayerJumpDisabled(true);
+    AddEffectVoice(
+        soundFile,        /* Voice File */
+        "",               /* Effect File */
+        subtitleCategory, /* Text category */
+        subtitleEntry,    /* Text entry */
+        true,             /* Use position */
+        entity,           /* Position entity */
+        0.0f,             /* Minimum hearing distance */
+        20.0f             /* Maximum hearing distance */
+    );
+    SetEffectVoiceOverCallback("ResetPlayerState");
+}
+
 // ============================================================================
 // SKYBOX
 // ============================================================================
