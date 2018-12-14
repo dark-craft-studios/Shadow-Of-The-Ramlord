@@ -31,9 +31,14 @@ void IntroductionCutscene(string t)
         SetPlayerActive(false);
         ShowPlayerCrossHairIcons(false);
 
-        delay = 3.0f;
+        delay = 0.1f;
     }
     else if (stage == 1)
+    {
+        SetPlayerActive(false);
+        delay = 2.9f;
+    }
+    else if (stage == 2)
     {
         PlayVoiceOnPlayer(
             "IN_Johan_0.ogg", /* Voice file */
@@ -44,7 +49,7 @@ void IntroductionCutscene(string t)
         PlayMusic("23_amb.ogg");
         SetEffectVoiceOverCallback("IntroductionCutsceneContinue");
     }
-    else if (stage == 2)
+    else if (stage == 3)
     {
         FadeOut(2.5f);
         StopAmbience(2.5f);
@@ -53,25 +58,25 @@ void IntroductionCutscene(string t)
 
         delay = 2.6f;
     }
-    else if (stage == 3)
+    else if (stage == 4)
     {
         TeleportPlayer(areaLogoStart);
 
         delay = 3.0f;
     }
-    else if (stage == 4)
+    else if (stage == 5)
     {
         FadeIn(2.0f);
 
         delay = 5.0f;
     }
-    else if (stage == 5)
+    else if (stage == 6)
     {
         FadeOut(2.0f);
 
         delay = 2.1f;
     }
-    else if (stage == 6)
+    else if (stage == 7)
     {
         FadePlayerFOVMulTo(0.1f, 10.0f);
         TeleportPlayer(areaHouseStart);
@@ -85,7 +90,7 @@ void IntroductionCutscene(string t)
 
         delay = 2.0f;
     }
-    else if (stage == 7)
+    else if (stage == 8)
     {
         FadeIn(5.0f);
 
@@ -95,7 +100,7 @@ void IntroductionCutscene(string t)
 
         delay = 7.0f;
     }
-    else if (stage == 8)
+    else if (stage == 9)
     {
         PlayVoiceOnPlayer(
             "IN_Johan_1.ogg", /* Voice file */
@@ -106,13 +111,13 @@ void IntroductionCutscene(string t)
 
         delay = 10.0f;
     }
-    else if (stage == 9)
+    else if (stage == 10)
     {
         StartPlayerLookAt(entLookAtLetter, 1.0f, 1.5f, "");
 
         delay = 3.0f;
     }
-    else if (stage == 10)
+    else if (stage == 11)
     {
         StopPlayerLookAt();
         SetPlayerActive(true);
