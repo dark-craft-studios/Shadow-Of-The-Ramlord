@@ -13,7 +13,6 @@
         <Mesh Filename="static_objects/factorybase/special/tree_02.DAE">
             <SubMesh Active="true" ID="0" Material="" Name="Tree_Leafy_02a" Rotation="-1.5708 0 0" Scale="0.025 0.025 0.025" SubMeshID="0" Tag="" WorldPos="0 0 0" />
             <SubMesh Active="true" ID="1" Material="" Name="Object002" Rotation="-1.5708 0 0" Scale="0.025 0.025 0.025" SubMeshID="1" Tag="" WorldPos="0 0 0" />
-            <SubMesh Active="true" ID="2" Material="" Name="Tree_Leafy_02a001" Rotation="-1.5708 0 0" Scale="0.025 0.025 0.025" SubMeshID="2" Tag="" WorldPos="0 0 0" />
         </Mesh>
         <Bones />
         <Shapes>
@@ -24,7 +23,6 @@
                 <Children>
                     <Child ID="0" />
                     <Child ID="1" />
-                    <Child ID="2" />
                 </Children>
                 <Shape ID="3" />
             </Body>
