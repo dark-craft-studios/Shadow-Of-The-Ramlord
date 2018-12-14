@@ -26,9 +26,6 @@
         </Shapes>
         <Bodies>
             <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="10" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.00770503 0.483826 0.030091">
-                <Children>
-                    <Child ID="11" />
-                </Children>
                 <Shape ID="2" />
                 <Shape ID="1" />
                 <Shape ID="4" />

@@ -12,8 +12,6 @@
         <Entities />
         <Mesh Filename="entities/furniture/bed_nice/bed_nice_red_low.DAE">
             <SubMesh Active="true" ID="24" Material="" Name="bed_nice_mesh001" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
-            <SubMesh Active="true" ID="25" Material="" Name="Sphere004" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0 0" />
-            <SubMesh Active="true" ID="26" Material="" Name="Object006" Rotation="2.35619 1.5708 -2.35619" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
         </Mesh>
         <Bones />
         <Shapes>
@@ -38,10 +36,6 @@
                 <Shape ID="2" />
             </Body>
             <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="23" LinearDamping="0" Mass="0" Material="Wood" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_2" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.928755 -0.01684">
-                <Children>
-                    <Child ID="25" />
-                    <Child ID="26" />
-                </Children>
                 <Shape ID="7" />
                 <Shape ID="9" />
                 <Shape ID="10" />
