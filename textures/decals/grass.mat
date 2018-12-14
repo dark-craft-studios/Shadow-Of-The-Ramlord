@@ -1,7 +1,0 @@
-<Material>
-    <Main BlendMode="Alpha" DepthTest="true" PhysicsMaterial="Default" Type="decal" UseAlpha="false" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="F:/work/redist/textures/decals/grass.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-    <SpecificVariables />
-</Material>

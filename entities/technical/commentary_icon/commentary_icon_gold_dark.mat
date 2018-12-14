@@ -1,7 +1,0 @@
-<Material>
-    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Metal" Type="SolidDiffuse" UseAlpha="false" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="G:/amnesia/redist/entities/technical/commentary_icon/commentary_icon_gold_dark.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-    <SpecificVariables />
-</Material>

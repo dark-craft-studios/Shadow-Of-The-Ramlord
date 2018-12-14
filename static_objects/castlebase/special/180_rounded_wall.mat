@@ -1,9 +1,0 @@
-<Material>
-    <Main BlendMode="Add" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.100000" PhysicsMaterial="Rock" Type="SolidDiffuse" UseAlpha="false" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/180_rounded_wall.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-        <NMap AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/180_rounded_wall_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-	<Height AnimFrameTime="" AnimMode="" File="E:/lux/redist/static_objects/castlebase/wall/180_rounded_wall_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <Specular AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="E:/lux/redist/static_objects/castlebase/wall/180_rounded_wall_spec.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-</Material>

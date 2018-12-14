@@ -1,9 +1,0 @@
-<Material>
-    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Default" Type="SolidDiffuse" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="" AnimMode="" File="ceiling_elevator_portal.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <NMap AnimFrameTime="" AnimMode="" File="ceiling_elevator_portal_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <Specular AnimFrameTime="" AnimMode="" File="ceiling_elevator_portal_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <Height AnimFrameTime="" AnimMode="" File="ceiling_elevator_portal_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-</Material>

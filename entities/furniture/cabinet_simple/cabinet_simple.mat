@@ -1,8 +1,0 @@
-<Material>
-    <Main DepthTest="True" HeightMapScale="0.05" PhysicsMaterial="Wood_Heavy" Type="SolidDiffuse" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="" AnimMode="" File="cabinet_simple.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <NMap AnimFrameTime="" AnimMode="" File="cabinet_simple_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <Specular AnimFrameTime="" AnimMode="" File="cabinet_simple_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-</Material>

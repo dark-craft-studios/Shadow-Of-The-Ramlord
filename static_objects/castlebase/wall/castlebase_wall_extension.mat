@@ -1,9 +1,0 @@
-<Material>
-    <Main DepthTest="True" HeightMapScale="0.06" PhysicsMaterial="Rock" Type="SolidDiffuse" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="" AnimMode="" File="castlebase_wall_extension.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <NMap AnimFrameTime="" AnimMode="" File="castlebase_wall_extension_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-	<Specular AnimFrameTime="" AnimMode="" File="castlebase_wall_extension_spec.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-        <Height AnimFrameTime="" AnimMode="" File="castlebase_wall_extension_nrm.dds" Mipmaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-</Material>

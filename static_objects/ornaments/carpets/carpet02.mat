@@ -1,7 +1,0 @@
-<Material>
-    <Main BlendMode="Add" DepthTest="true" HeightMapBias="0.000000" HeightMapScale="0.050000" PhysicsMaterial="Generic_Soft" Type="soliddiffuse" UseAlpha="false" />
-    <TextureUnits>
-        <Diffuse AnimFrameTime="0.000000" AnimMode="None" Compress="true" File="C:/Skolarbeten och diverse projekt/3d/projekt/Frictional Games/SVN/redist/static_objects/ornaments/carpets/carpet02.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-        <NMap AnimFrameTime="0.000000" AnimMode="None" Compress="false" File="C:/Skolarbeten och diverse projekt/3d/projekt/Frictional Games/SVN/redist/static_objects/ornaments/carpets/carpet01-04_nrm.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
-    </TextureUnits>
-</Material>
