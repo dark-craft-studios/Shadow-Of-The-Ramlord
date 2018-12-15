@@ -17,7 +17,6 @@ void OnStart()
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
-    FadeIn(3.0f);
     PlayMusic("11_paper_howl.ogg");
 }
 
@@ -55,6 +54,14 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback(
         "EndingSequenceArea", 
         "EndingLine1"
+    );
+    AddSinglePlayerCollideCallback(
+        "TombminderArea", 
+        "LookAtFirstTomb"
+    );
+    AddRepeatedPlayerCollideCallback(
+        "EnsureFirstTombArea",
+        "EnsureFirstTombPickup"
     );
 }
 
@@ -260,12 +267,135 @@ void OnRitualVoiceDone()
 // ----------------------------------------------------------------------------
 void OnMapEnterVoiceover(string t)
 {
+    FadeIn(3.0f);
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_1.ogg", "JohanNarration", "23");
+    SetPlayerMoveSpeedMul(0.1f);
+    StartPlayerLookAt("StatueFaceArea", 0.5f, 0.6f, "");
+    SetEffectVoiceOverCallback("ResetPlayerState");
+    AddTimer("", 5.0f, "BasementCreaks");
+}
+
+void BasementCreaks(string t)
+{
+    int stage = GetLocalVarInt("BasementCreaks");
+    AddLocalVarInt("BasementCreaks", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlaySoundAtEntity("scare_wood_creak_scuf.snt", "BigFeetArea_1");
+        CreateParticleSystemAtEntityWithAlpha("ps_dust_falling_big_feet.ps", "BigFeetArea_1", 0.25f);
+        delay = 4.0f;
+    }
+    else if(stage == 1)
+    {
+        PlaySoundAtEntity("scare_wood_creak_walk.snt", "BigFeetArea_2");
+        CreateParticleSystemAtEntityWithAlpha("ps_dust_falling_big_feet.ps", "BigFeetArea_2", 0.25f);
+        StartPlayerLookAt("BigFeetArea_2", 0.5f, 0.6f, "");
+        delay = 2.0f;
+    }
+    else if(stage == 2)
+    {
+        StartPlayerLookAt("RitualBookArea", 0.5f, 0.6f, "");
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "BasementCreaks");
+}
+
+void LookAtFirstTomb(string a, string b, int s)
+{
+    StartPlayerLookAt("RitualBook_1", 0.8f, 1.5f, "");
+    AddTimer("", 1.5f, "ResetPlayerStateTimer");
+}
+
+void EnsureFirstTombPickup(string a, string b, int s)
+{
+    if(s == CollisionState::onlyEnter)
+    {
+        
+        AddDebugMessage("Checking for first tomb", false);
+        if(GetLocalVarInt("FirstTombPickedUp") != 1)
+        {
+            SetSwingDoorClosed("StorageDoor_1", true, false);
+            SetSwingDoorLocked("StorageDoor_1", true, false);
+            SetPropStaticPhysics("StorageDoor_1", true);
+            StartPlayerLookAt("RitualBook_1", 0.8f, 1.5f, "");
+        }
+        else
+        {
+            SetSwingDoorLocked("StorageDoor_1", false, false);
+            SetPropStaticPhysics("StorageDoor_1", false);
+            SetEntityActive("EnsureFirstTombArea", false);
+        }
+    }
+    else
+    {
+        ResetPlayerState();
+    }
 }
 
 void OnFirstBookPickup()
 {
-    PlayVoiceOnPlayerAndSlowdown("OL_Johan_5.ogg", "JohanNarration", "27");
+    SetLocalVarInt("FirstTombPickedUp", 1);
+    RitualBookPickupScene();
+
+}
+
+const float rbSpotR = 1.0f;
+const float rbSpotG = 0.62f;
+const float rbSpotB = 0.017f;
+
+const float rbPointR = 0.31f;
+const float rbPointG = 0.0f;
+const float rbPointB = 0.0f;
+
+void RitualBookPickupScene(string t)
+{
+    int stage = GetLocalVarInt("RitualBookPickupScene");
+    AddLocalVarInt("RitualBookPickupScene", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        SetEntityActive("RitualBook_1_Static", true);
+        SetPlayerActive(false);
+        StartPlayerLookAt("RitualBook_1_Static", 1.0f, 1.5f, "");
+        FadeLightTo("rbSpot", rbSpotR, rbSpotG, rbSpotB, 1.0f, -1.0f, 0.5f);
+        FadeLightTo("rbPoint", rbPointR, rbPointG, rbPointB, 1.0f, -1.0f, 0.5f);
+        FadeRadialBlurTo(0.015f, 1.0f);
+        FadePlayerFOVMulTo(0.1f, 0.05f);
+        PlayVoiceOnPlayerAndSlowdown("OL_Johan_5.ogg", "JohanNarration", "27");
+        SetEffectVoiceOverCallback("RitualBookPickupScene");
+        return;
+    }
+    else if(stage == 1)
+    {
+        FadeLightTo("rbSpot", 0.0f, 0.0f, 0.0f, 1.0f, -1.0f, 0.5f);
+        FadeLightTo("rbPoint", 0.0f, 0.0f, 0.0f, 1.0f, -1.0f, 0.5f);
+        FadePlayerFOVMulTo(1.0f, 0.75f);
+        FadeRadialBlurTo(0.0f, 0.5f);
+        SetPropActiveAndFade("RitualBook_1_Static", false, 0.5f);
+        delay = 1.0f;
+    }
+    else if(stage == 2)
+    {
+        ResetPlayerState();
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "RitualBookPickupScene");
+}
+
+void RitualBookPickupScene()
+{
+    RitualBookPickupScene("");
 }
 
 void OnLastBookPickup()
