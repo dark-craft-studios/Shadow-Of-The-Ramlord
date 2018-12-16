@@ -6,7 +6,7 @@
     </CATEGORY>
 
     <CATEGORY Name="JohanNarration">
-        <Entry Name="0">Let my dying breath bare forth this curse upon thee. In the end, when this malignancy has won, you shall be like it. Burning in a lake of sulphur and brimstone... forever, and ever.</Entry>
+        <Entry Name="0">Let my dying breath bear forth this curse upon thee. In the end, when this malignancy has won, you shall be like it. Burning in a lake of sulphur and brimstone... forever, and ever.</Entry>
         <Entry Name="1">The Case of Caecea Manor. I was in the twilight of my venerable career when it first came to call.</Entry>
         <Entry Name="2">I was woven into it because of your letter, Emilia. I found it sitting on my desk after I came home on a dreary, overcast evening. In it, you wove a singularly ominous narrative about Anton. Claims of necromancy, occult blasphemy, and worse.</Entry>
         <Entry Name="3">Your words were brief. Hunted. But your resolve to survive was commendable. But now I understand that surviving wasn't your choice, was it?</Entry>
@@ -152,4 +152,22 @@
         <Entry Name="KeyWrongDoor_2">The key I used was for another lock</Entry>
         <Entry Name="KeyWrongDoor_3">That key would unlock a different door.</Entry>
     </CATEGORY>
+
+        <CATEGORY Name="Hints">
+    </CATEGORY>
+
+        <CATEGORY Name="Inventory">
+    <Entry Name="ItemDesc_Lantern">My Lantern, piercing the darkness of the abyss.</Entry>
+    <Entry Name="ItemName_Lantern">My Lantern</Entry>
+    <Entry Name="SanityDesc1">Corruption, thou art my father!</Entry>
+    <Entry Name="SanityDesc2">My convictions were tested.</Entry>
+    <Entry Name="SanityDesc3">My resolve was inexorable.</Entry>
+    <Entry Name="Health">Health</Entry>
+    <Entry Name="HealthDesc0">Slipping into the abyss.</Entry>
+    <Entry Name="HealthDesc1">In need of medical intervention.</Entry>
+    <Entry Name="HealthDesc2">Wounded, but alive.</Entry>
+    <Entry Name="HealthDesc3">Of sound body.</Entry>
+    <Entry Name="Journal">Johan's Journal</Entry>
+    <Entry Name="JournalDesc">An inventory of the madness interred beneath Caecea.</Entry>
+  </CATEGORY>
 </LANGUAGE>

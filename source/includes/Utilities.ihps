@@ -98,3 +98,28 @@ void FadeInTimer(string t)
 {
     FadeIn(2.0f);
 }
+
+void ResetPlayerStateTimer(string t)
+{
+    ResetPlayerState();
+}
+
+void ResetPlayerState()
+{
+    ResetPlayerSpeed();
+    SetPlayerJumpDisabled(false);
+    SetInDarknessEffectsActive(false);
+    SetSanityDrainDisabled(true);
+    SetPlayerCrouchDisabled(false);
+    SetPlayerJumpDisabled(false);
+    SetInventoryDisabled(false);
+    SetPlayerActive(true);
+    StopPlayerLookAt();
+    BlockAllVanillaHints();
+}
+
+void ResetPlayerSpeed()
+{
+    SetPlayerMoveSpeedMul(0.65f);
+    SetPlayerRunSpeedMul(0.75f);
+}

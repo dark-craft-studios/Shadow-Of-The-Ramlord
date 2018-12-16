@@ -209,6 +209,40 @@ void AddSinglePlayerCollideCallback(string area, string callbackFunc)
 
 // ----------------------------------------------------------------------------
 
+void AddRepeatedPlayerCollideCallback(string area, string callbackFunc)
+{
+    AddEntityCollideCallback(
+        "Player",     /* Entity A */
+        area,         /* Entity B */
+        callbackFunc, /* Callback Function */
+        false,         /* Delete after collide */
+        CollisionState::any
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void CreateParticleSystemAtEntityWithAlpha(string psFile, string entity, float alpha)
+{
+    CreateParticleSystemAtEntityExt(
+        "", /* name */
+        psFile,
+        entity,
+        false, /* save */
+        1.0f, /* r */
+        1.0f, /* g */
+        1.0f, /* b */
+        alpha,
+        false, /* fade at distance */
+        0.0f, /* fade min end */
+        0.0f, /* fade min start */
+        0.0f, /* fade max end */
+        0.0f  /* fade max start */
+    );
+}
+
+// ----------------------------------------------------------------------------
+
 void BlockAllVanillaHints()
 {
     BlockHint("EntityGrab");
