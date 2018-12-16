@@ -152,4 +152,20 @@
         <Entry Name="KeyWrongDoor_2">The key I used was for another lock</Entry>
         <Entry Name="KeyWrongDoor_3">That key would unlock a different door.</Entry>
     </CATEGORY>
+
+        <CATEGORY Name="Hints">
+    </CATEGORY>
+
+        <CATEGORY Name="Inventory">
+    <Entry Name="SanityDesc1">Corruption, thou art my father!</Entry>
+    <Entry Name="SanityDesc2">My convictions were tested.</Entry>
+    <Entry Name="SanityDesc3">My resolve was inexorable.</Entry>
+    <Entry Name="Health">Health</Entry>
+    <Entry Name="HealthDesc0">Slipping into the abyss.</Entry>
+    <Entry Name="HealthDesc1">In need of medical intervention.</Entry>
+    <Entry Name="HealthDesc2">Wounded, but alive.</Entry>
+    <Entry Name="HealthDesc3">Of sound body.</Entry>
+    <Entry Name="Journal">Johan's Journal</Entry>
+    <Entry Name="JournalDesc">An inventory of the madness interred beneath Caecea.</Entry>
+  </CATEGORY>
 </LANGUAGE>
