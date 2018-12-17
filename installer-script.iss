@@ -2,6 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "The Shadow of the Ramlord"
+#define RamlordCsFolderName "shadow-of-the-ramlord"
 #define MyAppVersion "0.1"
 #define MyAppPublisher "Dark Craft Studios"
 #define MyAppURL "https://www.moddb.com/mods/the-shadow-of-the-ramlord"
@@ -18,7 +19,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={pf}\{#RamlordCsFolderName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\LICENSE
@@ -27,24 +28,80 @@ OutputBaseFilename=setup
 SetupIconFile=C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sotr.ico
 Compression=lzma
 SolidCompression=yes
+UsePreviousAppDir=no
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\custom_story_settings.cfg"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\extra_english.lang"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\custom_story_settings.cfg"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\extra_english.lang"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\README.md"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\SOTR_thumbnail.png"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\entities\*"; DestDir: "{app}\entities"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\graphics\*"; DestDir: "{app}\graphics"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\maps\*"; DestDir: "{app}\maps"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\music\*"; DestDir: "{app}\music"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sounds\*"; DestDir: "{app}\sounds"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\static_objects\*"; DestDir: "{app}\static_objects"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\textures\*"; DestDir: "{app}\textures"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\SOTR_thumbnail.png"; DestDir: "{app}"; Flags: ignoreversion
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\entities\*"; DestDir: "{app}\entities"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\graphics\*"; DestDir: "{app}\graphics"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\maps\*"; DestDir: "{app}\maps"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\music\*"; DestDir: "{app}\music"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sounds\*"; DestDir: "{app}\sounds"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\static_objects\*"; DestDir: "{app}\static_objects"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\textures\*"; DestDir: "{app}\textures"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 
+[Code]
+var
+  AmnesiaDetectionPage: TInputOptionWizardPage;
+
+procedure InitializeWizard;
+begin
+    { Page creation }
+
+    AmnesiaDetectionPage := CreateInputOptionPage(wpInfoBefore,
+        'Amnesia Location', 'Detected Amnesia copies',
+        'Please select one of the found Amnesia installations on your machine:',
+        True, False);
+
+    AmnesiaDetectionPage.Add('Other (Select the path yourself)');
+    AmnesiaDetectionPage.Values[0] := true;
+
+    if DirExists(ExpandConstant('{pf32}\Steam\steamapps\common\Amnesia The Dark Descent')) then begin
+        AmnesiaDetectionPage.Add('Amnesia: The Dark Descent (Steam)');
+    end;
+
+    if DirExists(ExpandConstant('{localappdata}\DiscordGames\Amnesia The Dark Descent\content')) then begin
+        AmnesiaDetectionPage.Add('Amnesia: The Dark Descent (Discord)');
+    end;
+
+end;
+
+function NextButtonClick(CurPageID: Integer): Boolean;
+var
+  I: Integer;
+  steamFound: Boolean;
+  discordFound: Boolean;
+  selectedIndex: Integer;
+begin
+  if CurPageID = AmnesiaDetectionPage.ID then begin
+    
+    steamFound := DirExists(ExpandConstant('{pf32}\Steam\steamapps\common\Amnesia The Dark Descent'));
+    discordFound := DirExists(ExpandConstant('{localappdata}\DiscordGames\Amnesia The Dark Descent\content'));
+    selectedIndex := AmnesiaDetectionPage.SelectedValueIndex;
+
+    Result := True;
+    
+    if (selectedIndex = 1) and not steamFound and not discordFound then begin
+        WizardForm.DirEdit.Text := ExpandConstant('{pf}\Amnesia\custom_stories\{#RamlordCsFolderName}');
+    end else if (selectedIndex = 1) and steamFound then begin
+        WizardForm.DirEdit.Text := ExpandConstant('{pf32}\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\{#RamlordCsFolderName}');
+    end else if (selectedIndex = 1) and discordFound and not steamFound then begin
+        WizardForm.DirEdit.Text := ExpandConstant('{localappdata}\DiscordGames\Amnesia The Dark Descent\content\custom_stories\{#RamlordCsFolderName}');
+    end else if (selectedIndex = 2) and steamFound and discordFound then begin
+        WizardForm.DirEdit.Text := ExpandConstant('{localappdata}\DiscordGames\Amnesia The Dark Descent\content\custom_stories\{#RamlordCsFolderName}');
+    end else begin
+        WizardForm.DirEdit.Text := ExpandConstant('{pf}\Amnesia\custom_stories\{#RamlordCsFolderName}');
+    end;
+  end else
+    Result := True;
+end;
