@@ -24,6 +24,11 @@ void OnLeave()
     StopAmbience();
 }
 
+// ----------------------------------------------------------------------------
+// Main Cutscene - VA / Teleports / Angles
+// ----------------------------------------------------------------------------
+
+
 void BedroomLineOne(string t)
 {
     int stage = GetLocalVarInt("BedroomLineOne");
