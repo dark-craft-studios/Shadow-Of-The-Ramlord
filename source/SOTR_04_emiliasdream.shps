@@ -28,7 +28,6 @@ void OnLeave()
 // Main Cutscene - VA / Teleports / Angles
 // ----------------------------------------------------------------------------
 
-
 void BedroomLineOne(string t)
 {
     int stage = GetLocalVarInt("BedroomLineOne");
@@ -38,10 +37,10 @@ void BedroomLineOne(string t)
     if(stage == 0)
     {
         PlayVoiceOnPlayerAndSlowdown(
-        "ED_Emilia_1.ogg", 
-        "EmiliaNarration", 
-        "7"
-    );
+            "ED_Emilia_1.ogg", 
+            "EmiliaNarration", 
+            "7"
+        );
         SetEffectVoiceOverCallback("BedroomLineOne");
         return;
     }
@@ -49,69 +48,50 @@ void BedroomLineOne(string t)
     {
         FadeOut(3.0f);
         TeleportPlayer("PlayerStartArea_2");
+        delay = 3.5f;
     }
     else if(stage == 2)
     {
         FadeIn(2.0f);
         PlayVoiceOnPlayerAndSlowdown(
-        "ED_Anton_1.ogg", 
-        "AntonNarration", 
-        "4"
-    );
+            "ED_Anton_1.ogg", 
+            "AntonNarration", 
+            "4"
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "ED_Emilia_2.ogg", 
+            "EmiliaNarration", 
+            "8"
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "ED_Anton_2.ogg", 
+            "AntonNarration", 
+            "5"
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "ED_Emilia_3.ogg", 
+            "EmiliaNarration", 
+            "9"
+        );
+        PlayVoiceOnPlayerAndSlowdown(
+            "ED_Anton_3.ogg", 
+            "AntonNarration", 
+            "6"
+        );
         SetEffectVoiceOverCallback("BedroomLineOne");
         return;
     }
     else if(stage == 3)
     {
-        PlayVoiceOnPlayerAndSlowdown(
-        "ED_Emilia_2.ogg", 
-        "EmiliaNarration", 
-        "8"
-    );
-        SetEffectVoiceOverCallback("BedroomLineOne");
-        return;
+        TeleportPlayer("PlayerStartArea_1");
     }
     else if(stage == 4)
     {
         PlayVoiceOnPlayerAndSlowdown(
-        "ED_Anton_2.ogg", 
-        "AntonNarration", 
-        "5"
-    );
-        SetEffectVoiceOverCallback("BedroomLineOne");
-        return;
-    }
-    else if(stage == 5)
-    {
-        PlayVoiceOnPlayerAndSlowdown(
-        "ED_Emilia_3.ogg", 
-        "EmiliaNarration", 
-        "9"
-    );
-        SetEffectVoiceOverCallback("BedroomLineOne");
-        return;
-    }
-    else if(stage == 6)
-    {
-        PlayVoiceOnPlayerAndSlowdown(
-        "ED_Anton_3.ogg", 
-        "AntonNarration", 
-        "6"
-    );
-        SetEffectVoiceOverCallback("BedroomLineOne");
-        return;
-    }
-    else if(stage == 7)
-    {
-        TeleportPlayer("PlayerStartArea_1");
-    }
-    else if(stage == 8)
-    {
-        PlayVoiceOnPlayerAndSlowdown(
-        "ED_Emilia_4.ogg", 
-        "EmiliaNarration", 
-        "10"
-    );
+            "ED_Emilia_4.ogg", 
+            "EmiliaNarration", 
+            "10"
+        );
         SetEffectVoiceOverCallback("BedroomLineOne");
         return;
     }
@@ -122,10 +102,10 @@ void BedroomLineOne(string t)
     else if(stage == 10)
     {
         PlayVoiceOnPlayerAndSlowdown(
-        "ED_Anton_4.ogg", 
-        "AntonNarration", 
-        "7"
-    );
+            "ED_Anton_4.ogg", 
+            "AntonNarration", 
+            "7"
+        );
         SetEffectVoiceOverCallback("BedroomLineOne");
         return;
     }
