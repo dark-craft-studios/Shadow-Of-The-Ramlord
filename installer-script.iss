@@ -22,29 +22,32 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#RamlordCsFolderName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\LICENSE
-InfoBeforeFile=C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\README.md
-OutputBaseFilename=setup
-SetupIconFile=C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sotr.ico
+LicenseFile=installer-res\license.rtf
+InfoBeforeFile=installer-res\readme.rtf
+OutputBaseFilename=amnesia-sotr-v0-1
+SetupIconFile=installer-res\sotr.ico
 Compression=lzma
 SolidCompression=yes
 UsePreviousAppDir=no
+WizardSmallImageFile=installer-res\sotr-icon.bmp
+WizardImageFile=installer-res\sotr-banner.bmp
+DisableProgramGroupPage=yes
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\custom_story_settings.cfg"; DestDir: "{app}"; Flags: ignoreversion
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\extra_english.lang"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\custom_story_settings.cfg"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\extra_english.lang"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\README.md"; DestDir: "{app}"; Flags: ignoreversion
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\SOTR_thumbnail.png"; DestDir: "{app}"; Flags: ignoreversion
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\entities\*"; DestDir: "{app}\entities"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\graphics\*"; DestDir: "{app}\graphics"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\maps\*"; DestDir: "{app}\maps"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\music\*"; DestDir: "{app}\music"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sounds\*"; DestDir: "{app}\sounds"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\static_objects\*"; DestDir: "{app}\static_objects"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\textures\*"; DestDir: "{app}\textures"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\SOTR_thumbnail.png"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\entities\*"; DestDir: "{app}\entities"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\graphics\*"; DestDir: "{app}\graphics"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\maps\*"; DestDir: "{app}\maps"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\music\*"; DestDir: "{app}\music"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\sounds\*"; DestDir: "{app}\sounds"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\static_objects\*"; DestDir: "{app}\static_objects"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\dev\amnesia\custom_stories\shadow-of-the-ramlord\textures\*"; DestDir: "{app}\textures"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
@@ -102,6 +105,10 @@ begin
     end else begin
         WizardForm.DirEdit.Text := ExpandConstant('{pf}\Amnesia\custom_stories\{#RamlordCsFolderName}');
     end;
+  end else if (CurPageID = wpSelectDir) and not FileExists(ExpandConstant(WizardForm.DirEdit.Text + '\..\..\Launcher.exe')) then begin
+    MsgBox('This directory does not look like the custom_stories folder of an Amnesia: The Dark Descent installation. Please select the correct folder.', mbError, MB_OK);
+    Result := False;
+    exit;
   end else
     Result := True;
 end;
