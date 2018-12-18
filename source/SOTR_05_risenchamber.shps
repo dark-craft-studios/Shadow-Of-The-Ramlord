@@ -21,12 +21,20 @@ void OnStart()
 {
     FadeOut(0.0f);
     WakeUpDialog();
+    SetPlayerMoveSpeedMul(0.0f);
+    SetPlayerRunSpeedMul(0.0f);
+    BlockAllVanillaHints();
+    RegisterCallbacks();
 }
 
 void OnLeave()
 {
 }
 
+void RegisterCallbacks()
+{
+    AddSinglePlayerCollideCallback("JohanLineArea", "QuestDialog");
+}
 // ----------------------------------------------------------------------------
 // After-Cutscene Dialog
 // ----------------------------------------------------------------------------
@@ -45,8 +53,27 @@ void WakeUpDialog(string t)
     }
     else if(stage == 1)
     {
-        // code here
-        delay = 1.0f;
+        PlayVoiceOnPlayerAndSlowdown(
+            "RC_Johan_4.ogg", 
+            "JohanNarration", 
+            "35"
+        );
+        SetEffectVoiceOverCallback("WakeUpDialog");
+        return;
+    }
+    else if(stage == 2)
+    {
+        PlayVoiceOnPlayerAndSlowdown(
+            "RC_Johan_5.ogg", 
+            "JohanNarration", 
+            "36"
+        );
+        SetEffectVoiceOverCallback("WakeUpDialog");
+        return;
+    }
+    else if(stage == 3)
+    {
+        ResetPlayerSpeed();
     }
     else
     {
@@ -59,4 +86,13 @@ void WakeUpDialog(string t)
 void WakeUpDialog()
 {
     WakeUpDialog("");
+}
+
+void QuestDialog(string a, string b, int state)
+{
+        PlayVoiceOnPlayerAndSlowdown(
+            "RC_Johan_6.ogg", 
+            "JohanNarration", 
+            "37"
+        );
 }
