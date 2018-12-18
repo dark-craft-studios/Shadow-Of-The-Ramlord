@@ -13,7 +13,7 @@ const string gMapId = "10";
 
 void OnStart()
 {
-    GetGlobalLoadingScreen(gMapId);
+    GetGlobalLoadingScreen("04");
     AddEntityCollideCallback("Player", "EndingCutscene1", "CreditsSequence", true, 1);
 }
 

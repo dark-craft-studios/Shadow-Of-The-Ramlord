@@ -19,11 +19,44 @@ const string gMapId = "10";
 
 void OnStart()
 {
-    GetGlobalLoadingScreen(gMapId);
-    FadeOut(0);
-    FadeIn(6);
+    FadeOut(0.0f);
+    WakeUpDialog();
 }
 
 void OnLeave()
 {
+}
+
+// ----------------------------------------------------------------------------
+// After-Cutscene Dialog
+// ----------------------------------------------------------------------------
+
+void WakeUpDialog(string t)
+{
+    int stage = GetLocalVarInt("WakeUpDialog");
+    AddLocalVarInt("WakeUpDialog", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        FadeIn(8.0f);
+
+        delay = 5.0f;
+    }
+    else if(stage == 1)
+    {
+        // code here
+        delay = 1.0f;
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "WakeUpDialog");
+}
+
+void WakeUpDialog()
+{
+    WakeUpDialog("");
 }

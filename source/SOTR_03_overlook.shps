@@ -14,7 +14,7 @@ void OnStart()
 {
     //OnBasementDoorInteract();
 
-    GetGlobalLoadingScreen(gMapId);
+    GetGlobalLoadingScreen("03");
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
