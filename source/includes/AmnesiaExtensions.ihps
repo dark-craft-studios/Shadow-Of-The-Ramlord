@@ -180,6 +180,34 @@ void PlayVoiceOnPlayer(
     );
 }
 
+void PlayVoice(string file)
+{
+    AddEffectVoice(
+        soundFile,        /* Sound File */
+        "",               /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        false,            /* Uses position */
+        "",               /* Position Entity */
+        0.0f,             /* Minimum hearing distance */
+        10.0f             /* Maximum hearing distance */
+    );
+}
+
+void PlayVoice(string file, string entity)
+{
+    AddEffectVoice(
+        soundFile,        /* Sound File */
+        "",               /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        true,             /* Uses position */
+        entity,           /* Position Entity */
+        0.0f,             /* Minimum hearing distance */
+        20.0f             /* Maximum hearing distance */
+    );
+}
+
 // ----------------------------------------------------------------------------
 
 void FadeOutMusic(float fadeOut)
