@@ -20,6 +20,7 @@ const string gMapId = "10";
 void OnStart()
 {
     FadeOut(0.0f);
+    StopPlayerLookAt();
     WakeUpDialog();
     SetPlayerMoveSpeedMul(0.0f);
     SetPlayerRunSpeedMul(0.0f);
@@ -35,6 +36,7 @@ void RegisterCallbacks()
 {
     AddSinglePlayerCollideCallback("JohanLineArea", "QuestDialog");
 }
+
 // ----------------------------------------------------------------------------
 // After-Cutscene Dialog
 // ----------------------------------------------------------------------------
@@ -53,7 +55,7 @@ void WakeUpDialog(string t)
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayerAndSlowdown(
+        PlayVoiceOnPlayer(
             "RC_Johan_4.ogg", 
             "JohanNarration", 
             "35"
@@ -63,7 +65,7 @@ void WakeUpDialog(string t)
     }
     else if(stage == 2)
     {
-        PlayVoiceOnPlayerAndSlowdown(
+        PlayVoiceOnPlayer(
             "RC_Johan_5.ogg", 
             "JohanNarration", 
             "36"
@@ -88,9 +90,14 @@ void WakeUpDialog()
     WakeUpDialog("");
 }
 
+// ----------------------------------------------------------------------------
+// Introducing the Item Quest (Should be expanded to tie into the area box by the torture room door)
+// ----------------------------------------------------------------------------
+
+
 void QuestDialog(string a, string b, int state)
 {
-        PlayVoiceOnPlayerAndSlowdown(
+        PlayVoiceOnPlayer(
             "RC_Johan_6.ogg", 
             "JohanNarration", 
             "37"
