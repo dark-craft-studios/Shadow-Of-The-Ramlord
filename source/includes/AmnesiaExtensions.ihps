@@ -197,7 +197,7 @@ void PlayVoice(string file)
 void PlayVoice(string file, string entity)
 {
     AddEffectVoice(
-        soundFile,        /* Sound File */
+        file,        /* Sound File */
         "",               /* Effect File */
         GetGlobalVarString(file + "_Category"),
         GetGlobalVarString(file + "_Entry"),
