@@ -183,7 +183,7 @@ void PlayVoiceOnPlayer(
 void PlayVoice(string file)
 {
     AddEffectVoice(
-        soundFile,        /* Sound File */
+        file,        /* Sound File */
         "",               /* Effect File */
         GetGlobalVarString(file + "_Category"),
         GetGlobalVarString(file + "_Entry"),
