@@ -14,9 +14,11 @@ const string gMapId = "06";
 void OnStart()
 {
     StartAmbience("ambience_hollow_tinker.snt");
+    FadeOut(0.0f);
     DestroyDataCache();
     BlockAllVanillaHints();
     BedroomLineOne();
+    SetPlayerActive(false);
 }
 
 void OnLeave()
@@ -36,6 +38,8 @@ void BedroomLineOne(string t)
 
     if(stage == 0)
     {
+        FadeIn(5.0f);
+        StartPlayerLookAt("cross_small_wood_1", 10.0f, 10.0f, "");
         PlayVoiceOnPlayerAndSlowdown(
             "ED_Emilia_1.ogg", 
             "EmiliaNarration", 
@@ -46,13 +50,15 @@ void BedroomLineOne(string t)
     }
     else if(stage == 1)
     {
-        FadeOut(3.0f);
+        FadeOut(2.0f);
+        SetEntityActive("Sound_1", false);
         TeleportPlayer("PlayerStartArea_2");
-        delay = 3.5f;
+        StartPlayerLookAt("crude_man_chains_statue_16", 10.0f, 10.0f, "");
+        delay = 8.5f;
     }
     else if(stage == 2)
     {
-        FadeIn(2.0f);
+        FadeIn(5.0f);
         PlayVoiceOnPlayerAndSlowdown(
             "ED_Anton_1.ogg", 
             "AntonNarration", 
@@ -83,10 +89,14 @@ void BedroomLineOne(string t)
     }
     else if(stage == 3)
     {
+        FadeOut(2.0f);
+        StartPlayerLookAt("cross_small_wood_1", 10.0f, 10.0f, "");
         TeleportPlayer("PlayerStartArea_1");
+        delay = 8.5f;
     }
     else if(stage == 4)
     {
+        FadeIn(2.0f);
         PlayVoiceOnPlayerAndSlowdown(
             "ED_Emilia_4.ogg", 
             "EmiliaNarration", 
@@ -95,12 +105,16 @@ void BedroomLineOne(string t)
         SetEffectVoiceOverCallback("BedroomLineOne");
         return;
     }
-    else if(stage == 9)
+    else if(stage == 5)
     {
+        FadeOut(5.0f);
+        StartPlayerLookAt("crude_man_chains_statue_18", 10.0f, 10.0f, "");
         TeleportPlayer("PlayerStartArea_3");
+        delay = 8.5f;
     }
-    else if(stage == 10)
+    else if(stage == 6)
     {
+        FadeIn(2.0f);
         PlayVoiceOnPlayerAndSlowdown(
             "ED_Anton_4.ogg", 
             "AntonNarration", 
