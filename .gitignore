@@ -11,3 +11,6 @@ tasks.json
 *.msh
 *.anm
 *.nodes
+
+# Installer script output
+Output/
