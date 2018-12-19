@@ -230,6 +230,7 @@ void LibraryCrashTimer(string t)
         GiveSanityDamage(1.0f, true);
         CreateParticleSystemAtEntity("ps_impact_dirt_low.ps", "LadderEffectsArea");
         SetPlayerActive(false);
+        StopAllEffectVoices(0.1);
         StopMusic(0.5f, 1);
         SetLanternActive(false, true);
         StartPlayerLookAt("CorridorFallViewTarget", 2.0f, 3.0f, "");
