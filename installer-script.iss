@@ -32,6 +32,7 @@ UsePreviousAppDir=no
 WizardSmallImageFile=installer-res\sotr-icon.bmp
 WizardImageFile=installer-res\sotr-banner.bmp
 DisableProgramGroupPage=yes
+PrivilegesRequired=lowest
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
