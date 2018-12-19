@@ -167,7 +167,7 @@ void SilentCorridorStart(string a, string b, int state)
     SetInventoryDisabled(true);
     PlaySoundAtEntity("skeletalk", "SOTR_skeletalk.snt", "SkeletalkTarget");
     FadeLightTo("BoxLight_1", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
-    FadeLightTo("BoxLight_2", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
+    FadeLightTo("BoxLight_3", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
 }
 
 void SilentCorridorEnd(string a, string b, int state)

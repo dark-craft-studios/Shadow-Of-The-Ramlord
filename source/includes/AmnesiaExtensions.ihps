@@ -180,6 +180,34 @@ void PlayVoiceOnPlayer(
     );
 }
 
+void PlayVoice(string file)
+{
+    AddEffectVoice(
+        file,        /* Sound File */
+        "",               /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        false,            /* Uses position */
+        "",               /* Position Entity */
+        0.0f,             /* Minimum hearing distance */
+        10.0f             /* Maximum hearing distance */
+    );
+}
+
+void PlayVoice(string file, string entity)
+{
+    AddEffectVoice(
+        file,        /* Sound File */
+        "",               /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        true,             /* Uses position */
+        entity,           /* Position Entity */
+        0.0f,             /* Minimum hearing distance */
+        20.0f             /* Maximum hearing distance */
+    );
+}
+
 // ----------------------------------------------------------------------------
 
 void FadeOutMusic(float fadeOut)
@@ -204,6 +232,40 @@ void AddSinglePlayerCollideCallback(string area, string callbackFunc)
         callbackFunc, /* Callback Function */
         true,         /* Delete after collide */
         CollisionState::onlyEnter
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void AddRepeatedPlayerCollideCallback(string area, string callbackFunc)
+{
+    AddEntityCollideCallback(
+        "Player",     /* Entity A */
+        area,         /* Entity B */
+        callbackFunc, /* Callback Function */
+        false,         /* Delete after collide */
+        CollisionState::any
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void CreateParticleSystemAtEntityWithAlpha(string psFile, string entity, float alpha)
+{
+    CreateParticleSystemAtEntityExt(
+        "", /* name */
+        psFile,
+        entity,
+        false, /* save */
+        1.0f, /* r */
+        1.0f, /* g */
+        1.0f, /* b */
+        alpha,
+        false, /* fade at distance */
+        0.0f, /* fade min end */
+        0.0f, /* fade min start */
+        0.0f, /* fade max end */
+        0.0f  /* fade max start */
     );
 }
 
