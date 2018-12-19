@@ -11,6 +11,3 @@ tasks.json
 *.msh
 *.anm
 *.nodes
-
-# Installer output
-Output/
