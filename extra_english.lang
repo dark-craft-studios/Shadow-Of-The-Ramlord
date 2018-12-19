@@ -30,11 +30,11 @@
         <Entry Name="23">At last, I was rid of that cyclopean tunnel. I found myself in the decrepit basement of the Overlook Library, unaware that I would soon meet you, Emilia.</Entry>
         <Entry Name="24">It is Johan! I received your letter. Where are you?</Entry>
         <Entry Name="25">I remember I accepted your proposition. I would complete your ritual. Ha; such a fool was I to believe your intent was pure.</Entry>
-        <Entry Name="26">Now that I know you deceived me, I want you to tell me… what really spoke to me from behind that locked door?</Entry>
+        <Entry Name="26">Now that I know you deceived me, I want you to tell me... what really spoke to me from behind that locked door?</Entry>
         <Entry Name="27">Each of the tomes bore a revolting subject matter. I am still suspicious how a Baroness could so easily comprehend the occult. Tell me, is that why Anton was drawn to court you?</Entry>
-        <Entry Name="28">The creature was once a guest of Anton's, having undertaken his… process of transfiguration. What a horrific notion; to be the embodiment of malign, eldritch madness while paralyzed of control, locked behind your own eyes.</Entry>
-        <Entry Name="29">With the last of the grimoires in hand, I went to the ritual circle downstairs. As swiftly as I could, I unbound the spell sealing “Emilia” to the library.</Entry>
-        <Entry Name="30">The room was dark, permeating with an unnatural energy. I discovered many artifacts about you, none more important than the gravestone outside. Your first child? I fail to judge you for its “accidental” demise. I would have done the same as you.</Entry>
+        <Entry Name="28">The creature was once a guest of Anton's, having undertaken his... process of transfiguration. What a horrific notion; to be the embodiment of malign, eldritch madness while paralyzed of control, locked behind your own eyes.</Entry>
+        <Entry Name="29">With the last of the grimoires in hand, I went to the ritual circle downstairs. As swiftly as I could, I unbound the spell sealing "Emilia" to the library.</Entry>
+        <Entry Name="30">The room was dark, permeating with an unnatural energy. I discovered many artifacts about you, none more important than the gravestone outside. Your first child? I fail to judge you for its "accidental" demise. I would have done the same as you.</Entry>
         <Entry Name="31">As I meditated above the tombstone, I felt my consciousness transform into a fleeting dream. In a vision, I would gaze through your eyes, witnessing horrors without comprehension.</Entry>
         <Entry Name="32">Your incantation left me unconscious, only to be discovered by Anton's lurking servant. I have a dim recollection of being dragged deeper and deeper into the bowels of Caecea.</Entry>
         <Entry Name="33">I came to my senses in pitch blackness. Irons cut sharply into my wrists, and my feet were bound at the ankles. Suspended to the wall, I awaited the arrival of my captor.</Entry>
@@ -57,7 +57,7 @@
 
     <CATEGORY Name="AntonNarration">
         <Entry Name="1">Tell me dear, why have you been tense this evening? What do you suspect of me?</Entry>
-        <Entry Name="2">These are an envoy of private individuals. From far flung lands they've come to indulge in a particular fascination. One that is… mutual. Our marriage is dear to them, too, don't worry. Although maybe not for the reasons you suspect.</Entry>
+        <Entry Name="2">These are an envoy of private individuals. From far flung lands they've come to indulge in a particular fascination. One that is... mutual. Our marriage is dear to them, too, don't worry. Although maybe not for the reasons you suspect.</Entry>
         <Entry Name="3">Oh, my love. Soon, soon you will understand.</Entry>
         <Entry Name="4">He was stillborn! Why did you do this to us?</Entry>
         <Entry Name="5">How did you kill him?</Entry>
@@ -74,7 +74,7 @@
         <Entry Name="16">And I studied them all. I've cultivated a thread dating back thousands of years; before the Nile split, and before the first bricks of Memphis were laid. I became enraptured by a horrifying proposition – a moral sacrifice that crept between the gates of my imperial mind when only such things can; in my quietest dreams.</Entry>
         <Entry Name="17">I raised the dead and plied their terrified, agonized minds for the answers I sought. I was in relentless pursuit to make contact with a singular being; the voice of the void itself. I knew it was still alive; without ego, without purpose. A cataclysmic maelstrom of unreality, beckoning me to grant it access to reconstruct the banal restrictions of my reality. It called itself the Ramlord; Lucifuge...</Entry>
         <Entry Name="18">Last words...? I am already dead. Forever I will lie beneath the weight of my failure. The earth can assimilate the rotting, for sure. But I will join the chorus of screams buried underneath the very stones of Caecea.!</Entry>
-        <Entry Name="19">There is nothing left for me upon this world. My only love has betrayed me, you seek my damnation and my Lord has forsaken me. Show mercy, Witchfinder. When you have won… burn it all.</Entry>
+        <Entry Name="19">There is nothing left for me upon this world. My only love has betrayed me, you seek my damnation and my Lord has forsaken me. Show mercy, Witchfinder. When you have won... burn it all.</Entry>
     </CATEGORY>
 
     <CATEGORY Name="EmiliaNarration">
@@ -89,7 +89,7 @@
         <Entry Name="9">I just want to rest... I'm so tired...</Entry>
         <Entry Name="10">In the months after the miscarriage, Anton fled the manor and abandoned me to walk these halls alone. After months of lonesome excursions down every corridor, through every trail in the forests... I reached a conclusion of mind that he no doubt intended for me. Last night I celebrated what remained of my life, and the wonderful memories I will take with me. I danced and sang, cried and screamed, the whole night through. I did not want to forget the sound of my own voice. One last celebration... Now I will end this madness. I will not succumb to starvation nor the frigid grip of insanity. Instead, I shall rend my arms with a knife until exsanguination embraces me with it’s cold, final recourse.</Entry>
         <Entry Name="11">Johan, please, come in here. I need to talk to you.</Entry>
-        <Entry Name="12">He removed my arms... my legs… I was powerless to stop it, this time.</Entry>
+        <Entry Name="12">He removed my arms... my legs... I was powerless to stop it, this time.</Entry>
         <Entry Name="13">Please... just make it swift.</Entry>
         <Entry Name="14">Speak with me awhile, Johan. Tell me of your journey. We have little else to do, for as you must know, there can never be an escape for us. Caecea will degrade into a dilapidated ruin; a curious study of a family vanished, and a manor abandoned. But we will never be found.</Entry>
     </CATEGORY>
