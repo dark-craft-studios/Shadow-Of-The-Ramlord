@@ -65,31 +65,19 @@ void GateOpenEvent(string a, string b, int state)
 // ============================================================================
 void JohanInitialLine(string a, string b, int state)
 {
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Johan_1.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "7"               /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("PR_Johan_1.ogg");
 }
 
 void JohanGateLine(string a, string b, int state)
 {
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Johan_2.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "8"               /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("PR_Johan_2.ogg");
 }
 
 void JohanAltarLine(string &in asParent, string &in asChild, int alState)
 {
     AltarMiniCutscene("");
 
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Johan_4.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "10"              /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("PR_Johan_4.ogg");
 }
 
 // ============================================================================
@@ -130,11 +118,7 @@ void AltarMiniCutscene(string t)
 void Meditate(string item, string entity)
 {
     SetEntityActive("JohanVoice_3", false);
-    PlayVoiceOnPlayerAndSlowdown(
-        "PR_Johan_5.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "11"              /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("PR_Johan_5.ogg");
     SetEntityActive("TidyUp", true);
     SetSwingDoorLocked(entClearsightDoor, false, true);
     SetEntityActive("JohanVoice_3", false);
@@ -175,31 +159,11 @@ void AntonAndEmiliaCutscene(string t)
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Anton_1.ogg", /* Voice file */
-            "AntonNarration", /* Subtitles Category */
-            "1"               /* Subtitles Entry */
-        );
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Emilia_1.ogg", /* Voice file */
-            "EmiliaNarration", /* Subtitles Category */
-            "1"               /* Subtitles Entry */
-        );
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Anton_2.ogg", /* Voice file */
-            "AntonNarration", /* Subtitles Category */
-            "2"               /* Subtitles Entry */
-        );
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Emilia_2.ogg", /* Voice file */
-            "EmiliaNarration", /* Subtitles Category */
-            "2"               /* Subtitles Entry */
-        );
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Anton_3.ogg", /* Voice file */
-            "AntonNarration", /* Subtitles Category */
-            "3"               /* Subtitles Entry */
-        );
+        PlayVoiceOnPlayerAndSlowdown("PR_Anton_1.ogg");
+        PlayVoiceOnPlayerAndSlowdown("PR_Emilia_1.ogg");
+        PlayVoiceOnPlayerAndSlowdown("PR_Anton_2.ogg");
+        PlayVoiceOnPlayerAndSlowdown("PR_Emilia_2.ogg");
+        PlayVoiceOnPlayerAndSlowdown("PR_Anton_3.ogg");
         SetEffectVoiceOverCallback("AntonAndEmiliaVoiceLoop");
         return;
     }
@@ -239,11 +203,7 @@ void PrologueSecondLocked(string entity)
     if(GetLocalVarInt("CommentedOnLockedDoor") == 0)
     {
         SetLocalVarInt("CommentedOnLockedDoor", 1);
-        PlayVoiceOnPlayerAndSlowdown(
-            "PR_Johan_3.ogg", /* Voice file */
-            "JohanNarration", /* Subtitles Category */
-            "9"               /* Subtitles Entry */
-        );
+        PlayVoiceOnPlayerAndSlowdown("PR_Johan_3.ogg");
     }
 }
 

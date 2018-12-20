@@ -7,6 +7,7 @@ tasks.json
 
 # Amnesia ignores
 *.map_cache
+*.map_cache_fastload
 *.nodes
 *.msh
 *.anm

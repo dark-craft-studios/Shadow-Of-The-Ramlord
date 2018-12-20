@@ -162,20 +162,12 @@ void OnFirstNotePickedUp()
 void INJohanLineOne(string &in asTimer)
 
 {
-    PlayVoiceOnPlayerAndSlowdown(
-        "IN_Johan_3.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "3"               /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("IN_Johan_3.ogg");
 }
 
 void OnClearsightPickedUp()
 {
-    PlayVoiceOnPlayerAndSlowdown(
-        "IN_Johan_5.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "5"               /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("IN_Johan_5.ogg");
 }
 
 void OnLanternPickedUp()
@@ -185,11 +177,7 @@ void OnLanternPickedUp()
 
 void OnAllItemsPickedUp()
 {
-    PlayVoiceOnPlayerAndSlowdown(
-        "IN_Johan_6.ogg", /* Voice file */
-        "JohanNarration", /* Subtitles Category */
-        "6"               /* Subtitles Entry */
-    );
+    PlayVoiceOnPlayerAndSlowdown("IN_Johan_6.ogg");
     SetEffectVoiceOverCallback("OnLanternMonologueEnd");
 
     CompleteQuest("IntroPackup");

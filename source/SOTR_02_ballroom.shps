@@ -11,7 +11,7 @@
 void OnStart()
 {
     RegisterCallbacks();
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_1.ogg", "JohanNarration", "12");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_1.ogg");
 }
 
 void OnEnter()
@@ -202,7 +202,7 @@ void OnSecretLeverPulled(string entity, int state)
     if(state == 0) return;
     SetLeverStuckState(entity, state, true);
     SetMoveObjectState("SecretShelf", -1.0f);
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_8.ogg", "JohanNarration", "21");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_8.ogg");
 }
 
 // ============================================================================
@@ -241,7 +241,7 @@ void LibraryCrashTimer(string t)
     {
         RemoveItem("Lantern");
         SetEntityActive("Lantern", true);
-        PlayVoiceOnPlayerAndSlowdown("BA_Johan_7.ogg", "JohanNarration", "18");
+        PlayVoiceOnPlayerAndSlowdown("BA_Johan_7.ogg");
         delay = 0.1f;
     }
     else if(stage == 3)
@@ -422,22 +422,22 @@ void TightCorridorDoorsTimer(string t)
 // ============================================================================
 void BAJohanLineThree(string &in asParent, string &in asChild, int alState)
 {
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_3.ogg", "JohanNarration", "14");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_3.ogg");
 }
 
 void BAJohanLineFour(string &in entity)
 {
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_4.ogg", "JohanNarration", "15");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_4.ogg");
 }
 
 void JohanLineOne(string &in asParent, string &in asChild, int alState)
 {
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg", "JohanNarration", "17");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
 }
 
 void JohanLineTwo(string &in asParent, string &in asChild, int alState)
 {
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_9.ogg", "JohanNarration", "22");
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_9.ogg");
 }
 
 // ============================================================================
@@ -513,7 +513,7 @@ void OnDoorInteractMessage(string entity)
         !HasItem("LibraryKey") && 
         GetLocalVarInt("CommentedOnLibraryDoor") == 0)
     {
-        PlayVoiceOnPlayerAndSlowdown("BA_Johan_5.ogg", "JohanNarration", "16");
+        PlayVoiceOnPlayerAndSlowdown("BA_Johan_5.ogg");
         SetLocalVarInt("CommentedOnLibraryDoor", 1);
     }
     else if(locked && StringIsInArray(entity, unlockableDoors))
