@@ -2,6 +2,10 @@
 
 using namespace std;
 
+typedef int uint;
+
+string operator+(const string& a, const int& b);
+
 float RandFloat(float min, float max);
 int RandInt(int min, int max);
 bool StringContains(string hayStack, string needle);

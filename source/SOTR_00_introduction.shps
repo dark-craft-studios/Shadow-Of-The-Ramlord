@@ -119,17 +119,19 @@ void OnExitDoorInteract(string entity)
 // ============================================================================
 // COLLECTING REQUIRED ITEMS
 // ============================================================================
-const string[] requiredItems =
+const int requiredItemsCount = 3;
+
+bool ItemIsRequired(string itemName)
 {
-    entFirstNote,
-    entLantern,
-    entClearsightBook
-};
+    return itemName == entFirstNote ||
+    itemName == entLantern ||
+    itemName == entClearsightBook;
+}
 
 void OnRequiredItemPickup(string entity)
 {
-    // Ignore if not in the list of required items
-    if (!StringIsInArray(entity, requiredItems)) { return; }
+    // Ignore not required items
+    if (!ItemIsRequired(entity)) { return; }
 
     if (entity == entLantern)        { OnLanternPickedUp(); }
     if (entity == entFirstNote)      { OnFirstNotePickedUp(); }
@@ -146,7 +148,7 @@ void OnRequiredItemPickup(string entity)
 
 bool AllRequiredItemsPickedUp()
 {
-    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItems.length();
+    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItemsCount;
 }
 
 // ============================================================================
@@ -159,8 +161,7 @@ void OnFirstNotePickedUp()
     AddTimer("", 6.0f, "INJohanLineOne");
 }
 
-void INJohanLineOne(string &in asTimer)
-
+void INJohanLineOne(string t)
 {
     PlayVoiceOnPlayerAndSlowdown("IN_Johan_3.ogg");
 }

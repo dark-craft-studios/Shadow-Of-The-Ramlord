@@ -20,18 +20,6 @@ void GetGlobalLoadingScreen(string mapId)
 }
 
 // ============================================================================
-// STRING HELPERS
-// ============================================================================
-bool StringIsInArray(string text, string[] array)
-{
-    for(uint i = 0; i < array.length(); i++)
-    {
-        if(array[i] == text) return true;
-    }
-    return false;
-}
-
-// ============================================================================
 // DOOR MESSAGES
 // ============================================================================
 void ShowDoorMessage(string entry)

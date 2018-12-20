@@ -1,7 +1,6 @@
 #include "AmnesiaSignatures.cpp"
 #include "AmnesiaExtensions.ihps"
 #include "Utilities.ihps"
-#include "ResetPlayerStateOnStart.ihps"
 #include "EveryMapEvents_AUTORUN.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
 
@@ -31,12 +30,12 @@ void OnLeave()
 
 void RegisterCallbacks()
 {
-    UseItemParams params = UseItemParams();
-    params.item = "LibraryKey";
-    params.entity = "LibraryDoor";
-    params.callbackFunc = "UnlockLibraryDoor";
-    params.autoDestroy = true;
-    AddUseKeyOnDoor(params);
+
+    AddUseItemCallback(
+        "LibraryKey", /* item */
+        "LibraryDoor", /* entity */
+        "UnlockLibraryDoor" /* callback */
+    );
 
     AddSinglePlayerCollideCallback(
         "TightCorridorFallArea", 
@@ -57,22 +56,34 @@ void RegisterCallbacks()
 // ============================================================================
 const int soundAreaCount = 12;
 
-const string[] ambSounds =
+string GetRandomAmbSound()
 {
-    "scare_animal_squeal.snt",
-    "scare_slam_door.snt",
-    "scare_steps_big.snt",
-    "scare_walk_ghost.snt",
-    "scare_wood_creak_scuf.snt",
-    "scare_wood_creak_walk.snt"
-};
+    // Note(Peter): Rand is inclusive
+    // on both sides, unlike in C#.
+    switch(RandInt(0, 5))
+    {
+        case 0: return "scare_animal_squeal.snt";
+        case 1: return "scare_slam_door.snt";
+        case 2: return "scare_steps_big.snt";
+        case 3: return "scare_walk_ghost.snt";
+        case 4: return "scare_wood_creak_scuf.snt";
+        case 5: return "scare_wood_creak_walk.snt";
+    }
+
+    return "";
+}
+
+string GetRandomSoundArea()
+{
+    return "AmbSoundArea_" + RandInt(0, soundAreaCount);
+}
 
 void AmbienceLoop(string t)
 {
     if(GetLocalVarInt("StopAmbience") == 1) return;
 
-    string sound = ambSounds[RandInt(0, ambSounds.length() - 1)];
-    string area = "AmbSoundArea_" + RandInt(0, soundAreaCount);
+    string sound = GetRandomAmbSound();
+    string area = GetRandomSoundArea();
 
     PlaySoundAtEntity("", sound, area, 0.0f, false);
 
@@ -97,53 +108,46 @@ const float boxlightR = 0.0f;
 const float boxlightG = 0.032f;
 const float boxlightB = 0.068f;
 
-const string[] CorridorCandles = {
-    "candlestick_wall_orange_8",
-    "candlestick_wall_orange_9",
-    "candlestick01_13",
-    "candlestick01_14",
-    "candle_floor_small_13",
-    "candle_floor_small_14",
-    "candle_floor_small_15",
-    "candle_floor_small_8",
-    "candle_floor_small_9",
-    "candle_floor_small_7",
-    "candle_floor_small_5",
-    "candle_floor_small_6",
-    "candle_floor_small_4",
-    "candle_floor_small_10",
-    "candle_floor_small_11",
-    "candle_floor_small_12",
-    "candle_floor_small_20",
-    "candle_floor_small_16",
-    "candle_floor_small_17",
-    "candle_floor_small_19",
-    "candle_floor_small_18",
-    "candlestick_tri_1",
-    "chandelier_simple_short_4"
-};
+void TurnOffCorridorLamps()
+{
+    SetLampLit("candlestick_wall_orange_8", false, true);
+    SetLampLit("candlestick_wall_orange_9", false, true);
+    SetLampLit("candlestick01_13", false, true);
+    SetLampLit("candlestick01_14", false, true);
+    SetLampLit("candle_floor_small_13", false, true);
+    SetLampLit("candle_floor_small_14", false, true);
+    SetLampLit("candle_floor_small_15", false, true);
+    SetLampLit("candle_floor_small_8", false, true);
+    SetLampLit("candle_floor_small_9", false, true);
+    SetLampLit("candle_floor_small_7", false, true);
+    SetLampLit("candle_floor_small_5", false, true);
+    SetLampLit("candle_floor_small_6", false, true);
+    SetLampLit("candle_floor_small_4", false, true);
+    SetLampLit("candle_floor_small_10", false, true);
+    SetLampLit("candle_floor_small_11", false, true);
+    SetLampLit("candle_floor_small_12", false, true);
+    SetLampLit("candle_floor_small_20", false, true);
+    SetLampLit("candle_floor_small_16", false, true);
+    SetLampLit("candle_floor_small_17", false, true);
+    SetLampLit("candle_floor_small_19", false, true);
+    SetLampLit("candle_floor_small_18", false, true);
+    SetLampLit("candlestick_tri_1", false, true);
+    SetLampLit("chandelier_simple_short_4", false, true);
+}
 
-const string[] CorridorPointLights = {
-    "PointLight_5",
-    "PointLight_19",
-    "PointLight_20"
-};
+void FadeOutCorridorLights(float timeInSeconds)
+{
+    FadeLightTo("PointLight_5", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("PointLight_19", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("PointLight_20", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+}
 
 void OnRitualKeyPickup(string entity)
 {
     AddSinglePlayerCollideCallback("SilentCorridorStartArea", "SilentCorridorStart");
     AddSinglePlayerCollideCallback("SilentCorridorEndArea", "SilentCorridorEnd");
-
-    for(uint i = 0; i < CorridorCandles.length(); i++)
-    {
-        SetLampLit(CorridorCandles[i], false, true);
-    }
-
-    for(uint i = 0; i < CorridorPointLights.length(); i++)
-    {
-        FadeLightTo(CorridorPointLights[i], 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, 0.5f);
-    }
-
+    FadeOutCorridorLights(0.5f);
+    TurnOffCorridorLamps();
     AddTimer("", 1.5f, "DelayedDoorSlam");
 }
 
@@ -420,22 +424,22 @@ void TightCorridorDoorsTimer(string t)
 // ============================================================================
 // VOICE LINES
 // ============================================================================
-void BAJohanLineThree(string &in asParent, string &in asChild, int alState)
+void BAJohanLineThree(string a, string b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_3.ogg");
 }
 
-void BAJohanLineFour(string &in entity)
+void BAJohanLineFour(string s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_4.ogg");
 }
 
-void JohanLineOne(string &in asParent, string &in asChild, int alState)
+void JohanLineOne(string a, string b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
 }
 
-void JohanLineTwo(string &in asParent, string &in asChild, int alState)
+void JohanLineTwo(string a, string b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_9.ogg");
 }
@@ -443,56 +447,25 @@ void JohanLineTwo(string &in asParent, string &in asChild, int alState)
 // ============================================================================
 // DOOR USE ITEM MESSAGES
 // ============================================================================
-const string[] allDoors =
-{
-    "mansion_1",
-    "mansion_2",
-    "mansion_4",
-    "mansion_5",
-    "CorridorDoor",
-    "level_wood_1",
-    "level_wood_2",
-    "LibraryDoor"
-};
-
-const string[] unlockableDoors =
-{
-    "LibraryDoor"
-};
-
-void AddUseKeyOnDoor(UseItemParams params)
-{
-    string correctDoor = params.entity;
-    string correctCallback = params.callbackFunc;
-
-    for(uint i = 0; i < allDoors.length(); i++)
-    {
-        params.entity = allDoors[i];
-
-        if(allDoors[i] == correctDoor)
-        {
-            params.callbackFunc = correctCallback;
-            params.autoDestroy = true;
-        }
-        else
-        {
-            params.callbackFunc = "IncorrectDoorMessage";
-            params.autoDestroy = false;
-        }
-
-        AddUseItemCallback(params);
-    }
-}
-
-void IncorrectDoorMessage(string item, string doorEntity)
-{
-    int seed = RandInt(1, 3);
-    SetMessage("DoorMessages", "KeyWrongDoor_" + seed, 0.0f);
-}
+const string entLibraryDoor = "LibraryDoor";
 
 void OnDoorInteract(string entity)
 {
     OnDoorInteractMessage(entity);
+}
+
+void OnDoorInteractMessage(string entity)
+{
+    bool locked = GetSwingDoorLocked(entity);
+
+    if(entity == entLibraryDoor)
+    {
+        OnLibraryDoorInteract(locked);
+    }
+    else if(locked)
+    {
+        DisplaySeededDoorMessage("Generic_", 1, 3);
+    }
 }
 
 void DisplaySeededDoorMessage(string entryBase, int min, int max)
@@ -501,27 +474,24 @@ void DisplaySeededDoorMessage(string entryBase, int min, int max)
     SetMessage("DoorMessages", entryBase + seed, 0.0f);
 }
 
-void OnDoorInteractMessage(string entity)
+void OnLibraryDoorInteract(bool isLocked)
 {
-    bool locked = GetSwingDoorLocked(entity);
+    if(!isLocked) { return; }
 
-    if(locked && entity == "LibraryDoor" && HasItem("LibraryKey"))
+    if(HasItem("LibraryKey"))
     {
         SetMessage("DoorMessages", "HasKey", 0.0f);
     }
-    else if(locked && entity == "LibraryDoor" && 
-        !HasItem("LibraryKey") && 
-        GetLocalVarInt("CommentedOnLibraryDoor") == 0)
+    else
     {
-        PlayVoiceOnPlayerAndSlowdown("BA_Johan_5.ogg");
-        SetLocalVarInt("CommentedOnLibraryDoor", 1);
-    }
-    else if(locked && StringIsInArray(entity, unlockableDoors))
-    {
-        DisplaySeededDoorMessage("Generic_Locked_", 1, 3);
-    }
-    else if(locked)
-    {
-        DisplaySeededDoorMessage("Generic_", 1, 3);
+        if(GetLocalVarInt("CommentedOnLibraryDoor") == 0)
+        {
+            PlayVoiceOnPlayerAndSlowdown("BA_Johan_5.ogg");
+            SetLocalVarInt("CommentedOnLibraryDoor", 1);
+        }
+        else
+        {
+            DisplaySeededDoorMessage("Generic_Locked_", 1, 3);
+        }
     }
 }

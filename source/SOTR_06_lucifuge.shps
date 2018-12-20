@@ -1,5 +1,4 @@
 #include "AmnesiaSignatures.cpp"
-#include "ResetPlayerStateOnStart.ihps"
 #include "AmnesiaSignatures.cpp"
 #include "AmnesiaExtensions.ihps"
 #include "Utilities.ihps"
@@ -21,7 +20,7 @@ void OnLeave()
 {
 }
 
-void CreditsSequence(string &in asParent, string &in asChild, int alState)
+void CreditsSequence(string a, string b, int s)
 {
     AddTimer("", 0.5f, "StartCreditsAsync");
 }
