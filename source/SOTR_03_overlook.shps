@@ -20,7 +20,7 @@ void OnStart()
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
     
-    //if(ScriptDebugOn()) { FadeIn(0.5f); return; }
+    if(ScriptDebugOn()) { FadeIn(0.5f); return; }
    
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
 }
@@ -78,6 +78,12 @@ void RegisterCallbacks()
         "EnsureFirstTombArea",
         "EnsureFirstTombPickup"
     );
+
+    AddEntitySingleCollideCallback(
+        "StairsDoor_1", 
+        "SuitorDoorEventArea", 
+        "SuitorDoorEvent"
+    );
 }
 
 // ============================================================================
@@ -96,6 +102,7 @@ void DoorConversation(string a, string b, int state)
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_3.ogg", "EmiliaSource");
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_4.ogg", "EmiliaSource");
     SetEffectVoiceOverCallback("DoorConversationEnd");
+    SetPropStaticPhysics("StairsDoor_1", false);
 }
 
 void DoorConversationEnd()
@@ -474,3 +481,33 @@ void DummyMeditation(string t)
     // actually is.
     AddTimer("", 3.0f, "EndMeditation");
 }
+
+// ============================================================================
+// MONSTER SHUT DOOR EVENT
+// ============================================================================
+void SuitorDoorEvent(string a, string b, int s)
+{
+    GiveSanityDamageSmall();
+    PlayStepRunSounds();
+}
+
+void PlayStepRunSounds(string t)
+{
+    int stage = GetLocalVarInt("PlayStepRunSounds");
+    AddLocalVarInt("PlayStepRunSounds", 1);
+    float delay = 0.0f;
+
+    if(stage < 8)
+    {
+        PlaySoundAtEntity("chains_monster_man_run_soft.snt", "Step_" + stage);
+        delay = RandFloat(0.3f, 0.6f);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "PlayStepRunSounds");
+}
+
+void PlayStepRunSounds() { PlayStepRunSounds(""); }

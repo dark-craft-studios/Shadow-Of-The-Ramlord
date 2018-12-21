@@ -236,6 +236,48 @@ void CreateParticleSystemAtEntityWithAlpha(string psFile, string entity, float a
 
 // ----------------------------------------------------------------------------
 
+void AddEntitySingleCollideCallback(string a, string b, string callback)
+{
+    AddEntityCollideCallback(
+        a,        /* Entity A */
+        b,        /* Entity B */
+        callback, /* Callback Function */
+        true,     /* Delete after collide */
+        CollisionState::onlyEnter
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void StartPlayerLookAtNormal(string entity)
+{
+    StartPlayerLookAt(
+        entity, /* Entity */
+        1.0f,   /* Multiplier */
+        1.5f,   /* Max speed */
+        ""      /* Callback */
+    );
+}
+
+void StartPlayerLookAtFast(string entity)
+{
+    StartPlayerLookAt(
+        entity, /* Entity */
+        2.5f,   /* Multiplier */
+        4.0f,   /* Max speed */
+        ""      /* Callback */
+    );
+}
+
+// ----------------------------------------------------------------------------
+
+void GiveSanityDamageSmall()
+{
+    GiveSanityDamage(5.0f, true);
+}
+
+// ----------------------------------------------------------------------------
+
 void BlockAllVanillaHints()
 {
     BlockHint("EntityGrab");
