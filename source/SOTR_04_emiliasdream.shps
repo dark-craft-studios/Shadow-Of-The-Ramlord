@@ -1,25 +1,21 @@
 #include "AmnesiaSignatures.cpp"
-#include "ResetPlayerStateOnStart.ihps"
-#include "AmnesiaSignatures.cpp"
 #include "AmnesiaExtensions.ihps"
 #include "Utilities.ihps"
 #include "EveryMapEvents_AUTORUN.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
 
-// ----------------------------------------------------------------------------
-// Main - g
-// ----------------------------------------------------------------------------
+// ============================================================================
+// MAIN
+// ============================================================================
 const string gMapId = "06";
 
 void OnStart()
 {
     StartAmbience("ambience_hollow_tinker.snt");
-    FadeOut(0.0f);
     StartPlayerLookAt("cross_small_wood_1", 10.0f, 10.0f, "");
-    DestroyDataCache();
-    BlockAllVanillaHints();
-    BedroomLineOne();
     SetPlayerActive(false);
+    FadeOut(0.0f);
+    BedroomLineOne();
 }
 
 void OnLeave()
@@ -27,15 +23,15 @@ void OnLeave()
     StopAmbience();
 }
 
-// ----------------------------------------------------------------------------
-// Main Cutscene - VA / Teleports / Angles
-// ----------------------------------------------------------------------------
+// ============================================================================
+// MAIN CUTSCENE
+// ============================================================================
 
 void BedroomLineOne(string t)
 {
     int stage = GetLocalVarInt("BedroomLineOne");
     AddLocalVarInt("BedroomLineOne", 1);
-    float delay = 4.0f;
+    float delay = 0.0f;
 
     if(stage == 0)
     {
