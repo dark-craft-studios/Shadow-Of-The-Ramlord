@@ -30,11 +30,10 @@ void OnLeave()
 
 void RegisterCallbacks()
 {
-
     AddUseItemCallback(
-        "LibraryKey", /* item */
-        "LibraryDoor", /* entity */
-        "UnlockLibraryDoor" /* callback */
+        "LibraryKey",
+        "LibraryDoor",
+        "UnlockLibraryDoor"
     );
 
     AddSinglePlayerCollideCallback(
@@ -45,10 +44,10 @@ void RegisterCallbacks()
         "InRitualRoomArea", 
         "RecoverFall"
     );
-
-    AddSinglePlayerCollideCallback("BAJohanVoice_1", "BAJohanLineThree");
-    AddSinglePlayerCollideCallback("BAEndingVoice", "JohanLineTwo");
-    AddSinglePlayerCollideCallback("LibraryVoiceArea", "JohanLineOne");
+    AddSinglePlayerCollideCallback(
+        "BAJohanVoice_1", 
+        "BAJohanLineThree"
+    );
 }
 
 // ============================================================================
@@ -137,8 +136,14 @@ void FadeOutCorridorLights(float timeInSeconds)
 
 void OnRitualKeyPickup(string entity)
 {
-    AddSinglePlayerCollideCallback("SilentCorridorStartArea", "SilentCorridorStart");
-    AddSinglePlayerCollideCallback("SilentCorridorEndArea", "SilentCorridorEnd");
+    AddSinglePlayerCollideCallback(
+        "SilentCorridorStartArea", 
+        "SilentCorridorStart"
+    );
+    AddSinglePlayerCollideCallback(
+        "SilentCorridorEndArea", 
+        "SilentCorridorEnd"
+    );
     FadeOutCorridorLights(0.5f);
     TurnOffCorridorLamps();
     AddTimer("", 1.5f, "DelayedDoorSlam");
@@ -190,6 +195,14 @@ void UnlockLibraryDoor(string item, string entity)
 }
 
 // ============================================================================
+// KEPLER NOTE
+// ============================================================================
+void PickUpBallroomNote(string e)
+{
+    PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
+}
+
+// ============================================================================
 // LEVER SEQUENCE
 // ============================================================================
 void OnSecretLeverPulled(string entity, int state)
@@ -216,6 +229,9 @@ void LibraryCrashTimer(string t)
 
     if(stage == 1)
     {
+        // 
+        SetEffectVoiceOverCallback("");
+        StopAllEffectVoices(0.1f);
         ChangePlayerStateToNormal();
         SetEntityActive("LadderArea", false);
         SetEntityActive("SolidLadder", false);
@@ -223,11 +239,12 @@ void LibraryCrashTimer(string t)
         SetEntityActive("BrokenLadder_2", true);
         PlaySoundAtEntity("break_wood.snt");
         GiveSanityDamage(1.0f, true);
-        CreateParticleSystemAtEntity("ps_impact_dirt_low.ps", "LadderEffectsArea");
-        SetPlayerActive(false);
-        StopAllEffectVoices(0.1);
+        CreateParticleSystemAtEntity(
+            "ps_impact_dirt_low.ps", 
+            "LadderEffectsArea"
+        );
         StopMusic(0.5f, 1);
-        SetLanternActive(false, true);
+        SetLanternActive(false, false);
         StartPlayerLookAt("CorridorFallViewTarget", 2.0f, 3.0f, "");
         SetPlayerCrouching(false);
         delay = 0.1f;
@@ -236,7 +253,6 @@ void LibraryCrashTimer(string t)
     {
         RemoveItem("Lantern");
         SetEntityActive("Lantern", true);
-        PlayVoiceOnPlayerAndSlowdown("BA_Johan_7.ogg");
         delay = 0.1f;
     }
     else if(stage == 3)
@@ -246,6 +262,7 @@ void LibraryCrashTimer(string t)
         MovePlayerHeadPos(0.0f, -1.2f, 0.7f, 5.0f, 0.5f);
         FadePlayerRollTo(-30.0f, 100.0f, 120.0f);
         FadeRadialBlurTo(0.02f, 5.0f);
+        SetPlayerActive(false);
         delay = 0.01f;
     }
     else if(stage == 4)
@@ -281,6 +298,7 @@ void LibraryCrashTimer(string t)
         FadeOut(0.5f);
         FadeGlobalSoundVolume(0.0f, 0.5f);
         StopAmbience(0.5f);
+        PlayVoice("BA_Johan_7.ogg");
         delay = 10.0f;
     }
     else if(stage == 9)
@@ -308,8 +326,7 @@ void LibraryCrashTimer(string t)
     }
     else if(stage == 12)
     {
-        StopPlayerLookAt();
-        SetPlayerActive(true);
+        ResetPlayerState();
     }
     else
     {
@@ -332,29 +349,18 @@ void CloseSlidingDoorsTimer(string t)
     int stage = GetLocalVarInt("CloseSlidingDoorsTimer");
     float delay = 0.0f;
 
-    if(stage == 1)
+    if(stage > 0 && stage <= 5)
     {
-        SetMoveObjectState("SlideDoor_1", 0.0f);
-        delay = slideDoorOpenDelay;
+        SetMoveObjectState("SlideDoor_" + stage, 0.0f);
+        delay = 0.6f;
     }
-    else if(stage == 2)
+    else if(stage == 6)
     {
-        SetMoveObjectState("SlideDoor_2", 0.0f);
-        delay = slideDoorOpenDelay;
+        delay = 5.0f;
     }
-    else if(stage == 3)
+    else if(stage == 7)
     {
-        SetMoveObjectState("SlideDoor_3", 0.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 4)
-    {
-        SetMoveObjectState("SlideDoor_4", 0.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 5)
-    {
-        SetMoveObjectState("SlideDoor_5", 0.0f);
+        PlayVoiceOnPlayerAndSlowdown("BA_Johan_9.ogg");
     }
     else
     {
@@ -372,37 +378,16 @@ void OnLanternPickedUp(string entity)
     TightCorridorDoorsTimer("");
 }
 
-const float slideDoorOpenDelay = 0.6f;
-
 void TightCorridorDoorsTimer(string t)
 {
     AddLocalVarInt("TightCorridorDoorsTimer", 1);
     int stage = GetLocalVarInt("TightCorridorDoorsTimer");
     float delay = 0.0f;
 
-    if(stage == 1)
+    if(stage > 0 && stage <= 5)
     {
-        SetMoveObjectState("SlideDoor_1", 1.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 2)
-    {
-        SetMoveObjectState("SlideDoor_2", 1.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 3)
-    {
-        SetMoveObjectState("SlideDoor_3", 1.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 4)
-    {
-        SetMoveObjectState("SlideDoor_4", 1.0f);
-        delay = slideDoorOpenDelay;
-    }
-    else if(stage == 5)
-    {
-        SetMoveObjectState("SlideDoor_5", 1.0f);
+        SetMoveObjectState("SlideDoor_" + stage, 1.0f);
+        delay = 0.6f;
     }
     else
     {
@@ -423,16 +408,6 @@ void BAJohanLineThree(string a, string b, int s)
 void BAJohanLineFour(string s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_4.ogg");
-}
-
-void JohanLineOne(string a, string b, int s)
-{
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
-}
-
-void JohanLineTwo(string a, string b, int s)
-{
-    PlayVoiceOnPlayerAndSlowdown("BA_Johan_9.ogg");
 }
 
 // ============================================================================
