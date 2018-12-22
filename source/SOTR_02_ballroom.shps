@@ -75,7 +75,7 @@ string GetRandomAmbSound()
 
 string GetRandomSoundArea()
 {
-    return "AmbSoundArea_" + RandInt(0, soundAreaCount);
+    return "AmbSoundArea_" + RandInt(1, soundAreaCount);
 }
 
 void AmbienceLoop(string t)
@@ -112,8 +112,6 @@ void TurnOffCorridorLamps()
 {
     SetLampLit("candlestick_wall_orange_8", false, true);
     SetLampLit("candlestick_wall_orange_9", false, true);
-    SetLampLit("candlestick01_13", false, true);
-    SetLampLit("candlestick01_14", false, true);
     SetLampLit("candle_floor_small_13", false, true);
     SetLampLit("candle_floor_small_14", false, true);
     SetLampLit("candle_floor_small_15", false, true);
@@ -127,9 +125,6 @@ void TurnOffCorridorLamps()
     SetLampLit("candle_floor_small_11", false, true);
     SetLampLit("candle_floor_small_12", false, true);
     SetLampLit("candle_floor_small_20", false, true);
-    SetLampLit("candle_floor_small_16", false, true);
-    SetLampLit("candle_floor_small_17", false, true);
-    SetLampLit("candle_floor_small_19", false, true);
     SetLampLit("candle_floor_small_18", false, true);
     SetLampLit("candlestick_tri_1", false, true);
     SetLampLit("chandelier_simple_short_4", false, true);
@@ -138,8 +133,6 @@ void TurnOffCorridorLamps()
 void FadeOutCorridorLights(float timeInSeconds)
 {
     FadeLightTo("PointLight_5", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
-    FadeLightTo("PointLight_19", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
-    FadeLightTo("PointLight_20", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
 }
 
 void OnRitualKeyPickup(string entity)
@@ -169,14 +162,12 @@ void SilentCorridorStart(string a, string b, int state)
     SetPlayerCrouchDisabled(true);
     SetPlayerCrouching(false);
     SetInventoryDisabled(true);
-    PlaySoundAtEntity("skeletalk", "SOTR_skeletalk.snt", "SkeletalkTarget");
+    PlaySoundAtEntity("creepySound", "SOTR_skeletalk.snt", "SkeletalkTarget");
     FadeLightTo("BoxLight_1", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
-    FadeLightTo("BoxLight_3", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
 }
 
 void SilentCorridorEnd(string a, string b, int state)
 {
-    StopSound("skeletalk", 0.5f);
     StartAmbience("03_rock_amb.snt");
     ContinueAmbientSounds("");
     ResetPlayerState();
