@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="5.55737 2.48093 198.21" CameraTarget="5.55737 2.48093 18.2092" CameraZoom="0" GridHeight="18.2092" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="185.558 2.48093 18.2092" CameraTarget="5.55737 2.48093 18.2092" CameraZoom="0" GridHeight="5.55737" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="6.60179 180.672 17.4836" CameraTarget="6.60179 0.672229 17.4836" CameraZoom="0" GridHeight="0.672229" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-157.459 3.16875 4.35167" CameraTarget="-152.849 6.00076e-006 3.97073" CameraZoom="2.18801" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-10.2486 2.27118 3.21716" CameraTarget="-15.0617 8.42679e-006 1.59998" CameraZoom="2.19601" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -78,7 +78,7 @@
                 <File Id="61" Path="static_objects/decals/pebbles01.dae" />
                 <File Id="62" Path="static_objects/dungeonbase/wall/welder_stone.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="76">
+            <FileIndex_Entities NumOfFiles="75">
                 <File Id="0" Path="entities/lamp/candle_floor/candle_floor_no_light.ent" />
                 <File Id="1" Path="entities/door/castle_gate_arched01/castle_gate_arched01.ent" />
                 <File Id="2" Path="entities/statues/eagle/eagle.ent" />
@@ -116,7 +116,7 @@
                 <File Id="34" Path="entities/desktop/paperpile03/paperpile03.ent" />
                 <File Id="35" Path="entities/technical/block_box/block_box.ent" />
                 <File Id="36" Path="entities/desktop/paperpile02/paperpile02.ent" />
-                <File Id="37" Path="entities/lamp/candlestick_floor/candlestick_floor_red.ent" />
+                <File Id="37" Path="entities/kitchen/pot/pot.ent" />
                 <File Id="38" Path="entities/ornament/banners/banners01/banner_short01.ent" />
                 <File Id="39" Path="entities/lamp/hanging_lantern/hanging_lantern_wall.ent" />
                 <File Id="40" Path="entities/furniture/table_nice_round/table_nice_round.ent" />
@@ -154,7 +154,6 @@
                 <File Id="72" Path="entities/lamp/candlestick_tri/candlestick_tri.ent" />
                 <File Id="73" Path="entities/ptest/rotten_flowers/rotten_roses.ent" />
                 <File Id="74" Path="entities/kitchen/plate/plate.ent" />
-                <File Id="75" Path="entities/kitchen/pot/pot.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="5">
                 <File Id="0" Path="textures/decals/hay.mat" />
@@ -3079,7 +3078,7 @@
                     </UserVariables>
                 </Entity>
                 <BoxLight Active="false" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.05 0 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1054" Name="BoxLight_1" Radius="1" Rotation="0 0 0" Scale="17 18 12.75" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="17 18 12.75" Tag="" WorldPos="-159.75 6.5 4" />
-                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
+                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
                 <Entity Active="true" FileIndex="35" Group="0" ID="1208" Name="block_box_1" Rotation="-3.00211 1.78669e-006 -3.14159" Scale="1 12.25 50.25" Tag="" WorldPos="3.15864 2 37.7827">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -5538,44 +5537,6 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="27" Group="0" ID="2640" Name="banners_rag_2" Rotation="0 1.5708 0" Scale="0.75 0.75 0.75" Tag="" WorldPos="-162 0.5 2.5">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="true" FileIndex="27" Group="0" ID="2641" Name="banners_rag_3" Rotation="0 1.5708 0" Scale="0.75 0.75 0.75" Tag="" WorldPos="-162 0.5 5.5">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
                 <Entity Active="true" FileIndex="27" Group="0" ID="2642" Name="banners_rag_4" Rotation="0 1.5708 0" Scale="0.75 0.75 0.75" Tag="" WorldPos="-156.75 0.5 2.5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -6572,12 +6533,10 @@
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2832" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.75 0 11.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2833" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_6" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="1.75 0 11.25" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2834" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_7" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="4.25 0 10.75" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2847" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_19" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-10.75 0 3" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2851" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_23" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-21.5 0 4" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2852" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_24" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-20 0.25 2.75" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2853" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_25" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-18.75 0.25 3.75" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2854" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_26" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-17 0.25 2.25" />
-                <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2855" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_27" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-10 1.25 8.5" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2865" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_37" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="9 0 -0.25" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2871" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_43" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="12.25 0 8" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/particles/ps_mist_floor_square.ps" Group="0" ID="2872" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_44" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="12 0 11.5" />
@@ -7273,7 +7232,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="75" Group="0" ID="3099" Name="pot_1" Rotation="-3.14159 1.23023 -3.14159" Scale="1 1 1" Tag="" WorldPos="-3.45964 0.986412 2.50663">
+                <Entity Active="true" FileIndex="37" Group="0" ID="3099" Name="pot_1" Rotation="-3.14159 1.23023 -3.14159" Scale="1 1 1" Tag="" WorldPos="-3.45964 0.986412 2.50663">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -7292,7 +7251,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="75" Group="0" ID="3100" Name="pot_2" Rotation="-3.14159 -0.771363 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.51628 0.986412 3.43224">
+                <Entity Active="true" FileIndex="37" Group="0" ID="3100" Name="pot_2" Rotation="-3.14159 -0.771363 3.14159" Scale="1 1 1" Tag="" WorldPos="-3.51628 0.986412 3.43224">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -7311,7 +7270,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="75" Group="0" ID="3101" Name="pot_3" Rotation="-2.38419e-007 0.833389 0" Scale="1 1 1" Tag="" WorldPos="-3.48859 0.986412 4.51702">
+                <Entity Active="true" FileIndex="37" Group="0" ID="3101" Name="pot_3" Rotation="-2.38419e-007 0.833389 0" Scale="1 1 1" Tag="" WorldPos="-3.48859 0.986412 4.51702">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -7778,7 +7737,8 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="37" Group="0" ID="3284" Name="candlestick_floor_red_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-163.5 0 4">
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.294 0.19 0.09 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3288" Name="PointLight_8" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="12.5 3.25 -5.75" />
+                <Entity Active="true" FileIndex="39" Group="0" ID="3289" Name="hanging_lantern_wall_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="37.2938 10.0779 -22.9725">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -7798,8 +7758,119 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0.294 0.19 0.09 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="3288" Name="PointLight_8" Radius="6" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="12.5 3.25 -5.75" />
-                <Entity Active="true" FileIndex="39" Group="0" ID="3289" Name="hanging_lantern_wall_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="37.2938 10.0779 -22.9725">
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3295" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_79" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-160 2.88182 8.72358" />
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3296" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_5" Rotation="3.14159 -1.5708 3.14159" Tag="" WorldPos="-160 2.88182 8.72358" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3297" Name="candlestick_wall_orange_6" Rotation="2.50676e-006 -5.6727e-008 -4.17287e-008" Scale="1 1 1" Tag="" WorldPos="-160 2.38182 8.97358">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3298" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_80" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-155.998 2.88182 8.72358" />
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3299" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_6" Rotation="3.14159 -1.5708 3.14159" Tag="" WorldPos="-155.998 2.88182 8.72358" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3300" Name="candlestick_wall_orange_7" Rotation="2.50676e-006 -5.6727e-008 -4.17287e-008" Scale="1 1 1" Tag="" WorldPos="-155.998 2.38182 8.97358">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3301" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_81" Rotation="-3.14159 4.44253e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-156 3 -1.56264" />
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3302" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_7" Rotation="-0.105903 1.5708 -0.105897" Tag="" WorldPos="-156 3 -1.56264" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3303" Name="candlestick_wall_orange_8" Rotation="-3.14159 4.49926e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-156 2.5 -1.81264">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3305" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_82" Rotation="-3.14159 4.44253e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-159.983 3 -1.56264" />
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3306" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_8" Rotation="-0.105903 1.5708 -0.105897" Tag="" WorldPos="-159.983 3 -1.56264" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3307" Name="candlestick_wall_orange_9" Rotation="-3.14159 4.49926e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-159.983 2.5 -1.81264">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3308" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_9" Rotation="3.14159 -3.57628e-006 -3.14159" Tag="" WorldPos="-163.267 2.88182 5.46528" />
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3309" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_83" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-163.267 2.88182 5.46528" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3310" Name="candlestick_wall_orange_10" Rotation="2.74783 -1.5708 -2.74783" Scale="1 1 1" Tag="" WorldPos="-163.517 2.38182 5.46528">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="3312" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_10" Rotation="3.14159 -3.57628e-006 -3.14159" Tag="" WorldPos="-163.267 2.88182 1.49275" />
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="3313" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_84" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-163.267 2.88182 1.49275" />
+                <Entity Active="true" FileIndex="51" Group="0" ID="3314" Name="candlestick_wall_orange_11" Rotation="2.74783 -1.5708 -2.74783" Scale="1 1 1" Tag="" WorldPos="-163.517 2.38182 1.49275">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
