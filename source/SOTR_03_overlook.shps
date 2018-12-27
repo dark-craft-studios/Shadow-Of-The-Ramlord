@@ -20,7 +20,7 @@ void OnStart()
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
     
-    if(ScriptDebugOn()) { FadeIn(0.5f); return; }
+    //if(ScriptDebugOn()) { FadeIn(0.5f); return; }
    
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
 }
@@ -107,26 +107,16 @@ void DoorConversation(string a, string b, int state)
 
 void DoorConversationEnd()
 {
-    // NOTE(Peter): How about a sound that she walks to a chair and sits down?
+    // NOTE(Peter): How about a sound of her walking to a chair and sitting down?
     PlaySoundAtEntity("scare_wood_creak_scuf.snt", "EmiliasFeet");
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_3.ogg");
 
     ResetPlayerState();
 }
 
-// Glenn Comment: When the ritual in the cellar is complete, the below line should play.
-//    
-
-// Glenn Comment: When the first grimoire is picked up, the below line should be played.
-//    
-
-// Glenn Comment: When the last grimoire is picked up, the below line should be played.
-//    
-
 // ----------------------------------------------------------------------------
 // Monster Sequence Initialize
 // ----------------------------------------------------------------------------
-
 void BeginMonsterSequence(string a, string b, int state)
 {
     AddEffectVoice("OL_Johan_6.ogg", "", "JohanNarration", "28", false, "player", 0.0f, 20.0f);
@@ -136,8 +126,6 @@ void BeginMonsterSequence(string a, string b, int state)
 // ----------------------------------------------------------------------------
 // Ending Sequence - Audio
 // ----------------------------------------------------------------------------
-
-
 void EndingLine1(string a, string b, int state)
 {
     AddEffectVoice("OL_Johan_8.ogg", "", "JohanNarration", "30", false, "player", 0.0f, 20.0f);
@@ -444,42 +432,6 @@ void OnBasementDoorInteract(string t)
 void OnBasementDoorInteract()
 {
     OnBasementDoorInteract("");
-}
-
-// ----------------------------------------------------------------------------
-// Example Meditation
-// ----------------------------------------------------------------------------
-void InitializeExampleMeditation()
-{
-    // Adding a debug item for the example.
-    //GiveItem("DebugItem", "Puzzle", "DebugItem", "SOTR_DebugIcon.tga", 1.0f);
-
-    // When the item is used at an entity, the meditation should start.
-    AddUseItemCallback("", "SOTR_Clearsight_1", "MeditationArea2", "Meditate", true);
-}
-
-void Meditate(string item, string entity)
-{
-    // Passing in the area on which the player should focus
-    // and a name of the function I want to trigger once
-    // in meditation...
-    StartMeditation(entity, "DummyMeditation");
-}
-
-void DummyMeditation(string t)
-{
-    // This is my function that happens when the player is
-    // in meditation... I can do whatever in here.. even 
-    // add timers and call other functions.
-
-    // For an example, I'm just outputting a debug message.
-    AddDebugMessage("Meditating...", false);
-
-    // As a caller I am responsible to call the EndMeditation
-    // function once my meditation is done... If I don't do that
-    // I will meditate forever. Which sounds better then it 
-    // actually is.
-    AddTimer("", 3.0f, "EndMeditation");
 }
 
 // ============================================================================
