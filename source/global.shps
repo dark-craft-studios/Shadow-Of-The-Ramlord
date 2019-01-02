@@ -209,7 +209,6 @@ void OnGameStart()
         "JohanNarration", /* Category */
         "31"               /* Entry */
     );
-
     LinkVoiceFileToSubtitles(
         "ED_Anton_1.ogg",
         "AntonNarration", /* Category */
@@ -235,6 +234,11 @@ void OnGameStart()
         "EmiliaNarration", /* Category */
         "7"               /* Entry */
     );
+    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+        "ED_Emilia_1b.ogg",
+        "EmiliaNarration", /* Category */
+        "7b"               /* Entry */
+    );
     LinkVoiceFileToSubtitles(
         "ED_Emilia_2.ogg",
         "EmiliaNarration", /* Category */
@@ -250,7 +254,16 @@ void OnGameStart()
         "EmiliaNarration", /* Category */
         "10"               /* Entry */
     );
-
+    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+        "ED_Emilia_4b.ogg",
+        "EmiliaNarration", /* Category */
+        "10b"               /* Entry */
+    );
+    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+        "ED_Emilia_4c.ogg",
+        "EmiliaNarration", /* Category */
+        "10c"               /* Entry */
+    );
     LinkVoiceFileToSubtitles(
         "RC_Anton_1.ogg",
         "AntonNarration", /* Category */
