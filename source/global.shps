@@ -229,6 +229,11 @@ void OnGameStart()
         "AntonNarration", /* Category */
         "7"               /* Entry */
     );
+    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+        "ED_Anton_4b.ogg",
+        "AntonNarration", /* Category */
+        "7b"               /* Entry */
+    );
     LinkVoiceFileToSubtitles(
         "ED_Emilia_1.ogg",
         "EmiliaNarration", /* Category */
