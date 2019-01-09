@@ -1,17 +1,17 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="23.9786 -2.21414 11.2053" CameraTarget="26.2121 -3.33264 9.72443" CameraZoom="2.84599" GridHeight="-4" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="false" UsingLTCam="false" />
+            <Viewport CameraPosition="18.5888 12.5166 7.86182" CameraTarget="19.5531 -4 19.2522" CameraZoom="0.911973" GridHeight="-4" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
         </Groups>
     </EditorSession>
-    <MapData FogActive="false" FogColor="0.258 0.258 0.258 1" FogCulling="false" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="0.258 0.258 0.258 1" SkyBoxTexture="../../../../../">
+    <MapData FogActive="false" FogColor="0.258 0.258 0.258 1" FogCulling="false" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="0.258 0.258 0.258 1" SkyBoxTexture="../../../../../../">
         <MapContents>
             <FileIndex_StaticObjects NumOfFiles="78">
                 <File Id="0" Path="static_objects/castlebase/wall/door_way.dae" />
@@ -194,7 +194,7 @@
                 <File Id="97" Path="entities/ornament/sketch_castle/sketch_roll_row01.ent" />
                 <File Id="98" Path="entities/ornament/sketch_castle/sketch_roll_row02.ent" />
                 <File Id="99" Path="entities/door/cellar_wood01/cellar_wood01.ent" />
-                <File Id="100" Path="entities/SOTR_entities/technical/block_box/block_box.ent" />
+                <File Id="100" Path="entities/technical/block_box/block_box.ent" />
                 <File Id="101" Path="entities/ornament/goblet/goblet.ent" />
                 <File Id="102" Path="entities/container/barrel01/barrel01.ent" />
                 <File Id="103" Path="entities/container/barrel01/barrel01_pieces.ent" />
@@ -204,7 +204,7 @@
                 <File Id="107" Path="entities/equipment/brick/brick.ent" />
                 <File Id="108" Path="entities/equipment/wooden_board_pile/wooden_board_pile01.ent" />
                 <File Id="109" Path="entities/equipment/wooden_board/wooden_board01.ent" />
-                <File Id="110" Path="entities/SOTR_entities/technical/block_box/invisible_box_mass_2.ent" />
+                <File Id="110" Path="entities/technical/block_box/invisible_box_mass_2.ent" />
                 <File Id="111" Path="entities/ptest/dungeon_wall_broken_stones/dungeon_wall_broken_stone01.ent" />
                 <File Id="112" Path="entities/ptest/dungeon_wall_broken_stones/dungeon_wall_broken_stone02.ent" />
                 <File Id="113" Path="entities/ptest/dungeon_wall_broken_stones/dungeon_wall_broken_stone03.ent" />
@@ -978,7 +978,7 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.447123" Corner2UV="0.38 0.2" Corner3UV="0.624635 0.2" Corner4UV="0.624635 0.447123" EndCorner="1.59892 0 1.61518" Group="0" ID="1563" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_185" Rotation="-1.57064 -1.54844 1.53081" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.1621 -3.96704 15.8573" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.447123" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.447123" EndCorner="0.25 0 1.61518" Group="0" ID="1564" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_186" Rotation="1.57079 -0.022362 -1.61062" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.16353 -3.93132 17.4559" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1565" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_187" Rotation="3.14159 -0.022362 -1.61062" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.54962 -3.86702 17.4559" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1566" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_188" Rotation="-1.03315e-005 -0.0223578 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.1621 -3.96704 15.8573" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1566" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_188" Rotation="-1.03313e-005 -0.0223578 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.1621 -3.96704 15.8573" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.447123" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.447123" EndCorner="0.25 0 1.61518" Group="0" ID="1567" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_189" Rotation="-1.5708 -0.0223578 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.5482 -3.90274 15.8573" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.326695" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.326695" EndCorner="0.25 0 0.828075" Group="0" ID="1570" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_190" Rotation="-5.10058e-006 0.0427472 -1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="6.55561 -3.89978 15.0271" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.447123" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.447123" EndCorner="0.25 0 1.61518" Group="0" ID="1571" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_191" Rotation="-1.5708 0.0427472 -1.57079" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="4.94043 -3.89978 15.0271" />
@@ -995,7 +995,7 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.584394" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.584394" EndCorner="0.25 0 2.51238" Group="0" ID="1585" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_202" Rotation="1.5702 -0.0223533 -1.58398" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.17676 -3.93936 15.0275" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.355153" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.355153" EndCorner="0.25 0 1.01407" Group="0" ID="1586" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_203" Rotation="3.14099 -0.0223533 -1.58398" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="4.6646 -3.90622 15.029" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.584394" Corner2UV="0.38 0.2" Corner3UV="0.535153 0.2" Corner4UV="0.535153 0.584394" EndCorner="1.01407 0 2.51238" Group="0" ID="1587" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_204" Rotation="-1.5441 -1.54843 1.53058" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.17586 -3.96201 14.0137" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1589" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_205" Rotation="-1.38199e-005 0.0680082 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.54405 -3.91066 16.9639" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1589" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_205" Rotation="-1.38201e-005 0.0680082 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.54405 -3.91066 16.9639" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.377312" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.377312" EndCorner="0.25 0 1.1589" Group="0" ID="1590" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_206" Rotation="-1.57081 0.0680082 -1.61061" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="4.38606 -3.86452 16.9639" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.377312" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.377312" EndCorner="0.25 0 1.1589" Group="0" ID="1591" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_207" Rotation="1.57079 0.068004 -1.61062" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.53972 -4.01923 18.5591" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1592" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_208" Rotation="3.14158 0.068004 -1.61062" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="4.38174 -3.97309 18.5591" />
@@ -1005,7 +1005,7 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.467095" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.467095" EndCorner="0.25 0 1.74572" Group="0" ID="1597" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_212" Rotation="1.57586 0.140391 -1.61015" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.29189 -4.12006 19.0603" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.444635" Corner2UV="0.38 0.2" Corner3UV="0.41825 0.2" Corner4UV="0.41825 0.444635" EndCorner="0.25 0 1.59892" Group="0" ID="1598" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_213" Rotation="-3.13653 0.140391 -1.61015" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="5.54758 -4.05016 19.0516" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0.38 0.467095" Corner2UV="0.38 0.2" Corner3UV="0.624635 0.2" Corner4UV="0.624635 0.467095" EndCorner="1.59892 0 1.74572" Group="0" ID="1599" Material="E:/lux/redist/static_objects/sanctumbase/floor/sanctumbase_floor.mat" Name="Plane_214" Rotation="1.60657 -1.43031 -1.64628" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.153 1 0.153" TileOffset="0.38 0 0.2" WorldPos="7.30878 -3.89681 17.4772" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4875" Corner2UV="0 0" Corner3UV="0.4875 0" Corner4UV="0.4875 0.4875" EndCorner="0.75 0 0.75" Group="0" ID="1619" Material="E:/lux/redist/static_objects/castlebase/castlebase_tiledfloor.mat" Name="Plane_215" Rotation="1.27074 -1.56482 -1.37489" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.65 1 0.65" TileOffset="0 0 0" WorldPos="-24.6347 4.04484 24.2294" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4875" Corner2UV="0 0" Corner3UV="0.4875 0" Corner4UV="0.4875 0.4875" EndCorner="0.75 0 0.75" Group="0" ID="1619" Material="E:/lux/redist/static_objects/castlebase/castlebase_tiledfloor.mat" Name="Plane_215" Rotation="1.27074 -1.5648 -1.37489" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.65 1 0.65" TileOffset="0 0 0" WorldPos="-24.6347 4.04484 24.2294" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4875" Corner2UV="0 0" Corner3UV="0.4875 0" Corner4UV="0.4875 0.4875" EndCorner="0.75 0 0.75" Group="0" ID="1620" Material="E:/lux/redist/static_objects/castlebase/castlebase_tiledfloor.mat" Name="Plane_216" Rotation="-1.57649 -0.00171674 3.03745" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.65 1 0.65" TileOffset="0 0 0" WorldPos="-24.6347 4.04484 24.2294" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4875" Corner2UV="0 0" Corner3UV="0.4875 0" Corner4UV="0.4875 0.4875" EndCorner="0.75 0 0.75" Group="0" ID="1621" Material="E:/lux/redist/static_objects/castlebase/castlebase_tiledfloor.mat" Name="Plane_217" Rotation="2.85102 -1.5648 -1.38439" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.65 1 0.65" TileOffset="0 0 0" WorldPos="-25.3806 4.1228 24.2306" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="false" Collides="true" Corner1UV="0 0.4875" Corner2UV="0 0" Corner3UV="0.4875 0" Corner4UV="0.4875 0.4875" EndCorner="0.75 0 0.75" Group="0" ID="1622" Material="E:/lux/redist/static_objects/castlebase/castlebase_tiledfloor.mat" Name="Plane_218" Rotation="-2.8554 1.5648 1.75284" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.65 1 0.65" TileOffset="0 0 0" WorldPos="-24.6339 4.04046 24.9793" />
@@ -2707,25 +2707,6 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="6" Group="0" ID="595" Name="crude_man_chains_statue_8" Rotation="0 -4.45059 0" Scale="1 1 1" Tag="" WorldPos="42.7594 -4 13.0194">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
                 <Entity Active="true" FileIndex="6" Group="0" ID="596" Name="crude_man_chains_statue_9" Rotation="0 -4.97419 0" Scale="1 1 1" Tag="" WorldPos="42.8236 -4 12.231">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3097,7 +3078,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Area Active="true" AreaType="Script" Group="0" ID="795" Mesh="" Name="EndingCutscene1" Rotation="0 0 0" Scale="3 3 3" Tag="" WorldPos="47.5 -2.75 12.5">
+                <Area Active="true" AreaType="Script" Group="0" ID="795" Mesh="" Name="CreditsSequence" Rotation="0 0 0" Scale="3 3 3" Tag="" WorldPos="47.5 -2.75 12.5">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
@@ -4196,8 +4177,8 @@
                 <Billboard Active="true" BillboardColor="0.272 0.747 0.776 1" BillboardOffset="0" BillboardSize="3 3" BillboardType="Point" ConnectLight="SpotLight_7" Group="0" HaloSourceSize="2.5 2.5 2.5" ID="1026" IsHalo="true" MaterialFile="G:/Video Games/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo.mat" Name="Billboard_1" Rotation="0 -0 0" Tag="" WorldPos="-23.3389 5.15033 41.1692" />
                 <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0.19 0.207 0.268 1" FOV="2.61799" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1027" Name="SpotLight_1" NearClipPlane="0.1" Radius="14" Rotation="0.335451 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="-22.9786 5.02999 40.8265" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1028" Name="PointLight_1" Radius="4.877" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-21.9534 6.21238 42.4985" />
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1029" Name="PointLight_2" Radius="1.377" Rotation="0 -0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-23.0666 5.25096 41.0016" />
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1030" Name="PointLight_3" Radius="1.377" Rotation="0 -0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-23.4718 5.08605 41.5527" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1029" Name="PointLight_2" Radius="1.377" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-23.0666 5.25096 41.0016" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1030" Name="PointLight_3" Radius="1.377" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-23.4718 5.08605 41.5527" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.19 0.207 0.268 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1031" Name="PointLight_4" Radius="1.377" Rotation="0 0.44504 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-27.0618 5.53269 33.0026" />
                 <Billboard Active="true" BillboardColor="0.272 0.747 0.776 1" BillboardOffset="0" BillboardSize="3 3" BillboardType="Point" ConnectLight="SpotLight_7" Group="0" HaloSourceSize="2.5 2.5 2.5" ID="1032" IsHalo="true" MaterialFile="G:/Video Games/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo.mat" Name="Billboard_2" Rotation="0 0.44504 0" Tag="" WorldPos="-27.2354 5.43207 33.2712" />
                 <ParticleSystem Active="true" Color="0.272 0.747 0.776 1" FadeAtDistance="false" File="ps_fire_candle.ps" Group="0" ID="1033" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_24" Rotation="0 0.44504 0" Scale="1 1 1" Tag="" WorldPos="-27.2005 5.40956 33.3127" />
@@ -5706,7 +5687,7 @@
                 <FogArea Active="true" Color="0.224 0.293 0.354 0.441" End="10" FalloffExp="1" Group="0" ID="1491" Name="FogArea_1" Rotation="0 0 0" Scale="12.1203 10.45 37.1138" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="-24.183 6.31527 29.6101" />
                 <FogArea Active="true" Color="0.224 0.155 0.079 0.562" End="10" FalloffExp="1" Group="0" ID="1492" Name="FogArea_2" Rotation="0 0 0" Scale="18.9433 17.55 12.8349" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="-4.34525 2.16601 16.252" />
                 <ParticleSystem Active="true" Color="0.8 0.8 1 1" FadeAtDistance="true" File="G:/Video Games/steamapps/common/Amnesia The Dark Descent/particles/ps_area_fog.ps" Group="0" ID="1493" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_46" Rotation="0 0.44504 0" Scale="1 1 1" Tag="" WorldPos="-16.4601 5.38342 16.3714" />
-                <FogArea Active="true" Color="0.31 0.121 0 0.562" End="10" FalloffExp="1" Group="0" ID="1494" Name="FogArea_3" Rotation="0 0 0" Scale="51.3925 17.55 31.7094" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="33.7839 -1.46617 18.2993" />
+                <FogArea Active="true" Color="0 0.121 0.198 1" End="70" FalloffExp="1" Group="0" ID="1494" Name="FogArea_3" Rotation="0 0 0" Scale="51.3925 17.55 31.7094" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="33.7839 -1.46617 18.2993" />
                 <Entity Active="true" FileIndex="89" Group="0" ID="1503" Name="stone_small01_5" Rotation="-3.14159 -1.309 3.14159" Scale="0.713041 0.713041 0.713041" Tag="" WorldPos="-27.6693 4.00803 32.1364">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -6156,8 +6137,8 @@
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.8 0.9 0.85 0" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1646" Name="PointLight_36" Radius="5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-21.9847 6.59528 34.7352" />
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="ps_area_fog_falling.ps" Group="0" ID="1647" MaxFadeDistanceEnd="50" MaxFadeDistanceStart="40" MinFadeDistanceEnd="2" MinFadeDistanceStart="8" Name="ParticleSystem_48" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-22.2543 7.89039 32.3945" />
                 <Billboard Active="true" BillboardColor="0.65 0.65 0.7 1" BillboardOffset="0" BillboardSize="4 4" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0 0 0" ID="1649" IsHalo="false" MaterialFile="bb_lightblue_lightray.mat" Name="Billboard_35" Rotation="1.5708 0 0" Tag="" WorldPos="-21.8214 7.96861 33.0324" />
-                <SpotLight Active="true" Aspect="1.8" CastShadows="true" DiffuseColor="0.9 1 0.95 0.9" FOV="1.13446" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="lights/gobo_wood_planks.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1650" Name="SpotLight_9" NearClipPlane="0.1" Radius="4" Rotation="2.59801 -1.52535 2.21431" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="-22.1738 7.69017 33.5582" />
-                <Sound Active="true" Group="0" ID="1651" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/03/03_wind.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-21.9946 8.25863 32.9167" />
+                <SpotLight Active="true" Aspect="1.8" CastShadows="true" DiffuseColor="0.9 1 0.95 0.9" FOV="1.13446" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="lights/gobo_wood_planks.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1650" Name="SpotLight_9" NearClipPlane="0.1" Radius="4" Rotation="2.59801 -1.52535 2.21431" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="-22.1738 7.69017 33.5582" />
+                <Sound Active="true" Group="0" ID="1651" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/03/03_wind.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-21.9946 8.25863 32.9167" />
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="6 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0 0 0" ID="1652" IsHalo="false" MaterialFile="bb_lightblue_lightray.mat" Name="Billboard_144" Rotation="1.5708 0 0" Tag="" WorldPos="-21.8214 21.2003 33.0324" />
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="6 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0 0 0" ID="1653" IsHalo="false" MaterialFile="bb_lightblue_lightray.mat" Name="Billboard_145" Rotation="1.5708 0 0" Tag="" WorldPos="-21.8214 21.2003 33.0324" />
                 <Billboard Active="true" BillboardColor="1 1 1 1" BillboardOffset="0" BillboardSize="6 6" BillboardType="FixedAxis" ConnectLight="" Group="0" HaloSourceSize="0 0 0" ID="1654" IsHalo="false" MaterialFile="bb_lightblue_lightray.mat" Name="Billboard_146" Rotation="1.5708 0 0" Tag="" WorldPos="-21.8214 21.2168 33.0324" />
@@ -7055,7 +7036,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <ParticleSystem Active="true" Color="0.707 0.603 0.448 1" FadeAtDistance="true" File="G:/Video Games/steamapps/common/Amnesia The Dark Descent/particles/ps_dust_falling.ps" Group="0" ID="1865" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_58" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="-6.17034 6.03184 16.0599" />
+                <ParticleSystem Active="true" Color="0.707 0.603 0.448 1" FadeAtDistance="true" File="G:/Video Games/steamapps/common/Amnesia The Dark Descent/particles/ps_dust_falling.ps" Group="0" ID="1865" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_58" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-6.17034 6.03184 16.0599" />
                 <Entity Active="true" FileIndex="115" Group="0" ID="1866" Name="rope_pile_1" Rotation="0 -4.18879 0" Scale="1 1 1" Tag="" WorldPos="11.7494 -4 11.5308">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -9389,6 +9370,68 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
+                <Entity Active="true" FileIndex="88" Group="0" ID="2224" Name="AntonSkullTest" Rotation="3.14159 0.261799 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.25 4.23905 34.0711">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Area Active="true" AreaType="Script" Group="0" ID="2225" Mesh="" Name="LastConvoArea" Rotation="0 -0 0" Scale="4 4 4" Tag="" WorldPos="-22.25 5.75 35.75">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="2226" Mesh="" Name="EmiliaEndingArea" Rotation="0 -0 0" Scale="2 6 12" Tag="" WorldPos="28.75 -4 13">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="2227" Mesh="" Name="EmiliaVoice1" Rotation="0 -0 0" Scale="2 2 2" Tag="" WorldPos="38.2644 -2.09814 12.3855">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="2228" Mesh="" Name="EmiliaVoice2" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="52.4633 -2.09814 15.2828">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="PlayerStart" Group="0" ID="2229" Mesh="" Name="EndingPlayerArea" Rotation="0 -0 0" Scale="1 1 1" Tag="" WorldPos="53.5274 -4 10.7968">
+                    <UserVariables />
+                </Area>
             </Entities>
             <Misc>
                 <Compound Active="true" Group="0" ID="1074" Name="Compound_3" Rotation="0.101963 -0.00104466 0.00315003" Scale="1 0.102826 1" Tag="" WorldPos="-22.7378 4.0611 19.3088">
