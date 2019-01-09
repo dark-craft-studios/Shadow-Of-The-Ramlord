@@ -39,6 +39,7 @@ void RegisterCallbacks()
 {
     AddSinglePlayerCollideCallback("JohanLineArea", "StartDialog");
     AddSinglePlayerCollideCallback("PrioryLineArea", "StartPriory");
+    AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
 }
 
 // ----------------------------------------------------------------------------
@@ -172,7 +173,7 @@ void PrioryDialog(string t)
         return;
     }
 
-    AddTimer("", delay, "QuestDialog");
+    AddTimer("", delay, "PrioryDialog");
 }
 
 void PrioryDialog()
@@ -230,6 +231,21 @@ void OnSaltPickedUp()
 void OnAllItemsPickedUp()
 {
     CompleteQuest("RisenQuest");
-    ///DIVERGENCE TO BLOWING THE FUCK UP OUT OF THE DOOR
+    AddSinglePlayerCollideCallback("EndingCutsceneTrigger", "StartEnding");
 }
 
+void StartEnding(string a, string b, int s)
+{
+    PlayVoiceOnPlayerAndSlowdown("RC_Johan_13.ogg");
+    SetSwingDoorLocked("BlowOpenDoor1", false, true);
+}
+
+
+// ============================================================================
+// LEFT HAND PATH HORROR AREAS
+// ============================================================================
+
+void StartHorror(string a, string b, int s)
+{
+    PlayVoiceOnPlayerAndSlowdown("RC_Johan_11.ogg");
+}
