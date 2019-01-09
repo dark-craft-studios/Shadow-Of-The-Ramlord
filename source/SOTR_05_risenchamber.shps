@@ -220,12 +220,20 @@ bool AllRequiredItemsPickedUp()
 
 void OnWaterPickedUp()
 {
-    PlayVoiceOnPlayerAndSlowdown("RC_Johan_10.ogg");
+        PlayVoiceOnPlayer(
+            "RC_Johan_10.ogg", 
+            "JohanNarration", 
+            "41"
+        );
 }
 
 void OnSaltPickedUp()
 {
-    PlayVoiceOnPlayerAndSlowdown("RC_Johan_12.ogg");
+        PlayVoiceOnPlayer(
+            "RC_Johan_12.ogg", 
+            "JohanNarration", 
+            "43"
+        );
 }
 
 void OnAllItemsPickedUp()
