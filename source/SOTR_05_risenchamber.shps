@@ -6,11 +6,14 @@
 #include "EveryMapEvents_AUTORUN.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
 
-// ----------------------------------------------------------------------------
-// GLENN COMMENTS
-// ----------------------------------------------------------------------------
-
-// If the Player possessess both RisenSalt and RisenWater, the area trigger "EndingCutsceneTrigger" should freeze our movement and kick off the interrogation cutscene.
+// ============================================================================
+// USED ENTITIES
+// Constants representing entities referenced inside this script
+// in order to prevent misspelling and allow for easier renaming.
+// - For consistency use an "ent" prefix.
+// ============================================================================
+const string entRisenSalt           = "RisenSalt";
+const string entRisenWater          = "RisenWater";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -34,7 +37,8 @@ void OnLeave()
 
 void RegisterCallbacks()
 {
-    AddSinglePlayerCollideCallback("JohanLineArea", "QuestDialog");
+    AddSinglePlayerCollideCallback("JohanLineArea", "StartDialog");
+    AddSinglePlayerCollideCallback("PrioryLineArea", "StartPriory");
 }
 
 // ----------------------------------------------------------------------------
@@ -94,12 +98,138 @@ void WakeUpDialog()
 // Introducing the Item Quest (Should be expanded to tie into the area box by the torture room door)
 // ----------------------------------------------------------------------------
 
-
-void QuestDialog(string a, string b, int state)
+void StartDialog(string a, string b, int s)
 {
+    QuestDialog();
+}
+
+void QuestDialog(string t)
+{
+    int stage = GetLocalVarInt("QuestDialog");
+    AddLocalVarInt("QuestDialog", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
         PlayVoiceOnPlayer(
             "RC_Johan_6.ogg", 
             "JohanNarration", 
             "37"
         );
+        SetEffectVoiceOverCallback("QuestDialog");
+        return;
+    }
+    else if(stage == 1)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Johan_6b.ogg", 
+            "JohanNarration", 
+            "37b"
+        );
+        SetEffectVoiceOverCallback("QuestDialog");
+        return;
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "QuestDialog");
 }
+
+void QuestDialog()
+{
+    QuestDialog("");
+}
+
+// ----------------------------------------------------------------------------
+// PRIORY CODE AREA
+// ----------------------------------------------------------------------------
+
+void StartPriory(string a, string b, int s)
+{
+    PrioryDialog();
+}
+
+void PrioryDialog(string t)
+{
+    int stage = GetLocalVarInt("PrioryDialog");
+    AddLocalVarInt("PrioryDialog", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Johan_7.ogg", 
+            "JohanNarration", 
+            "38"
+        );
+        SetEffectVoiceOverCallback("PrioryDialog");
+        return;
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "QuestDialog");
+}
+
+void PrioryDialog()
+{
+    PrioryDialog("");
+}
+
+// ============================================================================
+// COLLECTING REQUIRED ITEMS
+// ============================================================================
+const int requiredItemsCount = 2;
+
+bool ItemIsRequired(string itemName)
+{
+    return itemName == entRisenWater ||
+    itemName == entRisenSalt;
+}
+
+void OnRequiredItemPickup(string entity)
+{
+    // Ignore not required items
+    if (!ItemIsRequired(entity)) { return; }
+
+    if (entity == entRisenWater)        { OnWaterPickedUp(); }
+    if (entity == entRisenSalt)         { OnSaltPickedUp(); }
+
+    AddLocalVarInt("RequiredItemsPickedUp", 1);
+    GiveQuestIfNotAdded("RisenQuest");
+
+    if (AllRequiredItemsPickedUp())
+    {
+        OnAllItemsPickedUp();
+    }
+}
+
+bool AllRequiredItemsPickedUp()
+{
+    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItemsCount;
+}
+
+// ============================================================================
+// REQUIRED ITEMS PICK UP EVENTS
+// ============================================================================
+
+void OnWaterPickedUp()
+{
+    PlayVoiceOnPlayerAndSlowdown("RC_Johan_10.ogg");
+}
+
+void OnSaltPickedUp()
+{
+    PlayVoiceOnPlayerAndSlowdown("RC_Johan_12.ogg");
+}
+
+void OnAllItemsPickedUp()
+{
+    CompleteQuest("RisenQuest");
+    ///DIVERGENCE TO BLOWING THE FUCK UP OUT OF THE DOOR
+}
+
