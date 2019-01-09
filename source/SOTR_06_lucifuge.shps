@@ -12,13 +12,23 @@ const string gMapId = "10";
 
 void OnStart()
 {
-    GetGlobalLoadingScreen("04");
-    AddEntityCollideCallback("Player", "EndingCutscene1", "CreditsSequence", true, 1);
+    StopPlayerLookAt();
+    BlockAllVanillaHints();
+    RegisterCallbacks();
 }
 
 void OnLeave()
 {
 }
+
+void RegisterCallbacks()
+{
+    AddSinglePlayerCollideCallback("LastConvoArea", "EndingConvo");
+    AddSinglePlayerCollideCallback("EmiliaEndingArea", "HerCall");
+    AddSinglePlayerCollideCallback("CreditsSequence", "LastWords");
+}
+
+///OLD CODE
 
 void CreditsSequence(string a, string b, int s)
 {
@@ -28,4 +38,227 @@ void CreditsSequence(string a, string b, int s)
 void StartCreditsAsync(string timer) 
 { 
     StartCredits("", false, "Credits", "FinalCredits", 4); 
+}
+
+///END OLD CODE
+
+///ENDING CONVERSATION SEQUENCES///
+
+void EndingConvo(string a, string b, int s)
+{
+    LastConversation();
+}
+
+void LastConversation(string t)
+{
+    int stage = GetLocalVarInt("LastConversation");
+    AddLocalVarInt("LastConversation", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+    SetPlayerMoveSpeedMul(0.0f);
+    SetPlayerRunSpeedMul(0.0f);
+    StartPlayerLookAt("AntonSkullTest", 0.8f, 1.5f, "");
+    delay = 3.0f;
+    }
+    else if(stage == 1)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Johan_1.ogg", 
+            "JohanNarration", 
+            "45"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 2)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_1.ogg", 
+            "AntonNarration", 
+            "14"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 3)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Johan_2.ogg", 
+            "JohanNarration", 
+            "46"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 4)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_2.ogg", 
+            "AntonNarration", 
+            "15"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 5)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_3.ogg", 
+            "AntonNarration", 
+            "16"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 6)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_4.ogg", 
+            "AntonNarration", 
+            "17"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 7)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Johan_3.ogg", 
+            "JohanNarration", 
+            "47"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 8)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_5.ogg", 
+            "AntonNarration", 
+            "18"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 9)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Anton_6.ogg", 
+            "AntonNarration", 
+            "19"
+        );
+        SetEffectVoiceOverCallback("LastConversation");
+        return;
+    }
+    else if(stage == 10)
+    {
+        StopPlayerLookAt();
+        ResetPlayerSpeed();
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "LastConversation");
+}
+
+void LastConversation()
+{
+    LastConversation("");
+}
+
+void HerCall(string a, string b, int s)
+{
+        PlayVoiceOnEntityAndSlowdown("LU_Emilia_1.ogg", "EmiliaVoice1");
+}
+
+void LastWords(string a, string b, int s)
+{
+    CreditsConversation();
+}
+
+void CreditsConversation(string t)
+{
+    int stage = GetLocalVarInt("CreditsConversation");
+    AddLocalVarInt("CreditsConversation", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        FadeOut(0.0f);
+        SetPlayerMoveSpeedMul(0.0f);
+        SetPlayerRunSpeedMul(0.0f);
+        delay = 5.0f;
+    }
+    else if(stage == 1)
+    {
+        TeleportPlayer("EndingPlayerArea");
+        delay = 3.0f;
+    }
+    else if(stage == 2)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Emilia_2.ogg", 
+            "EmiliaNarration", 
+            "12"
+        );
+        SetEffectVoiceOverCallback("CreditsConversation");
+        return;
+    }
+    else if(stage == 3)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Johan_4.ogg", 
+            "JohanNarration", 
+            "48"
+        );
+        SetEffectVoiceOverCallback("CreditsConversation");
+        return;
+    }
+    else if(stage == 4)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Emilia_3.ogg", 
+            "EmiliaNarration", 
+            "13"
+        );
+        SetEffectVoiceOverCallback("CreditsConversation");
+        return;
+    }
+    else if(stage == 5)
+    {
+        delay = 5.0f;
+    }
+    else if(stage == 6)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Emilia_4.ogg", 
+            "EmiliaNarration", 
+            "14"
+        );
+        SetEffectVoiceOverCallback("CreditsConversation");
+        return;
+    }
+    else if(stage == 7)
+    {
+        delay = 5.0f;
+    }
+    else if(stage == 8)
+    {
+        StartCredits("", false, "Credits", "FinalCredits", 4); 
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "CreditsConversation");
+}
+
+void CreditsConversation()
+{
+    CreditsConversation("");
 }
