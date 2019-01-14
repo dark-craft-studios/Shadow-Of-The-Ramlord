@@ -15,3 +15,8 @@ tasks.json
 
 # Installer script output
 Output/
+
+# Vim
+*.swo
+*.swp
+
