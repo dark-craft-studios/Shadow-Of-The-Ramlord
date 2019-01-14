@@ -1,8 +1,7 @@
 <LANGUAGE>
-    <RESOURCES />
-
+    <RESOURCES/>
     <CATEGORY Name="CustomStoryMain">
-        <Entry Name="Description">Johan Gray, the leading agent in the office, is a stoic and clinical investigator of the occult who personally adopts the mission to investigate Caecea Manor, to prove the practice of Necromancy, and to put an end to such a blight upon the world. A disquieting narrative weaved through the occult, madness, and despair. You all soon shall be in awe, frozen in the midst of the Shadow of the Ramlord.</Entry>
+        <Entry Name="Description">The Shadow of the Ramlord is a Lovecraftian Custom Story, written and developed by Dark Craft Studios. We take the role of Johan Gray, a Witchfinder in a secretive branch of the Church tasked with uncovering and rooting out Occult activities. A mysterious letter has come to our office, addressed from Caecea Manor, begging for our intervention.</Entry>
     </CATEGORY>
 
     <CATEGORY Name="JohanNarration">
@@ -70,6 +69,7 @@
         <Entry Name="10">Surely this will help you remember their name?</Entry>
         <Entry Name="11">No matter. In time, you will reveal all to our Lord. Goodnight, Witchfinder.</Entry>
         <Entry Name="12">Speak, crone, lest I torture you further for your insolence.</Entry>
+        <Entry Name="12b">Do not presume to hold sway over me, welch. You will tell me at once: who gave you the letter!? Who told you to deliver it to the mainland!?</Entry>
         <Entry Name="13">Emilia! I will kill you!</Entry>
         <Entry Name="14">I feel thy presence, Witchfinder. Gaze upon your rotting trophy. Hold your head high in victory. My Lord may have punished me, but it was I who failed Him. I could not believe Emilia betrayed me... betrayed our family. I accept my fate. Have you done the same?</Entry>
         <Entry Name="15">At least I walked beside my God. You will be enraptured to his frigid, eternal tomb. Divinity is an infection spread through the air by the poisonous tongues of lost men. Bisected between truths stolen from older beliefs, and outright fabrication, your exalted mythos was groomed, pruned, and manipulated throughout the course of time. From those untold aeons before man first crawled, lie the lost secrets that only the dead can remember.</Entry>

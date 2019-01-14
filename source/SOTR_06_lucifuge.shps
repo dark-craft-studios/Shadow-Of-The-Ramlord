@@ -60,6 +60,7 @@ void LastConversation(string t)
     SetPlayerMoveSpeedMul(0.0f);
     SetPlayerRunSpeedMul(0.0f);
     StartPlayerLookAt("AntonSkullTest", 0.8f, 1.5f, "");
+    SetPlayerActive(false);
     delay = 3.0f;
     }
     else if(stage == 1)
@@ -154,6 +155,7 @@ void LastConversation(string t)
     }
     else if(stage == 10)
     {
+        SetPlayerActive(true);
         StopPlayerLookAt();
         ResetPlayerSpeed();
     }
@@ -188,15 +190,16 @@ void CreditsConversation(string t)
 
     if(stage == 0)
     {
-        FadeOut(0.0f);
+        FadeOut(5.0f);
         SetPlayerMoveSpeedMul(0.0f);
         SetPlayerRunSpeedMul(0.0f);
+        SetPlayerActive(false);
         delay = 5.0f;
     }
     else if(stage == 1)
     {
         TeleportPlayer("EndingPlayerArea");
-        delay = 3.0f;
+        delay = 6.0f;
     }
     else if(stage == 2)
     {

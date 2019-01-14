@@ -297,7 +297,7 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "RC_Anton_6.ogg",
         "AntonNarration", /* Category */
-        "--- MISSING ENTRY ----" /* Entry */
+        "12b" /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_7.ogg",
