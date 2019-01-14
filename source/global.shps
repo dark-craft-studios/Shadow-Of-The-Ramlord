@@ -46,7 +46,6 @@ void OnGameStart()
         "JohanNarration", /* Category */
         "6"               /* Entry */
     );
-
     LinkVoiceFileToSubtitles(
         "PR_Anton_1.ogg",
         "AntonNarration", /* Category */
@@ -65,12 +64,12 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "PR_Emilia_1.ogg",
         "EmiliaNarration", /* Category */
-        "1"               /* Entry */
+        "1"                /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "PR_Emilia_2.ogg",
         "EmiliaNarration", /* Category */
-        "2"               /* Entry */
+        "2"                /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "PR_Johan_1.ogg",
@@ -90,124 +89,122 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "PR_Johan_4.ogg",
         "JohanNarration", /* Category */
-        "10"               /* Entry */
+        "10"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "PR_Johan_5.ogg",
         "JohanNarration", /* Category */
-        "11"               /* Entry */
+        "11"              /* Entry */
     );
-    
     LinkVoiceFileToSubtitles(
         "BA_Johan_1.ogg",
         "JohanNarration", /* Category */
-        "12"               /* Entry */
+        "12"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_2.ogg",
         "JohanNarration", /* Category */
-        "13"               /* Entry */
+        "13"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_3.ogg",
         "JohanNarration", /* Category */
-        "14"               /* Entry */
+        "14"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_4.ogg",
         "JohanNarration", /* Category */
-        "15"               /* Entry */
+        "15"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_5.ogg",
         "JohanNarration", /* Category */
-        "16"               /* Entry */
+        "16"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_6.ogg",
         "JohanNarration", /* Category */
-        "17"               /* Entry */
+        "17"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_7.ogg",
         "JohanNarration", /* Category */
-        "18"               /* Entry */
+        "18"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_8.ogg",
         "JohanNarration", /* Category */
-        "21"               /* Entry */
+        "21"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "BA_Johan_9.ogg",
         "JohanNarration", /* Category */
-        "22"               /* Entry */
+        "22"              /* Entry */
     );
-
     LinkVoiceFileToSubtitles(
         "OL_Emilia_1.ogg",
-        "EmiliaNarration", /* Category */
+        "EmiliaNarration",/* Category */
         "3"               /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Emilia_2.ogg",
-        "EmiliaNarration", /* Category */
+        "EmiliaNarration",/* Category */
         "4"               /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Emilia_3.ogg",
-        "EmiliaNarration", /* Category */
+        "EmiliaNarration",/* Category */
         "5"               /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Emilia_4.ogg",
-        "EmiliaNarration", /* Category */
+        "EmiliaNarration",/* Category */
         "6"               /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_1.ogg",
         "JohanNarration", /* Category */
-        "23"               /* Entry */
+        "23"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_2.ogg",
         "JohanNarration", /* Category */
-        "24"               /* Entry */
+        "24"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_3.ogg",
         "JohanNarration", /* Category */
-        "25"               /* Entry */
+        "25"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_4.ogg",
         "JohanNarration", /* Category */
-        "26"               /* Entry */
+        "26"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_5.ogg",
         "JohanNarration", /* Category */
-        "27"               /* Entry */
+        "27"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_6.ogg",
         "JohanNarration", /* Category */
-        "28"               /* Entry */
+        "28"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_7.ogg",
         "JohanNarration", /* Category */
-        "29"               /* Entry */
+        "29"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_8.ogg",
         "JohanNarration", /* Category */
-        "30"               /* Entry */
+        "30"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "OL_Johan_9.ogg",
         "JohanNarration", /* Category */
-        "31"               /* Entry */
+        "31"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "ED_Anton_1.ogg",
@@ -229,17 +226,17 @@ void OnGameStart()
         "AntonNarration", /* Category */
         "7"               /* Entry */
     );
-    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+    LinkVoiceFileToSubtitles(
         "ED_Anton_4b.ogg",
         "AntonNarration", /* Category */
-        "7b"               /* Entry */
+        "7b"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "ED_Emilia_1.ogg",
-        "EmiliaNarration", /* Category */
+        "EmiliaNarration",/* Category */
         "7"               /* Entry */
     );
-    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+    LinkVoiceFileToSubtitles(
         "ED_Emilia_1b.ogg",
         "EmiliaNarration", /* Category */
         "7b"               /* Entry */
@@ -247,27 +244,27 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "ED_Emilia_2.ogg",
         "EmiliaNarration", /* Category */
-        "8"               /* Entry */
+        "8"                /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "ED_Emilia_3.ogg",
         "EmiliaNarration", /* Category */
-        "9"               /* Entry */
+        "9"                /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "ED_Emilia_4.ogg",
         "EmiliaNarration", /* Category */
         "10"               /* Entry */
     );
-    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+    LinkVoiceFileToSubtitles(
         "ED_Emilia_4b.ogg",
         "EmiliaNarration", /* Category */
-        "10b"               /* Entry */
+        "10b"              /* Entry */
     );
-    LinkVoiceFileToSubtitles( ///Glenn Made New Line
+    LinkVoiceFileToSubtitles(
         "ED_Emilia_4c.ogg",
         "EmiliaNarration", /* Category */
-        "10c"               /* Entry */
+        "10c"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_1.ogg",
@@ -282,127 +279,127 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "RC_Anton_3.ogg",
         "AntonNarration", /* Category */
-        "10"               /* Entry */
+        "10"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_4.ogg",
         "AntonNarration", /* Category */
-        "11"               /* Entry */
+        "11"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_5.ogg",
         "AntonNarration", /* Category */
-        "12"               /* Entry */
+        "12"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_6.ogg",
         "AntonNarration", /* Category */
-        "12b" /* Entry */
+        "12b"             /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Anton_7.ogg",
         "AntonNarration", /* Category */
-        "13"               /* Entry */
+        "13"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_1.ogg",
         "JohanNarration", /* Category */
-        "32"               /* Entry */
+        "32"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_2.ogg",
         "JohanNarration", /* Category */
-        "33"               /* Entry */
+        "33"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_3.ogg",
         "JohanNarration", /* Category */
-        "34"               /* Entry */
+        "34"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_4.ogg",
         "JohanNarration", /* Category */
-        "35"               /* Entry */
+        "35"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_5.ogg",
         "JohanNarration", /* Category */
-        "36"               /* Entry */
+        "36"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_6.ogg",
         "JohanNarration", /* Category */
-        "37"               /* Entry */
+        "37"              /* Entry */
+    );
     LinkVoiceFileToSubtitles(
         "RC_Johan_6b.ogg",
         "JohanNarration", /* Category */
-        "37b"               /* Entry */
+        "37b"             /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_7.ogg",
         "JohanNarration", /* Category */
-        "38"               /* Entry */
+        "38"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_8.ogg",
         "JohanNarration", /* Category */
-        "39"               /* Entry */
+        "39"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_9.ogg",
         "JohanNarration", /* Category */
-        "40"               /* Entry */
+        "40"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_10.ogg",
         "JohanNarration", /* Category */
-        "41"               /* Entry */
+        "41"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_11.ogg",
         "JohanNarration", /* Category */
-        "42"               /* Entry */
+        "42"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_12.ogg",
         "JohanNarration", /* Category */
-        "43"               /* Entry */
+        "43"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "RC_Johan_13.ogg",
         "JohanNarration", /* Category */
-        "44"               /* Entry */
+        "44"              /* Entry */
     );
-    
     LinkVoiceFileToSubtitles(
         "LU_Anton_1.ogg",
         "AntonNarration", /* Category */
-        "14"               /* Entry */
+        "14"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Anton_2.ogg",
         "AntonNarration", /* Category */
-        "15"               /* Entry */
+        "15"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Anton_3.ogg",
         "AntonNarration", /* Category */
-        "16"               /* Entry */
+        "16"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Anton_4.ogg",
         "AntonNarration", /* Category */
-        "17"               /* Entry */
+        "17"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Anton_5.ogg",
         "AntonNarration", /* Category */
-        "18"               /* Entry */
+        "18"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Anton_6.ogg",
         "AntonNarration", /* Category */
-        "19"               /* Entry */
+        "19"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Emilia_1.ogg",
@@ -427,22 +424,22 @@ void OnGameStart()
     LinkVoiceFileToSubtitles(
         "LU_Johan_1.ogg",
         "JohanNarration", /* Category */
-        "45"               /* Entry */
+        "45"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Johan_2.ogg",
         "JohanNarration", /* Category */
-        "46"               /* Entry */
+        "46"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Johan_3.ogg",
         "JohanNarration", /* Category */
-        "47"               /* Entry */
+        "47"              /* Entry */
     );
     LinkVoiceFileToSubtitles(
         "LU_Johan_4.ogg",
         "JohanNarration", /* Category */
-        "48"               /* Entry */
+        "48"              /* Entry */
     );
 
     // ==================================
@@ -450,7 +447,7 @@ void OnGameStart()
     // ==================================
     // All maps 
     SetGlobalVarString("LS_TextCategory", "LoadingMessages");
-     
+
     // SOTR_00_introduction
     SetGlobalVarString("LS_00_Entry", "LoadingText01");
     // Greater than 1 is random, 1 is non-random
