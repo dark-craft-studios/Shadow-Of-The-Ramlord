@@ -24,11 +24,12 @@ void OnStart()
 {
     FadeOut(0.0f);
     StopPlayerLookAt();
-    WakeUpDialog();
+    TortureDialog();
     SetPlayerMoveSpeedMul(0.0f);
     SetPlayerRunSpeedMul(0.0f);
     BlockAllVanillaHints();
     RegisterCallbacks();
+    PreloadSound("step_walk_rock.snt");
 }
 
 void OnLeave()
@@ -40,6 +41,167 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("JohanLineArea", "StartDialog");
     AddSinglePlayerCollideCallback("PrioryLineArea", "StartPriory");
     AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
+}
+
+
+// ----------------------------------------------------------------------------
+// Cutscene Dialog
+// ----------------------------------------------------------------------------
+
+void TortureDialog(string t)
+{
+    int stage = GetLocalVarInt("TortureDialog");
+    AddLocalVarInt("TortureDialog", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        TeleportPlayer("PlayerStartArea_2");
+        SetPlayerActive(false);
+        StartPlayerLookAt("LookAtArea1", 0.8f, 1.5f, "");
+        delay = 2.0f;
+    }
+    else if(stage == 1)
+    {
+        FadeIn(5.0f);
+        delay = 3.0f;
+    }
+    else if(stage == 2)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Johan_2.ogg", 
+            "JohanNarration", 
+            "33"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 3)
+    {
+        delay = 3.0f;
+    }
+    else if(stage == 4)
+    {
+    SetMoveObjectStateExt("castle_portcullis_1", 1.0f, 0.8f, 1.0f, 0.5f, false);
+        delay = 8.0f;
+    }
+    else if(stage == 5)
+    {
+        PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_1", 0.1f, false);
+        delay = 1.5f;
+    }
+    else if(stage == 6)
+    {
+        PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_2", 0.1f, false);
+        delay = 1.5f;
+    }
+    else if(stage == 7)
+    {
+        PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_3", 0.1f, false);
+        delay = 1.5f;
+    }
+    else if(stage == 8)
+    {
+        PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_4", 0.1f, false);
+        delay = 1.5f;
+    }
+    else if(stage == 9)
+    {
+        PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_5", 0.1f, false);
+        delay = 4.5f;
+    }
+    else if(stage == 10)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_1.ogg", 
+            "AntonNarration", 
+            "8"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 11)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 12)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_2.ogg", 
+            "AntonNarration", 
+            "9"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 13)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 14)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_3.ogg", 
+            "AntonNarration", 
+            "10"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 15)
+    {
+        ///ROOM FOR SLASHING SOUND/IMPACT
+        SetPlayerHealth(25.0f);
+        delay = 2.0f;
+    }
+    else if(stage == 16)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Johan_3.ogg", 
+            "JohanNarration", 
+            "34"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 17)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 18)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_4.ogg", 
+            "AntonNarration", 
+            "11"
+        );
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 19)
+    {
+        ///FURTHER STAB SOUND
+        FadeOut(3.0f);
+        delay = 4.0f;
+    }
+    else if(stage == 20)
+    {
+        SetPlayerHealth(100.0f);
+        TeleportPlayer("PlayerStartArea_1");
+        WakeUpDialog();
+        delay = 2.0f;
+    }
+    else
+    {
+        return;
+    }
+    AddTimer("", delay, "TortureDialog");
+}
+
+void TortureDialog()
+{
+    StopPlayerLookAt();
+    TortureDialog("");
 }
 
 // ----------------------------------------------------------------------------
@@ -55,7 +217,6 @@ void WakeUpDialog(string t)
     if(stage == 0)
     {
         FadeIn(8.0f);
-
         delay = 5.0f;
     }
     else if(stage == 1)
@@ -81,6 +242,7 @@ void WakeUpDialog(string t)
     else if(stage == 3)
     {
         ResetPlayerSpeed();
+        SetPlayerActive(true);
     }
     else
     {
