@@ -75,6 +75,10 @@ void LastConversation(string t)
     }
     else if(stage == 2)
     {
+        delay = 2.0f;
+    }
+    else if(stage == 3)
+    {
         PlayVoiceOnPlayer(
             "LU_Anton_1.ogg", 
             "AntonNarration", 
@@ -83,7 +87,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 3)
+    else if(stage == 4)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 5)
     {
         PlayVoiceOnPlayer(
             "LU_Johan_2.ogg", 
@@ -93,7 +101,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 4)
+    else if(stage == 6)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 7)
     {
         PlayVoiceOnPlayer(
             "LU_Anton_2.ogg", 
@@ -103,7 +115,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 5)
+    else if(stage == 8)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 9)
     {
         PlayVoiceOnPlayer(
             "LU_Anton_3.ogg", 
@@ -113,7 +129,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 6)
+    else if(stage == 10)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 11)
     {
         PlayVoiceOnPlayer(
             "LU_Anton_4.ogg", 
@@ -123,7 +143,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 7)
+    else if(stage == 12)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 13)
     {
         PlayVoiceOnPlayer(
             "LU_Johan_3.ogg", 
@@ -133,7 +157,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 8)
+    else if(stage == 14)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 15)
     {
         PlayVoiceOnPlayer(
             "LU_Anton_5.ogg", 
@@ -143,7 +171,11 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 9)
+    else if(stage == 16)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 17)
     {
         PlayVoiceOnPlayer(
             "LU_Anton_6.ogg", 
@@ -153,7 +185,7 @@ void LastConversation(string t)
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
-    else if(stage == 10)
+    else if(stage == 18)
     {
         SetPlayerActive(true);
         StopPlayerLookAt();
@@ -194,12 +226,12 @@ void CreditsConversation(string t)
         SetPlayerMoveSpeedMul(0.0f);
         SetPlayerRunSpeedMul(0.0f);
         SetPlayerActive(false);
-        delay = 5.0f;
+        delay = 3.0f;
     }
     else if(stage == 1)
     {
         TeleportPlayer("EndingPlayerArea");
-        delay = 6.0f;
+        delay = 2.0f;
     }
     else if(stage == 2)
     {
@@ -213,6 +245,10 @@ void CreditsConversation(string t)
     }
     else if(stage == 3)
     {
+        delay = 2.0f;
+    }
+    else if(stage == 4)
+    {
         PlayVoiceOnPlayer(
             "LU_Johan_4.ogg", 
             "JohanNarration", 
@@ -221,7 +257,11 @@ void CreditsConversation(string t)
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
-    else if(stage == 4)
+    else if(stage == 5)
+    {
+        delay = 3.0f;
+    }
+    else if(stage == 6)
     {
         PlayVoiceOnPlayer(
             "LU_Emilia_3.ogg", 
@@ -231,11 +271,21 @@ void CreditsConversation(string t)
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
-    else if(stage == 5)
+    else if(stage == 7)
+    {
+        PlayVoiceOnPlayer(
+            "LU_Dead_Avatar_1.ogg", 
+            "", 
+            ""
+        );
+        SetEffectVoiceOverCallback("CreditsConversation");
+        return;
+    }
+    else if(stage == 8)
     {
         delay = 5.0f;
     }
-    else if(stage == 6)
+    else if(stage == 9)
     {
         PlayVoiceOnPlayer(
             "LU_Emilia_4.ogg", 
@@ -245,11 +295,11 @@ void CreditsConversation(string t)
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
-    else if(stage == 7)
+    else if(stage == 10)
     {
         delay = 5.0f;
     }
-    else if(stage == 8)
+    else if(stage == 11)
     {
         StartCredits("", false, "Credits", "FinalCredits", 4); 
     }
