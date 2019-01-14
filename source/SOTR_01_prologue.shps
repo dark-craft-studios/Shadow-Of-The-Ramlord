@@ -30,7 +30,7 @@ void OnStart()
     FadeIn(3.0f);
     PlayMusicOnce("11_paper_howl.ogg");
     StartAmbience(ambOutside);
-    RegisterCallbacks();    
+    RegisterCallbacks();
 }
 
 void OnLeave()
@@ -111,7 +111,6 @@ void AltarMiniCutscene(string t)
     AddTimer("", delay, "AltarMiniCutscene");
 }
 
-
 // ============================================================================
 // MEDITATION
 // ============================================================================
@@ -123,6 +122,7 @@ void Meditate(string item, string entity)
     SetSwingDoorLocked(entClearsightDoor, false, true);
     SetEntityActive("JohanVoice_3", false);
     SetLevelDoorLocked("level_celler_2", false);
+    SetEffectVoiceOverCallback("");
     StartMeditation(entity, "OnMeditating");
 }
 
@@ -153,7 +153,11 @@ void AntonAndEmiliaCutscene(string t)
     if(stage == 0)
     {
         SetLevelDoorLocked(entBallroomLevelDoor, true);
-        SetLevelDoorLockedText(entBallroomLevelDoor, "DoorMessages", "PrologueBallroomLevelDoorLocked");
+        SetLevelDoorLockedText(
+            entBallroomLevelDoor, 
+            "DoorMessages", 
+            "PrologueBallroomLevelDoorLocked"
+        );
         FadeSepiaColorTo(0.9f, 2.0f);
         FadeRadialBlurTo(0.025f, 2.0f);
         delay = 2.5f;
@@ -213,3 +217,4 @@ void ExitShed(string entity)
     StopAmbience(0.5f);
     StartAmbience(ambOutside);
 }
+
