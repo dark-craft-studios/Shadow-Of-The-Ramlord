@@ -12,16 +12,14 @@ const string gMapId = "04";
 
 void OnStart()
 {
-    //OnBasementDoorInteract();
-
     GetGlobalLoadingScreen("03");
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
-    
+
     //if(ScriptDebugOn()) { FadeIn(0.5f); return; }
-   
+
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
 }
 
@@ -33,7 +31,7 @@ void EmiliaMakeFewSteps(string t)
 
     PlaySoundAtEntity("step_walk_female_wood.snt", "EmiliasFeet");
     delay = RandFloat(0.7f, 0.8f);
-    
+
     if(stage > 2) { return; }
 
     AddTimer("", delay, "EmiliaMakeFewSteps");
@@ -50,11 +48,11 @@ void RegisterCallbacks()
     for(int i = 1; i <= brBookCount; i++)
     {
         AddUseItemCallback(
-            "", 				/* Name */
+            "",                 /* Name */
             brBookItemBase + i, /* Item Name */
-            brRitualArea, 		/* Entity */
-            "PlaceRitualBook", 	/* Callback Function */
-            true 				/* Destroy Item */
+            brRitualArea,       /* Entity */
+            "PlaceRitualBook",  /* Callback Function */
+            true                /* Destroy Item */
         );
     }
 
@@ -93,11 +91,12 @@ void DoorConversation(string a, string b, int state)
 {
     PlaySoundAtEntity("scare_wood_creak_scuf.snt", "EmiliasFeet");
     StartPlayerLookAt(
-        "EmiliaSource", /* Entity */
+        "EmiliaSource",  /* Entity */
         1.0f,            /* Multiplier */
         1.5f,            /* Max speed */
         ""               /* Callback */
     );
+
     SetPlayerActive(false);
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_3.ogg", "EmiliaSource");
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_4.ogg", "EmiliaSource");
@@ -107,7 +106,8 @@ void DoorConversation(string a, string b, int state)
 
 void DoorConversationEnd()
 {
-    // NOTE(Peter): How about a sound of her walking to a chair and sitting down?
+    // NOTE(Peter): How about a sound of her walking to
+    // a chair and sitting down?
     PlaySoundAtEntity("scare_wood_creak_scuf.snt", "EmiliasFeet");
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_3.ogg");
 
@@ -119,16 +119,15 @@ void DoorConversationEnd()
 // ----------------------------------------------------------------------------
 void BeginMonsterSequence(string a, string b, int state)
 {
-    AddEffectVoice("OL_Johan_6.ogg", "", "JohanNarration", "28", false, "player", 0.0f, 20.0f);
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_6.ogg");
 }
-
 
 // ----------------------------------------------------------------------------
 // Ending Sequence - Audio
 // ----------------------------------------------------------------------------
 void EndingLine1(string a, string b, int state)
 {
-    AddEffectVoice("OL_Johan_8.ogg", "", "JohanNarration", "30", false, "player", 0.0f, 20.0f);
+    PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
 }
 
 // ----------------------------------------------------------------------------
@@ -144,8 +143,7 @@ void PlaceRitualBook(string item, string entity)
     RemoveItem(item);
 
     AddLocalVarInt("brPlacedBooks", 1);
-    int currentBookNumber = GetLocalVarInt("brPlacedBooks");
-
+    int currentBookNumber = GetLocalVarInt("brPlacedBooks"); 
     SetEntityActive(brBookStaticBase + currentBookNumber, true);
     CheckRitualCompletion();
 }
@@ -261,13 +259,21 @@ void BasementCreaks(string t)
     if(stage == 0)
     {
         PlaySoundAtEntity("scare_wood_creak_scuf.snt", "BigFeetArea_1");
-        CreateParticleSystemAtEntityWithAlpha("ps_dust_falling_big_feet.ps", "BigFeetArea_1", 0.25f);
+        CreateParticleSystemAtEntityWithAlpha(
+            "ps_dust_falling_big_feet.ps", 
+            "BigFeetArea_1", 
+            0.25f
+        );
         delay = 4.0f;
     }
     else if(stage == 1)
     {
         PlaySoundAtEntity("scare_wood_creak_walk.snt", "BigFeetArea_2");
-        CreateParticleSystemAtEntityWithAlpha("ps_dust_falling_big_feet.ps", "BigFeetArea_2", 0.25f);
+        CreateParticleSystemAtEntityWithAlpha(
+            "ps_dust_falling_big_feet.ps", 
+            "BigFeetArea_2", 
+            0.25f
+        );
         StartPlayerLookAt("BigFeetArea_2", 0.5f, 0.6f, "");
         delay = 2.0f;
     }
@@ -293,7 +299,7 @@ void EnsureFirstTombPickup(string a, string b, int s)
 {
     if(s == CollisionState::onlyEnter)
     {
-        
+
         AddDebugMessage("Checking for first tomb", false);
         if(GetLocalVarInt("FirstTombPickedUp") != 1)
         {
@@ -340,8 +346,25 @@ void RitualBookPickupScene(string t)
         SetEntityActive("RitualBook_1_Static", true);
         SetPlayerActive(false);
         StartPlayerLookAt("RitualBook_1_Static", 1.0f, 1.5f, "");
-        FadeLightTo("rbSpot", rbSpotR, rbSpotG, rbSpotB, 1.0f, -1.0f, 0.5f);
-        FadeLightTo("rbPoint", rbPointR, rbPointG, rbPointB, 1.0f, -1.0f, 0.5f);
+        // TODO (Peter) : Comment FadeLightTo
+        FadeLightTo(
+            "rbSpot", 
+            rbSpotR, 
+            rbSpotG, 
+            rbSpotB, 
+            1.0f, 
+            -1.0f, 
+            0.5f
+        );
+        FadeLightTo(
+            "rbPoint", 
+            rbPointR, 
+            rbPointG, 
+            rbPointB, 
+            1.0f, 
+            -1.0f, 
+            0.5f
+        );
         FadeRadialBlurTo(0.015f, 1.0f);
         FadePlayerFOVMulTo(0.1f, 0.05f);
         PlayVoiceOnPlayerAndSlowdown("OL_Johan_5.ogg");
@@ -382,7 +405,7 @@ void OnLastBookPickup()
 void OnBasementDoorInteract(string t)
 {
     if(GetLocalVarInt("EmiliaIntroDone") == 1) { return; }
-    
+
     int stage = GetLocalVarInt("OnBasementDoorInteract");
     AddLocalVarInt("OnBasementDoorInteract", 1);
     float delay = 0.0f;
@@ -390,8 +413,14 @@ void OnBasementDoorInteract(string t)
     if(stage == 0)
     {
         PlaySoundAtEntity("09_wind_whirl.snt", "RosePetalsWindArea");
-        CreateParticleSystemAtEntity("ps_rose_petals_wind.ps", "RosePetalsWindArea");
-        CreateParticleSystemAtEntity("ps_dust_push.ps", "DustPushArea");
+        CreateParticleSystemAtEntity(
+            "ps_rose_petals_wind.ps", 
+            "RosePetalsWindArea"
+        );
+        CreateParticleSystemAtEntity(
+            "ps_dust_push.ps", 
+            "DustPushArea"
+        );
         SetLightFlickerActive("BasementLight", true);
         delay = 2.0f;
     }
@@ -463,3 +492,4 @@ void PlayStepRunSounds(string t)
 }
 
 void PlayStepRunSounds() { PlayStepRunSounds(""); }
+
