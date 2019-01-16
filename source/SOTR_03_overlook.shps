@@ -6,7 +6,7 @@
 #include "Meditation.ihps"
 
 // ============================================================================
-// Main
+// MAIN
 // ============================================================================
 const string gMapId = "04";
 
@@ -21,20 +21,6 @@ void OnStart()
     //if(ScriptDebugOn()) { FadeIn(0.5f); return; }
 
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
-}
-
-void EmiliaMakeFewSteps(string t)
-{
-    int stage = GetLocalVarInt("EmiliaMakeFewSteps");
-    AddLocalVarInt("EmiliaMakeFewSteps", 1);
-    float delay = 0.0f;
-
-    PlaySoundAtEntity("step_walk_female_wood.snt", "EmiliasFeet");
-    delay = RandFloat(0.7f, 0.8f);
-
-    if(stage > 2) { return; }
-
-    AddTimer("", delay, "EmiliaMakeFewSteps");
 }
 
 void OnEnter()
@@ -114,25 +100,25 @@ void DoorConversationEnd()
     ResetPlayerState();
 }
 
-// ----------------------------------------------------------------------------
-// Monster Sequence Initialize
-// ----------------------------------------------------------------------------
+// ============================================================================
+// MONSTER SEQUENCE INITIALIZE
+// ============================================================================
 void BeginMonsterSequence(string a, string b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_6.ogg");
 }
 
-// ----------------------------------------------------------------------------
-// Ending Sequence - Audio
-// ----------------------------------------------------------------------------
+// ============================================================================
+// ENDING SEQUENCE - AUDIO
+// ============================================================================
 void EndingLine1(string a, string b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
 }
 
-// ----------------------------------------------------------------------------
-// Book Ritual - br
-// ----------------------------------------------------------------------------
+// ============================================================================
+// BOOK RITUAL
+// ============================================================================
 const int    brBookCount        = 3;
 const string brBookItemBase     = "RitualBook_";
 const string brBookStaticBase   = "RitualBookStatic_";
@@ -174,9 +160,9 @@ void OnRitualCompleted()
     StartRitualCutscene();
 }
 
-// ----------------------------------------------------------------------------
-// After-Ritual Cutscene arc
-// ----------------------------------------------------------------------------
+// ============================================================================
+// AFTER-RITUAL CUTSCENE
+// ============================================================================
 const string[] arcLampsToGoOut = {
     "PointLight_10",
     "candle_floor_21",
@@ -237,9 +223,9 @@ void OnRitualVoiceDone()
     SetPropHealth(arcDoorToPush, 0.0f);
 }
 
-// ----------------------------------------------------------------------------
-// Voiceover Lines
-// ----------------------------------------------------------------------------
+// ============================================================================
+// VOICEOVER LINES
+// ============================================================================
 void OnMapEnterVoiceover(string t)
 {
     FadeIn(3.0f);
@@ -461,6 +447,20 @@ void OnBasementDoorInteract(string t)
 void OnBasementDoorInteract()
 {
     OnBasementDoorInteract("");
+}
+
+void EmiliaMakeFewSteps(string t)
+{
+    int stage = GetLocalVarInt("EmiliaMakeFewSteps");
+    AddLocalVarInt("EmiliaMakeFewSteps", 1);
+    float delay = 0.0f;
+
+    PlaySoundAtEntity("step_walk_female_wood.snt", "EmiliasFeet");
+    delay = RandFloat(0.7f, 0.8f);
+
+    if(stage > 2) { return; }
+
+    AddTimer("", delay, "EmiliaMakeFewSteps");
 }
 
 // ============================================================================
