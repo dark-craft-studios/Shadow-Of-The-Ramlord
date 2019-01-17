@@ -406,8 +406,88 @@ void OnAllItemsPickedUp()
 
 void StartEnding(string a, string b, int s)
 {
-    PlayVoiceOnPlayerAndSlowdown("RC_Johan_13.ogg");
+    EndingDialog();
+    SetPlayerActive(false);
+    StartPlayerLookAt("LookAtDoor", 0.8f, 1.5f, "");
     SetSwingDoorLocked("BlowOpenDoor1", false, true);
+}
+
+void EndingDialog(string t)
+{
+    int stage = GetLocalVarInt("EndingDialog");
+    AddLocalVarInt("EndingDialog", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Johan_13.ogg", 
+            "JohanNarration", 
+            "44"
+        );
+        SetEffectVoiceOverCallback("EndingDialog");
+        return;
+    }
+    else if(stage == 1)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_5.ogg", 
+            "AntonNarration", 
+            "12"
+        );
+        SetEffectVoiceOverCallback("EndingDialog");
+        return;
+    }
+    else if(stage == 2)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 3)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_6.ogg", 
+            "AntonNarration", 
+            "12b"
+        );
+        SetEffectVoiceOverCallback("EndingDialog");
+        return;
+    }
+    else if(stage == 4)
+    {
+        delay = 1.0f;
+        ///PRISONER DIALOG HERE
+    }
+    else if(stage == 5)
+    {
+        PlayVoiceOnPlayer(
+            "RC_Anton_7.ogg", 
+            "AntonNarration", 
+            "13"
+        );
+        SetEffectVoiceOverCallback("EndingDialog");
+        return;
+    }
+    else if(stage == 5)
+    {
+        ///SOUNDS OF CRASHING RUBBLE IN DISTANCE, ECHOING LAUGHTER
+        delay = 1.0f;
+    }
+    else if(stage == 6)
+    {
+        StopPlayerLookAt();
+        SetPlayerActive(true);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "EndingDialog");
+}
+
+void EndingDialog()
+{
+    EndingDialog("");
 }
 
 
