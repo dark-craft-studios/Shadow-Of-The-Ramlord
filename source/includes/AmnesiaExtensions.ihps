@@ -88,6 +88,13 @@ void AddUseItemCallback(string item, string entity, string callback)
 
 // ----------------------------------------------------------------------------
 
+void ChangeMap(string map)
+{
+    ChangeMap(map, "PlayerStartArea_1", "", "");
+}
+
+// ----------------------------------------------------------------------------
+
 void CreateParticleSystemAtEntity(string file, string entity)
 {
     CreateParticleSystemAtEntity(

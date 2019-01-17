@@ -8,7 +8,7 @@ void OnEnter()
 void EnforceEssentailItems()
 {
     EnforceItem(GetGlobalVarString("LanternName"), "lantern.ent");
-    EnforceItem(GetGlobalVarString("ClearsightItemName"), "SOTR_Clearsight.ent");
+    EnforceItem("SOTR_Clearsight_1", "SOTR_Clearsight.ent");
 }
 
 void EnforceItem(string itemName, string itemFile)

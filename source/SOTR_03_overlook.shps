@@ -17,9 +17,6 @@ void OnStart()
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
-
-    //if(ScriptDebugOn()) { FadeIn(0.5f); return; }
-
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
 }
 
@@ -67,6 +64,12 @@ void RegisterCallbacks()
         "StairsDoor_1", 
         "SuitorDoorEventArea", 
         "SuitorDoorEvent"
+    );
+
+    AddUseItemCallback(
+        "SOTR_Clearsight_1",
+        "MeditationArea_2",
+        "OnGraveInteract"
     );
 }
 
@@ -164,28 +167,25 @@ void OnRitualCompleted()
 // AFTER-RITUAL CUTSCENE
 // ============================================================================
 const string[] arcLampsToGoOut = {
-    "PointLight_10",
-    "candle_floor_21",
-    "candle_floor_29",
-    "candle_floor_28",
-    "candle_floor_26",
-    "candle_floor_25",
-    "candle_floor_23",
-    "candle_floor_39",
-    "candle_floor_40",
-    "candle_floor_41",
-    "candle_floor_42",
-    "candle_floor_33",
-    "candle_floor_34",
-    "candle_floor_35",
-    "candle_floor_43",
-    "candle_floor_36",
-    "candle_floor_37",
-    "candle_floor_38"
+    "candle_1",
+    "candle_2",
+    "candle_3",
+    "candle_4",
+    "candle_5",
+    "candle_6",
+    "candle_7",
+    "candle_8",
+    "candle_9",
+    "candle_10",
+    "candle_11",
+    "candle_12",
+    "candle_13",
+    "candle_14"
 };
 
 const string[] arcLightsToGoOut = {
-    "PointLight_10"
+    "PointLight_1",
+    "CandleBillboardLight"
 };
 
 const string arcDoorToPush = "EmiliaDoor";
@@ -198,6 +198,8 @@ void StartRitualCutscene()
 
 void OnRitualVoiceDone()
 {
+    ResetPlayerState();
+
     for(uint i = 0; i < arcLampsToGoOut.length(); i++)
     {
         SetLampLit(
@@ -220,6 +222,7 @@ void OnRitualVoiceDone()
         );
     }
 
+    SetPropStaticPhysics(arcDoorToPush, false);
     SetPropHealth(arcDoorToPush, 0.0f);
 }
 
@@ -492,4 +495,17 @@ void PlayStepRunSounds(string t)
 }
 
 void PlayStepRunSounds() { PlayStepRunSounds(""); }
+
+// ============================================================================
+// FINAL MEDITATION
+// ============================================================================
+void OnGraveInteract(string item, string entity)
+{
+    StartMeditation(entity, "OnGraveMeditation");
+}
+
+void OnGraveMeditation(string t)
+{
+    ChangeMap("SOTR_04_emiliasdream.map");
+}
 
