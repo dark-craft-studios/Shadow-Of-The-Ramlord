@@ -5,6 +5,8 @@
 #include "ForceEssentialItems_AUTORUN.ihps"
 #include "Meditation.ihps"
 
+const string graveyardDoor = "mansion_1";
+
 // ============================================================================
 // MAIN
 // ============================================================================
@@ -117,6 +119,14 @@ void BeginMonsterSequence(string a, string b, int state)
 void EndingLine1(string a, string b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
+    SetPropStaticPhysics(graveyardDoor, true);
+    SetEffectVoiceOverCallback("UnlockGraveyard");
+}
+
+void UnlockGraveyard()
+{
+    ResetPlayerState();
+    SetPropStaticPhysics(graveyardDoor, false);
 }
 
 // ============================================================================

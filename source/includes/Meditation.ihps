@@ -1,4 +1,5 @@
 #include "AmnesiaSignatures.cpp"
+#include "Utilities.ihps"
 
 // WARNING: TODO: THIS IS JUST EXTRACTED FROM PROLOGUE AND IS NOT REUSABLE
 
@@ -18,6 +19,8 @@
 // ============================================================================
 void StartMeditation(string focusArea, string callback)
 {
+    SetLanternActive(false, true);
+    ResetPlayerState();
     SetLocalVarString("MeditationCallback", callback);
     AddDebugMessage("Meditation triggered", false);
     StartPlayerLookAt(focusArea, 1.0f, 1.5f, "");
