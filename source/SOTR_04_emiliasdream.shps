@@ -12,10 +12,9 @@ const string gMapId = "06";
 void OnStart()
 {
     StartAmbience("ambience_hollow_tinker.snt");
-    StartPlayerLookAt("cross_small_wood_1", 10.0f, 10.0f, "");
     SetPlayerActive(false);
     FadeOut(0.0f);
-    BedroomLineOne();
+    EmiliasDream();
 }
 
 void OnLeave()
@@ -27,122 +26,250 @@ void OnLeave()
 // MAIN CUTSCENE
 // ============================================================================
 
-void BedroomLineOne(string t)
+void EmiliasDream(string t)
 {
-    int stage = GetLocalVarInt("BedroomLineOne");
-    AddLocalVarInt("BedroomLineOne", 1);
+    int stage = GetLocalVarInt("EmiliasDream");
+    AddLocalVarInt("EmiliasDream", 1);
     float delay = 0.0f;
 
     if(stage == 0)
     {
+        StartPlayerLookAt("LookAtMe1", 0.8f, 1.5f, "");
+        delay = 3.0f;
+    }
+    else if(stage == 1)
+    {
         FadeIn(3.0f);
+        delay = 1.0f;
+    }
+    else if(stage == 2)
+    {
         PlayVoiceOnPlayer(
             "ED_Emilia_1.ogg", 
             "EmiliaNarration", 
             "7"
         );
-        SetEffectVoiceOverCallback("BedroomLineOne");
+        SetEffectVoiceOverCallback("EmiliasDream");
         return;
-    }
-    else if(stage == 1)
-    {
-        FadeOut(2.0f);
-        delay = 4.0f;
-    }
-    else if(stage == 2)
-    {
-        TeleportPlayer("PlayerStartArea_2");
-        StartPlayerLookAt("crude_man_chains_statue_16", 10.0f, 10.0f, "");
-        delay = 4.0f;
     }
     else if(stage == 3)
     {
-        FadeIn(5.0f);
+        delay = 2.0f;
+    }
+    else if(stage == 4)
+    {
+        PlayVoiceOnPlayer(
+            "ED_Emilia_1b.ogg", 
+            "EmiliaNarration", 
+            "7b"
+        );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 5)
+    {
+        FadeOut(3.0f);
+        delay = 4.0f;
+    }
+    else if(stage == 6)
+    {
+        TeleportPlayer("PlayerStartArea_2");
+        StartPlayerLookAt("LookAtMe2", 0.8f, 1.5f, "");
+        delay = 2.0f;
+    }
+    else if(stage == 7)
+    {
+        FadeIn(3.0f);
+        delay = 1.0f;
+    }
+    else if(stage == 8)
+    {
         PlayVoiceOnPlayer(
             "ED_Anton_1.ogg", 
             "AntonNarration", 
             "4"
         );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 9)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 10)
+    {
         PlayVoiceOnPlayer(
             "ED_Emilia_2.ogg", 
             "EmiliaNarration", 
             "8"
         );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 11)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 12)
+    {
         PlayVoiceOnPlayer(
             "ED_Anton_2.ogg", 
             "AntonNarration", 
             "5"
         );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 13)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 14)
+    {
         PlayVoiceOnPlayer(
             "ED_Emilia_3.ogg", 
             "EmiliaNarration", 
             "9"
         );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 15)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 16)
+    {
         PlayVoiceOnPlayer(
             "ED_Anton_3.ogg", 
             "AntonNarration", 
             "6"
         );
-        SetEffectVoiceOverCallback("BedroomLineOne");
+        SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 4)
+    else if(stage == 17)
     {
-        FadeOut(2.0f);
+        FadeOut(3.0f);
         delay = 4.0f;
     }
-    else if(stage == 5)
+    else if(stage == 18)
     {
-        StartPlayerLookAt("cross_small_wood_1", 10.0f, 10.0f, "");
+        StartPlayerLookAt("LookAtMe1", 0.8f, 1.5f, "");
+        delay = 3.0f;
+    }
+    else if(stage == 19)
+    {
+        FadeIn(3.0f);
         TeleportPlayer("PlayerStartArea_1");
-        delay = 4.0f;
+        delay = 1.0f;
     }
-    else if(stage == 6)
+    else if(stage == 20)
     {
-        FadeIn(2.0f);
         PlayVoiceOnPlayer(
             "ED_Emilia_4.ogg", 
             "EmiliaNarration", 
             "10"
         );
-        SetEffectVoiceOverCallback("BedroomLineOne");
+        SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 7)
+    else if(stage == 21)
     {
-        FadeOut(2.0f);
+        delay = 2.0f;
+    }
+    else if(stage == 22)
+    {
+        PlayVoiceOnPlayer(
+            "ED_Emilia_4b.ogg", 
+            "EmiliaNarration", 
+            "10b"
+        );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 23)
+    {
+        delay = 2.0f;
+    }
+    else if(stage == 24)
+    {
+        StartPlayerLookAt("LookAtKnife", 0.8f, 1.5f, "");
+        PlayVoiceOnPlayer(
+            "ED_Emilia_4c.ogg", 
+            "EmiliaNarration", 
+            "10c"
+        );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 25)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 26)
+    {
+        ///ROOM FOR KNIFE SLASHING SOUND
+        FadeOut(3.0f);
         delay = 4.0f;
     }
-    else if(stage == 8)
+    else if(stage == 27)
     {
-        StartPlayerLookAt("crude_man_chains_statue_18", 10.0f, 10.0f, "");
         TeleportPlayer("PlayerStartArea_3");
-        delay = 4.0f;
+        delay = 1.0f;
     }
-    else if(stage == 9)
+    else if(stage == 28)
     {
-        FadeIn(2.0f);
+        StartPlayerLookAt("LookAtMe3", 0.8f, 1.5f, "");
+        delay = 3.0f;
+    }
+    else if(stage == 29)
+    {
+        FadeIn(3.0f);
+        delay = 3.0f;
+    }
+    else if(stage == 30)
+    {
         PlayVoiceOnPlayer(
             "ED_Anton_4.ogg", 
             "AntonNarration", 
             "7"
         );
-        SetEffectVoiceOverCallback("BedroomLineOne");
+        SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 10)
+    else if(stage == 31)
     {
-        ChangeMap("SOTR_05_risenchamber", "PlayerStartArea_1", "", "");
+        delay = 1.0f;
+    }
+    else if(stage == 32)
+    {
+        PlayVoiceOnPlayer(
+            "ED_Anton_4b.ogg", 
+            "AntonNarration", 
+            "7b"
+        );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        return;
+    }
+    else if(stage == 33)
+    {
+        FadeOut(3.0f);
+        delay = 6.0f;
+    }
+    else if(stage == 34)
+    {
+        ChangeMap("SOTR_05_risenchamber", "Player_Start_Area_2", "", "");
     }
     else
     {
         return;
     }
 
-    AddTimer("", delay, "BedroomLineOne");
+    AddTimer("", delay, "EmiliasDream");
 }
 
-void BedroomLineOne()
+void EmiliasDream()
 {
-    BedroomLineOne("");
+    EmiliasDream("");
 }
