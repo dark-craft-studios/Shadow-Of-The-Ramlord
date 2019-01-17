@@ -29,6 +29,11 @@ void StartMeditation(string focusArea, string callback)
     AddTimer("", 2.0f, "MeditationTimer");
 }
 
+void SetMeditationCallback(string callback)
+{
+    SetLocalVarString("MeditationCallback", callback);
+}
+
 void MeditationTimer(string t)
 {
     AddLocalVarInt("MeditationStage", 1);

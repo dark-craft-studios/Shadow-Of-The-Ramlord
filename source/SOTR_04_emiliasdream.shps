@@ -3,6 +3,7 @@
 #include "Utilities.ihps"
 #include "EveryMapEvents_AUTORUN.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
+#include "Meditation.ihps"
 
 // ============================================================================
 // MAIN
@@ -14,6 +15,7 @@ void OnStart()
     StartAmbience("ambience_hollow_tinker.snt");
     SetPlayerActive(false);
     FadeOut(0.0f);
+    SetPlayerCrouching(false);
     EmiliasDream();
 }
 
