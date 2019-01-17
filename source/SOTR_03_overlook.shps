@@ -20,6 +20,8 @@ void OnStart()
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
+    //FadeIn(0.1f);
+    //AddTimer("", 5.0f, "DEBUG");
 }
 
 void OnEnter()
@@ -200,15 +202,81 @@ const string[] arcLightsToGoOut = {
 
 const string arcDoorToPush = "EmiliaDoor";
 
-void StartRitualCutscene()
+void StartRitualCutscene() { RitualScare(); }
+
+// <DEBUG>
+
+void DEBUG(string t)
 {
-    PlayVoiceOnPlayerAndSlowdown("OL_Johan_4.ogg");
-    SetEffectVoiceOverCallback("OnRitualVoiceDone");
+    RitualScare();
 }
+
+// </DEBUG>
+
+
+void RitualScare(string t)
+{
+    int stage = GetLocalVarInt("RitualScare");
+    AddLocalVarInt("RitualScare", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        SetPlayerActive(false);
+        StartPlayerLookAtNormal("RitualBookArea");
+        delay = 2.0f;
+    }
+    else if(stage == 1)
+    {
+        StopAmbience();
+        FadeOutMusic(0.5f);
+        FadeRadialBlurTo(0.015f, 1.0f);
+        FadePlayerFOVMulTo(0.1f, 0.05f);
+        delay = 6.0f;
+    }
+    else if(stage == 2)
+    {
+        PlaySoundAtEntity("19_breath.snt");
+        delay = 4.0f;
+    }
+    else if(stage == 3)
+    {
+       PlaySoundAtEntity("react_breath_slow.snt");
+       delay = 1.0f;
+    }
+    else if(stage == 4)
+    {
+        PlaySoundAtEntity("chains_monster_man_run_soft.snt", "ChainArea_2");
+        PlayVoiceOnPlayerAndSlowdown("OL_Johan_4.ogg");
+        SetEffectVoiceOverCallback("RitualScare");
+        return;
+    }
+    else if(stage == 5)
+    {
+        PlaySoundAtEntity("chains_monster_man_run_soft.snt", "ChainArea_4");
+        delay = 0.4f;
+    }
+    else if(stage == 6)
+    {
+        OnRitualVoiceDone();
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "RitualScare");
+}
+
+void RitualScare() { RitualScare(""); }
 
 void OnRitualVoiceDone()
 {
     ResetPlayerState();
+    GiveSanityDamage(1.0f, true);
+    PlayGuiSound("15_event_prisoner.ogg", 1.0f);
+    FadePlayerFOVMulTo(1.0f, 0.75f);
+    FadeRadialBlurTo(0.0f, 0.5f);
 
     for(uint i = 0; i < arcLampsToGoOut.length(); i++)
     {

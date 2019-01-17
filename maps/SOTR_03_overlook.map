@@ -5,7 +5,7 @@
             <Viewport CameraPosition="33.5983 1.09542 178.929" CameraTarget="33.5983 1.09542 -1.07094" CameraZoom="0" GridHeight="-1.07094" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="213.598 1.09542 -1.07094" CameraTarget="33.5983 1.09542 -1.07094" CameraZoom="0" GridHeight="33.5983" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="33.8482 181.102 -1.07249" CameraTarget="33.8482 1.10185 -1.07249" CameraZoom="0" GridHeight="1.10185" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-6.0128 2.88007 -6.67985" CameraTarget="-9.47639 1.06385 -7.19086" CameraZoom="2.53979" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.499375 4.3807 15.5798" CameraTarget="-0.617487 -0.915507 10.7234" CameraZoom="1.93979" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="false" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -9563,7 +9563,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="false" FileIndex="0" Group="0" ID="3046" Name="EmiliaDoor" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-10.3417 0 -7.5">
+                <Entity Active="true" FileIndex="0" Group="0" ID="3046" Name="EmiliaDoor" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-10.3417 0 -7.5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -10078,7 +10078,7 @@
                     </UserVariables>
                 </Entity>
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_flies.ps" Group="0" ID="3518" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="Flies1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="27.4117 1.51115 -0.629299" />
-                <Sound Active="true" Group="0" ID="3519" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_flies.snt" Tag="" UseDefault="true" Volume="1" WorldPos="27.3505 1.51115 -0.632702" />
+                <Sound Active="true" Group="0" ID="3519" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_flies.snt" Tag="" UseDefault="true" Volume="1" WorldPos="27.3505 1.51115 -0.632702" />
                 <Entity Active="true" FileIndex="150" Group="0" ID="3523" Name="pot_1" Rotation="-3.9219e-07 0.523596 -1.46368e-06" Scale="1 1 1" Tag="" WorldPos="27.356 1.01015 -0.0973013">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -22137,7 +22137,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="6537" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_chain_rattle.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.968695 9.10544 -5.34907" />
+                <Sound Active="true" Group="0" ID="6537" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_chain_rattle.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.968695 9.10544 -5.34907" />
                 <Area Active="true" AreaType="Script" Group="0" ID="6539" Mesh="" Name="EmiliasFeet" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.5072 0 -7.54911">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
@@ -23822,6 +23822,46 @@
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
                         <Var Name="ItemInteraction" Value="true" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="6879" Mesh="" Name="ChainArea_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="3.5 0 10">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="6880" Mesh="" Name="ChainArea_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="2 0 8">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="6881" Mesh="" Name="ChainArea_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-3 0 8">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
+                        <Var Name="MaxFocusDistance" Value="-1" />
+                    </UserVariables>
+                </Area>
+                <Area Active="true" AreaType="Script" Group="0" ID="6882" Mesh="" Name="ChainArea_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-3.75 0 10.5">
+                    <UserVariables>
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ItemInteraction" Value="false" />
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
