@@ -5,6 +5,9 @@
 #include "ForceEssentialItems_AUTORUN.ihps"
 #include "Meditation.ihps"
 
+// ============================================================================
+// CONSTANTS
+// ============================================================================
 const string graveyardDoor = "mansion_1";
 
 // ============================================================================
@@ -580,6 +583,7 @@ void PlayStepRunSounds() { PlayStepRunSounds(""); }
 void OnGraveInteract(string item, string entity)
 {
     StartMeditation(entity, "OnGraveMeditation");
+    RemoveItem(item);
 }
 
 void OnGraveMeditation(string t)
