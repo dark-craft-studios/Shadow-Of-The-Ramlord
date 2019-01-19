@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="true" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
             <Viewport CameraPosition="-14.75 1.5 183.25" CameraTarget="-14.75 1.5 3.25" CameraZoom="0" GridHeight="3.25" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="165.25 1.5 3.25" CameraTarget="-14.75 1.5 3.25" CameraZoom="0" GridHeight="-14.75" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-14.75 181.5 3.25" CameraTarget="-14.75 1.5 3.25" CameraZoom="0" GridHeight="1.5" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-12.4945 3.93063 0.279592" CameraTarget="-12.8918 -1.43051e-006 -6.98427" CameraZoom="1.79955" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-18.168 10.1992 2.79617" CameraTarget="-22.5662 -1.20627e-005 8.41404" CameraZoom="1.39054" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -13,7 +13,7 @@
     </EditorSession>
     <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../../">
         <MapContents>
-            <FileIndex_StaticObjects NumOfFiles="57">
+            <FileIndex_StaticObjects NumOfFiles="55">
                 <File Id="0" Path="static_objects/mansionbase/wall/welder02_convex.dae" />
                 <File Id="1" Path="static_objects/mansionbase/wall/default02.dae" />
                 <File Id="2" Path="static_objects/mansionbase/wall/welder02_concave.dae" />
@@ -54,8 +54,8 @@
                 <File Id="37" Path="static_objects/decals/pebbles01.dae" />
                 <File Id="38" Path="static_objects/decals/pebbles03.dae" />
                 <File Id="39" Path="static_objects/decals/paper_pile02.dae" />
-                <File Id="40" Path="static_objects/decals/moist_wall02.dae" />
-                <File Id="41" Path="static_objects/decals/moist_wall01.dae" />
+                <File Id="40" Path="static_objects/outside/foliage/plant01.dae" />
+                <File Id="41" Path="static_objects/mansionbase/wall/welder.dae" />
                 <File Id="42" Path="static_objects/decals/paper_pile.dae" />
                 <File Id="43" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/floor/alley_01.DAE" />
                 <File Id="44" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/special/barrel_cluster_03.DAE" />
@@ -69,10 +69,8 @@
                 <File Id="52" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/stairs/wood_cellar01.DAE" />
                 <File Id="53" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/wall/pubgate01.DAE" />
                 <File Id="54" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/wall/pubgate02.DAE" />
-                <File Id="55" Path="static_objects/mansionbase/wall/welder.dae" />
-                <File Id="56" Path="static_objects/outside/foliage/plant01.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="144">
+            <FileIndex_Entities NumOfFiles="148">
                 <File Id="0" Path="entities/ptest/violin/violin.ent" />
                 <File Id="1" Path="entities/ornament/painting_diego_church/painting_diego_church.ent" />
                 <File Id="2" Path="entities/furniture/stove_front02/stove_front02.ent" />
@@ -112,7 +110,7 @@
                 <File Id="36" Path="entities/ornament/book_row02/book_row02.ent" />
                 <File Id="37" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />
                 <File Id="38" Path="entities/tool/chisel/chisel.ent" />
-                <File Id="39" Path="entities/furniture/table_wood_small/table_wood_small.ent" />
+                <File Id="39" Path="entities/statues/bust/bust.ent" />
                 <File Id="40" Path="entities/ornament/sketch_castle/sketch_roll_row02.ent" />
                 <File Id="41" Path="entities/ornament/book03/book03.ent" />
                 <File Id="42" Path="entities/storage/shelf_thin/shelf_thin.ent" />
@@ -162,7 +160,7 @@
                 <File Id="86" Path="entities/lamp/candle_floor/candle_floor_small.ent" />
                 <File Id="87" Path="entities/storage/basket/basket.ent" />
                 <File Id="88" Path="entities/ornament/book_pile02/book_pile02.ent" />
-                <File Id="89" Path="entities/furniture/layout_board/layout_board.ent" />
+                <File Id="89" Path="entities/ornament/banners/banners02/banner_short02_broken.ent" />
                 <File Id="90" Path="entities/ornament/book_open/book_open.ent" />
                 <File Id="91" Path="entities/ornament/book02/book02.ent" />
                 <File Id="92" Path="entities/item/lantern/lantern.ent" />
@@ -217,6 +215,10 @@
                 <File Id="141" Path="entities/ptest/empty_frame/empty_frame.ent" />
                 <File Id="142" Path="entities/ptest/paintings_strange/paintings_strange03.ent" />
                 <File Id="143" Path="entities/ptest/roman_numeral_signs/roman_numeral_signs_6.ent" />
+                <File Id="144" Path="entities/ornament/paintings/painting06/painting06.ent" />
+                <File Id="145" Path="entities/ornament/paintings/painting03/painting03.ent" />
+                <File Id="146" Path="entities/lamp/candlestick_floor/candlestick_floor_burntout.ent" />
+                <File Id="147" Path="entities/statues/armour_rusty/armour_rusty_complete.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="7">
                 <File Id="0" Path="static_objects/decals/dirt_floor01.mat" />
@@ -497,8 +499,6 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="39" Group="0" ID="1922" Name="paper_pile02_1" Rotation="0 -1.0472 0" Scale="1 1 1" Tag="" WorldPos="-10.308 0 8.93119" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="24" Group="0" ID="1935" Name="dirt_floor03_18" Rotation="3.14159 -1.53518 3.14159" Scale="1 1 2.17373" Tag="" WorldPos="-13.5894 0.00997245 11.3647" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="30" Group="0" ID="1941" Name="web_spider01_4" Rotation="-0.0690448 0.452208 3.11588" Scale="1.45592 1 1" Tag="" WorldPos="-12.3993 1.59745 8.02729" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="40" Group="0" ID="1955" Name="moist_wall02_1" Rotation="-1.5708 -1.32299 3.14159" Scale="5.07125 4.87433 1" Tag="" WorldPos="-21.7843 0.0231358 -0.263835" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="41" Group="0" ID="1956" Name="moist_wall02_2" Rotation="-1.57078 -1.33046 -1.8638e-005" Scale="6.52163 2.88113 1" Tag="" WorldPos="-18.3731 0.0231358 0.11103" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="28" Group="0" ID="2017" Name="dirt_wall_leak04_1" Rotation="-3.14159 1.36064 -1.5708" Scale="0.602691 1 2.57741" Tag="" WorldPos="-7.75 6.83458 20.6234" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="42" Group="0" ID="2032" Name="paper_pile_1" Rotation="0 0.523599 0" Scale="1 1 1" Tag="" WorldPos="-14.037 4 24.9041" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="43" Group="0" ID="2083" Name="floor_alley_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-5.01233 3.57628e-007 -12.5" />
@@ -542,12 +542,12 @@
                 <StaticObject CastShadows="true" Collides="false" FileIndex="42" Group="0" ID="2300" Name="paper_pile_4" Rotation="0 0.261799 0" Scale="1 1 1" Tag="" WorldPos="-10.0852 0.00999999 1.11463" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="42" Group="0" ID="2301" Name="paper_pile_5" Rotation="0 0.261799 0" Scale="1 1 1" Tag="" WorldPos="-11.5061 0.00999999 2.52655" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="42" Group="0" ID="2302" Name="paper_pile_6" Rotation="0 1.309 0" Scale="1 1 1" Tag="" WorldPos="-12.685 0.00999987 2.21253" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="55" Group="0" ID="2367" Name="wall_welder_1" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-24 0 11.25" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="55" Group="0" ID="2368" Name="wall_welder_2" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-24 0 8.25" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2367" Name="wall_welder_1" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-24 0 11.25" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="41" Group="0" ID="2368" Name="wall_welder_2" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-24 0 8.25" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="2381" Name="wall_default02_36" Rotation="3.14159 1.43051e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-13.75 4 27.75" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="56" Group="0" ID="2385" Name="foliage_plant01_1" Rotation="0 0 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.675916 0.716476 -12.1255" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="56" Group="0" ID="2386" Name="foliage_plant01_2" Rotation="0 -0.836835 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.675916 0.716476 -14.4221" />
-                <StaticObject CastShadows="true" Collides="false" FileIndex="56" Group="0" ID="2387" Name="foliage_plant01_3" Rotation="0 0 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.807383 0.716476 -13.3522" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="40" Group="0" ID="2385" Name="foliage_plant01_1" Rotation="0 0 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.675916 0.716476 -12.1255" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="40" Group="0" ID="2386" Name="foliage_plant01_2" Rotation="0 -0.836835 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.675916 0.716476 -14.4221" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="40" Group="0" ID="2387" Name="foliage_plant01_3" Rotation="0 0 0" Scale="0.45 0.45 0.45" Tag="" WorldPos="-0.807383 0.716476 -13.3522" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="51" Group="0" ID="2393" Name="special_wood_rack01_2" Rotation="0 -0.967266 0" Scale="1 1 1" Tag="" WorldPos="-3.75753 0.252345 -7.74678" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="44" Group="0" ID="2394" Name="special_barrel_cluster_5" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-5.56149 0.15153 -3.45246" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="18" Group="0" ID="2454" Name="curtains_curtain01_closed_1" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-15.7471 4 22.1692" />
@@ -2105,26 +2105,6 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="9" Group="0" ID="835" Name="candlestick02_7" Rotation="0 0.50943 0" Scale="1 1 1" Tag="" WorldPos="-13.6737 5 27.2172">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="true" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="Lit" Value="true" />
-                        <Var Name="ConnectedLight" Value="" />
-                        <Var Name="ConnectionLightAmount" Value="1" />
-                        <Var Name="ConnectionLightUseOnColor" Value="true" />
-                        <Var Name="ConnectionLightUseSpec" Value="false" />
-                    </UserVariables>
-                </Entity>
                 <Entity Active="true" FileIndex="63" Group="0" ID="840" Name="shirt_hanging_white_1" Rotation="-1.01068e-010 1.48024 -1.01484e-010" Scale="1 1 1" Tag="" WorldPos="-15.3249 5.45898 18.9385">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3097,37 +3077,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="39" Group="0" ID="1065" Name="table_wood_small_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-16.4795 0 0.730785">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="IsAffectedByDecal" Value="true" />
-                    </UserVariables>
-                </Entity>
-                <Entity Active="true" FileIndex="18" Group="0" ID="1067" Name="book01_23" Rotation="3.14159 0.683235 3.14159" Scale="1 1 1" Tag="" WorldPos="-16.7175 0.824017 0.507805">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="ContainedItem" Value="None" />
-                        <Var Name="DisableBreakable" Value="false" />
-                        <Var Name="IsInsanityVision" Value="false" />
-                        <Var Name="VisionMaxSanity" Value="30" />
-                    </UserVariables>
-                </Entity>
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1106" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_13" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-19.25 1.75 3" />
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1107" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_14" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.25 1.75 3" />
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1108" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_15" Rotation="0 0.129915 0" Scale="1 1 1" Tag="" WorldPos="-16.4801 1.693 2.50182" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1109" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_16" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-15.9822 2.95078 -0.759536" />
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1114" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_21" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-13.5 1.75 10.25" />
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1115" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_22" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11 3 8.25" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1116" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_23" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-13.6629 5.5 27.1642" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="1121" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_28" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.75 7.5 22.2858" />
                 <Entity Active="true" FileIndex="1" Group="0" ID="1188" Name="painting_diego_church_2" Rotation="3.14159 2.6226e-006 3.03144" Scale="1 1 1" Tag="" WorldPos="-21.5043 1.30391 3.56242">
@@ -3181,7 +3131,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <FogArea Active="true" Color="0 0.121 0.238 1" End="70" FalloffExp="1" Group="0" ID="1241" Name="FogArea_2" Rotation="0 0 0" Scale="51 30 73" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="-18.25 2.5 13.25" />
+                <FogArea Active="true" Color="0 0.121 0.238 0.5" End="70" FalloffExp="1" Group="0" ID="1241" Name="FogArea_2" Rotation="0 0 0" Scale="51 30 73" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="-18.25 2.5 13.25" />
                 <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1243" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_2" Rotation="0 0 0" Tag="" WorldPos="-14.75 1.5 3.25" />
                 <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="5 4.25" BillboardType="Point" ConnectLight="biggayspotlight" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1248" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_7" Rotation="0 0 0" Tag="" WorldPos="-9.25 1 -0.25" />
                 <Entity Active="true" FileIndex="26" Group="0" ID="1268" Name="chandelier_simple_short_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-17.75 5.8465 5.75">
@@ -3234,11 +3184,11 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0 0.121 0.242 1" FOV="1.0472" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/lights/gobo_mansionbase_window02_large.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1317" Name="spotthunder_0" NearClipPlane="0.1" Radius="5" Rotation="1.0472 -3.15905e-006 -3.14159" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-13.75 3.25 3.75" />
-                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0.552 0.669 0.756 1" FOV="1.0472" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/lights/gobo_mansionbase_window.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1318" Name="spotthunder_1" NearClipPlane="0.1" Radius="5" Rotation="-1.51783 6.30039e-006 6.4373e-006" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-21.75 3.25 -4" />
-                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1327" Name="ambthunder_0" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-12 2.25 0.5" />
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0 0.051 0.12 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1383" Name="pointthunder_0" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-13.75 2.25 2.5" />
-                <PointLight Active="true" CastShadows="false" DiffuseColor="0 0.121 0.19 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1385" Name="pointthunder_2" Radius="12" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="1 6.25 -7.25" />
+                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0 0.121 0.242 1" FOV="1.0472" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/lights/gobo_mansionbase_window02_large.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1317" Name="spotthunder_0" NearClipPlane="0.1" Radius="5" Rotation="1.0472 -3.15905e-006 -3.14159" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-13.75 3.25 3.75" />
+                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0.552 0.669 0.756 1" FOV="1.0472" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/lights/gobo_mansionbase_window.dds" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1318" Name="spotthunder_1" NearClipPlane="0.1" Radius="5" Rotation="-1.51783 6.30039e-006 6.4373e-006" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-21.75 3.25 -4" />
+                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1327" Name="ambthunder_0" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-12 2.25 0.5" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0 0.051 0.12 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1383" Name="pointthunder_0" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-13.75 2.25 2.5" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0 0.121 0.19 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1385" Name="pointthunder_2" Radius="12" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="1 6.25 -7.25" />
                 <Entity Active="true" FileIndex="67" Group="0" ID="1400" Name="note_generic_1" Rotation="3.13638 0.181574 -3.13996" Scale="1 1 1" Tag="" WorldPos="-14.0171 1.02708 2.68952">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3258,7 +3208,7 @@
                         <Var Name="UseNarration" Value="true" />
                     </UserVariables>
                 </Entity>
-                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1484" Name="biggayspotlight" NearClipPlane="0.1" Radius="5" Rotation="0.931377 -1.5708 2.47202" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-8.25 1.25 -0.25" />
+                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="true" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1484" Name="biggayspotlight" NearClipPlane="0.1" Radius="5" Rotation="0.931377 -1.5708 2.47202" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-8.25 1.25 -0.25" />
                 <Billboard Active="true" BillboardColor="0.131 0.252 0.362 1" BillboardOffset="0" BillboardSize="7.25 6.5" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="1486" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Beerboard" Rotation="0 0 0" Tag="" WorldPos="-13.75 2.5 3.75" />
                 <Entity Active="true" FileIndex="106" Group="0" ID="1495" Name="SOTR_Clearsight_1" Rotation="1.65241 -0.146233 -3.13308" Scale="1 1 1" Tag="" WorldPos="-13.7274 5.05307 26.4388">
                     <UserVariables>
@@ -3388,7 +3338,7 @@
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>
-                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1615" Name="ambthunder_3" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-9.71803 2.25 -5.5" />
+                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1615" Name="ambthunder_3" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-9.71803 2.25 -5.5" />
                 <Entity Active="true" FileIndex="57" Group="0" ID="1626" Name="armor_2" Rotation="0 -1.5708 0" Scale="1 1 1" Tag="" WorldPos="-8.25 0 -4.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -4086,7 +4036,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1780" Name="ambthunder_1" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-19.7302 1.85207 -0.447868" />
+                <PointLight Active="false" CastShadows="false" DiffuseColor="0 0.021 0.09 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1780" Name="ambthunder_1" Radius="6.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-19.7302 1.85207 -0.447868" />
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.224 0.135 0 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1805" Name="PointLight_6" Radius="3" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-1.16614 2.35674 -4.48462" />
                 <Entity Active="true" FileIndex="26" Group="0" ID="1825" Name="chandelier_simple_short_4" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-19.75 6 -0.25">
                     <UserVariables>
@@ -5337,7 +5287,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.1 0.1 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2304" Name="BoxLight_2" Radius="1" Rotation="0 0 0" Scale="40 30 50" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="40 30 50" Tag="" WorldPos="-27 0 8.5" />
+                <BoxLight Active="true" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.1 0.1 1" FalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2304" Name="BoxLight_2" Radius="1" Rotation="0 0 0" Scale="40 30 50" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="40 30 50" Tag="" WorldPos="-27 0 8.5" />
                 <Entity Active="true" FileIndex="130" Group="0" ID="2307" Name="pedestal_2" Rotation="1.78172 1.5708 1.78171" Scale="1 1 1" Tag="" WorldPos="-23.3373 0.0231469 -2.24523">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -5953,14 +5903,14 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="135" Group="0" ID="2406" Name="phonograph_1" Rotation="3.14159 1.36769 3.14159" Scale="1 1 1" Tag="" WorldPos="-10.7503 4.01892 23.9992">
+                <Entity Active="true" FileIndex="135" Group="0" ID="2406" Name="SOTRPhonograph" Rotation="3.14159 1.36769 3.14159" Scale="1 1 1" Tag="" WorldPos="-10.7503 4.01892 23.9992">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="PhonoState" />
                         <Var Name="FullGameSave" Value="false" />
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
@@ -6576,7 +6526,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="141" Group="0" ID="2448" Name="empty_frame_1" Rotation="0 1.5708 0" Scale="0.45 0.35 0.35" Tag="" WorldPos="-12.738 6.51369 27.7493">
+                <Entity Active="true" FileIndex="141" Group="0" ID="2448" Name="empty_frame_1" Rotation="0 1.5708 0" Scale="0.45 0.35 0.35" Tag="" WorldPos="-12.8147 6.51369 27.7493">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -6595,7 +6545,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="142" Group="0" ID="2449" Name="paintings_strange03_1" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-10.8392 6.42656 27.7561">
+                <Entity Active="true" FileIndex="142" Group="0" ID="2449" Name="paintings_strange03_1" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-10.9159 6.42656 27.7561">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="true" />
@@ -6935,12 +6885,6 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="89" Group="0" ID="2502" Name="layout_board_1" Rotation="0 -1.0472 0" Scale="1 1 1" Tag="" WorldPos="-21.844 0.03 1.40522">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="IsAffectedByDecal" Value="true" />
-                    </UserVariables>
-                </Entity>
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="2503" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_76" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-15.9822 2.95078 8.26309" />
                 <Entity Active="true" FileIndex="64" Group="0" ID="2507" Name="table_wood02_2" Rotation="0 -1.5708 0" Scale="0.75 0.75 0.75" Tag="" WorldPos="-16.4338 0.03 5.67928">
                     <UserVariables>
@@ -7239,28 +7183,6 @@
                 </Entity>
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="2555" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_79" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-18.2205 2.95078 11.4223" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="2556" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_80" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-23.2197 2.95078 8.2768" />
-                <Entity Active="true" FileIndex="37" Group="0" ID="2557" Name="candlestick_wall_orange_8" Rotation="-1.26845 1.5708 -1.26845" Scale="1 1 1" Tag="" WorldPos="-7.75 2.5 11.25">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="true" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="Lit" Value="true" />
-                        <Var Name="ConnectedLight" Value="" />
-                        <Var Name="ConnectionLightAmount" Value="1" />
-                        <Var Name="ConnectionLightUseOnColor" Value="true" />
-                        <Var Name="ConnectionLightUseSpec" Value="false" />
-                    </UserVariables>
-                </Entity>
-                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="2558" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_8" Rotation="-5.07036e-006 3.6637e-006 -9.17733e-012" Tag="" WorldPos="-8 3 11.25" />
-                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="2559" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_81" Rotation="3.14159 1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-8 3 11.25" />
                 <Entity Active="true" FileIndex="37" Group="0" ID="2561" Name="candlestick_wall_orange_9" Rotation="-1.26845 1.5708 -1.26845" Scale="1 1 1" Tag="" WorldPos="-7.75 5.75 18.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -7451,6 +7373,444 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
+                <Entity Active="true" FileIndex="144" Group="0" ID="2587" Name="painting06_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-18.2048 2.75 -4.18224">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="145" Group="0" ID="2589" Name="painting03_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-23.6927 2.52612 -3.24579">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="53" Group="0" ID="2590" Name="table_wood01_2" Rotation="-3.14159 0.00490123 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.0818 0 2.58082">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="53" Group="0" ID="2591" Name="table_wood01_3" Rotation="-3.14157 -1.54995 3.14157" Scale="1 1 1" Tag="" WorldPos="-23.0038 0 0.952638">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="146" Group="0" ID="2592" Name="candlestick_floor_burntout_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-22.8777 0 2.58693">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="89" Group="0" ID="2594" Name="banner_short02_broken_1" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-23.3939 1.95744 1.75595">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="90" Group="0" ID="2595" Name="book_open_11" Rotation="-3.14159 -8.74229e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="-20.9627 1 2.34119">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="40" Group="0" ID="2597" Name="sketch_roll_row02_6" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-20.8083 -0.130925 2.42812">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="45" Group="0" ID="2598" Name="tome_pile02_1" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-21.5642 0 2.26919">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="45" Group="0" ID="2599" Name="tome_pile02_2" Rotation="0 3.66519 0" Scale="1 1 1" Tag="" WorldPos="-22.6475 0 0.44951">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="90" Group="0" ID="2600" Name="book_open_12" Rotation="0 2.35619 0" Scale="1 1 1" Tag="" WorldPos="-22.6229 0 1.29497">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2601" Name="paper01_1" Rotation="0 1.8326 0" Scale="1 1 1" Tag="" WorldPos="-22.4833 1.19209e-007 0.875718">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2602" Name="paper01_5" Rotation="0 0.785398 0" Scale="1 1 1" Tag="" WorldPos="-22.121 1.19209e-007 1.18252">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2603" Name="paper01_6" Rotation="0 1.8326 0" Scale="1 1 1" Tag="" WorldPos="-22.777 0 1.71757">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="15" Group="0" ID="2604" Name="paperpile01_1" Rotation="0 2.87979 0" Scale="1 1 1" Tag="" WorldPos="-22.1797 0 1.72212">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="71" Group="0" ID="2605" Name="paperpile02_9" Rotation="0 3.66519 0" Scale="1 1 1" Tag="" WorldPos="-23.3275 0 1.51093">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="71" Group="0" ID="2608" Name="paperpile02_10" Rotation="0 2.0944 0" Scale="1 1 1" Tag="" WorldPos="-23.3229 0 0.333529">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="15" Group="0" ID="2609" Name="paperpile01_6" Rotation="0 3.14159 0" Scale="1 1 1" Tag="" WorldPos="-23.5168 0 0.929393">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="17" Group="0" ID="2610" Name="paperpile03_13" Rotation="0 3.14159 0" Scale="1 1 1" Tag="" WorldPos="-23.2243 0 1.08464">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="17" Group="0" ID="2611" Name="paperpile03_14" Rotation="0 3.40339 0" Scale="1 1 1" Tag="" WorldPos="-23.2567 0 0.686523">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="17" Group="0" ID="2612" Name="paperpile03_15" Rotation="0 3.40339 0" Scale="1 1 1" Tag="" WorldPos="-21.7346 0 2.81943">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="15" Group="0" ID="2613" Name="paperpile01_7" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-21.0794 0 3.11548">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="71" Group="0" ID="2614" Name="paperpile02_11" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-20.3921 0 2.81622">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2615" Name="paper01_7" Rotation="0 5.49779 0" Scale="1 1 1" Tag="" WorldPos="-21.5258 -5.96046e-008 3.15777">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2616" Name="paper01_8" Rotation="0 4.18879 0" Scale="1 1 1" Tag="" WorldPos="-21.3955 0 2.80566">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2618" Name="paper01_9" Rotation="0 4.71239 0" Scale="1 1 1" Tag="" WorldPos="-20.8863 0.00725323 2.85278">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="18" Group="0" ID="2620" Name="book01_26" Rotation="-4.03147e-007 -0.261799 4.91848e-007" Scale="1 1 1" Tag="" WorldPos="-20.4988 1 2.14396">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="18" Group="0" ID="2622" Name="book01_27" Rotation="-3.14159 -1.0472 3.14159" Scale="1 1 1" Tag="" WorldPos="-20.1895 1 2.95177">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="54" Group="0" ID="2623" Name="book_pile01_21" Rotation="-4.03147e-007 -0.261799 4.91848e-007" Scale="1 1 1" Tag="" WorldPos="-20.2495 1 2.54507">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="88" Group="0" ID="2624" Name="book_pile02_2" Rotation="-3.14159 -1.309 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.8821 1 2.89717">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="19" Group="0" ID="2625" Name="book_bible_8" Rotation="2.09368 -1.02596 -2.02878" Scale="1 1 1" Tag="" WorldPos="-21.8257 1 2.54579">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="11" Group="0" ID="2626" Name="ink_bottle_6" Rotation="-3.14159 -0.261799 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.5362 1.06757 2.27457">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2627" Name="paper01_10" Rotation="-3.14159 0.261799 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.5926 1 2.58443">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="12" Group="0" ID="2628" Name="paper01_11" Rotation="-3.14159 -1.0472 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.4156 1 2.96425">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="66" Group="0" ID="2629" Name="paper02_4" Rotation="-5.50708e-007 -0.785398 7.76915e-007" Scale="1 1 1" Tag="" WorldPos="-20.6189 1 2.67337">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="132" Group="0" ID="2630" Name="paper03_6" Rotation="-1.54018 -1.5708 1.54018" Scale="1 1 1" Tag="" WorldPos="-20.6854 1 2.98435">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="17" Group="0" ID="2631" Name="paperpile03_16" Rotation="-3.14159 -1.0472 3.14159" Scale="1 1 1" Tag="" WorldPos="-21.0706 1 2.74842">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="17" Group="0" ID="2632" Name="paperpile03_17" Rotation="-3.14159 0.261799 -3.14159" Scale="1 1 1" Tag="" WorldPos="-21.9211 1 2.28872">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="8" Group="0" ID="2634" Name="chair_nice01_1" Rotation="2.35744e-007 0.523599 -1.32286e-006" Scale="1 1 1" Tag="" WorldPos="-21.2101 0.0231307 1.59453">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="48" Group="0" ID="2635" Name="cross_small_wood_6" Rotation="-3.90776e-007 2.77913e-013 7.11183e-007" Scale="1 1 1" Tag="" WorldPos="-23.3872 1 0.972536">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="147" Group="0" ID="2640" Name="armour_rusty_complete_1" Rotation="1.87881 -1.5708 -1.87881" Scale="1 1 1" Tag="" WorldPos="-16.3041 0.0123888 0.616859">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="39" Group="0" ID="2641" Name="bust_1" Rotation="-3.14159 -0.14681 3.14159" Scale="1 1 1" Tag="" WorldPos="-17.3957 1.0006 11.2362">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="33" Group="0" ID="2643" Name="goblet_5" Rotation="-3.14159 -0.785398 3.14159" Scale="1 1 1" Tag="" WorldPos="-16.9314 1.00059 10.8239">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="58" Group="0" ID="2644" Name="pot_plant_small02_3" Rotation="-3.14159 -0.785398 -3.14159" Scale="1 1 1" Tag="" WorldPos="-22.959 1 0.206055">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="58" Group="0" ID="2645" Name="pot_plant_small02_5" Rotation="-1.50984e-006 -1.309 2.16958e-006" Scale="1 1 1" Tag="" WorldPos="-22.9984 1 1.65766">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="2646" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_14" Rotation="-3.14159 4.44253e-006 -3.14159" Tag="" WorldPos="-19.4371 3 5.75" />
+                <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="2647" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_19" Rotation="-3.14159 4.44253e-006 -3.14159" Scale="1 1 1" Tag="" WorldPos="-19.4371 3 6" />
+                <Entity Active="true" FileIndex="37" Group="0" ID="2648" Name="candlestick_wall_orange_14" Rotation="2.59374 -1.5708 -2.59373" Scale="1 1 1" Tag="" WorldPos="-19.6871 2.5 5.75">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="true" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="Lit" Value="true" />
+                        <Var Name="ConnectedLight" Value="" />
+                        <Var Name="ConnectionLightAmount" Value="1" />
+                        <Var Name="ConnectionLightUseOnColor" Value="true" />
+                        <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.476 0.252 0.032 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2649" Name="PointLight_2" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-17.3972 2.5666 -0.907505" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.476 0.252 0.032 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2650" Name="PointLight_3" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-17.9917 2.27312 5.50248" />
+                <PointLight Active="true" CastShadows="false" DiffuseColor="0.233 0.121 0.016 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2652" Name="PointLight_5" Radius="12" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-11.6642 6.82628 20.6158" />
             </Entities>
             <Misc />
             <StaticObjectCombos />

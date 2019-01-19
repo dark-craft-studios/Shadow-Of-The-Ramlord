@@ -169,6 +169,7 @@ void INJohanLineOne(string t)
 void OnClearsightPickedUp()
 {
     PlayVoiceOnPlayerAndSlowdown("IN_Johan_5.ogg");
+    PlaySoundAtEntity("", "insanity_whisper.snt", "Player", 0.0f, false);
 }
 
 void OnLanternPickedUp()
@@ -220,4 +221,12 @@ void GoToNextMap()
         "door_level_wood_open.snt", /* Start Sound */
         ""                          /* End Sound */
     );
+}
+
+void PhonoState(string &in asEntity, int alState)
+{
+    if(alState == 1)
+    {
+    PlaySoundAtEntity("", "SOTR_broken_phono.snt", "SOTRPhonograph", 0.0f, false);
+    }
 }

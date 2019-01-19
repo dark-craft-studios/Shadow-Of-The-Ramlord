@@ -12,6 +12,6 @@
 		<Sound File="general_thunder9" />
   	</Main>
   </SOUNDS>
-  <PROPERTIES Volume=".7" MinDistance="12" MaxDistance="50" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" 
-			  Use3D="True" Blockable="False" BlockVolumeMul="0.7" Priority="0" />
+  <PROPERTIES Volume=".3" MinDistance="12" MaxDistance="50" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" 
+			  Use3D="True" Blockable="False" BlockVolumeMul="0.3" Priority="0" />
 </SOUNDENTITY>
