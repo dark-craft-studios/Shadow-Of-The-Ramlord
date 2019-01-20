@@ -27,13 +27,29 @@ const string entClosetDoor          = "ClosetDoor";
 const string entClosetKey           = "ClosetKey";
 
 // ============================================================================
+// USED SOUNDS
+// Constants representing sound files references inside this script
+// in order to prevent misspelling and allow for easier renaming.
+// - For consistency use an "snt" prefix.
+// ============================================================================
+const string sntAmbience = "ambience_hollow_tinker.snt";
+const string sntDoorUnlock = "unlock_door.snt";
+const string sntWhisper = "insanity_whisper.snt";
+const string sntLevelDoor = "door_level_wood_open.snt";
+const string sntBrokenPhono = "SOTR_broken_phono.snt";
+
+// ============================================================================
 // MAIN
 // ============================================================================
-void OnStart()
+void SetupMeta()
 {
     SetMapDisplayNameEntry("Introduction");
     GetGlobalLoadingScreen("00");
+}
 
+void OnStart()
+{
+    SetupMeta();
     BlockAllVanillaHints();
     RegisterCallbacks();
 
@@ -59,7 +75,7 @@ void OnLeave()
 // Called from Cutscene
 void OnIntroFinished(string t)
 {
-    StartAmbience("ambience_hollow_tinker.snt");
+    StartAmbience(sntAmbience);
     SetPlayerLampOil(0.0f);
     SetPlayerMoveSpeedMul(0.75f);
     SetPropStaticPhysics(entProtagonistRoomDoor, true);
@@ -86,30 +102,29 @@ void RegisterCallbacks()
 void UseKeyOnCloset(string key, string door)
 {
     SetSwingDoorLocked(door, false, true);
-    PlaySoundAtEntity("unlock_door.snt", door);
+    PlaySoundAtEntity(sntDoorUnlock, door);
     RemoveItem(key);
 }
 
 void OnExitDoorInteract(string entity)
 {
-    AddDebugMessage("OnExitDoorInteract", false);
     if(!AllRequiredItemsPickedUp()) 
     {
-        AddDebugMessage("Does not have all items.", false);
         SetMessage("DoorMessages", "IntroductionCannotLeave", 0.0f);
         return;
     }
-    
-    AddDebugMessage("Has all items", false);
 
+    NextMapOrWaitForVoiceover();
+}
+
+void NextMapOrWaitForVoiceover()
+{
     if(GetLocalVarInt("LanternMonologueEnded") == 1)
     {
-        AddDebugMessage("Going to next map, lantern monologue ended", false);
         GoToNextMap();
     }
     else
     {
-        AddDebugMessage("waiting for monlogue to end", false);
         SetPlayerActive(false);
         FadeOut(2.0f);
         SetLocalVarInt("NextMapAfterMonologue", 1);
@@ -169,7 +184,7 @@ void INJohanLineOne(string t)
 void OnClearsightPickedUp()
 {
     PlayVoiceOnPlayerAndSlowdown("IN_Johan_5.ogg");
-    PlaySoundAtEntity("", "insanity_whisper.snt", "Player", 0.0f, false);
+    PlaySoundAtEntity("", sntWhisper, "Player", 0.0f, false);
 }
 
 void OnLanternPickedUp()
@@ -216,17 +231,17 @@ void OnLanternMonologueEnd()
 void GoToNextMap()
 {
     ChangeMap(
-        "SOTR_01_prologue.map",     /* Map */
-        "PlayerStartArea_1",        /* Start Area */
-        "door_level_wood_open.snt", /* Start Sound */
-        ""                          /* End Sound */
+        "SOTR_01_prologue.map", /* Map */
+        "PlayerStartArea_1",    /* Start Area */
+        sntLevelDoor,           /* Start Sound */
+        ""                      /* End Sound */
     );
 }
 
-void PhonoState(string &in asEntity, int alState)
+void PhonoState(string entity, int state)
 {
-    if(alState == 1)
-    {
-    PlaySoundAtEntity("", "SOTR_broken_phono.snt", "SOTRPhonograph", 0.0f, false);
-    }
+    if(state != 1) { return; }
+
+    PlaySoundAtEntity(sntBrokenPhono, "SOTRPhonograph");
 }
+
