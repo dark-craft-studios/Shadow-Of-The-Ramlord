@@ -115,7 +115,11 @@ void DoorConversationEnd()
 // ============================================================================
 void BeginMonsterSequence(string a, string b, int state)
 {
-    PlayVoiceOnPlayerAndSlowdown("OL_Johan_6.ogg");
+        PlayVoiceOnPlayer(
+            "OL_Johan_6.ogg", 
+            "JohanNarration", 
+            "28"
+        );
 }
 
 // ============================================================================
@@ -588,6 +592,35 @@ void OnGraveInteract(string item, string entity)
 
 void OnGraveMeditation(string t)
 {
-    ChangeMap("SOTR_04_emiliasdream.map");
+    int stage = GetLocalVarInt("OnGraveMeditation");
+    AddLocalVarInt("OnGraveMeditation", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlayVoiceOnPlayer(
+            "OL_Johan_9.ogg", 
+            "JohanNarration", 
+            "31"
+        );
+        SetEffectVoiceOverCallback("OnGraveMeditation");
+        return;
+
+        delay = 1.0f;
+    }
+    else if(stage == 1)
+    {
+        ChangeMap("SOTR_04_emiliasdream.map");
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "OnGraveMeditation");
 }
 
+void OnGraveMeditation()
+{
+    OnGraveMeditation("");
+}
