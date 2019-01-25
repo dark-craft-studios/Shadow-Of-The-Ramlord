@@ -1,24 +1,15 @@
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaExtensions.ihps"
-#include "Utilities.ihps"
-#include "EveryMapEvents_AUTORUN.ihps"
-#include "ForceEssentialItems_AUTORUN.ihps"
+#include "Ramlord.ihps"
 
 // ----------------------------------------------------------------------------
-// Main - g
+// MAIN
 // ----------------------------------------------------------------------------
-const string gMapId = "10";
+const string MapId = "06";
 
 void OnStart()
 {
     StopPlayerLookAt();
     BlockAllVanillaHints();
     RegisterCallbacks();
-}
-
-void OnLeave()
-{
 }
 
 void RegisterCallbacks()
@@ -36,7 +27,7 @@ void CreditsSequence(string a, string b, int s)
 }
 
 void StartCreditsAsync(string timer) 
-{ 
+{
     StartCredits("", false, "Credits", "FinalCredits", 4); 
 }
 
@@ -65,11 +56,7 @@ void LastConversation(string t)
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayer(
-            "LU_Johan_1.ogg", 
-            "JohanNarration", 
-            "45"
-        );
+        PlayVoice("LU_Johan_1.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -79,11 +66,7 @@ void LastConversation(string t)
     }
     else if(stage == 3)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_1.ogg", 
-            "AntonNarration", 
-            "14"
-        );
+        PlayVoice("LU_Anton_1.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -93,11 +76,7 @@ void LastConversation(string t)
     }
     else if(stage == 5)
     {
-        PlayVoiceOnPlayer(
-            "LU_Johan_2.ogg", 
-            "JohanNarration", 
-            "46"
-        );
+        PlayVoice("LU_Johan_2.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -107,11 +86,7 @@ void LastConversation(string t)
     }
     else if(stage == 7)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_2.ogg", 
-            "AntonNarration", 
-            "15"
-        );
+        PlayVoice("LU_Anton_2.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -121,11 +96,7 @@ void LastConversation(string t)
     }
     else if(stage == 9)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_3.ogg", 
-            "AntonNarration", 
-            "16"
-        );
+        PlayVoice("LU_Anton_3.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -135,11 +106,7 @@ void LastConversation(string t)
     }
     else if(stage == 11)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_4.ogg", 
-            "AntonNarration", 
-            "17"
-        );
+        PlayVoice("LU_Anton_4.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -149,11 +116,7 @@ void LastConversation(string t)
     }
     else if(stage == 13)
     {
-        PlayVoiceOnPlayer(
-            "LU_Johan_3.ogg", 
-            "JohanNarration", 
-            "47"
-        );
+        PlayVoice("LU_Johan_3.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -163,11 +126,7 @@ void LastConversation(string t)
     }
     else if(stage == 15)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_5.ogg", 
-            "AntonNarration", 
-            "18"
-        );
+        PlayVoice("LU_Anton_5.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -177,11 +136,7 @@ void LastConversation(string t)
     }
     else if(stage == 17)
     {
-        PlayVoiceOnPlayer(
-            "LU_Anton_6.ogg", 
-            "AntonNarration", 
-            "19"
-        );
+        PlayVoice("LU_Anton_6.ogg");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
@@ -235,11 +190,7 @@ void CreditsConversation(string t)
     }
     else if(stage == 2)
     {
-        PlayVoiceOnPlayer(
-            "LU_Emilia_2.ogg", 
-            "EmiliaNarration", 
-            "12"
-        );
+        PlayVoice("LU_Emilia_2.ogg");
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
@@ -249,11 +200,7 @@ void CreditsConversation(string t)
     }
     else if(stage == 4)
     {
-        PlayVoiceOnPlayer(
-            "LU_Johan_4.ogg", 
-            "JohanNarration", 
-            "48"
-        );
+        PlayVoice("LU_Johan_4.ogg");
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
@@ -263,21 +210,13 @@ void CreditsConversation(string t)
     }
     else if(stage == 6)
     {
-        PlayVoiceOnPlayer(
-            "LU_Emilia_3.ogg", 
-            "EmiliaNarration", 
-            "13"
-        );
+        PlayVoice("LU_Emilia_3.ogg");
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
     else if(stage == 7)
     {
-        PlayVoiceOnPlayer(
-            "LU_Dead_Avatar_1.ogg", 
-            "", 
-            ""
-        );
+        PlayVoice("LU_Dead_Avatar_1.ogg");
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }
@@ -287,11 +226,7 @@ void CreditsConversation(string t)
     }
     else if(stage == 9)
     {
-        PlayVoiceOnPlayer(
-            "LU_Emilia_4.ogg", 
-            "EmiliaNarration", 
-            "14"
-        );
+        PlayVoice("LU_Emilia_4.ogg");
         SetEffectVoiceOverCallback("CreditsConversation");
         return;
     }

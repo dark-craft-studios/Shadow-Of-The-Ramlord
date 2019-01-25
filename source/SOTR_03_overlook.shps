@@ -1,7 +1,4 @@
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaExtensions.ihps"
-#include "Utilities.ihps"
-#include "EveryMapEvents_AUTORUN.ihps"
+#include "Ramlord.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
 #include "Meditation.ihps"
 
@@ -13,11 +10,10 @@ const string graveyardDoor = "mansion_1";
 // ============================================================================
 // MAIN
 // ============================================================================
-const string gMapId = "04";
+const string MapId = "03";
 
 void OnStart()
 {
-    GetGlobalLoadingScreen("03");
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
@@ -115,11 +111,7 @@ void DoorConversationEnd()
 // ============================================================================
 void BeginMonsterSequence(string a, string b, int state)
 {
-        PlayVoiceOnPlayer(
-            "OL_Johan_6.ogg", 
-            "JohanNarration", 
-            "28"
-        );
+        PlayVoice("OL_Johan_6.ogg");
 }
 
 // ============================================================================
@@ -598,11 +590,7 @@ void OnGraveMeditation(string t)
 
     if(stage == 0)
     {
-        PlayVoiceOnPlayer(
-            "OL_Johan_9.ogg", 
-            "JohanNarration", 
-            "31"
-        );
+        PlayVoice("OL_Johan_9.ogg");
         SetEffectVoiceOverCallback("OnGraveMeditation");
         return;
 

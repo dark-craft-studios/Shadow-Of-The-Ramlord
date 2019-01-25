@@ -1,12 +1,11 @@
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaExtensions.ihps"
-#include "Utilities.ihps"
-#include "EveryMapEvents_AUTORUN.ihps"
+#include "Ramlord.ihps"
 #include "ForceEssentialItems_AUTORUN.ihps"
 
 // ============================================================================
 // MAIN
 // ============================================================================
+const string MapId = "02";
+
 void OnStart()
 {
     RegisterCallbacks();
@@ -15,17 +14,11 @@ void OnStart()
 
 void OnEnter()
 {
-    GetGlobalLoadingScreen("02");
     FadeOut(0.0f);
     AddTimer("", 0.25f, "FadeInTimer");
     StartAmbience("ambience_swoop_myst.snt");
     AmbienceLoop("");
     SetupSkybox("SOTR_night_sky_light.dds");
-}
-
-void OnLeave()
-{
-    StopAmbience(5.0f);
 }
 
 void RegisterCallbacks()

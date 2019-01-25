@@ -1,5 +1,3 @@
-#include "AmnesiaSignatures.cpp"
-
 void OnEnter()
 {
     EnforceEssentailItems();
@@ -8,12 +6,13 @@ void OnEnter()
 void EnforceEssentailItems()
 {
     EnforceItem(
-        GetGlobalVarString("LanternName"), 
-        "lantern.ent"
-    );
-    EnforceItem(
         GetGlobalVarString("ClearsightItemName"), 
         "SOTR_Clearsight.ent"
+    );
+
+    EnforceItem(
+        GetGlobalVarString("LanternName"), 
+        "lantern.ent"
     );
 }
 
@@ -24,3 +23,4 @@ void EnforceItem(string itemName, string itemFile)
         GiveItemFromFile(itemName, itemFile);
     }
 }
+

@@ -1,8 +1,3 @@
-#include "AmnesiaSignatures.cpp"
-#include "Utilities.ihps"
-
-// WARNING: TODO: THIS IS JUST EXTRACTED FROM PROLOGUE AND IS NOT REUSABLE
-
 // ============================================================================
 // USAGE
 // ============================================================================

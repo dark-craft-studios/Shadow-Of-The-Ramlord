@@ -1,10 +1,4 @@
-#include "AmnesiaSignatures.cpp"
-#include "ResetPlayerStateOnStart.ihps"
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaExtensions.ihps"
-#include "Utilities.ihps"
-#include "EveryMapEvents_AUTORUN.ihps"
-#include "ForceEssentialItems_AUTORUN.ihps"
+#include "Ramlord.ihps"
 
 // ============================================================================
 // USED ENTITIES
@@ -18,7 +12,7 @@ const string entRisenWater          = "RisenWater";
 // ----------------------------------------------------------------------------
 // Main - g
 // ----------------------------------------------------------------------------
-const string gMapId = "10";
+const string MapId = "05";
 
 void OnStart()
 {
@@ -30,10 +24,6 @@ void OnStart()
     BlockAllVanillaHints();
     RegisterCallbacks();
     PreloadSound("step_walk_rock.snt");
-}
-
-void OnLeave()
-{
 }
 
 void RegisterCallbacks()
@@ -59,78 +49,71 @@ void TortureDialog(string t)
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
         StartPlayerLookAt("LookAtArea1", 0.8f, 1.5f, "");
-        delay = 2.0f;
+        delay = 0.1f;
     }
     else if(stage == 1)
+    {
+       SetPlayerActive(false);
+       delay = 1.9f;
+    }
+    else if(stage == 2)
     {
         FadeIn(5.0f);
         delay = 3.0f;
     }
-    else if(stage == 2)
+    else if(stage == 3)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_2.ogg", 
-            "JohanNarration", 
-            "33"
-        );
+        PlayVoice("RC_Johan_2.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 3)
+    else if(stage == 4)
     {
         delay = 3.0f;
     }
-    else if(stage == 4)
+    else if(stage == 5)
     {
     SetMoveObjectStateExt("castle_portcullis_1", 1.0f, 0.8f, 1.0f, 0.5f, false);
         delay = 8.0f;
     }
-    else if(stage == 5)
+    else if(stage == 6)
     {
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_1", 0.1f, false);
         delay = 1.5f;
     }
-    else if(stage == 6)
+    else if(stage == 7)
     {
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_2", 0.1f, false);
         delay = 1.5f;
     }
-    else if(stage == 7)
+    else if(stage == 8)
     {
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_3", 0.1f, false);
         delay = 1.5f;
     }
-    else if(stage == 8)
+    else if(stage == 9)
     {
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_4", 0.1f, false);
         delay = 1.5f;
     }
-    else if(stage == 9)
+    else if(stage == 10)
     {
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_5", 0.1f, false);
         delay = 4.5f;
     }
-    else if(stage == 10)
+    else if(stage == 11)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_1.ogg", 
-            "AntonNarration", 
-            "8"
-        );
+        PlayVoice("RC_Anton_1.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 11)
+    else if(stage == 12)
     {
         delay = 2.0f;
     }
-    else if(stage == 12)
+    else if(stage == 13)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_2.ogg", 
-            "AntonNarration", 
-            "9"
-        );
+        PlayVoice("RC_Anton_2.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
@@ -138,53 +121,41 @@ void TortureDialog(string t)
     {
         delay = 2.0f;
     }
-    else if(stage == 14)
+    else if(stage == 15)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_3.ogg", 
-            "AntonNarration", 
-            "10"
-        );
+        PlayVoice("RC_Anton_3.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 15)
+    else if(stage == 16)
     {
         ///ROOM FOR SLASHING SOUND/IMPACT
         SetPlayerHealth(25.0f);
         delay = 2.0f;
     }
-    else if(stage == 16)
-    {
-        PlayVoiceOnPlayer(
-            "RC_Johan_3.ogg", 
-            "JohanNarration", 
-            "34"
-        );
-        SetEffectVoiceOverCallback("TortureDialog");
-        return;
-    }
     else if(stage == 17)
     {
-        delay = 2.0f;
+        PlayVoice("RC_Johan_3.ogg");
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
     }
     else if(stage == 18)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_4.ogg", 
-            "AntonNarration", 
-            "11"
-        );
+        delay = 2.0f;
+    }
+    else if(stage == 19)
+    {
+        PlayVoice("RC_Anton_4.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 19)
+    else if(stage == 20)
     {
         ///FURTHER STAB SOUND
         FadeOut(3.0f);
         delay = 4.0f;
     }
-    else if(stage == 20)
+    else if(stage == 21)
     {
         SetPlayerHealth(100.0f);
         TeleportPlayer("PlayerStartArea_1");
@@ -221,21 +192,13 @@ void WakeUpDialog(string t)
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_4.ogg", 
-            "JohanNarration", 
-            "35"
-        );
+        PlayVoice("RC_Johan_4.ogg");
         SetEffectVoiceOverCallback("WakeUpDialog");
         return;
     }
     else if(stage == 2)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_5.ogg", 
-            "JohanNarration", 
-            "36"
-        );
+        PlayVoice("RC_Johan_5.ogg");
         SetEffectVoiceOverCallback("WakeUpDialog");
         return;
     }
@@ -274,21 +237,13 @@ void QuestDialog(string t)
 
     if(stage == 0)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_6.ogg", 
-            "JohanNarration", 
-            "37"
-        );
+        PlayVoice("RC_Johan_6.ogg");
         SetEffectVoiceOverCallback("QuestDialog");
         return;
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_6b.ogg", 
-            "JohanNarration", 
-            "37b"
-        );
+        PlayVoice("RC_Johan_6b.ogg");
         SetEffectVoiceOverCallback("QuestDialog");
         return;
     }
@@ -322,11 +277,7 @@ void PrioryDialog(string t)
 
     if(stage == 0)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_7.ogg", 
-            "JohanNarration", 
-            "38"
-        );
+        PlayVoice("RC_Johan_7.ogg");
         SetEffectVoiceOverCallback("PrioryDialog");
         return;
     }
@@ -382,20 +333,12 @@ bool AllRequiredItemsPickedUp()
 
 void OnWaterPickedUp()
 {
-        PlayVoiceOnPlayer(
-            "RC_Johan_10.ogg", 
-            "JohanNarration", 
-            "41"
-        );
+        PlayVoice("RC_Johan_10.ogg");
 }
 
 void OnSaltPickedUp()
 {
-        PlayVoiceOnPlayer(
-            "RC_Johan_12.ogg", 
-            "JohanNarration", 
-            "43"
-        );
+        PlayVoice("RC_Johan_12.ogg");
 }
 
 void OnAllItemsPickedUp()
@@ -420,21 +363,13 @@ void EndingDialog(string t)
 
     if(stage == 0)
     {
-        PlayVoiceOnPlayer(
-            "RC_Johan_13.ogg", 
-            "JohanNarration", 
-            "44"
-        );
+        PlayVoice("RC_Johan_13.ogg");
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
     else if(stage == 1)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_5.ogg", 
-            "AntonNarration", 
-            "12"
-        );
+        PlayVoice("RC_Anton_5.ogg");
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
@@ -444,11 +379,7 @@ void EndingDialog(string t)
     }
     else if(stage == 3)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_6.ogg", 
-            "AntonNarration", 
-            "12b"
-        );
+        PlayVoice("RC_Anton_6.ogg");
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
@@ -459,11 +390,7 @@ void EndingDialog(string t)
     }
     else if(stage == 5)
     {
-        PlayVoiceOnPlayer(
-            "RC_Anton_7.ogg", 
-            "AntonNarration", 
-            "13"
-        );
+        PlayVoice("RC_Anton_7.ogg");
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
