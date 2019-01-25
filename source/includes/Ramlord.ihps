@@ -1,4 +1,172 @@
-#include "AmnesiaSignatures.cpp"
+// ============================================================================
+// THE SHADOW OF THE RAMLORD API
+// ============================================================================
+// This API abstraction layer was developed for the "The Shadow of The Ramlord"
+// custom story project. Some of the API methods may not apply to your usecase.
+
+// ============================================================================
+// AUTORUN
+// ============================================================================
+// This section contains the injections for OnEnter, OnLeave, and OnStart
+// functions of every script that includes this API
+void OnEnter()
+{
+    AutoloadLoadingScreen();
+    AutoDisplayNameSetup();
+    ResetPlayerState();
+}
+
+void OnStart()
+{
+    // Duplicate call in order to prevent
+    // vanilla Amnesia sanity effects when
+    // either debugging or starting from
+    // a non introduction map.
+    ResetPlayerState();
+    BlockAllVanillaHints();
+}
+
+void OnLeave()
+{
+    StopAmbience();
+    ClearSavedMaps();
+}
+
+// ============================================================================
+// MAP META INFORMATION
+// These functions serve to automate the following features:
+// - Setting up a loading screen.
+// - Registering a map's name for Saving
+// ============================================================================
+void AutoloadLoadingScreen()
+{
+    string txtCat = "LoadingMessages";
+    string txtEnt = MapId;
+    string imgFil = "SOTR_loading_" + MapId + ".jpg";
+    int    imgRnd = 1; // 1 means non random, >1 is random
+
+    SetupLoadScreen(
+        txtCat, /* Text Category */
+        txtEnt, /* Text Entry */
+        imgRnd, /* Random */
+        imgFil  /* Image file */
+    );
+}
+
+void AutoDisplayNameSetup()
+{
+    SetMapDisplayNameEntry(
+        GetDisplayNameByMapId(MapId)
+    );
+}
+
+string GetDisplayNameByMapId(string mapId)
+{
+    if(mapId == "00") { return "Introduction"; }
+    if(mapId == "01") { return "CaeceaCourtyard"; }
+    if(mapId == "02") { return "Ballroom"; }
+    if(mapId == "03") { return "Overlook"; }
+    if(mapId == "04") { return "Emilias"; }
+    if(mapId == "05") { return "RisenChamber"; }
+    return "Lucifuge";
+}
+
+// ============================================================================
+// VOICE OVER AND SLOWING DOWN
+// ============================================================================
+void PlayVoiceOnPlayerAndSlowdown(string soundFile)
+{
+    SetPlayerRunSpeedMul(0.0f);
+    SetPlayerMoveSpeedMul(0.55f);
+    SetPlayerJumpDisabled(true);
+    PlayVoice(soundFile);
+    SetEffectVoiceOverCallback("ResetPlayerState");
+}
+
+void PlayVoiceOnEntityAndSlowdown(string soundFile, string entity)
+{
+    SetPlayerRunSpeedMul(0.0f);
+    SetPlayerMoveSpeedMul(0.55f);
+    SetPlayerJumpDisabled(true);
+    PlayVoice(soundFile, entity);
+    SetEffectVoiceOverCallback("ResetPlayerState");
+}
+
+void PlayVoice(string file)
+{
+    AddEffectVoice(
+        file, /* Sound File */
+        "",   /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        false,/* Uses position */
+        "",   /* Position Entity */
+        0.0f, /* Minimum hearing distance */
+        10.0f /* Maximum hearing distance */
+    );
+}
+
+void PlayVoice(string file, string entity)
+{
+    AddEffectVoice(
+        file,  /* Sound File */
+        "",    /* Effect File */
+        GetGlobalVarString(file + "_Category"),
+        GetGlobalVarString(file + "_Entry"),
+        true,  /* Uses position */
+        entity,/* Position Entity */
+        0.0f,  /* Minimum hearing distance */
+        20.0f  /* Maximum hearing distance */
+    );
+}
+
+// ============================================================================
+// SKYBOX
+// ============================================================================
+void SetupSkybox(string texture)
+{
+    SetSkyBoxActive(true);
+    SetSkyBoxTexture(texture);
+    SetSkyBoxColor(
+        1.0f, /* Red amount */
+        1.0f, /* Green amount */
+        1.0f, /* Blue amount */
+        1.0f  /* Alpha amount */
+    );
+}
+
+// ============================================================================
+// OTHER
+// ============================================================================
+void FadeInTimer(string t)
+{
+    FadeIn(2.0f);
+}
+
+void ResetPlayerStateTimer(string t)
+{
+    ResetPlayerState();
+}
+
+void ResetPlayerState()
+{
+    ResetPlayerSpeed();
+    SetPlayerJumpDisabled(false);
+    SetInDarknessEffectsActive(false);
+    SetSanityDrainDisabled(true);
+    SetPlayerCrouchDisabled(false);
+    SetPlayerJumpDisabled(false);
+    SetInventoryDisabled(false);
+    SetPlayerActive(true);
+    StopPlayerLookAt();
+    BlockAllVanillaHints();
+}
+
+void ResetPlayerSpeed()
+{
+    SetPlayerMoveSpeedMul(0.65f);
+    SetPlayerRunSpeedMul(0.75f);
+}
 
 // ============================================================================
 // UTILITIES
@@ -133,55 +301,6 @@ void StopAmbience() { StopSound("amb", 5.0f); }
 
 void StopAmbience(float fadeOutSeconds) { StopSound("amb", fadeOutSeconds); }
 
-// ----------------------------------------------------------------------------
-
-void PlayVoiceOnPlayer(
-    string soundFile, 
-    string subtitleCategory, 
-    string subtitleEntry)
-{
-    AddEffectVoice(
-        soundFile,        /* Sound File */
-        "",               /* Effect File */
-        subtitleCategory, /* Subtitle Category */
-        subtitleEntry,    /* Subtitle Entry */
-        false,            /* Uses position */
-        "",               /* Position Entity */
-        0.0f,             /* Minimum hearing distance */
-        10.0f             /* Maximum hearing distance */
-    );
-}
-
-void PlayVoice(string file)
-{
-    AddEffectVoice(
-        file,        /* Sound File */
-        "",               /* Effect File */
-        GetGlobalVarString(file + "_Category"),
-        GetGlobalVarString(file + "_Entry"),
-        false,            /* Uses position */
-        "",               /* Position Entity */
-        0.0f,             /* Minimum hearing distance */
-        10.0f             /* Maximum hearing distance */
-    );
-}
-
-void PlayVoice(string file, string entity)
-{
-    AddEffectVoice(
-        file,        /* Sound File */
-        "",               /* Effect File */
-        GetGlobalVarString(file + "_Category"),
-        GetGlobalVarString(file + "_Entry"),
-        true,             /* Uses position */
-        entity,           /* Position Entity */
-        0.0f,             /* Minimum hearing distance */
-        20.0f             /* Maximum hearing distance */
-    );
-}
-
-// ----------------------------------------------------------------------------
-
 void FadeOutMusic(float fadeOut)
 {
     StopMusic(fadeOut, 1);
@@ -282,6 +401,15 @@ void GiveSanityDamageSmall()
 {
     GiveSanityDamage(5.0f, true);
 }
+
+// ============================================================================
+// DOOR MESSAGES
+// ============================================================================
+void ShowDoorMessage(string entry)
+{
+    SetMessage("DoorMessages", entry, 0.0f);
+}
+
 
 // ----------------------------------------------------------------------------
 

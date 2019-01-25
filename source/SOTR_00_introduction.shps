@@ -1,7 +1,4 @@
-#include "AmnesiaSignatures.cpp"
-#include "AmnesiaExtensions.ihps"
-#include "Utilities.ihps"
-#include "EveryMapEvents_AUTORUN.ihps"
+#include "Ramlord.ihps"
 #include "00_Introduction_StormLightSystem.ihps"
 #include "00_Introduction_Cutscene.ihps"
 
@@ -32,25 +29,24 @@ const string entClosetKey           = "ClosetKey";
 // in order to prevent misspelling and allow for easier renaming.
 // - For consistency use an "snt" prefix.
 // ============================================================================
-const string sntAmbience = "ambience_hollow_tinker.snt";
-const string sntDoorUnlock = "unlock_door.snt";
-const string sntWhisper = "insanity_whisper.snt";
-const string sntLevelDoor = "door_level_wood_open.snt";
+const string sntAmbience    = "ambience_hollow_tinker.snt";
+const string sntDoorUnlock  = "unlock_door.snt";
+const string sntWhisper     = "insanity_whisper.snt";
+const string sntLevelDoor   = "door_level_wood_open.snt";
 const string sntBrokenPhono = "SOTR_broken_phono.snt";
+
+// ============================================================================
+// OTHER REQUIRED CONSTANTS
+// Constants that are required either by some part of this script or another
+// included source file.
+// ============================================================================
+const string MapId = "00";
 
 // ============================================================================
 // MAIN
 // ============================================================================
-void SetupMeta()
-{
-    SetMapDisplayNameEntry("Introduction");
-    GetGlobalLoadingScreen("00");
-}
-
 void OnStart()
 {
-    SetupMeta();
-    BlockAllVanillaHints();
     RegisterCallbacks();
 
     // <DEBUG>
@@ -65,11 +61,6 @@ void OnStart()
     // </DEBUG>
 
     IntroductionCutscene("");
-}
-
-void OnLeave()
-{
-    StopAmbience();
 }
 
 // Called from Cutscene

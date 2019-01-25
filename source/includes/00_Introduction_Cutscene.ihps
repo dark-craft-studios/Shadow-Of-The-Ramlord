@@ -40,12 +40,7 @@ void IntroductionCutscene(string t)
     }
     else if (stage == 2)
     {
-        PlayVoiceOnPlayer(
-            "IN_Johan_0.ogg", /* Voice file */
-            "JohanNarration", /* Subtitles Category */
-            "0"               /* Subtitles Entry */
-        );
-
+        PlayVoice("IN_Johan_0.ogg");
         PlayMusic("23_amb.ogg");
         SetEffectVoiceOverCallback("IntroductionCutsceneContinue");
     }
@@ -102,11 +97,7 @@ void IntroductionCutscene(string t)
     }
     else if (stage == 9)
     {
-        PlayVoiceOnPlayer(
-            "IN_Johan_1.ogg", /* Voice file */
-            "JohanNarration", /* Subtitles Category */
-            "1"               /* Subtitles Entry */
-        );
+        PlayVoice("IN_Johan_1.ogg");
         FadePlayerFOVMulTo(1.0f, 0.2f);
 
         delay = 10.0f;
