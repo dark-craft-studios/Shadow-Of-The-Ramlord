@@ -58,11 +58,13 @@ void TortureDialog(string t)
     }
     else if(stage == 2)
     {
-        FadeIn(5.0f);
-        delay = 3.0f;
+        PlayVoice("RC_Johan_1.ogg");
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
     }
     else if(stage == 3)
     {
+        FadeIn(3.0f);
         PlayVoice("RC_Johan_2.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
