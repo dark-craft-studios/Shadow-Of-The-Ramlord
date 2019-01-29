@@ -101,29 +101,26 @@ const float boxlightB = 0.068f;
 
 void TurnOffCorridorLamps()
 {
-    SetLampLit("candlestick_wall_orange_8", false, true);
-    SetLampLit("candlestick_wall_orange_9", false, true);
-    SetLampLit("candle_floor_small_13", false, true);
-    SetLampLit("candle_floor_small_14", false, true);
-    SetLampLit("candle_floor_small_15", false, true);
-    SetLampLit("candle_floor_small_8", false, true);
-    SetLampLit("candle_floor_small_9", false, true);
-    SetLampLit("candle_floor_small_7", false, true);
-    SetLampLit("candle_floor_small_5", false, true);
-    SetLampLit("candle_floor_small_6", false, true);
-    SetLampLit("candle_floor_small_4", false, true);
-    SetLampLit("candle_floor_small_10", false, true);
-    SetLampLit("candle_floor_small_11", false, true);
-    SetLampLit("candle_floor_small_12", false, true);
-    SetLampLit("candle_floor_small_20", false, true);
-    SetLampLit("candle_floor_small_18", false, true);
-    SetLampLit("candlestick_tri_1", false, true);
-    SetLampLit("chandelier_simple_short_4", false, true);
+    SetLampLit("LampToKill_1", false, true);
+    SetLampLit("LampToKill_2", false, true);
+    SetLampLit("LampToKill_3", false, true);
+    SetLampLit("LampToKill_4", false, true);
+    SetLampLit("LampToKill_5", false, true);
+    SetLampLit("LampToKill_6", false, true);
+    SetLampLit("LampToKill_7", false, true);
+    SetLampLit("LampToKill_8", false, true);
+    SetLampLit("LampToKill_9", false, true);
 }
 
 void FadeOutCorridorLights(float timeInSeconds)
 {
-    FadeLightTo("PointLight_5", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_1", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_2", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_3", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_4", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_5", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_6", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
+    FadeLightTo("LightToKill_7", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
 }
 
 void OnRitualKeyPickup(string entity)
