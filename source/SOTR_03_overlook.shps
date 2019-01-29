@@ -6,11 +6,22 @@
 // ============================================================================
 const string graveyardDoor = "mansion_1";
 
+const string MapId = "03";
+
+const string sntSecondAmbience = "03_amb.snt";
+const string sntEnemyNotice = "notice.snt";
+const string sntPhonoHumm = "SOTR_broken_phono.snt";
+const string sntSkeletalkPhono = "SOTR_skeletalk_phono.snt";
+
+const string entUpstairsDoor = "UpstairsDoor";
+const string entUpstairsSound = "SoundArea_1";
+const string entPhono = "Phono";
+const string entPhonoStart = "PhonoArea_1";
+const string entPhonoEnd = "PhonoArea_2";
+
 // ============================================================================
 // MAIN
 // ============================================================================
-const string MapId = "03";
-
 void OnStart()
 {
     RegisterCallbacks();
@@ -52,6 +63,14 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback(
         "TombminderArea", 
         "LookAtFirstTomb"
+    );
+    AddSinglePlayerCollideCallback(
+        entPhonoStart, 
+        "PhonoStart"
+    );
+    AddSinglePlayerCollideCallback(
+        entPhonoEnd, 
+        "PhonoEnd"
     );
     AddRepeatedPlayerCollideCallback(
         "EnsureFirstTombArea",
@@ -150,10 +169,24 @@ void OnRitualBookPickup(string entity)
     {
         OnFirstBookPickup();
     }
+    else if(currentBookNumber == 2)
+    {
+        OnSecondBookPickup();
+    }
     else if(currentBookNumber == brBookCount)
     {
         OnLastBookPickup();
     }
+}
+
+void OnSecondBookPickup()
+{
+    StopAmbience();
+    StartAmbience(sntSecondAmbience);
+    SetPropHealth(entUpstairsDoor, 0.0f);
+    PlaySoundAtEntity(sntEnemyNotice, entUpstairsSound);
+    GiveSanityDamageSmall();
+    StartScreenShake(0.03f, 0.4f, 0.1f, 0.1f);
 }
 
 void OnRitualCompleted()
@@ -545,6 +578,11 @@ void PlayStepRunSounds(string t)
     AddLocalVarInt("PlayStepRunSounds", 1);
     float delay = 0.0f;
 
+    if(stage == 4)
+    {
+        PlayVoice("OL_Johan_6.ogg");
+    }
+
     if(stage < 8)
     {
         PlaySoundAtEntity("chains_monster_man_run_soft.snt", "Step_" + stage);
@@ -552,7 +590,6 @@ void PlayStepRunSounds(string t)
     }
     else
     {
-        PlayVoice("OL_Johan_6.ogg");
         return;
     }
 
@@ -560,6 +597,16 @@ void PlayStepRunSounds(string t)
 }
 
 void PlayStepRunSounds() { PlayStepRunSounds(""); }
+
+void PhonoStart(string a, string b, int s)
+{
+    PlaySoundAtEntity(sntPhonoHumm, entPhono);
+}
+
+void PhonoEnd(string a, string b, int s)
+{
+    PlaySoundAtEntity(sntSkeletalkPhono, entPhono);
+}
 
 // ============================================================================
 // FINAL MEDITATION
@@ -600,3 +647,4 @@ void OnGraveMeditation()
 {
     OnGraveMeditation("");
 }
+
