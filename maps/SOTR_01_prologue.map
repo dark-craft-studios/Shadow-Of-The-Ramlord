@@ -1,11 +1,11 @@
 <Level>
     <EditorSession>
         <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
-        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="false" GPointLight="false" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
-            <Viewport CameraPosition="2.04173 0.512225 185.242" CameraTarget="2.04173 0.512225 5.24132" CameraZoom="0" GridHeight="5.24132" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="182.042 0.512225 5.24132" CameraTarget="2.04173 0.512225 5.24132" CameraZoom="0" GridHeight="2.04173" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="2.25846 180.512 5.26146" CameraTarget="2.25846 0.512032 5.26146" CameraZoom="0" GridHeight="0.512032" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="33.9257 14.8395 -14.9092" CameraTarget="33.6116 1.37925e-006 -26.9095" CameraZoom="0.963013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="-0.912233 0.154779 192.699" CameraTarget="-0.912233 0.154779 12.6988" CameraZoom="3.06198" GridHeight="12.6988" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="179.088 0.154779 12.6988" CameraTarget="-0.912233 0.154779 12.6988" CameraZoom="3.08638" GridHeight="-0.912233" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-0.902883 180.073 12.6702" CameraTarget="-0.902883 0.072726 12.6702" CameraZoom="3.06198" GridHeight="0.072726" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="37.3393 8.39473 -19.2651" CameraTarget="36.5852 0.0727276 -32.3527" CameraZoom="1.16939" GridHeight="0.072726" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -187,29 +187,29 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="338" Name="stairs_railing_11" Rotation="3.14159 2.67828e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-14.5 0 9.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="7" Group="0" ID="341" Name="stairs_railing_14" Rotation="3.14118 1.56482 3.14117" Scale="1 1 1" Tag="" WorldPos="-19.75 0 -2.5" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="344" Name="stairs_welder_6" Rotation="3.14159 2.67828e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-14.5 0 12" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="346" Name="floor_dirt_pile_1" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-0.912233 0.072726 12.6988" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="347" Name="floor_dirt_pile_2" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.75647 0.75647 1.03086" Tag="" WorldPos="-1.1383 0.222165 13.8675" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="348" Name="floor_dirt_pile_3" Rotation="-0.159165 -0.180687 0.0831966" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.55466 0.446116 15.1509" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="349" Name="floor_dirt_pile_4" Rotation="-0.157904 0.130387 0.0336582" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.87043 0.00299643 12.692" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="351" Name="floor_dirt_pile_5" Rotation="-0.157904 0.130388 0.0336581" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.53004 0.240096 13.8338" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="352" Name="floor_dirt_pile_6" Rotation="-2.99778 -0.430152 3.08128" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.15142 0.725228 16.6914" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="353" Name="floor_dirt_pile_7" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.75647 0.75647 1.03086" Tag="" WorldPos="-1.1383 0.839218 17.8654" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="354" Name="floor_dirt_pile_8" Rotation="-0.157904 0.130387 0.0336582" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.81283 0.617356 16.6898" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="355" Name="floor_dirt_pile_9" Rotation="-0.157904 0.130388 0.0336581" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.73356 0.804087 17.8722" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="356" Name="floor_dirt_pile_10" Rotation="-0.159165 -0.180687 0.0831966" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.60411 1.00343 19.1488" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="357" Name="floor_dirt_pile_11" Rotation="-1.46067 1.43936 -1.45972" Scale="1.04613 0.75647 0.815648" Tag="" WorldPos="-1.39004 0.501617 15.3874" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="358" Name="floor_dirt_pile_12" Rotation="-0.0409915 -0.180686 -0.00429426" Scale="0.701782 1.92428 0.92683" Tag="" WorldPos="2.53303 2.09615 27.2702" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="359" Name="floor_dirt_pile_13" Rotation="-0.157904 0.130387 -0.0538327" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="2.69741 1.2204 20.5925" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="360" Name="floor_dirt_pile_14" Rotation="-0.157904 0.130388 -0.0538327" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.63475 1.41334 21.7749" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="361" Name="floor_dirt_pile_15" Rotation="-0.159165 -0.180686 -0.00429426" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="2.52322 1.62323 23.0514" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="362" Name="floor_dirt_pile_16" Rotation="-0.141802 0.147756 0.0621924" Scale="0.70728 1.62211 0.70728" Tag="" WorldPos="2.63105 1.94841 25.7727" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="363" Name="floor_dirt_pile_17" Rotation="-0.141759 0.147796 0.0624787" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="2.69371 1.83744 24.5903" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="365" Name="floor_dirt_pile_18" Rotation="-0.159165 -0.180686 0.0545316" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-1.21418 1.95075 25.8366" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="366" Name="floor_dirt_pile_19" Rotation="-0.157904 0.130387 0.00499316" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-0.976634 0.943089 19.3798" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="367" Name="floor_dirt_pile_20" Rotation="-0.157904 0.130388 0.00499316" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.05052 1.13202 20.5622" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="368" Name="floor_dirt_pile_21" Rotation="-0.159165 -0.180686 0.0545316" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-1.1742 1.33499 21.8388" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="369" Name="floor_dirt_pile_22" Rotation="-0.157904 0.130388 0.00499316" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.09049 1.74777 24.5601" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="370" Name="floor_dirt_pile_23" Rotation="-0.157904 0.130387 0.00499316" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-1.01661 1.55885 23.3776" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="346" Name="floor_dirt_pile_1" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-0.912233 0.072726 12.6988" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="347" Name="floor_dirt_pile_2" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.75647 0.75647 1.03086" Tag="" WorldPos="-1.1383 0.222165 13.8675" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="348" Name="floor_dirt_pile_3" Rotation="-0.159165 -0.180687 0.0831966" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.55466 0.446116 15.1509" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="349" Name="floor_dirt_pile_4" Rotation="-0.157904 0.130387 0.0336582" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.87043 0.00299643 12.692" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="351" Name="floor_dirt_pile_5" Rotation="-0.157904 0.130388 0.0336581" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.53004 0.240096 13.8338" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="352" Name="floor_dirt_pile_6" Rotation="-2.99778 -0.430152 3.08128" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.15142 0.725228 16.6914" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="353" Name="floor_dirt_pile_7" Rotation="-3.01096 2.67828e-006 -3.14159" Scale="0.75647 0.75647 1.03086" Tag="" WorldPos="-1.1383 0.839218 17.8654" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="354" Name="floor_dirt_pile_8" Rotation="-0.157904 0.130387 0.0336582" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.81283 0.617356 16.6898" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="355" Name="floor_dirt_pile_9" Rotation="-0.157904 0.130388 0.0336581" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.73356 0.804087 17.8722" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="356" Name="floor_dirt_pile_10" Rotation="-0.159165 -0.180687 0.0831966" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.60411 1.00343 19.1488" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="357" Name="floor_dirt_pile_11" Rotation="-1.46067 1.43936 -1.45972" Scale="1.04613 0.75647 0.815648" Tag="" WorldPos="-1.39004 0.501617 15.3874" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="358" Name="floor_dirt_pile_12" Rotation="-0.0409915 -0.180686 -0.00429426" Scale="0.701782 1.92428 0.92683" Tag="" WorldPos="2.53303 2.09615 27.2702" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="359" Name="floor_dirt_pile_13" Rotation="-0.157904 0.130387 -0.0538327" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="2.69741 1.2204 20.5925" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="360" Name="floor_dirt_pile_14" Rotation="-0.157904 0.130388 -0.0538327" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.63475 1.41334 21.7749" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="361" Name="floor_dirt_pile_15" Rotation="-0.159165 -0.180686 -0.00429426" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="2.52322 1.62323 23.0514" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="362" Name="floor_dirt_pile_16" Rotation="-0.141802 0.147756 0.0621924" Scale="0.70728 1.62211 0.70728" Tag="" WorldPos="2.63105 1.94841 25.7727" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="363" Name="floor_dirt_pile_17" Rotation="-0.141759 0.147796 0.0624787" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="2.69371 1.83744 24.5903" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="365" Name="floor_dirt_pile_18" Rotation="-0.159165 -0.180686 0.0545316" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-1.21418 1.95075 25.8366" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="366" Name="floor_dirt_pile_19" Rotation="-0.157904 0.130387 0.00499316" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-0.976634 0.943089 19.3798" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="367" Name="floor_dirt_pile_20" Rotation="-0.157904 0.130388 0.00499316" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.05052 1.13202 20.5622" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="368" Name="floor_dirt_pile_21" Rotation="-0.159165 -0.180686 0.0545316" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-1.1742 1.33499 21.8388" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="369" Name="floor_dirt_pile_22" Rotation="-0.157904 0.130388 0.00499316" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.09049 1.74777 24.5601" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="370" Name="floor_dirt_pile_23" Rotation="-0.157904 0.130387 0.00499316" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-1.01661 1.55885 23.3776" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="0" Group="0" ID="372" Name="church_wall_church_floor_emblem_1" Rotation="3.14159 2.67828e-006 3.14159" Scale="1 0.2 1" Tag="" WorldPos="0.170029 0 3.19537" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="1" Group="0" ID="374" Name="wall_door_frame_large_arched_2" Rotation="3.14159 2.67828e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="0.900669 0 12.0073" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="9" Group="0" ID="376" Name="wall_welder_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="-2 0 12" />
@@ -284,16 +284,16 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="483" Name="stairs_welder_7" Rotation="3.14159 2.67828e-006 3.14159" Scale="1 1 1" Tag="" WorldPos="-14.5 0 7.56449" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="6" Group="0" ID="484" Name="stairs_welder_8" Rotation="-3.14159 0.835676 -3.14159" Scale="1 1 1" Tag="" WorldPos="-13.75 0 -2.5" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="17" Group="0" ID="485" Name="rose_petals_1" Rotation="0 0.261799 0" Scale="1.73258 1 1.62518" Tag="" WorldPos="2.54303 0.0429043 6.70558" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="520" Name="floor_dirt_pile_24" Rotation="0.0487712 -1.31501 -0.0668142" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="-14.9785 -0.0222025 2.58947" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="521" Name="floor_dirt_pile_25" Rotation="0.799185 1.51715 0.813004" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-16.1239 0.000576645 1.64917" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="522" Name="floor_dirt_pile_26" Rotation="0.799185 1.51715 0.813004" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-14.955 0.0112659 1.91912" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="523" Name="floor_dirt_pile_27" Rotation="0.0384949 -0.0519115 0.0125407" Scale="1.04613 0.75647 0.815648" Tag="" WorldPos="-17.6578 0.0692029 1.34314" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="524" Name="floor_dirt_pile_28" Rotation="-0.051399 -1.24884 0.0701356" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-17.1815 -0.0454652 4.14536" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="525" Name="floor_dirt_pile_29" Rotation="-0.0360445 -0.925063 0.0288587" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-15.8599 -0.0206935 3.79825" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="526" Name="floor_dirt_pile_30" Rotation="-0.102936 -1.46894 0.10133" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="-18.2641 -0.0575348 4.34747" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="527" Name="floor_dirt_pile_31" Rotation="3.04237 1.17236 3.06464" Scale="0.70728 1.10725 0.70728" Tag="" WorldPos="-18.9884 -0.0451982 1.53398" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="528" Name="floor_dirt_pile_32" Rotation="0.738287 1.51715 0.813004" Scale="0.756471 1.86355 1.03086" Tag="" WorldPos="-20.1662 -0.0823829 1.50148" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="529" Name="floor_dirt_pile_33" Rotation="0.0605667 -1.4693 -0.0630174" Scale="0.70728 2.10993 1.02264" Tag="" WorldPos="-20.7595 -0.0546819 5.3251" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="520" Name="floor_dirt_pile_24" Rotation="0.0487712 -1.31501 -0.0668142" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="-14.9785 -0.0222025 2.58947" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="521" Name="floor_dirt_pile_25" Rotation="0.799185 1.51715 0.813004" Scale="0.756471 0.75647 1.03086" Tag="" WorldPos="-16.1239 0.000576645 1.64917" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="522" Name="floor_dirt_pile_26" Rotation="0.799185 1.51715 0.813004" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-14.955 0.0112659 1.91912" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="523" Name="floor_dirt_pile_27" Rotation="0.0384949 -0.0519115 0.0125407" Scale="1.04613 0.75647 0.815648" Tag="" WorldPos="-17.6578 0.0692029 1.34314" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="524" Name="floor_dirt_pile_28" Rotation="-0.051399 -1.24884 0.0701356" Scale="0.701782 0.70728 0.92683" Tag="" WorldPos="-17.1815 -0.0454652 4.14536" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="525" Name="floor_dirt_pile_29" Rotation="-0.0360445 -0.925063 0.0288587" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-15.8599 -0.0206935 3.79825" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="526" Name="floor_dirt_pile_30" Rotation="-0.102936 -1.46894 0.10133" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="-18.2641 -0.0575348 4.34747" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="527" Name="floor_dirt_pile_31" Rotation="3.04237 1.17236 3.06464" Scale="0.70728 1.10725 0.70728" Tag="" WorldPos="-18.9884 -0.0451982 1.53398" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="528" Name="floor_dirt_pile_32" Rotation="0.738287 1.51715 0.813004" Scale="0.756471 1.86355 1.03086" Tag="" WorldPos="-20.1662 -0.0823829 1.50148" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="529" Name="floor_dirt_pile_33" Rotation="0.0605667 -1.4693 -0.0630174" Scale="0.70728 2.10993 1.02264" Tag="" WorldPos="-20.7595 -0.0546819 5.3251" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="23" Group="0" ID="543" Name="web_spider01_1" Rotation="-0.00160984 -0.170769 -0.00015151" Scale="1 2.17981 1" Tag="" WorldPos="6.26829 3.06601 -4.3806" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="24" Group="0" ID="544" Name="curtains_curtain01_open_1" Rotation="0 -1.43099e-007 0" Scale="1.65143 1.75 1.25" Tag="" WorldPos="0.379497 0.220216 -4.5881" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="25" Group="0" ID="569" Name="pool_wine01_1" Rotation="3.14159 -1.05568 3.14159" Scale="0.761445 1 0.4407" Tag="" WorldPos="-3.86351 1.00738 3.42034" />
@@ -348,38 +348,38 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="10" Group="0" ID="622" Name="wood_plank01_4.5m_39" Rotation="0.459301 1.45259 -1.13084" Scale="1 1 1" Tag="" WorldPos="-2.03477 7.2746 52.5894" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="10" Group="0" ID="623" Name="wood_plank01_4.5m_40" Rotation="0.384921 -1.4565 1.16146" Scale="1 1 1" Tag="" WorldPos="-2.04881 6.50213 52.613" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="12" Group="0" ID="624" Name="stairs_welder_wood_32" Rotation="-1.92627 1.43319 -2.05553" Scale="1.58344 1.58344 1.58344" Tag="" WorldPos="-2.16401 5.8544 54.8312" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="627" Name="floor_dirt_pile_34" Rotation="-2.90503 0.171381 -2.97511" Scale="0.701781 1.92428 0.92683" Tag="" WorldPos="2.69505 2.23431 27.7665" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="628" Name="floor_dirt_pile_35" Rotation="-2.89003 -0.14142 -3.01208" Scale="0.70728 1.71151 0.94543" Tag="" WorldPos="2.56116 2.42252 29.2262" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="629" Name="floor_dirt_pile_36" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.75647 0.756471 1.03086" Tag="" WorldPos="2.48546 2.68803 30.4169" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="630" Name="floor_dirt_pile_37" Rotation="-3.0232 0.171381 -2.97511" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.63334 2.91542 31.9562" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="631" Name="floor_dirt_pile_38" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.50818 3.0447 33.2421" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="632" Name="floor_dirt_pile_39" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.75647 0.756471 1.03086" Tag="" WorldPos="2.43248 3.17044 34.4328" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="633" Name="floor_dirt_pile_40" Rotation="-0.118414 -0.178622 0.0803226" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.50674 3.36093 35.8813" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="634" Name="floor_dirt_pile_41" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.36263 3.49827 37.1645" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="635" Name="floor_dirt_pile_42" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.26975 3.70662 38.3535" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="636" Name="floor_dirt_pile_43" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.39992 3.89642 39.8967" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="637" Name="floor_dirt_pile_44" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.2558 4.06515 41.1798" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="638" Name="floor_dirt_pile_45" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.16292 4.10698 42.3688" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="640" Name="floor_dirt_pile_46" Rotation="-1.15522 1.40404 -1.16171" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="2.16785 0.00299643 12.4419" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="641" Name="floor_dirt_pile_47" Rotation="-1.20861 -1.40768 1.19249" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="1.45596 0.00299643 12.3766" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="642" Name="floor_dirt_pile_48" Rotation="-0.165882 -0.403529 0.0539725" Scale="0.535458 1.24757 0.402639" Tag="" WorldPos="0.716095 0.00299643 12.3119" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="643" Name="floor_dirt_pile_49" Rotation="-0.0936728 0.0310904 0.0431207" Scale="0.484996 1.24757 0.402639" Tag="" WorldPos="0.0474378 0.00299643 12.3133" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="644" Name="floor_dirt_pile_50" Rotation="-2.97907 -0.352494 3.07337" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="2.11479 0.068047 13.0727" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="649" Name="floor_dirt_pile_55" Rotation="-2.98186 -0.000951582 3.10858" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="-0.9335 5.91798 54.4184" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="650" Name="floor_dirt_pile_56" Rotation="-2.98177 0.0336338 3.11415" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="2.11791 5.87725 54.4184" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="651" Name="floor_dirt_pile_57" Rotation="-2.98186 -0.000951582 3.10858" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="-0.9335 6.66828 59.7211" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="652" Name="floor_dirt_pile_58" Rotation="-2.97959 0.166813 3.13586" Scale="1.48367 1.99466 3.00219" Tag="" WorldPos="1.70634 6.60677 59.7418" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="653" Name="floor_dirt_pile_59" Rotation="-0.786076 -1.34408 0.740252" Scale="2.36294 1.99466 3.00219" Tag="" WorldPos="0.66693 7.02389 61.9825" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="654" Name="floor_dirt_pile_60" Rotation="-2.98276 0.0736562 -3.06882" Scale="1.10949 1.88409 0.668361" Tag="" WorldPos="-21.5853 -0.12604 1.59992" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="656" Name="floor_dirt_pile_61" Rotation="3.02767 -0.907199 -2.98674" Scale="1.10949 2.38262 0.846175" Tag="" WorldPos="-22.1608 -0.0864134 2.54039" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="657" Name="floor_dirt_pile_62" Rotation="0.0704103 -0.0968964 0.0581342" Scale="0.780623 1.22895 0.846175" Tag="" WorldPos="-22.5201 -0.0583038 3.92815" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="658" Name="floor_dirt_pile_63" Rotation="3.0202 -0.95422 -2.97743" Scale="0.780623 1.74501 1.16161" Tag="" WorldPos="-22.1391 -0.0864134 5.20816" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="659" Name="floor_dirt_pile_64" Rotation="0.268143 -1.33989 -0.269663" Scale="0.756471 1.27033 1.03086" Tag="" WorldPos="-19.5339 -0.0395012 5.00521" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="660" Name="floor_dirt_pile_65" Rotation="0.0485468 -0.497306 -0.0164025" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-16.7487 -0.0627155 -0.162662" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="661" Name="floor_dirt_pile_66" Rotation="-0.0327933 -1.43896 0.125498" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-18.7162 -0.0627155 0.191498" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="662" Name="floor_dirt_pile_67" Rotation="0.0560124 -0.704663 -0.0295343" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-15.0698 -0.113468 6.56915" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="663" Name="floor_dirt_pile_68" Rotation="0.12924 1.23351 0.128804" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-14.7563 -0.113468 4.35674" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="664" Name="floor_dirt_pile_69" Rotation="0.0432887 0.170235 0.0141094" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-15.127 -0.113468 1.22695" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="627" Name="floor_dirt_pile_34" Rotation="-2.90503 0.171381 -2.97511" Scale="0.701781 1.92428 0.92683" Tag="" WorldPos="2.69505 2.23431 27.7665" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="628" Name="floor_dirt_pile_35" Rotation="-2.89003 -0.14142 -3.01208" Scale="0.70728 1.71151 0.94543" Tag="" WorldPos="2.56116 2.42252 29.2262" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="629" Name="floor_dirt_pile_36" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.75647 0.756471 1.03086" Tag="" WorldPos="2.48546 2.68803 30.4169" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="630" Name="floor_dirt_pile_37" Rotation="-3.0232 0.171381 -2.97511" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.63334 2.91542 31.9562" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="631" Name="floor_dirt_pile_38" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.50818 3.0447 33.2421" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="632" Name="floor_dirt_pile_39" Rotation="-3.02376 -0.14142 -3.01208" Scale="0.75647 0.756471 1.03086" Tag="" WorldPos="2.43248 3.17044 34.4328" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="633" Name="floor_dirt_pile_40" Rotation="-0.118414 -0.178622 0.0803226" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.50674 3.36093 35.8813" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="634" Name="floor_dirt_pile_41" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.36263 3.49827 37.1645" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="635" Name="floor_dirt_pile_42" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.26975 3.70662 38.3535" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="636" Name="floor_dirt_pile_43" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.39992 3.89642 39.8967" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="637" Name="floor_dirt_pile_44" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.2558 4.06515 41.1798" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="638" Name="floor_dirt_pile_45" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.756471 0.756471 1.03086" Tag="" WorldPos="2.16292 4.10698 42.3688" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="640" Name="floor_dirt_pile_46" Rotation="-1.15522 1.40404 -1.16171" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="2.16785 0.00299643 12.4419" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="641" Name="floor_dirt_pile_47" Rotation="-1.20861 -1.40768 1.19249" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="1.45596 0.00299643 12.3766" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="642" Name="floor_dirt_pile_48" Rotation="-0.165882 -0.403529 0.0539725" Scale="0.535458 1.24757 0.402639" Tag="" WorldPos="0.716095 0.00299643 12.3119" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="643" Name="floor_dirt_pile_49" Rotation="-0.0936728 0.0310904 0.0431207" Scale="0.484996 1.24757 0.402639" Tag="" WorldPos="0.0474378 0.00299643 12.3133" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="644" Name="floor_dirt_pile_50" Rotation="-2.97907 -0.352494 3.07337" Scale="0.535458 1.24757 0.69346" Tag="" WorldPos="2.11479 0.068047 13.0727" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="649" Name="floor_dirt_pile_55" Rotation="-2.98186 -0.000951582 3.10858" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="-0.9335 5.91798 54.4184" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="650" Name="floor_dirt_pile_56" Rotation="-2.98177 0.0336338 3.11415" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="2.11791 5.87725 54.4184" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="651" Name="floor_dirt_pile_57" Rotation="-2.98186 -0.000951582 3.10858" Scale="0.70728 1.99466 3.00219" Tag="" WorldPos="-0.9335 6.66828 59.7211" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="652" Name="floor_dirt_pile_58" Rotation="-2.97959 0.166813 3.13586" Scale="1.48367 1.99466 3.00219" Tag="" WorldPos="1.70634 6.60677 59.7418" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="653" Name="floor_dirt_pile_59" Rotation="-0.786076 -1.34408 0.740252" Scale="2.36294 1.99466 3.00219" Tag="" WorldPos="0.66693 7.02389 61.9825" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="654" Name="floor_dirt_pile_60" Rotation="-2.98276 0.0736562 -3.06882" Scale="1.10949 1.88409 0.668361" Tag="" WorldPos="-21.5853 -0.12604 1.59992" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="656" Name="floor_dirt_pile_61" Rotation="3.02767 -0.907199 -2.98674" Scale="1.10949 2.38262 0.846175" Tag="" WorldPos="-22.1608 -0.0864134 2.54039" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="657" Name="floor_dirt_pile_62" Rotation="0.0704103 -0.0968964 0.0581342" Scale="0.780623 1.22895 0.846175" Tag="" WorldPos="-22.5201 -0.0583038 3.92815" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="658" Name="floor_dirt_pile_63" Rotation="3.0202 -0.95422 -2.97743" Scale="0.780623 1.74501 1.16161" Tag="" WorldPos="-22.1391 -0.0864134 5.20816" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="659" Name="floor_dirt_pile_64" Rotation="0.268143 -1.33989 -0.269663" Scale="0.756471 1.27033 1.03086" Tag="" WorldPos="-19.5339 -0.0395012 5.00521" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="660" Name="floor_dirt_pile_65" Rotation="0.0485468 -0.497306 -0.0164025" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-16.7487 -0.0627155 -0.162662" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="661" Name="floor_dirt_pile_66" Rotation="-0.0327933 -1.43896 0.125498" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-18.7162 -0.0627155 0.191498" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="662" Name="floor_dirt_pile_67" Rotation="0.0560124 -0.704663 -0.0295343" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-15.0698 -0.113468 6.56915" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="663" Name="floor_dirt_pile_68" Rotation="0.12924 1.23351 0.128804" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-14.7563 -0.113468 4.35674" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="664" Name="floor_dirt_pile_69" Rotation="0.0432887 0.170235 0.0141094" Scale="1.72113 1.53538 1.49065" Tag="" WorldPos="-15.127 -0.113468 1.22695" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="26" Group="0" ID="665" Name="wall_welder_3" Rotation="-1.5708 -5.53749e-008 0" Scale="2 1.06417 2" Tag="" WorldPos="-23.5 -0.25 9.09598" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="26" Group="0" ID="666" Name="wall_welder_4" Rotation="-1.5708 8.6102e-007 -1.66264" Scale="2 1.06417 2" Tag="" WorldPos="-24.005 1.18884 9.09598" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="26" Group="0" ID="667" Name="wall_welder_5" Rotation="-1.5708 -5.53749e-008 0" Scale="2 1.06417 2" Tag="" WorldPos="-23.5 1.47358 9.09598" />
@@ -415,14 +415,14 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="26" Group="0" ID="709" Name="wall_welder_42" Rotation="-1.5708 8.6102e-007 -1.66264" Scale="2 1.06417 2" Tag="" WorldPos="-24.005 2.91242 2.55982" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="28" Group="0" ID="715" Name="house_well_pump_lowres_1" Rotation="0 -0.0908338 0" Scale="1 1 1" Tag="" WorldPos="-21.7809 -0.023249 -0.476848" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="29" Group="0" ID="718" Name="house_farmhouse01_lowres_shutter_1" Rotation="0 0.012539 0" Scale="2.4 1.628 1.415" Tag="" WorldPos="-30.5616 0.797536 3.76003" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="719" Name="floor_dirt_pile_70" Rotation="-0.0116324 -0.497306 -0.0164025" Scale="5.97267 21.4321 6.24433" Tag="" WorldPos="-39.807 -0.389847 -0.0492344" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="720" Name="floor_dirt_pile_71" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-38.447 -0.250363 8.45364" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="719" Name="floor_dirt_pile_70" Rotation="-0.0116324 -0.497306 -0.0164025" Scale="5.97267 21.4321 6.24433" Tag="" WorldPos="-39.807 -0.389847 -0.0492344" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="720" Name="floor_dirt_pile_71" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-38.447 -0.250363 8.45364" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="3" Group="0" ID="722" Name="plane_black_plane_black_18" Rotation="-1.5708 -1.5708 -2.08157e-006" Scale="3.00214 1 1.6" Tag="" WorldPos="-23.288 3.13927 3.79005" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="30" Group="0" ID="724" Name="pebbles03_1" Rotation="-3.14049 -0.785311 3.12286" Scale="1 1 1" Tag="" WorldPos="-19.2449 0.0517763 4.10536" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="30" Group="0" ID="725" Name="pebbles03_2" Rotation="3.09996 -0.790722 3.1281" Scale="1 1 1" Tag="" WorldPos="-17.2504 0.0647556 1.91693" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="30" Group="0" ID="726" Name="pebbles03_3" Rotation="3.10349 -0.78326 -3.12073" Scale="1 1 1" Tag="" WorldPos="-18.3218 0.0310693 3.42797" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="30" Group="0" ID="727" Name="pebbles03_4" Rotation="3.08688 -0.783812 -3.08134" Scale="1 1 1" Tag="" WorldPos="-20.4528 0.10297 2.38401" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="728" Name="floor_dirt_pile_72" Rotation="-2.93136 -0.314348 2.99128" Scale="7.32384 13.1479 7.09336" Tag="" WorldPos="-23.2574 -0.250363 21.9986" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="728" Name="floor_dirt_pile_72" Rotation="-2.93136 -0.314348 2.99128" Scale="7.32384 13.1479 7.09336" Tag="" WorldPos="-23.2574 -0.250363 21.9986" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="738" Name="foliage_grass01_1" Rotation="-1.49543 1.40458 -1.5708" Scale="1 2.35032 1" Tag="" WorldPos="-1.55764 0.25 15.1769" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="739" Name="foliage_grass01_2" Rotation="-1.5206 1.31991 -1.5965" Scale="1 3.71532 1" Tag="" WorldPos="-1.55764 0.489235 17.72" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="740" Name="foliage_grass01_3" Rotation="-1.49543 1.32058 -1.5708" Scale="1 2.35032 1" Tag="" WorldPos="-1.55764 1.11189 22.6499" />
@@ -553,15 +553,15 @@
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="1161" Name="foliage_grass01_54" Rotation="-1.57934 1.2611 -1.4745" Scale="1 2.35032 1" Tag="" WorldPos="2.17827 5.52109 50.6376" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="1163" Name="foliage_grass01_55" Rotation="-1.49543 1.25987 -1.5708" Scale="1 2.35032 1" Tag="" WorldPos="-1.27927 5.88784 53.1542" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="31" Group="0" ID="1164" Name="foliage_grass01_56" Rotation="-1.49543 1.25987 -1.5708" Scale="1 2.35032 1" Tag="" WorldPos="-1.27927 5.52109 50.6376" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1166" Name="floor_dirt_pile_51" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.39992 4.25549 42.2017" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1167" Name="floor_dirt_pile_52" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.33131 4.63482 44.658" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1168" Name="floor_dirt_pile_53" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.18719 4.44448 43.6361" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1169" Name="floor_dirt_pile_54" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.1949 4.90859 46.6338" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1170" Name="floor_dirt_pile_73" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.05078 4.71825 45.6119" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1171" Name="floor_dirt_pile_74" Rotation="-3.02281 0.194994 3.10497" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="-0.921907 4.89937 46.6338" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1172" Name="floor_dirt_pile_75" Rotation="-3.02425 -0.117809 3.06799" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.08759 4.72747 45.6119" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1174" Name="floor_dirt_pile_76" Rotation="-3.02281 0.194994 3.10497" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="-0.921907 4.56156 44.1874" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="1175" Name="floor_dirt_pile_77" Rotation="-3.02425 -0.117809 3.06799" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.08759 4.38966 43.1654" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1166" Name="floor_dirt_pile_51" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.39992 4.25549 42.2017" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1167" Name="floor_dirt_pile_52" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.33131 4.63482 44.658" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1168" Name="floor_dirt_pile_53" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.18719 4.44448 43.6361" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1169" Name="floor_dirt_pile_54" Rotation="-3.02281 0.194994 -3.05928" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="2.1949 4.90859 46.6338" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1170" Name="floor_dirt_pile_73" Rotation="-3.02425 -0.117809 -3.09626" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="2.05078 4.71825 45.6119" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1171" Name="floor_dirt_pile_74" Rotation="-3.02281 0.194994 3.10497" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="-0.921907 4.89937 46.6338" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1172" Name="floor_dirt_pile_75" Rotation="-3.02425 -0.117809 3.06799" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.08759 4.72747 45.6119" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1174" Name="floor_dirt_pile_76" Rotation="-3.02281 0.194994 3.10497" Scale="0.701781 0.70728 0.92683" Tag="" WorldPos="-0.921907 4.56156 44.1874" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="1175" Name="floor_dirt_pile_77" Rotation="-3.02425 -0.117809 3.06799" Scale="0.70728 0.70728 0.70728" Tag="" WorldPos="-1.08759 4.38966 43.1654" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="38" Group="0" ID="1176" Name="tree_pine_32" Rotation="-3.0781 0.154188 -3.09119" Scale="1.36729 1.36729 1.36729" Tag="" WorldPos="30.4865 0 -2.86409" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="38" Group="0" ID="1177" Name="tree_pine_33" Rotation="3.10674 0.165579 -2.96299" Scale="1.36729 1.36729 1.36729" Tag="" WorldPos="56.2661 0.66461 -18.4077" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="38" Group="0" ID="1178" Name="tree_pine_34" Rotation="2.96978 1.17195 2.96991" Scale="1.36729 1.36729 1.36729" Tag="" WorldPos="60.2933 0.66461 -14.261" />
@@ -1073,11 +1073,11 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="50" Group="0" ID="2144" Name="special_leaves_38" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-8.26908 0.01 -5.70352" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="18" Group="0" ID="2162" Name="statues/statue01_statue01_1" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="0.023262 2.77678 3.12279" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2189" Name="floor_dirt_pile_78" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-14.25 2.5 41.75" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2190" Name="floor_dirt_pile_79" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-14.25 0 26.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2191" Name="floor_dirt_pile_80" Rotation="-3.08948 0.0186265 1.38864" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-45.75 2.25 12.75" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2192" Name="floor_dirt_pile_81" Rotation="-3.08948 0.0186265 1.38864" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-45.75 6 43" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2193" Name="floor_dirt_pile_82" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-14.25 5.25 61.25" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="8" Group="0" ID="2194" Name="floor_dirt_pile_83" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-35.25 2.25 39.75" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="2190" Name="floor_dirt_pile_79" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-14.25 0 26.25" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="2191" Name="floor_dirt_pile_80" Rotation="-3.08948 0.0186265 1.38864" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-45.75 2.25 12.75" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="2192" Name="floor_dirt_pile_81" Rotation="-3.08948 0.0186265 1.38864" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-45.75 6 43" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="2193" Name="floor_dirt_pile_82" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-14.25 5.25 61.25" />
+                <StaticObject CastShadows="true" Collides="false" FileIndex="8" Group="0" ID="2194" Name="floor_dirt_pile_83" Rotation="3.07658 -0.307866 -3.05481" Scale="5.97267 19.8751 5.7422" Tag="" WorldPos="-35.25 2.25 39.75" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="4" Group="0" ID="2196" Name="foliage_grass02_1" Rotation="-1.48353 1.39626 -1.53589" Scale="1 1 1" Tag="" WorldPos="-10.4145 3.13381 33.2349" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="4" Group="0" ID="2197" Name="foliage_grass02_2" Rotation="-2.84388 0.940086 -2.95238" Scale="1 1 1" Tag="" WorldPos="-17.9765 3.13381 33.2349" />
                 <StaticObject CastShadows="true" Collides="false" FileIndex="4" Group="0" ID="2198" Name="foliage_grass02_3" Rotation="-2.84388 0.940086 -2.95238" Scale="1 1 1" Tag="" WorldPos="-21.928 3.13381 33.2349" />
@@ -1270,24 +1270,23 @@
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2663" Name="wall_welder_convex_66" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="11.25 8 -16.4225" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2664" Name="wall_welder_convex_67" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="11.25 12 -16.4225" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2665" Name="wall_welder_convex_68" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="11.25 16 -16.4225" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2666" Name="wall_welder_convex_69" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 10.3843 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2666" Name="wall_welder_convex_69" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 9.98057 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2667" Name="wall_welder_convex_70" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 14.3843 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2668" Name="wall_welder_convex_71" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 10.3843 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2668" Name="wall_welder_convex_71" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 10.1095 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2669" Name="wall_welder_convex_72" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 14.3843 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2670" Name="wall_welder_convex_73" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 10.3843 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2670" Name="wall_welder_convex_73" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 10.0249 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2671" Name="wall_welder_convex_74" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 14.3843 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2672" Name="wall_welder_convex_75" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="43.2449 10.3843 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2673" Name="wall_welder_convex_76" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="43.2449 14.3843 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2674" Name="wall_welder_convex_77" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="43.2449 6.3934 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2675" Name="wall_welder_convex_78" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 6.3934 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2676" Name="wall_welder_convex_79" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 6.3934 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2677" Name="wall_welder_convex_80" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 6.3934 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2675" Name="wall_welder_convex_78" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 6.03402 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2676" Name="wall_welder_convex_79" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 6.11861 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2677" Name="wall_welder_convex_80" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 5.98967 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2678" Name="wall_welder_convex_81" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="43.2449 2.39104 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2679" Name="wall_welder_convex_82" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="38.9857 2.39104 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2680" Name="wall_welder_convex_83" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 2.39104 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2681" Name="wall_welder_convex_84" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 2.39104 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2682" Name="wall_welder_convex_85" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="35.6703 6.3934 -23.1459" />
-                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2683" Name="wall_welder_convex_86" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="35.6703 10.3843 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2680" Name="wall_welder_convex_83" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="31.1479 2.11625 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2681" Name="wall_welder_convex_84" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="27.0331 1.98731 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2682" Name="wall_welder_convex_85" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="35.6703 5.95118 -23.1459" />
+                <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2683" Name="wall_welder_convex_86" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="35.6703 9.94208 -23.1459" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2684" Name="wall_welder_convex_87" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-15.25 8 -26.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2685" Name="wall_welder_convex_88" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.25 8 -26.75" />
                 <StaticObject CastShadows="true" Collides="true" FileIndex="41" Group="0" ID="2686" Name="wall_welder_convex_89" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.25 12 -26.75" />
@@ -2864,7 +2863,7 @@
                 <Entity Active="true" FileIndex="18" Group="0" ID="1031" Name="barrel01_4" Rotation="0 -174.62 0" Scale="1 1 1" Tag="" WorldPos="-157.963 -0.0196286 -0.248011">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -2883,7 +2882,7 @@
                 <Entity Active="true" FileIndex="18" Group="0" ID="1032" Name="barrel01_5" Rotation="0 -181.427 0" Scale="1 1 1" Tag="" WorldPos="-157.268 -0.0196286 0.211599">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -3033,7 +3032,7 @@
                     </UserVariables>
                 </Entity>
                 <BoxLight Active="false" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.05 0 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1054" Name="BoxLight_1" Radius="1" Rotation="0 0 0" Scale="17 18 12.75" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="17 18 12.75" Tag="" WorldPos="-159.75 6.5 4" />
-                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
+                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
                 <Entity Active="true" FileIndex="35" Group="0" ID="1208" Name="block_box_1" Rotation="-3.00211 1.78669e-006 -3.14159" Scale="1 12.25 50.25" Tag="" WorldPos="3.15864 2 37.7827">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3300,7 +3299,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="29" Group="0" ID="1228" Name="level_wood_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="37.25 6 -23.25">
+                <Entity Active="true" FileIndex="29" Group="0" ID="1228" Name="level_wood_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="37.1936 6.06538 -23.25">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -3718,7 +3717,7 @@
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
                         <Var Name="PlayerInteractCallback" Value="" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="TextEntry" Value="" />
+                        <Var Name="TextEntry" Value="OutlyingBuilding" />
                         <Var Name="StartPos" Value="PlayerStartArea_2" />
                         <Var Name="MapFile" Value="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/custom_stories/shadow-of-the-ramlord/maps/SOTR_01_prologue.map" />
                         <Var Name="Locked" Value="false" />
@@ -3741,7 +3740,7 @@
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
                         <Var Name="PlayerInteractCallback" Value="ExitShed" />
                         <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="TextEntry" Value="" />
+                        <Var Name="TextEntry" Value="CaeceaCourtyard" />
                         <Var Name="StartPos" Value="PlayerStartArea_3" />
                         <Var Name="MapFile" Value="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/custom_stories/shadow-of-the-ramlord/maps/SOTR_01_prologue.map" />
                         <Var Name="Locked" Value="true" />
@@ -5023,7 +5022,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="30" Group="0" ID="2467" Name="candlestick_floor_3" Rotation="0 -0.785399 0" Scale="1 1 1" Tag="" WorldPos="27 6 -22.5">
+                <Entity Active="true" FileIndex="30" Group="0" ID="2467" Name="candlestick_floor_3" Rotation="0 -0.785399 0" Scale="1 1 1" Tag="" WorldPos="27 6 -22">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -7790,8 +7789,8 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="3319" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-165.25 0 8" />
-                <Sound Active="true" Group="0" ID="3320" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-164 0 -4" />
+                <Sound Active="true" Group="0" ID="3319" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-165.25 0 8" />
+                <Sound Active="true" Group="0" ID="3320" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-164 0 -4" />
                 <Entity Active="true" FileIndex="11" Group="0" ID="3321" Name="table_nice02_7" Rotation="2.10734e-008 -8.11985e-016 3.85312e-008" Scale="1 1 1" Tag="" WorldPos="29.1569 5.974 -22.3898">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -8361,6 +8360,139 @@
                         <Var Name="ConnectionLightAmount" Value="1" />
                         <Var Name="ConnectionLightUseOnColor" Value="true" />
                         <Var Name="ConnectionLightUseSpec" Value="false" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3365" Name="block_box_23" Rotation="0 -1.5708 0" Scale="4.46712 6.9 4.69561" Tag="" WorldPos="-0.0146384 3.75643 3.33551">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3367" Name="block_box_24" Rotation="-3.14159 -1.07902 -3.14159" Scale="0.348239 1.5 3.81536" Tag="" WorldPos="-4.11084 3.01435 8.01785">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3368" Name="block_box_25" Rotation="-3.14159 0.0272832 -3.14159" Scale="0.348239 1.5 7.2049" Tag="" WorldPos="-6.00733 3.01435 3.54511">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3369" Name="block_box_26" Rotation="-2.38419e-007 -1.01463 9.53674e-007" Scale="0.348239 1.5 3.81536" Tag="" WorldPos="-4.28659 3.01435 -1.20422">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3370" Name="block_box_27" Rotation="3.14159 1.01463 3.14159" Scale="0.348239 1.5 3.81536" Tag="" WorldPos="5 3 7.75">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3371" Name="block_box_28" Rotation="6.35433e-008 -0.0272877 -5.38024e-007" Scale="0.348239 1.5 7.2049" Tag="" WorldPos="6.75 3 3.25">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="35" Group="0" ID="3372" Name="block_box_29" Rotation="2.04277e-007 1.07902 -4.65189e-007" Scale="0.348239 1.5 3.81536" Tag="" WorldPos="5 3 -1.25">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="ContainedItem" Value="None" />
+                        <Var Name="DisableBreakable" Value="false" />
+                        <Var Name="IsInsanityVision" Value="false" />
+                        <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
             </Entities>
