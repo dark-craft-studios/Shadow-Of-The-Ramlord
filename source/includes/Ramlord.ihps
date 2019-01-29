@@ -204,6 +204,16 @@ void PlaySoundAtEntity(string file, string entity, float fadeTime)
     );
 }
 
+void PlaySoundAtEntity(string name, string file, string entity, float fadeTime)
+{
+    PlaySoundAtEntity(
+        name,     /* Sound name */
+        file,     /* Sound file */
+        entity,   /* Entity */
+        fadeTime, /* Fade time */
+        false     /* Save */
+    );
+}
 // ----------------------------------------------------------------------------
 
 void PlaySoundAtEntity(string file, string entity)

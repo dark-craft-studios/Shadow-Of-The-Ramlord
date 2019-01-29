@@ -16,6 +16,8 @@ const string entBallroomLevelDoor = "level_wood_1";
 
 const string ambOutside = "ambience_wind_eerie_no3d.snt";
 
+const string sntCrowd = "SOTR_Crowdsounds.snt";
+
 const string MapId = "01";
 
 // ============================================================================
@@ -152,6 +154,7 @@ void AntonAndEmiliaCutscene(string t)
         );
         FadeSepiaColorTo(0.9f, 2.0f);
         FadeRadialBlurTo(0.025f, 2.0f);
+        PlaySoundAtEntity("crowd", sntCrowd, "Player", 2.0f);
         delay = 2.5f;
     }
     else if(stage == 1)
@@ -168,6 +171,7 @@ void AntonAndEmiliaCutscene(string t)
     {
         FadeSepiaColorTo(0.0f, 2.0f);
         FadeRadialBlurTo(0.0f, 2.0f);
+        StopSound("crowd", 0.5f);
         ResetPlayerState();
         SetLevelDoorLocked(entBallroomLevelDoor, false);
         return;

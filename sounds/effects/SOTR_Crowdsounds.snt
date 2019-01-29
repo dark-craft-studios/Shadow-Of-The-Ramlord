@@ -1,0 +1,8 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="SOTR_Crowdsounds" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="1.0" MinDistance="2" MaxDistance="10" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="True" Use3D="False" Blockable="False" BlockVolumeMul="0.8" Priority="0" />
+</SOUNDENTITY>
