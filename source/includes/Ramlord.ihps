@@ -14,6 +14,7 @@ void OnEnter()
     AutoloadLoadingScreen();
     AutoDisplayNameSetup();
     ResetPlayerState();
+    EnforceItemsIfNeeded();
 }
 
 void OnStart()
@@ -448,3 +449,33 @@ void BlockAllVanillaHints()
     BlockHint("QuestAdded");
     BlockHint("RecentlyReadText");
 }
+
+void EnforceItemsIfNeeded()
+{
+    if(MapId == "01" || MapId == "02" || MapId == "03")
+    {
+        EnforceEssentialItems();
+    }
+}
+
+void EnforceEssentialItems()
+{
+    EnforceItem(
+        GetGlobalVarString("ClearsightItemName"), 
+        "SOTR_Clearsight.ent"
+    );
+
+    EnforceItem(
+        GetGlobalVarString("LanternName"), 
+        "lantern.ent"
+    );
+}
+
+void EnforceItem(string itemName, string itemFile)
+{
+    if(!HasItem(itemName))
+    {
+        GiveItemFromFile(itemName, itemFile);
+    }
+}
+
