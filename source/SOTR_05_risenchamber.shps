@@ -75,7 +75,7 @@ void TortureDialog(string t)
     }
     else if(stage == 5)
     {
-    SetMoveObjectStateExt("castle_portcullis_1", 1.0f, 0.8f, 1.0f, 0.5f, false);
+        SetMoveObjectStateExt("castle_portcullis_1", 1.0f, 0.8f, 1.0f, 0.5f, false);
         delay = 8.0f;
     }
     else if(stage == 6)
@@ -119,7 +119,7 @@ void TortureDialog(string t)
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 13)
+    else if(stage == 14)
     {
         delay = 2.0f;
     }
