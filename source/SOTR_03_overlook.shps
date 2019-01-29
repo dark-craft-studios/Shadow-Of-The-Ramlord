@@ -46,10 +46,6 @@ void RegisterCallbacks()
         "DoorConversation"
     );
     AddSinglePlayerCollideCallback(
-        "MonsterSequenceBegin", 
-        "BeginMonsterSequence"
-    );
-    AddSinglePlayerCollideCallback(
         "EndingSequenceArea", 
         "EndingLine1"
     );
@@ -103,14 +99,6 @@ void DoorConversationEnd()
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_3.ogg");
 
     ResetPlayerState();
-}
-
-// ============================================================================
-// MONSTER SEQUENCE INITIALIZE
-// ============================================================================
-void BeginMonsterSequence(string a, string b, int state)
-{
-        PlayVoice("OL_Johan_6.ogg");
 }
 
 // ============================================================================
@@ -564,6 +552,7 @@ void PlayStepRunSounds(string t)
     }
     else
     {
+        PlayVoice("OL_Johan_6.ogg");
         return;
     }
 
