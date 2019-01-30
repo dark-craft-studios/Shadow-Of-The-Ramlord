@@ -4,20 +4,35 @@
 // ============================================================================
 // CONSTANTS
 // ============================================================================
+// <HERE>
 const string graveyardDoor = "mansion_1";
 
 const string MapId = "03";
 
+const string psDustPush = "ps_dust_push.ps";
+
 const string sntSecondAmbience = "03_amb.snt";
 const string sntEnemyNotice = "notice.snt";
+const string sntEnemyNoticeLong = "notice_long.snt";
 const string sntPhonoHumm = "SOTR_broken_phono.snt";
 const string sntSkeletalkPhono = "SOTR_skeletalk_phono.snt";
+const string sntWind = "09_wind_whirl.snt";
 
 const string entUpstairsDoor = "UpstairsDoor";
 const string entUpstairsSound = "SoundArea_1";
 const string entPhono = "Phono";
 const string entPhonoStart = "PhonoArea_1";
 const string entPhonoEnd = "PhonoArea_2";
+const string entUpperRoom = "UpperRoomArea";
+const string entEscapeDoor = "EscapeDoor";
+const string entStatueArea = "LibraryStatueGhouls";
+const string entStatueCandle1 = "candlestick02_1";
+const string entStatueCandle2 = "candlestick02_2";
+const string entChaseBox1 = "ChaseBox1";
+const string entChaseBox2 = "ChaseBox2";
+const string entChaseBox3 = "ChaseBox3";
+const string entDownstairsDoor = "mansion_4";
+const string entUpstairsDustArea = "UpstairsDustPushArea";
 
 // ============================================================================
 // MAIN
@@ -485,7 +500,110 @@ void RitualBookPickupScene()
 
 void OnLastBookPickup()
 {
-    PlayVoiceOnPlayerAndSlowdown("OL_Johan_7.ogg");
+    AfterLastBookScene();
+}
+
+void AfterLastBookScene(string t)
+{
+    int stage = GetLocalVarInt("AfterLastBookScene");
+    AddLocalVarInt("AfterLastBookScene", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        // <HERE>
+        WindOpenEscapeDoor();
+        PlaySoundAtEntity(sntEnemyNoticeLong, entUpperRoom);
+        RegisterChaseBoxes();
+        SetSwingDoorClosed(entDownstairsDoor, true, false);
+        SetSwingDoorLocked(entDownstairsDoor, true, false);
+        AddSinglePlayerCollideCallback(
+            entStatueArea, 
+            "OnStatueEvent"
+        );
+        StartPlayerLookAtNormal(entUpstairsDoor);
+        delay = 1.5f;
+    }
+    else if(stage == 1)
+    {
+        SetSwingDoorLocked(entEscapeDoor, false, false);
+        SetSwingDoorClosed(entEscapeDoor, false, false);
+        PlaySoundAtEntity(sntWind, entEscapeDoor);
+        CreateParticleSystemAtEntity(psDustPush, entUpstairsDustArea);
+        delay = 2.0f;
+    }
+    else if(stage == 2)
+    {
+        StopPlayerLookAt();
+        PlayVoiceOnPlayerAndSlowdown("OL_Johan_7.ogg");
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "AfterLastBookScene");
+}
+
+void AfterLastBookScene() { AfterLastBookScene(""); }
+
+void WindOpenEscapeDoor(string t)
+{
+    int stage = GetLocalVarInt("WindOpenEscapeDoor");
+    AddLocalVarInt("WindOpenEscapeDoor", 1);
+
+    SetSwingDoorClosed(entEscapeDoor, false, false);
+    AddPropForce(
+        entEscapeDoor,
+        0.0f, /* x */
+        0.0f, /* y */
+        10000.0f, /* z */
+        "world"
+    );
+
+    if(stage < 100)
+    {
+        AddTimer("", 0.01f, "WindOpenEscapeDoor");
+    }
+}
+
+void WindOpenEscapeDoor() { WindOpenEscapeDoor(""); }
+
+void OnStatueEvent(string a, string b, int s)
+{
+    SetLampLit(entStatueCandle1, false, true);
+    SetLampLit(entStatueCandle2, false, true);
+}
+
+void RegisterChaseBoxes()
+{
+    AddSinglePlayerCollideCallback(
+        entChaseBox1, 
+        "OnChaseBox1"
+    );
+    AddSinglePlayerCollideCallback(
+        entChaseBox2, 
+        "OnChaseBox2"
+    );
+    AddSinglePlayerCollideCallback(
+        entChaseBox3, 
+        "OnChaseBox3"
+    );
+}
+
+void OnChaseBox1(string a, string b, int s)
+{
+    AddDebugMessage("Chase box 1", false);
+}
+
+void OnChaseBox2(string a, string b, int s)
+{
+    AddDebugMessage("Chase box 2", false);
+}
+
+void OnChaseBox3(string a, string b, int s)
+{
+    AddDebugMessage("Chase box 3", false);
 }
 
 void OnBasementDoorInteract(string t)
