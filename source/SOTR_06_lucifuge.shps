@@ -161,7 +161,7 @@ void LastConversation()
 
 void HerCall(string a, string b, int s)
 {
-        PlayVoiceOnEntityAndSlowdown("LU_Emilia_1.ogg", "EmiliaVoice1");
+        PlayVoice("LU_Emilia_1.ogg", "EmiliaVoice1");
 }
 
 void LastWords(string a, string b, int s)
