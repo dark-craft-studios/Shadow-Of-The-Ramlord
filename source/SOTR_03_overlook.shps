@@ -75,10 +75,6 @@ void RegisterCallbacks()
         "EndingLine1"
     );
     AddSinglePlayerCollideCallback(
-        "TombminderArea", 
-        "LookAtFirstTomb"
-    );
-    AddSinglePlayerCollideCallback(
         entPhonoStart, 
         "PhonoStart"
     );
@@ -109,6 +105,7 @@ void RegisterCallbacks()
 // ============================================================================
 void DoorConversation(string a, string b, int state)
 {
+    SetLanternActive(false, true);
     PlaySoundAtEntity("scare_wood_creak_scuf.snt", "EmiliasFeet");
     StartPlayerLookAt(
         "EmiliaSource",  /* Entity */
@@ -205,6 +202,7 @@ void OnSecondBookPickup()
 
 void OnRitualCompleted()
 {
+    SetLanternActive(false, true);
     StartRitualCutscene();
 }
 
@@ -387,12 +385,6 @@ void BasementCreaks(string t)
     }
 
     AddTimer("", delay, "BasementCreaks");
-}
-
-void LookAtFirstTomb(string a, string b, int s)
-{
-    StartPlayerLookAt("RitualBook_1", 0.8f, 1.5f, "");
-    AddTimer("", 1.5f, "ResetPlayerStateTimer");
 }
 
 void EnsureFirstTombPickup(string a, string b, int s)
@@ -629,12 +621,10 @@ void OnBasementDoorInteract(string t)
             "ps_dust_push.ps", 
             "DustPushArea"
         );
-        SetLightFlickerActive("BasementLight", true);
         delay = 2.0f;
     }
     else if(stage == 1)
     {
-        SetLightFlickerActive("BasementLight", false);
         PlayVoiceOnEntityAndSlowdown("OL_Emilia_1.ogg", "EmiliaSource");
         SetEffectVoiceOverCallback("OnBasementDoorInteract");
         return;
@@ -768,5 +758,24 @@ void OnGraveMeditation(string t)
 void OnGraveMeditation()
 {
     OnGraveMeditation("");
+}
+
+void OnDoorInteract(string entity)
+{
+    OnDoorInteractMessage(entity);
+}
+
+void OnDoorInteractMessage(string entity)
+{
+    if(GetSwingDoorLocked(entity))
+    {
+        DisplaySeededDoorMessage("Generic_", 1, 3);
+    }
+}
+
+void DisplaySeededDoorMessage(string entryBase, int min, int max)
+{
+    int seed = RandInt(min, max);
+    SetMessage("DoorMessages", entryBase + seed, 0.0f);
 }
 
