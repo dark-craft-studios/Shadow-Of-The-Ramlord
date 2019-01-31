@@ -4,7 +4,6 @@
 // ============================================================================
 // CONSTANTS
 // ============================================================================
-// <HERE>
 const string graveyardDoor = "mansion_1";
 
 const string MapId = "03";
@@ -44,8 +43,6 @@ void OnStart()
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
-    //FadeIn(0.1f);
-    //AddTimer("", 5.0f, "DEBUG");
 }
 
 void OnEnter()
@@ -511,8 +508,6 @@ void AfterLastBookScene(string t)
 
     if(stage == 0)
     {
-        // <HERE>
-        WindOpenEscapeDoor();
         PlaySoundAtEntity(sntEnemyNoticeLong, entUpperRoom);
         RegisterChaseBoxes();
         SetSwingDoorClosed(entDownstairsDoor, true, false);
@@ -522,18 +517,26 @@ void AfterLastBookScene(string t)
             "OnStatueEvent"
         );
         StartPlayerLookAtNormal(entUpstairsDoor);
-        delay = 1.5f;
+        delay = 0.7f;
     }
     else if(stage == 1)
     {
-        SetSwingDoorLocked(entEscapeDoor, false, false);
-        SetSwingDoorClosed(entEscapeDoor, false, false);
         PlaySoundAtEntity(sntWind, entEscapeDoor);
         CreateParticleSystemAtEntity(psDustPush, entUpstairsDustArea);
-        delay = 2.0f;
+        delay = 1.0f;
     }
     else if(stage == 2)
     {
+        SetSwingDoorDisableAutoClose(entEscapeDoor, true);
+        SetSwingDoorLocked(entEscapeDoor, false, false);
+        SetSwingDoorClosed(entEscapeDoor, false, false);
+        WindOpenEscapeDoor();
+
+        delay = 1.0f;
+    }
+    else if(stage == 3)
+    {
+        SetSwingDoorDisableAutoClose(entEscapeDoor, true);
         StopPlayerLookAt();
         PlayVoiceOnPlayerAndSlowdown("OL_Johan_7.ogg");
     }
@@ -552,18 +555,17 @@ void WindOpenEscapeDoor(string t)
     int stage = GetLocalVarInt("WindOpenEscapeDoor");
     AddLocalVarInt("WindOpenEscapeDoor", 1);
 
-    SetSwingDoorClosed(entEscapeDoor, false, false);
     AddPropForce(
         entEscapeDoor,
         0.0f, /* x */
         0.0f, /* y */
-        10000.0f, /* z */
+        500.0f, /* z */
         "world"
     );
 
-    if(stage < 100)
+    if(stage < 2)
     {
-        AddTimer("", 0.01f, "WindOpenEscapeDoor");
+        AddTimer("", 0.05f, "WindOpenEscapeDoor");
     }
 }
 
