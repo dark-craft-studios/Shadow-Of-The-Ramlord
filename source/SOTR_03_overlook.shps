@@ -32,6 +32,7 @@ const string entChaseBox2 = "ChaseBox2";
 const string entChaseBox3 = "ChaseBox3";
 const string entDownstairsDoor = "mansion_4";
 const string entUpstairsDustArea = "UpstairsDustPushArea";
+const string entStairsDoor = "StairsDoor_1";
 
 // ============================================================================
 // MAIN
@@ -43,6 +44,7 @@ void OnStart()
     FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
     AddTimer("", 0.5f, "OnMapEnterVoiceover");
+    SetPropStaticPhysics(entStairsDoor, true);
 }
 
 void OnEnter()
@@ -90,7 +92,7 @@ void RegisterCallbacks()
     );
 
     AddEntitySingleCollideCallback(
-        "StairsDoor_1", 
+        entStairsDoor, 
         "SuitorDoorEventArea", 
         "SuitorDoorEvent"
     );
@@ -119,7 +121,7 @@ void DoorConversation(string a, string b, int state)
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_3.ogg", "EmiliaSource");
     PlayVoiceOnEntityAndSlowdown("OL_Emilia_4.ogg", "EmiliaSource");
     SetEffectVoiceOverCallback("DoorConversationEnd");
-    SetPropStaticPhysics("StairsDoor_1", false);
+    SetPropStaticPhysics(entStairsDoor, false);
 }
 
 void DoorConversationEnd()
