@@ -8,6 +8,12 @@
 // ============================================================================
 const string entRisenSalt           = "RisenSalt";
 const string entRisenWater          = "RisenWater";
+const string entAntonArea           = "AntonVoiceArea";
+const string entTortureFocus        = "TortureFocusPoint";
+
+const string sntKnifeSound = "24_knife.snt";
+const string sntCut        = "24_cut.snt";
+const string sntChain      = "24_chain_rattle.snt";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -48,13 +54,14 @@ void TortureDialog(string t)
     {
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
-        StartPlayerLookAt("LookAtArea1", 0.8f, 1.5f, "");
         delay = 0.1f;
     }
     else if(stage == 1)
     {
-       SetPlayerActive(false);
-       delay = 1.9f;
+        MovePlayerHeadPos(0.0f, -1.6f, 0.0f, 20.0f, 0.5f);
+        StartPlayerLookAtNormal(entTortureFocus);
+        SetPlayerActive(false);
+        delay = 1.9f;
     }
     else if(stage == 2)
     {
@@ -95,6 +102,7 @@ void TortureDialog(string t)
     }
     else if(stage == 9)
     {
+        PlaySoundAtEntity("brandish", sntKnifeSound, entAntonArea, 0.1f, true);
         PlaySoundAtEntity("", "step_walk_rock.snt", "Footstep_4", 0.1f, false);
         delay = 1.5f;
     }
@@ -105,7 +113,7 @@ void TortureDialog(string t)
     }
     else if(stage == 11)
     {
-        PlayVoice("RC_Anton_1.ogg");
+        PlayVoice("RC_Anton_1.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
@@ -115,7 +123,7 @@ void TortureDialog(string t)
     }
     else if(stage == 13)
     {
-        PlayVoice("RC_Anton_2.ogg");
+        PlayVoice("RC_Anton_2.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
@@ -125,13 +133,15 @@ void TortureDialog(string t)
     }
     else if(stage == 15)
     {
-        PlayVoice("RC_Anton_3.ogg");
+        PlayVoice("RC_Anton_3.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
     else if(stage == 16)
     {
         ///ROOM FOR SLASHING SOUND/IMPACT
+        EnsureBrandishIsOff("");
+        PlaySoundAtEntity("knife1", sntCut, "Player");
         SetPlayerHealth(25.0f);
         delay = 2.0f;
     }
@@ -147,7 +157,7 @@ void TortureDialog(string t)
     }
     else if(stage == 19)
     {
-        PlayVoice("RC_Anton_4.ogg");
+        PlayVoice("RC_Anton_4.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
@@ -159,6 +169,7 @@ void TortureDialog(string t)
     }
     else if(stage == 21)
     {
+        StopSound("knife1", 0.5f);
         SetPlayerHealth(100.0f);
         TeleportPlayer("PlayerStartArea_1");
         WakeUpDialog();
@@ -175,6 +186,17 @@ void TortureDialog()
 {
     StopPlayerLookAt();
     TortureDialog("");
+}
+
+void EnsureBrandishIsOff(string t)
+{
+    int stage = GetLocalVarInt("BrandishOff");
+    AddLocalVarInt("BrandishOff", 1);
+    if(stage < 20)
+    {
+        StopSound("brandish", 0.5f);
+        AddTimer("", 0.2f, "EnsureBrandishIsOff");
+    }
 }
 
 // ----------------------------------------------------------------------------
@@ -202,6 +224,7 @@ void WakeUpDialog(string t)
     {
         PlayVoice("RC_Johan_5.ogg");
         SetEffectVoiceOverCallback("WakeUpDialog");
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 2.0f, 0.5f);
         return;
     }
     else if(stage == 3)
