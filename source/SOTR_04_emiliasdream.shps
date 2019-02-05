@@ -1,6 +1,22 @@
 #include "Ramlord.ihps"
 
 // ============================================================================
+// CONSTANTS
+// ============================================================================
+const string entLetter = "LetterArea";
+
+const string sntKnifePull = "24_knife.snt";
+const string sntKnifeCut = "24_cut.snt";
+const string sntBell = "ui_torture.snt";
+const string sntPrisonAmb = "15_amb_metal.snt";
+
+const string oggWakeSound = "justine_wake1.ogg";
+const string oggWakeMusic = "04_event_stairs.ogg";
+const string oggHeart = "sanity_heartbeat1.ogg";
+const string oggFaint = "justine_faint.ogg";
+const string oggSob1 = "justine_crazy1.ogg";
+const string oggSob2 = "justine_crazy3.ogg";
+// ============================================================================
 // MAIN
 // ============================================================================
 const string MapId = "04";
@@ -26,7 +42,13 @@ void EmiliasDream(string t)
 
     if(stage == 0)
     {
-        StartPlayerLookAt("LookAtMe1", 0.8f, 1.5f, "");
+        StartPlayerLookAtNormal(entLetter);
+        FadePlayerFOVMulTo(0.1f, 0.05f);
+        FadePlayerRollTo(15.0f, 0.25f, 0.3f);
+        MovePlayerHeadPos(0.0f, 2.0f, -3.5f, 20.0f, 0.5f);
+        FadeSepiaColorTo(0.1f, 20.0f);
+        FadeRadialBlurTo(0.01f, 20.0f);
+        SetRadialBlurStartDist(0.0f);
         delay = 0.1f;
     }
     else if(stage == 1)
@@ -36,6 +58,7 @@ void EmiliasDream(string t)
     }
     else if(stage == 2)
     {
+        MovePlayerHeadPos(1.0f, 0.5f, -3.5f, 0.05f, 0.5f);
         FadeIn(3.0f);
         delay = 1.0f;
     }
@@ -62,20 +85,28 @@ void EmiliasDream(string t)
     else if(stage == 6)
     {
         FadeOut(3.0f);
-        delay = 4.0f;
+        delay = 3.0f;
     }
     else if(stage == 7)
     {
-        TeleportPlayer("PlayerStartArea_2");
-        StartPlayerLookAt("LookAtMe2", 0.8f, 1.5f, "");
-        delay = 2.0f;
+        FadePlayerFOVMulTo(0.8f, 20.0f);
+        FadePlayerRollTo(0.0f, 20.0f, 20.0f);
+        MovePlayerHeadPos(0.0f, -1.3f, -0.5f, 20.0f, 0.5f);
+        delay = 1.0f;
     }
     else if(stage == 8)
+    {
+        TeleportPlayer("PlayerStartArea_2");
+        StartPlayerLookAt("LookAtMe2", 0.8f, 1.5f, "");
+        MovePlayerHeadPos(1.0f, -1.3f, 1.0f, 0.02f, 0.5f);
+        delay = 2.0f;
+    }
+    else if(stage == 9)
     {
         FadeIn(3.0f);
         delay = 1.0f;
     }
-    else if(stage == 9)
+    else if(stage == 10)
     {
         PlayVoice(
             "ED_Anton_1.ogg"
@@ -83,11 +114,11 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 10)
+    else if(stage == 11)
     {
         delay = 2.0f;
     }
-    else if(stage == 11)
+    else if(stage == 12)
     {
         PlayVoice(
             "ED_Emilia_2.ogg"
@@ -95,11 +126,11 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 12)
-    {
-        delay = 1.0f;
-    }
     else if(stage == 13)
+    {
+        delay = 0.0f;
+    }
+    else if(stage == 14)
     {
         PlayVoice(
             "ED_Anton_2.ogg"
@@ -107,11 +138,11 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 14)
+    else if(stage == 15)
     {
         delay = 1.0f;
     }
-    else if(stage == 15)
+    else if(stage == 16)
     {
         PlayVoice(
             "ED_Emilia_3.ogg"
@@ -119,35 +150,41 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 16)
-    {
-        delay = 1.0f;
-    }
     else if(stage == 17)
+    {
+        delay = 0.0f;
+    }
+    else if(stage == 18)
     {
         PlayVoice(
             "ED_Anton_3.ogg"
         );
         SetEffectVoiceOverCallback("EmiliasDream");
+        StartInsanityEvent("Stream_Monster_Roar03");
         return;
     }
-    else if(stage == 18)
+    else if(stage == 19)
     {
         FadeOut(3.0f);
         delay = 4.0f;
     }
-    else if(stage == 19)
-    {
-        StartPlayerLookAt("LookAtMe1", 0.8f, 1.5f, "");
-        delay = 3.0f;
-    }
     else if(stage == 20)
     {
-        FadeIn(3.0f);
+        FadePlayerFOVMulTo(0.4f, 20.0f);
+        FadePlayerRollTo(15.0f, 20.0f, 20.0f);
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 20.0f, 0.5f);
+        StartPlayerLookAtFast(entLetter);
         TeleportPlayer("PlayerStartArea_1");
-        delay = 1.0f;
+        delay = 3.0f;
     }
     else if(stage == 21)
+    {
+        FadeIn(3.0f);
+        FadePlayerRollTo(0.0f, 0.4f, 0.5f);
+        FadePlayerFOVMulTo(1.0f, 0.2f);
+        delay = 1.0f;
+    }
+    else if(stage == 22)
     {
         PlayVoice(
             "ED_Emilia_4.ogg"
@@ -155,11 +192,11 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 22)
+    else if(stage == 23)
     {
         delay = 2.0f;
     }
-    else if(stage == 23)
+    else if(stage == 24)
     {
         PlayVoice(
             "ED_Emilia_4b.ogg"
@@ -167,70 +204,125 @@ void EmiliasDream(string t)
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 24)
+    else if(stage == 25)
     {
         delay = 2.0f;
     }
-    else if(stage == 25)
+    else if(stage == 26)
     {
         StartPlayerLookAt("LookAtKnife", 0.8f, 1.5f, "");
+        FadeLightTo("KnifeLight", 1.0f, 0.19f, 0.0f, 1.0f, -1.0f, 1.0f);
         PlayVoice(
             "ED_Emilia_4c.ogg"
         );
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 26)
-    {
-        delay = 1.0f;
-    }
     else if(stage == 27)
     {
-        ///ROOM FOR KNIFE SLASHING SOUND
-        FadeOut(3.0f);
-        delay = 4.0f;
+        SetPropActiveAndFade("LookAtKnife", false, 0.5f);
+        FadeLightTo("KnifeLight", 0.0f, 0.0f, 0.0f, 1.0f, -1.0f, 1.0f);
+        delay = 2.0f;
     }
     else if(stage == 28)
     {
-        TeleportPlayer("PlayerStartArea_3");
-        delay = 1.0f;
+        HeartbeatNormal();
+        AddTimer("", 0.0f, "HeartbeatTimer");
+        delay = 4.0f;
     }
     else if(stage == 29)
     {
-        StartPlayerLookAt("LookAtMe3", 0.8f, 1.5f, "");
+        PlayGuiSound("justine_breath1.ogg", 1.0f);
+        FadeOut(0.5f);
+        HeartbeatFast();
         delay = 3.0f;
     }
     else if(stage == 30)
     {
-        FadeIn(3.0f);
-        delay = 3.0f;
+        PlayGuiSound("justine_rapid_breaths.ogg", 1.0f);
+        delay = 4.0f;
     }
     else if(stage == 31)
     {
-        PlayVoice(
-            "ED_Anton_4.ogg"
-        );
-        SetEffectVoiceOverCallback("EmiliasDream");
-        return;
+        ///ROOM FOR KNIFE SLASHING SOUND
+        PlayGuiSound("justine_wake2.ogg", 1.0f);
+        HeartbeatExtreme();
+        PlaySoundAtEntity("cutting", sntKnifeCut, "Player");
+        FadeOut(3.0f);
+        delay = 2.0f;
     }
     else if(stage == 32)
     {
+        PlaySoundAtEntity("bell", sntBell, "Player", 2.0f);
+        StopAmbience();
         delay = 1.0f;
     }
     else if(stage == 33)
     {
+        HeartbeatStop();
+        delay = 5.0f;
+    }
+    else if(stage == 34)
+    {
+        StopSound("bell", 1.0f);
+        StopSound("cutting", 1.0f);
+        TeleportPlayer("PlayerStartArea_3");
+        delay = 0.3f;
+    }
+    else if(stage == 35)
+    {
+        PlayGuiSound(oggFaint, 1.0f);
+        FadePlayerFOVMulTo(1.0f, 20.0f);
+        FadePlayerRollTo(-20.0f, 20.0f, 20.0f);
+        MovePlayerHeadPos(0.0f, -1.6f, 0.0f, 20.0f, 0.5f);
+        FadeRadialBlurTo(0.06f, 1.0f);
+        FadeImageTrailTo(0.02f, 1.0f);
+        StartPlayerLookAtNormal("LookAtMe3");
+        delay = 5.0f;
+    }
+    else if(stage == 36)
+    {
+        FadeIn(0.2f);
+        PlayGuiSound(oggWakeSound, 1.0f);
+        PlayGuiSound(oggWakeMusic, 0.6f);
+        StartAmbience(sntPrisonAmb);
+        delay = 2.0f;
+    }
+    else if(stage == 37)
+    {
         PlayVoice(
-            "ED_Anton_4b.ogg"
+            "ED_Anton_4.ogg",
+            "LookAtMe3"
+        );
+        SetEffectVoiceOverCallback("EmiliasDream");
+        StartInsanityEvent("Bugs_Many");
+        return;
+    }
+    else if(stage == 38)
+    {
+        delay = 1.0f;
+    }
+    else if(stage == 39)
+    {
+        AddTimer("", 14.5f, "AsyncSob");
+        PlayVoice(
+            "ED_Anton_4b.ogg",
+            "LookAtMe3"
         );
         SetEffectVoiceOverCallback("EmiliasDream");
         return;
     }
-    else if(stage == 34)
+    else if(stage == 40)
     {
         FadeOut(3.0f);
-        delay = 6.0f;
+        delay = 1.0f;
     }
-    else if(stage == 35)
+    else if(stage == 41)
+    {
+        PlayGuiSound(oggSob2, 1.0f);
+        delay = 5.0f;
+    }
+    else if(stage == 42)
     {
         ChangeMap("SOTR_05_risenchamber", "Player_Start_Area_2", "", "");
     }
@@ -245,4 +337,36 @@ void EmiliasDream(string t)
 void EmiliasDream()
 {
     EmiliasDream("");
+}
+
+void AsyncSob(string t)
+{
+    PlayGuiSound(oggSob1, 1.0f);
+}
+
+void HeartbeatTimer(string t)
+{
+    PlayGuiSound(oggHeart, 0.5f);
+    if(GetLocalVarInt("StopHeartbeat") == 1) { return; }
+    AddTimer("", GetLocalVarFloat("HeartDelay"), "HeartbeatTimer");
+}
+
+void HeartbeatNormal()
+{
+    SetLocalVarFloat("HeartDelay", 1.0f);
+}
+
+void HeartbeatFast()
+{
+    SetLocalVarFloat("HeartDelay", 0.6f);
+}
+
+void HeartbeatExtreme()
+{
+    SetLocalVarFloat("HeartDelay", 0.5f);
+}
+
+void HeartbeatStop()
+{
+    SetLocalVarInt("StopHeartbeat", 1);
 }

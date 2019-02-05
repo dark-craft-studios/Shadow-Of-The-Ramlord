@@ -158,9 +158,13 @@ void ResetPlayerState()
     SetPlayerCrouchDisabled(false);
     SetPlayerJumpDisabled(false);
     SetInventoryDisabled(false);
+    BlockAllVanillaHints();
+
+    // Cutscene maps are an exception
+    if(MapId == "04" || MapId == "05") { return; }
+
     SetPlayerActive(true);
     StopPlayerLookAt();
-    BlockAllVanillaHints();
 }
 
 void ResetPlayerSpeed()
