@@ -489,3 +489,8 @@ void EnforceItem(string itemName, string itemFile)
     }
 }
 
+void FadeLightOut(string light)
+{
+    FadeLightTo(light, 0.0f, 0.0f, 0.0f, 1.0f, -1.0f, 0.5f);
+}
+

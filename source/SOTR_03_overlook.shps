@@ -9,6 +9,9 @@ const string graveyardDoor = "mansion_1";
 const string MapId = "03";
 
 const string psDustPush = "ps_dust_push.ps";
+const string psHitWood = "ps_hit_wood.ps";
+const string psDustImpact = "ps_dust_impact_vert.ps";
+const string psDustPaperBlow = "ps_dust_paper_blow.ps";
 
 const string sntSecondAmbience = "03_amb.snt";
 const string sntEnemyNotice = "notice.snt";
@@ -16,6 +19,12 @@ const string sntEnemyNoticeLong = "notice_long.snt";
 const string sntPhonoHumm = "SOTR_broken_phono.snt";
 const string sntSkeletalkPhono = "SOTR_skeletalk_phono.snt";
 const string sntWind = "09_wind_whirl.snt";
+const string sntWhomp = "13_whomp.snt";
+const string sntBangFall = "15_bang_fall.snt";
+const string sntBang = "15_bang.snt";
+const string sntBodyImpact = "15_body_impact.snt";
+const string sntAmbHigh = "24_amb2.snt";
+const string sntHitWood = "lurker_hit_wood.snt";
 
 const string entUpstairsDoor = "UpstairsDoor";
 const string entUpstairsSound = "SoundArea_1";
@@ -33,6 +42,10 @@ const string entChaseBox3 = "ChaseBox3";
 const string entDownstairsDoor = "mansion_4";
 const string entUpstairsDustArea = "UpstairsDustPushArea";
 const string entStairsDoor = "StairsDoor_1";
+const string entStairsDoorSoundArea = "StairsDoorSoundArea";
+const string entStairsDoorLamp = "StairsDoorLamp";
+const string entStairsDoorLight = "StairsDoorLight";
+const string entPaperFlyArea = "PaperFlyArea";
 
 // ============================================================================
 // MAIN
@@ -41,10 +54,11 @@ void OnStart()
 {
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
-    FadeOut(0.0f);
+    //FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
-    AddTimer("", 0.5f, "OnMapEnterVoiceover");
-    SetPropStaticPhysics(entStairsDoor, true);
+    //AddTimer("", 0.5f, "OnMapEnterVoiceover");
+    //SetPropStaticPhysics(entStairsDoor, true);
+    RegisterChaseBoxes();
 }
 
 void OnEnter()
@@ -87,11 +101,11 @@ void RegisterCallbacks()
         "EnsureFirstTombPickup"
     );
 
-    AddEntitySingleCollideCallback(
-        entStairsDoor, 
-        "SuitorDoorEventArea", 
-        "SuitorDoorEvent"
-    );
+    //AddEntitySingleCollideCallback(
+        //entStairsDoor, 
+        //"SuitorDoorEventArea", 
+        //"SuitorDoorEvent"
+    //);
 
     AddUseItemCallback(
         "SOTR_Clearsight_1",
@@ -590,6 +604,71 @@ void RegisterChaseBoxes()
 void OnChaseBox1(string a, string b, int s)
 {
     AddDebugMessage("Chase box 1", false);
+    ChaseBoxEvent1();
+}
+
+void ChaseBoxEvent1(string t)
+{
+    int stage = GetLocalVarInt("ChaseBoxEvent1");
+    AddLocalVarInt("ChaseBoxEvent1", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlaySoundAtEntity(sntWind, "Player");
+        SetLampLit(entStairsDoorLamp, false, true);
+        FadeLightOut(entStairsDoorLight);
+        CreateParticleSystemAtEntity(psDustPaperBlow, entPaperFlyArea);
+        SetSwingDoorClosed(entStairsDoor, true, true);
+        SetSwingDoorLocked(entStairsDoor, true, false);
+        PlaySoundAtEntity(sntBodyImpact, "Player");
+        GiveSanityDamage(1.0f, true);
+        StartScreenShake(0.03f, 0.4f, 0.1f, 0.1f);
+        StopAmbience();
+        StartAmbience(sntAmbHigh);
+        delay = 0.8f;
+    }
+    else if(stage == 1)
+    {
+        PlaySoundAtEntity(sntBangFall, entStairsDoorSoundArea);
+        delay = 0.6f;
+    }
+    else if(stage == 2)
+    {
+        PlaySoundAtEntity(sntBang, entStairsDoorSoundArea);
+        delay = 0.4f;
+    }
+    else if(stage == 3)
+    {
+        PlaySoundAtEntity(sntBang, entStairsDoorSoundArea);
+        delay = 0.3f;
+    }
+    else if(stage == 4)
+    {
+        PlaySoundAtEntity(sntBang, entStairsDoorSoundArea);
+        delay = 0.4f;
+    }
+    else if(stage < 20)
+    {
+        string target = GetRandomDoorBangArea();
+        PlaySoundAtEntity(sntHitWood, target);
+        CreateParticleSystemAtEntity(psHitWood, target);
+        AddPropForce(entStairsDoor, 2000.0f, 0.0f, 0.0f, "world");
+        delay = RandFloat(0.6f, 1.5f);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "ChaseBoxEvent1");
+}
+
+void ChaseBoxEvent1() { ChaseBoxEvent1(""); }
+
+string GetRandomDoorBangArea()
+{
+    return "DoorBangArea_" + RandInt(1, 5);
 }
 
 void OnChaseBox2(string a, string b, int s)
