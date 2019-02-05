@@ -158,6 +158,7 @@ void ResetPlayerState()
     SetPlayerCrouchDisabled(false);
     SetPlayerJumpDisabled(false);
     SetInventoryDisabled(false);
+    MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 20.0f, 0.5f);
     BlockAllVanillaHints();
 
     // Cutscene maps are an exception
