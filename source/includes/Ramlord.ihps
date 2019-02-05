@@ -185,7 +185,7 @@ enum CollisionState
 void PlaySoundAtEntity(string name, string file, string entity)
 {
     PlaySoundAtEntity(
-        entity, /* Sound name */
+        name, /* Sound name */
         file,   /* Sound file */
         entity, /* Entity */
         0.0f,   /* Fade time */

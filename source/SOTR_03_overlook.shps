@@ -57,11 +57,10 @@ void OnStart()
 {
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
-    //FadeOut(0.0f);
+    FadeOut(0.0f);
     PlayMusic("11_paper_howl.ogg");
-    //AddTimer("", 0.5f, "OnMapEnterVoiceover");
-    //SetPropStaticPhysics(entStairsDoor, true);
-    RegisterChaseBoxes();
+    AddTimer("", 0.5f, "OnMapEnterVoiceover");
+    SetPropStaticPhysics(entStairsDoor, true);
 }
 
 void OnEnter()
@@ -104,11 +103,11 @@ void RegisterCallbacks()
         "EnsureFirstTombPickup"
     );
 
-    //AddEntitySingleCollideCallback(
-        //entStairsDoor, 
-        //"SuitorDoorEventArea", 
-        //"SuitorDoorEvent"
-    //);
+    AddEntitySingleCollideCallback(
+        entStairsDoor, 
+        "SuitorDoorEventArea", 
+        "SuitorDoorEvent"
+    );
 
     AddUseItemCallback(
         "SOTR_Clearsight_1",
@@ -220,6 +219,9 @@ void OnSecondBookPickup()
 void OnRitualCompleted()
 {
     SetLanternActive(false, true);
+    FadeRadialBlurTo(0.0f, 1.0f);
+    StopSound("terror", 0.5f);
+    SetEntityActive(entChaseBlockBox, false);
     StartRitualCutscene();
 }
 
@@ -696,6 +698,7 @@ void OnChaseBox2(string a, string b, int s)
 void OnChaseBox3(string a, string b, int s)
 {
     AddDebugMessage("Chase box 3", false);
+    StartPlayerLookAt("RitualBookArea", 0.5f, 0.6f, "");
 }
 
 void OnBasementDoorInteract(string t)

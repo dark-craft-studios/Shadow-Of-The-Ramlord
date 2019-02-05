@@ -5,7 +5,7 @@
             <Viewport CameraPosition="4.69834 6.81822 191.76" CameraTarget="4.69834 6.81822 11.7599" CameraZoom="0" GridHeight="11.7599" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="184.698 6.81822 11.7599" CameraTarget="4.69834 6.81822 11.7599" CameraZoom="0" GridHeight="4.69834" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="4.81496 186 11.7963" CameraTarget="4.81496 6 11.7963" CameraZoom="0" GridHeight="6" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-5.50243 10.7134 -4.8161" CameraTarget="-5.12955 2.70438 -7.64487" CameraZoom="1.77172" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-2.5093 5.0544 -12.7276" CameraTarget="-4.16686 0.951774 -5.4677" CameraZoom="1.77172" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="false" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -18145,7 +18145,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Area Active="false" AreaType="Script" Group="0" ID="5865" Mesh="" Name="EmiliaConvoArea" Rotation="0 0 0" Scale="2.75 3.5 4" Tag="" WorldPos="-9.25 1.75 -7.5">
+                <Area Active="true" AreaType="Script" Group="0" ID="5865" Mesh="" Name="EmiliaConvoArea" Rotation="0 0 0" Scale="2.75 3.5 4" Tag="" WorldPos="-9.25 1.75 -7.5">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
                         <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
