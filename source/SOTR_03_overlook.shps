@@ -25,6 +25,7 @@ const string sntBang = "15_bang.snt";
 const string sntBodyImpact = "15_body_impact.snt";
 const string sntAmbHigh = "24_amb2.snt";
 const string sntHitWood = "lurker_hit_wood.snt";
+const string sntTerror = "ui_terror_meter.snt";
 
 const string entUpstairsDoor = "UpstairsDoor";
 const string entUpstairsSound = "SoundArea_1";
@@ -46,6 +47,8 @@ const string entStairsDoorSoundArea = "StairsDoorSoundArea";
 const string entStairsDoorLamp = "StairsDoorLamp";
 const string entStairsDoorLight = "StairsDoorLight";
 const string entPaperFlyArea = "PaperFlyArea";
+const string entChaseBlockBox = "ChaseBlockBox_1";
+const string entStorageDoor = "StorageDoor_1";
 
 // ============================================================================
 // MAIN
@@ -624,6 +627,7 @@ void ChaseBoxEvent1(string t)
         PlaySoundAtEntity(sntBodyImpact, "Player");
         GiveSanityDamage(1.0f, true);
         StartScreenShake(0.03f, 0.4f, 0.1f, 0.1f);
+        SetPropHealth(entStorageDoor, 0.0f);
         StopAmbience();
         StartAmbience(sntAmbHigh);
         delay = 0.8f;
@@ -648,13 +652,25 @@ void ChaseBoxEvent1(string t)
         PlaySoundAtEntity(sntBang, entStairsDoorSoundArea);
         delay = 0.4f;
     }
-    else if(stage < 20)
+    else if(GetLocalVarInt("ChaseStage2") == 0)
     {
         string target = GetRandomDoorBangArea();
         PlaySoundAtEntity(sntHitWood, target);
         CreateParticleSystemAtEntity(psHitWood, target);
         AddPropForce(entStairsDoor, 2000.0f, 0.0f, 0.0f, "world");
         delay = RandFloat(0.6f, 1.5f);
+    }
+    else if(GetLocalVarInt("ChaseStage2") == 1)
+    {
+        AddLocalVarInt("ChaseStage2", 1);
+        SetPropHealth(entStairsDoor, 0.0f);
+        FadeRadialBlurTo(0.05f, 1.0f);
+        PlaySoundAtEntity("terror", sntTerror, "Player");
+        PlayMusic("22_event_trapped.ogg", true, 1.0f, 0.1f, 1, false);
+        GiveSanityDamage(1.0f, true);
+        PlaySoundAtEntity(sntBodyImpact, "Player");
+        StartScreenShake(0.03f, 0.4f, 0.1f, 0.1f);
+        SetEntityActive(entChaseBlockBox, true);
     }
     else
     {
@@ -674,6 +690,7 @@ string GetRandomDoorBangArea()
 void OnChaseBox2(string a, string b, int s)
 {
     AddDebugMessage("Chase box 2", false);
+    SetLocalVarInt("ChaseStage2", 1);
 }
 
 void OnChaseBox3(string a, string b, int s)
