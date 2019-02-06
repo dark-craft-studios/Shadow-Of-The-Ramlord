@@ -5,7 +5,7 @@
             <Viewport CameraPosition="-0.912233 0.154779 192.699" CameraTarget="-0.912233 0.154779 12.6988" CameraZoom="0" GridHeight="12.6988" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="179.088 0.154779 12.6988" CameraTarget="-0.912233 0.154779 12.6988" CameraZoom="0" GridHeight="-0.912233" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-0.902883 180.073 12.6702" CameraTarget="-0.902883 0.072726 12.6702" CameraZoom="0" GridHeight="0.072726" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="4.25743 4.27426 8.37577" CameraTarget="-1.97043 -4.27425e-006 9.73833" CameraZoom="1.874" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="false" UsingLTCam="true" />
+            <Viewport CameraPosition="5.75817 21.1279 12.3481" CameraTarget="3.73834 0 -1.19927" CameraZoom="0.685999" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="false" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -1510,7 +1510,7 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.25" Corner2UV="0 0" Corner3UV="1.25 0" Corner4UV="1.25 0.25" EndCorner="2.5 0 0.5" Group="0" ID="41" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_23" Rotation="-3.14159 -2.38278e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="1.5 1.75 2.40061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.875" Corner2UV="0 0" Corner3UV="1.5 0" Corner4UV="1.5 0.875" EndCorner="3 0 1.75" Group="0" ID="42" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_24" Rotation="-1.5708 -2.35097e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="1.5 1.75 1.90061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.5" Corner2UV="0 0" Corner3UV="0.5 0" Corner4UV="0.5 0.5" EndCorner="1 0 1" Group="0" ID="43" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_25" Rotation="-3.14159 -2.38278e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.5 3.25 3.90061" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.25 0" Corner4UV="0.25 0.125" EndCorner="0.5 0 0.25" Group="0" ID="45" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_26" Rotation="1.5708 -2.38278e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.25 2.75 4.15061" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.25 0" Corner4UV="0.25 0.125" EndCorner="0.5 0 0.25" Group="0" ID="45" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_26" Rotation="1.5708 -2.38278e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.25 2.75 4.15061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 1.625" Corner2UV="0 0" Corner3UV="0.5 0" Corner4UV="0.5 1.625" EndCorner="1 0 3.25" Group="0" ID="46" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_27" Rotation="2.3905 1.5708 -2.32189" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-0.5 0 3.90061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 1.625" Corner2UV="0 0" Corner3UV="0.5 0" Corner4UV="0.5 1.625" EndCorner="1 0 3.25" Group="0" ID="47" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_28" Rotation="-1.59784 -1.57045 0.0270457" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.5 0 2.90061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 1.625" Corner2UV="0 0" Corner3UV="0.5 0" Corner4UV="0.5 1.625" EndCorner="1 0 3.25" Group="0" ID="48" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_29" Rotation="-1.57079 6.82531e-006 -2.44776e-006" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-0.5 0 2.90061" />
@@ -1519,7 +1519,7 @@
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.125 0" Corner4UV="0.125 0.125" EndCorner="0.25 0 0.25" Group="0" ID="52" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_32" Rotation="-3.14159 3.01201e-006 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.25 2.75 4.15061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.125 0" Corner4UV="0.125 0.125" EndCorner="0.25 0 0.25" Group="0" ID="53" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_33" Rotation="6.67572e-006 3.01201e-006 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="-0.25 2.75 3.90061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.5 0" Corner4UV="0.5 0.125" EndCorner="0.5 0 0.25" Group="0" ID="54" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/technical/plane_black/plane_black.mat" Name="Plane_34" Rotation="7.15256e-006 -2.38278e-006 -3.14159" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="1 1 0.5" TileOffset="0 0 0" WorldPos="0.25 2.75 3.90061" />
-                <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.25 0" Corner4UV="0.25 0.125" EndCorner="0.5 0 0.25" Group="0" ID="55" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_35" Rotation="-0.763491 -1.5708 -0.807301" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.75 2.75 3.15061" />
+                <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.25 0" Corner4UV="0.25 0.125" EndCorner="0.5 0 0.25" Group="0" ID="55" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_35" Rotation="-0.763491 -1.5708 -0.807301" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="-0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.75 2.75 3.15061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.125 0" Corner4UV="0.125 0.125" EndCorner="0.25 0 0.25" Group="0" ID="56" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_36" Rotation="-1.57079 -4.93129e-006 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.75 2.75 3.15061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.25 0" Corner4UV="0.25 0.125" EndCorner="0.5 0 0.25" Group="0" ID="57" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_37" Rotation="0.807304 -1.5708 -0.807301" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.75 3 3.15061" />
                 <Plane Active="true" AlignToWorldCoords="false" CastShadows="true" Collides="true" Corner1UV="0 0.125" Corner2UV="0 0" Corner3UV="0.125 0" Corner4UV="0.125 0.125" EndCorner="0.25 0 0.25" Group="0" ID="58" Material="C:/Program Files (x86)/Steam/steamapps/common/Amnesia The Dark Descent/static_objects/castlebase/castlebase_ceiling02.mat" Name="Plane_38" Rotation="1.5708 -4.93129e-006 1.5708" Scale="1 1 1" StartCorner="0 0 0" Tag="" TextureAngle="0" TileAmount="0.5 1 0.5" TileOffset="0 0 0" WorldPos="0.5 2.75 3.65061" />
@@ -1812,7 +1812,7 @@
                 </Decal>
             </Decals>
             <Entities>
-                <Entity Active="true" FileIndex="0" Group="0" ID="151" Name="candle_floor_no_light_7" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.568242 1.06824 0.568242" Tag="" WorldPos="-0.845452 1.74792 4.51231">
+                <Entity Active="true" FileIndex="0" Group="0" ID="151" Name="SOTRConvoLampTurnoff_11" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.568242 1.06824 0.568242" Tag="" WorldPos="-0.845452 1.74792 4.51231">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2567,7 +2567,7 @@
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="861" Name="candle_floor_no_light_23" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.346223 0.846223 0.346223" Tag="" WorldPos="-0.576558 1.74792 4.5323">
+                <Entity Active="true" FileIndex="0" Group="0" ID="861" Name="SOTRConvoLampTurnoff_13" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.346223 0.846223 0.346223" Tag="" WorldPos="-0.576558 1.74792 4.5323">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2587,7 +2587,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="862" Name="candle_floor_no_light_24" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.568242 1.46824 0.568242" Tag="" WorldPos="-0.704029 1.74792 4.48628">
+                <Entity Active="true" FileIndex="0" Group="0" ID="862" Name="SOTRConvoLampTurnoff_12" Rotation="4.38292e-006 -0.785398 -3.09974e-006" Scale="0.568242 1.46824 0.568242" Tag="" WorldPos="-0.704029 1.74792 4.48628">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2607,7 +2607,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="863" Name="candle_floor_no_light_25" Rotation="-3.14159 0.567732 -3.14159" Scale="0.346223 0.846223 0.346223" Tag="" WorldPos="0.149176 1.74792 4.54926">
+                <Entity Active="true" FileIndex="0" Group="0" ID="863" Name="SOTRConvoLampTurnoff_14" Rotation="-3.14159 0.567732 -3.14159" Scale="0.346223 0.846223 0.346223" Tag="" WorldPos="0.149176 1.74792 4.54926">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2627,7 +2627,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="864" Name="candle_floor_no_light_26" Rotation="-3.14159 0.567732 -3.14159" Scale="0.568242 1.46824 0.568242" Tag="" WorldPos="0.283576 1.74792 4.56666">
+                <Entity Active="true" FileIndex="0" Group="0" ID="864" Name="SOTRConvoLampTurnoff_15" Rotation="-3.14159 0.567732 -3.14159" Scale="0.568242 1.46824 0.568242" Tag="" WorldPos="0.283576 1.74792 4.56666">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2647,7 +2647,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="865" Name="candle_floor_no_light_8" Rotation="-3.14159 0.567733 -3.14159" Scale="0.568242 1.06824 0.568242" Tag="" WorldPos="0.416041 1.74792 4.51071">
+                <Entity Active="true" FileIndex="0" Group="0" ID="865" Name="SOTRConvoLampTurnoff_16" Rotation="-3.14159 0.567733 -3.14159" Scale="0.568242 1.06824 0.568242" Tag="" WorldPos="0.416041 1.74792 4.51071">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2727,7 +2727,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="872" Name="candle_floor_no_light_30" Rotation="-1.00136e-005 1.2508 -8.82149e-006" Scale="0.568242 1.36824 0.568242" Tag="" WorldPos="1.14544 1.74792 4.21837">
+                <Entity Active="true" FileIndex="0" Group="0" ID="872" Name="SOTRConvoLampTurnoff_17" Rotation="-1.00136e-005 1.2508 -8.82149e-006" Scale="0.568242 1.36824 0.568242" Tag="" WorldPos="1.14544 1.74792 4.21837">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2747,7 +2747,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="873" Name="candle_floor_no_light_31" Rotation="-7.76672e-005 1.53023 -7.69195e-005" Scale="0.568242 1.96824 0.428183" Tag="" WorldPos="1.10694 1.74792 3.83324">
+                <Entity Active="true" FileIndex="0" Group="0" ID="873" Name="SOTRConvoLampTurnoff_18" Rotation="-7.76672e-005 1.53023 -7.69195e-005" Scale="0.568242 1.96824 0.428183" Tag="" WorldPos="1.10694 1.74792 3.83324">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2768,7 +2768,7 @@
                     </UserVariables>
                 </Entity>
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.394 0.29 0.19 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="875" Name="PointLight_2" Radius="3.653" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="2.55754 2.22171 3.42137" />
-                <Entity Active="true" FileIndex="0" Group="0" ID="878" Name="candle_floor_no_light_32" Rotation="-7.76672e-005 1.53023 -7.69195e-005" Scale="0.568242 1.66824 0.428183" Tag="" WorldPos="-1.2231 1.74792 3.83324">
+                <Entity Active="true" FileIndex="0" Group="0" ID="878" Name="SOTRConvoLampTurnoff_9" Rotation="-7.76672e-005 1.53023 -7.69195e-005" Scale="0.568242 1.66824 0.428183" Tag="" WorldPos="-1.2231 1.74792 3.83324">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -2788,7 +2788,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="0" Group="0" ID="879" Name="candle_floor_no_light_33" Rotation="1.3888 1.3448 1.39333" Scale="0.568242 1.16824 0.428183" Tag="" WorldPos="-1.2231 1.74792 3.89605">
+                <Entity Active="true" FileIndex="0" Group="0" ID="879" Name="SOTRConvoLampTurnoff_10" Rotation="1.3888 1.3448 1.39333" Scale="0.568242 1.16824 0.428183" Tag="" WorldPos="-1.2231 1.74792 3.89605">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -3041,7 +3041,7 @@
                     </UserVariables>
                 </Entity>
                 <BoxLight Active="false" BlendFunc="0" CastShadows="false" DiffuseColor="0.1 0.05 0 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="1054" Name="BoxLight_1" Radius="1" Rotation="0 0 0" Scale="17 18 12.75" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Size="17 18 12.75" Tag="" WorldPos="-159.75 6.5 4" />
-                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
+                <Sound Active="true" Group="0" ID="1206" MaxDistance="13" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/ambience/ambience_voice_3d.snt" Tag="" UseDefault="false" Volume="0.05" WorldPos="-160.5 -1.25 4" />
                 <Entity Active="true" FileIndex="35" Group="0" ID="1208" Name="block_box_1" Rotation="-3.00211 1.78669e-006 -3.14159" Scale="1 12.25 50.25" Tag="" WorldPos="3.15864 2 37.7827">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -3347,7 +3347,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="32" Group="0" ID="1295" Name="candle_floor_small_1" Rotation="-3.14159 8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="2.24119 0.5 5.6439">
+                <Entity Active="true" FileIndex="32" Group="0" ID="1295" Name="SOTRConvoLampTurnoff_19" Rotation="-3.14159 8.74228e-008 -3.14159" Scale="1 1 1" Tag="" WorldPos="2.24119 0.5 5.6439">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -3367,7 +3367,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="32" Group="0" ID="1296" Name="candle_floor_small_2" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.24847 0.5 5.64091">
+                <Entity Active="true" FileIndex="32" Group="0" ID="1296" Name="SOTRConvoLampTurnoff_20" Rotation="3.14159 8.74228e-008 3.14159" Scale="1 1 1" Tag="" WorldPos="-2.24847 0.5 5.64091">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -4262,7 +4262,7 @@
                     </UserVariables>
                 </Entity>
                 <FogArea Active="true" Color="0.174 0.148 0.139 0.397" End="50" FalloffExp="1" Group="0" ID="2043" Name="FogArea_3" Rotation="0 0 0" Scale="200 100 200" ShownBacksideWhenInside="true" ShownBacksideWhenOutside="false" Start="0" Tag="" WorldPos="0.75 3.25 4" />
-                <Entity Active="true" FileIndex="64" Group="0" ID="2145" Name="torch_static01_nosound_1" Rotation="-0.0317517 -1.4566 0.0180437" Scale="1 1 1" Tag="" WorldPos="14.876 3.02191 -4.39171">
+                <Entity Active="true" FileIndex="64" Group="0" ID="2145" Name="SOTRConvoLampTurnoff_23" Rotation="-0.0317517 -1.4566 0.0180437" Scale="1 1 1" Tag="" WorldPos="14.876 3.02191 -4.39171">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -4282,7 +4282,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="64" Group="0" ID="2146" Name="torch_static01_nosound_2" Rotation="-0.00362159 -0.0473058 -0.01333" Scale="1 1 1" Tag="" WorldPos="10.8907 3.02191 -7.8921">
+                <Entity Active="true" FileIndex="64" Group="0" ID="2146" Name="SOTRConvoLampTurnoff_22" Rotation="-0.00362159 -0.0473058 -0.01333" Scale="1 1 1" Tag="" WorldPos="10.8907 3.02191 -7.8921">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -4454,7 +4454,7 @@
                         <Var Name="CustomSubItemTypeName" Value="" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="4" Group="0" ID="2188" Name="candlestick01_1" Rotation="-3.14159 -0.523597 3.14159" Scale="1 1 1" Tag="" WorldPos="-7.68625 1 -6.00925">
+                <Entity Active="true" FileIndex="4" Group="0" ID="2188" Name="SOTRConvoLampTurnoff_21" Rotation="-3.14159 -0.523597 3.14159" Scale="1 1 1" Tag="" WorldPos="-7.68625 1 -6.00925">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="true" />
@@ -7559,8 +7559,8 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="3319" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-165.25 0 8" />
-                <Sound Active="true" Group="0" ID="3320" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-164 0 -4" />
+                <Sound Active="true" Group="0" ID="3319" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-165.25 0 8" />
+                <Sound Active="true" Group="0" ID="3320" MaxDistance="5" MinDistance="1" Name="Sound_3" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/critter/critter_rat.snt" Tag="" UseDefault="true" Volume="1" WorldPos="-164 0 -4" />
                 <Entity Active="true" FileIndex="11" Group="0" ID="3321" Name="table_nice02_7" Rotation="2.10734e-008 -8.11985e-016 3.85312e-008" Scale="1 1 1" Tag="" WorldPos="29.1569 5.974 -22.3898">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
