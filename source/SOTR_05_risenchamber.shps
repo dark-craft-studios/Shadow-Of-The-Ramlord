@@ -129,15 +129,11 @@ void TortureDialog(string t)
     }
     else if(stage == 14)
     {
-        delay = 2.0f;
-    }
-    else if(stage == 15)
-    {
         PlayVoice("RC_Anton_3.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 16)
+    else if(stage == 15)
     {
         ///ROOM FOR SLASHING SOUND/IMPACT
         EnsureBrandishIsOff("");
@@ -145,29 +141,29 @@ void TortureDialog(string t)
         SetPlayerHealth(25.0f);
         delay = 2.0f;
     }
-    else if(stage == 17)
+    else if(stage == 16)
     {
         PlayVoice("RC_Johan_3.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 18)
+    else if(stage == 17)
     {
         delay = 2.0f;
     }
-    else if(stage == 19)
+    else if(stage == 18)
     {
         PlayVoice("RC_Anton_4.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
-    else if(stage == 20)
+    else if(stage == 19)
     {
         ///FURTHER STAB SOUND
         FadeOut(3.0f);
         delay = 4.0f;
     }
-    else if(stage == 21)
+    else if(stage == 20)
     {
         StopSound("knife1", 0.5f);
         SetPlayerHealth(100.0f);
