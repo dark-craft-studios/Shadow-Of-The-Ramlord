@@ -26,6 +26,7 @@ const string sntBodyImpact = "15_body_impact.snt";
 const string sntAmbHigh = "24_amb2.snt";
 const string sntHitWood = "lurker_hit_wood.snt";
 const string sntTerror = "ui_terror_meter.snt";
+const string sntEmiliaScream = "OL_Emilia_Scream.snt";
 
 const string entUpstairsDoor = "UpstairsDoor";
 const string entUpstairsSound = "SoundArea_1";
@@ -49,6 +50,7 @@ const string entStairsDoorLight = "StairsDoorLight";
 const string entPaperFlyArea = "PaperFlyArea";
 const string entChaseBlockBox = "ChaseBlockBox_1";
 const string entStorageDoor = "StorageDoor_1";
+const string entEmiliaScreamArea = "EmiliaScreamArea";
 
 // ============================================================================
 // MAIN
@@ -263,7 +265,6 @@ void DEBUG(string t)
 
 // </DEBUG>
 
-
 void RitualScare(string t)
 {
     int stage = GetLocalVarInt("RitualScare");
@@ -324,6 +325,7 @@ void OnRitualVoiceDone()
 {
     ResetPlayerState();
     GiveSanityDamage(1.0f, true);
+    PlaySoundAtEntity(sntEmiliaScream, entEmiliaScreamArea);
     PlayGuiSound("15_event_prisoner.ogg", 1.0f);
     FadePlayerFOVMulTo(1.0f, 0.75f);
     FadeRadialBlurTo(0.0f, 0.5f);
