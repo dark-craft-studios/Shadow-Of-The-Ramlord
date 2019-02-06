@@ -10,10 +10,20 @@ const string entRisenSalt           = "RisenSalt";
 const string entRisenWater          = "RisenWater";
 const string entAntonArea           = "AntonVoiceArea";
 const string entTortureFocus        = "TortureFocusPoint";
+const string entShakeEventArea      = "ShakeEventArea";
+const string entBrickFallBase       = "BrickFall_";
+const int entBrickFallCount         = 6;
+const string entBrickFallParticleBase  = "BrickFallParticle_";
+const int entBrickFallParticleCount = 6;
+const string entPianoArea           = "PianoSoundArea_1";
+
+const string psDustFalling = "ps_dust_falling_rumble.ps";
 
 const string sntKnifeSound = "24_knife.snt";
 const string sntCut        = "24_cut.snt";
 const string sntChain      = "24_chain_rattle.snt";
+const string sntRumble     = "18_pump_rumble.snt";
+const string sntPiano      = "general_piano01.snt";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -22,14 +32,15 @@ const string MapId = "05";
 
 void OnStart()
 {
-    FadeOut(0.0f);
+    //FadeOut(0.0f);
     StopPlayerLookAt();
-    TortureDialog();
-    SetPlayerMoveSpeedMul(0.0f);
-    SetPlayerRunSpeedMul(0.0f);
-    BlockAllVanillaHints();
+    //TortureDialog();
+    //SetPlayerMoveSpeedMul(0.0f);
+    //SetPlayerRunSpeedMul(0.0f);
     RegisterCallbacks();
-    PreloadSound("step_walk_rock.snt");
+    FadeRadialBlurTo(0.03f, 1.0f);
+    FadeImageTrailTo(0.015f, 1.0f);
+    HeadTilt("");
 }
 
 void RegisterCallbacks()
@@ -37,6 +48,81 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("JohanLineArea", "StartDialog");
     AddSinglePlayerCollideCallback("PrioryLineArea", "StartPriory");
     AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
+    AddSinglePlayerCollideCallback(entShakeEventArea, "ShakeEvent");
+}
+// ============================================================================
+// Head Tilt
+// ============================================================================
+void HeadTilt(string t)
+{
+    FadePlayerRollTo(RandFloat(-10.0f, 10.0f), 1.0f, 1.5f);
+    FadePlayerFOVMulTo(RandFloat(0.9f, 1.0f), 0.2f);
+    AddTimer("", RandFloat(2.0f, 4.0f), "HeadTilt");
+}
+
+// ============================================================================
+// Shake Event
+// ============================================================================
+void ShakeEvent(string a, string b, int s)
+{
+    ShakeEventTimer();
+}
+
+void ShakeEventTimer(string t)
+{
+    int stage = GetLocalVarInt("ShakeEventTimer");
+    AddLocalVarInt("ShakeEventTimer", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        GiveSanityDamage(1.0f, true);
+        SetLampLit("BrickTorch_1", false, true);
+        StartScreenShake(0.07f, 3.0f, 0.1f, 0.1f);
+        PlaySoundAtEntity("rumble", sntRumble, "Player");
+        delay = 0.2f;
+    }
+    else if(stage == 1)
+    {
+        SpawnBrick(1);
+        SpawnBrick(2);
+        delay = 0.5f;
+    }
+    else if(stage == 2)
+    {
+        SpawnBrick(3);
+        delay = 0.3f;
+    }
+    else if(stage == 3)
+    {
+        SpawnBrick(4);
+        delay = 0.1f;
+    }
+    else if(stage == 4)
+    {
+        SpawnBrick(5);
+        delay = 0.5f;
+    }
+    else if(stage == 5)
+    {
+        SpawnBrick(6);
+        delay = 0.3f;
+    }
+    else
+    {
+        StopSound("rumble", 1.0f);
+        return;
+    }
+
+    AddTimer("", delay, "ShakeEventTimer");
+}
+
+void ShakeEventTimer() { ShakeEventTimer(""); }
+
+void SpawnBrick(int number)
+{
+    SetEntityActive(entBrickFallBase + number, true);
+    CreateParticleSystemAtEntity(psDustFalling, entBrickFallParticleBase + number);
 }
 
 // ----------------------------------------------------------------------------
@@ -296,8 +382,13 @@ void PrioryDialog(string t)
     if(stage == 0)
     {
         PlayVoice("RC_Johan_7.ogg");
+        PlayGuiSound("01_event_dust.ogg", 0.2f);
         SetEffectVoiceOverCallback("PrioryDialog");
         return;
+    }
+    else if(stage == 1)
+    {
+        PlaySoundAtEntity(sntPiano, entPianoArea);
     }
     else
     {
