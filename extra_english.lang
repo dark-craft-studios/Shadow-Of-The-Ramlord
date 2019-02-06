@@ -190,7 +190,7 @@
         <Entry Name="BallroomEntrance">Turning back was a ridiculous notion.</Entry>
         <Entry Name="HasKey">I picked up a key to this room earlier.</Entry>
         <Entry Name="PrologueMainLocked">I found that the main entrance was locked.</Entry>
-        <Entry Name="PrologueSecondLocked">The key to this door was in the outlying cabin.</Entry>
+        <Entry Name="PrologueSecondLocked">The key to this door was in the outlying building.</Entry>
         <Entry Name="PrologueBallroomLevelDoorLocked">Before proceeding inside, I listened intently to your ominous conversation.</Entry>
         <Entry Name="BallroomQuestLocked">The key to this door was down the other hallway.</Entry>
         <Entry Name="OverlookEntrance">There was no point in going back.</Entry>
@@ -215,6 +215,7 @@
     </CATEGORY>
 
         <CATEGORY Name="Hints">
+        <Entry Name="PrologueHint1">My grimoire, the Key of Solomon, could be used to interact with various places of interest around Caecea.</Entry>
     </CATEGORY>
 
   <CATEGORY Name="Inventory">
