@@ -24,6 +24,13 @@ const string sntCut        = "24_cut.snt";
 const string sntChain      = "24_chain_rattle.snt";
 const string sntRumble     = "18_pump_rumble.snt";
 const string sntPiano      = "general_piano01.snt";
+const string sntTerror = "ui_terror_meter.snt";
+const string sntBell = "ui_torture.snt";
+const string sntInject = "19_inject.snt";
+const string sntCloth = "player_stand.snt";
+
+const string oggIntro = "24_event_vision.ogg";
+const string oggDying = "24_event_vision03.ogg";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -32,15 +39,12 @@ const string MapId = "05";
 
 void OnStart()
 {
-    //FadeOut(0.0f);
+    FadeOut(0.0f);
     StopPlayerLookAt();
-    //TortureDialog();
-    //SetPlayerMoveSpeedMul(0.0f);
-    //SetPlayerRunSpeedMul(0.0f);
+    TortureDialog();
+    SetPlayerMoveSpeedMul(0.0f);
+    SetPlayerRunSpeedMul(0.0f);
     RegisterCallbacks();
-    FadeRadialBlurTo(0.03f, 1.0f);
-    FadeImageTrailTo(0.015f, 1.0f);
-    HeadTilt("");
 }
 
 void RegisterCallbacks()
@@ -142,7 +146,8 @@ void TortureDialog(string t)
     }
     else if(stage == 1)
     {
-        MovePlayerHeadPos(0.0f, -1.6f, 0.0f, 20.0f, 0.5f);
+        MovePlayerHeadPos(0.0f, -0.4f, 0.0f, 20.0f, 0.5f);
+        FadePlayerRollTo(-15.0f, 20.0f, 20.0f);
         StartPlayerLookAtNormal(entTortureFocus);
         SetPlayerActive(false);
         delay = 1.9f;
@@ -155,7 +160,8 @@ void TortureDialog(string t)
     }
     else if(stage == 3)
     {
-        FadeIn(3.0f);
+        FadeIn(0.5f);
+        PlayMusic(oggIntro, true, 0.3f, 1.0f, 1, false);
         PlayVoice("RC_Johan_2.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
@@ -167,6 +173,7 @@ void TortureDialog(string t)
     else if(stage == 5)
     {
         SetMoveObjectStateExt("castle_portcullis_1", 1.0f, 0.8f, 1.0f, 0.5f, false);
+        StopMusic(1, 1.0f);
         delay = 8.0f;
     }
     else if(stage == 6)
@@ -220,23 +227,32 @@ void TortureDialog(string t)
     else if(stage == 15)
     {
         ///ROOM FOR SLASHING SOUND/IMPACT
+        PlayMusic(oggDying, true, 0.3f, 1.0f, 1, false);
         EnsureBrandishIsOff("");
+        GiveSanityDamage(1.0f, true);
+        FadeRadialBlurTo(0.05f, 1.0f);
+        PlaySoundAtEntity("bell", sntBell, "Player");
         PlaySoundAtEntity("knife1", sntCut, "Player");
+        CutAsync("");
+        AddTimer("", 0.5f, "StartTerrorAsync");
         SetPlayerHealth(25.0f);
         delay = 2.0f;
     }
     else if(stage == 16)
     {
+        StopTerrorAsync("");
         PlayVoice("RC_Johan_3.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
     }
     else if(stage == 17)
     {
+        SetLocalVarInt("StopCutAsync", 1);
         delay = 2.0f;
     }
     else if(stage == 18)
     {
+        SetLocalVarInt("StopCutAsync", 0);
         PlayVoice("RC_Anton_4.ogg", "AntonVoiceArea");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
@@ -244,27 +260,62 @@ void TortureDialog(string t)
     else if(stage == 19)
     {
         ///FURTHER STAB SOUND
+        CutAsync("");
         FadeOut(3.0f);
-        delay = 4.0f;
+        delay = 6.0f;
     }
     else if(stage == 20)
     {
         StopSound("knife1", 0.5f);
+        StopMusic(1, 1.0f);
+        SetLocalVarInt("StopCutAsync", 1);
         SetPlayerHealth(100.0f);
-        TeleportPlayer("PlayerStartArea_1");
-        WakeUpDialog();
-        delay = 2.0f;
+        StopSound("bell", 1.0f);
+        delay = 8.0f;
+    }
+    else if(stage == 21)
+    {
+        PlayVoice("IN_Johan_0.ogg");
+        SetEffectVoiceOverCallback("TortureDialog");
+        return;
+    }
+    else if(stage == 22)
+    {
+        delay = 4.0f;
     }
     else
     {
+        StopPlayerLookAt();
+        TeleportPlayer("PlayerStartArea_1");
+        WakeUpDialog();
         return;
     }
     AddTimer("", delay, "TortureDialog");
 }
 
+void CutAsync(string t)
+{
+    PlaySoundAtEntity(sntInject, "Player");
+    GiveSanityDamage(0.0f, true);
+    PlaySoundAtEntity(sntCloth, entAntonArea);
+    FadePlayerRollTo(RandFloat(-20.0f, -10.0f), 20.0f, 20.0f);
+    FadePlayerFOVMulTo(RandFloat(0.7f, 1.0f), 20.0f);
+    if(GetLocalVarInt("StopCutAsync") == 1) { return; }
+    AddTimer("", RandFloat(0.5f, 1.0f), "CutAsync");
+}
+
+void StartTerrorAsync(string t)
+{
+    PlaySoundAtEntity("terror", sntTerror, "Player");
+}
+
+void StopTerrorAsync(string t)
+{
+    StopSound("terror", 0.6f);
+}
+
 void TortureDialog()
 {
-    StopPlayerLookAt();
     TortureDialog("");
 }
 
@@ -291,6 +342,9 @@ void WakeUpDialog(string t)
     if(stage == 0)
     {
         FadeIn(8.0f);
+        FadeRadialBlurTo(0.03f, 1.0f);
+        FadeImageTrailTo(0.015f, 1.0f);
+        HeadTilt("");
         delay = 5.0f;
     }
     else if(stage == 1)
