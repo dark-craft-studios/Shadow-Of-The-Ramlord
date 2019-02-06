@@ -156,7 +156,7 @@ void AntonAndEmiliaCutscene(string t)
         FadeRadialBlurTo(0.025f, 2.0f);
         PlaySoundAtEntity("crowd", sntCrowd, "Player", 2.0f);
 
-        for(int i = 1; i <= 8; i++)
+        for(int i = 1; i <= 23; i++)
         {
             SetLampLit("SOTRConvoLampTurnoff_" + i, false, true);
         }
