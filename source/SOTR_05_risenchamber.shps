@@ -39,11 +39,9 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
 }
 
-
 // ----------------------------------------------------------------------------
 // Cutscene Dialog
 // ----------------------------------------------------------------------------
-
 void TortureDialog(string t)
 {
     int stage = GetLocalVarInt("TortureDialog");
@@ -198,7 +196,6 @@ void EnsureBrandishIsOff(string t)
 // ----------------------------------------------------------------------------
 // After-Cutscene Dialog
 // ----------------------------------------------------------------------------
-
 void WakeUpDialog(string t)
 {
     int stage = GetLocalVarInt("WakeUpDialog");
