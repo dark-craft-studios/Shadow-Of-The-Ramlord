@@ -10,6 +10,7 @@ void OnStart()
     StopPlayerLookAt();
     BlockAllVanillaHints();
     RegisterCallbacks();
+    SetPlayerJumpDisabled(true);
 }
 
 void RegisterCallbacks()
@@ -66,7 +67,7 @@ void LastConversation(string t)
     }
     else if(stage == 3)
     {
-        PlayVoice("LU_Anton_1.ogg");
+        PlayVoice("LU_Anton_1.ogg", "AntonSkullTest");
         SetEffectVoiceOverCallback("LastConversation");
         return;
     }
