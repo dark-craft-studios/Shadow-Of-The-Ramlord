@@ -236,13 +236,11 @@ void TortureDialog(string t)
         PlaySoundAtEntity("bell", sntBell, "Player");
         PlaySoundAtEntity("knife1", sntCut, "Player");
         CutAsync("");
-        AddTimer("", 0.5f, "StartTerrorAsync");
         SetPlayerHealth(25.0f);
         delay = 2.0f;
     }
     else if(stage == 16)
     {
-        StopTerrorAsync("");
         PlayVoice("RC_Johan_3.ogg");
         SetEffectVoiceOverCallback("TortureDialog");
         return;
@@ -285,6 +283,7 @@ void TortureDialog(string t)
     }
     else if(stage == 22)
     {
+        FadeGlobalSoundVolume(0.0f, 1.0f);
         delay = 4.0f;
     }
     else
@@ -306,16 +305,6 @@ void CutAsync(string t)
     FadePlayerFOVMulTo(RandFloat(0.7f, 1.0f), 20.0f);
     if(GetLocalVarInt("StopCutAsync") == 1) { return; }
     AddTimer("CutTimer", RandFloat(5.0f, 8.0f), "CutAsync");
-}
-
-void StartTerrorAsync(string t)
-{
-    PlaySoundAtEntity("terror", sntTerror, "Player");
-}
-
-void StopTerrorAsync(string t)
-{
-    StopSound("terror", 0.6f);
 }
 
 void TortureDialog()
@@ -345,6 +334,7 @@ void WakeUpDialog(string t)
 
     if(stage == 0)
     {
+        FadeGlobalSoundVolume(1.0f, 0.5f);
         FadeIn(8.0f);
         FadeRadialBlurTo(0.03f, 1.0f);
         FadeImageTrailTo(0.015f, 1.0f);
