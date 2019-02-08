@@ -21,6 +21,7 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("EmiliaEndingArea", "HerCall");
     AddSinglePlayerCollideCallback("CreditsSequence", "LastWords");
     AddSinglePlayerCollideCallback("EndingMusicArea", "EndingMusic");
+    AddSinglePlayerCollideCallback("StairScareArea", "BabyScare");
 }
 
 ///OLD CODE
@@ -262,4 +263,9 @@ void EndingMusic(string a, string b, int s)
 {
     PlayMusic("15_event_girl_mother.ogg", false, 0.3f, 2.0f, 1, true);
 }
-    
+
+void BabyScare(string a, string b, int s)
+{
+    PlayMusic("15_event_elevator.ogg", false, 0.3f, 3.0f, 1, true);
+    PlaySoundAtEntity("", "scare_baby_cry.snt", "BabySound", 2.0f, false);
+}
