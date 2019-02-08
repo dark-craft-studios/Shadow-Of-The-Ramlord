@@ -309,7 +309,7 @@ void StartAmbience(string soundFile)
         soundFile, /* Sound file */
         "Player",  /* Entity */
         0.0f,      /* Fade time */
-        false      /* Save */
+        true       /* Save */
     );
 }
 
