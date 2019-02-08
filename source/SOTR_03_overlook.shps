@@ -158,13 +158,13 @@ void EndingLine1(string a, string b, int state)
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
     SetPropStaticPhysics(graveyardDoor, true);
     SetEffectVoiceOverCallback("UnlockGraveyard");
-    GiveHint("", "Hints", "OverlookHint2", 10.0f);
 }
 
 void UnlockGraveyard()
 {
     ResetPlayerState();
     SetPropStaticPhysics(graveyardDoor, false);
+    GiveHint("", "Hints", "OverlookHint2", 10.0f);
 }
 
 // ============================================================================

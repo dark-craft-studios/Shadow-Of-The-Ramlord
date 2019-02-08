@@ -219,7 +219,7 @@
         <CATEGORY Name="Hints">
         <Entry Name="PrologueHint1">My grimoire, the Key of Solomon, could be used to interact with various places of interest around Caecea.</Entry>
         <Entry Name="OverlookHint1">I used the tomes in my possession to quickly enact the ritual downstairs, lest that creature found me.</Entry>
-        <Entry Name="OverlookHint2">I used the Key of Solomon outside, to meditate above the tombstone.</Entry>
+        <Entry Name="OverlookHint2">I used the Key of Solomon outside to meditate above the tombstone.</Entry>
     </CATEGORY>
 
   <CATEGORY Name="Inventory">
