@@ -16,6 +16,8 @@ const int entBrickFallCount         = 6;
 const string entBrickFallParticleBase  = "BrickFallParticle_";
 const int entBrickFallParticleCount = 6;
 const string entPianoArea           = "PianoSoundArea_1";
+const string entHallwayEventArea    = "HallwayEventArea";
+const string entHallwayLookAt       = "HallwayLookAtArea";
 
 const string psDustFalling = "ps_dust_falling_rumble.ps";
 
@@ -32,6 +34,7 @@ const string sntCrouch = "player_crouch.snt";
 
 const string oggIntro = "24_event_vision.ogg";
 const string oggDying = "24_event_vision03.ogg";
+const string oggHallway = "00_event_hallway.ogg";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -54,15 +57,72 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("PrioryLineArea", "StartPriory");
     AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
     AddSinglePlayerCollideCallback(entShakeEventArea, "ShakeEvent");
+    AddSinglePlayerCollideCallback(entHallwayEventArea, "HallwayEvent");
 }
 // ============================================================================
-// Head Tilt
+// HALLWAY EVENT
+// ============================================================================
+void HallwayEvent(string a, string b, int s)
+{
+    HallwayEvent("");
+}
+
+void HallwayEvent(string t)
+{
+    int stage = GetLocalVarInt("HallwayEvent");
+    AddLocalVarInt("HallwayEvent", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        StopHeadTilt();
+        PlayGuiSound(oggHallway, 1.0f);
+        FadePlayerFOVMulTo(1.5f, 0.5f);
+        SetPlayerMoveSpeedMul(0.2f);
+        SetPlayerRunSpeedMul(0.2f);
+        StartPlayerLookAtNormal(entHallwayLookAt);
+        delay = 6.5f;
+    }
+    else if(stage == 1)
+    {
+        FadePlayerFOVMulTo(1.0f, 1.0f);
+        delay = 5.0f;
+    }
+    else if(stage == 2)
+    {
+        ResetPlayerSpeed();
+        StopPlayerLookAt();
+        StartHeadTilt();
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "HallwayEvent");
+}
+
+// ============================================================================
+// HEAD TILT
 // ============================================================================
 void HeadTilt(string t)
 {
+    if(GetLocalVarInt("PauseHeadTilt") == 1) { return; }
     FadePlayerRollTo(RandFloat(-10.0f, 10.0f), 1.0f, 1.5f);
     FadePlayerFOVMulTo(RandFloat(0.9f, 1.0f), 0.2f);
-    AddTimer("", RandFloat(2.0f, 4.0f), "HeadTilt");
+    AddTimer("tilt", RandFloat(2.0f, 4.0f), "HeadTilt");
+}
+
+void StopHeadTilt()
+{
+    SetLocalVarInt("PauseHeadTilt", 1);
+    RemoveTimer("tilt");
+}
+
+void StartHeadTilt()
+{
+    SetLocalVarInt("PauseHeadTilt", 0);
+    HeadTilt("");
 }
 
 // ============================================================================
@@ -145,7 +205,7 @@ void TortureDialog(string t)
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
         // <DEBUG>
-        SetLocalVarInt("TortureDialog", 22);
+        //SetLocalVarInt("TortureDialog", 22);
         // </DEBUG>
         delay = 0.1f;
     }
