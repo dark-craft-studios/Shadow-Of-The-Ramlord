@@ -188,7 +188,6 @@ void OnAllItemsPickedUp()
 {
     PlayVoiceOnPlayerAndSlowdown("IN_Johan_6.ogg");
     SetEffectVoiceOverCallback("OnLanternMonologueEnd");
-
     CompleteQuest("IntroPackup");
 }
 
