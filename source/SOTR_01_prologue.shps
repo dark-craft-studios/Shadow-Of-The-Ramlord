@@ -48,6 +48,7 @@ void RegisterCallbacks()
 // ============================================================================
 void GateOpenEvent(string a, string b, int state)
 {
+    AutoSave();
     AddPropForce(entEntranceGate, 0, 0, -200, "World");
     PlaySoundAtEntity("SOTR_NecroWind.snt");
     LightLampWithEffects(entGateCandle2);
@@ -70,7 +71,7 @@ void JohanGateLine(string a, string b, int state)
 void JohanAltarLine(string &in asParent, string &in asChild, int alState)
 {
     AltarMiniCutscene("");
-
+    GiveHint("", "Hints", "PrologueHint1", 5.0f);
     PlayVoiceOnPlayerAndSlowdown("PR_Johan_4.ogg");
 }
 

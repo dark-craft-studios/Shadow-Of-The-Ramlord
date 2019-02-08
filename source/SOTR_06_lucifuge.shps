@@ -26,15 +26,15 @@ void RegisterCallbacks()
 
 ///OLD CODE
 
-void CreditsSequence(string a, string b, int s)
-{
-    AddTimer("", 0.5f, "StartCreditsAsync");
-}
+///void CreditsSequence(string a, string b, int s)
+///{
+///AddTimer("", 0.5f, "StartCreditsAsync");
+///}
 
-void StartCreditsAsync(string timer) 
-{
-    StartCredits("", false, "Credits", "FinalCredits", 4); 
-}
+///void StartCreditsAsync(string timer) 
+///{
+///StartCredits("", false, "Credits", "FinalCredits", 4); 
+///}
 
 ///END OLD CODE
 
@@ -43,6 +43,7 @@ void StartCreditsAsync(string timer)
 void EndingConvo(string a, string b, int s)
 {
     LastConversation();
+    AutoSave();
 }
 
 void LastConversation(string t)

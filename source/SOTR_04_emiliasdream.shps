@@ -42,6 +42,7 @@ void EmiliasDream(string t)
 
     if(stage == 0)
     {
+        AutoSave();
         StartPlayerLookAtNormal(entLetter);
         FadePlayerFOVMulTo(0.1f, 0.05f);
         FadePlayerRollTo(15.0f, 0.25f, 0.3f);

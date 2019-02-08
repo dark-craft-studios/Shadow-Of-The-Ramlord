@@ -65,6 +65,7 @@ void RegisterCallbacks()
 void HallwayEvent(string a, string b, int s)
 {
     HallwayEvent("");
+    AutoSave();
 }
 
 void HallwayEvent(string t)

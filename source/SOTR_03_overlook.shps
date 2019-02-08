@@ -457,6 +457,7 @@ void RitualBookPickupScene(string t)
     if(stage == 0)
     {
         SetEntityActive("RitualBook_1_Static", true);
+        AutoSave();
         SetPlayerActive(false);
         StartPlayerLookAt("RitualBook_1_Static", 1.0f, 1.5f, "");
         // TODO (Peter) : Comment FadeLightTo

@@ -165,6 +165,7 @@ void OnFirstNotePickedUp()
     SetSwingDoorLocked(entProtagonistRoomDoor, false, false);
     SetPropStaticPhysics(entProtagonistRoomDoor, false);
     AddTimer("", 6.0f, "INJohanLineOne");
+    AutoSave();
 }
 
 void INJohanLineOne(string t)

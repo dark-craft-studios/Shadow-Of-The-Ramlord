@@ -40,6 +40,10 @@ void RegisterCallbacks()
         "BAJohanVoice_1", 
         "BAJohanLineThree"
     );
+    AddSinglePlayerCollideCallback(
+        "BallroomSaveArea", 
+        "BallroomSaveTime"
+    );
 }
 
 // ============================================================================
@@ -449,4 +453,11 @@ void OnLibraryDoorInteract(bool isLocked)
             DisplaySeededDoorMessage("Generic_Locked_", 1, 3);
         }
     }
+}
+
+///SAVE
+
+void BallroomSaveTime(string a, string b, int s)
+{
+    AutoSave();
 }
