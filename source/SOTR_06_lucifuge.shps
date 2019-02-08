@@ -4,6 +4,7 @@
 // MAIN
 // ----------------------------------------------------------------------------
 const string MapId = "06";
+const string sntAmbEnd = "15_amb.snt";
 
 void OnStart()
 {
@@ -11,6 +12,7 @@ void OnStart()
     BlockAllVanillaHints();
     RegisterCallbacks();
     SetPlayerJumpDisabled(true);
+    StartAmbience(sntAmbEnd);
 }
 
 void RegisterCallbacks()
@@ -18,6 +20,7 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("LastConvoArea", "EndingConvo");
     AddSinglePlayerCollideCallback("EmiliaEndingArea", "HerCall");
     AddSinglePlayerCollideCallback("CreditsSequence", "LastWords");
+    AddSinglePlayerCollideCallback("EndingMusicArea", "EndingMusic");
 }
 
 ///OLD CODE
@@ -34,7 +37,7 @@ void StartCreditsAsync(string timer)
 
 ///END OLD CODE
 
-///ENDING CONVERSATION SEQUENCES///
+///ENDING CONVERSATION SEQUENCES
 
 void EndingConvo(string a, string b, int s)
 {
@@ -63,7 +66,7 @@ void LastConversation(string t)
     }
     else if(stage == 2)
     {
-        delay = 2.0f;
+        delay = 1.3f;
     }
     else if(stage == 3)
     {
@@ -73,7 +76,7 @@ void LastConversation(string t)
     }
     else if(stage == 4)
     {
-        delay = 2.0f;
+        delay = 0.5f;
     }
     else if(stage == 5)
     {
@@ -83,7 +86,7 @@ void LastConversation(string t)
     }
     else if(stage == 6)
     {
-        delay = 2.0f;
+        delay = 1.0f;
     }
     else if(stage == 7)
     {
@@ -93,7 +96,7 @@ void LastConversation(string t)
     }
     else if(stage == 8)
     {
-        delay = 1.0f;
+        delay = 0.5f;
     }
     else if(stage == 9)
     {
@@ -103,7 +106,7 @@ void LastConversation(string t)
     }
     else if(stage == 10)
     {
-        delay = 1.0f;
+        delay = 0.5f;
     }
     else if(stage == 11)
     {
@@ -113,7 +116,7 @@ void LastConversation(string t)
     }
     else if(stage == 12)
     {
-        delay = 2.0f;
+        delay = 1.0f;
     }
     else if(stage == 13)
     {
@@ -123,7 +126,7 @@ void LastConversation(string t)
     }
     else if(stage == 14)
     {
-        delay = 2.0f;
+        delay = 0.5f;
     }
     else if(stage == 15)
     {
@@ -133,7 +136,7 @@ void LastConversation(string t)
     }
     else if(stage == 16)
     {
-        delay = 2.0f;
+        delay = 1.0f;
     }
     else if(stage == 17)
     {
@@ -162,7 +165,8 @@ void LastConversation()
 
 void HerCall(string a, string b, int s)
 {
-        PlayVoice("LU_Emilia_1.ogg", "EmiliaVoice1");
+        PlayVoiceOnEntityAndSlowdown("LU_Emilia_1.ogg", "EmiliaVoice1");
+        StartPlayerLookAt("EmiliaVoice1", 1.0f, 2.5f, "");
 }
 
 void LastWords(string a, string b, int s)
@@ -251,3 +255,11 @@ void CreditsConversation()
 {
     CreditsConversation("");
 }
+
+///NEW MUSIC
+
+void EndingMusic(string a, string b, int s)
+{
+    PlayMusic("15_event_girl_mother.ogg", false, 0.3f, 2.0f, 1, true);
+}
+    
