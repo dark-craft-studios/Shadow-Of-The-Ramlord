@@ -28,6 +28,7 @@ const string sntTerror = "ui_terror_meter.snt";
 const string sntBell = "ui_torture.snt";
 const string sntInject = "19_inject.snt";
 const string sntCloth = "player_stand.snt";
+const string sntCrouch = "player_crouch.snt";
 
 const string oggIntro = "24_event_vision.ogg";
 const string oggDying = "24_event_vision03.ogg";
@@ -143,6 +144,9 @@ void TortureDialog(string t)
         FadeGlobalSoundVolume(0.0f, 0.0f);
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
+        // <DEBUG>
+        SetLocalVarInt("TortureDialog", 22);
+        // </DEBUG>
         delay = 0.1f;
     }
     else if(stage == 1)
@@ -283,6 +287,9 @@ void TortureDialog(string t)
     }
     else if(stage == 22)
     {
+        SetPlayerCrouching(true);
+        MovePlayerHeadPos(0.0f, -1.0f, 0.0f, 20.0f, 0.5f);
+        FadePlayerRollTo(20.0f, 20.0f, 20.0f);
         FadeGlobalSoundVolume(0.0f, 1.0f);
         delay = 4.0f;
     }
@@ -351,11 +358,22 @@ void WakeUpDialog(string t)
     {
         PlayVoice("RC_Johan_5.ogg");
         SetEffectVoiceOverCallback("WakeUpDialog");
-        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 2.0f, 0.5f);
         return;
     }
     else if(stage == 3)
     {
+        FadeOut(0.3f);
+        delay = 0.2f;
+    }
+    else if(stage == 4)
+    {
+        PlaySoundAtEntity(sntCloth, "Player");
+        MovePlayerHeadPos(0.0f, 0.0f, 0.0f, 2.0f, 0.5f);
+        delay = 1.2f;
+    }
+    else if(stage == 5)
+    {
+        FadeIn(0.3f);
         ResetPlayerSpeed();
         SetPlayerActive(true);
     }
