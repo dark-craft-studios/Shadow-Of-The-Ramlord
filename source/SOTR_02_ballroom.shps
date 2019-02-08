@@ -194,6 +194,7 @@ void PickUpBallroomNote(string e)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
     SetSwingDoorLocked("LibraryDoor", true, true);
+    SetPropStaticPhysics("LibraryDoor", true);
 }
 
 // ============================================================================

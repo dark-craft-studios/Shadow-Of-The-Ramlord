@@ -158,13 +158,13 @@ void EndingLine1(string a, string b, int state)
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
     SetPropStaticPhysics(graveyardDoor, true);
     SetEffectVoiceOverCallback("UnlockGraveyard");
-    GiveHint("", "Hints", "OverlookHint2", 5.0f);
 }
 
 void UnlockGraveyard()
 {
     ResetPlayerState();
     SetPropStaticPhysics(graveyardDoor, false);
+    GiveHint("", "Hints", "OverlookHint2", 10.0f);
 }
 
 // ============================================================================
@@ -459,7 +459,6 @@ void RitualBookPickupScene(string t)
     if(stage == 0)
     {
         SetEntityActive("RitualBook_1_Static", true);
-        AutoSave();
         SetPlayerActive(false);
         StartPlayerLookAt("RitualBook_1_Static", 1.0f, 1.5f, "");
         // TODO (Peter) : Comment FadeLightTo
@@ -499,6 +498,7 @@ void RitualBookPickupScene(string t)
     else if(stage == 2)
     {
         ResetPlayerState();
+        AutoSave();
     }
     else
     {
@@ -516,7 +516,7 @@ void RitualBookPickupScene()
 void OnLastBookPickup()
 {
     AfterLastBookScene();
-    GiveHint("", "Hints", "OverlookHint1", 5.0f);
+    GiveHint("", "Hints", "OverlookHint1", 10.0f);
     CompleteQuest("OverlookQuest");
 }
 
