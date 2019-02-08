@@ -296,15 +296,18 @@ void EmiliasDream(string t)
             "LookAtMe3"
         );
         SetEffectVoiceOverCallback("EmiliasDream");
+        ProgLog("Medium", "Before bugs.");
         StartInsanityEvent("Bugs_Many");
         return;
     }
     else if(stage == 38)
     {
+        ProgLog("Medium", "Stage 38");
         delay = 1.0f;
     }
     else if(stage == 39)
     {
+        ProgLog("Medium", "Stage 39");
         AddTimer("", 14.5f, "AsyncSob");
         PlayVoice(
             "ED_Anton_4b.ogg",
@@ -315,16 +318,19 @@ void EmiliasDream(string t)
     }
     else if(stage == 40)
     {
+        ProgLog("Medium", "Stage 40");
         FadeOut(3.0f);
         delay = 1.0f;
     }
     else if(stage == 41)
     {
+        ProgLog("Medium", "Stage 41");
         PlayGuiSound(oggSob2, 1.0f);
         delay = 5.0f;
     }
     else if(stage == 42)
     {
+        ProgLog("Medium", "Stage 42");
         ChangeMap("SOTR_05_risenchamber", "Player_Start_Area_2", "", "");
     }
     else
