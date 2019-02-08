@@ -194,7 +194,7 @@ void PlaySoundAtEntity(string name, string file, string entity)
         file,   /* Sound file */
         entity, /* Entity */
         0.0f,   /* Fade time */
-        false   /* Save */
+        true   /* Save */
     );
 }
 
@@ -205,7 +205,7 @@ void PlaySoundAtEntity(string file, string entity, float fadeTime)
         file,     /* Sound file */
         entity,   /* Entity */
         fadeTime, /* Fade time */
-        false     /* Save */
+        true     /* Save */
     );
 }
 
@@ -216,7 +216,7 @@ void PlaySoundAtEntity(string name, string file, string entity, float fadeTime)
         file,     /* Sound file */
         entity,   /* Entity */
         fadeTime, /* Fade time */
-        false     /* Save */
+        true     /* Save */
     );
 }
 // ----------------------------------------------------------------------------
