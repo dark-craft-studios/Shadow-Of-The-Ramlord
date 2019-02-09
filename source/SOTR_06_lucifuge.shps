@@ -23,21 +23,6 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("EndingMusicArea", "EndingMusic");
     AddSinglePlayerCollideCallback("StairScareArea", "BabyScare");
 }
-
-///OLD CODE
-
-///void CreditsSequence(string a, string b, int s)
-///{
-///AddTimer("", 0.5f, "StartCreditsAsync");
-///}
-
-///void StartCreditsAsync(string timer) 
-///{
-///StartCredits("", false, "Credits", "FinalCredits", 4); 
-///}
-
-///END OLD CODE
-
 ///ENDING CONVERSATION SEQUENCES
 
 void EndingConvo(string a, string b, int s)
@@ -57,6 +42,7 @@ void LastConversation(string t)
     SetPlayerMoveSpeedMul(0.0f);
     SetPlayerRunSpeedMul(0.0f);
     StartPlayerLookAt("AntonSkullTest", 0.8f, 1.5f, "");
+    FadePlayerFOVMulTo(0.4f, 0.05f);
     SetPlayerActive(false);
     delay = 3.0f;
     }
@@ -148,6 +134,7 @@ void LastConversation(string t)
     }
     else if(stage == 18)
     {
+        FadePlayerFOVMulTo(1.0f, 1.0f);
         SetPlayerActive(true);
         StopPlayerLookAt();
         ResetPlayerSpeed();
