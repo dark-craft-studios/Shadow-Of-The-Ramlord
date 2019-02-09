@@ -47,7 +47,7 @@
         <Entry Name="40">Recently translated by Anton, the accursed tome bore a prayer dedicated to the being which holds dominion over Caecea. How he came to possess such an esoteric artifact, I will never know.</Entry>
         <Entry Name="41">I found the holy water at last. I crept out of the Priory, with only a few tasks left.</Entry>
         <Entry Name="42">I dare not recall the abhorrent madness which nearly seized my grip on sanity, Emilia. The depravity of his work... What a fiendish aberration of faith. I pressed forth into the darkest recesses of Anton's blasphemy.</Entry>
-        <Entry Name="43">After travailing the abyss, I finally found what I was looking for. I steeled my mind for the journey remaining. I thought of home. I thought of eternity... calling my name.</Entry>
+        <Entry Name="43">After traveling the abyss, I finally found what I was looking for. I steeled my mind for the journey remaining. I thought of home. I thought of eternity... calling my name.</Entry>
         <Entry Name="44">Returning back to the ritual chamber of my rebirth, I heard a brief interrogation between Anton and an unknown supplicant. You were the topic of conversation, Emilia.</Entry>
         <Entry Name="45">Mangled beneath the antediluvian wreckage, Anton had succumb to a fate twisted by his own hubris; a fitting demise for something that believed it could betray the wishes of a demon. </Entry>
         <Entry Name="46">There is no victory here for any of us. You've bound our souls to eternal damnation. You will rue the day you sold yourself to that abomination.</Entry>
@@ -127,7 +127,7 @@
         <Entry Name="Quest_BallroomRitualRoom_Text">A key is required to continue through to the bedroom. </Entry>
         <Entry Name="Quest_IntroPackup_Text">I will need my lantern, oil, and the grimoire in my bedroom before leaving.</Entry>
         <Entry Name="Quest_OverlookQuest_Text">I needed to find three tomes scattered around the library, and bring them downstairs to complete your ritual.</Entry>
-        <Entry Name="Quest_RisenQuest_Text">I searched the catacombs for salt and holy water, to complete a ritual on my own.</Entry>
+        <Entry Name="Quest_RisenQuest_Text">I searched the catacombs for salt and holy water, to complete a ritual of my own.</Entry>
     </CATEGORY>
 
     <CATEGORY Name="Inventory">
