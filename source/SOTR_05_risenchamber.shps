@@ -30,6 +30,7 @@ const string entStairsParticleArea  = "StairsParticleArea";
 
 const string entOfficePreEventArea  = "OfficePreEventArea";
 const string entOfficeEventArea     = "OfficeEventArea";
+const string entOfficeSoundArea     = "OfficeSoundArea";
 
 const string entScratchEventArea    = "ScratchEventArea";
 const string entScrachSoundLeft     = "ScratchArea_Left";
@@ -37,6 +38,8 @@ const string entScrachSoundRight     = "ScratchArea_Right";
 
 const string entAsylumStartArea     = "AsylumEventStart";
 const string entAsylumEndArea       = "AsylumEventEnd";
+const string entAsylumPrisonerBase  = "Prisoner_";
+const int entAsylumPrisonerLast    = 7;
 const string entGravesSoundArea     = "GravesSoundArea";
 
 const string entBlowOpenDoor        = "BlowOpenDoor1";
@@ -44,6 +47,13 @@ const string entAntonEndArea        = "AntonEndArea";
 
 const string psDustFalling = "ps_dust_falling_rumble.ps";
 
+const string sntScratch    = "scare_scratch.snt";
+const string sntStairs     = "00_creaks.snt";
+const string sntFleshStart = "15_bang_fall.snt";
+const string sntFlesh      = "15_bang.snt";
+const string sntPreOffice  = "03_in_a_bottle.snt";
+const string sntOffice     = "05_event_bottles.snt";
+const string sntAsylumLoop = "15_man_whimp_loop.snt";
 const string sntKnifeSound = "24_knife.snt";
 const string sntCut        = "24_cut.snt";
 const string sntChain      = "24_chain_rattle.snt";
@@ -54,10 +64,14 @@ const string sntBell = "ui_torture.snt";
 const string sntInject = "19_inject.snt";
 const string sntCloth = "player_stand.snt";
 const string sntCrouch = "player_crouch.snt";
+const string sntSkeletalk = "SOTR_skeletalk.snt";
+const string sntExplosion = "explosion_rock_large.snt";
 
 const string oggIntro = "24_event_vision.ogg";
 const string oggDying = "24_event_vision03.ogg";
 const string oggHallway = "00_event_hallway.ogg";
+const string oggDrag  = "15_drag_body.ogg";
+const string oggPriory = "05_event_falling.ogg";
 
 // ----------------------------------------------------------------------------
 // Main - g
@@ -88,6 +102,7 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback(entScratchEventArea, "ScratchEvent");
     AddSinglePlayerCollideCallback(entAsylumStartArea, "AsylumStartEvent");
     AddSinglePlayerCollideCallback(entAsylumEndArea, "AsylumEndEvent");
+    SetEntityActive(entStairsEventArea, false);
 }
 // ============================================================================
 // HALLWAY EVENT
@@ -111,7 +126,6 @@ void HallwayEvent(string t)
         FadePlayerFOVMulTo(1.5f, 0.5f);
         SetPlayerMoveSpeedMul(0.2f);
         SetPlayerRunSpeedMul(0.2f);
-        StartPlayerLookAtNormal(entHallwayLookAt);
         delay = 6.5f;
     }
     else if(stage == 1)
@@ -122,7 +136,6 @@ void HallwayEvent(string t)
     else if(stage == 2)
     {
         ResetPlayerSpeed();
-        StopPlayerLookAt();
         StartHeadTilt();
     }
     else
@@ -232,11 +245,12 @@ void TortureDialog(string t)
 
     if(stage == 0)
     {
+        PlayGuiSound(oggDrag, 0.4f);
         FadeGlobalSoundVolume(0.0f, 0.0f);
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
         // <DEBUG>
-        SetLocalVarInt("TortureDialog", 22);
+        //SetLocalVarInt("TortureDialog", 22);
         // </DEBUG>
         delay = 0.1f;
     }
@@ -563,22 +577,51 @@ void PrioryDialog()
 
 void BonerEvent(string a, string b, int s)
 {
-    AddDebugMessage("BONER", false);
+    PlaySoundAtEntity("04_hole_squeal.snt", entBonerSoundArea1);
+    GiveSanityDamage(0.0f, true);
 }
 
 void StairsEvent(string a, string b, int s)
 {
-    AddDebugMessage("STAIRS", false);
+    StairsEvent("");
+}
+
+void StairsEvent(string t)
+{
+    int stage = GetLocalVarInt("StairsEvent");
+    AddLocalVarInt("StairsEvent", 1);
+    float delay = 0.0f;
+
+    if(stage == 0)
+    {
+        PlaySoundAtEntity(sntFleshStart, entStairsSoundArea1);
+        PlayGuiSound(oggPriory, 0.7f);
+        GiveSanityDamage(0.0f, true);
+        delay = 1.0f;
+    }
+    else if(stage < 6)
+    {
+        PlaySoundAtEntity(sntFlesh, entStairsSoundArea1);
+        delay = RandFloat(0.3f, 0.6f);
+    }
+    else
+    {
+        return;
+    }
+
+    AddTimer("", delay, "StairsEvent");
 }
 
 void OfficePreEvent(string a, string b, int s)
 {
-    AddDebugMessage("Office pre event", false);
+    PlaySoundAtEntity(sntPreOffice, entOfficeSoundArea);
 }
 
 void OfficeEvent(string a, string b, int s)
 {
-    AddDebugMessage("Office event", false);
+    SetEntityActive(entStairsEventArea, true);
+    PlaySoundAtEntity(sntOffice, entOfficeSoundArea);
+    GiveSanityDamage(0.0f, true);
 }
 
 // ============================================================================
@@ -688,6 +731,7 @@ void EndingDialog(string t)
     else if(stage == 6)
     {
         ///SOUNDS OF CRASHING RUBBLE IN DISTANCE, ECHOING LAUGHTER
+        PlaySoundAtEntity(sntExplosion, entAntonEndArea);
         GiveSanityDamage(500.0f, false);
         StopPlayerLookAt();
         SetPropHealth(entBlowOpenDoor, 0.0f);
@@ -722,16 +766,30 @@ void StartHorror(string a, string b, int s)
 
 void ScratchEvent(string a, string b, int s)
 {
-    AddDebugMessage("Scratch event", false);
+    PlaySoundAtEntity(sntScratch, entScrachSoundLeft);
+    SetLocalVarInt("HallwayEvent", 0);
+    HallwayEvent("");
 }
 
 void AsylumStartEvent(string a, string b, int s)
 {
-    AddDebugMessage("Asylum Start event", false);
+    for(int i = 1; i <= entAsylumPrisonerLast; i++)
+    {
+        PlaySoundAtEntity(
+            "prisoner_" + i,
+            sntAsylumLoop,
+            entAsylumPrisonerBase + i
+        );
+    }
 }
 
 void AsylumEndEvent(string a, string b, int s)
 {
-    AddDebugMessage("Asylum End event", false);
+    for(int i = 1; i <= entAsylumPrisonerLast; i++)
+    {
+        StopSound("prisoner_" + i, 0.2f);
+    }
+
+    PlaySoundAtEntity(sntSkeletalk, entGravesSoundArea);
 }
 
