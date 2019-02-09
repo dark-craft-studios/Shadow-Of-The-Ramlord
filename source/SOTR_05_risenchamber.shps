@@ -19,6 +19,29 @@ const string entPianoArea           = "PianoSoundArea_1";
 const string entHallwayEventArea    = "HallwayEventArea";
 const string entHallwayLookAt       = "HallwayLookAtArea";
 
+const string entBonerEventArea      = "BonerEventArea";
+const string entBonerSoundArea1     = "BonerSound_1";
+const string entBonerSoundArea2     = "BonerSound_2";
+
+const string entStairsEventArea     = "StairsEventArea";
+const string entStairsSoundArea1     = "StairsSoundArea_1";
+const string entStairsSoundArea2     = "StairsSoundArea_2";
+const string entStairsParticleArea  = "StairsParticleArea";
+
+const string entOfficePreEventArea  = "OfficePreEventArea";
+const string entOfficeEventArea     = "OfficeEventArea";
+
+const string entScratchEventArea    = "ScratchEventArea";
+const string entScrachSoundLeft     = "ScratchArea_Left";
+const string entScrachSoundRight     = "ScratchArea_Right";
+
+const string entAsylumStartArea     = "AsylumEventStart";
+const string entAsylumEndArea       = "AsylumEventEnd";
+const string entGravesSoundArea     = "GravesSoundArea";
+
+const string entBlowOpenDoor        = "BlowOpenDoor1";
+const string entAntonEndArea        = "AntonEndArea";
+
 const string psDustFalling = "ps_dust_falling_rumble.ps";
 
 const string sntKnifeSound = "24_knife.snt";
@@ -58,6 +81,13 @@ void RegisterCallbacks()
     AddSinglePlayerCollideCallback("LeftHandPathArea", "StartHorror");
     AddSinglePlayerCollideCallback(entShakeEventArea, "ShakeEvent");
     AddSinglePlayerCollideCallback(entHallwayEventArea, "HallwayEvent");
+    AddSinglePlayerCollideCallback(entBonerEventArea, "BonerEvent");
+    AddSinglePlayerCollideCallback(entStairsEventArea, "StairsEvent");
+    AddSinglePlayerCollideCallback(entOfficePreEventArea, "OfficePreEvent");
+    AddSinglePlayerCollideCallback(entOfficeEventArea, "OfficeEvent");
+    AddSinglePlayerCollideCallback(entScratchEventArea, "ScratchEvent");
+    AddSinglePlayerCollideCallback(entAsylumStartArea, "AsylumStartEvent");
+    AddSinglePlayerCollideCallback(entAsylumEndArea, "AsylumEndEvent");
 }
 // ============================================================================
 // HALLWAY EVENT
@@ -206,7 +236,7 @@ void TortureDialog(string t)
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
         // <DEBUG>
-        //SetLocalVarInt("TortureDialog", 22);
+        SetLocalVarInt("TortureDialog", 22);
         // </DEBUG>
         delay = 0.1f;
     }
@@ -531,6 +561,26 @@ void PrioryDialog()
     PrioryDialog("");
 }
 
+void BonerEvent(string a, string b, int s)
+{
+    AddDebugMessage("BONER", false);
+}
+
+void StairsEvent(string a, string b, int s)
+{
+    AddDebugMessage("STAIRS", false);
+}
+
+void OfficePreEvent(string a, string b, int s)
+{
+    AddDebugMessage("Office pre event", false);
+}
+
+void OfficeEvent(string a, string b, int s)
+{
+    AddDebugMessage("Office event", false);
+}
+
 // ============================================================================
 // COLLECTING REQUIRED ITEMS
 // ============================================================================
@@ -561,8 +611,8 @@ void OnRequiredItemPickup(string entity)
 
 bool AllRequiredItemsPickedUp()
 {
-    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItemsCount;
     CompleteQuest("RisenQuest");
+    return GetLocalVarInt("RequiredItemsPickedUp") == requiredItemsCount;
 }
 
 // ============================================================================
@@ -602,12 +652,14 @@ void EndingDialog(string t)
     if(stage == 0)
     {
         PlayVoice("RC_Johan_13.ogg");
+        SetPlayerCrouching(true);
+        StartPlayerLookAtNormal(entBlowOpenDoor);
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
     else if(stage == 1)
     {
-        PlayVoice("RC_Anton_5.ogg");
+        PlayVoice("RC_Anton_5.ogg", entAntonEndArea);
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
@@ -617,7 +669,7 @@ void EndingDialog(string t)
     }
     else if(stage == 3)
     {
-        PlayVoice("RC_Anton_6.ogg");
+        PlayVoice("RC_Anton_6.ogg", entAntonEndArea);
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
@@ -628,18 +680,21 @@ void EndingDialog(string t)
     }
     else if(stage == 5)
     {
-        PlayVoice("RC_Anton_7.ogg");
+        PlayVoice("RC_Anton_7.ogg", entAntonEndArea);
+        StartInsanityEvent("Stream_Monster_Roar03");
         SetEffectVoiceOverCallback("EndingDialog");
         return;
     }
-    else if(stage == 5)
-    {
-        ///SOUNDS OF CRASHING RUBBLE IN DISTANCE, ECHOING LAUGHTER
-        delay = 1.0f;
-    }
     else if(stage == 6)
     {
+        ///SOUNDS OF CRASHING RUBBLE IN DISTANCE, ECHOING LAUGHTER
+        GiveSanityDamage(500.0f, false);
         StopPlayerLookAt();
+        SetPropHealth(entBlowOpenDoor, 0.0f);
+        delay = 1.0f;
+    }
+    else if(stage == 7)
+    {
         SetPlayerActive(true);
     }
     else
@@ -664,3 +719,19 @@ void StartHorror(string a, string b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("RC_Johan_11.ogg");
 }
+
+void ScratchEvent(string a, string b, int s)
+{
+    AddDebugMessage("Scratch event", false);
+}
+
+void AsylumStartEvent(string a, string b, int s)
+{
+    AddDebugMessage("Asylum Start event", false);
+}
+
+void AsylumEndEvent(string a, string b, int s)
+{
+    AddDebugMessage("Asylum End event", false);
+}
+
