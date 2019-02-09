@@ -5,6 +5,9 @@
 * [Setup](#setup)
     * [Checking if your copy is up to date](#checking-if-your-copy-is-up-to-date)
     * [Installing the mod](#installing-sotr)
+* [Credits](#credits)
+* [Story Synopsis](#story-synopsis)
+* [Character Summary](#character-summary)
 
 # Setup
 
@@ -109,10 +112,10 @@ SOTR is mainly a mod that tries to tell a story. Don't expect too much action. S
 SOTR uses a Preprocessor to compile our source code into something Amnesia understands. To see the original source code, visit our [Repository](https://dev.azure.com/dark-craft-studios/_git/shadow-of-the-ramlord?path=%2Fsource&version=GBmaster).
 
 ------
-**Credits**
+# Credits
 
 * Glenn Winkelmann – Project Lead
-* [Petr "Spelos" Sedláček – Lead Programmer](https://github.com/petrspelos)
+* [Petr "Spelos" Sedláček](https://github.com/petrspelos) – Lead Programmer
 * Nick Keil – Secondary Programmer
 * David Bodtcher – Voice Acting Johan Gray
 * Michael Schwalbe – Voice Acting Anton Caecea
@@ -135,6 +138,8 @@ SOTR uses a Preprocessor to compile our source code into something Amnesia under
 * TiMan
 
 # Story Synopsis
+
+:warning: **SPOILER**
 
 It is the late 18th Century. Johan Gray is a member of a secretive order; a fictional sect of the Church designated to the investigation of occult activity. His official title is Witchfinder. He is an experienced hunter of man and monster, and has burnt at the stake countless guilty and innocent. He investigates his cases with a cold, calculated malice. Like the many Witchfinder’s before him, his task is to investigate and then root out cults, supernatural beings or dark entities/sects at any governing cost, including his life or sanity.
 
@@ -161,6 +166,8 @@ We find Anton is trapped under rock and beam, slowly dying. The Witchfinder and 
 Johan and Emilia talk in the pitch darkness for a few moments before she reveals the sounds of a baby crying. Johan proclaims that the baby must die, and a knife is heard unsheathed. Emilia agrees in solemn protest before music fades us into credits.
 
 # Character Summary
+
+:warning: **SPOILER**
 
 **Witchfinder Johan Gray**
 
