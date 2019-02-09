@@ -126,7 +126,7 @@ SOTR uses a Preprocessor to compile our source code into something Amnesia under
 **Special Thanks***
 * (Here for the inception, presented great ideas, or did not see the project through.)
 * Ian Wiese – Writing Assistance
-* Karba – Level Designer
+* [Karba](https://github.com/Karbashit) – Level Designer
 * Jarod D’Camp – Lead Composer
 * RadicalBatz – Level Detailer
 * Nightfall – Lead Sound Designer
@@ -136,6 +136,7 @@ SOTR uses a Preprocessor to compile our source code into something Amnesia under
 * HollowInside
 * Seth
 * TiMan
+* [Karba](https://github.com/Karbashit)
 
 # Story Synopsis
 
