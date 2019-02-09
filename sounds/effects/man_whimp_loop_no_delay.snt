@@ -1,0 +1,17 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+		<Sound File="15_man02_whimp1.ogg" />
+		<Sound File="15_man02_whimp2.ogg" />
+		<Sound File="15_man02_whimp3.ogg" />
+		<Sound File="15_man02_whimp4.ogg" />
+		<Sound File="15_man02_whimp5.ogg" />
+		<Sound File="15_man_whimp1.ogg" />
+		<Sound File="15_man_whimp2.ogg" />
+		<Sound File="15_man_whimp3.ogg" />
+		<Sound File="15_man_whimp4.ogg" />
+		<Sound File="15_man_whimp5.ogg" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.4" MinDistance="10" MaxDistance="40" Random="0.3" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="True" Use3D="True" Blockable="False" BlockVolumeMul="0.8" Priority="0" />
+</SOUNDENTITY>
