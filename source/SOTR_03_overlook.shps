@@ -28,6 +28,8 @@ const string sntHitWood = "lurker_hit_wood.snt";
 const string sntTerror = "ui_terror_meter.snt";
 const string sntEmiliaScream = "OL_Emilia_Scream.snt";
 
+const string entGraveyardArea = "GraveyardArea";
+const string entGraveyardBlockBox = "GraveyardBlockBox";
 const string entUpstairsDoor = "UpstairsDoor";
 const string entUpstairsSound = "SoundArea_1";
 const string entPhono = "Phono";
@@ -100,6 +102,10 @@ void RegisterCallbacks()
         entPhonoEnd, 
         "PhonoEnd"
     );
+    AddSinglePlayerCollideCallback(
+        entGraveyardArea,
+        "OnGraveyardEnter"
+    );
     AddRepeatedPlayerCollideCallback(
         "EnsureFirstTombArea",
         "EnsureFirstTombPickup"
@@ -164,7 +170,6 @@ void UnlockGraveyard()
 {
     ResetPlayerState();
     SetPropStaticPhysics(graveyardDoor, false);
-    GiveHint("", "Hints", "OverlookHint2", 10.0f);
 }
 
 // ============================================================================
@@ -225,6 +230,7 @@ void OnRitualCompleted()
     SetLanternActive(false, true);
     FadeRadialBlurTo(0.0f, 1.0f);
     StopSound("terror", 0.5f);
+    SetEntityActive("ChaseBlockBoxCellar", false);
     SetEntityActive(entChaseBlockBox, false);
     StartRitualCutscene();
 }
@@ -516,7 +522,6 @@ void RitualBookPickupScene()
 void OnLastBookPickup()
 {
     AfterLastBookScene();
-    GiveHint("", "Hints", "OverlookHint1", 10.0f);
     CompleteQuest("OverlookQuest");
 }
 
@@ -595,6 +600,7 @@ void OnStatueEvent(string a, string b, int s)
 {
     SetLampLit(entStatueCandle1, false, true);
     SetLampLit(entStatueCandle2, false, true);
+    GiveHint("", "Hints", "OverlookHint1", 20.0f);
 }
 
 void RegisterChaseBoxes()
@@ -704,8 +710,8 @@ void OnChaseBox2(string a, string b, int s)
 
 void OnChaseBox3(string a, string b, int s)
 {
-    AddDebugMessage("Chase box 3", false);
-    StartPlayerLookAt("RitualBookArea", 0.5f, 0.6f, "");
+    StartPlayerLookAtNormal("RitualBookArea");
+    SetEntityActive("ChaseBlockBoxCellar", true);
 }
 
 void OnBasementDoorInteract(string t)
@@ -883,5 +889,11 @@ void DisplaySeededDoorMessage(string entryBase, int min, int max)
 {
     int seed = RandInt(min, max);
     SetMessage("DoorMessages", entryBase + seed, 0.0f);
+}
+
+void OnGraveyardEnter(string a, string b, int s)
+{
+    GiveHint("", "Hints", "OverlookGraveyardHint", 20.0f);
+    SetEntityActive(entGraveyardBlockBox, true);
 }
 
