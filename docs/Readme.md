@@ -2,12 +2,31 @@
 
 # Contents
 
+* [Before you start playing](#before-you-start-playing)
+    * [Hints](#hints)
+    * [Experience](#experience)
 * [Setup](#setup)
     * [Checking if your copy is up to date](#checking-if-your-copy-is-up-to-date)
     * [Installing the mod](#installing-sotr)
 * [Credits](#credits)
 * [Story Synopsis](#story-synopsis)
 * [Character Summary](#character-summary)
+
+# Before you start playing
+
+## Hints
+
+The Shadow of the Ramlord (SOTR) reuses Amnesia's hints system. In order for you to see these relevant hints, you need to make sure to enable it through the game's menu:
+
+![options-screenshot](screen-options.png)
+
+Don't worry, we block all hints from the base game so that you know each hint is relevant.
+
+## Experience
+
+SOTR is not like other custom stories. We do not promise exciting gameplay or complex puzzles. The purpose of SOTR is to develop a world with a story. The more you pay attention to the story itself, the more value you'll gain from the mod.
+
+If you are a let's player, we enourage you to experience the storytelling in full. Not paying attention to the story will most likely result in a very boring playthrough.
 
 # Setup
 
@@ -99,32 +118,19 @@ After you installed SOTR into your game, just run it and select the `Custom Stor
 
 You should see the mod listed there.
 
-# Questions & Answers
-
-------
-**What kind of mod is this?**
-
-SOTR is mainly a mod that tries to tell a story. Don't expect too much action. Slow and deliberate players will be rewarded with a chilling story.
-
-------
-**Why does your code look so weird?**
-
-SOTR uses a Preprocessor to compile our source code into something Amnesia understands. To see the original source code, visit our [Repository](https://dev.azure.com/dark-craft-studios/_git/shadow-of-the-ramlord?path=%2Fsource&version=GBmaster).
-
-------
 # Credits
 
 * Glenn Winkelmann – Project Lead
-* [Petr "Spelos" Sedláček](https://github.com/petrspelos) – Lead Programmer
-* Nick Keil – Secondary Programmer
+* [Petr "Spelos" Sedláček](https://github.com/petrspelos) – Programming
 * David Bodtcher – Voice Acting Johan Gray
 * Michael Schwalbe – Voice Acting Anton Caecea
 * Stephanie Tobin – Voice Acting Emilia Hall
 * Frictional Weekly – Level Designer
-* Slanderous – Level Detailer
 
 **Special Thanks***
 * (Here for the inception, presented great ideas, or did not see the project through.)
+* Slanderous – Level Detailer
+* Nick Keil – Secondary Programmer
 * Ian Wiese – Writing Assistance
 * [Karba](https://github.com/Karbashit) – Level Designer
 * Jarod D’Camp – Lead Composer
@@ -136,7 +142,6 @@ SOTR uses a Preprocessor to compile our source code into something Amnesia under
 * HollowInside
 * Seth
 * TiMan
-* [Karba](https://github.com/Karbashit)
 
 # Story Synopsis
 

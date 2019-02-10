@@ -173,7 +173,7 @@
     </CATEGORY>
 
     <CATEGORY Name="Credits">
-        <Entry Name="FinalCredits">*Dark Craft Studios[br][br]*The Shadow of the Ramlord[br][br]*Project Lead[br]Glenn Winkelmann[br][br]*Programming[br]Peter "Spelos" Sedlacek[br]Nicholas Keil[br][br]*Voice Actors[br]David Bodtcher[br]Michael Schwalbe[br]Stephanie Tobin[br][br]*Special Thanks[br]Slanderous (Level Details)[br]FrictionalWeekly (Level Details / Geometry)[br]HollowInside (Primary Playtester)[br]Many, many helpful in the Amnesia community[br][br]*Asset Credits[br][br]See Readme For Complete Details</Entry>
+        <Entry Name="FinalCredits">*Dark Craft Studios[br][br]*The Shadow of the Ramlord[br][br]*Project Lead[br]Glenn Winkelmann[br][br]*Programming[br]Peter "Spelos" Sedlacek[br][br]*Voice Actors[br]David Bodtcher[br]Michael Schwalbe[br]Stephanie Tobin[br][br]*Special Thanks[br]Nick Keil - (Secondary Programming)[br]Slanderous (Level Details)[br]FrictionalWeekly (Level Details / Geometry)[br]Karba (Level Design)[br]HollowInside (Primary Playtester)[br][br]Many, many helpful in the Amnesia community[br][br]*Asset Credits[br][br][br]See the User Manual For Complete Details:[br]https://github.com/dark-craft-studios/Shadow-Of-The-Ramlord[br][br][br][br]This project is licensed under the Non-Profit Open Software License 3.0 (NPOSL-3.0)</Entry>
     </CATEGORY>
 
     <CATEGORY Name="LoadingMessages">
