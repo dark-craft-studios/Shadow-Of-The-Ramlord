@@ -13,6 +13,7 @@ void OnStart()
     RegisterCallbacks();
     SetPlayerJumpDisabled(true);
     StartAmbience(sntAmbEnd);
+    RemoveItem("Lantern");
 }
 
 void RegisterCallbacks()
@@ -171,7 +172,7 @@ void CreditsConversation(string t)
 
     if(stage == 0)
     {
-        FadeOut(5.0f);
+        FadeOut(1.0f);
         SetPlayerMoveSpeedMul(0.0f);
         SetPlayerRunSpeedMul(0.0f);
         SetPlayerActive(false);
