@@ -71,8 +71,19 @@ void JohanGateLine(string a, string b, int state)
 void JohanAltarLine(string &in asParent, string &in asChild, int alState)
 {
     AltarMiniCutscene("");
-    GiveHint("", "Hints", "PrologueHint1", 10.0f);
     PlayVoiceOnPlayerAndSlowdown("PR_Johan_4.ogg");
+    AddTimer("", 20.0f, "ShowAltarHint");
+}
+
+void ShowAltarHint(string t)
+{
+    GiveHint("", "Hints", "PrologueHint1", 10.0f);
+    AddTimer("StuckPreventionTimer", 20.0f, "GettingStuckHint");
+}
+
+void GettingStuckHint(string t)
+{
+    SetMessage("Hints", "PrologueHint1", 0.0f);
 }
 
 // ============================================================================
@@ -111,6 +122,7 @@ void AltarMiniCutscene(string t)
 // ============================================================================
 void Meditate(string item, string entity)
 {
+    RemoveTimer("StuckPreventionTimer");
     SetEntityActive("JohanVoice_3", false);
     PlayVoiceOnPlayerAndSlowdown("PR_Johan_5.ogg");
     SetEntityActive("TidyUp", true);
