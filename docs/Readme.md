@@ -26,7 +26,7 @@ Don't worry, we block all hints from the base game so that you know each hint is
 
 SOTR is not like other custom stories. We do not promise exciting gameplay or complex puzzles. The purpose of SOTR is to develop a world with a story. The more you pay attention to the story itself, the more value you'll gain from the mod.
 
-If you are a let's player, we enourage you to experience the storytelling in full. Not paying attention to the story will most likely result in a very boring playthrough.
+If you are a let's player, we encourage you to experience the storytelling in full. Not paying attention to the story will most likely result in a very boring playthrough.
 
 # Setup
 
@@ -40,9 +40,9 @@ Your Amnesia installation also requires a specific version in order for SOTR to 
 
 ### ![Windows](icon-windows.png) On Windows
 
-* Make sure you have ran the game at least once before.
+* Make sure you have run the game at least once before.
 
-> After the first run of the game, Amnesia creates important configuration files that will allow you to verify wether or not your copy meets the requirement for SOTR to work as intended.
+> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
 
 * The version of your game must be `1.4` or later.
 
@@ -60,9 +60,9 @@ The first line of this file is your game's version.
 
 ### ![Linux](icon-linux.png) On Linux
 
-* Make sure you have ran the game at least once before.
+* Make sure you have run the game at least once before.
 
-> After the first run of the game, Amnesia creates important configuration files that will allow you to verify wether or not your copy meets the requirement for SOTR to work as intended.
+> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
 
 * The version of your game must be `1.4` or later.
 
@@ -147,7 +147,7 @@ You should see the mod listed there.
 
 :warning: **SPOILER**
 
-It is the late 18th Century. Johan Gray is a member of a secretive order; a fictional sect of the Church designated to the investigation of occult activity. His official title is Witchfinder. He is an experienced hunter of man and monster, and has burnt at the stake countless guilty and innocent. He investigates his cases with a cold, calculated malice. Like the many Witchfinder’s before him, his task is to investigate and then root out cults, supernatural beings or dark entities/sects at any governing cost, including his life or sanity.
+It is the late 18th Century. Johan Gray is a member of a secretive order; a fictional sect of the Church designated to the investigation of occult activity. His official title is Witchfinder. He is an experienced hunter of man and monster and has burnt at the stake of countless guilty and innocent. He investigates his cases with cold, calculated malice. Like the many Witchfinder’s before him, his task is to investigate and then root out cults, supernatural beings or dark entities/sects at any governing cost, including his life or sanity.
 
 The events of our story take place after Johan receives a letter from Emilia Hall. She had recently married Anton Caecea in a very public, scandalous marriage arranged by Anton and her Father. She wrote to Johan with claims of occultism, necromancy and stark horrors in Caecea Manor. Convinced, Johan opts to investigate and potentially rescue Emilia – even if it means killing her.
 
@@ -165,11 +165,11 @@ The memories are too strong and Johan passes out. We awaken to find ourselves be
 
 He, too, is brought back to life. We awaken in a cell in the catacombs. Anton has found us sporting, and a good challenge. He lets us loose in his catacombs to discover the secrets that he has found. But Johan, ever vigilant in his task, seeks out holy water and salt -- two common items in the inventory of anyone wishing to banish what they summoned -- to complete a ritual of his own. He aims to purify the whole manor, rendering Anton powerless.
 
-Anton himself, however, has taken his eye off us. He’s interrogating a former servant of his about being too close to Emilia. He confesses, at the end, that he is the one who smuggled the letter out for him addressed to Johan. Furious, Anton kills the man off screen, and charges to find Emilia. A distant cave in is heard, with an ominous, ethereal voice laughing throughout.
+Anton himself, however, has taken his eye off us. He’s interrogating a former servant of his about being too close to Emilia. He confesses, in the end, that he is the one who smuggled the letter out for him addressed to Johan. Furious, Anton kills the man off screen, and charges to find Emilia. A distant cave in is heard, with an ominous, ethereal voice laughing throughout.
 
 We find Anton is trapped under rock and beam, slowly dying. The Witchfinder and Necromancer exchange pointed words before Anton finally dies. With no recourse, Johan walks down a long hall to find Emilia’s dungeon. She beckons us inside into complete darkness.
 
-Johan and Emilia talk in the pitch darkness for a few moments before she reveals the sounds of a baby crying. Johan proclaims that the baby must die, and a knife is heard unsheathed. Emilia agrees in solemn protest before music fades us into credits.
+Johan and Emilia talk in the pitch darkness for a few moments before she reveals the sounds of a baby crying. Johan proclaims that the baby must die, and a knife is heard unsheathed. Emilia agrees in solemn protest before the music fades us into credits.
 
 # Character Summary
 
@@ -179,9 +179,9 @@ Johan and Emilia talk in the pitch darkness for a few moments before she reveals
 
 Johan Gray is the protagonist of our story. He is a veteran Witchfinder, a member of a secretive order of the Church designated for rooting out occult or supernatural situations while keeping the curtains drawn. Few, if any, know about them and their order dates back hundreds of years before the events of Ramlord.
 
-Responding immediately to the letter that Emilia Hall smuggled out of Caecea, he undertakes the journey and brings with him the devices he’ll need to investigate, and banish, the madness.
+Responding immediately to the letter that Emilia Hall smuggled out of Caecea, he undertakes the journey and brings with him the devices he’ll need to investigate and banish the madness.
 
-His personality is stern, stoic and often frigid. Throughout the narrative his will is almost entirely unbending, and his singular focus is ending the Necromancer’s reign in Caecea and freeing Emilia by any means required. He is well educated, calmly spoken, adeptly talented at his craft and is an equal challenge to Anton and his malignant schemes.
+His personality is stern, stoic and often frigid. Throughout the narrative, his will is almost entirely unbending, and his singular focus is ending the Necromancer’s reign in Caecea and freeing Emilia by any means required. He is well educated, calmly spoken, adeptly talented at his craft and is an equal challenge to Anton and his malignant schemes.
 
 **Baroness Emilia Hall**
 
@@ -189,14 +189,14 @@ Emilia Hall is a woman possessed by the visual world around her. She is a painte
 
 It is when she reaches the age of twenty that she is told of her marriage to a local baron, Anton Caecea. Her own father sold her to him, undoubtedly due to the affiliation both men possess to the cult of the Ramlord. At Caecea, Anton feigns a life of normalcy which slowly begins to disintegrate around her until only a vestigial shell remains, as to deceive the public eye. The reality is that after less than a year with her newly beloved, she is involved deeply in his Necromantic proclivities.
 
-A pregnancy, originally assumed innocuous, ends in stillbirth due to her physical termination of it. She suspected that Anton was corrupt, and did not want to raise a child in the cold and distant manor. After a small period of time, and during a final state ball, she smuggled out a letter requesting the Witchfinder’s intervention as she suspects Necromancy among other malignant things of her husband. Anton, furious at the death of their first child, then abandons both her and Caecea for months on end. Without a means to escape, or company, or food, she resolves to kill herself rather than live as a shadow in an empty manor.
+A pregnancy originally assumed innocuous, ends in stillbirth due to her physical termination of it. She suspected that Anton was corrupt, and did not want to raise a child in the cold and distant manner. After a small period of time, and during a final state ball, she smuggled out a letter requesting the Witchfinder’s intervention as she suspects Necromancy among other malignant things of her husband. Anton, furious at the death of their first child, then abandons both her and Caecea for months on end. Without a means to escape, or company, or food, she resolves to kill herself rather than live as a shadow in an empty manor.
 
-However, this was part of Anton’s plan to manipulate her further.  He brings her back from the dead, whereupon she is deeply tortured and scarred, and is both visibly and mentally different. And to her continued horror, she is assaulted and another pregnancy -- purely in the occult, as they are both now inhuman -- happens. She is chained up in the deepest catacombs, as to not kill this second child.
+However, this was part of Anton’s plan to manipulate her further.  He brings her back from the dead, whereupon she is deeply tortured and scarred and is both visibly and mentally different. And to her continued horror, she is assaulted and another pregnancy -- purely in the occult, as they are both now inhuman -- happens. She is chained up in the deepest catacombs, as to not kill this second child.
 
-Despite the frailty of her situation, she is strong willed and focused on survival by any means. In the end, when Johan suggests he must kill the crying child in her arms, she allows him to do so, showing her determination in not allowing the evil around her to be victorious.
+Despite the frailty of her situation, she is strong-willed and focused on survival by any means. At the end, when Johan suggests he must kill the crying child in her arms, she allows him to do so, showing her determination in not allowing the evil around her to be victorious.
 
 **Necromancer Anton Caecea**
 
-Anton Caecea is the Baron of Caecea Manor. He is the ruler of a few holdings, and sees himself as a fledgling player in the royal court he so wishes to dominate. Whereas the local politicians would scramble for favor or influence, Anton instead took to courting the most sinister and malignant sources. He would entertain delegations of sorcerers, mystics, acolytes and pagans. But before long he receives a delegation from far away who surmise that he is failing in bringing back their deity, the Ramlord. They suggest a physical avatar is required -- a son, that the Ramlord may embody.
+Anton Caecea is the Baron of Caecea Manor. He is the ruler of a few holdings and sees himself as a fledgling player in the royal court he so wishes to dominate. Whereas the local politicians would scramble for favor or influence, Anton instead took to courting the most sinister and malignant sources. He would entertain delegations of sorcerers, mystics, acolytes, and pagans. But before long he receives a delegation from far away who surmise that he is failing in bringing back their deity, the Ramlord. They suggest a physical avatar is required -- a son, that the Ramlord may embody.
 
-As a villain his purpose is to stand opposite of Johan at all odds, and do what he can to deliver upon the world the incarnation of the Ramlord that has been asked of him, in return of untold power and might in his political climate. While he dies in the narrative due to his own hubris, we come to learn that his mission was ultimately one of many. His arc is one of controlled evil towards utter madness, by the conclusion and his untimely demise.
+As a villain, his purpose is to stand opposite of Johan at all odds, and do what he can to deliver upon the world the incarnation of the Ramlord that has been asked of him, in return of untold power and might in his political climate. While he dies in the narrative due to his own hubris, we come to learn that his mission was ultimately one of many. His arc is one of controlled evil towards utter madness, by the conclusion and his untimely demise.
