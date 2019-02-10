@@ -893,7 +893,7 @@ void DisplaySeededDoorMessage(string entryBase, int min, int max)
 
 void OnGraveyardEnter(string a, string b, int s)
 {
-    GiveHint("", "Hints", "OverlookGraveyardHint", 20.0f);
+    GiveHint("GraveyardHint", "Hints", "OverlookGraveyardHint", 20.0f);
     SetEntityActive(entGraveyardBlockBox, true);
 }
 
