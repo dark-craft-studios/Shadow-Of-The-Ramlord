@@ -670,6 +670,8 @@ void OnWaterPickedUp()
 void OnSaltPickedUp()
 {
         PlayVoice("RC_Johan_12.ogg");
+        SetLampLit("EndLight_1", false, true);
+        SetLampLit("EndLight_2", false, true);
 }
 
 void OnAllItemsPickedUp()

@@ -188,12 +188,17 @@ void UnlockLibraryDoor(string item, string entity)
 }
 
 // ============================================================================
-// KEPLER NOTE
+// KEPLER NOTE + DOOR LOCK
 // ============================================================================
 void PickUpBallroomNote(string e)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
     SetSwingDoorLocked("LibraryDoor", true, true);
+    AddTimer("", 2.0f, "CloseLibraryDoor");
+}
+
+void CloseLibraryDoor(string &in asTimer)
+{
     SetPropStaticPhysics("LibraryDoor", true);
 }
 

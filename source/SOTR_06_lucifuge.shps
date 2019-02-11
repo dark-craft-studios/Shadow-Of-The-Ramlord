@@ -231,6 +231,7 @@ void CreditsConversation(string t)
     }
     else if(stage == 11)
     {
+        PlayMusic("SOTR_lullaby.ogg", false, 0.5f, 0.5f, 1.0f, false);
         StartCredits("", false, "Credits", "FinalCredits", 4); 
     }
     else
