@@ -1,6 +1,6 @@
 #define MyAppName "The Shadow of the Ramlord"
 #define RamlordCsFolderName "shadow-of-the-ramlord"
-#define MyAppVersion "1.4"
+#define MyAppVersion "1.6"
 #define MyAppPublisher "Dark Craft Studios"
 #define MyAppURL "https://www.moddb.com/mods/the-shadow-of-the-ramlord"
 
@@ -25,7 +25,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=installer-res\license.rtf
 InfoBeforeFile=installer-res\readme.rtf
-OutputBaseFilename=amnesia-sotr-v1-4
+OutputBaseFilename=amnesia-sotr-v1-6
 SetupIconFile=installer-res\sotr.ico
 Compression=lzma
 SolidCompression=yes
@@ -41,7 +41,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Files]
 Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\custom_story_settings.cfg"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\extra_english.lang"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\README.md"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\SOTR_thumbnail.png"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\entities\*"; DestDir: "{app}\entities"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\Program Files (x86)\Steam\steamapps\common\Amnesia The Dark Descent\custom_stories\shadow-of-the-ramlord\graphics\*"; DestDir: "{app}\graphics"; Flags: ignoreversion recursesubdirs createallsubdirs
