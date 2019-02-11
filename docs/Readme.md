@@ -126,11 +126,11 @@ You should see the mod listed there.
 * Michael Schwalbe – Voice Acting Anton Caecea
 * Stephanie Tobin – Voice Acting Emilia Hall
 * Frictional Weekly – Level Designer
+* Nick Keil – Secondary Programmer
 
 **Special Thanks***
 * (Here for the inception, presented great ideas, or did not see the project through.)
 * Slanderous – Level Detailer
-* Nick Keil – Secondary Programmer
 * Ian Wiese – Writing Assistance
 * [Karba](https://github.com/Karbashit) – Level Designer
 * Jarod D’Camp – Lead Composer
