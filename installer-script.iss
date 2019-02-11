@@ -1,6 +1,6 @@
 #define MyAppName "The Shadow of the Ramlord"
 #define RamlordCsFolderName "shadow-of-the-ramlord"
-#define MyAppVersion "1.2"
+#define MyAppVersion "1.4"
 #define MyAppPublisher "Dark Craft Studios"
 #define MyAppURL "https://www.moddb.com/mods/the-shadow-of-the-ramlord"
 
@@ -25,7 +25,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=installer-res\license.rtf
 InfoBeforeFile=installer-res\readme.rtf
-OutputBaseFilename=amnesia-sotr-v1-2
+OutputBaseFilename=amnesia-sotr-v1-4
 SetupIconFile=installer-res\sotr.ico
 Compression=lzma
 SolidCompression=yes
