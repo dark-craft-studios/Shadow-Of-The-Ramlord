@@ -173,7 +173,7 @@
     </CATEGORY>
 
     <CATEGORY Name="Credits">
-        <Entry Name="FinalCredits">*Dark Craft Studios[br][br]*The Shadow of the Ramlord[br][br]*Project Lead[br]Glenn Winkelmann[br][br]*Programming[br]Peter "Spelos" Sedlacek[br][br]*Voice Actors[br]David Bodtcher[br]Michael Schwalbe[br]Stephanie Tobin[br][br]*Special Thanks[br]Nick Keil - (Secondary Programming)[br]Slanderous (Level Details)[br]FrictionalWeekly (Level Details / Geometry)[br]Karba (Level Design)[br]HollowInside (Primary Playtester)[br][br]Many, many helpful in the Amnesia community[br][br]*Asset Credits[br][br][br]See the User Manual For Complete Details:[br]https://github.com/dark-craft-studios/Shadow-Of-The-Ramlord[br][br][br][br]This project is licensed under the Non-Profit Open Software License 3.0 (NPOSL-3.0)</Entry>
+        <Entry Name="FinalCredits">*Dark Craft Studios[br][br]*The Shadow of the Ramlord[br][br]*Project Lead[br]Glenn Winkelmann[br][br]*Programming[br]Peter "Spelos" Sedlacek[br][br]*Voice Actors[br]David Bodtcher[br]Michael Schwalbe[br]Stephanie Tobin[br][br]*Special Thanks[br]Nick Keil - (Secondary Programming)[br]Slanderous (Level Details)[br]Matt aka FrictionalWeekly (Level Details / Geometry / Custom Music)[br]Karba (Level Design / Custom Music)[br][br]*Playtesters[br][br]HollowInside[br]Seth[br]TiMan[br][br][br]Many, many helpful in the Amnesia community[br][br]*Asset Credits[br][br][br]See the User Manual For Complete Details:[br]https://github.com/dark-craft-studios/Shadow-Of-The-Ramlord/blob/master/docs/Readme.md[br][br][br][br]This project is licensed under the Non-Profit Open Software License 3.0 (NPOSL-3.0)</Entry>
     </CATEGORY>
 
     <CATEGORY Name="LoadingMessages">
@@ -217,8 +217,8 @@
     </CATEGORY>
 
         <CATEGORY Name="Hints">
-        <Entry Name="PrologueHint1">My grimoire, the Key of Solomon, could be used to interact with various places of interest around Caecea.</Entry>
-        <Entry Name="OverlookHint1">I used the tomes in my possession to quickly enact the ritual downstairs, lest that creature found me.</Entry>
+        <Entry Name="PrologueHint1">My grimoire, the Key of Solomon, could be used to interact with the altar.</Entry>
+        <Entry Name="OverlookHint1">With the three tomes, and the Key of Solomon, I completed the ritual in the basement.</Entry>
         <Entry Name="OverlookGraveyardHint">I used the Key of Solomon outside to meditate above the tombstone.</Entry>
     </CATEGORY>
 

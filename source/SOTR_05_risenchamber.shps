@@ -686,6 +686,17 @@ void StartEnding(string a, string b, int s)
     SetPlayerActive(false);
     StartPlayerLookAt("LookAtDoor", 0.8f, 1.5f, "");
     SetSwingDoorLocked("BlowOpenDoor1", false, true);
+    SetEntityActive("CaveInBox_1", true);
+    SetEntityActive("CaveInBox_2", true);
+    SetEntityActive("CaveInBox_3", true);
+    SetEntityActive("CaveInStatue_1", true);
+    SetEntityActive("CaveInStatue_2", true);
+    SetEntityActive("CaveInStatue_3", true);
+    SetEntityActive("CaveInStatue_4", true);
+    SetEntityActive("CaveInStatue_5", true);
+    SetEntityActive("CaveInStatue_6", true);
+    SetEntityActive("CaveInStatue_7", true);
+    SetEntityActive("CaveInStatue_8", true);
 }
 
 void EndingDialog(string t)

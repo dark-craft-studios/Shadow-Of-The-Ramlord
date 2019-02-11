@@ -14,7 +14,7 @@ const string psDustImpact = "ps_dust_impact_vert.ps";
 const string psDustPaperBlow = "ps_dust_paper_blow.ps";
 
 const string sntSecondAmbience = "03_amb.snt";
-const string sntThirdAmbience = "ambience_wind_eerie.snt";
+const string sntThirdAmbience = "24_amb2.snt";
 const string sntEnemyNotice = "notice.snt";
 const string sntEnemyNoticeLong = "notice_long.snt";
 const string sntPhonoHumm = "SOTR_broken_phono.snt";
@@ -895,12 +895,9 @@ void DisplaySeededDoorMessage(string entryBase, int min, int max)
 void OnGraveyardEnter(string a, string b, int s)
 {
     GiveHint("GraveyardHint", "Hints", "OverlookGraveyardHint", 20.0f);
+    SetSwingDoorClosed("mansion_1", true, true);
+    SetSwingDoorLocked("mansion_1", true, true);
     SetEntityActive(entGraveyardBlockBox, true);
     StopAmbience();
-    AddTimer("", 1.0f, "FinalAmbience");
-}
-
-void FinalAmbience(string &in asTimer)
-{
     StartAmbience(sntThirdAmbience);
 }
