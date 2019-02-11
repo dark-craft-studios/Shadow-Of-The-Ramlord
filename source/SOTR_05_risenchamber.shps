@@ -86,6 +86,7 @@ void OnStart()
     SetPlayerMoveSpeedMul(0.0f);
     SetPlayerRunSpeedMul(0.0f);
     RegisterCallbacks();
+    RemoveItem("Lantern");
 }
 
 void RegisterCallbacks()
@@ -694,9 +695,6 @@ void StartEnding(string a, string b, int s)
     SetEntityActive("CaveInStatue_3", true);
     SetEntityActive("CaveInStatue_4", true);
     SetEntityActive("CaveInStatue_5", true);
-    SetEntityActive("CaveInStatue_6", true);
-    SetEntityActive("CaveInStatue_7", true);
-    SetEntityActive("CaveInStatue_8", true);
 }
 
 void EndingDialog(string t)
