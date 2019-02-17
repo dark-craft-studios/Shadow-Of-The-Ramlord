@@ -11,6 +11,7 @@
 * [Credits](#credits)
 * [Story Synopsis](#story-synopsis)
 * [Character Summary](#character-summary)
+* [Behind the Scenes](#behind-the-scenes)
 
 # Before you start playing
 
@@ -200,3 +201,19 @@ Despite the frailty of her situation, she is strong-willed and focused on surviv
 Anton Caecea is the Baron of Caecea Manor. He is the ruler of a few holdings and sees himself as a fledgling player in the royal court he so wishes to dominate. Whereas the local politicians would scramble for favor or influence, Anton instead took to courting the most sinister and malignant sources. He would entertain delegations of sorcerers, mystics, acolytes, and pagans. But before long he receives a delegation from far away who surmise that he is failing in bringing back their deity, the Ramlord. They suggest a physical avatar is required -- a son, that the Ramlord may embody.
 
 As a villain, his purpose is to stand opposite of Johan at all odds, and do what he can to deliver upon the world the incarnation of the Ramlord that has been asked of him, in return of untold power and might in his political climate. While he dies in the narrative due to his own hubris, we come to learn that his mission was ultimately one of many. His arc is one of controlled evil towards utter madness, by the conclusion and his untimely demise.
+
+# Behind the Scenes
+
+## SOTR - Cut Baronness scare
+
+This scare was supposed to be included with the mod, but we decided to cut it due to time and staff constraints.
+At that time, you would be able to see Emilia in a ghost form throughout the story.
+Well, at least you now get a sneak peek at what Emilia might have looked like.
+
+- **[WATCH NOW ON YOUTUBE](https://youtu.be/aoY5T4sW6Cw)**
+
+## SOTR - Git repository visualization
+
+When developing the custom story, we used a source control system called `git` using git we were able to share changes with each other and make sure we don't lose any changes. The following video is a visualization of our Repository from December 2018 till the release. Each "blast" of a character is one of our members committing a change to the project. That could be as small as changing a line of code, or as big as reworking a whole map.
+
+- **[WATCH NOW ON YOUTUBE](https://youtu.be/Q-c5MjbkbOc)**
