@@ -212,6 +212,12 @@ Well, at least you now get a sneak peek at what Emilia might have looked like.
 
 - **[WATCH NOW ON YOUTUBE](https://youtu.be/aoY5T4sW6Cw)**
 
+## SOTR - Programming timelapse
+
+Here's a timelapse near the end of development, where the lead programmer is refining the Overlook Library and writing the API docs. This is a fair representation of what programming for SOTR usually was like.
+
+- **[WATCH NOW ON YOUTUBE](https://youtu.be/mFT4hzVZonw)**
+
 ## SOTR - Git repository visualization
 
 When developing the custom story, we used a source control system called `git` using git we were able to share changes with each other and make sure we don't lose any changes. The following video is a visualization of our Repository from December 2018 till the release. Each "blast" of a character is one of our members committing a change to the project. That could be as small as changing a line of code, or as big as reworking a whole map.
