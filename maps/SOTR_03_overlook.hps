@@ -1,5 +1,37 @@
-#include "Ramlord.ihps"
-#include "Meditation.ihps"
+#include "_RamlordCommon.hps"
+#include "_Meditation.hps"
+
+void Preload()
+{
+    PreloadSound("03_amb.snt");
+    PreloadSound("24_amb2.snt");
+    PreloadSound("notice.snt");
+    PreloadSound("notice_long.snt");
+    PreloadSound("SOTR_broken_phono.snt");
+    PreloadSound("SOTR_skeletalk_phono.snt");
+    PreloadSound("09_wind_whirl.snt");
+    PreloadSound("13_whomp.snt");
+    PreloadSound("15_bang_fall.snt");
+    PreloadSound("15_bang.snt");
+    PreloadSound("15_body_impact.snt");
+    PreloadSound("lurker_hit_wood.snt");
+    PreloadSound("ui_terror_meter.snt");
+    PreloadSound("OL_Emilia_Scream.snt");
+    PreloadSound("ambience_hollow_tinker.snt");
+    PreloadSound("scare_wood_creak_scuf.snt");
+    PreloadSound("19_breath.snt");
+    PreloadSound("react_breath_slow.snt");
+    PreloadSound("chains_monster_man_run_soft.snt");
+    PreloadSound("scare_wood_creak_walk.snt");
+    PreloadSound("step_walk_female_wood.snt");
+    PreloadSound("flashback_flash.snt");
+    PreloadParticleSystem("ps_dust_push.ps");
+    PreloadParticleSystem("ps_hit_wood.ps");
+    PreloadParticleSystem("ps_dust_impact_vert.ps");
+    PreloadParticleSystem("ps_dust_paper_blow.ps");
+    PreloadParticleSystem("ps_dust_falling_big_feet.ps");
+    PreloadParticleSystem("ps_rose_petals_wind.ps");
+}
 
 // ============================================================================
 // CONSTANTS
@@ -60,6 +92,7 @@ const string entEmiliaScreamArea = "EmiliaScreamArea";
 // ============================================================================
 void OnStart()
 {
+    CommonOnStart();
     RegisterCallbacks();
     StartAmbience("ambience_hollow_tinker.snt");
     FadeOut(0.0f);
@@ -70,8 +103,14 @@ void OnStart()
 
 void OnEnter()
 {
+    CommonOnEnter();
+    Preload();
     PlayMusic("SOTR_overlook.ogg", false, 0.5f, 0.5f, 1.0f, false);
-    PreloadSound("ambience_hollow_tinker.snt");
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
 }
 
 void RegisterCallbacks()
@@ -128,7 +167,7 @@ void RegisterCallbacks()
 // ============================================================================
 // VOICE ACTING
 // ============================================================================
-void DoorConversation(string a, string b, int state)
+void DoorConversation(string &in a, string &in b, int state)
 {
     SetLanternActive(false, true);
     PlaySoundAtEntity("scare_wood_creak_scuf.snt", "EmiliasFeet");
@@ -160,7 +199,7 @@ void DoorConversationEnd()
 // ============================================================================
 // ENDING SEQUENCE - AUDIO
 // ============================================================================
-void EndingLine1(string a, string b, int state)
+void EndingLine1(string &in a, string &in b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_8.ogg");
     SetPropStaticPhysics(graveyardDoor, true);
@@ -181,7 +220,7 @@ const string brBookItemBase     = "RitualBook_";
 const string brBookStaticBase   = "RitualBookStatic_";
 const string brRitualArea       = "RitualBookArea";
 
-void PlaceRitualBook(string item, string entity)
+void PlaceRitualBook(string &in item, string &in entity)
 {
     RemoveItem(item);
 
@@ -197,7 +236,7 @@ void CheckRitualCompletion()
     OnRitualCompleted();
 }
 
-void OnRitualBookPickup(string entity)
+void OnRitualBookPickup(string &in entity)
 {
     AddLocalVarInt("brPickedBooks", 1);
     int currentBookNumber = GetLocalVarInt("brPickedBooks");
@@ -267,14 +306,14 @@ void StartRitualCutscene() { RitualScare(); }
 
 // <DEBUG>
 
-void DEBUG(string t)
+void DEBUG(string &in t)
 {
     RitualScare();
 }
 
 // </DEBUG>
 
-void RitualScare(string t)
+void RitualScare(string &in t)
 {
     int stage = GetLocalVarInt("RitualScare");
     AddLocalVarInt("RitualScare", 1);
@@ -368,7 +407,7 @@ void OnRitualVoiceDone()
 // ============================================================================
 // VOICEOVER LINES
 // ============================================================================
-void OnMapEnterVoiceover(string t)
+void OnMapEnterVoiceover(string &in t)
 {
     FadeIn(3.0f);
     PlayVoiceOnPlayerAndSlowdown("OL_Johan_1.ogg");
@@ -378,7 +417,7 @@ void OnMapEnterVoiceover(string t)
     AddTimer("", 5.0f, "BasementCreaks");
 }
 
-void BasementCreaks(string t)
+void BasementCreaks(string &in t)
 {
     int stage = GetLocalVarInt("BasementCreaks");
     AddLocalVarInt("BasementCreaks", 1);
@@ -417,7 +456,7 @@ void BasementCreaks(string t)
     AddTimer("", delay, "BasementCreaks");
 }
 
-void EnsureFirstTombPickup(string a, string b, int s)
+void EnsureFirstTombPickup(string &in a, string &in b, int s)
 {
     if(s == CollisionState::onlyEnter)
     {
@@ -457,7 +496,7 @@ const float rbPointR = 0.31f;
 const float rbPointG = 0.0f;
 const float rbPointB = 0.0f;
 
-void RitualBookPickupScene(string t)
+void RitualBookPickupScene(string &in t)
 {
     int stage = GetLocalVarInt("RitualBookPickupScene");
     AddLocalVarInt("RitualBookPickupScene", 1);
@@ -468,7 +507,7 @@ void RitualBookPickupScene(string t)
         SetEntityActive("RitualBook_1_Static", true);
         SetPlayerActive(false);
         StartPlayerLookAt("RitualBook_1_Static", 1.0f, 1.5f, "");
-        // TODO (Peter) : Comment FadeLightTo
+        // TODO (Spelos) : Comment FadeLightTo
         FadeLightTo(
             "rbSpot", 
             rbSpotR, 
@@ -526,7 +565,7 @@ void OnLastBookPickup()
     CompleteQuest("OverlookQuest");
 }
 
-void AfterLastBookScene(string t)
+void AfterLastBookScene(string &in t)
 {
     int stage = GetLocalVarInt("AfterLastBookScene");
     AddLocalVarInt("AfterLastBookScene", 1);
@@ -576,7 +615,7 @@ void AfterLastBookScene(string t)
 
 void AfterLastBookScene() { AfterLastBookScene(""); }
 
-void WindOpenEscapeDoor(string t)
+void WindOpenEscapeDoor(string &in t)
 {
     int stage = GetLocalVarInt("WindOpenEscapeDoor");
     AddLocalVarInt("WindOpenEscapeDoor", 1);
@@ -597,7 +636,7 @@ void WindOpenEscapeDoor(string t)
 
 void WindOpenEscapeDoor() { WindOpenEscapeDoor(""); }
 
-void OnStatueEvent(string a, string b, int s)
+void OnStatueEvent(string &in a, string &in b, int s)
 {
     SetLampLit(entStatueCandle1, false, true);
     SetLampLit(entStatueCandle2, false, true);
@@ -620,13 +659,13 @@ void RegisterChaseBoxes()
     );
 }
 
-void OnChaseBox1(string a, string b, int s)
+void OnChaseBox1(string &in a, string &in b, int s)
 {
     AddDebugMessage("Chase box 1", false);
     ChaseBoxEvent1();
 }
 
-void ChaseBoxEvent1(string t)
+void ChaseBoxEvent1(string &in t)
 {
     int stage = GetLocalVarInt("ChaseBoxEvent1");
     AddLocalVarInt("ChaseBoxEvent1", 1);
@@ -703,19 +742,19 @@ string GetRandomDoorBangArea()
     return "DoorBangArea_" + RandInt(1, 5);
 }
 
-void OnChaseBox2(string a, string b, int s)
+void OnChaseBox2(string &in a, string &in b, int s)
 {
     AddDebugMessage("Chase box 2", false);
     SetLocalVarInt("ChaseStage2", 1);
 }
 
-void OnChaseBox3(string a, string b, int s)
+void OnChaseBox3(string &in a, string &in b, int s)
 {
     StartPlayerLookAtNormal("RitualBookArea");
     SetEntityActive("ChaseBlockBoxCellar", true);
 }
 
-void OnBasementDoorInteract(string t)
+void OnBasementDoorInteract(string &in t)
 {
     if(GetLocalVarInt("EmiliaIntroDone") == 1) { return; }
 
@@ -774,7 +813,7 @@ void OnBasementDoorInteract()
     OnBasementDoorInteract("");
 }
 
-void EmiliaMakeFewSteps(string t)
+void EmiliaMakeFewSteps(string &in t)
 {
     int stage = GetLocalVarInt("EmiliaMakeFewSteps");
     AddLocalVarInt("EmiliaMakeFewSteps", 1);
@@ -791,13 +830,13 @@ void EmiliaMakeFewSteps(string t)
 // ============================================================================
 // MONSTER SHUT DOOR EVENT
 // ============================================================================
-void SuitorDoorEvent(string a, string b, int s)
+void SuitorDoorEvent(string &in a, string &in b, int s)
 {
     GiveSanityDamageSmall();
     PlayStepRunSounds();
 }
 
-void PlayStepRunSounds(string t)
+void PlayStepRunSounds(string &in t)
 {
     int stage = GetLocalVarInt("PlayStepRunSounds");
     AddLocalVarInt("PlayStepRunSounds", 1);
@@ -823,12 +862,12 @@ void PlayStepRunSounds(string t)
 
 void PlayStepRunSounds() { PlayStepRunSounds(""); }
 
-void PhonoStart(string a, string b, int s)
+void PhonoStart(string &in a, string &in b, int s)
 {
     PlaySoundAtEntity(sntPhonoHumm, entPhono);
 }
 
-void PhonoEnd(string a, string b, int s)
+void PhonoEnd(string &in a, string &in b, int s)
 {
     PlaySoundAtEntity(sntSkeletalkPhono, entPhono);
 }
@@ -836,13 +875,13 @@ void PhonoEnd(string a, string b, int s)
 // ============================================================================
 // FINAL MEDITATION
 // ============================================================================
-void OnGraveInteract(string item, string entity)
+void OnGraveInteract(string &in item, string &in entity)
 {
     StartMeditation(entity, "OnGraveMeditation");
     RemoveItem(item);
 }
 
-void OnGraveMeditation(string t)
+void OnGraveMeditation(string &in t)
 {
     int stage = GetLocalVarInt("OnGraveMeditation");
     AddLocalVarInt("OnGraveMeditation", 1);
@@ -873,12 +912,12 @@ void OnGraveMeditation()
     OnGraveMeditation("");
 }
 
-void OnDoorInteract(string entity)
+void OnDoorInteract(string &in entity)
 {
     OnDoorInteractMessage(entity);
 }
 
-void OnDoorInteractMessage(string entity)
+void OnDoorInteractMessage(string &in entity)
 {
     if(GetSwingDoorLocked(entity))
     {
@@ -886,13 +925,13 @@ void OnDoorInteractMessage(string entity)
     }
 }
 
-void DisplaySeededDoorMessage(string entryBase, int min, int max)
+void DisplaySeededDoorMessage(string &in entryBase, int min, int max)
 {
     int seed = RandInt(min, max);
     SetMessage("DoorMessages", entryBase + seed, 0.0f);
 }
 
-void OnGraveyardEnter(string a, string b, int s)
+void OnGraveyardEnter(string &in a, string &in b, int s)
 {
     GiveHint("GraveyardHint", "Hints", "OverlookGraveyardHint", 20.0f);
     SetSwingDoorClosed("mansion_1", true, true);

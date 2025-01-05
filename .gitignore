@@ -2,9 +2,6 @@
 settings.json
 tasks.json
 
-# Compile targets ignores
-*.hps
-
 # Amnesia ignores
 *.map_cache
 *.map_cache_fastload

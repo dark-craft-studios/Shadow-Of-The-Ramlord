@@ -1,11 +1,9 @@
-#include "AmnesiaSignatures.cpp"
-
 // ----------------------------------------------------------------------------
 // Storm ambience - sa
 // ----------------------------------------------------------------------------
 const int saThunderAreasCount = 2;
 
-void PlaySoundAtThunderAreas(string filename, float fadeTime)
+void PlaySoundAtThunderAreas(string &in filename, float fadeTime)
 {
     for(int i = 0; i <= saThunderAreasCount; i++)
     {
@@ -100,7 +98,12 @@ void StartThunderFadeLights(float[] baseIntensity, float fade, int intensity)
     }
 }
 
-void FadeThunderLights(string base, int count, float[] rgba, float fade, float mult)
+void FadeThunderLights(
+    string &in base,
+    int count,
+    float[] rgba,
+    float fade,
+    float mult)
 {
     for(int i = 0; i <= count; i++)
     {

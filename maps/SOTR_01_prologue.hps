@@ -1,5 +1,15 @@
-#include "Ramlord.ihps"
-#include "Meditation.ihps"
+#include "_RamlordCommon.hps"
+#include "_Meditation.hps"
+
+void Preload()
+{
+    PreloadSound("ambience_wind_eerie_no3d.snt");
+    PreloadSound("SOTR_Crowdsounds.snt");
+    PreloadSound("SOTR_NecroWind.snt");
+    PreloadSound("door_level_wood_locked.snt");
+    PreloadSound("react_breath_slow.snt");
+    PreloadSound("flashback_flash.snt");
+}
 
 // ============================================================================
 // USED ENTITIES
@@ -25,11 +35,23 @@ const string MapId = "01";
 // ============================================================================
 void OnStart()
 {
+    CommonOnStart();
     FadeOut(0.0f);
     FadeIn(3.0f);
     PlayMusicOnce("11_paper_howl.ogg");
     StartAmbience(ambOutside);
     RegisterCallbacks();
+}
+
+void OnEnter()
+{
+    Preload();
+    CommonOnEnter();
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
 }
 
 void RegisterCallbacks()
@@ -46,7 +68,7 @@ void RegisterCallbacks()
 // ============================================================================
 // GATE EVENT
 // ============================================================================
-void GateOpenEvent(string a, string b, int state)
+void GateOpenEvent(string &in a, string &in b, int state)
 {
     AutoSave();
     AddPropForce(entEntranceGate, 0, 0, -200, "World");
@@ -58,12 +80,12 @@ void GateOpenEvent(string a, string b, int state)
 // ============================================================================
 // JOHAN NARRATION EVENTS
 // ============================================================================
-void JohanInitialLine(string a, string b, int state)
+void JohanInitialLine(string &in a, string &in b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("PR_Johan_1.ogg");
 }
 
-void JohanGateLine(string a, string b, int state)
+void JohanGateLine(string &in a, string &in b, int state)
 {
     PlayVoiceOnPlayerAndSlowdown("PR_Johan_2.ogg");
 }
@@ -75,13 +97,13 @@ void JohanAltarLine(string &in asParent, string &in asChild, int alState)
     AddTimer("", 20.0f, "ShowAltarHint");
 }
 
-void ShowAltarHint(string t)
+void ShowAltarHint(string &in t)
 {
     GiveHint("", "Hints", "PrologueHint1", 10.0f);
     AddTimer("StuckPreventionTimer", 20.0f, "GettingStuckHint");
 }
 
-void GettingStuckHint(string t)
+void GettingStuckHint(string &in t)
 {
     SetMessage("Hints", "PrologueHint1", 0.0f);
 }
@@ -89,7 +111,7 @@ void GettingStuckHint(string t)
 // ============================================================================
 // ALTAR MINI CUTSCENE
 // ============================================================================
-void AltarMiniCutscene(string t)
+void AltarMiniCutscene(string &in t)
 {
     int stage = GetLocalVarInt("AltarMiniCutscene");
     AddLocalVarInt("AltarMiniCutscene", 1);
@@ -120,7 +142,7 @@ void AltarMiniCutscene(string t)
 // ============================================================================
 // MEDITATION
 // ============================================================================
-void Meditate(string item, string entity)
+void Meditate(string &in item, string &in entity)
 {
     RemoveTimer("StuckPreventionTimer");
     SetEntityActive("JohanVoice_3", false);
@@ -133,7 +155,7 @@ void Meditate(string item, string entity)
     StartMeditation(entity, "OnMeditating");
 }
 
-void OnMeditating(string t)
+void OnMeditating(string &in t)
 {
     AddTimer("", 1.0f, "EndMeditation");
 }
@@ -141,7 +163,7 @@ void OnMeditating(string t)
 // ============================================================================
 // ANTON AND EMILIA EVENT
 // ============================================================================
-void AntonAndEmiliaEvent(string a, string b, int state)
+void AntonAndEmiliaEvent(string &in a, string &in b, int state)
 {
     SetSwingDoorClosed(entEntranceGate, true, true);
     SetSwingDoorLocked(entEntranceGate, true, true);
@@ -151,7 +173,7 @@ void AntonAndEmiliaEvent(string a, string b, int state)
     AntonAndEmiliaCutscene("");
 }
 
-void AntonAndEmiliaCutscene(string t)
+void AntonAndEmiliaCutscene(string &in t)
 {
     int stage = GetLocalVarInt("AntonAndEmiliaCutscene");
     AddLocalVarInt("AntonAndEmiliaCutscene", 1);
@@ -209,19 +231,19 @@ void AntonAndEmiliaVoiceLoop() { AntonAndEmiliaCutscene(""); }
 // ============================================================================
 // DOOR INTERACTIONS
 // ============================================================================
-void OnMainDoorInteract(string entity)
+void OnMainDoorInteract(string &in entity)
 {
     SetMessage("DoorMessages", "PrologueMainLocked", 0.0f);
     PlaySoundAtEntity("door_level_wood_locked.snt");
 }
 
-void OnLockDoorInteract(string entity)
+void OnLockDoorInteract(string &in entity)
 {
     SetMessage("DoorMessages", "Generic_Locked_4", 0.0f);
     PlaySoundAtEntity("door_level_wood_locked.snt");
 }
 
-void PrologueSecondLocked(string entity)
+void PrologueSecondLocked(string &in entity)
 {
     if(!GetSwingDoorLocked(entity)) { return; }
     SetMessage("DoorMessages", "PrologueSecondLocked", 0.0f);
@@ -232,9 +254,8 @@ void PrologueSecondLocked(string entity)
     }
 }
 
-void ExitShed(string entity)
+void ExitShed(string &in entity)
 {
     StopAmbience(0.5f);
     StartAmbience(ambOutside);
 }
-

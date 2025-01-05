@@ -1,4 +1,13 @@
-#include "Ramlord.ihps"
+#include "_RamlordCommon.hps"
+
+void Preload()
+{
+    PreloadSound("24_knife.snt");
+    PreloadSound("24_cut.snt");
+    PreloadSound("ui_torture.snt");
+    PreloadSound("15_amb_metal.snt");
+    PreloadSound("ambience_hollow_tinker.snt");
+}
 
 // ============================================================================
 // CONSTANTS
@@ -23,6 +32,7 @@ const string MapId = "04";
 
 void OnStart()
 {
+    CommonOnStart();
     StartAmbience("ambience_hollow_tinker.snt");
     SetPlayerActive(false);
     FadeOut(0.0f);
@@ -30,11 +40,22 @@ void OnStart()
     EmiliasDream();
 }
 
+void OnEnter()
+{
+    Preload();
+    CommonOnEnter();
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
+}
+
 // ============================================================================
 // MAIN CUTSCENE
 // ============================================================================
 
-void EmiliasDream(string t)
+void EmiliasDream(string &in t)
 {
     int stage = GetLocalVarInt("EmiliasDream");
     AddLocalVarInt("EmiliasDream", 1);
@@ -42,7 +63,6 @@ void EmiliasDream(string t)
 
     if(stage == 0)
     {
-        AutoSave();
         StartPlayerLookAtNormal(entLetter);
         FadePlayerFOVMulTo(0.1f, 0.05f);
         FadePlayerRollTo(15.0f, 0.25f, 0.3f);
@@ -340,12 +360,12 @@ void EmiliasDream()
     EmiliasDream("");
 }
 
-void AsyncSob(string t)
+void AsyncSob(string &in t)
 {
     PlayGuiSound(oggSob1, 1.0f);
 }
 
-void HeartbeatTimer(string t)
+void HeartbeatTimer(string &in t)
 {
     PlayGuiSound(oggHeart, 0.5f);
     if(GetLocalVarInt("StopHeartbeat") == 1) { return; }

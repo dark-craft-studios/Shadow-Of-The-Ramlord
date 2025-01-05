@@ -5,9 +5,10 @@
 * [Before you start playing](#before-you-start-playing)
     * [Hints](#hints)
     * [Experience](#experience)
+    * [Debug](#debug)
 * [Setup](#setup)
-    * [Checking if your copy is up to date](#checking-if-your-copy-is-up-to-date)
     * [Installing the mod](#installing-sotr)
+    * [Checking if your copy is up to date](#checking-if-your-copy-is-up-to-date)
 * [Credits](#credits)
 * [Story Synopsis](#story-synopsis)
 * [Character Summary](#character-summary)
@@ -21,7 +22,7 @@ The Shadow of the Ramlord (SOTR) reuses Amnesia's hints system. In order for you
 
 ![options-screenshot](screen-options.png)
 
-Don't worry, we block all hints from the base game so that you know each hint is relevant.
+We block all hints from the base game so that you know each hint is relevant.
 
 ## Experience
 
@@ -29,57 +30,27 @@ SOTR is not like other custom stories. We do not promise exciting gameplay or co
 
 If you are a let's player, we encourage you to experience the storytelling in full. Not paying attention to the story will most likely result in a very boring playthrough.
 
+## Debug
+
+⚠️ If you are a mod creator yourself and you have Debug Mode enabled, the game will skip certain cutscenes. It is recommended to disable Debug Mode before playing the mod.
+
 # Setup
 
 In order to install and play The Shadow of the Ramlord (SOTR), you require the following:
 
 - A copy of [Amnesia: The Dark Descent](http://amnesiagame.com/#main)
+    - ![Steam](icon-steam.png) [Steam version](https://store.steampowered.com/app/57300/Amnesia_The_Dark_Descent/) is recommended but not required
 
-Your Amnesia installation also requires a specific version in order for SOTR to function properly.
+> ⚠️ Amnesia introduced breaking changes in version 1.5
 
-## Checking if your copy is up to date
+_If your game is version 1.4 or earlier, make sure to download the correct version of the mod._
 
-### ![Windows](icon-windows.png) On Windows
-
-* Make sure you have run the game at least once before.
-
-> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
-
-* The version of your game must be `1.4` or later.
-
-To see which version of Amnesia you are running, navigate to the following directory:
-
-```
-My Documents/Amnesia/Main
-```
-
-If you ran Amnesia at least once, you should find a `hpl.log` file in this directory.
-
-You can open this file in a text editor of your choice. (For example by dragging it into an open Notepad window)
-
-The first line of this file is your game's version.
-
-### ![Linux](icon-linux.png) On Linux
-
-* Make sure you have run the game at least once before.
-
-> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
-
-* The version of your game must be `1.4` or later.
-
-To see which version of Amnesia you are running, navigate to the following directory:
-
-```
-~/.frictionalgames/Amnesia/Main
-```
-
-If you ran Amnesia at least once, you should find a `hpl.log` file in this directory.
-
-You can open this file in a text editor of your choice.
-
-The first line of this file is your game's version.
 
 ## Installing SOTR
+
+### ![Steam](icon-steam.png) Steam (all platforms)
+
+> 📅 The Steam Workshop compatible version of the mod will be released soon...
 
 ### ![Windows](icon-windows.png) On Windows
 
@@ -112,6 +83,53 @@ On Linux, the only method of installation is manual.
 Inside the `.zip` file you downloaded, is the full custom story. In order to install it, you need to place the `shadow-of-the-ramlord` folder inside your Amnesia's `custom_stories` folder.
 
 If you purchased Amnesia through steam, the path to your `custom_stories` folder usually is: `~/.steam/steam/steamapps/common/Amnesia The Dark Descent/custom_stories`.
+## Checking if your copy is up to date
+
+### ![Steam](icon-steam.png) Steam (all platforms)
+
+Steam makes sure your copy of the game is up to date. If you also obtained the mod through Steam Workshop, the mod should automatically be up to date as well.
+
+> 💡 If you need to reinstall the mod, unsubscribing from it and resubscribing should be fine. Note that this will not remove your saved files.
+
+### ![Windows](icon-windows.png) On Windows
+
+* Make sure you have run the game at least once before.
+
+> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
+
+* The version of your game must be `1.4` for SOTR legacy and `1.5` or later for newer versions
+
+To see which version of Amnesia you are running, navigate to the following directory:
+
+```
+My Documents/Amnesia/Main
+```
+
+If you ran Amnesia at least once, you should find a `hpl.log` file in this directory.
+
+You can open this file in a text editor of your choice. (For example by dragging it into an open Notepad window)
+
+The first line of this file is your game's version.
+
+### ![Linux](icon-linux.png) On Linux
+
+* Make sure you have run the game at least once before.
+
+> After the first run of the game, Amnesia creates important configuration files that will allow you to verify whether or not your copy meets the requirement for SOTR to work as intended.
+
+* The version of your game must be `1.4` for SOTR legacy and `1.5` or later for newer versions
+
+To see which version of Amnesia you are running, navigate to the following directory:
+
+```
+~/.frictionalgames/Amnesia/Main
+```
+
+If you ran Amnesia at least once, you should find a `hpl.log` file in this directory.
+
+You can open this file in a text editor of your choice.
+
+The first line of this file is your game's version.
 
 # Starting SOTR
 
@@ -122,7 +140,7 @@ You should see the mod listed there.
 # Credits
 
 * Glenn Winkelmann – Project Lead
-* [Petr "Spelos" Sedláček](https://github.com/petrspelos) – Programming
+* [Spelos](https://github.com/petrspelos) – Programming
 * David Bodtcher – Voice Acting Johan Gray
 * Michael Schwalbe – Voice Acting Anton Caecea
 * Stephanie Tobin – Voice Acting Emilia Hall
@@ -201,25 +219,3 @@ Despite the frailty of her situation, she is strong-willed and focused on surviv
 Anton Caecea is the Baron of Caecea Manor. He is the ruler of a few holdings and sees himself as a fledgling player in the royal court he so wishes to dominate. Whereas the local politicians would scramble for favor or influence, Anton instead took to courting the most sinister and malignant sources. He would entertain delegations of sorcerers, mystics, acolytes, and pagans. But before long he receives a delegation from far away who surmise that he is failing in bringing back their deity, the Ramlord. They suggest a physical avatar is required -- a son, that the Ramlord may embody.
 
 As a villain, his purpose is to stand opposite of Johan at all odds, and do what he can to deliver upon the world the incarnation of the Ramlord that has been asked of him, in return of untold power and might in his political climate. While he dies in the narrative due to his own hubris, we come to learn that his mission was ultimately one of many. His arc is one of controlled evil towards utter madness, by the conclusion and his untimely demise.
-
-# Behind the Scenes
-
-## SOTR - Cut Baronness scare
-
-This scare was supposed to be included with the mod, but we decided to cut it due to time and staff constraints.
-At that time, you would be able to see Emilia in a ghost form throughout the story.
-Well, at least you now get a sneak peek at what Emilia might have looked like.
-
-- **[WATCH NOW ON YOUTUBE](https://youtu.be/aoY5T4sW6Cw)**
-
-## SOTR - Programming timelapse
-
-Here's a timelapse near the end of development, where the lead programmer is refining the Overlook Library and writing the API docs. This is a fair representation of what programming for SOTR usually was like.
-
-- **[WATCH NOW ON YOUTUBE](https://youtu.be/mFT4hzVZonw)**
-
-## SOTR - Git repository visualization
-
-When developing the custom story, we used a source control system called `git` using git we were able to share changes with each other and make sure we don't lose any changes. The following video is a visualization of our Repository from December 2018 till the release. Each "blast" of a character is one of our members committing a change to the project. That could be as small as changing a line of code, or as big as reworking a whole map.
-
-- **[WATCH NOW ON YOUTUBE](https://youtu.be/Q-c5MjbkbOc)**

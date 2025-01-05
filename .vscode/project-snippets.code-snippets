@@ -19,7 +19,7 @@
 		"scope": "cpp",
 		"prefix": "TimerSwitch",
 		"body": [
-			"void $1(string t)",
+			"void $1(string &in t)",
 			"{",
 			"    int stage = GetLocalVarInt(\"$1\");",
 			"    AddLocalVarInt(\"$1\", 1);",

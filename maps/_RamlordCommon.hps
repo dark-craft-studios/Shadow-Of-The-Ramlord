@@ -9,7 +9,7 @@
 // ============================================================================
 // This section contains the injections for OnEnter, OnLeave, and OnStart
 // functions of every script that includes this API
-void OnEnter()
+void CommonOnEnter()
 {
     AutoloadLoadingScreen();
     AutoDisplayNameSetup();
@@ -17,7 +17,7 @@ void OnEnter()
     EnforceItemsIfNeeded();
 }
 
-void OnStart()
+void CommonOnStart()
 {
     // Duplicate call in order to prevent
     // vanilla Amnesia sanity effects when
@@ -27,7 +27,7 @@ void OnStart()
     BlockAllVanillaHints();
 }
 
-void OnLeave()
+void CommonOnLeave()
 {
     StopAmbience();
     ClearSavedMaps();
@@ -61,7 +61,7 @@ void AutoDisplayNameSetup()
     );
 }
 
-string GetDisplayNameByMapId(string mapId)
+string GetDisplayNameByMapId(string &in mapId)
 {
     if(mapId == "00") { return "Introduction"; }
     if(mapId == "01") { return "CaeceaCourtyard"; }
@@ -75,7 +75,7 @@ string GetDisplayNameByMapId(string mapId)
 // ============================================================================
 // VOICE OVER AND SLOWING DOWN
 // ============================================================================
-void PlayVoiceOnPlayerAndSlowdown(string soundFile)
+void PlayVoiceOnPlayerAndSlowdown(string &in soundFile)
 {
     SetPlayerRunSpeedMul(0.0f);
     SetPlayerMoveSpeedMul(0.55f);
@@ -84,7 +84,7 @@ void PlayVoiceOnPlayerAndSlowdown(string soundFile)
     SetEffectVoiceOverCallback("ResetPlayerState");
 }
 
-void PlayVoiceOnEntityAndSlowdown(string soundFile, string entity)
+void PlayVoiceOnEntityAndSlowdown(string &in soundFile, string &in entity)
 {
     SetPlayerRunSpeedMul(0.0f);
     SetPlayerMoveSpeedMul(0.55f);
@@ -93,7 +93,7 @@ void PlayVoiceOnEntityAndSlowdown(string soundFile, string entity)
     SetEffectVoiceOverCallback("ResetPlayerState");
 }
 
-void PlayVoice(string file)
+void PlayVoice(string &in file)
 {
     AddEffectVoice(
         file, /* Sound File */
@@ -107,7 +107,7 @@ void PlayVoice(string file)
     );
 }
 
-void PlayVoice(string file, string entity)
+void PlayVoice(string &in file, string &in entity)
 {
     AddEffectVoice(
         file,  /* Sound File */
@@ -124,7 +124,7 @@ void PlayVoice(string file, string entity)
 // ============================================================================
 // SKYBOX
 // ============================================================================
-void SetupSkybox(string texture)
+void SetupSkybox(string &in texture)
 {
     SetSkyBoxActive(true);
     SetSkyBoxTexture(texture);
@@ -139,12 +139,12 @@ void SetupSkybox(string texture)
 // ============================================================================
 // OTHER
 // ============================================================================
-void FadeInTimer(string t)
+void FadeInTimer(string &in t)
 {
     FadeIn(2.0f);
 }
 
-void ResetPlayerStateTimer(string t)
+void ResetPlayerStateTimer(string &in t)
 {
     ResetPlayerState();
 }
@@ -187,7 +187,7 @@ enum CollisionState
 // ============================================================================
 // OVERLOADS
 // ============================================================================
-void PlaySoundAtEntity(string name, string file, string entity)
+void PlaySoundAtEntity(string &in name, string &in file, string &in entity)
 {
     PlaySoundAtEntity(
         name, /* Sound name */
@@ -198,7 +198,7 @@ void PlaySoundAtEntity(string name, string file, string entity)
     );
 }
 
-void PlaySoundAtEntity(string file, string entity, float fadeTime)
+void PlaySoundAtEntity(string &in file, string &in entity, float fadeTime)
 {
     PlaySoundAtEntity(
         "",       /* Sound name */
@@ -209,7 +209,11 @@ void PlaySoundAtEntity(string file, string entity, float fadeTime)
     );
 }
 
-void PlaySoundAtEntity(string name, string file, string entity, float fadeTime)
+void PlaySoundAtEntity(
+    string &in name,
+    string &in file,
+    string &in entity,
+    float fadeTime)
 {
     PlaySoundAtEntity(
         name,     /* Sound name */
@@ -221,19 +225,19 @@ void PlaySoundAtEntity(string name, string file, string entity, float fadeTime)
 }
 // ----------------------------------------------------------------------------
 
-void PlaySoundAtEntity(string file, string entity)
+void PlaySoundAtEntity(string &in file, string &in entity)
 {
     PlaySoundAtEntity(file, entity, 0.0f);
 }
 
-void PlaySoundAtEntity(string file)
+void PlaySoundAtEntity(string &in file)
 {
     PlaySoundAtEntity(file, "Player", 0.0f);
 }
 
 // ----------------------------------------------------------------------------
 
-void PlayMusicOnce(string musicFile)
+void PlayMusicOnce(string &in musicFile)
 {
     PlayMusic(
         musicFile, /* File */
@@ -245,7 +249,7 @@ void PlayMusicOnce(string musicFile)
     );
 }
 
-void PlayMusic(string musicFile)
+void PlayMusic(string &in musicFile)
 {
     PlayMusic(
         musicFile, /* File */
@@ -259,7 +263,7 @@ void PlayMusic(string musicFile)
 
 // ----------------------------------------------------------------------------
 
-void AddUseItemCallback(string item, string entity, string callback)
+void AddUseItemCallback(string &in item, string &in entity, string &in callback)
 {
     AddUseItemCallback(
         "",       /* Name */
@@ -272,14 +276,14 @@ void AddUseItemCallback(string item, string entity, string callback)
 
 // ----------------------------------------------------------------------------
 
-void ChangeMap(string map)
+void ChangeMap(string &in map)
 {
     ChangeMap(map, "PlayerStartArea_1", "", "");
 }
 
 // ----------------------------------------------------------------------------
 
-void CreateParticleSystemAtEntity(string file, string entity)
+void CreateParticleSystemAtEntity(string &in file, string &in entity)
 {
     CreateParticleSystemAtEntity(
         "", /* Name */ 
@@ -292,17 +296,20 @@ void CreateParticleSystemAtEntity(string file, string entity)
 // ============================================================================
 // ABSTRACTIONS
 // ============================================================================
-void GiveQuestIfNotAdded(string questName)
+void GiveQuestIfNotAdded(string &in questName)
 {
     if(QuestIsAdded(questName)) { return; }
     AddQuest(questName, questName);
 }
 
-void CompleteQuest(string questName) { CompleteQuest(questName, questName); }
+void CompleteQuest(string &in questName)
+{
+    CompleteQuest(questName, questName);
+}
 
 // ----------------------------------------------------------------------------
 
-void StartAmbience(string soundFile)
+void StartAmbience(string &in soundFile)
 {
     PlaySoundAtEntity(
         "amb",     /* Sound name */
@@ -324,14 +331,14 @@ void FadeOutMusic(float fadeOut)
 
 // ----------------------------------------------------------------------------
 
-void LightLampWithEffects(string lamp)
+void LightLampWithEffects(string &in lamp)
 {
     SetLampLit(lamp, true, true);
 }
 
 // ----------------------------------------------------------------------------
 
-void AddSinglePlayerCollideCallback(string area, string callbackFunc)
+void AddSinglePlayerCollideCallback(string &in area, string &in callbackFunc)
 {
     AddEntityCollideCallback(
         "Player",     /* Entity A */
@@ -344,7 +351,7 @@ void AddSinglePlayerCollideCallback(string area, string callbackFunc)
 
 // ----------------------------------------------------------------------------
 
-void AddRepeatedPlayerCollideCallback(string area, string callbackFunc)
+void AddRepeatedPlayerCollideCallback(string &in area, string &in callbackFunc)
 {
     AddEntityCollideCallback(
         "Player",     /* Entity A */
@@ -357,7 +364,10 @@ void AddRepeatedPlayerCollideCallback(string area, string callbackFunc)
 
 // ----------------------------------------------------------------------------
 
-void CreateParticleSystemAtEntityWithAlpha(string psFile, string entity, float alpha)
+void CreateParticleSystemAtEntityWithAlpha(
+    string &in psFile,
+    string &in entity,
+    float alpha)
 {
     CreateParticleSystemAtEntityExt(
         "", /* name */
@@ -378,7 +388,10 @@ void CreateParticleSystemAtEntityWithAlpha(string psFile, string entity, float a
 
 // ----------------------------------------------------------------------------
 
-void AddEntitySingleCollideCallback(string a, string b, string callback)
+void AddEntitySingleCollideCallback(
+    string &in a,
+    string &in b,
+    string &in callback)
 {
     AddEntityCollideCallback(
         a,        /* Entity A */
@@ -391,7 +404,7 @@ void AddEntitySingleCollideCallback(string a, string b, string callback)
 
 // ----------------------------------------------------------------------------
 
-void StartPlayerLookAtNormal(string entity)
+void StartPlayerLookAtNormal(string &in entity)
 {
     StartPlayerLookAt(
         entity, /* Entity */
@@ -401,7 +414,7 @@ void StartPlayerLookAtNormal(string entity)
     );
 }
 
-void StartPlayerLookAtFast(string entity)
+void StartPlayerLookAtFast(string &in entity)
 {
     StartPlayerLookAt(
         entity, /* Entity */
@@ -421,11 +434,10 @@ void GiveSanityDamageSmall()
 // ============================================================================
 // DOOR MESSAGES
 // ============================================================================
-void ShowDoorMessage(string entry)
+void ShowDoorMessage(string &in entry)
 {
     SetMessage("DoorMessages", entry, 0.0f);
 }
-
 
 // ----------------------------------------------------------------------------
 
@@ -486,7 +498,7 @@ void EnforceEssentialItems()
     );
 }
 
-void EnforceItem(string itemName, string itemFile)
+void EnforceItem(string &in itemName, string &in itemFile)
 {
     if(!HasItem(itemName))
     {
@@ -494,8 +506,7 @@ void EnforceItem(string itemName, string itemFile)
     }
 }
 
-void FadeLightOut(string light)
+void FadeLightOut(string &in light)
 {
     FadeLightTo(light, 0.0f, 0.0f, 0.0f, 1.0f, -1.0f, 0.5f);
 }
-

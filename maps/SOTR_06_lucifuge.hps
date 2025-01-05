@@ -1,4 +1,10 @@
-#include "Ramlord.ihps"
+#include "_RamlordCommon.hps"
+
+void Preload()
+{
+    PreloadSound("15_amb.snt");
+    PreloadSound("scare_baby_cry.snt");
+}
 
 // ----------------------------------------------------------------------------
 // MAIN
@@ -8,12 +14,24 @@ const string sntAmbEnd = "15_amb.snt";
 
 void OnStart()
 {
+    CommonOnStart();
     StopPlayerLookAt();
     BlockAllVanillaHints();
     RegisterCallbacks();
     SetPlayerJumpDisabled(true);
     StartAmbience(sntAmbEnd);
     RemoveItem("Lantern");
+}
+
+void OnEnter()
+{
+    Preload();
+    CommonOnEnter();
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
 }
 
 void RegisterCallbacks()
@@ -26,13 +44,13 @@ void RegisterCallbacks()
 }
 ///ENDING CONVERSATION SEQUENCES
 
-void EndingConvo(string a, string b, int s)
+void EndingConvo(string &in a, string &in b, int s)
 {
     LastConversation();
     AutoSave();
 }
 
-void LastConversation(string t)
+void LastConversation(string &in t)
 {
     int stage = GetLocalVarInt("LastConversation");
     AddLocalVarInt("LastConversation", 1);
@@ -153,18 +171,18 @@ void LastConversation()
     LastConversation("");
 }
 
-void HerCall(string a, string b, int s)
+void HerCall(string &in a, string &in b, int s)
 {
         PlayVoiceOnEntityAndSlowdown("LU_Emilia_1.ogg", "EmiliaVoice1");
         StartPlayerLookAt("EmiliaVoice1", 1.0f, 2.5f, "");
 }
 
-void LastWords(string a, string b, int s)
+void LastWords(string &in a, string &in b, int s)
 {
     CreditsConversation();
 }
 
-void CreditsConversation(string t)
+void CreditsConversation(string &in t)
 {
     int stage = GetLocalVarInt("CreditsConversation");
     AddLocalVarInt("CreditsConversation", 1);
@@ -249,12 +267,12 @@ void CreditsConversation()
 
 ///NEW MUSIC
 
-void EndingMusic(string a, string b, int s)
+void EndingMusic(string &in a, string &in b, int s)
 {
     PlayMusic("15_event_girl_mother.ogg", false, 0.3f, 2.0f, 1, true);
 }
 
-void BabyScare(string a, string b, int s)
+void BabyScare(string &in a, string &in b, int s)
 {
     PlayMusic("15_event_elevator.ogg", false, 0.3f, 3.0f, 1, true);
     PlaySoundAtEntity("", "scare_baby_cry.snt", "BabySound", 2.0f, false);

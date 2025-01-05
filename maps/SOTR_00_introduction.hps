@@ -1,6 +1,19 @@
-#include "Ramlord.ihps"
-#include "00_Introduction_StormLightSystem.ihps"
-#include "00_Introduction_Cutscene.ihps"
+#include "_RamlordCommon.hps"
+#include "SOTR_00_Introduction_StormLightSystem.hps"
+#include "SOTR_00_Introduction_Cutscene.hps"
+
+void Preload()
+{
+    PreloadSound("ambience_hollow_tinker.snt");
+    PreloadSound("unlock_door.snt");
+    PreloadSound("insanity_whisper.snt");
+    PreloadSound("door_level_wood_open.snt");
+    PreloadSound("SOTR_broken_phono.snt");
+    PreloadSound("SOTR_general_thunder.snt");
+    PreloadSound("SOTR_17_amb.snt");
+    PreloadSound("general_rain_m.snt");
+    PreloadSound("ambience_wind_eerie_no3d.snt");
+}
 
 // ============================================================================
 // DEBUG CONSTANTS
@@ -47,10 +60,12 @@ const string MapId = "00";
 // ============================================================================
 void OnStart()
 {
+    CommonOnStart();
+    AddDebugMessage("OnStart (...introduction.hps)", false);
     RegisterCallbacks();
 
     // <DEBUG>
-    if (dbgSkipIntro || ScriptDebugOn())
+    if (dbgSkipIntro)
     {
         AddTimer("", 0.5f, "OnSkipIntro");
 
@@ -63,8 +78,19 @@ void OnStart()
     IntroductionCutscene("");
 }
 
+void OnEnter()
+{
+    Preload();
+    CommonOnEnter();
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
+}
+
 // Called from Cutscene
-void OnIntroFinished(string t)
+void OnIntroFinished(string &in t)
 {
     StartAmbience(sntAmbience);
     SetPlayerLampOil(0.0f);
@@ -73,9 +99,9 @@ void OnIntroFinished(string t)
 }
 
 // <DEBUG>
-void OnSkipIntro(string t)
+void OnSkipIntro(string &in t)
 {
-    TeleportPlayer(areaHouseStart); // Area defined in Cutscene.ihps
+    TeleportPlayer(areaHouseStart); // Area defined in Cutscene.hps
 }
 // </DEBUG>
 
@@ -90,14 +116,14 @@ void RegisterCallbacks()
 // ============================================================================
 // CALLBACK DEFINITIONS
 // ============================================================================
-void UseKeyOnCloset(string key, string door)
+void UseKeyOnCloset(string &in key, string &in door)
 {
     SetSwingDoorLocked(door, false, true);
     PlaySoundAtEntity(sntDoorUnlock, door);
     RemoveItem(key);
 }
 
-void OnExitDoorInteract(string entity)
+void OnExitDoorInteract(string &in entity)
 {
     if(!AllRequiredItemsPickedUp()) 
     {
@@ -127,14 +153,14 @@ void NextMapOrWaitForVoiceover()
 // ============================================================================
 const int requiredItemsCount = 3;
 
-bool ItemIsRequired(string itemName)
+bool ItemIsRequired(string &in itemName)
 {
     return itemName == entFirstNote ||
     itemName == entLantern ||
     itemName == entClearsightBook;
 }
 
-void OnRequiredItemPickup(string entity)
+void OnRequiredItemPickup(string &in entity)
 {
     // Ignore not required items
     if (!ItemIsRequired(entity)) { return; }
@@ -168,7 +194,7 @@ void OnFirstNotePickedUp()
     AutoSave();
 }
 
-void INJohanLineOne(string t)
+void INJohanLineOne(string &in t)
 {
     PlayVoiceOnPlayerAndSlowdown("IN_Johan_3.ogg");
 }
@@ -194,7 +220,7 @@ void OnAllItemsPickedUp()
 // ============================================================================
 // DOOR MESSAGES
 // ============================================================================
-void OnDoorInteract(string entity)
+void OnDoorInteract(string &in entity)
 {
     if (GetSwingDoorLocked(entity) == false) { return; }
 
@@ -229,10 +255,9 @@ void GoToNextMap()
     );
 }
 
-void PhonoState(string entity, int state)
+void PhonoState(string &in entity, int state)
 {
     if(state != 1) { return; }
 
     PlaySoundAtEntity(sntBrokenPhono, "SOTRPhonograph");
 }
-

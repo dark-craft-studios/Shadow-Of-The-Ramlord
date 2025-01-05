@@ -1,4 +1,30 @@
-#include "Ramlord.ihps"
+#include "_RamlordCommon.hps"
+
+void Preload()
+{
+    PreloadSound("scare_scratch.snt");
+    PreloadSound("00_creaks.snt");
+    PreloadSound("15_bang_fall.snt");
+    PreloadSound("15_bang.snt");
+    PreloadSound("03_in_a_bottle.snt");
+    PreloadSound("05_event_bottles.snt");
+    PreloadSound("man_whimp_loop_no_delay.snt");
+    PreloadSound("24_knife.snt");
+    PreloadSound("24_cut.snt");
+    PreloadSound("24_chain_rattle.snt");
+    PreloadSound("18_pump_rumble.snt");
+    PreloadSound("general_piano01.snt");
+    PreloadSound("ui_terror_meter.snt");
+    PreloadSound("ui_torture.snt");
+    PreloadSound("19_inject.snt");
+    PreloadSound("player_stand.snt");
+    PreloadSound("player_crouch.snt");
+    PreloadSound("SOTR_skeletalk.snt");
+    PreloadSound("explosion_rock_large.snt");
+    PreloadSound("step_walk_rock.snt");
+    PreloadSound("04_hole_squeal.snt");
+    PreloadParticleSystem("ps_dust_falling_rumble.ps");
+}
 
 // ============================================================================
 // USED ENTITIES
@@ -24,8 +50,8 @@ const string entBonerSoundArea1     = "BonerSound_1";
 const string entBonerSoundArea2     = "BonerSound_2";
 
 const string entStairsEventArea     = "StairsEventArea";
-const string entStairsSoundArea1     = "StairsSoundArea_1";
-const string entStairsSoundArea2     = "StairsSoundArea_2";
+const string entStairsSoundArea1    = "StairsSoundArea_1";
+const string entStairsSoundArea2    = "StairsSoundArea_2";
 const string entStairsParticleArea  = "StairsParticleArea";
 
 const string entOfficePreEventArea  = "OfficePreEventArea";
@@ -34,12 +60,12 @@ const string entOfficeSoundArea     = "OfficeSoundArea";
 
 const string entScratchEventArea    = "ScratchEventArea";
 const string entScrachSoundLeft     = "ScratchArea_Left";
-const string entScrachSoundRight     = "ScratchArea_Right";
+const string entScrachSoundRight    = "ScratchArea_Right";
 
 const string entAsylumStartArea     = "AsylumEventStart";
 const string entAsylumEndArea       = "AsylumEventEnd";
 const string entAsylumPrisonerBase  = "Prisoner_";
-const int entAsylumPrisonerLast    = 7;
+const int entAsylumPrisonerLast     = 7;
 const string entGravesSoundArea     = "GravesSoundArea";
 
 const string entBlowOpenDoor        = "BlowOpenDoor1";
@@ -80,6 +106,7 @@ const string MapId = "05";
 
 void OnStart()
 {
+    CommonOnStart();
     FadeOut(0.0f);
     StopPlayerLookAt();
     TortureDialog();
@@ -87,6 +114,17 @@ void OnStart()
     SetPlayerRunSpeedMul(0.0f);
     RegisterCallbacks();
     RemoveItem("Lantern");
+}
+
+void OnEnter()
+{
+    Preload();
+    CommonOnEnter();
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
 }
 
 void RegisterCallbacks()
@@ -108,13 +146,13 @@ void RegisterCallbacks()
 // ============================================================================
 // HALLWAY EVENT
 // ============================================================================
-void HallwayEvent(string a, string b, int s)
+void HallwayEvent(string &in a, string &in b, int s)
 {
     HallwayEvent("");
     AutoSave();
 }
 
-void HallwayEvent(string t)
+void HallwayEvent(string &in t)
 {
     int stage = GetLocalVarInt("HallwayEvent");
     AddLocalVarInt("HallwayEvent", 1);
@@ -150,7 +188,7 @@ void HallwayEvent(string t)
 // ============================================================================
 // HEAD TILT
 // ============================================================================
-void HeadTilt(string t)
+void HeadTilt(string &in t)
 {
     if(GetLocalVarInt("PauseHeadTilt") == 1) { return; }
     FadePlayerRollTo(RandFloat(-10.0f, 10.0f), 1.0f, 1.5f);
@@ -173,12 +211,12 @@ void StartHeadTilt()
 // ============================================================================
 // Shake Event
 // ============================================================================
-void ShakeEvent(string a, string b, int s)
+void ShakeEvent(string &in a, string &in b, int s)
 {
     ShakeEventTimer();
 }
 
-void ShakeEventTimer(string t)
+void ShakeEventTimer(string &in t)
 {
     int stage = GetLocalVarInt("ShakeEventTimer");
     AddLocalVarInt("ShakeEventTimer", 1);
@@ -238,7 +276,7 @@ void SpawnBrick(int number)
 // ----------------------------------------------------------------------------
 // Cutscene Dialog
 // ----------------------------------------------------------------------------
-void TortureDialog(string t)
+void TortureDialog(string &in t)
 {
     int stage = GetLocalVarInt("TortureDialog");
     AddLocalVarInt("TortureDialog", 1);
@@ -250,9 +288,6 @@ void TortureDialog(string t)
         FadeGlobalSoundVolume(0.0f, 0.0f);
         TeleportPlayer("PlayerStartArea_2");
         SetPlayerActive(false);
-        // <DEBUG>
-        //SetLocalVarInt("TortureDialog", 22);
-        // </DEBUG>
         delay = 0.1f;
     }
     else if(stage == 1)
@@ -409,7 +444,7 @@ void TortureDialog(string t)
     AddTimer("", delay, "TortureDialog");
 }
 
-void CutAsync(string t)
+void CutAsync(string &in t)
 {
     PlaySoundAtEntity(sntInject, "Player");
     GiveSanityDamage(0.0f, true);
@@ -425,7 +460,7 @@ void TortureDialog()
     TortureDialog("");
 }
 
-void EnsureBrandishIsOff(string t)
+void EnsureBrandishIsOff(string &in t)
 {
     int stage = GetLocalVarInt("BrandishOff");
     AddLocalVarInt("BrandishOff", 1);
@@ -439,7 +474,7 @@ void EnsureBrandishIsOff(string t)
 // ----------------------------------------------------------------------------
 // After-Cutscene Dialog
 // ----------------------------------------------------------------------------
-void WakeUpDialog(string t)
+void WakeUpDialog(string &in t)
 {
     int stage = GetLocalVarInt("WakeUpDialog");
     AddLocalVarInt("WakeUpDialog", 1);
@@ -497,16 +532,16 @@ void WakeUpDialog()
 }
 
 // ----------------------------------------------------------------------------
-// Introducing the Item Quest (Should be expanded to tie into the area box by the torture room door)
+// Introducing the Item Quest
+// (Should be expanded to tie into the area box by the torture room door)
 // ----------------------------------------------------------------------------
-
-void StartDialog(string a, string b, int s)
+void StartDialog(string &in a, string  &in b, int s)
 {
     QuestDialog();
     GiveQuestIfNotAdded("RisenQuest");
 }
 
-void QuestDialog(string t)
+void QuestDialog(string &in t)
 {
     int stage = GetLocalVarInt("QuestDialog");
     AddLocalVarInt("QuestDialog", 1);
@@ -540,13 +575,12 @@ void QuestDialog()
 // ----------------------------------------------------------------------------
 // PRIORY CODE AREA
 // ----------------------------------------------------------------------------
-
-void StartPriory(string a, string b, int s)
+void StartPriory(string &in a, string &in b, int s)
 {
     PrioryDialog();
 }
 
-void PrioryDialog(string t)
+void PrioryDialog(string &in t)
 {
     int stage = GetLocalVarInt("PrioryDialog");
     AddLocalVarInt("PrioryDialog", 1);
@@ -576,18 +610,18 @@ void PrioryDialog()
     PrioryDialog("");
 }
 
-void BonerEvent(string a, string b, int s)
+void BonerEvent(string &in a, string &in b, int s)
 {
     PlaySoundAtEntity("04_hole_squeal.snt", entBonerSoundArea1);
     GiveSanityDamage(0.0f, true);
 }
 
-void StairsEvent(string a, string b, int s)
+void StairsEvent(string &in a, string &in b, int s)
 {
     StairsEvent("");
 }
 
-void StairsEvent(string t)
+void StairsEvent(string &in t)
 {
     int stage = GetLocalVarInt("StairsEvent");
     AddLocalVarInt("StairsEvent", 1);
@@ -613,12 +647,12 @@ void StairsEvent(string t)
     AddTimer("", delay, "StairsEvent");
 }
 
-void OfficePreEvent(string a, string b, int s)
+void OfficePreEvent(string &in a, string &in b, int s)
 {
     PlaySoundAtEntity(sntPreOffice, entOfficeSoundArea);
 }
 
-void OfficeEvent(string a, string b, int s)
+void OfficeEvent(string &in a, string &in b, int s)
 {
     SetEntityActive(entStairsEventArea, true);
     PlaySoundAtEntity(sntOffice, entOfficeSoundArea);
@@ -630,13 +664,13 @@ void OfficeEvent(string a, string b, int s)
 // ============================================================================
 const int requiredItemsCount = 2;
 
-bool ItemIsRequired(string itemName)
+bool ItemIsRequired(string &in itemName)
 {
     return itemName == entRisenWater ||
     itemName == entRisenSalt;
 }
 
-void OnRequiredItemPickup(string entity)
+void OnRequiredItemPickup(string &in entity)
 {
     // Ignore not required items
     if (!ItemIsRequired(entity)) { return; }
@@ -681,7 +715,7 @@ void OnAllItemsPickedUp()
     AddSinglePlayerCollideCallback("EndingCutsceneTrigger", "StartEnding");
 }
 
-void StartEnding(string a, string b, int s)
+void StartEnding(string &in a, string &in b, int s)
 {
     EndingDialog();
     SetPlayerActive(false);
@@ -697,7 +731,7 @@ void StartEnding(string a, string b, int s)
     SetEntityActive("CaveInStatue_5", true);
 }
 
-void EndingDialog(string t)
+void EndingDialog(string &in t)
 {
     int stage = GetLocalVarInt("EndingDialog");
     AddLocalVarInt("EndingDialog", 1);
@@ -770,19 +804,19 @@ void EndingDialog()
 // LEFT HAND PATH HORROR AREAS
 // ============================================================================
 
-void StartHorror(string a, string b, int s)
+void StartHorror(string &in a, string &in b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("RC_Johan_11.ogg");
 }
 
-void ScratchEvent(string a, string b, int s)
+void ScratchEvent(string &in a, string &in b, int s)
 {
     PlaySoundAtEntity(sntScratch, entScrachSoundLeft);
     SetLocalVarInt("HallwayEvent", 0);
     HallwayEvent("");
 }
 
-void AsylumStartEvent(string a, string b, int s)
+void AsylumStartEvent(string &in a, string &in b, int s)
 {
     for(int i = 1; i <= entAsylumPrisonerLast; i++)
     {
@@ -794,7 +828,7 @@ void AsylumStartEvent(string a, string b, int s)
     }
 }
 
-void AsylumEndEvent(string a, string b, int s)
+void AsylumEndEvent(string &in a, string &in b, int s)
 {
     for(int i = 1; i <= entAsylumPrisonerLast; i++)
     {
@@ -803,4 +837,3 @@ void AsylumEndEvent(string a, string b, int s)
 
     PlaySoundAtEntity(sntSkeletalk, entGravesSoundArea);
 }
-

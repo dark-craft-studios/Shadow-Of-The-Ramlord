@@ -6,13 +6,13 @@
 // the entity for the player to look at
 // and a (string)callback function
 // Callback has the following singature:
-// void _____(string t) { }
+// void _____(string &in t) { }
 // 
 // The callback is called in the middle of the meditation and should contain
 // the main payload of it. After your scene is ready to wrap up call a timer
 // called "EndMeditation".
 // ============================================================================
-void StartMeditation(string focusArea, string callback)
+void StartMeditation(string &in focusArea, string &in callback)
 {
     SetLanternActive(false, true);
     ResetPlayerState();
@@ -24,12 +24,12 @@ void StartMeditation(string focusArea, string callback)
     AddTimer("", 2.0f, "MeditationTimer");
 }
 
-void SetMeditationCallback(string callback)
+void SetMeditationCallback(string &in callback)
 {
     SetLocalVarString("MeditationCallback", callback);
 }
 
-void MeditationTimer(string t)
+void MeditationTimer(string &in t)
 {
     AddLocalVarInt("MeditationStage", 1);
     int stage = GetLocalVarInt("MeditationStage");
@@ -73,14 +73,14 @@ void MeditationTimer(string t)
     AddTimer("", delay, "MeditationTimer");
 }
 
-void EndMeditation(string t)
+void EndMeditation(string &in t)
 {
     SetLocalVarString("MeditationCallback", "");
     SetLocalVarInt("MeditationEndStage", 0);
     EndMeditationTimer("");
 }
 
-void EndMeditationTimer(string t)
+void EndMeditationTimer(string &in t)
 {
     AddLocalVarInt("MeditationEndStage", 1);
     int stage = GetLocalVarInt("MeditationEndStage");

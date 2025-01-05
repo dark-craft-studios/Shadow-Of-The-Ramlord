@@ -1,4 +1,23 @@
-#include "Ramlord.ihps"
+#include "_RamlordCommon.hps"
+
+void Preload()
+{
+    PreloadSound("ambience_swoop_myst.snt");
+    PreloadSound("scare_animal_squeal.snt");
+    PreloadSound("scare_slam_door.snt");
+    PreloadSound("scare_steps_big.snt");
+    PreloadSound("scare_walk_ghost.snt");
+    PreloadSound("scare_wood_creak_scuf.snt");
+    PreloadSound("scare_wood_creak_walk.snt");
+    PreloadSound("SOTR_skeletalk.snt");
+    PreloadSound("03_rock_amb.snt");
+    PreloadSound("unlock_door.snt");
+    PreloadSound("break_wood.snt");
+    PreloadSound("react_sigh.snt");
+    PreloadSound("insanity_whisper.snt");
+    PreloadSound("react_scare.snt");
+    PreloadParticleSystem("ps_impact_dirt_low.ps");
+}
 
 // ============================================================================
 // MAIN
@@ -7,17 +26,25 @@ const string MapId = "02";
 
 void OnStart()
 {
+    CommonOnStart();
     RegisterCallbacks();
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_1.ogg");
 }
 
 void OnEnter()
 {
+    Preload();
+    CommonOnEnter();
     FadeOut(0.0f);
     AddTimer("", 0.25f, "FadeInTimer");
     StartAmbience("ambience_swoop_myst.snt");
     AmbienceLoop("");
     SetupSkybox("SOTR_night_sky_light.dds");
+}
+
+void OnLeave()
+{
+    CommonOnLeave();
 }
 
 void RegisterCallbacks()
@@ -73,7 +100,7 @@ string GetRandomSoundArea()
     return "AmbSoundArea_" + RandInt(1, soundAreaCount);
 }
 
-void AmbienceLoop(string t)
+void AmbienceLoop(string &in t)
 {
     if(GetLocalVarInt("StopAmbience") == 1) return;
 
@@ -85,12 +112,12 @@ void AmbienceLoop(string t)
     AddTimer("", RandFloat(10.0f, 30.0f), "AmbienceLoop");
 }
 
-void StopAmbientSounds(string t)
+void StopAmbientSounds(string &in t)
 {
     SetLocalVarInt("StopAmbience", 1);
 }
 
-void ContinueAmbientSounds(string t)
+void ContinueAmbientSounds(string &in t)
 {
     SetLocalVarInt("StopAmbience", 0);
     AddTimer("", RandFloat(2.0f, 7.0f), "AmbienceLoop");
@@ -127,7 +154,7 @@ void FadeOutCorridorLights(float timeInSeconds)
     FadeLightTo("LightToKill_7", 0.0f, 0.0f, 0.0f, 0.0f, -1.0f, timeInSeconds);
 }
 
-void OnRitualKeyPickup(string entity)
+void OnRitualKeyPickup(string &in entity)
 {
     AddSinglePlayerCollideCallback(
         "SilentCorridorStartArea", 
@@ -142,7 +169,7 @@ void OnRitualKeyPickup(string entity)
     AddTimer("", 1.5f, "DelayedDoorSlam");
 }
 
-void DelayedDoorSlam(string t)
+void DelayedDoorSlam(string &in t)
 {
     SetSwingDoorClosed("mansion_4", true, true);
     PlaySoundAtEntity("scare_slam_door.snt", "mansion_4");
@@ -151,7 +178,7 @@ void DelayedDoorSlam(string t)
     GiveSanityDamage(1.0f, true);
 }
 
-void SilentCorridorStart(string a, string b, int state)
+void SilentCorridorStart(string &in a, string &in b, int state)
 {
     StopAmbientSounds("");
     StopAmbience(0.5f);
@@ -164,7 +191,7 @@ void SilentCorridorStart(string a, string b, int state)
     FadeLightTo("BoxLight_1", 0.005f, 0.005f, 0.02f, 1.0f, -1.0f, 0.5f);
 }
 
-void SilentCorridorEnd(string a, string b, int state)
+void SilentCorridorEnd(string &in a, string &in b, int state)
 {
     StartAmbience("03_rock_amb.snt");
     ContinueAmbientSounds("");
@@ -175,7 +202,7 @@ void SilentCorridorEnd(string a, string b, int state)
 // ============================================================================
 // UNLOCKING LIBRARY DOOR
 // ============================================================================
-void UnlockLibraryDoor(string item, string entity)
+void UnlockLibraryDoor(string &in item, string &in entity)
 {
     RemoveItem(item);
     SetSwingDoorLocked(
@@ -190,7 +217,7 @@ void UnlockLibraryDoor(string item, string entity)
 // ============================================================================
 // KEPLER NOTE + DOOR LOCK
 // ============================================================================
-void PickUpBallroomNote(string e)
+void PickUpBallroomNote(string &in e)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_6.ogg");
     SetSwingDoorLocked("LibraryDoor", true, true);
@@ -205,7 +232,7 @@ void CloseLibraryDoor(string &in asTimer)
 // ============================================================================
 // LEVER SEQUENCE
 // ============================================================================
-void OnSecretLeverPulled(string entity, int state)
+void OnSecretLeverPulled(string &in entity, int state)
 {
     if(state == 0) return;
     SetLeverStuckState(entity, state, true);
@@ -216,12 +243,12 @@ void OnSecretLeverPulled(string entity, int state)
 // ============================================================================
 // LADDER FALL SEQUENCE
 // ============================================================================
-void OnLibraryEscaped(string a, string b, int state)
+void OnLibraryEscaped(string &in a, string &in b, int state)
 {
     LibraryCrashTimer("");
 }
 
-void LibraryCrashTimer(string t)
+void LibraryCrashTimer(string &in t)
 {
     AddLocalVarInt("LibraryCrashTimer", 1);
     int stage = GetLocalVarInt("LibraryCrashTimer");
@@ -336,14 +363,14 @@ void LibraryCrashTimer(string t)
     AddTimer("", delay, "LibraryCrashTimer");
 }
 
-void RecoverFall(string a, string b, int state)
+void RecoverFall(string &in a, string &in b, int state)
 {
     ResetPlayerSpeed();
     SetEntityActive("PonrBlockBox", true);
     CloseSlidingDoorsTimer("");
 }
 
-void CloseSlidingDoorsTimer(string t)
+void CloseSlidingDoorsTimer(string &in t)
 {
     AddLocalVarInt("CloseSlidingDoorsTimer", 1);
     int stage = GetLocalVarInt("CloseSlidingDoorsTimer");
@@ -373,12 +400,12 @@ void CloseSlidingDoorsTimer(string t)
 // ============================================================================
 // Thight Corridor Door Event
 // ============================================================================
-void OnLanternPickedUp(string entity)
+void OnLanternPickedUp(string &in entity)
 {
     TightCorridorDoorsTimer("");
 }
 
-void TightCorridorDoorsTimer(string t)
+void TightCorridorDoorsTimer(string &in t)
 {
     AddLocalVarInt("TightCorridorDoorsTimer", 1);
     int stage = GetLocalVarInt("TightCorridorDoorsTimer");
@@ -400,12 +427,12 @@ void TightCorridorDoorsTimer(string t)
 // ============================================================================
 // VOICE LINES
 // ============================================================================
-void BAJohanLineThree(string a, string b, int s)
+void BAJohanLineThree(string &in a, string &in b, int s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_3.ogg");
 }
 
-void BAJohanLineFour(string s)
+void BAJohanLineFour(string &in s)
 {
     PlayVoiceOnPlayerAndSlowdown("BA_Johan_4.ogg");
 }
@@ -415,12 +442,12 @@ void BAJohanLineFour(string s)
 // ============================================================================
 const string entLibraryDoor = "LibraryDoor";
 
-void OnDoorInteract(string entity)
+void OnDoorInteract(string &in entity)
 {
     OnDoorInteractMessage(entity);
 }
 
-void OnDoorInteractMessage(string entity)
+void OnDoorInteractMessage(string &in entity)
 {
     bool locked = GetSwingDoorLocked(entity);
 
@@ -434,7 +461,7 @@ void OnDoorInteractMessage(string entity)
     }
 }
 
-void DisplaySeededDoorMessage(string entryBase, int min, int max)
+void DisplaySeededDoorMessage(string &in entryBase, int min, int max)
 {
     int seed = RandInt(min, max);
     SetMessage("DoorMessages", entryBase + seed, 0.0f);
@@ -462,9 +489,7 @@ void OnLibraryDoorInteract(bool isLocked)
     }
 }
 
-///SAVE
-
-void BallroomSaveTime(string a, string b, int s)
+void BallroomSaveTime(string &in a, string &in b, int s)
 {
     AutoSave();
 }
