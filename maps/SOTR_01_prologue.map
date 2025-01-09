@@ -5,7 +5,7 @@
             <Viewport CameraPosition="0.382422 2.22171 183.42" CameraTarget="0.382422 2.22171 3.41954" CameraZoom="0" GridHeight="3.41954" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="180.383 2.22171 3.41954" CameraTarget="0.382422 2.22171 3.41954" CameraZoom="0" GridHeight="0.382422" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="0.382422 182.222 3.41954" CameraTarget="0.382422 2.22171 3.41954" CameraZoom="0" GridHeight="2.22171" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-3.26243 11.85 11.5858" CameraTarget="-2.64216 2.02655e-006 2.21522" CameraZoom="1.196" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="false" UsingLTCam="true" />
+            <Viewport CameraPosition="-8.34658 11.0774 31.4221" CameraTarget="3.61049 8.34457e-007 19.2405" CameraZoom="0.899002" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="false" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -2185,7 +2185,7 @@
                 <Entity Active="true" FileIndex="9" Group="0" ID="514" Name="chemical_jar01_1" Rotation="-3.14159 6.73147e-006 -3.14159" Scale="0.673754 1.17375 0.673754" Tag="" WorldPos="-0.202676 0.499992 1.05121">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -2204,7 +2204,7 @@
                 <Entity Active="true" FileIndex="9" Group="0" ID="515" Name="chemical_jar01_2" Rotation="-3.14154 1.52416 -3.14154" Scale="0.673754 1.17375 0.673754" Tag="" WorldPos="-0.321015 0.499992 1.21401">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -2223,7 +2223,7 @@
                 <Entity Active="true" FileIndex="9" Group="0" ID="516" Name="chemical_jar01_3" Rotation="-3.09944e-006 0.614622 9.53674e-007" Scale="0.673754 1.17375 0.673754" Tag="" WorldPos="-0.17238 0.499992 1.2368">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -3526,7 +3526,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="1785" Name="human_skull_1" Rotation="0 -0.893982 0" Scale="1 1 1" Tag="" WorldPos="-160.204 0 5.24118">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -4052,7 +4052,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="1979" Name="human_skull_2" Rotation="-3.14159 -0.785398 -3.14159" Scale="0.75 0.75 0.75" Tag="" WorldPos="1.34277 1.75 4.76876">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -4071,7 +4071,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="1980" Name="human_skull_3" Rotation="-2.92738e-006 -0.523598 3.99887e-006" Scale="0.75 0.75 0.75" Tag="" WorldPos="1.36654 1.75 2.06909">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -4090,7 +4090,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="1981" Name="human_skull_4" Rotation="-2.98371e-013 0.785398 1.89416e-007" Scale="0.75 0.75 0.75" Tag="" WorldPos="-1.34427 1.75 2.06515">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -4109,7 +4109,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="1982" Name="human_skull_5" Rotation="3.14159 0.785397 3.14159" Scale="0.75 0.75 0.75" Tag="" WorldPos="-1.31229 1.75 4.71141">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -7990,7 +7990,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="3352" Name="human_skull_6" Rotation="3.14159 0.523599 3.14159" Scale="1 1 1" Tag="" WorldPos="34.7636 6.8892 -22.8245">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />
@@ -8009,7 +8009,7 @@
                 <Entity Active="true" FileIndex="48" Group="0" ID="3353" Name="human_skull_7" Rotation="-3.14159 -0.684441 3.14159" Scale="1 1 1" Tag="" WorldPos="32.3089 6.8892 -22.8245">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="StaticPhysics" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="false" />
                         <Var Name="CallbackFunc" Value="" />
                         <Var Name="ConnectedProps" Value="" />

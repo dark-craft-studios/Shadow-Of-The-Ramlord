@@ -5,7 +5,7 @@
             <Viewport CameraPosition="-15.1997 4.13086 201.918" CameraTarget="-15.1997 4.13086 21.9184" CameraZoom="0" GridHeight="21.9184" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="164.8 4.13086 21.9184" CameraTarget="-15.1997 4.13086 21.9184" CameraZoom="0" GridHeight="-15.1997" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="-15.1997 184 21.9184" CameraTarget="-15.1997 4.00002 21.9184" CameraZoom="0" GridHeight="4.00002" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-24.3836 4.22959 8.22941" CameraTarget="-25.269 -1.43051e-006 11.8737" CameraZoom="2.17987" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-13.4621 1.90238 1.89007" CameraTarget="-13.8603 -3.85938e-007 3.52919" CameraZoom="2.97887" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
@@ -64,7 +64,7 @@
                 <File Id="47" Path="static_objects/cellarbase/special/collapse_railings.DAE" />
                 <File Id="48" Path="static_objects/ornaments/statues/statue01/statue01.DAE" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="161">
+            <FileIndex_Entities NumOfFiles="160">
                 <File Id="0" Path="entities/ptest/violin/violin.ent" />
                 <File Id="1" Path="entities/ornament/painting_diego_church/painting_diego_church.ent" />
                 <File Id="2" Path="entities/furniture/stove_front02/stove_front02.ent" />
@@ -85,7 +85,7 @@
                 <File Id="17" Path="entities/desktop/paperpile03/paperpile03.ent" />
                 <File Id="18" Path="entities/ornament/book01/book01.ent" />
                 <File Id="19" Path="entities/ornament/book_bible/book_bible.ent" />
-                <File Id="20" Path="entities/item/note_scroll/note_scroll.ent" />
+                <File Id="20" Path="entities/ornament/mirror_broken_small/mirror_broken_small.ent" />
                 <File Id="21" Path="entities/ornament/banners/banners01/banner_long01_broken.ent" />
                 <File Id="22" Path="entities/ornament/tome_open02/tome_open02.ent" />
                 <File Id="23" Path="entities/furniture/stove_metal/stove_metal.ent" />
@@ -225,7 +225,6 @@
                 <File Id="157" Path="entities/ration/bag02/bag02.ent" />
                 <File Id="158" Path="entities/ration/bag_small/bag_small.ent" />
                 <File Id="159" Path="entities/statues/armour_nice/armour_nice_complete.ent" />
-                <File Id="160" Path="entities/ornament/mirror_broken_small/mirror_broken_small.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="8">
                 <File Id="0" Path="static_objects/decals/dirt_floor01.mat" />
@@ -7124,25 +7123,6 @@
                     </UserVariables>
                 </Entity>
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.224 0.135 0 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="2798" Name="PointLight_17" Radius="1.75" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-22.5 2 0" />
-                <Entity Active="true" FileIndex="20" Group="0" ID="2799" Name="note_scroll_1" Rotation="-3.14159 -0.419323 3.14159" Scale="1 1 1" Tag="" WorldPos="-11.7949 5.00397 26.75">
-                    <UserVariables>
-                        <Var Name="CastShadows" Value="true" />
-                        <Var Name="StaticPhysics" Value="false" />
-                        <Var Name="IsAffectedByDecal" Value="false" />
-                        <Var Name="CallbackFunc" Value="" />
-                        <Var Name="ConnectedProps" Value="" />
-                        <Var Name="ConnectionStateChangeCallback" Value="" />
-                        <Var Name="FullGameSave" Value="false" />
-                        <Var Name="PlayerLookAtCallback" Value="" />
-                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
-                        <Var Name="PlayerInteractCallback" Value="" />
-                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
-                        <Var Name="CustomSubItemTypeName" Value="" />
-                        <Var Name="NoteText" Value="WitchfinderLore1" />
-                        <Var Name="OpenNoteInJournal" Value="false" />
-                        <Var Name="UseNarration" Value="false" />
-                    </UserVariables>
-                </Entity>
                 <Entity Active="true" FileIndex="81" Group="0" ID="2818" Name="shelf_high02_6" Rotation="-2.50275 1.5708 -2.50274" Scale="1 1 1" Tag="" WorldPos="-15.2265 3.99514 21.4606">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -10924,7 +10904,7 @@
                         <Var Name="VisionMaxSanity" Value="30" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="160" Group="0" ID="3616" Name="mirror_broken_small_1" Rotation="2.95239 -0.872965 -3.14159" Scale="1 1 1" Tag="" WorldPos="-24.2429 0.413306 12.2937">
+                <Entity Active="true" FileIndex="20" Group="0" ID="3616" Name="mirror_broken_small_1" Rotation="2.95239 -0.872965 -3.14159" Scale="1 1 1" Tag="" WorldPos="-24.2429 0.413306 12.2937">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="true" />
