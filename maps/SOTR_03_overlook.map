@@ -5,13 +5,13 @@
             <Viewport CameraPosition="6.91159 1.44077 173.037" CameraTarget="6.91159 1.44077 -6.96261" CameraZoom="0" GridHeight="-6.96261" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="186.911 1.44077 -6.96261" CameraTarget="6.91159 1.44077 -6.96261" CameraZoom="0" GridHeight="6.91159" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
             <Viewport CameraPosition="6.91159 181.31 -6.96261" CameraTarget="6.91159 1.30993 -6.96261" CameraZoom="0" GridHeight="1.30993" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
-            <Viewport CameraPosition="-2.23682 11.2846 11.2664" CameraTarget="-1.84582 -2.86102e-006 18.8487" CameraZoom="1.30188" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
+            <Viewport CameraPosition="-12.7912 7.92171 -2.48165" CameraTarget="-17.287 -9.53674e-007 -4.89516" CameraZoom="1.66888" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="false" ShowGrid="true" UsingLTCam="true" />
         </ViewportConfig>
         <Groups>
             <Group ID="0" Name="None" Visible="true" />
         </Groups>
     </EditorSession>
-    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../../">
+    <MapData FogActive="false" FogColor="1 1 1 1" FogCulling="true" FogEnd="20" FogFalloffExp="1" FogStart="0" GlobalDecalMaxTris="300" Name="" SkyBoxActive="false" SkyBoxColor="1 1 1 1" SkyBoxTexture="../../../../../">
         <MapContents>
             <FileIndex_StaticObjects NumOfFiles="75">
                 <File Id="0" Path="static_objects/mansionbase/wall/default.dae" />
@@ -24,7 +24,7 @@
                 <File Id="7" Path="static_objects/mansionbase/stairs/welder.dae" />
                 <File Id="8" Path="static_objects/cellarbase/ceiling/concave.dae" />
                 <File Id="9" Path="static_objects/mansionbase/wall/short.dae" />
-                <File Id="10" Path="custom_stories/shadow-of-the-ramlord/static_objects/mansionbase/ceiling/concave_beam.DAE" />
+                <File Id="10" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/mansionbase/ceiling/concave_beam.DAE" />
                 <File Id="11" Path="static_objects/ornaments/carpets/carpet01.dae" />
                 <File Id="12" Path="static_objects/ornaments/carpets/carpet04.dae" />
                 <File Id="13" Path="static_objects/mansionbase/wall/wall_stove.dae" />
@@ -44,13 +44,13 @@
                 <File Id="27" Path="static_objects/mansionbase/ceiling/corner_convex_short.dae" />
                 <File Id="28" Path="static_objects/castlebase/ceiling/concave.dae" />
                 <File Id="29" Path="static_objects/castlebase/pillar/plain_short.dae" />
-                <File Id="30" Path="custom_stories/shadow-of-the-ramlord/static_objects/mansionbase/wall/attic_wall_doorway.DAE" />
+                <File Id="30" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/mansionbase/wall/attic_wall_doorway.DAE" />
                 <File Id="31" Path="static_objects/cellarbase/ceiling/welder_corridor_extension.dae" />
                 <File Id="32" Path="static_objects/mansionbase/wall/short02.dae" />
-                <File Id="33" Path="custom_stories/shadow-of-the-ramlord/static_objects/SOTR_skydomes/SOTR_backdrop_01.dae" />
+                <File Id="33" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/SOTR_skydomes/SOTR_backdrop_01.dae" />
                 <File Id="34" Path="static_objects/castlebase/wall/default.dae" />
                 <File Id="35" Path="static_objects/castlebase/ceiling/corner_concave.dae" />
-                <File Id="36" Path="custom_stories/shadow-of-the-ramlord/static_objects/mansionbase/wall/attic_wall_small.DAE" />
+                <File Id="36" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/mansionbase/wall/attic_wall_small.DAE" />
                 <File Id="37" Path="static_objects/dungeonbase/wall/welder_wood.dae" />
                 <File Id="38" Path="static_objects/decals/cracks_blue03.dae" />
                 <File Id="39" Path="static_objects/cellarbase/ceiling/welder_extension.dae" />
@@ -79,18 +79,18 @@
                 <File Id="62" Path="static_objects/ptest/graveyard_floor_dirt_pile.dae" />
                 <File Id="63" Path="static_objects/outside/foliage/grass02_brown.dae" />
                 <File Id="64" Path="static_objects/outside/foliage/zimmarman_grass02_brown_2sided.dae" />
-                <File Id="65" Path="custom_stories/shadow-of-the-ramlord/static_objects/mansionbase/wall/attic_wall.DAE" />
+                <File Id="65" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/mansionbase/wall/attic_wall.DAE" />
                 <File Id="66" Path="static_objects/outside/foliage/zimmarman_shrubb_dead.dae" />
                 <File Id="67" Path="static_objects/decals/web_spider01.dae" />
                 <File Id="68" Path="static_objects/debris/wood/plank_2.5m_broken.dae" />
                 <File Id="69" Path="static_objects/outside/foliage/shrubb_dead.dae" />
-                <File Id="70" Path="custom_stories/shadow-of-the-ramlord/static_objects/cellarbase/special/leaves.DAE" />
+                <File Id="70" Path="custom_stories/Shadow-Of-The-Ramlord/static_objects/cellarbase/special/leaves.DAE" />
                 <File Id="71" Path="static_objects/cellarbase/wall/default_decayed03.dae" />
                 <File Id="72" Path="static_objects/castlebase/wall/door_way.dae" />
                 <File Id="73" Path="static_objects/castlebase/wall/welder_convex.dae" />
                 <File Id="74" Path="static_objects/mansionbase/wall/welder02_concave.dae" />
             </FileIndex_StaticObjects>
-            <FileIndex_Entities NumOfFiles="188">
+            <FileIndex_Entities NumOfFiles="189">
                 <File Id="0" Path="entities/door/mansion/mansion.ent" />
                 <File Id="1" Path="entities/prison/cell_bucket/cell_bucket.ent" />
                 <File Id="2" Path="entities/storage/shelf02/shelf02.ent" />
@@ -143,14 +143,14 @@
                 <File Id="49" Path="entities/furniture/chest_of_drawers_simple/chest_of_drawers_simple_broken.ent" />
                 <File Id="50" Path="entities/ornament/shield02/shield02.ent" />
                 <File Id="51" Path="entities/ornament/book_pile02/book_pile02.ent" />
-                <File Id="52" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/work_desk/work_desk02_door.ent" />
+                <File Id="52" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/work_desk/work_desk02_door.ent" />
                 <File Id="53" Path="entities/furniture/chest_of_drawers_nice/chest_of_drawers_nice_broken.ent" />
                 <File Id="54" Path="entities/ornament/paintings/painting02/painting02.ent" />
                 <File Id="55" Path="entities/ornament/rolled_up_carpet/rolled_up_carpet.ent" />
                 <File Id="56" Path="entities/ornament/tome_pile01/tome_pile01.ent" />
                 <File Id="57" Path="entities/ornament/tome_pile02/tome_pile02.ent" />
                 <File Id="58" Path="entities/cloth/shirts/shirt_hanging_white/shirt_hanging_white.ent" />
-                <File Id="59" Path="custom_stories/shadow-of-the-ramlord/entities/SOTR_Items/SOTR_BookPuzzle.ent" />
+                <File Id="59" Path="custom_stories/Shadow-Of-The-Ramlord/entities/SOTR_Items/SOTR_BookPuzzle.ent" />
                 <File Id="60" Path="entities/ptest/angel_statue/angel_statue.ent" />
                 <File Id="61" Path="entities/storage/shelf_thin/shelf_thin.ent" />
                 <File Id="62" Path="entities/ornament/vase_sumer_big/vase_sumer_big.ent" />
@@ -162,7 +162,7 @@
                 <File Id="68" Path="entities/ornament/tombstone02/tombstone02.ent" />
                 <File Id="69" Path="entities/ornament/tombstone03/tombstone03.ent" />
                 <File Id="70" Path="entities/ornament/tombstone01/tombstone01.ent" />
-                <File Id="71" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/work_desk/work_desk02.ent" />
+                <File Id="71" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/work_desk/work_desk02.ent" />
                 <File Id="72" Path="entities/ornament/sketch_castle/sketch_castle01.ent" />
                 <File Id="73" Path="entities/ornament/map_spain/map_spain.ent" />
                 <File Id="74" Path="entities/furniture/armchair/armchair.ent" />
@@ -175,7 +175,7 @@
                 <File Id="81" Path="entities/furniture/piano/piano.ent" />
                 <File Id="82" Path="entities/furniture/stool_wood/stool_wood.ent" />
                 <File Id="83" Path="entities/ornament/map_prussia/map_prussia01.ent" />
-                <File Id="84" Path="custom_stories/shadow-of-the-ramlord/entities/storage/chemical_box/chemical_box.ent" />
+                <File Id="84" Path="custom_stories/Shadow-Of-The-Ramlord/entities/storage/chemical_box/chemical_box.ent" />
                 <File Id="85" Path="entities/navigation/sign_local_history/sign_local_history.ent" />
                 <File Id="86" Path="entities/technical/block_box/block_box.ent" />
                 <File Id="87" Path="entities/ornament/sketch_disect_human/sketch_disect_human04.ent" />
@@ -189,12 +189,12 @@
                 <File Id="95" Path="entities/equipment/broom/broom.ent" />
                 <File Id="96" Path="entities/organic/stuffed_rabbit/stuffed_rabbit.ent" />
                 <File Id="97" Path="entities/equipment/coal_pile/coal_pile02.ent" />
-                <File Id="98" Path="custom_stories/shadow-of-the-ramlord/entities/moon/moon.ent" />
+                <File Id="98" Path="custom_stories/Shadow-Of-The-Ramlord/entities/moon/moon.ent" />
                 <File Id="99" Path="entities/equipment/rope_pile/rope_stump02.ent" />
                 <File Id="100" Path="entities/equipment/sledge/sledge.ent" />
                 <File Id="101" Path="entities/equipment/wooden_board/wooden_board03.ent" />
-                <File Id="102" Path="custom_stories/shadow-of-the-ramlord/entities/ornament/music_stand/music_stand.ent" />
-                <File Id="103" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/vanity_screen/vanity_screen.ent" />
+                <File Id="102" Path="custom_stories/Shadow-Of-The-Ramlord/entities/ornament/music_stand/music_stand.ent" />
+                <File Id="103" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/vanity_screen/vanity_screen.ent" />
                 <File Id="104" Path="entities/container/barrel01/barrel01.ent" />
                 <File Id="105" Path="entities/container/vase02/vase02.ent" />
                 <File Id="106" Path="entities/container/wood_box02/wood_box02.ent" />
@@ -224,7 +224,7 @@
                 <File Id="130" Path="entities/ornament/tome_open02/tome_open02.ent" />
                 <File Id="131" Path="entities/furniture/table_wood01/table_wood01.ent" />
                 <File Id="132" Path="entities/ornament/arabic_carafe/arabic_carafe.ent" />
-                <File Id="133" Path="custom_stories/shadow-of-the-ramlord/entities/ornament/paintings/painting20/painting20.ent" />
+                <File Id="133" Path="custom_stories/Shadow-Of-The-Ramlord/entities/ornament/paintings/painting20/painting20.ent" />
                 <File Id="134" Path="entities/cloth/shirts/shirt_folded_white/shirt_folded_white.ent" />
                 <File Id="135" Path="entities/tool/hammer/hammer.ent" />
                 <File Id="136" Path="entities/desktop/paperpile01/paperpile01.ent" />
@@ -237,7 +237,7 @@
                 <File Id="143" Path="entities/kitchen/plate/plate.ent" />
                 <File Id="144" Path="entities/desktop/paper03/paper03.ent" />
                 <File Id="145" Path="entities/ornament/mirror_broken/mirror_broken.ent" />
-                <File Id="146" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/sofa/sofa_alt.ent" />
+                <File Id="146" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/sofa/sofa_alt.ent" />
                 <File Id="147" Path="entities/furniture/table_wood02/table_wood02.ent" />
                 <File Id="148" Path="entities/furniture/chair_wood02/chair_wood02.ent" />
                 <File Id="149" Path="entities/ornament/cross_small_metal/cross_small_metal.ent" />
@@ -246,10 +246,10 @@
                 <File Id="152" Path="entities/item/potion_oil/potion_oil.ent" />
                 <File Id="153" Path="entities/storage/storage_box_wood01/storage_box_wood01_large.ent" />
                 <File Id="154" Path="entities/ornament/paintings/painting_large01/painting_large04.ent" />
-                <File Id="155" Path="custom_stories/shadow-of-the-ramlord/entities/ornament/paintings/painting17/painting17.ent" />
+                <File Id="155" Path="custom_stories/Shadow-Of-The-Ramlord/entities/ornament/paintings/painting17/painting17.ent" />
                 <File Id="156" Path="entities/ornament/sketch_castle/sketch_roll01.ent" />
-                <File Id="157" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/cabinet_simple/cabinet_simple_alt.ent" />
-                <File Id="158" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/chair_nice01/chair_nice01_alt.ent" />
+                <File Id="157" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/cabinet_simple/cabinet_simple_alt.ent" />
+                <File Id="158" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/chair_nice01/chair_nice01_alt.ent" />
                 <File Id="159" Path="entities/tool/shovel/shovel.ent" />
                 <File Id="160" Path="entities/item/potion_oil/potion_oil_large.ent" />
                 <File Id="161" Path="entities/ration/bread_rotten/bread_rotten.ent" />
@@ -264,14 +264,14 @@
                 <File Id="170" Path="entities/ration/bag_small/bag_small.ent" />
                 <File Id="171" Path="entities/ptest/rotten_flowers/rotten_flowers.ent" />
                 <File Id="172" Path="entities/ptest/violin/violin_bow.ent" />
-                <File Id="173" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/sofa/sofa_red.ent" />
+                <File Id="173" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/sofa/sofa_red.ent" />
                 <File Id="174" Path="entities/desktop/pen_feather/pen_feather.ent" />
                 <File Id="175" Path="entities/ornament/sketch_disect_human/sketch_disect_human01.ent" />
-                <File Id="176" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/bookcase/bookcase_low.ent" />
-                <File Id="177" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/bookcase/bookcase_low_corner02.ent" />
+                <File Id="176" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/bookcase/bookcase_low.ent" />
+                <File Id="177" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/bookcase/bookcase_low_corner02.ent" />
                 <File Id="178" Path="entities/door/level_hub/level_hub.ent" />
                 <File Id="179" Path="entities/furniture/chair_nice02/chair_nice02.ent" />
-                <File Id="180" Path="custom_stories/shadow-of-the-ramlord/entities/furniture/sofa/sofa_alt_red.ent" />
+                <File Id="180" Path="custom_stories/Shadow-Of-The-Ramlord/entities/furniture/sofa/sofa_alt_red.ent" />
                 <File Id="181" Path="entities/furniture/table_nice02/table_nice02.ent" />
                 <File Id="182" Path="entities/desktop/deskpad/deskpad.ent" />
                 <File Id="183" Path="entities/lamp/candlestick_wall/candlestick_wall_orange.ent" />
@@ -279,6 +279,7 @@
                 <File Id="185" Path="entities/lamp/candlestick_tri/candlestick_tri.ent" />
                 <File Id="186" Path="entities/lamp/candlestick02/candlestick02.ent" />
                 <File Id="187" Path="entities/ornament/banners/banners_rag/banners_rag.ent" />
+                <File Id="188" Path="entities/item/note_scroll/note_scroll.ent" />
             </FileIndex_Entities>
             <FileIndex_Decals NumOfFiles="7">
                 <File Id="0" Path="textures/decals/dirt_stain_large.mat" />
@@ -2273,7 +2274,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Entity Active="true" FileIndex="31" Group="0" ID="637" Name="pot_plant_small01_1" Rotation="3.14159 1.5708 3.14159" Scale="0.5 0.5 0.5" Tag="" WorldPos="-13.6966 6.8 -3.25841">
+                <Entity Active="true" FileIndex="31" Group="0" ID="637" Name="pot_plant_small01_1" Rotation="3.14159 1.5708 3.14159" Scale="0.5 0.5 0.5" Tag="" WorldPos="-13.9317 6.8 -3.25841">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="StaticPhysics" Value="false" />
@@ -9872,7 +9873,7 @@
                     </UserVariables>
                 </Entity>
                 <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_flies.ps" Group="0" ID="3518" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="Flies1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" Tag="" WorldPos="27.4117 1.51115 -0.629299" />
-                <Sound Active="true" Group="0" ID="3519" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_flies.snt" Tag="" UseDefault="true" Volume="1" WorldPos="27.3505 1.51115 -0.632702" />
+                <Sound Active="true" Group="0" ID="3519" MaxDistance="5" MinDistance="1" Name="Sound_1" Rotation="3.14159 -1.5708 3.14159" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_flies.snt" Tag="" UseDefault="true" Volume="1" WorldPos="27.3505 1.51115 -0.632702" />
                 <Entity Active="true" FileIndex="150" Group="0" ID="3523" Name="pot_1" Rotation="-3.9219e-007 0.523596 -1.46368e-006" Scale="1 1 1" Tag="" WorldPos="27.356 1.01015 -0.0973013">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -21802,7 +21803,7 @@
                         <Var Name="MaxFocusDistance" Value="-1" />
                     </UserVariables>
                 </Area>
-                <Sound Active="true" Group="0" ID="6537" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_chain_rattle.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.968695 9.10544 -5.34907" />
+                <Sound Active="true" Group="0" ID="6537" MaxDistance="5" MinDistance="1" Name="Sound_2" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/general/general_chain_rattle.snt" Tag="" UseDefault="true" Volume="1" WorldPos="0.968695 9.10544 -5.34907" />
                 <Area Active="true" AreaType="Script" Group="0" ID="6539" Mesh="" Name="EmiliasFeet" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-11.5072 0 -7.54911">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
@@ -22287,7 +22288,7 @@
                 </Entity>
                 <PointLight Active="true" CastShadows="false" DiffuseColor="0.476 0.252 0.032 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="6595" Name="PointLight_2" Radius="2.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-0.049077 1.73975 4.96742" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="6603" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_82" Rotation="8.74228e-008 -1.5708 8.74228e-008" Scale="1 1 1" Tag="" WorldPos="-10 2.5 -5.75" />
-                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="-0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="6604" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_12" Rotation="3.14159 -3.57628e-006 3.14159" Tag="" WorldPos="-10 2.5 -5.75" />
+                <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="6604" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_12" Rotation="3.14159 -3.57628e-006 3.14159" Tag="" WorldPos="-10 2.5 -5.75" />
                 <Entity Active="true" FileIndex="183" Group="0" ID="6605" Name="candlestick_wall_orange_9" Rotation="-0.393765 -1.5708 0.393767" Scale="1 1 1" Tag="" WorldPos="-10.25 2 -5.75">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -23693,7 +23694,7 @@
                         <Var Name="DisableBreakable" Value="false" />
                     </UserVariables>
                 </Entity>
-                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="false" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="6918" Name="biggayspotlight" NearClipPlane="0.1" Radius="5" Rotation="-3.14159 -1.19209e-007 0.261804" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="1.5 6.75 -21.25" />
+                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="false" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="6918" Name="biggayspotlight" NearClipPlane="0.1" Radius="5" Rotation="-3.14159 -1.19209e-007 0.261804" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="1.5 6.75 -21.25" />
                 <Entity Active="true" FileIndex="120" Group="0" ID="6919" Name="painting_large02_3" Rotation="3.14159 -1.5708 -3.14159" Scale="0.5 0.5 0.5" Tag="" WorldPos="1.25 8.25 -17.5">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -24130,7 +24131,7 @@
                         <Var Name="ConnectionLightUseSpec" Value="false" />
                     </UserVariables>
                 </Entity>
-                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="false" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="6989" Name="biggayspotlight_1" NearClipPlane="0.1" Radius="8" Rotation="-2.76551 5.41005e-007 5.00679e-006" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-16.5 1 -17" />
+                <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="1 0.603 0.465 1" FOV="1.5708" FalloffMap="" FlickerActive="false" FlickerFade="true" FlickerOffColor="1 0.503 0.365 1" FlickerOffFadeMaxLength="0.5" FlickerOffFadeMinLength="0.1" FlickerOffMaxLength="1" FlickerOffMinLength="0.5" FlickerOffPS="" FlickerOffRadius="4.65" FlickerOffSound="" FlickerOnFadeMaxLength="0.5" FlickerOnFadeMinLength="0.1" FlickerOnMaxLength="1" FlickerOnMinLength="0.5" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" Group="0" ID="6989" Name="biggayspotlight_1" NearClipPlane="0.1" Radius="8" Rotation="-2.76551 5.41005e-007 5.00679e-006" Scale="1 1 1" ShadowResolution="Medium" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../lights/light_falloff_short_fade.tga" Tag="" WorldPos="-16.5 1 -17" />
                 <ParticleSystem Active="true" Color="0.476 0.252 0.034 1" FadeAtDistance="true" File="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/particles/ps_light_dust_large.ps" Group="0" ID="6990" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_118" Rotation="1.74846e-007 -3.57628e-006 -3.1647e-013" Scale="1 1 1" Tag="" WorldPos="-20.75 2.5 -5.75" />
                 <Billboard Active="true" BillboardColor="0.476 0.252 0.034 1" BillboardOffset="0" BillboardSize="2 2" BillboardType="Point" ConnectLight="" Group="0" HaloSourceSize="0.3 0.3 0.3" ID="6991" IsHalo="true" MaterialFile="D:/SteamLibrary/steamapps/common/Amnesia The Dark Descent/billboards/bb_white_halo_no_depthtest.mat" Name="Billboard_57" Rotation="-0.610949 -1.5708 0.610946" Tag="" WorldPos="-20.75 2.5 -5.75" />
                 <Entity Active="true" FileIndex="183" Group="0" ID="6992" Name="candlestick_wall_orange_45" Rotation="2.00363e-006 -3.29924e-006 -1.38888e-006" Scale="1 1 1" Tag="" WorldPos="-20.75 2 -5.5">
@@ -24492,7 +24493,7 @@
                         <Var Name="IsAffectedByDecal" Value="true" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="7052" MaxDistance="5" MinDistance="1" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/enemy/brute/notice.snt" Tag="" UseDefault="true" Volume="1" WorldPos="24 0 -17" />
+                <Sound Active="true" Group="0" ID="7052" MaxDistance="5" MinDistance="1" Name="Sound_6" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/enemy/brute/notice.snt" Tag="" UseDefault="true" Volume="1" WorldPos="24 0 -17" />
                 <Area Active="true" AreaType="Script" Group="0" ID="7053" Mesh="" Name="LibraryStatueGhouls" Rotation="0 0 0" Scale="3 3 3" Tag="" WorldPos="20 7.5 5.5">
                     <UserVariables>
                         <Var Name="PlayerLookAtCallback" Value="" />
@@ -24681,7 +24682,7 @@
                         <Var Name="CustomSubItemTypeName" Value="" />
                     </UserVariables>
                 </Entity>
-                <Sound Active="true" Group="0" ID="7083" MaxDistance="6" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/03/03_amb_library.snt" Tag="" UseDefault="true" Volume="1.5" WorldPos="-11.4302 3.02518 -7.97103" />
+                <Sound Active="true" Group="0" ID="7083" MaxDistance="6" MinDistance="1" Name="Sound_7" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../sounds/03/03_amb_library.snt" Tag="" UseDefault="true" Volume="1.5" WorldPos="-11.4302 3.02518 -7.97103" />
                 <Entity Active="false" FileIndex="86" Group="0" ID="7084" Name="ChaseBlockBox_1" Rotation="0 0 0" Scale="0.75 3.5 3" Tag="" WorldPos="-5.5 1.5 -6.75">
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
@@ -25244,6 +25245,25 @@
                     <UserVariables>
                         <Var Name="CastShadows" Value="true" />
                         <Var Name="IsAffectedByDecal" Value="true" />
+                    </UserVariables>
+                </Entity>
+                <Entity Active="true" FileIndex="188" Group="0" ID="7150" Name="note_travelers3" Rotation="0 1.5708 0" Scale="1 1 1" Tag="" WorldPos="-13.5702 6.81041 -3.19757">
+                    <UserVariables>
+                        <Var Name="CastShadows" Value="true" />
+                        <Var Name="StaticPhysics" Value="false" />
+                        <Var Name="IsAffectedByDecal" Value="false" />
+                        <Var Name="CallbackFunc" Value="" />
+                        <Var Name="ConnectedProps" Value="" />
+                        <Var Name="ConnectionStateChangeCallback" Value="" />
+                        <Var Name="FullGameSave" Value="false" />
+                        <Var Name="PlayerLookAtCallback" Value="" />
+                        <Var Name="PlayerLookAtCallbackAutoRemove" Value="false" />
+                        <Var Name="PlayerInteractCallback" Value="" />
+                        <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                        <Var Name="CustomSubItemTypeName" Value="" />
+                        <Var Name="NoteText" Value="Travelers3" />
+                        <Var Name="OpenNoteInJournal" Value="true" />
+                        <Var Name="UseNarration" Value="true" />
                     </UserVariables>
                 </Entity>
             </Entities>
