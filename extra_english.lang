@@ -40,7 +40,7 @@
         <Entry Name="34">I will not share words with you, creature.</Entry>
         <Entry Name="35">But that would not be the end of me. As I rose to my feet, I stood in awe of the intricate ritual twisted in abhorrent suggestion. I knew at once... I had been brought back from the dead.</Entry>
         <Entry Name="36">The dull ache of inner pain coursed through my cold frailty. But I still possessed the inexorable fire of my conviction. He should have buried me in cement if he ever desired victory.</Entry>
-        <Entry Name="37">I resolved to destroy Caecea in the only way I could. The room I was in held in had a powerful divination ritual; with my grimoire, holy water, and salt I could perform a cleansing banishment.</Entry>
+        <Entry Name="37">I resolved to destroy Caecea in the only way I could. With my grimoire, holy water, and salt I could perform a cleansing banishment. The room I was in held in had a powerful divination ritual.</Entry>
         <Entry Name="37b">Anton was no doubt in possession of these, in fear of raising up which he could not put down. If I was successful, all of the unhallowed souls interred beneath Caecea would forever be dispelled, rendering a pyrrhic victory at the least.</Entry>
         <Entry Name="38">I found the Priory of Caecea. A sacrilege, it held blasphemous tomes beyond even my own comprehension. If I had the ability, I would have torn every brick down from that pagan temple.</Entry>
         <Entry Name="39">I could hear the abhorrent curator of the Priory roaming the halls all around me. I searched for the holy water carefully, lest I would encounter it.</Entry>
@@ -64,10 +64,10 @@
         <Entry Name="6">HOW DID YOU KILL HIM!?</Entry>
         <Entry Name="7">Emilia, dearest. You're awake. I'm glad. Did you truly believe I would leave you forever? No, no, my love. We are now joined eternally... renewed, without sacrament.</Entry>
         <Entry Name="7b">Without the burden of life. You won't be able to kill our son again, Emilia. Not like this. We will try, again and again, until we've brought our Lord his Vessel. Why are you crying? Do you not see the divine purpose?</Entry>
-        <Entry Name="8">Johan, we meet at last. Welcome to my home. Welcome to Caecea.</Entry>
+        <Entry Name="8">Johan, we meet at last. Welcome to my home.</Entry>
         <Entry Name="9">It is a curious thing to be found in places not known. Tell me, how did you discover my secret? Who told you of my... particularities?</Entry>
         <Entry Name="10">Surely this will help you remember their name?</Entry>
-        <Entry Name="11">No matter. In time, you will reveal all to our Lord. Goodnight, Witchfinder.</Entry>
+        <Entry Name="11">No matter. In time, you will reveal all to our Lord, Witchfinder.</Entry>
         <Entry Name="12">Speak, crone, lest I torture you further for your insolence.</Entry>
         <Entry Name="12b">Do not presume to hold sway over me, welch. You will tell me at once: who gave you the letter!? Who told you to deliver it to the mainland!?</Entry>
         <Entry Name="13">Emilia! I will kill you!</Entry>
@@ -115,7 +115,7 @@
         <Entry Name="Note_AntonsThreat1_Text">[voice BA_Anton_1.ogg][br]Emilia, against her will, has informed me of her plan. While she did not reveal the means she used to smuggle out the letter, I was told it was you who was the intended recipient.[br][br]And so, Witchfinder, I declare you a mortal enemy. Whatever you imagine to comprehend about me, or my great work, make no mistake; you are woefully ignorant. Revenants of abhorrent malignity dwell restlessly beneath your feet. Already, they smell your fear and salivate at the thought of your descent.[br][br]Know this, fool. After I break your mind, your body, your soul -- I won't kill you. I will torment you relentlessly until the last of the stars wither in eternal, frigid solemnity.</Entry>
 
         <Entry Name="Note_AntonsThreat2_Name">Insolent Creature</Entry>
-        <Entry Name="Note_AntonsThreat2_Text">[voice RC_Anton_Journal_1.ogg][br]The master wants to meet you, Johan. So he has commanded I bring you back. A pity, but I dare say... I will enjoy the sport of killing you over and over, on and on until your very soul is broken. Come, join me in the Priory of Caecea. You have much to discuss with my Lord.</Entry>
+        <Entry Name="Note_AntonsThreat2_Text">[voice RC_Anton_Journal_1.ogg][br]The master wants to meet you, Johan. So he has commanded I bring you back. A pity, but I dare say... I will enjoy the sport of killing you over and over, on and on until your very soul is broken. Come, you have much to discuss with my Lord.</Entry>
 
         <Entry Name="Note_RamlordJournal1_Name">Our Lord</Entry>
         <Entry Name="Note_RamlordJournal1_Text">[voice RC_Johan_Journal_1.ogg][br]We worship the false creator, the master of our material realm, as our true Lord. He is the leviathan; his wings span from shore to shore, and his emphatic will cultivates us in twisted purpose.[br][voice RC_Johan_Journal_1b.ogg][br]From the blackness between the stars he dwells. And as he rebelled from his father, so have we from ours. Casting aside our pelagic ancestry, we embrace our black trip to scorn and apathy. His voice resonates within, though we see not his form. His blood courses in our blackened hearts, though we feel not his warmth. His soul possesses the worms that gnaw at our bones. From that inner world, we direct the malignancy which infects the false and the weak. Only from below can we truly see the heights.</Entry>
